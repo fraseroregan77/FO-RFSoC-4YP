@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov 19 13:41:59 2024
+# Process ID: 9880
+# Current directory: C:/Users/clb20123/Documents/RFX_helloworld/netlist
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/clb20123/Documents/RFX_helloworld/netlist/vivado.log
+# Journal file: C:/Users/clb20123/Documents/RFX_helloworld/netlist\vivado.jou
+# Running On        :EEE-R403-25
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-8500 CPU @ 3.00GHz
+# CPU Frequency     :3000 MHz
+# CPU Physical cores:6
+# CPU Logical cores :6
+# Host memory       :8353 MB
+# Swap memory       :9985 MB
+# Total Virtual     :18338 MB
+# Available Virtual :3039 MB
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
