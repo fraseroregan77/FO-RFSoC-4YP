@@ -25,14 +25,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {axi_stream_template}
-	set IP_Revision {362929315}
+	set IP_Revision {363694512}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {strath.ac.uk}
 	set IP_Version_Text {1.0}
 	set ImplStrategyName {Vivado Implementation Defaults}
 	set PostProjectCreationProc {dsp_package_for_vivado_ip_integrator}
-	set Project {axi_overtone}
+	set Project {sin_wave_modulate}
 	set ProjectFiles {
 		{{conv_pkg.vhd} -lib {xil_defaultlib}}
 		{{synth_reg.vhd} -lib {xil_defaultlib}}
@@ -42,20 +42,20 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{synth_reg_reg.vhd} -lib {xil_defaultlib}}
 		{{single_reg_w_init.vhd} -lib {xil_defaultlib}}
 		{{xlclockdriver_rd.vhd} -lib {xil_defaultlib}}
-		{{xpm_288367_vivado.mem}}
 		{{vivado_ip.tcl}}
-		{{axi_overtone_entity_declarations.vhd} -lib {xil_defaultlib}}
-		{{axi_overtone.vhd} -lib {xil_defaultlib}}
-		{{axi_overtone_clock.xdc}}
-		{{axi_overtone.xdc}}
+		{{xpm_288367_vivado.mem}}
+		{{sin_wave_modulate_entity_declarations.vhd} -lib {xil_defaultlib}}
+		{{sin_wave_modulate.vhd} -lib {xil_defaultlib}}
+		{{sin_wave_modulate_clock.xdc}}
+		{{sin_wave_modulate.xdc}}
 	}
-	set SimPeriod 2.08333e-05
-	set SimTime 0.25
-	set SimulationTime {120210.00000000 ns}
+	set SimPeriod 1e-06
+	set SimTime 0.15
+	set SimulationTime {1500210.00000000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
-	set TargetDir {C:/Users/clb20123/Documents/RFX_helloworld/netlist}
-	set TopLevelModule {axi_overtone}
+	set TargetDir {C:/Users/clb20123/Documents/RFX_files/modulate/netlist}
+	set TopLevelModule {sin_wave_modulate}
 	set TopLevelSimulinkHandle 0.00012207
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
@@ -64,14 +64,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tvalid ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface s_axis_tvalid BinaryPoint 0
 	dict set TopLevelPortInterface s_axis_tvalid Width 1
-	dict set TopLevelPortInterface s_axis_tvalid DatFile {axi_overtone_s_axis_tvalid.dat}
+	dict set TopLevelPortInterface s_axis_tvalid DatFile {sin_wave_modulate_s_axis_tvalid.dat}
 	dict set TopLevelPortInterface s_axis_tvalid IconText {s_axis_tvalid}
 	dict set TopLevelPortInterface s_axis_tvalid Direction in
 	dict set TopLevelPortInterface s_axis_tvalid Period 1
 	dict set TopLevelPortInterface s_axis_tvalid Interface 0
 	dict set TopLevelPortInterface s_axis_tvalid InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tvalid InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tvalid ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface s_axis_tvalid ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface s_axis_tvalid Locs {}
 	dict set TopLevelPortInterface s_axis_tvalid IOStandard {}
 	dict set TopLevelPortInterface s_axis_tlast Name {s_axis_tlast}
@@ -79,14 +79,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tlast ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface s_axis_tlast BinaryPoint 0
 	dict set TopLevelPortInterface s_axis_tlast Width 1
-	dict set TopLevelPortInterface s_axis_tlast DatFile {axi_overtone_s_axis_tlast.dat}
+	dict set TopLevelPortInterface s_axis_tlast DatFile {sin_wave_modulate_s_axis_tlast.dat}
 	dict set TopLevelPortInterface s_axis_tlast IconText {s_axis_tlast}
 	dict set TopLevelPortInterface s_axis_tlast Direction in
 	dict set TopLevelPortInterface s_axis_tlast Period 1
 	dict set TopLevelPortInterface s_axis_tlast Interface 0
 	dict set TopLevelPortInterface s_axis_tlast InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tlast InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tlast ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface s_axis_tlast ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface s_axis_tlast Locs {}
 	dict set TopLevelPortInterface s_axis_tlast IOStandard {}
 	dict set TopLevelPortInterface s_axis_tdata Name {s_axis_tdata}
@@ -94,14 +94,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tdata ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface s_axis_tdata BinaryPoint 0
 	dict set TopLevelPortInterface s_axis_tdata Width 1
-	dict set TopLevelPortInterface s_axis_tdata DatFile {axi_overtone_s_axis_tdata.dat}
+	dict set TopLevelPortInterface s_axis_tdata DatFile {sin_wave_modulate_s_axis_tdata.dat}
 	dict set TopLevelPortInterface s_axis_tdata IconText {s_axis_tdata}
 	dict set TopLevelPortInterface s_axis_tdata Direction in
 	dict set TopLevelPortInterface s_axis_tdata Period 1
 	dict set TopLevelPortInterface s_axis_tdata Interface 0
 	dict set TopLevelPortInterface s_axis_tdata InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tdata InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tdata ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface s_axis_tdata ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface s_axis_tdata Locs {}
 	dict set TopLevelPortInterface s_axis_tdata IOStandard {}
 	dict set TopLevelPortInterface m_axis_tready Name {m_axis_tready}
@@ -109,14 +109,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tready ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface m_axis_tready BinaryPoint 0
 	dict set TopLevelPortInterface m_axis_tready Width 1
-	dict set TopLevelPortInterface m_axis_tready DatFile {axi_overtone_m_axis_tready.dat}
+	dict set TopLevelPortInterface m_axis_tready DatFile {sin_wave_modulate_m_axis_tready.dat}
 	dict set TopLevelPortInterface m_axis_tready IconText {m_axis_tready}
 	dict set TopLevelPortInterface m_axis_tready Direction in
 	dict set TopLevelPortInterface m_axis_tready Period 1
 	dict set TopLevelPortInterface m_axis_tready Interface 0
 	dict set TopLevelPortInterface m_axis_tready InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tready InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tready ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface m_axis_tready ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface m_axis_tready Locs {}
 	dict set TopLevelPortInterface m_axis_tready IOStandard {}
 	dict set TopLevelPortInterface m_axis_tdata Name {m_axis_tdata}
@@ -124,14 +124,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tdata ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface m_axis_tdata BinaryPoint 0
 	dict set TopLevelPortInterface m_axis_tdata Width 32
-	dict set TopLevelPortInterface m_axis_tdata DatFile {axi_overtone_m_axis_tdata.dat}
+	dict set TopLevelPortInterface m_axis_tdata DatFile {sin_wave_modulate_m_axis_tdata.dat}
 	dict set TopLevelPortInterface m_axis_tdata IconText {m_axis_tdata}
 	dict set TopLevelPortInterface m_axis_tdata Direction out
 	dict set TopLevelPortInterface m_axis_tdata Period 1
 	dict set TopLevelPortInterface m_axis_tdata Interface 0
 	dict set TopLevelPortInterface m_axis_tdata InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tdata InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tdata ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface m_axis_tdata ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface m_axis_tdata Locs {}
 	dict set TopLevelPortInterface m_axis_tdata IOStandard {}
 	dict set TopLevelPortInterface m_axis_tlast Name {m_axis_tlast}
@@ -139,14 +139,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tlast ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface m_axis_tlast BinaryPoint 0
 	dict set TopLevelPortInterface m_axis_tlast Width 1
-	dict set TopLevelPortInterface m_axis_tlast DatFile {axi_overtone_m_axis_tlast.dat}
+	dict set TopLevelPortInterface m_axis_tlast DatFile {sin_wave_modulate_m_axis_tlast.dat}
 	dict set TopLevelPortInterface m_axis_tlast IconText {m_axis_tlast}
 	dict set TopLevelPortInterface m_axis_tlast Direction out
 	dict set TopLevelPortInterface m_axis_tlast Period 1
 	dict set TopLevelPortInterface m_axis_tlast Interface 0
 	dict set TopLevelPortInterface m_axis_tlast InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tlast InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tlast ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface m_axis_tlast ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface m_axis_tlast Locs {}
 	dict set TopLevelPortInterface m_axis_tlast IOStandard {}
 	dict set TopLevelPortInterface m_axis_tvalid Name {m_axis_tvalid}
@@ -154,14 +154,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tvalid ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface m_axis_tvalid BinaryPoint 0
 	dict set TopLevelPortInterface m_axis_tvalid Width 1
-	dict set TopLevelPortInterface m_axis_tvalid DatFile {axi_overtone_m_axis_tvalid.dat}
+	dict set TopLevelPortInterface m_axis_tvalid DatFile {sin_wave_modulate_m_axis_tvalid.dat}
 	dict set TopLevelPortInterface m_axis_tvalid IconText {m_axis_tvalid}
 	dict set TopLevelPortInterface m_axis_tvalid Direction out
 	dict set TopLevelPortInterface m_axis_tvalid Period 1
 	dict set TopLevelPortInterface m_axis_tvalid Interface 0
 	dict set TopLevelPortInterface m_axis_tvalid InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tvalid InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tvalid ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface m_axis_tvalid ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface m_axis_tvalid Locs {}
 	dict set TopLevelPortInterface m_axis_tvalid IOStandard {}
 	dict set TopLevelPortInterface s_axis_tready Name {s_axis_tready}
@@ -169,14 +169,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tready ArithmeticType xlUnsigned
 	dict set TopLevelPortInterface s_axis_tready BinaryPoint 0
 	dict set TopLevelPortInterface s_axis_tready Width 1
-	dict set TopLevelPortInterface s_axis_tready DatFile {axi_overtone_s_axis_tready.dat}
+	dict set TopLevelPortInterface s_axis_tready DatFile {sin_wave_modulate_s_axis_tready.dat}
 	dict set TopLevelPortInterface s_axis_tready IconText {s_axis_tready}
 	dict set TopLevelPortInterface s_axis_tready Direction out
 	dict set TopLevelPortInterface s_axis_tready Period 1
 	dict set TopLevelPortInterface s_axis_tready Interface 0
 	dict set TopLevelPortInterface s_axis_tready InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tready InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tready ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface s_axis_tready ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface s_axis_tready Locs {}
 	dict set TopLevelPortInterface s_axis_tready IOStandard {}
 	dict set TopLevelPortInterface clk Name {clk}
@@ -190,7 +190,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface clk Interface 6
 	dict set TopLevelPortInterface clk InterfaceName {}
 	dict set TopLevelPortInterface clk InterfaceString {CLOCK}
-	dict set TopLevelPortInterface clk ClockDomain {axi_overtone}
+	dict set TopLevelPortInterface clk ClockDomain {sin_wave_modulate}
 	dict set TopLevelPortInterface clk Locs {}
 	dict set TopLevelPortInterface clk IOStandard {}
 	dict set TopLevelPortInterface clk AssociatedInterfaces {}

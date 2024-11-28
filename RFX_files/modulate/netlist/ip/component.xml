@@ -129,7 +129,7 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
         <spirit:displayName>VHDL Synthesis</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>axi_overtone</spirit:modelName>
+        <spirit:modelName>sin_wave_modulate</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -139,7 +139,7 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
         <spirit:displayName>VHDL Simulation</spirit:displayName>
         <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>vhdl</spirit:language>
-        <spirit:modelName>axi_overtone</spirit:modelName>
+        <spirit:modelName>sin_wave_modulate</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -326,15 +326,19 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>axi_overtone_fifo_generator_i0/axi_overtone_fifo_generator_i0.xci</spirit:name>
+        <spirit:name>sin_wave_modulate_fifo_generator_i0/sin_wave_modulate_fifo_generator_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>axi_overtone_fifo_generator_i1/axi_overtone_fifo_generator_i1.xci</spirit:name>
+        <spirit:name>sin_wave_modulate_fifo_generator_i1/sin_wave_modulate_fifo_generator_i1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>constrs/axi_overtone.xdc</spirit:name>
+        <spirit:name>sin_wave_modulate_mult_gen_v12_0_i0/sin_wave_modulate_mult_gen_v12_0_i0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>constrs/sin_wave_modulate.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -382,25 +386,29 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/axi_overtone_entity_declarations.vhd</spirit:name>
+        <spirit:name>hdl/sin_wave_modulate_entity_declarations.vhd</spirit:name>
         <spirit:userFileType>vhdlSource-2008</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/axi_overtone.vhd</spirit:name>
+        <spirit:name>hdl/sin_wave_modulate.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8ff1d22f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_259d6c6a</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>axi_overtone_fifo_generator_i0/axi_overtone_fifo_generator_i0.xci</spirit:name>
+        <spirit:name>sin_wave_modulate_fifo_generator_i0/sin_wave_modulate_fifo_generator_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>axi_overtone_fifo_generator_i1/axi_overtone_fifo_generator_i1.xci</spirit:name>
+        <spirit:name>sin_wave_modulate_fifo_generator_i1/sin_wave_modulate_fifo_generator_i1.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sin_wave_modulate_mult_gen_v12_0_i0/sin_wave_modulate_mult_gen_v12_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -456,13 +464,13 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/axi_overtone_entity_declarations.vhd</spirit:name>
+        <spirit:name>hdl/sin_wave_modulate_entity_declarations.vhd</spirit:name>
         <spirit:userFileType>vhdlSource-2008</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/axi_overtone.vhd</spirit:name>
+        <spirit:name>hdl/sin_wave_modulate.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
@@ -508,8 +516,8 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>362929315</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-11-19T13:42:37Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>363694512</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-11-28T10:15:51Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
