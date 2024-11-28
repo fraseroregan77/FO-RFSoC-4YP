@@ -1,0 +1,167 @@
+{
+  'Line_151' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate',
+    'Instance' => 'modulate',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate'
+  },
+  'Line_158' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Convert'
+  },
+  'Line_179' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Delay1'
+  },
+  'Line_194' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/delay3',
+    'Instance' => 'delay3',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Delay3'
+  },
+  'Line_209' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/fir_compiler_7_2',
+    'Instance' => 'fir_compiler_7_2',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/FIR Compiler 7.2'
+  },
+  'Line_222' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/mult',
+    'Instance' => 'mult',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Mult'
+  },
+  'Line_259' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/shift',
+    'Instance' => 'shift',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Shift'
+  },
+  'Line_29' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate/addsub',
+    'Instance' => 'addsub',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate/AddSub'
+  },
+  'Line_314' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo/concat1',
+    'Instance' => 'concat1',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO/Concat1'
+  },
+  'Line_323' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo/fifo',
+    'Instance' => 'fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO/FIFO'
+  },
+  'Line_350' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO/Inverter2'
+  },
+  'Line_358' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo/inverter4',
+    'Instance' => 'inverter4',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO/Inverter4'
+  },
+  'Line_366' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo/tdata_slice',
+    'Instance' => 'tdata_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO/tdata_slice'
+  },
+  'Line_377' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo/tlast_slice',
+    'Instance' => 'tlast_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO/tlast_slice'
+  },
+  'Line_38' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate/AddSub1'
+  },
+  'Line_435' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/concat',
+    'Instance' => 'concat',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/Concat'
+  },
+  'Line_444' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/fifo',
+    'Instance' => 'fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/FIFO'
+  },
+  'Line_47' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate/Convert'
+  },
+  'Line_470' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/Inverter1'
+  },
+  'Line_478' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/Inverter2'
+  },
+  'Line_486' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/Logical'
+  },
+  'Line_495' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/tdata_slice',
+    'Instance' => 'tdata_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/tdata_slice'
+  },
+  'Line_506' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo/tlast_slice',
+    'Instance' => 'tlast_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO/tlast_slice'
+  },
+  'Line_569' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm',
+    'Instance' => 'algorithm',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm'
+  },
+  'Line_581' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/master_fifo',
+    'Instance' => 'master_fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Master FIFO'
+  },
+  'Line_594' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/slave_fifo',
+    'Instance' => 'slave_fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Slave FIFO'
+  },
+  'Line_652' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut',
+    'Instance' => 'dut',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT'
+  },
+  'Line_68' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate/lfsr',
+    'Instance' => 'lfsr',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate/LFSR'
+  },
+  'Line_683' => {
+    'CodeInstance' => 'sin_wave_demodulate_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_721' => {
+    'CodeInstance' => 'sin_wave_demodulate_default_clock_driver',
+    'Instance' => 'sin_wave_demodulate_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_729' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct',
+    'Instance' => 'sin_wave_demodulate_struct',
+    'SimulinkInstance' => 'sin_wave_demodulate'
+  },
+  'Line_75' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate/rom',
+    'Instance' => 'rom',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate/ROM'
+  },
+  'Line_93' => {
+    'CodeInstance' => 'sin_wave_demodulate_struct/dut/algorithm/modulate/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'sin_wave_demodulate/DUT/Algorithm/Modulate/Register'
+  }
+}
