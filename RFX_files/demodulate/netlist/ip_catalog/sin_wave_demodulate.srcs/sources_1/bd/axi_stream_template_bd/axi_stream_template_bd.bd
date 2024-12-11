@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x99071F9AD79C32CE",
+      "boundary_crc": "0x11361DCBFE52B803",
       "design_src": "SYSGEN",
       "device": "xczu43dr-ffve1156-2-e",
       "gen_directory": "../../../../sin_wave_demodulate.gen/sources_1/bd/axi_stream_template_bd",
@@ -220,7 +220,7 @@
           }
         }
       },
-      "gateway_in": {
+      "modulate_step_size": {
         "type": "data",
         "direction": "I",
         "left": "15",
@@ -236,7 +236,7 @@
     "components": {
       "axi_stream_template_1": {
         "vlnv": "strath.ac.uk:SysGen:axi_stream_template:1.0",
-        "ip_revision": "363694687",
+        "ip_revision": "364492315",
         "xci_name": "axi_stream_template_bd_axi_stream_template_1_0",
         "xci_path": "ip\\axi_stream_template_bd_axi_stream_template_1_0\\axi_stream_template_bd_axi_stream_template_1_0.xci",
         "inst_hier_path": "axi_stream_template_1"
@@ -263,10 +263,10 @@
           "axi_stream_template_1/clk"
         ]
       },
-      "gateway_in_1": {
+      "modulate_step_size_1": {
         "ports": [
-          "gateway_in",
-          "axi_stream_template_1/gateway_in"
+          "modulate_step_size",
+          "axi_stream_template_1/modulate_step_size"
         ]
       }
     }

@@ -8,7 +8,7 @@ entity sin_wave_demodulate_stub is
     s_axis_tdata : in std_logic_vector( 1-1 downto 0 );
     s_axis_tlast : in std_logic_vector( 1-1 downto 0 );
     s_axis_tvalid : in std_logic_vector( 1-1 downto 0 );
-    gateway_in : in std_logic_vector( 16-1 downto 0 );
+    modulate_step_size : in std_logic_vector( 16-1 downto 0 );
     clk : in std_logic;
     m_axis_tdata : out std_logic_vector( 32-1 downto 0 );
     m_axis_tlast : out std_logic_vector( 1-1 downto 0 );
@@ -24,7 +24,7 @@ begin
     s_axis_tdata => s_axis_tdata,
     s_axis_tlast => s_axis_tlast,
     s_axis_tvalid => s_axis_tvalid,
-    gateway_in => gateway_in,
+    modulate_step_size => modulate_step_size,
     clk => clk,
     m_axis_tdata => m_axis_tdata,
     m_axis_tlast => m_axis_tlast,

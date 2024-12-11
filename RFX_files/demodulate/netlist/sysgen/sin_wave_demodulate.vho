@@ -4,7 +4,7 @@
     s_axis_tdata => s_axis_tdata,
     s_axis_tlast => s_axis_tlast,
     s_axis_tvalid => s_axis_tvalid,
-    gateway_in => gateway_in,
+    modulate_step_size => modulate_step_size,
     clk => clk,
     m_axis_tdata => m_axis_tdata,
     m_axis_tlast => m_axis_tlast,

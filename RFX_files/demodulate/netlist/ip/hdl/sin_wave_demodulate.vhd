@@ -12,25 +12,25 @@ entity sin_wave_demodulate_modulate is
   );
 end sin_wave_demodulate_modulate;
 architecture structural of sin_wave_demodulate_modulate is 
+  signal modulate_step_size_net : std_logic_vector( 16-1 downto 0 );
   signal lfsr_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 8-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
   signal rom_data_net : std_logic_vector( 16-1 downto 0 );
-  signal gateway_in_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub_s_net : std_logic_vector( 14-1 downto 0 );
   signal register_q_net : std_logic_vector( 14-1 downto 0 );
   signal addsub1_s_net : std_logic_vector( 12-1 downto 0 );
-  signal addsub_s_net : std_logic_vector( 14-1 downto 0 );
+  signal clk_net : std_logic;
+  signal convert_dout_net : std_logic_vector( 8-1 downto 0 );
+  signal ce_net : std_logic;
 begin
   out1 <= rom_data_net;
-  gateway_in_net <= in1;
+  modulate_step_size_net <= in1;
   clk_net <= clk_1;
   ce_net <= ce_1;
   addsub : entity xil_defaultlib.sysgen_addsub_b01fd393dc 
   port map (
     clr => '0',
     a => register_q_net,
-    b => gateway_in_net,
+    b => modulate_step_size_net,
     clk => clk_net,
     ce => ce_net,
     s => addsub_s_net
@@ -114,7 +114,7 @@ entity sin_wave_demodulate_algorithm is
     tvalid_in : in std_logic_vector( 1-1 downto 0 );
     tdata_in : in std_logic_vector( 1-1 downto 0 );
     tlast_in : in std_logic_vector( 1-1 downto 0 );
-    gateway_in : in std_logic_vector( 16-1 downto 0 );
+    modulate_step_size : in std_logic_vector( 16-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     tvalid_out : out std_logic_vector( 1-1 downto 0 );
@@ -123,18 +123,18 @@ entity sin_wave_demodulate_algorithm is
   );
 end sin_wave_demodulate_algorithm;
 architecture structural of sin_wave_demodulate_algorithm is 
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mult_p_net : std_logic_vector( 16-1 downto 0 );
+  signal modulate_step_size_net : std_logic_vector( 16-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal gateway_in_net : std_logic_vector( 16-1 downto 0 );
+  signal rom_data_net : std_logic_vector( 16-1 downto 0 );
   signal tdata_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal shift_op_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal rom_data_net : std_logic_vector( 16-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal shift_op_net : std_logic_vector( 32-1 downto 0 );
-  signal mult_p_net : std_logic_vector( 16-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   tvalid_out <= delay3_q_net;
   tdata_out <= convert_dout_net;
@@ -142,12 +142,12 @@ begin
   logical_y_net <= tvalid_in;
   tdata_slice_y_net <= tdata_in;
   tlast_slice_y_net <= tlast_in;
-  gateway_in_net <= gateway_in;
+  modulate_step_size_net <= modulate_step_size;
   clk_net <= clk_1;
   ce_net <= ce_1;
   modulate : entity xil_defaultlib.sin_wave_demodulate_modulate 
   port map (
-    in1 => gateway_in_net,
+    in1 => modulate_step_size_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out1 => rom_data_net
@@ -269,21 +269,21 @@ entity sin_wave_demodulate_master_fifo is
   );
 end sin_wave_demodulate_master_fifo;
 architecture structural of sin_wave_demodulate_master_fifo is 
-  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal concat1_y_net : std_logic_vector( 33-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 33-1 downto 0 );
   signal fifo_dout_net : std_logic_vector( 33-1 downto 0 );
-  signal fifo_af_net : std_logic;
+  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
   signal fifo_empty_net : std_logic;
   signal fifo_full_net : std_logic;
+  signal fifo_af_net : std_logic;
 begin
   m_axis_tvalid <= inverter4_op_net;
   m_axis_tdata <= tdata_slice_y_net;
@@ -391,20 +391,20 @@ entity sin_wave_demodulate_slave_fifo is
 end sin_wave_demodulate_slave_fifo;
 architecture structural of sin_wave_demodulate_slave_fifo is 
   signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal concat_y_net : std_logic_vector( 2-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
   signal fifo_dout_net : std_logic_vector( 2-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tdata_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal concat_y_net : std_logic_vector( 2-1 downto 0 );
+  signal ce_net : std_logic;
+  signal tdata_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
   signal fifo_empty_net : std_logic;
   signal fifo_full_net : std_logic;
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 1-1 downto 0 );
 begin
   tvalid_in <= logical_y_net;
   tdata_in <= tdata_slice_y_net;
@@ -510,7 +510,7 @@ entity sin_wave_demodulate_dut is
     s_axis_tdata : in std_logic_vector( 1-1 downto 0 );
     s_axis_tlast : in std_logic_vector( 1-1 downto 0 );
     m_axis_tready : in std_logic_vector( 1-1 downto 0 );
-    gateway_in : in std_logic_vector( 16-1 downto 0 );
+    modulate_step_size : in std_logic_vector( 16-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     m_axis_tvalid : out std_logic_vector( 1-1 downto 0 );
@@ -520,23 +520,23 @@ entity sin_wave_demodulate_dut is
   );
 end sin_wave_demodulate_dut;
 architecture structural of sin_wave_demodulate_dut is 
-  signal clk_net : std_logic;
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
   signal ce_net : std_logic;
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal tdata_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal modulate_step_size_net : std_logic_vector( 16-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal s_axis_tdata_net : std_logic_vector( 1-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
   signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal gateway_in_net : std_logic_vector( 16-1 downto 0 );
   signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 1-1 downto 0 );
   signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
 begin
   m_axis_tvalid <= inverter4_op_net;
@@ -547,7 +547,7 @@ begin
   s_axis_tdata_net <= s_axis_tdata;
   s_axis_tlast_net <= s_axis_tlast;
   m_axis_tready_net <= m_axis_tready;
-  gateway_in_net <= gateway_in;
+  modulate_step_size_net <= modulate_step_size;
   clk_net <= clk_1;
   ce_net <= ce_1;
   algorithm : entity xil_defaultlib.sin_wave_demodulate_algorithm 
@@ -555,7 +555,7 @@ begin
     tvalid_in => logical_y_net,
     tdata_in => tdata_slice_y_net,
     tlast_in => tlast_slice_y_net,
-    gateway_in => gateway_in_net,
+    modulate_step_size => modulate_step_size_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     tvalid_out => delay3_q_net,
@@ -600,7 +600,7 @@ entity sin_wave_demodulate_struct is
     s_axis_tdata : in std_logic_vector( 1-1 downto 0 );
     s_axis_tlast : in std_logic_vector( 1-1 downto 0 );
     s_axis_tvalid : in std_logic_vector( 1-1 downto 0 );
-    gateway_in : in std_logic_vector( 16-1 downto 0 );
+    modulate_step_size : in std_logic_vector( 16-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     m_axis_tdata : out std_logic_vector( 32-1 downto 0 );
@@ -610,17 +610,17 @@ entity sin_wave_demodulate_struct is
   );
 end sin_wave_demodulate_struct;
 architecture structural of sin_wave_demodulate_struct is 
-  signal ce_net : std_logic;
-  signal gateway_in_net : std_logic_vector( 16-1 downto 0 );
-  signal clk_net : std_logic;
   signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal modulate_step_size_net : std_logic_vector( 16-1 downto 0 );
   signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 1-1 downto 0 );
   signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal s_axis_tdata_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
 begin
   m_axis_tdata <= tdata_slice_y_net;
   m_axis_tlast <= tlast_slice_y_net;
@@ -630,7 +630,7 @@ begin
   s_axis_tlast_net <= s_axis_tlast;
   s_axis_tready <= inverter1_op_net;
   s_axis_tvalid_net <= s_axis_tvalid;
-  gateway_in_net <= gateway_in;
+  modulate_step_size_net <= modulate_step_size;
   clk_net <= clk_1;
   ce_net <= ce_1;
   dut : entity xil_defaultlib.sin_wave_demodulate_dut 
@@ -639,7 +639,7 @@ begin
     s_axis_tdata => s_axis_tdata_net,
     s_axis_tlast => s_axis_tlast_net,
     m_axis_tready => m_axis_tready_net,
-    gateway_in => gateway_in_net,
+    modulate_step_size => modulate_step_size_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     m_axis_tvalid => inverter4_op_net,
@@ -688,7 +688,7 @@ entity sin_wave_demodulate is
     s_axis_tdata : in std_logic_vector( 1-1 downto 0 );
     s_axis_tlast : in std_logic_vector( 1-1 downto 0 );
     s_axis_tvalid : in std_logic_vector( 1-1 downto 0 );
-    gateway_in : in std_logic_vector( 16-1 downto 0 );
+    modulate_step_size : in std_logic_vector( 16-1 downto 0 );
     clk : in std_logic;
     m_axis_tdata : out std_logic_vector( 32-1 downto 0 );
     m_axis_tlast : out std_logic_vector( 1-1 downto 0 );
@@ -716,7 +716,7 @@ begin
     s_axis_tdata => s_axis_tdata,
     s_axis_tlast => s_axis_tlast,
     s_axis_tvalid => s_axis_tvalid,
-    gateway_in => gateway_in,
+    modulate_step_size => modulate_step_size,
     clk_1 => clk_1_net,
     ce_1 => ce_1_net,
     m_axis_tdata => m_axis_tdata,

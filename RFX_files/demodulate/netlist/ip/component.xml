@@ -122,7 +122,7 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>gateway_in</spirit:name>
+      <spirit:name>modulate_step_size</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -132,14 +132,14 @@ mediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spir
             <spirit:name>DATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>gateway_in</spirit:name>
+            <spirit:name>modulate_step_size</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.GATEWAY_IN.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} signed {attribs {resolve_type i
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.MODULATE_STEP_SIZE.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} signed {attribs {resolve_type i
 mmediate dependency {} format bool minimum {} maximum {}} value true}}}}}}</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
@@ -263,7 +263,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value true}}}}}}</spir
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>gateway_in</spirit:name>
+        <spirit:name>modulate_step_size</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -433,7 +433,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value true}}}}}}</spir
       <spirit:file>
         <spirit:name>hdl/sin_wave_demodulate.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0306b402</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7dcc9c7c</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -556,8 +556,8 @@ mmediate dependency {} format bool minimum {} maximum {}} value true}}}}}}</spir
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>363694687</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-11-28T10:18:42Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>364492315</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-12-07T15:52:47Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>

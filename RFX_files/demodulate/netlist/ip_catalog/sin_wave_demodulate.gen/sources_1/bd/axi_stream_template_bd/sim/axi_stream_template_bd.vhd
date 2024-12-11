@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Thu Nov 28 10:18:50 2024
---Host        : EEE-R448-29 running 64-bit major release  (build 9200)
+--Date        : Sat Dec  7 15:53:08 2024
+--Host        : EEE-R448-01 running 64-bit major release  (build 9200)
 --Command     : generate_target axi_stream_template_bd.bd
 --Design      : axi_stream_template_bd
 --Purpose     : IP block netlist
@@ -15,11 +15,11 @@ use UNISIM.VCOMPONENTS.ALL;
 entity axi_stream_template_bd is
   port (
     clk : in STD_LOGIC;
-    gateway_in : in STD_LOGIC_VECTOR ( 15 downto 0 );
     m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    modulate_step_size : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axis_tdata : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tlast : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tready : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -38,7 +38,7 @@ architecture STRUCTURE of axi_stream_template_bd is
     s_axis_tdata : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tlast : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    gateway_in : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    modulate_step_size : in STD_LOGIC_VECTOR ( 15 downto 0 );
     clk : in STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -51,7 +51,7 @@ architecture STRUCTURE of axi_stream_template_bd is
   signal axi_stream_template_1_m_axis_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
   signal axi_stream_template_1_m_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal clk_1 : STD_LOGIC;
-  signal gateway_in_1 : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal modulate_step_size_1 : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal s_axis_1_TDATA : STD_LOGIC_VECTOR ( 0 to 0 );
   signal s_axis_1_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
   signal s_axis_1_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -60,13 +60,13 @@ architecture STRUCTURE of axi_stream_template_bd is
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 CLK.CLK CLK";
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF m_axis:s_axis, CLK_DOMAIN axi_stream_template_bd_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
-  attribute X_INTERFACE_INFO of gateway_in : signal is "xilinx.com:signal:data:1.0 DATA.GATEWAY_IN DATA";
-  attribute X_INTERFACE_PARAMETER of gateway_in : signal is "XIL_INTERFACENAME DATA.GATEWAY_IN, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 m_axis TDATA";
   attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, CLK_DOMAIN axi_stream_template_bd_clk, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, PHASE 0.0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of m_axis_tlast : signal is "xilinx.com:interface:axis:1.0 m_axis TLAST";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 m_axis TREADY";
   attribute X_INTERFACE_INFO of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 m_axis TVALID";
+  attribute X_INTERFACE_INFO of modulate_step_size : signal is "xilinx.com:signal:data:1.0 DATA.MODULATE_STEP_SIZE DATA";
+  attribute X_INTERFACE_PARAMETER of modulate_step_size : signal is "XIL_INTERFACENAME DATA.MODULATE_STEP_SIZE, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 s_axis TDATA";
   attribute X_INTERFACE_PARAMETER of s_axis_tdata : signal is "XIL_INTERFACENAME s_axis, CLK_DOMAIN axi_stream_template_bd_clk, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, PHASE 0.0, TDATA_NUM_BYTES 0, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of s_axis_tlast : signal is "xilinx.com:interface:axis:1.0 s_axis TLAST";
@@ -75,10 +75,10 @@ architecture STRUCTURE of axi_stream_template_bd is
 begin
   axi_stream_template_1_m_axis_TREADY(0) <= m_axis_tready(0);
   clk_1 <= clk;
-  gateway_in_1(15 downto 0) <= gateway_in(15 downto 0);
   m_axis_tdata(31 downto 0) <= axi_stream_template_1_m_axis_TDATA(31 downto 0);
   m_axis_tlast(0) <= axi_stream_template_1_m_axis_TLAST(0);
   m_axis_tvalid(0) <= axi_stream_template_1_m_axis_TVALID(0);
+  modulate_step_size_1(15 downto 0) <= modulate_step_size(15 downto 0);
   s_axis_1_TDATA(0) <= s_axis_tdata(0);
   s_axis_1_TLAST(0) <= s_axis_tlast(0);
   s_axis_1_TVALID(0) <= s_axis_tvalid(0);
@@ -86,11 +86,11 @@ begin
 axi_stream_template_1: component axi_stream_template_bd_axi_stream_template_1_0
      port map (
       clk => clk_1,
-      gateway_in(15 downto 0) => gateway_in_1(15 downto 0),
       m_axis_tdata(31 downto 0) => axi_stream_template_1_m_axis_TDATA(31 downto 0),
       m_axis_tlast(0) => axi_stream_template_1_m_axis_TLAST(0),
       m_axis_tready(0) => axi_stream_template_1_m_axis_TREADY(0),
       m_axis_tvalid(0) => axi_stream_template_1_m_axis_TVALID(0),
+      modulate_step_size(15 downto 0) => modulate_step_size_1(15 downto 0),
       s_axis_tdata(0) => s_axis_1_TDATA(0),
       s_axis_tlast(0) => s_axis_1_TLAST(0),
       s_axis_tready(0) => s_axis_1_TREADY(0),

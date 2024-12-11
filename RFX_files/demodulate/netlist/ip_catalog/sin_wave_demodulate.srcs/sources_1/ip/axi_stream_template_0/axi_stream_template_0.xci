@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "axi_stream_template_0",
     "component_reference": "strath.ac.uk:SysGen:axi_stream_template:1.0",
-    "ip_revision": "363694687",
+    "ip_revision": "364492315",
     "gen_directory": "../../../../sin_wave_demodulate.gen/sources_1/ip/axi_stream_template_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "363694687" } ],
+        "IPREVISION": [ { "value": "364492315" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../sin_wave_demodulate.gen/sources_1/ip/axi_stream_template_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -40,7 +40,7 @@
         "s_axis_tdata": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "s_axis_tlast": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "s_axis_tvalid": [ { "direction": "in", "size_left": "0", "size_right": "0" } ],
-        "gateway_in": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "modulate_step_size": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "clk": [ { "direction": "in" } ],
         "m_axis_tdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "m_axis_tlast": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
@@ -118,7 +118,7 @@
             "CLK": [ { "physical_name": "clk" } ]
           }
         },
-        "gateway_in": {
+        "modulate_step_size": {
           "vlnv": "xilinx.com:signal:data:1.0",
           "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
           "mode": "slave",
@@ -126,7 +126,7 @@
             "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}", "value_src": "constant", "usage": "all" } ]
           },
           "port_maps": {
-            "DATA": [ { "physical_name": "gateway_in" } ]
+            "DATA": [ { "physical_name": "modulate_step_size" } ]
           }
         }
       }

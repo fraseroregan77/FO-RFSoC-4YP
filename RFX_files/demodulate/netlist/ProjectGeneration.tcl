@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {axi_stream_template}
-	set IP_Revision {363694687}
+	set IP_Revision {364492315}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {strath.ac.uk}
@@ -54,26 +54,26 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set SimulationTime {1500210.00000000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
-	set TargetDir {C:/Users/clb20123/Documents/RFX_files/demodulate/netlist}
+	set TargetDir {C:/Users/clb20123/Documents/demodulate/netlist}
 	set TopLevelModule {sin_wave_demodulate}
 	set TopLevelSimulinkHandle 0.000244141
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
-	dict set TopLevelPortInterface gateway_in Name {gateway_in}
-	dict set TopLevelPortInterface gateway_in Type Fix_16_12
-	dict set TopLevelPortInterface gateway_in ArithmeticType xlSigned
-	dict set TopLevelPortInterface gateway_in BinaryPoint 12
-	dict set TopLevelPortInterface gateway_in Width 16
-	dict set TopLevelPortInterface gateway_in DatFile {sin_wave_demodulate_dut_algorithm_gateway_in.dat}
-	dict set TopLevelPortInterface gateway_in IconText {Gateway In}
-	dict set TopLevelPortInterface gateway_in Direction in
-	dict set TopLevelPortInterface gateway_in Period 1
-	dict set TopLevelPortInterface gateway_in Interface 0
-	dict set TopLevelPortInterface gateway_in InterfaceName {}
-	dict set TopLevelPortInterface gateway_in InterfaceString {DATA}
-	dict set TopLevelPortInterface gateway_in ClockDomain {sin_wave_demodulate}
-	dict set TopLevelPortInterface gateway_in Locs {}
-	dict set TopLevelPortInterface gateway_in IOStandard {}
+	dict set TopLevelPortInterface modulate_step_size Name {modulate_step_size}
+	dict set TopLevelPortInterface modulate_step_size Type Fix_16_12
+	dict set TopLevelPortInterface modulate_step_size ArithmeticType xlSigned
+	dict set TopLevelPortInterface modulate_step_size BinaryPoint 12
+	dict set TopLevelPortInterface modulate_step_size Width 16
+	dict set TopLevelPortInterface modulate_step_size DatFile {sin_wave_demodulate_dut_algorithm_modulate_step_size.dat}
+	dict set TopLevelPortInterface modulate_step_size IconText {Modulate_step_size}
+	dict set TopLevelPortInterface modulate_step_size Direction in
+	dict set TopLevelPortInterface modulate_step_size Period 1
+	dict set TopLevelPortInterface modulate_step_size Interface 0
+	dict set TopLevelPortInterface modulate_step_size InterfaceName {}
+	dict set TopLevelPortInterface modulate_step_size InterfaceString {DATA}
+	dict set TopLevelPortInterface modulate_step_size ClockDomain {sin_wave_demodulate}
+	dict set TopLevelPortInterface modulate_step_size Locs {}
+	dict set TopLevelPortInterface modulate_step_size IOStandard {}
 	dict set TopLevelPortInterface s_axis_tvalid Name {s_axis_tvalid}
 	dict set TopLevelPortInterface s_axis_tvalid Type Bool
 	dict set TopLevelPortInterface s_axis_tvalid ArithmeticType xlUnsigned
