@@ -1,0 +1,16 @@
+In file included from /usr/include/signal.h:328,
+|                  from ./signal.h:52,
+|                  from ../../m4-1.4.18/lib/c-stack.c:49:
+| ../../m4-1.4.18/lib/c-stack.c:55:26: error: missing binary operator before token "("
+|    55 | #elif HAVE_LIBSIGSEGV && SIGSTKSZ < 16384
+|       |                          ^~~~~~~~
+| gcc   -I. -I../../m4-1.4.18/lib   -isystem/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/recipe-sysroot-native/usr/include  ->
+| make[3]: *** [Makefile:1915: c-stack.o] Error 1
+| make[3]: *** Waiting for unfinished jobs....
+| make[3]: Leaving directory '/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/build/lib'
+| make[2]: *** [Makefile:1674: all] Error 2
+| make[2]: Leaving directory '/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/build/lib'
+| make[1]: *** [Makefile:1572: all-recursive] Error 1
+| make[1]: Leaving directory '/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/build'
+| make: *** [Makefile:1528: all] Error 2
+| WARNING: exit code 1 from a shell command.
