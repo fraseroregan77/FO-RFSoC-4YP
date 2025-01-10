@@ -14,3 +14,98 @@ In file included from /usr/include/signal.h:328,
 | make[1]: Leaving directory '/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/x86_64-linux/m4-native/1.4.18-r0/build'
 | make: *** [Makefile:1528: all] Error 2
 | WARNING: exit code 1 from a shell command.
+
+#From 2022 build attempt
+
+Log data follows:
+| DEBUG: Executing python function extend_recipe_sysroot
+| NOTE: Direct dependencies are ['virtual:native:/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/components/yocto/layers/core/meta/recipes-devtools/python/python3-pyyaml_5.4.1.>
+| NOTE: Installed into sysroot: []
+| NOTE: Skipping as already exists in sysroot: ['python3-pyyaml-native', 'patch-native', 'python3-native', 'quilt-native', 'pseudo-native', 'libyaml-native', 'python3-cython-native', 'python3-setuptools->
+| DEBUG: Python function extend_recipe_sysroot finished
+| DEBUG: Executing shell function do_configure
+| MISC_ARG is  -yamlconf /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/zynqmp_generic-xilinx-linux/fsbl-firmware/2022.2+gitAUTOINC+5330a64c8e-r0/fsbl-firmware.>
+| APP_ARG is  -app "Zynq MP FSBL"
+| Using xsct from: /home/testfpga/petalinux/tools/xsct//bin/xsct
+| cmd is: xsct -sdx -nodisp /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/zynqmp_generic-xilinx-linux/fsbl-firmware/2022.2+gitAUTOINC+5330a64c8e-r0/app.tcl -ws>
+| WARNING: sdtgen package cannot be loaded. System Device tree commands will not
+|
+| be available
+| INFO: [Hsi 55-2053] elapsed time for repository (/home/testfpga/petalinux/tools/xsct/data/embeddedsw) loading 0 seconds
+| Opening the hardware design, this may take few seconds.
+| WARNING : No interface that uses file system is available
+|
+| /home/testfpga/petalinux/tools/xsct/tps/lnx64/cmake-3.3.2/bin/cmake: error while loading shared libraries: libidn.so.11: cannot open shared object file: No such file or directory
+| child process exited abnormally
+| Failed to generate cmake files Linux.
+| ERROR: [Hsi 55-1545] Problem running tcl command ::sw_rfdc_v11_1::generate : Failed to generate cmake files Linux.
+|     while executing
+| "error "Failed to generate cmake files Linux.""
+|     (procedure "generate_libmetal" line 74)
+|     invoked from within
+| "generate_libmetal"
+|     (procedure "::sw_rfdc_v11_1::generate" line 8)
+|     invoked from within
+| "::sw_rfdc_v11_1::generate usp_rf_data_converter_0"
+| ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+| Failed to generate bsp for application zynqmp_fsbl
+|     while executing
+| "builtin_platform -addbootdomains "
+|     (procedure "platform" line 440)
+|     invoked from within
+| "platform create -name $params(hwpname) -hw $params(hdf) -out $params(ws)"
+|     invoked from within
+| "if { $params(ws) ne "" } {
+|       #Local Work Space available
+|       if { $params(pname) ne "" } {
+|               # hwpname/bspname is empty then default it to pname+_hwproj/b..."
+|     (file "/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/zynqmp_generic-xilinx-linux/fsbl-firmware/2022.2+gitAUTOINC+..." line 141)
+| WARNING: exit code 1 from a shell command.
+NOTE: recipe fsbl-firmware-2022.2+gitAUTOINC+5330a64c8e-r0: task do_configure: Failed
+NOTE: Tasks Summary: Attempted 2357 tasks of which 491 didn't need to be rerun and 2 failed.
+Log data follows:
+| DEBUG: Executing python function extend_recipe_sysroot
+| NOTE: Direct dependencies are ['virtual:native:/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/components/yocto/layers/core/meta/recipes-devtools/python/python3-pyyaml_5.4.1.>
+| NOTE: Installed into sysroot: []
+| NOTE: Skipping as already exists in sysroot: ['python3-pyyaml-native', 'patch-native', 'python3-native', 'quilt-native', 'pseudo-native', 'libyaml-native', 'python3-cython-native', 'python3-setuptools->
+| DEBUG: Python function extend_recipe_sysroot finished
+| DEBUG: Executing shell function do_configure
+| MISC_ARG is  -yamlconf /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/zynqmp_generic-xilinx-linux/pmu-firmware/2022.2+gitAUTOINC+5330a64c8e-r0/pmu-firmware.ya>
+| APP_ARG is  -app "ZynqMP PMU Firmware"
+| Using xsct from: /home/testfpga/petalinux/tools/xsct//bin/xsct
+| cmd is: xsct -sdx -nodisp /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/zynqmp_generic-xilinx-linux/pmu-firmware/2022.2+gitAUTOINC+5330a64c8e-r0/app.tcl -ws >
+| WARNING: sdtgen package cannot be loaded. System Device tree commands will not
+| 
+| be available
+| INFO: [Hsi 55-2053] elapsed time for repository (/home/testfpga/petalinux/tools/xsct/data/embeddedsw) loading 0 seconds
+| Opening the hardware design, this may take few seconds.
+| WARNING : No interface that uses file system is available
+
+#Also from 2022 build
+
+| /home/testfpga/petalinux/tools/xsct/tps/lnx64/cmake-3.3.2/bin/cmake: error while loading shared libraries: libidn.so.11: cannot open shared object file: No such file or directory
+| child process exited abnormally
+| Failed to generate cmake files Linux.
+| ERROR: [Hsi 55-1545] Problem running tcl command ::sw_rfdc_v11_1::generate : Failed to generate cmake files Linux.
+|     while executing
+| "error "Failed to generate cmake files Linux.""
+|     (procedure "generate_libmetal" line 74)
+|     invoked from within
+| "generate_libmetal"
+|     (procedure "::sw_rfdc_v11_1::generate" line 8)
+|     invoked from within
+| "::sw_rfdc_v11_1::generate usp_rf_data_converter_0"
+| ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+| Failed to generate bsp for application zynqmp_fsbl
+|     while executing
+| "builtin_platform -addbootdomains "
+|     (procedure "platform" line 440)
+|     invoked from within
+| "platform create -name $params(hwpname) -hw $params(hdf) -out $params(ws)"
+|     invoked from within
+| "if { $params(ws) ne "" } {
+|       #Local Work Space available
+|       if { $params(pname) ne "" } {
+|               # hwpname/bspname is empty then default it to pname+_hwproj/b..."
+|     (file "/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2022/build/tmp/work/zynqmp_generic-xilinx-linux/pmu-firmware/2022.2+gitAUTOINC+5..." line 141)
+| WARNING: exit code 1 from a shell command.
