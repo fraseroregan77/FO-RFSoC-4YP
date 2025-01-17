@@ -1,0 +1,87 @@
+WARNING: sysconfig command is DEPRECATED.
+|
+| Only one system configuration will be allowed in a platform.
+| If no system configuration is present, creating a domain will create the system configuration.
+|
+| /home/testfpga/petalinux-2024/components/xsct/gnu/microblaze/lin
+| -- libmetal version: 1.5.0 (/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2024/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/pmu-firmware/2024.1+gitAUTOINC+b173d24682-r0/g>
+| -- Build type:
+| -- Host:    Linux/x86_64
+| -- Target:  Generic/microblaze
+| -- Machine: microblaze_generic
+| -- Looking for include file stdatomic.h
+| -- Looking for include file stdatomic.h - found
+| -- Looking for include file xintc.h
+| -- Looking for include file xintc.h - not found
+| -- Configuring done
+| -- Generating done
+| -- Build files have been written to: /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2024/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/pmu-firmware/2024.1+gitAUTOINC+b173d2>
+| ERROR:set_bsp_conf set dt_setbaud 115200: Cannot set Property "dt_setbaud" with 115200
+|
+| ERROR: Could not find the bsp config parameter.
+| to get the list of valida parameters on "os" run "bsp listparams -os"
+| to get the list of valida parameters on "processor" instance run "bsp listparams -proc"
+| to get the list of valida parameters on "library" run "bsp listparams -lib <libraryname>"
+| ERROR:set_bsp_conf set periph_type_overrides {{BOARD template}}: Cannot set Property "periph_type_overrides" with {BOARD template}
+|
+| ERROR: Could not find the bsp config parameter.
+| to get the list of valida parameters on "os" run "bsp listparams -os"
+| to get the list of valida parameters on "processor" instance run "bsp listparams -proc"
+| to get the list of valida parameters on "library" run "bsp listparams -lib <libraryname>"
+| /home/testfpga/petalinux-2024/components/xsct/gnu/microblaze/lin
+| ERROR: [Common 17-55] 'get_property' expects at least one object.
+| Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+
+
+ERROR: [Hsi 55-1545] Problem running tcl command ::sw_standalone_v9_1::generate : ERROR: [Common 17-55] 'get_property' expects at least one object.
+| Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+| 
+|     while executing
+| "common::get_property IP_NAME [hsi::get_cells -hier $stdin]"
+|     (procedure "::sw_standalone_v9_1::generate" line 449)
+|     invoked from within
+| "::sw_standalone_v9_1::generate standalone"
+|
+| ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+|
+| Failed to generate the platform.
+| Reason: Failed to generate the bsp sources for domain.pmu-firmware_domain
+|
+| Details: ERROR: [Common 17-55] 'get_property' expects at least one object.
+| Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+|
+| ERROR: [Hsi 55-1545] Problem running tcl command ::sw_standalone_v9_1::generate : ERROR: [Common 17-55] 'get_property' expects at least one object.
+| Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+|
+|     while executing
+| "common::get_property IP_NAME [hsi::get_cells -hier $stdin]"
+|     (procedure "::sw_standalone_v9_1::generate" line 449)
+|     invoked from within
+| "::sw_standalone_v9_1::generate standalone"
+|
+| ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+|
+|     while executing
+| "builtin_platform -generate quick"
+|     (procedure "platform" line 631)
+|     invoked from within
+| "platform generate -quick"
+|     invoked from within
+| "if { $params(ws) ne "" } {
+|       #Local Work Space available
+|       if { $params(pname) ne "" } {
+|               # hwpname/bspname is empty then default it to pname+_hwproj/b..."
+|     (file "/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2024/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/pmu-firmware/2024.1+git..." line 141)
+| WARNING: exit code 1 from a shell command.
+
+
+Summary: 2 tasks failed:
+  /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2024/components/yocto/layers/meta-xilinx/meta-xilinx-core/recipes-bsp/device-tree/device-tree.bb:do_compile
+  /home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2024/components/yocto/layers/meta-xilinx/meta-xilinx-standalone/recipes-bsp/embeddedsw/pmu-firmware_2024.1.bb:do_configure
+Summary: There was 1 WARNING message.
+Summary: There were 2 ERROR messages, returning a non-zero exit code.
+[ERROR] Command bitbake petalinux-image-minimal failed
+> Packaging PetaLinux project
+[INFO] Getting Default bit file
+[ERROR] Failed to generate BIF file, File "/home/testfpga/rfx_files/RFX-8440/plnx/fraser_image/fraser_helloworld_2024/images/linux/zynqmp_fsbl.elf" doesnot exist.
+PetaLinux build script completed
