@@ -1,0 +1,90 @@
+Log data follows:
+| DEBUG: Executing shell function do_compile
+| NOTE: make -j 8 KERNEL_SRC=/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source KERNEL_PATH=/home/testfpga/rfx_files/RFX->
+| make -C /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source M=/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rf>
+| make[1]: Entering directory '/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source'
+| make[2]: Entering directory '/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-build-artifacts'
+|   CC [M]  /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/ps-pcie-ep.o
+|   CC [M]  /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-ep-network.o
+|   CC [M]  /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-device.o
+| In file included from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/linkage.h:7,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/kernel.h:17,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-device.c:3:
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-device.c: In function 'zynqmp_device_init':
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/export.h:29:22: error: passing argument 1 of 'class_cr>
+|    29 | #define THIS_MODULE (&__this_module)
+|       |                     ~^~~~~~~~~~~~~~~
+|       |                      |
+|       |                      struct module *
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-device.c:255:40: note: in expansion of macro 'THIS_>
+|   255 |    zynqmp_SocSysfsClass = class_create(THIS_MODULE, DEVICE_NAME);
+|       |                                        ^~~~~~~~~~~
+| In file included from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/device.h:31,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/cdev.h:8,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-device.c:9:
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/device/class.h:230:54: note: expected 'const char *' b>
+|   230 | struct class * __must_check class_create(const char *name);
+|       |                                          ~~~~~~~~~~~~^~~~
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-device.c:255:27: error: too many arguments to funct>
+|   255 |    zynqmp_SocSysfsClass = class_create(THIS_MODULE, DEVICE_NAME);
+|       |                           ^~~~~~~~~~~~
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/device/class.h:230:29: note: declared here
+|   230 | struct class * __must_check class_create(const char *name);
+|       |                             ^~~~~~~~~~~~
+| cc1: some warnings being treated as errors
+| make[4]: *** [/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/scripts/Makefile.build:243: /home/testfpga/rfx_files/R>
+| make[4]: *** Waiting for unfinished jobs....
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-ep-network.c: In function 'zynqmp_network_open':
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-ep-network.c:67:14: warning: passing argument 1 of >
+|    67 |    memcpy(dev->dev_addr, mac, 6);
+|       |           ~~~^~~~~~~~~~
+
+In file included from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/string.h:60,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/bitmap.h:11,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/cpumask.h:12,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/smp.h:13,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/arch/arm64/include/asm/arch_timer.h:18,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/arch/arm64/include/asm/timex.h:8,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/timex.h:67,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/time32.h:13,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/time.h:60,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/arch/arm64/include/asm/stat.h:12,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/stat.h:6,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/include/linux/module.h:13,
+|                  from /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-ep-network.c:1:
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/arch/arm64/include/asm/string.h:35:21: note: expected 'void *' but a>
+|    35 | extern void *memcpy(void *, const void *, __kernel_size_t);
+|       |                     ^~~~~~
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-ep-network.c: In function 'zynqmp_network_header':
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work/zynqmp_generic_xczu43dr-xilinx-linux/ps-pcie-ep/1.0-r0/zynqmp-ep-network.c:317:14: warning: passing argument 1 of>
+|   317 |    memcpy(dev->dev_addr, mac, dev->addr_len);
+|       |           ~~~^~~~~~~~~~
+| /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/arch/arm64/include/asm/string.h:35:21: note: expected 'void *' but a>
+|    35 | extern void *memcpy(void *, const void *, __kernel_size_t);
+|       |                     ^~~~~~
+| make[3]: *** [/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/Makefile:1913: /home/testfpga/rfx_files/RFX-8440/plnx/>
+| make[2]: *** [/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source/Makefile:234: __sub-make] Error 2
+| make[2]: Leaving directory '/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-build-artifacts'
+| make[1]: *** [Makefile:234: __sub-make] Error 2
+| make[1]: Leaving directory '/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/build/tmp/work-shared/zynqmp-generic-xczu43dr/kernel-source'
+| make: *** [Makefile:11: all] Error 2
+| ERROR: oe_runmake failed
+| WARNING: exit code 1 from a shell command.
+NOTE: recipe ps-pcie-ep-1.0-r0: task do_compile: Failed
+NOTE: recipe linux-xlnx-6.6.10-xilinx-v2024.1+gitAUTOINC+3af4295e00-r0: task do_install: Succeeded
+NOTE: recipe si5340-consumer-1.0-r0: task do_install: Started
+NOTE: recipe make-mod-scripts-1.0-r0: task do_packagedata: Succeeded
+NOTE: recipe si5340-consumer-1.0-r0: task do_install: Succeeded
+NOTE: Tasks Summary: Attempted 6007 tasks of which 5038 didn't need to be rerun and 1 failed.
+
+Summary: 1 task failed:
+  /home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/project-spec/meta-user/recipes-modules/ps-pcie-ep/ps-pcie-ep.bb:do_compile
+Summary: There was 1 WARNING message.
+Summary: There were 2 ERROR messages, returning a non-zero exit code.
+[ERROR] Command bitbake petalinux-image-minimal failed
+> Packaging PetaLinux project
+[NOTE] Argument: "--boot" has been deprecated. It is recommended to start using new python command line Argument.
+[NOTE] Use: petalinux-package boot [OPTIONS]
+[INFO] Getting Default bit file
+[ERROR] Failed to generate BIF file, File "/home/testfpga/rfx_files/RFX-8440/plnx/rfx8440_2x100gbe/rfx8440-2x100gbe/images/linux/zynqmp_fsbl.elf" doesnot exist.
+PetaLinux build script completed
