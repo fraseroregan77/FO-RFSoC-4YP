@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Wed Nov 27 09:40:22 2024
---Host        : EEE-R446-29 running 64-bit major release  (build 9200)
+--Date        : Thu Jan 30 14:08:42 2025
+--Host        : EEE-R448-40 running 64-bit major release  (build 9200)
 --Command     : generate_target axi_stream_template_bd_wrapper.bd
 --Design      : axi_stream_template_bd_wrapper
 --Purpose     : IP block netlist

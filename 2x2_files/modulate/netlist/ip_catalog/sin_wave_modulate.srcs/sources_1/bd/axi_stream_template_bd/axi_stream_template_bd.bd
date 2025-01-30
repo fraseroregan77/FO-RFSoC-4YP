@@ -224,7 +224,7 @@
     "components": {
       "axi_stream_template_1": {
         "vlnv": "strath.ac.uk:SysGen:axi_stream_template:1.0",
-        "ip_revision": "363606125",
+        "ip_revision": "369150898",
         "xci_name": "axi_stream_template_bd_axi_stream_template_1_0",
         "xci_path": "ip\\axi_stream_template_bd_axi_stream_template_1_0\\axi_stream_template_bd_axi_stream_template_1_0.xci",
         "inst_hier_path": "axi_stream_template_1"

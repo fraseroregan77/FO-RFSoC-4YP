@@ -4,7 +4,7 @@
     "xci_name": "sin_wave_demodulate_fir_compiler_v7_2_i0",
     "component_reference": "xilinx.com:ip:fir_compiler:7.2",
     "ip_revision": "22",
-    "gen_directory": "../../../../../../../../../users/clb20123/documents/helloworld/2x2_files/vivado_project/vivado_project.tmp/receiver_v1_0_project/Receiver_v1_0_project.gen/sources_1/ip/sin_wave_demodulate_fir_compiler_v7_2_i0",
+    "gen_directory": "../../../../sin_wave_demodulate.gen/sources_1/ip/sin_wave_demodulate_fir_compiler_v7_2_i0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "sin_wave_demodulate_fir_compiler_v7_2_i0", "resolve_type": "user", "usage": "all" } ],
@@ -179,11 +179,11 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "22" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../../../../users/clb20123/documents/helloworld/2x2_files/vivado_project/vivado_project.tmp/receiver_v1_0_project/Receiver_v1_0_project.gen/sources_1/ip/sin_wave_demodulate_fir_compiler_v7_2_i0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../sin_wave_demodulate.gen/sources_1/ip/sin_wave_demodulate_fir_compiler_v7_2_i0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.1" } ],
-        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },
     "boundary": {

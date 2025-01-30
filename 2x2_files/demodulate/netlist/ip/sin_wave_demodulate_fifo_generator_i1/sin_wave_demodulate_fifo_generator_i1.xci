@@ -4,7 +4,7 @@
     "xci_name": "sin_wave_demodulate_fifo_generator_i1",
     "component_reference": "xilinx.com:ip:fifo_generator:13.2",
     "ip_revision": "10",
-    "gen_directory": "../../../../../../../../../users/clb20123/documents/helloworld/2x2_files/vivado_project/vivado_project.tmp/receiver_v1_0_project/Receiver_v1_0_project.gen/sources_1/ip/sin_wave_demodulate_fifo_generator_i1",
+    "gen_directory": "../../../../sin_wave_demodulate.gen/sources_1/ip/sin_wave_demodulate_fifo_generator_i1",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "sin_wave_demodulate_fifo_generator_i1", "resolve_type": "user", "usage": "all" } ],
@@ -398,11 +398,11 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "10" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../../../../users/clb20123/documents/helloworld/2x2_files/vivado_project/vivado_project.tmp/receiver_v1_0_project/Receiver_v1_0_project.gen/sources_1/ip/sin_wave_demodulate_fifo_generator_i1" } ],
+        "OUTPUTDIR": [ { "value": "../../../../sin_wave_demodulate.gen/sources_1/ip/sin_wave_demodulate_fifo_generator_i1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.1" } ],
-        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },
     "boundary": {

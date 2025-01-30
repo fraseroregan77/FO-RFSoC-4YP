@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Nov 27 09:42:07 2024
-# Process ID: 14480
-# Current directory: C:/Users/clb20123/Documents/helloworld/2x2_files/modulate/netlist
+# Start of session at: Thu Jan 30 13:55:05 2025
+# Process ID: 1600
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/modulate/netlist
 # Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
-# Log file: C:/Users/clb20123/Documents/helloworld/2x2_files/modulate/netlist/vivado.log
-# Journal file: C:/Users/clb20123/Documents/helloworld/2x2_files/modulate/netlist\vivado.jou
-# Running On        :EEE-R446-29
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/modulate/netlist/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/modulate/netlist\vivado.jou
+# Running On        :EEE-R448-40
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
-# CPU Frequency     :2496 MHz
-# CPU Physical cores:14
-# CPU Logical cores :20
-# Host memory       :16833 MB
-# Swap memory       :4345 MB
-# Total Virtual     :21179 MB
-# Available Virtual :3625 MB
+# Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8459 MB
+# Swap memory       :7183 MB
+# Total Virtual     :15642 MB
+# Available Virtual :2009 MB
 #-----------------------------------------------------------
 source ProjectGeneration.tcl -notrace
