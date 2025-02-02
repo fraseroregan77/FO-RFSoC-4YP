@@ -13,11 +13,12 @@
     "design_tree": {
       "zynq_ultra_ps_e_0": "",
       "usp_rf_data_converter_0": "",
-      "NCO_data_0": "",
+      "xlconstant_0": "",
+      "Data_generation_0": "",
       "Receiver_0": "",
-      "rst_ps8_0_96M": "",
       "axi_dma": "",
       "axi_smc": "",
+      "rst_ps8_0_96M": "",
       "axi_fifo_mm_s": "",
       "ps8_0_axi_periph": {
         "xbar": "",
@@ -28,8 +29,7 @@
         "m00_couplers": {},
         "m01_couplers": {},
         "m02_couplers": {}
-      },
-      "xlconstant_0": ""
+      }
     },
     "interface_ports": {
       "sysref_in": {
@@ -272,37 +272,81 @@
         "xci_path": "ip\\helloworld_usp_rf_data_converter_0_2\\helloworld_usp_rf_data_converter_0_2.xci",
         "inst_hier_path": "usp_rf_data_converter_0",
         "parameters": {
+          "ADC0_Outclk_Freq": {
+            "value": "256.000"
+          },
+          "ADC0_PLL_Enable": {
+            "value": "true"
+          },
+          "ADC0_Refclk_Freq": {
+            "value": "204.800"
+          },
+          "ADC0_Sampling_Rate": {
+            "value": "4.096"
+          },
+          "ADC_Data_Type00": {
+            "value": "0"
+          },
+          "ADC_Decimation_Mode00": {
+            "value": "2"
+          },
+          "DAC0_Outclk_Freq": {
+            "value": "128.000"
+          },
+          "DAC0_PLL_Enable": {
+            "value": "true"
+          },
+          "DAC0_Refclk_Freq": {
+            "value": "204.800"
+          },
+          "DAC0_Sampling_Rate": {
+            "value": "4.096"
+          },
+          "DAC_Data_Type00": {
+            "value": "0"
+          },
+          "DAC_Mixer_Type00": {
+            "value": "0"
+          },
           "DAC_Slice00_Enable": {
             "value": "true"
           }
         }
       },
-      "NCO_data_0": {
-        "vlnv": "strath.ac.uk:SysGen:NCO_data:1.0",
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "helloworld_xlconstant_0_0",
+        "xci_path": "ip\\helloworld_xlconstant_0_0\\helloworld_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "63"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "Data_generation_0": {
+        "vlnv": "strath.ac.uk:SysGen:Data_generation:1.0",
         "ip_revision": "1",
-        "xci_name": "helloworld_NCO_data_0_0",
-        "xci_path": "ip\\helloworld_NCO_data_0_0\\helloworld_NCO_data_0_0.xci",
-        "inst_hier_path": "NCO_data_0"
+        "xci_name": "helloworld_Data_generation_0_0",
+        "xci_path": "ip\\helloworld_Data_generation_0_0\\helloworld_Data_generation_0_0.xci",
+        "inst_hier_path": "Data_generation_0"
       },
       "Receiver_0": {
         "vlnv": "strath.ac.uk:SysGen:Receiver:1.0",
         "ip_revision": "1",
-        "xci_name": "helloworld_Receiver_0_1",
-        "xci_path": "ip\\helloworld_Receiver_0_1\\helloworld_Receiver_0_1.xci",
+        "xci_name": "helloworld_Receiver_0_2",
+        "xci_path": "ip\\helloworld_Receiver_0_2\\helloworld_Receiver_0_2.xci",
         "inst_hier_path": "Receiver_0"
-      },
-      "rst_ps8_0_96M": {
-        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "ip_revision": "15",
-        "xci_name": "helloworld_rst_ps8_0_96M_3",
-        "xci_path": "ip\\helloworld_rst_ps8_0_96M_3\\helloworld_rst_ps8_0_96M_3.xci",
-        "inst_hier_path": "rst_ps8_0_96M"
       },
       "axi_dma": {
         "vlnv": "xilinx.com:ip:axi_dma:7.1",
         "ip_revision": "32",
-        "xci_name": "helloworld_axi_dma_4",
-        "xci_path": "ip\\helloworld_axi_dma_4\\helloworld_axi_dma_4.xci",
+        "xci_name": "helloworld_axi_dma_5",
+        "xci_path": "ip\\helloworld_axi_dma_5\\helloworld_axi_dma_5.xci",
         "inst_hier_path": "axi_dma",
         "parameters": {
           "c_include_mm2s_dre": {
@@ -353,8 +397,8 @@
       "axi_smc": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
         "ip_revision": "23",
-        "xci_name": "helloworld_axi_smc_4",
-        "xci_path": "ip\\helloworld_axi_smc_4\\helloworld_axi_smc_4.xci",
+        "xci_name": "helloworld_axi_smc_5",
+        "xci_path": "ip\\helloworld_axi_smc_5\\helloworld_axi_smc_5.xci",
         "inst_hier_path": "axi_smc",
         "parameters": {
           "NUM_SI": {
@@ -411,11 +455,18 @@
           }
         }
       },
+      "rst_ps8_0_96M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "15",
+        "xci_name": "helloworld_rst_ps8_0_96M_4",
+        "xci_path": "ip\\helloworld_rst_ps8_0_96M_4\\helloworld_rst_ps8_0_96M_4.xci",
+        "inst_hier_path": "rst_ps8_0_96M"
+      },
       "axi_fifo_mm_s": {
         "vlnv": "xilinx.com:ip:axi_fifo_mm_s:4.3",
         "ip_revision": "3",
-        "xci_name": "helloworld_axi_fifo_mm_s_4",
-        "xci_path": "ip\\helloworld_axi_fifo_mm_s_4\\helloworld_axi_fifo_mm_s_4.xci",
+        "xci_name": "helloworld_axi_fifo_mm_s_5",
+        "xci_path": "ip\\helloworld_axi_fifo_mm_s_5\\helloworld_axi_fifo_mm_s_5.xci",
         "inst_hier_path": "axi_fifo_mm_s",
         "parameters": {
           "C_USE_TX_CTRL": {
@@ -428,9 +479,9 @@
       },
       "ps8_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\helloworld_ps8_0_axi_periph_2\\helloworld_ps8_0_axi_periph_2.xci",
+        "xci_path": "ip\\helloworld_ps8_0_axi_periph_3\\helloworld_ps8_0_axi_periph_3.xci",
         "inst_hier_path": "ps8_0_axi_periph",
-        "xci_name": "helloworld_ps8_0_axi_periph_2",
+        "xci_name": "helloworld_ps8_0_axi_periph_3",
         "parameters": {
           "NUM_MI": {
             "value": "3"
@@ -541,8 +592,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "32",
-            "xci_name": "helloworld_xbar_1",
-            "xci_path": "ip\\helloworld_xbar_1\\helloworld_xbar_1.xci",
+            "xci_name": "helloworld_xbar_2",
+            "xci_path": "ip\\helloworld_xbar_2\\helloworld_xbar_2.xci",
             "inst_hier_path": "ps8_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
@@ -642,8 +693,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "helloworld_auto_pc_1",
-                "xci_path": "ip\\helloworld_auto_pc_1\\helloworld_auto_pc_1.xci",
+                "xci_name": "helloworld_auto_pc_0",
+                "xci_path": "ip\\helloworld_auto_pc_0\\helloworld_auto_pc_0.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -950,27 +1001,12 @@
             ]
           }
         }
-      },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "helloworld_xlconstant_0_0",
-        "xci_path": "ip\\helloworld_xlconstant_0_0\\helloworld_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "63"
-          },
-          "CONST_WIDTH": {
-            "value": "12"
-          }
-        }
       }
     },
     "interface_nets": {
-      "NCO_data_0_m_axis": {
+      "Data_generation_0_m_axis": {
         "interface_ports": [
-          "NCO_data_0/m_axis",
+          "Data_generation_0/m_axis",
           "usp_rf_data_converter_0/s00_axis"
         ]
       },
@@ -988,7 +1024,7 @@
       },
       "axi_dma_M_AXIS_MM2S": {
         "interface_ports": [
-          "NCO_data_0/s_axis",
+          "Data_generation_0/s_axis",
           "axi_dma/M_AXIS_MM2S"
         ]
       },
@@ -1085,17 +1121,17 @@
       "zynq_ultra_ps_e_0_pl_clk0": {
         "ports": [
           "zynq_ultra_ps_e_0/pl_clk0",
-          "zynq_ultra_ps_e_0/saxihp0_fpd_aclk",
-          "rst_ps8_0_96M/slowest_sync_clk",
-          "NCO_data_0/clk",
-          "Receiver_0/clk",
           "axi_dma/m_axi_mm2s_aclk",
           "axi_smc/aclk",
+          "zynq_ultra_ps_e_0/saxihp0_fpd_aclk",
+          "rst_ps8_0_96M/slowest_sync_clk",
+          "Data_generation_0/clk",
           "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
           "ps8_0_axi_periph/S00_ACLK",
           "axi_fifo_mm_s/s_axi_aclk",
           "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/ACLK",
+          "Receiver_0/clk",
           "axi_dma/s_axi_lite_aclk",
           "ps8_0_axi_periph/M01_ACLK",
           "usp_rf_data_converter_0/m0_axis_aclk",

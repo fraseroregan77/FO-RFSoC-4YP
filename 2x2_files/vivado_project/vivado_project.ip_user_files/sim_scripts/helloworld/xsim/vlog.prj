@@ -1,0 +1,65 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_zynq_ultra_ps_e_0_2/sim/helloworld_zynq_ultra_ps_e_0_2_vip_wrapper.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_block.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_por_fsm_top.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_bgt_fsm.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_device_rom.sv" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_por_fsm.sv" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_por_fsm_disabled.sv" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_tile_config.sv" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_constants_config.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_drp_arbiter.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_drp_arbiter_adc.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_register_decode.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_address_decoder.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_axi_lite_ipif.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_counter_f.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_pselect_f.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_slave_attachment.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_rf_wrapper.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_drp_control_top.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_drp_control.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_drp_access_ctrl.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_irq_req_ack.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_irq_sync.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2bufg_gt_ctrl.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_overvol_irq.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_powerup_state_irq.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2_rst_cnt.v" \
+"../../../bd/helloworld/ip/helloworld_usp_rf_data_converter_0_2/synth/helloworld_usp_rf_data_converter_0_2.v" \
+"../../../bd/helloworld/ip/helloworld_xlconstant_0_0/sim/helloworld_xlconstant_0_0.v" \
+"../../../bd/helloworld/ip/helloworld_Data_generation_0_0/sin_wave_modulate_fifo_generator_i0/sim/sin_wave_modulate_fifo_generator_i0.v" \
+"../../../bd/helloworld/ip/helloworld_Data_generation_0_0/sin_wave_modulate_fifo_generator_i1/sim/sin_wave_modulate_fifo_generator_i1.v" \
+"../../../bd/helloworld/ip/helloworld_Receiver_0_2/sin_wave_demodulate_fifo_generator_i0/sim/sin_wave_demodulate_fifo_generator_i0.v" \
+"../../../bd/helloworld/ip/helloworld_Receiver_0_2/sin_wave_demodulate_fifo_generator_i1/sim/sin_wave_demodulate_fifo_generator_i1.v" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/sim/bd_6589.v" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_0/sim/bd_6589_one_0.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_2/sim/bd_6589_s00mmu_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_3/sim/bd_6589_s00tr_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_4/sim/bd_6589_s00sic_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_5/sim/bd_6589_s00a2s_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_6/sim/bd_6589_sarn_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_7/sim/bd_6589_srn_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_8/sim/bd_6589_m00s2a_0.sv" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/bd_0/ip/ip_9/sim/bd_6589_m00e_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/ec67/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/a317/hdl" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/f0b6/hdl/verilog" --include "../../../../vivado_project.gen/sources_1/bd/helloworld/ipshared/c783/hdl/verilog" \
+"../../../bd/helloworld/ip/helloworld_axi_smc_5/sim/helloworld_axi_smc_5.v" \
+"../../../bd/helloworld/ip/helloworld_xbar_2/sim/helloworld_xbar_2.v" \
+"../../../bd/helloworld/ip/helloworld_auto_ds_0/sim/helloworld_auto_ds_0.v" \
+"../../../bd/helloworld/ip/helloworld_auto_pc_0/sim/helloworld_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
