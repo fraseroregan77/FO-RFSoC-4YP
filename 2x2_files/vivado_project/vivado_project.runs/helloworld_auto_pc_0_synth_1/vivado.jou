@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Feb  2 20:41:16 2025
+# Process ID: 4128
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/helloworld_auto_pc_0_synth_1
+# Command line: vivado.exe -log helloworld_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source helloworld_auto_pc_0.tcl
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/helloworld_auto_pc_0_synth_1/helloworld_auto_pc_0.vds
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/helloworld_auto_pc_0_synth_1\vivado.jou
+# Running On        :EEE-R448-01
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8459 MB
+# Swap memory       :12035 MB
+# Total Virtual     :20494 MB
+# Available Virtual :3117 MB
+#-----------------------------------------------------------
+source helloworld_auto_pc_0.tcl -notrace

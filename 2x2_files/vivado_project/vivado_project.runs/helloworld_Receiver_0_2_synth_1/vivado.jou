@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Feb  2 20:34:26 2025
+# Process ID: 19336
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/helloworld_Receiver_0_2_synth_1
+# Command line: vivado.exe -log helloworld_Receiver_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source helloworld_Receiver_0_2.tcl
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/helloworld_Receiver_0_2_synth_1/helloworld_Receiver_0_2.vds
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/helloworld_Receiver_0_2_synth_1\vivado.jou
+# Running On        :EEE-R448-01
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8459 MB
+# Swap memory       :5791 MB
+# Total Virtual     :14250 MB
+# Available Virtual :2032 MB
+#-----------------------------------------------------------
+source helloworld_Receiver_0_2.tcl -notrace

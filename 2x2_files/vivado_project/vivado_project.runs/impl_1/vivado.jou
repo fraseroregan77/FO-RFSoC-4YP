@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Feb  2 20:45:25 2025
+# Process ID: 5568
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/impl_1
+# Command line: vivado.exe -log helloworld_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source helloworld_wrapper.tcl -notrace
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/impl_1/helloworld_wrapper.vdi
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/vivado_project/vivado_project.runs/impl_1\vivado.jou
+# Running On        :EEE-R448-01
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8459 MB
+# Swap memory       :11240 MB
+# Total Virtual     :19699 MB
+# Available Virtual :10051 MB
+#-----------------------------------------------------------
+source helloworld_wrapper.tcl -notrace
