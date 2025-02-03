@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Nov 28 10:15:17 2024
-# Process ID: 21024
-# Current directory: C:/Users/clb20123/Documents/RFX_files/modulate/netlist
+# Start of session at: Mon Feb  3 21:40:01 2025
+# Process ID: 9204
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/modulate/netlist
 # Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
-# Log file: C:/Users/clb20123/Documents/RFX_files/modulate/netlist/vivado.log
-# Journal file: C:/Users/clb20123/Documents/RFX_files/modulate/netlist\vivado.jou
-# Running On        :EEE-R448-29
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/modulate/netlist/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/modulate/netlist\vivado.jou
+# Running On        :EEE-R448-03
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :8459 MB
-# Swap memory       :7311 MB
-# Total Virtual     :15770 MB
-# Available Virtual :2016 MB
+# Swap memory       :8085 MB
+# Total Virtual     :16544 MB
+# Available Virtual :2862 MB
 #-----------------------------------------------------------
 source ProjectGeneration.tcl -notrace

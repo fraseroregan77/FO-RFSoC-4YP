@@ -4,7 +4,7 @@
     "xci_name": "axi_stream_template_bd_axi_stream_template_1_0",
     "cell_name": "axi_stream_template_1",
     "component_reference": "strath.ac.uk:SysGen:axi_stream_template:1.0",
-    "ip_revision": "363694512",
+    "ip_revision": "369524397",
     "gen_directory": "../../../../../../sin_wave_modulate.gen/sources_1/bd/axi_stream_template_bd/ip/axi_stream_template_bd_axi_stream_template_1_0",
     "parameters": {
       "component_parameters": {
@@ -26,7 +26,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "363694512" } ],
+        "IPREVISION": [ { "value": "369524397" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../sin_wave_modulate.gen/sources_1/bd/axi_stream_template_bd/ip/axi_stream_template_bd_axi_stream_template_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

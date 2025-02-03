@@ -1,43 +1,43 @@
 {
   'Line_135' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco/addsub',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz/addsub',
     'Instance' => 'addsub',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO/AddSub'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz/AddSub'
   },
   'Line_144' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco/addsub1',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz/addsub1',
     'Instance' => 'addsub1',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO/AddSub1'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz/AddSub1'
   },
   'Line_153' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco/convert',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz/convert',
     'Instance' => 'convert',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO/Convert'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz/Convert'
   },
   'Line_174' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco/lfsr',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz/lfsr',
     'Instance' => 'lfsr',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO/LFSR'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz/LFSR'
   },
   'Line_181' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco/rom',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz/rom',
     'Instance' => 'rom',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO/ROM'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz/ROM'
   },
   'Line_199' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco/register_x0',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz/register_x0',
     'Instance' => 'register_x0',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO/Register'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz/Register'
   },
   'Line_258' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate',
-    'Instance' => 'modulate',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate'
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz',
+    'Instance' => 'x10khz',
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz'
   },
   'Line_265' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/nco',
-    'Instance' => 'nco',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/NCO'
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x500mhz',
+    'Instance' => 'x500mhz',
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/500MHz'
   },
   'Line_272' => {
     'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/constant_x0',
@@ -55,9 +55,9 @@
     'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Constant2'
   },
   'Line_29' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate/addsub',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz/addsub',
     'Instance' => 'addsub',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate/AddSub'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz/AddSub'
   },
   'Line_293' => {
     'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/constant3',
@@ -85,9 +85,9 @@
     'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Mult'
   },
   'Line_38' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate/addsub1',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz/addsub1',
     'Instance' => 'addsub1',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate/AddSub1'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz/AddSub1'
   },
   'Line_388' => {
     'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/mux',
@@ -110,9 +110,9 @@
     'SimulinkInstance' => 'sin_wave_modulate/DUT/Master FIFO/Concat1'
   },
   'Line_47' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate/convert',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz/convert',
     'Instance' => 'convert',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate/Convert'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz/Convert'
   },
   'Line_472' => {
     'CodeInstance' => 'sin_wave_modulate_struct/dut/master_fifo/fifo',
@@ -175,9 +175,9 @@
     'SimulinkInstance' => 'sin_wave_modulate/DUT/Slave FIFO/tlast_slice'
   },
   'Line_68' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate/lfsr',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz/lfsr',
     'Instance' => 'lfsr',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate/LFSR'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz/LFSR'
   },
   'Line_715' => {
     'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm',
@@ -195,9 +195,9 @@
     'SimulinkInstance' => 'sin_wave_modulate/DUT/Slave FIFO'
   },
   'Line_75' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate/rom',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz/rom',
     'Instance' => 'rom',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate/ROM'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz/ROM'
   },
   'Line_794' => {
     'CodeInstance' => 'sin_wave_modulate_struct/dut',
@@ -220,8 +220,8 @@
     'SimulinkInstance' => 'sin_wave_modulate'
   },
   'Line_93' => {
-    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/modulate/register_x0',
+    'CodeInstance' => 'sin_wave_modulate_struct/dut/algorithm/x10khz/register_x0',
     'Instance' => 'register_x0',
-    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/Modulate/Register'
+    'SimulinkInstance' => 'sin_wave_modulate/DUT/Algorithm/10KHz/Register'
   }
 }

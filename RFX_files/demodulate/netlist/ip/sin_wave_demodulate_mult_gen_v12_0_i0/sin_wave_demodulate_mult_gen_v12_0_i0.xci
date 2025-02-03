@@ -11,7 +11,7 @@
         "Component_Name": [ { "value": "sin_wave_demodulate_mult_gen_v12_0_i0", "resolve_type": "user", "usage": "all" } ],
         "MultType": [ { "value": "Parallel_Multiplier", "resolve_type": "user", "usage": "all" } ],
         "PortAType": [ { "value": "Unsigned", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "PortAWidth": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "PortAWidth": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PortBType": [ { "value": "Signed", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PortBWidth": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "ConstValue": [ { "value": "129", "resolve_type": "user", "enabled": false, "usage": "all" } ],
@@ -19,7 +19,7 @@
         "Multiplier_Construction": [ { "value": "Use_Mults", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "OptGoal": [ { "value": "Speed", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "Use_Custom_Output_Width": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "OutputWidthHigh": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "OutputWidthHigh": [ { "value": "47", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "OutputWidthLow": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "UseRounding": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
         "RoundPoint": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
@@ -37,11 +37,11 @@
         "C_HAS_CE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_HAS_SCLR": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_LATENCY": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_A_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_A_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_A_TYPE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_B_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_B_TYPE": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_OUT_HIGH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_OUT_HIGH": [ { "value": "47", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_OUT_LOW": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_MULT_TYPE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_CE_OVERRIDES_SCLR": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -79,11 +79,11 @@
     "boundary": {
       "ports": {
         "CLK": [ { "direction": "in", "driver_value": "0x1" } ],
-        "A": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
+        "A": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
         "B": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
         "CE": [ { "direction": "in", "driver_value": "0x1" } ],
         "SCLR": [ { "direction": "in", "driver_value": "0x0" } ],
-        "P": [ { "direction": "out", "size_left": "16", "size_right": "0", "driver_value": "0" } ]
+        "P": [ { "direction": "out", "size_left": "47", "size_right": "0", "driver_value": "0" } ]
       },
       "interfaces": {
         "a_intf": {

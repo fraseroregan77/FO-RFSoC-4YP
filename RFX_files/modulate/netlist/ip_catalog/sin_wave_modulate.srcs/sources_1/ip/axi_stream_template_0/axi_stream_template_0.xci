@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "axi_stream_template_0",
     "component_reference": "strath.ac.uk:SysGen:axi_stream_template:1.0",
-    "ip_revision": "363694512",
+    "ip_revision": "369524397",
     "gen_directory": "../../../../sin_wave_modulate.gen/sources_1/ip/axi_stream_template_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "363694512" } ],
+        "IPREVISION": [ { "value": "369524397" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../sin_wave_modulate.gen/sources_1/ip/axi_stream_template_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

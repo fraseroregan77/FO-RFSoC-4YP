@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x11361DCBFE52B803",
+      "boundary_crc": "0xC8685EFA26CA3D4B",
       "design_src": "SYSGEN",
       "device": "xczu43dr-ffve1156-2-e",
       "gen_directory": "../../../../sin_wave_demodulate.gen/sources_1/bd/axi_stream_template_bd",
@@ -139,7 +139,7 @@
             "value": [
               "xilinx.com:interface:datatypes:1.0 {",
               "TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
-              "maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
               "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
               "}"
             ]
@@ -149,7 +149,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "0"
+            "value": "4"
           },
           "TDEST_WIDTH": {
             "value": "0"
@@ -165,7 +165,7 @@
           "TDATA": {
             "physical_name": "s_axis_tdata",
             "direction": "I",
-            "left": "0",
+            "left": "31",
             "right": "0"
           },
           "TLAST": {
@@ -220,7 +220,7 @@
           }
         }
       },
-      "modulate_step_size": {
+      "gateway_in": {
         "type": "data",
         "direction": "I",
         "left": "15",
@@ -236,7 +236,7 @@
     "components": {
       "axi_stream_template_1": {
         "vlnv": "strath.ac.uk:SysGen:axi_stream_template:1.0",
-        "ip_revision": "364492315",
+        "ip_revision": "369524199",
         "xci_name": "axi_stream_template_bd_axi_stream_template_1_0",
         "xci_path": "ip\\axi_stream_template_bd_axi_stream_template_1_0\\axi_stream_template_bd_axi_stream_template_1_0.xci",
         "inst_hier_path": "axi_stream_template_1"
@@ -263,10 +263,10 @@
           "axi_stream_template_1/clk"
         ]
       },
-      "modulate_step_size_1": {
+      "gateway_in_1": {
         "ports": [
-          "modulate_step_size",
-          "axi_stream_template_1/modulate_step_size"
+          "gateway_in",
+          "axi_stream_template_1/gateway_in"
         ]
       }
     }

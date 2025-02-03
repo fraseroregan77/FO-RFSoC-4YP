@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="axi_stream_template_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1732788974"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1732788974"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1732788974"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1732788956"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1738618835"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1738618835"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1738618835"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1738618830"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\axi_stream_template_bd.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

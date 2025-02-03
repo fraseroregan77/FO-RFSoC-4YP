@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {axi_stream_template}
-	set IP_Revision {363694512}
+	set IP_Revision {369524397}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {strath.ac.uk}
@@ -49,14 +49,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{sin_wave_modulate_clock.xdc}}
 		{{sin_wave_modulate.xdc}}
 	}
-	set SimPeriod 1e-06
-	set SimTime 0.15
-	set SimulationTime {1500210.00000000 ns}
+	set SimPeriod 4.88281e-10
+	set SimTime 4.88281e-05
+	set SimulationTime {1000210.00000000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
-	set TargetDir {C:/Users/clb20123/Documents/RFX_files/modulate/netlist}
+	set TargetDir {C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/modulate/netlist}
 	set TopLevelModule {sin_wave_modulate}
-	set TopLevelSimulinkHandle 0.00012207
+	set TopLevelSimulinkHandle 0.000610352
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface s_axis_tvalid Name {s_axis_tvalid}
