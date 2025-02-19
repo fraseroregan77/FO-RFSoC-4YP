@@ -240,8 +240,7 @@ begin
   
   s_axis_tx_tdata(0) <= nco_driver;
   -- m_axis_tready <= 
-  -- m_axis_tdata <= s_axis_tx_tdata(0)(31 downto 0);
-  
+  -- m_axis_tdata <= s_axis_tx_tdata(0)(31 downto 0);  
   
 --------------------------------------------------------------------------------
 -- Pass-through the ADC user interface and RX interface signals
