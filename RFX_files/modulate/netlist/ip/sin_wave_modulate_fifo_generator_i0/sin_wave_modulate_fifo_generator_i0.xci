@@ -4,7 +4,7 @@
     "xci_name": "sin_wave_modulate_fifo_generator_i0",
     "component_reference": "xilinx.com:ip:fifo_generator:13.2",
     "ip_revision": "10",
-    "gen_directory": "../../../../../../ZUS-RFX-8440_r1.09/RFX-8440/logic/rev_a/vivado/rfx8440_2x100gbe/zu43dr-2_receiver/rfx8440_2x100gbe.tmp/Data_generation_v1_0_project/Data_generation_v1_0_project.gen/sources_1/ip/sin_wave_modulate_fifo_generator_i0",
+    "gen_directory": "../../../../../../ZUS-RFX-8440_r1.09/RFX-8440/logic/rev_a/vivado/rfx8440_2x100gbe/zu43dr-2_black_box_fix/rfx8440_2x100gbe.tmp/Data_generation_v1_0_project/Data_generation_v1_0_project.gen/sources_1/ip/sin_wave_modulate_fifo_generator_i0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "sin_wave_modulate_fifo_generator_i0", "resolve_type": "user", "usage": "all" } ],
@@ -398,7 +398,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "10" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../ZUS-RFX-8440_r1.09/RFX-8440/logic/rev_a/vivado/rfx8440_2x100gbe/zu43dr-2_receiver/rfx8440_2x100gbe.tmp/Data_generation_v1_0_project/Data_generation_v1_0_project.gen/sources_1/ip/sin_wave_modulate_fifo_generator_i0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../ZUS-RFX-8440_r1.09/RFX-8440/logic/rev_a/vivado/rfx8440_2x100gbe/zu43dr-2_black_box_fix/rfx8440_2x100gbe.tmp/Data_generation_v1_0_project/Data_generation_v1_0_project.gen/sources_1/ip/sin_wave_modulate_fifo_generator_i0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.1" } ],
