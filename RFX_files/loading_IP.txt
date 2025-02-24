@@ -1,0 +1,1 @@
+To load the IP into the folder, uncompress the zip file and add that - RFX_files/test_zip_decomp file and load in.
