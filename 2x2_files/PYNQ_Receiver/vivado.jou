@@ -1,4 +1,5 @@
 #-----------------------------------------------------------
+<<<<<<< HEAD
 # Vivado v2024.1 (64-bit)
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
@@ -166,3 +167,18 @@ apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ul
 endgroup
 save_bd_design
 close_bd_design [get_bd_designs work_pls]
+=======
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb 25 13:22:44 2025
+# Process ID: 5424
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4848 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PYNQ_Receiver\PYNQ_Receiver.xpr
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver\vivado.jou
+# Running On: EEE-R343-01, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 4, Host memory: 17060 MB
+#-----------------------------------------------------------
+start_gui
+>>>>>>> e251704ff3ef0a3fe3bdb3f1591de00b05952ff0
