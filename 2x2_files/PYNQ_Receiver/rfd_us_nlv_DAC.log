@@ -534,3 +534,9 @@ show
 # End of Generating Regions for Page 1                                  245.00
 #CMD scrollpos -100 -30
 scrollpos -100 -30
+fullfit
+scrollpos -250 -330
+fullfit
+scrollpos -137 -43
+scrollpos -137 -43
+scrollpos -142 -44

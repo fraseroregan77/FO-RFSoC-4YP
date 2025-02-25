@@ -12,3 +12,447 @@
 # Running On: EEE-R343-01, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 4, Host memory: 17060 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.43) then the current supported version (0.40).
+Data could be potentially be lost
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_usp_rf_data_converter_0_0_synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_zynq_ultra_ps_e_0_0_synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_axis_subset_converter_0_synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_axi_smc_0_synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_usp_rf_data_converter_0_0_impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_zynq_ultra_ps_e_0_0_impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_axis_subset_converter_0_impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2024) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run work_pls_axi_smc_0_impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2024) not recognized by Vivado. 
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demodulate/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.43) then the current supported version (0.40).
+Data could be potentially be lost
+WARNING: [BD 41-1663] The design 'work_pls.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'work_pls.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+work_pls_axi_fifo_mm_s_0
+work_pls_zynq_ultra_ps_e_0_0
+work_pls_usp_rf_data_converter_0_0
+work_pls_Receiver_0_0
+work_pls_axis_subset_converter_0
+work_pls_xbar_0
+work_pls_axi_dma_0
+work_pls_rst_ps8_0_96M_0
+work_pls_auto_pc_0
+work_pls_ps8_0_axi_periph_0
+work_pls_axi_smc_0
+work_pls_xlconstant_0_0
+
+WARNING: [Project 1-231] Project 'PYNQ_Receiver.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2477.039 ; gain = 363.684
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.srcs/sources_1/bd/work_pls/work_pls.bd}
+Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.srcs/sources_1/bd/work_pls/work_pls.bd>...
+Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.6 - usp_rf_data_converter_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
+Adding component instance block -- strath.ac.uk:SysGen:Receiver:1.0 - Receiver_0
+Adding component instance block -- xilinx.com:ip:axi_fifo_mm_s:4.3 - axi_fifo_mm_s
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Successfully read diagram <work_pls> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.srcs/sources_1/bd/work_pls/work_pls.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2525.391 ; gain = 1.094
+save_project_as PYNQ_Receiver_2023 C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023 -force
+WARNING: [IP_Flow 19-2162] IP 'work_pls_axi_smc_0' is locked:
+* Project containing IP 'work_pls_axi_smc_0' is read-only. * IP definition 'AXI SmartConnect (1.0)' for IP 'work_pls_axi_smc_0' (customized with software release 2024.1) has a different revision in the IP Catalog. * IP 'work_pls_axi_smc_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_axis_subset_converter_0' is locked:
+* Project containing IP 'work_pls_axis_subset_converter_0' is read-only. * IP definition 'AXI4-Stream Subset Converter (1.1)' for IP 'work_pls_axis_subset_converter_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_usp_rf_data_converter_0_0' is locked:
+* Project containing IP 'work_pls_usp_rf_data_converter_0_0' is read-only. * IP definition 'Zynq Ultrascale+ RF Data Converter (2.6)' for IP 'work_pls_usp_rf_data_converter_0_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_zynq_ultra_ps_e_0_0' is locked:
+* Project containing IP 'work_pls_zynq_ultra_ps_e_0_0' is read-only. * IP definition 'Zynq UltraScale+ MPSoC (3.5)' for IP 'work_pls_zynq_ultra_ps_e_0_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_usp_rf_data_converter_0_0' is locked:
+* IP definition 'Zynq Ultrascale+ RF Data Converter (2.6)' for IP 'work_pls_usp_rf_data_converter_0_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_zynq_ultra_ps_e_0_0' is locked:
+* IP definition 'Zynq UltraScale+ MPSoC (3.5)' for IP 'work_pls_zynq_ultra_ps_e_0_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'sin_wave_demodulate_mult_gen_v12_0_i0' is locked:
+* IP definition 'Multiplier (12.0)' for IP 'sin_wave_demodulate_mult_gen_v12_0_i0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'sin_wave_demodulate_fir_compiler_v7_2_i0' is locked:
+* IP definition 'FIR Compiler (7.2)' for IP 'sin_wave_demodulate_fir_compiler_v7_2_i0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'sin_wave_demodulate_fifo_generator_i1' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sin_wave_demodulate_fifo_generator_i1' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'sin_wave_demodulate_fifo_generator_i0' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sin_wave_demodulate_fifo_generator_i0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_Receiver_0_0' is locked:
+* IP 'work_pls_Receiver_0_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_axi_fifo_mm_s_0' is locked:
+* IP definition 'AXI-Stream FIFO (4.3)' for IP 'work_pls_axi_fifo_mm_s_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_axis_subset_converter_0' is locked:
+* IP definition 'AXI4-Stream Subset Converter (1.1)' for IP 'work_pls_axis_subset_converter_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_xbar_0' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'work_pls_xbar_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_auto_pc_0' is locked:
+* IP definition 'AXI Protocol Converter (2.1)' for IP 'work_pls_auto_pc_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_ps8_0_axi_periph_0' is locked:
+* IP definition 'AXI Interconnect (2.1)' for IP 'work_pls_ps8_0_axi_periph_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_rst_ps8_0_96M_0' is locked:
+* IP definition 'Processor System Reset (5.0)' for IP 'work_pls_rst_ps8_0_96M_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_axi_dma_0' is locked:
+* IP definition 'AXI Direct Memory Access (7.1)' for IP 'work_pls_axi_dma_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_one_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'bd_c659_one_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_psr_aclk_0' is locked:
+* IP definition 'Processor System Reset (5.0)' for IP 'bd_c659_psr_aclk_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_s00mmu_0' is locked:
+* IP definition 'SC MMU (1.0)' for IP 'bd_c659_s00mmu_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_s00tr_0' is locked:
+* IP definition 'SC TRANSACTION_REGULATOR (1.0)' for IP 'bd_c659_s00tr_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_s00sic_0' is locked:
+* IP definition 'SC SI_CONVERTER (1.0)' for IP 'bd_c659_s00sic_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_s00a2s_0' is locked:
+* IP definition 'SmartConnect AXI2SC Bridge (1.0)' for IP 'bd_c659_s00a2s_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_sawn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_c659_sawn_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_swn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_c659_swn_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_sbn_0' is locked:
+* IP definition 'SmartConnect Node (1.0)' for IP 'bd_c659_sbn_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_m00s2a_0' is locked:
+* IP definition 'SmartConnect SC2AXI Bridge (1.0)' for IP 'bd_c659_m00s2a_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'bd_c659_m00e_0' is locked:
+* IP definition 'SC EXIT (1.0)' for IP 'bd_c659_m00e_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_axi_smc_0' is locked:
+* IP definition 'AXI SmartConnect (1.0)' for IP 'work_pls_axi_smc_0' (customized with software release 2024.1) has a different revision in the IP Catalog. * IP 'work_pls_axi_smc_0' contains one or more locked subcores.
+WARNING: [IP_Flow 19-2162] IP 'work_pls_xlconstant_0_0' is locked:
+* IP definition 'Constant (1.1)' for IP 'work_pls_xlconstant_0_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/ui/bd_e4e23ec9.ui> 
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'work_pls.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+work_pls_axi_fifo_mm_s_0
+work_pls_zynq_ultra_ps_e_0_0
+work_pls_usp_rf_data_converter_0_0
+work_pls_Receiver_0_0
+work_pls_axis_subset_converter_0
+work_pls_xbar_0
+work_pls_axi_dma_0
+work_pls_rst_ps8_0_96M_0
+work_pls_auto_pc_0
+work_pls_ps8_0_axi_periph_0
+work_pls_axi_smc_0
+work_pls_xlconstant_0_0
+
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/ip 
+save_project_as: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2568.695 ; gain = 15.301
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {work_pls_rst_ps8_0_96M_0 work_pls_axi_smc_0 work_pls_xlconstant_0_0 work_pls_ps8_0_axi_periph_0 work_pls_Receiver_0_0 work_pls_axis_subset_converter_0 work_pls_zynq_ultra_ps_e_0_0 work_pls_axi_fifo_mm_s_0 work_pls_axi_dma_0 work_pls_usp_rf_data_converter_0_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd'
+INFO: [IP_Flow 19-3420] Updated work_pls_Receiver_0_0 to use current project options
+INFO: [IP_Flow 19-3422] Upgraded work_pls_axi_dma_0 (AXI Direct Memory Access 7.1) from revision 32 to revision 29
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [IP_Flow 19-3422] Upgraded work_pls_axi_fifo_mm_s_0 (AXI-Stream FIFO 4.3) from revision 3 to revision 0
+INFO: [IP_Flow 19-3422] Upgraded work_pls_axi_smc_0 (AXI SmartConnect 1.0) from revision 23 to revision 20
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [IP_Flow 19-3422] Upgraded work_pls_axis_subset_converter_0 (AXI4-Stream Subset Converter 1.1) from revision 31 to revision 28
+INFO: [IP_Flow 19-3422] Upgraded work_pls_ps8_0_axi_periph_0 (AXI Interconnect 2.1) from revision 32 to revision 29
+INFO: [IP_Flow 19-3422] Upgraded work_pls_rst_ps8_0_96M_0 (Processor System Reset 5.0) from revision 15 to revision 13
+WARNING: [IP_Flow 19-4316] Parameter 'SCD_SG_minus2' is no longer present on the upgraded IP 'work_pls_usp_rf_data_converter_0_0', and cannot be set to 'false'
+INFO: [IP_Flow 19-3422] Upgraded work_pls_usp_rf_data_converter_0_0 (Zynq Ultrascale+ RF Data Converter 2.6) from revision 9 to revision 6
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 32000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 128000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 32000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 128000000
+INFO: [IP_Flow 19-3422] Upgraded work_pls_xlconstant_0_0 (Constant 1.1) from revision 9 to revision 7
+Board is 
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-3422] Upgraded work_pls_zynq_ultra_ps_e_0_0 (Zynq UltraScale+ MPSoC 3.5) from revision 3 to revision 0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'work_pls_usp_rf_data_converter_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PYNQ_Receiver_2023\PYNQ_Receiver_2023.srcs\sources_1\bd\work_pls\work_pls.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/ui/bd_e4e23ec9.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2817.469 ; gain = 239.207
+export_ip_user_files -of_objects [get_ips {work_pls_rst_ps8_0_96M_0 work_pls_axi_smc_0 work_pls_xlconstant_0_0 work_pls_ps8_0_axi_periph_0 work_pls_Receiver_0_0 work_pls_axis_subset_converter_0 work_pls_zynq_ultra_ps_e_0_0 work_pls_axi_fifo_mm_s_0 work_pls_axi_dma_0 work_pls_usp_rf_data_converter_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd]
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+INFO: [Common 17-365] Interrupt caught but 'generate_target' cannot be canceled. Please wait for command to finish.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] work_pls_axi_smc_0: SmartConnect work_pls_axi_smc_0 is in High-performance Mode.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /Receiver_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /Receiver_0/s_axis(4) and /usp_rf_data_converter_0/m00_axis(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PYNQ_Receiver_2023\PYNQ_Receiver_2023.srcs\sources_1\bd\work_pls\work_pls.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Receiver_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/synth/work_pls.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Receiver_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/sim/work_pls.vhd
+VHDL Output written to : C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/hdl/work_pls_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usp_rf_data_converter_0 .
+INFO: [BD 41-1171] User-interrupt detected : Generation halted successfully for IP Integrator design C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd
+INFO: [Common 17-681] Processing pending cancel.
+catch { config_ip_cache -export [get_ips -all work_pls_usp_rf_data_converter_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_usp_rf_data_converter_0_0
+catch { config_ip_cache -export [get_ips -all work_pls_zynq_ultra_ps_e_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_zynq_ultra_ps_e_0_0
+catch { config_ip_cache -export [get_ips -all work_pls_Receiver_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_Receiver_0_0
+catch { config_ip_cache -export [get_ips -all work_pls_axi_fifo_mm_s_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_fifo_mm_s_0
+catch { config_ip_cache -export [get_ips -all work_pls_axis_subset_converter_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axis_subset_converter_0
+catch { config_ip_cache -export [get_ips -all work_pls_rst_ps8_0_96M_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_rst_ps8_0_96M_0
+catch { config_ip_cache -export [get_ips -all work_pls_axi_dma_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_dma_0
+catch { config_ip_cache -export [get_ips -all work_pls_axi_smc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_smc_0
+catch { config_ip_cache -export [get_ips -all work_pls_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_xbar_0
+catch { config_ip_cache -export [get_ips -all work_pls_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_auto_pc_0
+export_ip_user_files -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd]
+launch_runs work_pls_Receiver_0_0_synth_1 work_pls_auto_pc_0_synth_1 work_pls_axi_dma_0_synth_1 work_pls_axi_fifo_mm_s_0_synth_1 work_pls_axi_smc_0_synth_1 work_pls_axis_subset_converter_0_synth_1 work_pls_rst_ps8_0_96M_0_synth_1 work_pls_usp_rf_data_converter_0_0_synth_1 work_pls_xbar_0_synth_1 work_pls_zynq_ultra_ps_e_0_0_synth_1 -jobs 2
+INFO: [IP_Flow 19-3422] Upgraded sin_wave_demodulate_fifo_generator_i0 (FIFO Generator 13.2) from revision 10 to revision 8
+INFO: [IP_Flow 19-3422] Upgraded sin_wave_demodulate_fifo_generator_i1 (FIFO Generator 13.2) from revision 10 to revision 8
+INFO: [IP_Flow 19-3422] Upgraded sin_wave_demodulate_fir_compiler_v7_2_i0 (FIR Compiler 7.2) from revision 22 to revision 19
+INFO: [IP_Flow 19-3422] Upgraded sin_wave_demodulate_mult_gen_v12_0_i0 (Multiplier 12.0) from revision 21 to revision 18
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_Receiver_0_0
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_auto_pc_0/work_pls_auto_pc_0_ooc.xdc'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_dma_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_fifo_mm_s_0
+Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_axi_smc_0/bd_0/hw_handoff/work_pls_axi_smc_0.hwh
+Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_axi_smc_0/bd_0/synth/work_pls_axi_smc_0.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_smc_0
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_axis_subset_converter_0/work_pls_axis_subset_converter_0_ooc.xdc'
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axis_subset_converter_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_rst_ps8_0_96M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_usp_rf_data_converter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_xbar_0
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] work_pls_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_zynq_ultra_ps_e_0_0
+[Tue Feb 25 13:33:21 2025] Launched work_pls_Receiver_0_0_synth_1, work_pls_auto_pc_0_synth_1, work_pls_axi_dma_0_synth_1, work_pls_axi_fifo_mm_s_0_synth_1, work_pls_axi_smc_0_synth_1, work_pls_axis_subset_converter_0_synth_1, work_pls_rst_ps8_0_96M_0_synth_1, work_pls_usp_rf_data_converter_0_0_synth_1, work_pls_xbar_0_synth_1, work_pls_zynq_ultra_ps_e_0_0_synth_1...
+Run output will be captured here:
+work_pls_Receiver_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_Receiver_0_0_synth_1/runme.log
+work_pls_auto_pc_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_auto_pc_0_synth_1/runme.log
+work_pls_axi_dma_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_dma_0_synth_1/runme.log
+work_pls_axi_fifo_mm_s_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_fifo_mm_s_0_synth_1/runme.log
+work_pls_axi_smc_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_smc_0_synth_1/runme.log
+work_pls_axis_subset_converter_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axis_subset_converter_0_synth_1/runme.log
+work_pls_rst_ps8_0_96M_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_rst_ps8_0_96M_0_synth_1/runme.log
+work_pls_usp_rf_data_converter_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_usp_rf_data_converter_0_0_synth_1/runme.log
+work_pls_xbar_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_xbar_0_synth_1/runme.log
+work_pls_zynq_ultra_ps_e_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_zynq_ultra_ps_e_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 3196.254 ; gain = 133.137
+export_simulation -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd] -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.ip_user_files -ipstatic_source_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/modelsim} {questa=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/questa} {riviera=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/riviera} {activehdl=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+set_property CONFIG.c_include_mm2s {1} [get_bd_cells axi_dma]
+ERROR: [BD 41-1274] Set bus interface parameter, Value '1' is out of the range for parameter 'Data Width(DATA_WIDTH)' for BD Interface 'M_AXI_MM2S' . Valid values are - 32, 64
+
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+ERROR: [BD 41-1273] Error running post_config_ip TCL procedure: ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+    ::xilinx.com_ip_axi_dma_7.1::post_config_ip Line 18
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/axi_dma/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma/M_AXI_MM2S]
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+validate_bd_design
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] work_pls_axi_smc_0: SmartConnect work_pls_axi_smc_0 is in High-performance Mode.
+xit::source_ipfile: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3222.082 ; gain = 2.090
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /Receiver_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /Receiver_0/s_axis(4) and /usp_rf_data_converter_0/m00_axis(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3222.082 ; gain = 2.160
+validate_bd_design -force
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] work_pls_axi_smc_0: SmartConnect work_pls_axi_smc_0 is in High-performance Mode.
+xit::source_ipfile: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3222.082 ; gain = 0.000
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /Receiver_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /Receiver_0/s_axis(4) and /usp_rf_data_converter_0/m00_axis(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3222.082 ; gain = 0.000
+generate_target all [get_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd]
+INFO: [BD 41-1662] The design 'work_pls.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PYNQ_Receiver_2023\PYNQ_Receiver_2023.srcs\sources_1\bd\work_pls\work_pls.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/ui/bd_e4e23ec9.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Receiver_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/synth/work_pls.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/Receiver_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/sim/work_pls.vhd
+VHDL Output written to : C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/hdl/work_pls_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma .
+Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_axi_smc_0/bd_0/hw_handoff/work_pls_axi_smc_0.hwh
+Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_axi_smc_0/bd_0/synth/work_pls_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ip/work_pls_auto_pc_0/work_pls_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/hw_handoff/work_pls.hwh
+Generated Hardware Definition File C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/synth/work_pls.hwdef
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 3226.184 ; gain = 4.102
+catch { config_ip_cache -export [get_ips -all work_pls_usp_rf_data_converter_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_usp_rf_data_converter_0_0
+catch { config_ip_cache -export [get_ips -all work_pls_zynq_ultra_ps_e_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_zynq_ultra_ps_e_0_0
+catch { config_ip_cache -export [get_ips -all work_pls_Receiver_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_Receiver_0_0
+catch { config_ip_cache -export [get_ips -all work_pls_axi_fifo_mm_s_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_fifo_mm_s_0
+catch { config_ip_cache -export [get_ips -all work_pls_axis_subset_converter_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axis_subset_converter_0
+catch { config_ip_cache -export [get_ips -all work_pls_rst_ps8_0_96M_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_rst_ps8_0_96M_0
+catch { config_ip_cache -export [get_ips -all work_pls_axi_dma_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_dma_0
+catch { config_ip_cache -export [get_ips -all work_pls_axi_smc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_smc_0
+catch { config_ip_cache -export [get_ips -all work_pls_xbar_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_xbar_0
+catch { config_ip_cache -export [get_ips -all work_pls_auto_pc_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_auto_pc_0
+export_ip_user_files -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd]
+launch_runs work_pls_Receiver_0_0_synth_1 work_pls_auto_pc_0_synth_1 work_pls_axi_dma_0_synth_1 work_pls_axi_fifo_mm_s_0_synth_1 work_pls_axi_smc_0_synth_1 work_pls_axis_subset_converter_0_synth_1 work_pls_rst_ps8_0_96M_0_synth_1 work_pls_usp_rf_data_converter_0_0_synth_1 work_pls_xbar_0_synth_1 work_pls_zynq_ultra_ps_e_0_0_synth_1 -jobs 4
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_Receiver_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_dma_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_fifo_mm_s_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_smc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axis_subset_converter_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_rst_ps8_0_96M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_usp_rf_data_converter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_zynq_ultra_ps_e_0_0
+[Tue Feb 25 14:29:35 2025] Launched work_pls_Receiver_0_0_synth_1, work_pls_auto_pc_0_synth_1, work_pls_axi_dma_0_synth_1, work_pls_axi_fifo_mm_s_0_synth_1, work_pls_axi_smc_0_synth_1, work_pls_axis_subset_converter_0_synth_1, work_pls_rst_ps8_0_96M_0_synth_1, work_pls_usp_rf_data_converter_0_0_synth_1, work_pls_xbar_0_synth_1, work_pls_zynq_ultra_ps_e_0_0_synth_1...
+Run output will be captured here:
+work_pls_Receiver_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_Receiver_0_0_synth_1/runme.log
+work_pls_auto_pc_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_auto_pc_0_synth_1/runme.log
+work_pls_axi_dma_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_dma_0_synth_1/runme.log
+work_pls_axi_fifo_mm_s_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_fifo_mm_s_0_synth_1/runme.log
+work_pls_axi_smc_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_smc_0_synth_1/runme.log
+work_pls_axis_subset_converter_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axis_subset_converter_0_synth_1/runme.log
+work_pls_rst_ps8_0_96M_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_rst_ps8_0_96M_0_synth_1/runme.log
+work_pls_usp_rf_data_converter_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_usp_rf_data_converter_0_0_synth_1/runme.log
+work_pls_xbar_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_xbar_0_synth_1/runme.log
+work_pls_zynq_ultra_ps_e_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_zynq_ultra_ps_e_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3226.184 ; gain = 0.000
+export_simulation -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.srcs/sources_1/bd/work_pls/work_pls.bd] -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.ip_user_files -ipstatic_source_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/modelsim} {questa=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/questa} {riviera=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/riviera} {activehdl=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_Receiver_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_axi_dma_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_axi_fifo_mm_s_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_axi_smc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_axis_subset_converter_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_rst_ps8_0_96M_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_usp_rf_data_converter_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_xbar_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP work_pls_zynq_ultra_ps_e_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_Receiver_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_dma_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_fifo_mm_s_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axi_smc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_axis_subset_converter_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_rst_ps8_0_96M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_usp_rf_data_converter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_zynq_ultra_ps_e_0_0
+[Tue Feb 25 14:30:38 2025] Launched work_pls_usp_rf_data_converter_0_0_synth_1, work_pls_zynq_ultra_ps_e_0_0_synth_1, work_pls_axis_subset_converter_0_synth_1, work_pls_axi_smc_0_synth_1, work_pls_Receiver_0_0_synth_1, work_pls_axi_fifo_mm_s_0_synth_1, work_pls_rst_ps8_0_96M_0_synth_1, work_pls_axi_dma_0_synth_1, work_pls_xbar_0_synth_1, work_pls_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+work_pls_usp_rf_data_converter_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_usp_rf_data_converter_0_0_synth_1/runme.log
+work_pls_zynq_ultra_ps_e_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_zynq_ultra_ps_e_0_0_synth_1/runme.log
+work_pls_axis_subset_converter_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axis_subset_converter_0_synth_1/runme.log
+work_pls_axi_smc_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_smc_0_synth_1/runme.log
+work_pls_Receiver_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_Receiver_0_0_synth_1/runme.log
+work_pls_axi_fifo_mm_s_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_fifo_mm_s_0_synth_1/runme.log
+work_pls_rst_ps8_0_96M_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_rst_ps8_0_96M_0_synth_1/runme.log
+work_pls_axi_dma_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_axi_dma_0_synth_1/runme.log
+work_pls_xbar_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_xbar_0_synth_1/runme.log
+work_pls_auto_pc_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/synth_1/runme.log
+[Tue Feb 25 14:30:38 2025] Launched impl_1...
+Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 3226.184 ; gain = 0.000
