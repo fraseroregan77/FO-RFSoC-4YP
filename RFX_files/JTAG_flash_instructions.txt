@@ -1,0 +1,16 @@
+boot the card into JTAG mode, then run the JTAG_flash.sh script after using module load on vitis/2024.1. 
+
+- Boot into JTAG mode (both up)
+- Module load vitis/2024.1
+- Run JTAG_flash.sh
+- reboot the card in QSPI mode
+- should appear in minicom as 2x100gbe@rfx8440
+- nco_driver register is 0xA0090008
+
+
+PetaLinux Build Instructions:
+
+- Export hardware from vivado (.xsa file)
+- move xsa file into ~/ZUS-RFX-8440_r1.09/../plnx/
+- source petalinux tools source ~/petalinux-2024/settings.sh
+- run ./build_petalinux | tee output.log [will store the output from terminal in file]
