@@ -1,0 +1,26 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2022.1                 C:/Xilinx/Vivado/2022.1
+Matlab 9.11.0.2358333 (R2021b) Update 7 C:\MATLABR2021b
+Vivado 2022.1                           C:/Xilinx/Vivado/2022.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal data rate
+     Block: 'sin_wave_demodulate_2021b/DUT/Algorithm/Gateway In1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'sin_wave_demodulate_2021b/DUT/Algorithm/Gateway In1'
+
+Details:
+The data rate on the "gw_in_outport" output port of this block
+grew to over 1,000,000,000 times slower than the system rate, as
+defined on the System Generator token. Consequently, rate and
+type propagation was aborted.
+
+Check for unstable feedback through this block via rate-changing
+blocks, or for an improper period setting on the block, on
+upstream blocks, or on the System Generator token.
+--------------------------------------------------------------------------------
