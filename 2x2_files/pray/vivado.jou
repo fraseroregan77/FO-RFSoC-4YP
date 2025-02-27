@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Feb 27 18:57:56 2025
-# Process ID: 28640
+# Start of session at: Thu Feb 27 21:04:27 2025
+# Process ID: 9464
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19592 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16308 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.xpr
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray\vivado.jou
-# Running On        :EEE-R446-29
+# Running On        :EEE-R446-02
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
@@ -17,122 +17,120 @@
 # CPU Physical cores:14
 # CPU Logical cores :20
 # Host memory       :16833 MB
-# Swap memory       :6116 MB
-# Total Virtual     :22949 MB
-# Available Virtual :4384 MB
+# Swap memory       :39653 MB
+# Total Virtual     :56486 MB
+# Available Virtual :47872 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.xpr
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd}
-set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/enable_redesign/mod_enable/netlist/ip [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip} [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip} [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip} [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip} [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-ipx::edit_ip_in_project -upgrade true -name axi_stream_template_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/axi_stream_template_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip/component.xml
-update_compile_order -fileset sources_1
-set_property vendor {} [ipx::current_core]
-set_property name Data_generation [ipx::current_core]
-set_property display_name Data_generation [ipx::current_core]
-ipx::update_ip_instances -delete_project true
-create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
-set_property location {1 190 63} [get_bd_cells DUT_0]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
-endgroup
-set_property CONFIG.PSU__USE__S_AXI_GP0 {1} [get_bd_cells zynq_ultra_ps_e_0]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_0/s_axis]
-undo
-update_ip_catalog -rebuild
-report_ip_status -name ip_status 
-upgrade_ip [get_ips  design_1_DUT_0_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_DUT_0_0] -no_script -sync -force -quiet
-set_property location {1 433 174} [get_bd_cells DUT_0]
-ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip/component.xml
-update_compile_order -fileset sources_1
-set_property vendor {} [ipx::current_core]
-set_property library {} [ipx::current_core]
-set_property name Data_generation [ipx::current_core]
-set_property display_name Data_generation [ipx::current_core]
-ipx::update_ip_instances -delete_project true
-report_ip_status -name ip_status 
 delete_bd_objs [get_bd_cells DUT_0]
-create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
-ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
-update_compile_order -fileset sources_1
-set_property name DUT_data [ipx::current_core]
-set_property display_name DUT_data [ipx::current_core]
-ipx::update_ip_instances -delete_project true
-set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip} [current_project]
-update_ip_catalog
-update_ip_catalog -rebuild
-ipx::edit_ip_in_project -upgrade true -name DUT_data_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/DUT_data_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
-update_compile_order -fileset sources_1
-ipx::unload_core c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
-close_project
-ipx::edit_ip_in_project -upgrade true -name Data_generation_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/Data_generation_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip/component.xml
-update_compile_order -fileset sources_1
-set_property vendor {User Company} [ipx::current_core]
-set_property library VMC [ipx::current_core]
-set_property vendor User_Company [ipx::current_core]
-close_project
-ipx::edit_ip_in_project -upgrade true -name Data_generation_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/Data_generation_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip/component.xml
-update_compile_order -fileset sources_1
-set_property name DUT_datain [ipx::current_core]
-set_property description {This IP was generated from System Generator. All changes must be made in SysGen model.} [ipx::current_core]
-set_property name DUT_data_in [ipx::current_core]
-set_property display_name DUT_data_in [ipx::current_core]
-ipx::update_ip_instances -delete_project true
-ipx::edit_ip_in_project -upgrade true -name DUT_data_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/DUT_data_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
-update_compile_order -fileset sources_1
-set_property name DUT_receiver [ipx::current_core]
-set_property display_name DUT_receiver [ipx::current_core]
-close_project
-create_bd_cell -type ip -vlnv User_Company:VMC:DUT_data_in:1.0 DUT_data_in_0
-set_property location {1 241 -133} [get_bd_cells DUT_data_in_0]
-report_ip_status -name ip_status 
-upgrade_ip -vlnv User_Company:VMC:DUT_data:1.0 [get_ips  design_1_DUT_0_1] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_DUT_0_1] -no_script -sync -force -quiet
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT_receiver:1.0 DUT_receiver_0
+endgroup
+set_property location {1 299 -245} [get_bd_cells DUT_receiver_0]
+set_property location {2 739 -227} [get_bd_cells DUT_data_in_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:usp_rf_data_converter:2.6 usp_rf_data_converter_0
+endgroup
+set_property location {2 513 -405} [get_bd_cells usp_rf_data_converter_0]
+set_property CONFIG.DAC_Slice00_Enable {true} [get_bd_cells usp_rf_data_converter_0]
+set_property location {0.5 65 -459} [get_bd_cells DUT_receiver_0]
+set_property location {1 101 -245} [get_bd_cells DUT_data_in_0]
+connect_bd_intf_net [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+set_property location {3 776 -382} [get_bd_cells DUT_receiver_0]
+connect_bd_intf_net [get_bd_intf_pins DUT_receiver_0/s_axis] [get_bd_intf_pins usp_rf_data_converter_0/m00_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_receiver_0/m_axis]
+startgroup
+set_property CONFIG.c_include_s2mm {1} [get_bd_cells axi_dma]
+endgroup
+undo
+undo
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {3.5 1429 -275} [get_bd_cells axi_dma_0]
+set_property location {3 821 -97} [get_bd_cells zynq_ultra_ps_e_0]
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+set_property location {1 168 -1272} [get_bd_cells usp_rf_data_converter_0]
+set_property location {2 633 -1064} [get_bd_cells DUT_receiver_0]
+startgroup
+set_property CONFIG.NUM_SI {4} [get_bd_cells axi_smc]
+endgroup
+undo
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/axi_dma_0/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_MM2S]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/axi_dma_0/M_AXI_SG} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_SG]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+undo
+delete_bd_objs [get_bd_cells axi_dma_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+set_property location {1.5 299 -681} [get_bd_cells usp_rf_data_converter_0]
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_receiver_0/m_axis] [get_bd_intf_pins axi_dma/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk]
+regenerate_bd_layout
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "Custom" DAC0_AXIS_SOURCE "Custom" }  [get_bd_cells usp_rf_data_converter_0]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins DUT_data_in_0/mux_en]
+copy_bd_objs /  [get_bd_cells {xlconstant_0}]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins DUT_receiver_0/step_size]
+startgroup
+set_property -dict [list \
+  CONFIG.CONST_VAL {63} \
+  CONFIG.CONST_WIDTH {16} \
+] [get_bd_cells xlconstant_1]
+endgroup
+validate_bd_design
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 20
 generate_target all [get_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd]
-update_ip_catalog -rebuild -scan_changes
-report_ip_status -name ip_status
+catch { config_ip_cache -export [get_ips -all design_1_zynq_ultra_ps_e_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_DUT_data_in_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_DUT_receiver_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_usp_rf_data_converter_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_dma_1] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_rst_ps8_0_96M_1] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_DUT_data_in_0_0_synth_1 design_1_DUT_receiver_0_0_synth_1 design_1_auto_pc_0_synth_1 design_1_axi_dma_1_synth_1 design_1_axi_smc_1_synth_1 design_1_rst_ps8_0_96M_1_synth_1 design_1_usp_rf_data_converter_0_0_synth_1 design_1_xbar_0_synth_1 design_1_zynq_ultra_ps_e_0_0_synth_1 -jobs 20
+wait_on_run design_1_DUT_data_in_0_0_synth_1
+wait_on_run design_1_DUT_receiver_0_0_synth_1
+wait_on_run design_1_auto_pc_0_synth_1
+wait_on_run design_1_axi_dma_1_synth_1
+wait_on_run design_1_axi_smc_1_synth_1
+wait_on_run design_1_rst_ps8_0_96M_1_synth_1
+wait_on_run design_1_usp_rf_data_converter_0_0_synth_1
+wait_on_run design_1_xbar_0_synth_1
+wait_on_run design_1_zynq_ultra_ps_e_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.ip_user_files -ipstatic_source_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/modelsim} {questa=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/questa} {riviera=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/riviera} {activehdl=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_run impl_1
+close_design
+write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/design_1.tcl
+write_hw_platform -fixed -include_bit -force -file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/design_1_wrapper.xsa

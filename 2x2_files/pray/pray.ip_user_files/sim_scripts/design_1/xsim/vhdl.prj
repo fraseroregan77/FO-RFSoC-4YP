@@ -1,0 +1,33 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_DUT_data_in_0_0/dut_mult_gen_v12_0_i0/sim/dut_mult_gen_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/conv_pkg.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/synth_reg.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/synth_reg_w_init.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/srl17e.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/srl33e.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/synth_reg_reg.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/single_reg_w_init.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/xlclockdriver_rd.vhd" \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/dut_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/ebcd/hdl/dut.vhd" \
+"../../../bd/design_1/ip/design_1_DUT_data_in_0_0/sim/design_1_DUT_data_in_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_DUT_receiver_0_0/dut_fir_compiler_v7_2_i0/sim/dut_fir_compiler_v7_2_i0.vhd" \
+"../../../bd/design_1/ip/design_1_DUT_receiver_0_0/dut_mult_gen_v12_0_i0/sim/dut_mult_gen_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/eb82/hdl/dut_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../pray.gen/sources_1/bd/design_1/ipshared/eb82/hdl/dut.vhd" \
+"../../../bd/design_1/ip/design_1_DUT_receiver_0_0/sim/design_1_DUT_receiver_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_dma_1/sim/design_1_axi_dma_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc_1/bd_0/ip/ip_1/sim/bd_6f02_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_96M_1/sim/design_1_rst_ps8_0_96M_1.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort
