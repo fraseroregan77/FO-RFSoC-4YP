@@ -1,0 +1,7 @@
+For next time 26/2/25:
+
+- potentially add chipscope debugger to the logic
+- can then get logic analyser gui
+- spectrum analyser seems to be working properly
+- get
+- nco_driver has address 0xA0090008 > use devmem <address> 32 <newvalue> < to write or just devmem <address> to read
