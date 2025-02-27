@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+<<<<<<< HEAD
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Feb 25 15:08:19 2025
+# Process ID: 17296
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3848 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PYNQ_Receiver\PYNQ_Receiver.xpr
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver\vivado.jou
+# Running On        :EEE-R446-25
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16833 MB
+# Swap memory       :7088 MB
+# Total Virtual     :23922 MB
+# Available Virtual :16825 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.srcs/sources_1/bd/work_pls/work_pls.bd}
+startgroup
+set_property CONFIG.c_include_mm2s {1} [get_bd_cells axi_dma]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/axi_dma/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma/M_AXI_MM2S]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_cells rst_ps8_0_96M]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_intf_nets ps8_0_axi_periph_M02_AXI] [get_bd_cells ps8_0_axi_periph]
+delete_bd_objs [get_bd_intf_nets axi_fifo_mm_s_AXI_STR_TXD] [get_bd_cells axi_fifo_mm_s]
+delete_bd_objs [get_bd_intf_nets axi_dma_M_AXI_MM2S] [get_bd_intf_nets axi_dma_M_AXI_S2MM] [get_bd_intf_nets Receiver_0_m_axis] [get_bd_cells axi_dma]
+delete_bd_objs [get_bd_intf_nets axis_subset_converter_M_AXIS] [get_bd_cells axis_subset_converter]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_intf_nets vin0_01_1] [get_bd_intf_ports vin0_01]
+delete_bd_objs [get_bd_intf_nets sysref_in_1] [get_bd_intf_ports sysref_in]
+delete_bd_objs [get_bd_intf_nets dac0_clk_1] [get_bd_intf_ports dac0_clk]
+delete_bd_objs [get_bd_intf_nets adc0_clk_1] [get_bd_intf_ports adc0_clk]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_vout00]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
+set_property location {5.5 2008 -204} [get_bd_cells zynq_ultra_ps_e_0]
+delete_bd_objs [get_bd_intf_ports vout00]
+delete_bd_objs [get_bd_nets rst_ps8_0_96M_peripheral_aresetn]
+set_property location {3 1526 -80} [get_bd_cells Receiver_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/usp_rf_data_converter_0/s00_axis" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+set_property location {3 571 -83} [get_bd_cells Receiver_0]
+undo
+undo
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/m_axis]
+startgroup
+set_property CONFIG.c_include_mm2s {1} [get_bd_cells axi_dma]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/usp_rf_data_converter_0/s00_axis" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/axi_dma/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma/M_AXI_MM2S]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "Custom" DAC0_AXIS_SOURCE "Custom" }  [get_bd_cells usp_rf_data_converter_0]
+startgroup
+set_property CONFIG.PSU__FTM__GPO {1} [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+undo
+save_bd_design
+delete_bd_objs [get_bd_intf_nets axi_dma_M_AXI_S2MM]
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {5 1511 56} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins Receiver_0/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+set_property location {4 1317 58} [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_intf_nets Receiver_0_m_axis]
+set_property location {1 479 -499} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+set_property location {4.5 2205 -207} [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins Receiver_0/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+set_property location {4 1526 -57} [get_bd_cells zynq_ultra_ps_e_0]
+delete_bd_objs [get_bd_intf_nets Receiver_0_m_axis]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+set_property location {3.5 1175 -285} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {1 268 -89} [get_bd_cells usp_rf_data_converter_0]
+set_property location {3 730 -111} [get_bd_cells Receiver_0]
+set_property location {1 345 -114} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 249 -111} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 245 -103} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 242 -80} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 253 -122} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 248 -106} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 244 -100} [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 239 -94} [get_bd_cells usp_rf_data_converter_0]
+delete_bd_objs [get_bd_nets rst_ps8_0_96M_peripheral_aresetn]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/usp_rf_data_converter_0/s00_axis" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/m_axis]
+startgroup
+set_property CONFIG.c_include_mm2s {1} [get_bd_cells axi_dma]
+endgroup
+delete_bd_objs [get_bd_cells axi_dma_0]
+regenerate_bd_layout
+undo
+undo
+undo
+undo
+undo
+set_property location {4 1423 31} [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/usp_rf_data_converter_0/s00_axis" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/m_axis]
+undo
+undo
+undo
+delete_bd_objs [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_m00_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/s_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+undo
+undo
+redo
+undo
+connect_bd_intf_net [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins Receiver_0/s_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_m00_axis]
+set_property location {2.5 295 -85} [get_bd_cells usp_rf_data_converter_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/s_axis]
+startgroup
+set_property CONFIG.PSU__USE__S_AXI_GP1 {1} [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+undo
+undo
+set_property CONFIG.PSU__USE__S_AXI_GP1 {1} [get_bd_cells zynq_ultra_ps_e_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/usp_rf_data_converter_0/m00_axis" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HPC1_FPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/s_axis]
+undo
+undo
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/Receiver_0/s_axis" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HPC0_FPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC1_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+set_property location {3 690 -407} [get_bd_cells usp_rf_data_converter_0]
+startgroup
+set_property CONFIG.PSU__USE__S_AXI_GP1 {0} [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+undo
+undo
+undo
+set_property CONFIG.PSU__USE__S_AXI_GP1 {0} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {5.5 1780 -167} [get_bd_cells usp_rf_data_converter_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/usp_rf_data_converter_0/s00_axis" Bridge_IP "New AXI-Stream FIFO (Medium/Low frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+set_property location {4 1336 -126} [get_bd_cells usp_rf_data_converter_0]
+connect_bd_intf_net [get_bd_intf_pins Receiver_0/s_axis] [get_bd_intf_pins usp_rf_data_converter_0/m00_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins Receiver_0/m_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "Custom" DAC0_AXIS_SOURCE "Custom" }  [get_bd_cells usp_rf_data_converter_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+save_bd_design
+close_bd_design [get_bd_designs work_pls]
+=======
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb 25 13:22:44 2025
+# Process ID: 5424
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4848 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PYNQ_Receiver\PYNQ_Receiver.xpr
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver\vivado.jou
+# Running On: EEE-R343-01, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 4, Host memory: 17060 MB
+#-----------------------------------------------------------
+start_gui
+>>>>>>> e251704ff3ef0a3fe3bdb3f1591de00b05952ff0
