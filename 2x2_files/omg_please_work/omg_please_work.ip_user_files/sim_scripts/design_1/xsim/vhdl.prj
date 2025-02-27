@@ -1,0 +1,34 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_Receiver_0_0/sin_wave_demodulate_fir_compiler_v7_2_i0/sim/sin_wave_demodulate_fir_compiler_v7_2_i0.vhd" \
+"../../../bd/design_1/ip/design_1_Receiver_0_0/sin_wave_demodulate_mult_gen_v12_0_i0/sim/sin_wave_demodulate_mult_gen_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/conv_pkg.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/synth_reg.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/synth_reg_w_init.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/srl17e.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/srl33e.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/synth_reg_reg.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/single_reg_w_init.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/xlclockdriver_rd.vhd" \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/sin_wave_demodulate_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/0f0d/hdl/sin_wave_demodulate.vhd" \
+"../../../bd/design_1/ip/design_1_Receiver_0_0/sim/design_1_Receiver_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_Data_generation_0_1/sin_wave_modulate_mult_gen_v12_0_i0/sim/sin_wave_modulate_mult_gen_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/abf9/hdl/sin_wave_modulate_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../omg_please_work.gen/sources_1/bd/design_1/ipshared/abf9/hdl/sin_wave_modulate.vhd" \
+"../../../bd/design_1/ip/design_1_Data_generation_0_1/sim/design_1_Data_generation_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_dma_10/sim/design_1_axi_dma_10.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc_9/bd_0/ip/ip_1/sim/bd_a903_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps8_0_96M_9/sim/design_1_rst_ps8_0_96M_9.vhd" \
+"../../../bd/design_1/ip/design_1_axi_fifo_mm_s_3/sim/design_1_axi_fifo_mm_s_3.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort

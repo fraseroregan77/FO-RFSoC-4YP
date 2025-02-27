@@ -1,0 +1,350 @@
+
+*** Running vivado
+    with args -log work_pls_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source work_pls_wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Feb 25 12:38:24 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source work_pls_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 628.621 ; gain = 199.109
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demodulate/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.cache/ip 
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 689.355 ; gain = 43.035
+Command: synth_design -top work_pls_wrapper -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-1540] The version limit for your license is '2024.10' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for new releases.
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18572
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2191.969 ; gain = 382.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'work_pls_wrapper' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/hdl/work_pls_wrapper.vhd:30]
+INFO: [Synth 8-3491] module 'work_pls' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1292' bound to instance 'work_pls_i' of component 'work_pls' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/hdl/work_pls_wrapper.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'work_pls' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1311]
+INFO: [Synth 8-3491] module 'work_pls_Receiver_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_Receiver_0_0_stub.vhdl:6' bound to instance 'Receiver_0' of component 'work_pls_Receiver_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1812]
+INFO: [Synth 8-638] synthesizing module 'work_pls_Receiver_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_Receiver_0_0_stub.vhdl:22]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1520]
+INFO: [Synth 8-3491] module 'work_pls_axi_dma_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axi_dma_0_stub.vhdl:6' bound to instance 'axi_dma' of component 'work_pls_axi_dma_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1825]
+INFO: [Synth 8-638] synthesizing module 'work_pls_axi_dma_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axi_dma_0_stub.vhdl:55]
+INFO: [Synth 8-3491] module 'work_pls_axi_fifo_mm_s_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axi_fifo_mm_s_0_stub.vhdl:6' bound to instance 'axi_fifo_mm_s' of component 'work_pls_axi_fifo_mm_s_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1870]
+INFO: [Synth 8-638] synthesizing module 'work_pls_axi_fifo_mm_s_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axi_fifo_mm_s_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'work_pls_axi_smc_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'work_pls_axi_smc_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1903]
+INFO: [Synth 8-638] synthesizing module 'work_pls_axi_smc_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axi_smc_0_stub.vhdl:50]
+INFO: [Synth 8-3491] module 'work_pls_axis_subset_converter_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axis_subset_converter_0_stub.vhdl:6' bound to instance 'axis_subset_converter' of component 'work_pls_axis_subset_converter_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1944]
+INFO: [Synth 8-638] synthesizing module 'work_pls_axis_subset_converter_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_axis_subset_converter_0_stub.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'work_pls_ps8_0_axi_periph_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:730]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1WSI9ZX' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1WSI9ZX' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_6V36D8' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_6V36D8' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1V7JL3Y' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:255]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1V7JL3Y' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:255]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_43ZMFZ' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:378]
+INFO: [Synth 8-3491] module 'work_pls_auto_pc_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'work_pls_auto_pc_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:560]
+INFO: [Synth 8-638] synthesizing module 'work_pls_auto_pc_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_auto_pc_0_stub.vhdl:72]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_43ZMFZ' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:378]
+INFO: [Synth 8-3491] module 'work_pls_xbar_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'work_pls_xbar_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1210]
+INFO: [Synth 8-638] synthesizing module 'work_pls_xbar_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-256] done synthesizing module 'work_pls_ps8_0_axi_periph_0' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:730]
+INFO: [Synth 8-3491] module 'work_pls_rst_ps8_0_96M_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_rst_ps8_0_96M_0_stub.vhdl:6' bound to instance 'rst_ps8_0_96M' of component 'work_pls_rst_ps8_0_96M_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:2057]
+INFO: [Synth 8-638] synthesizing module 'work_pls_rst_ps8_0_96M_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_rst_ps8_0_96M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'work_pls_usp_rf_data_converter_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_usp_rf_data_converter_0_0_stub.vhdl:6' bound to instance 'usp_rf_data_converter_0' of component 'work_pls_usp_rf_data_converter_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:2070]
+INFO: [Synth 8-638] synthesizing module 'work_pls_usp_rf_data_converter_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_usp_rf_data_converter_0_0_stub.vhdl:54]
+INFO: [Synth 8-3491] module 'work_pls_xlconstant_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_xlconstant_0_0/synth/work_pls_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'work_pls_xlconstant_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:2115]
+INFO: [Synth 8-6157] synthesizing module 'work_pls_xlconstant_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_xlconstant_0_0/synth/work_pls_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'work_pls_xlconstant_0_0' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_xlconstant_0_0/synth/work_pls_xlconstant_0_0.v:53]
+INFO: [Synth 8-3491] module 'work_pls_zynq_ultra_ps_e_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_zynq_ultra_ps_e_0_0_stub.vhdl:6' bound to instance 'zynq_ultra_ps_e_0' of component 'work_pls_zynq_ultra_ps_e_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:2119]
+INFO: [Synth 8-638] synthesizing module 'work_pls_zynq_ultra_ps_e_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/.Xil/Vivado-11064-EEE-R446-25/realtime/work_pls_zynq_ultra_ps_e_0_0_stub.vhdl:94]
+INFO: [Synth 8-256] done synthesizing module 'work_pls' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/synth/work_pls.vhd:1311]
+INFO: [Synth 8-256] done synthesizing module 'work_pls_wrapper' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/hdl/work_pls_wrapper.vhd:30]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_43ZMFZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_43ZMFZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1V7JL3Y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1V7JL3Y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1V7JL3Y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1V7JL3Y is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_6V36D8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_6V36D8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_6V36D8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_6V36D8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1WSI9ZX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1WSI9ZX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1WSI9ZX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1WSI9ZX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2291.543 ; gain = 482.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2309.449 ; gain = 500.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2309.449 ; gain = 500.191
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2309.449 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc] for cell 'work_pls_i/usp_rf_data_converter_0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc] for cell 'work_pls_i/usp_rf_data_converter_0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_zynq_ultra_ps_e_0_0/work_pls_zynq_ultra_ps_e_0_0/work_pls_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'work_pls_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_zynq_ultra_ps_e_0_0/work_pls_zynq_ultra_ps_e_0_0/work_pls_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'work_pls_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_Receiver_0_0/work_pls_Receiver_0_0/Receiver_block_design_Receiver_0_1_in_context.xdc] for cell 'work_pls_i/Receiver_0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_Receiver_0_0/work_pls_Receiver_0_0/Receiver_block_design_Receiver_0_1_in_context.xdc] for cell 'work_pls_i/Receiver_0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axi_fifo_mm_s_0/work_pls_axi_fifo_mm_s_0/Receiver_block_design_axi_fifo_mm_s_1_in_context.xdc] for cell 'work_pls_i/axi_fifo_mm_s'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axi_fifo_mm_s_0/work_pls_axi_fifo_mm_s_0/Receiver_block_design_axi_fifo_mm_s_1_in_context.xdc] for cell 'work_pls_i/axi_fifo_mm_s'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axis_subset_converter_0/work_pls_axis_subset_converter_0/work_pls_axis_subset_converter_0_in_context.xdc] for cell 'work_pls_i/axis_subset_converter'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axis_subset_converter_0/work_pls_axis_subset_converter_0/work_pls_axis_subset_converter_0_in_context.xdc] for cell 'work_pls_i/axis_subset_converter'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_xbar_0/work_pls_xbar_0/Receiver_block_design_xbar_1_in_context.xdc] for cell 'work_pls_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_xbar_0/work_pls_xbar_0/Receiver_block_design_xbar_1_in_context.xdc] for cell 'work_pls_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_auto_pc_0/work_pls_auto_pc_0/Receiver_block_design_auto_pc_1_in_context.xdc] for cell 'work_pls_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_auto_pc_0/work_pls_auto_pc_0/Receiver_block_design_auto_pc_1_in_context.xdc] for cell 'work_pls_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_rst_ps8_0_96M_0/work_pls_rst_ps8_0_96M_0/Receiver_block_design_rst_ps8_0_96M_1_in_context.xdc] for cell 'work_pls_i/rst_ps8_0_96M'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_rst_ps8_0_96M_0/work_pls_rst_ps8_0_96M_0/Receiver_block_design_rst_ps8_0_96M_1_in_context.xdc] for cell 'work_pls_i/rst_ps8_0_96M'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axi_dma_0/work_pls_axi_dma_0/Receiver_block_design_axi_dma_1_in_context.xdc] for cell 'work_pls_i/axi_dma'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axi_dma_0/work_pls_axi_dma_0/Receiver_block_design_axi_dma_1_in_context.xdc] for cell 'work_pls_i/axi_dma'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axi_smc_0/work_pls_axi_smc_0/work_pls_axi_smc_0_in_context.xdc] for cell 'work_pls_i/axi_smc'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_axi_smc_0/work_pls_axi_smc_0/work_pls_axi_smc_0_in_context.xdc] for cell 'work_pls_i/axi_smc'
+Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2351.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2351.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2351.285 ; gain = 542.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2351.285 ; gain = 542.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for adc0_clk_clk_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc0_clk_clk_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for adc0_clk_clk_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc0_clk_clk_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for dac0_clk_clk_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dac0_clk_clk_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for dac0_clk_clk_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for dac0_clk_clk_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for sysref_in_diff_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysref_in_diff_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for sysref_in_diff_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysref_in_diff_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for vin0_01_v_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vin0_01_v_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for vin0_01_v_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vin0_01_v_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for vout00_v_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vout00_v_n. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for vout00_v_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for vout00_v_p. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.gen/sources_1/bd/work_pls/ip/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0/work_pls_usp_rf_data_converter_0_0_in_context.xdc, line 22).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/usp_rf_data_converter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/Receiver_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/axi_fifo_mm_s. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/axis_subset_converter. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/rst_ps8_0_96M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/axi_dma. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for work_pls_i/xlconstant_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2351.285 ; gain = 542.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2351.285 ; gain = 542.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module work_pls_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2351.285 ; gain = 542.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2686.301 ; gain = 877.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2686.523 ; gain = 877.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2697.078 ; gain = 887.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |work_pls_xbar_0                    |         1|
+|2     |work_pls_auto_pc_0                 |         1|
+|3     |work_pls_Receiver_0_0              |         1|
+|4     |work_pls_axi_dma_0                 |         1|
+|5     |work_pls_axi_fifo_mm_s_0           |         1|
+|6     |work_pls_axi_smc_0                 |         1|
+|7     |work_pls_axis_subset_converter_0   |         1|
+|8     |work_pls_rst_ps8_0_96M_0           |         1|
+|9     |work_pls_usp_rf_data_converter_0_0 |         1|
+|10    |work_pls_zynq_ultra_ps_e_0_0       |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |work_pls_Receiver_0_0_bbox              |     1|
+|2     |work_pls_auto_pc_0_bbox                 |     1|
+|3     |work_pls_axi_dma_0_bbox                 |     1|
+|4     |work_pls_axi_fifo_mm_s_0_bbox           |     1|
+|5     |work_pls_axi_smc_0_bbox                 |     1|
+|6     |work_pls_axis_subset_converter_0_bbox   |     1|
+|7     |work_pls_rst_ps8_0_96M_0_bbox           |     1|
+|8     |work_pls_usp_rf_data_converter_0_0_bbox |     1|
+|9     |work_pls_xbar_0_bbox                    |     1|
+|10    |work_pls_zynq_ultra_ps_e_0_0_bbox       |     1|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2712.859 ; gain = 861.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2712.859 ; gain = 903.602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2712.859 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2712.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a0e141cc
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2712.859 ; gain = 2023.504
+INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver/PYNQ_Receiver.runs/synth_1/work_pls_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file work_pls_wrapper_utilization_synth.rpt -pb work_pls_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 25 12:39:18 2025...

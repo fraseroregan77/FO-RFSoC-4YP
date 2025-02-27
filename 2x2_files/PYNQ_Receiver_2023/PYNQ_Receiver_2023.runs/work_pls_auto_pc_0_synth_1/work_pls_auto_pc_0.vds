@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Feb 25 14:31:33 2025
+# Process ID: 8636
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_auto_pc_0_synth_1
+# Command line: vivado.exe -log work_pls_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source work_pls_auto_pc_0.tcl
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_auto_pc_0_synth_1/work_pls_auto_pc_0.vds
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.runs/work_pls_auto_pc_0_synth_1\vivado.jou
+# Running On: EEE-R343-01, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 4, Host memory: 17060 MB
+#-----------------------------------------------------------
+source work_pls_auto_pc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.590 ; gain = 158.250
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demodulate/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PYNQ_Receiver_2023/PYNQ_Receiver_2023.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: work_pls_auto_pc_0
+Command: synth_design -top work_pls_auto_pc_0 -part xczu28dr-ffvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xczu28dr'. Explanation: The license feature Synthesis could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+4 Infos, 2 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xczu28dr'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Note: Vivado 2021.1 and later versions require upgrading your license server tools to the Flex 11.17.2.0 versions. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 25 14:31:54 2025...
