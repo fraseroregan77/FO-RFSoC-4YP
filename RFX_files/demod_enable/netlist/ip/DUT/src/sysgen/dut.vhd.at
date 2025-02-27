@@ -1,0 +1,162 @@
+{
+  'Line_151' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate',
+    'Instance' => 'modulate',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate'
+  },
+  'Line_158' => {
+    'CodeInstance' => 'dut_struct/algorithm/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Convert'
+  },
+  'Line_179' => {
+    'CodeInstance' => 'dut_struct/algorithm/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Delay1'
+  },
+  'Line_194' => {
+    'CodeInstance' => 'dut_struct/algorithm/delay3',
+    'Instance' => 'delay3',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Delay3'
+  },
+  'Line_209' => {
+    'CodeInstance' => 'dut_struct/algorithm/fir_compiler_7_2',
+    'Instance' => 'fir_compiler_7_2',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/FIR Compiler 7.2'
+  },
+  'Line_222' => {
+    'CodeInstance' => 'dut_struct/algorithm/mult',
+    'Instance' => 'mult',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Mult'
+  },
+  'Line_259' => {
+    'CodeInstance' => 'dut_struct/algorithm/shift',
+    'Instance' => 'shift',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Shift'
+  },
+  'Line_29' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate/accumulator',
+    'Instance' => 'accumulator',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate/Accumulator'
+  },
+  'Line_314' => {
+    'CodeInstance' => 'dut_struct/master_fifo/concat1',
+    'Instance' => 'concat1',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO/Concat1'
+  },
+  'Line_323' => {
+    'CodeInstance' => 'dut_struct/master_fifo/fifo',
+    'Instance' => 'fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO/FIFO'
+  },
+  'Line_350' => {
+    'CodeInstance' => 'dut_struct/master_fifo/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO/Inverter2'
+  },
+  'Line_358' => {
+    'CodeInstance' => 'dut_struct/master_fifo/inverter4',
+    'Instance' => 'inverter4',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO/Inverter4'
+  },
+  'Line_366' => {
+    'CodeInstance' => 'dut_struct/master_fifo/tdata_slice',
+    'Instance' => 'tdata_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO/tdata_slice'
+  },
+  'Line_377' => {
+    'CodeInstance' => 'dut_struct/master_fifo/tlast_slice',
+    'Instance' => 'tlast_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO/tlast_slice'
+  },
+  'Line_38' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate/AddSub1'
+  },
+  'Line_435' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/concat',
+    'Instance' => 'concat',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/Concat'
+  },
+  'Line_444' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/fifo',
+    'Instance' => 'fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/FIFO'
+  },
+  'Line_47' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate/Convert'
+  },
+  'Line_470' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/Inverter1'
+  },
+  'Line_478' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/Inverter2'
+  },
+  'Line_486' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/Logical'
+  },
+  'Line_495' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/tdata_slice',
+    'Instance' => 'tdata_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/tdata_slice'
+  },
+  'Line_506' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/tlast_slice',
+    'Instance' => 'tlast_slice',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO/tlast_slice'
+  },
+  'Line_569' => {
+    'CodeInstance' => 'dut_struct/algorithm',
+    'Instance' => 'algorithm',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm'
+  },
+  'Line_581' => {
+    'CodeInstance' => 'dut_struct/master_fifo',
+    'Instance' => 'master_fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Master FIFO'
+  },
+  'Line_594' => {
+    'CodeInstance' => 'dut_struct/slave_fifo',
+    'Instance' => 'slave_fifo',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Slave FIFO'
+  },
+  'Line_624' => {
+    'CodeInstance' => 'dut_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_662' => {
+    'CodeInstance' => 'dut_default_clock_driver',
+    'Instance' => 'dut_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_670' => {
+    'CodeInstance' => 'dut_struct',
+    'Instance' => 'dut_struct',
+    'SimulinkInstance' => 'DUT'
+  },
+  'Line_68' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate/dither',
+    'Instance' => 'dither',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate/Dither'
+  },
+  'Line_75' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate/lut',
+    'Instance' => 'lut',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate/LUT'
+  },
+  'Line_93' => {
+    'CodeInstance' => 'dut_struct/algorithm/modulate/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Modulate/Register'
+  }
+}

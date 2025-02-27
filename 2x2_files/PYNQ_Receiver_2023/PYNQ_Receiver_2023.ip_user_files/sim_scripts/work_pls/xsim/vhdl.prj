@@ -1,0 +1,26 @@
+vhdl xil_defaultlib  \
+"../../../bd/work_pls/ip/work_pls_Receiver_0_0/sin_wave_demodulate_fir_compiler_v7_2_i0/sim/sin_wave_demodulate_fir_compiler_v7_2_i0.vhd" \
+"../../../bd/work_pls/ip/work_pls_Receiver_0_0/sin_wave_demodulate_mult_gen_v12_0_i0/sim/sin_wave_demodulate_mult_gen_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/conv_pkg.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/synth_reg.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/synth_reg_w_init.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/srl17e.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/srl33e.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/synth_reg_reg.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/single_reg_w_init.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/xlclockdriver_rd.vhd" \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/sin_wave_demodulate_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../PYNQ_Receiver_2023.gen/sources_1/bd/work_pls/ipshared/0f0d/hdl/sin_wave_demodulate.vhd" \
+"../../../bd/work_pls/ip/work_pls_Receiver_0_0/sim/work_pls_Receiver_0_0.vhd" \
+"../../../bd/work_pls/ip/work_pls_axi_fifo_mm_s_0/sim/work_pls_axi_fifo_mm_s_0.vhd" \
+"../../../bd/work_pls/ip/work_pls_rst_ps8_0_96M_0/sim/work_pls_rst_ps8_0_96M_0.vhd" \
+"../../../bd/work_pls/ip/work_pls_axi_dma_0/sim/work_pls_axi_dma_0.vhd" \
+"../../../bd/work_pls/ip/work_pls_axi_smc_0/bd_0/ip/ip_1/sim/bd_c659_psr_aclk_0.vhd" \
+"../../../bd/work_pls/sim/work_pls.vhd" \
+
+# Do not sort compile order
+nosort

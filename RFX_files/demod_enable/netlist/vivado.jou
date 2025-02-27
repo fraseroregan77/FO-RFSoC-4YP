@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Feb 27 17:50:34 2025
+# Process ID: 13204
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/enable_redesign/demod_enable/netlist
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/enable_redesign/demod_enable/netlist/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/enable_redesign/demod_enable/netlist\vivado.jou
+# Running On: EEE-R446-29, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 14, Host memory: 16833 MB
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
