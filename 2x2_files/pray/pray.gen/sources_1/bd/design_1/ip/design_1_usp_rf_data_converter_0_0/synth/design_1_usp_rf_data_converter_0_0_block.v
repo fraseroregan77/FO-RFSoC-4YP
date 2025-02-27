@@ -287,7 +287,7 @@ module design_1_usp_rf_data_converter_0_0_block (
   // NO NOT MODIFY
   localparam       dac00_enable        = 1'b1;
   localparam       dac00_data_type     = 1'b0;
-  localparam [5:0] dac00_interpolation = 6'd1;
+  localparam [5:0] dac00_interpolation = 6'd4;
   localparam [1:0] dac00_mixer         = 2'd2;
   localparam       dac00_sinc          = 1'b0;
   localparam       dac01_enable        = 1'b0;
@@ -330,11 +330,11 @@ module design_1_usp_rf_data_converter_0_0_block (
   // NO NOT MODIFY
   localparam       adc00_enable        = 1'b1;
   localparam       adc00_data_type     = 1'b0;
-  localparam [5:0] adc00_decimation    = 6'd1;
+  localparam [5:0] adc00_decimation    = 6'd4;
   localparam [1:0] adc00_mixer         = 2'd2;
   localparam       adc01_enable        = 1'b1;
   localparam       adc01_data_type     = 1'b0;
-  localparam [5:0] adc01_decimation    = 6'd1;
+  localparam [5:0] adc01_decimation    = 6'd4;
   localparam [1:0] adc01_mixer         = 2'd2;
   localparam       adc02_enable        = 1'b0;
   localparam       adc02_data_type     = 1'b0;
@@ -2039,7 +2039,7 @@ module design_1_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      dac0_ref_clk_freq <= 32'd6400000;
+      dac0_ref_clk_freq <= 32'd204800;
     end
     else if (bank1_write[192])
     begin
@@ -2050,7 +2050,7 @@ module design_1_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      dac0_sample_rate <= 32'd6400000;
+      dac0_sample_rate <= 32'd4096000;
     end
     else if (bank1_write[193])
     begin
@@ -2429,7 +2429,7 @@ module design_1_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      adc0_ref_clk_freq <= 32'd2000000;
+      adc0_ref_clk_freq <= 32'd204800;
     end
     else if (bank9_write[192])
     begin
@@ -2440,7 +2440,7 @@ module design_1_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      adc0_sample_rate <= 32'd2000000;
+      adc0_sample_rate <= 32'd4096000;
     end
     else if (bank9_write[193])
     begin
@@ -3573,13 +3573,13 @@ module design_1_usp_rf_data_converter_0_0_block (
                                bank0_read[2] ? {16'b0, startup_delay} :
                                bank0_read[8] ? {16'b0, 8'd228, 7'b0, 1'b1} :
                                // DAC Tile Config Bit 0:DAC Tile 0 Enable, Bit 1 Tile 0 PLL Enable Bits 3:2 Reserved, Bit 4: DAC Tile 1 Enabled, Bit 5: Tile 1 PLL Enable Bits 7:6 Reserved...
-                               bank0_read[9] ? {4'h0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b1} :
+                               bank0_read[9] ? {4'h0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b1, 1'b1} :
                                bank0_read[10] ? {3'b000, dac01_sinc, 2'b00, dac01_mixer, dac01_interpolation, dac01_data_type, dac01_enable,  3'b000, dac00_sinc, 2'b00, dac00_mixer, dac00_interpolation, dac00_data_type, dac00_enable} :
                                bank0_read[11] ? {3'b000, dac03_sinc, 2'b00, dac03_mixer, dac03_interpolation, dac03_data_type, dac03_enable,  3'b000, dac02_sinc, 2'b00, dac02_mixer, dac02_interpolation, dac02_data_type, dac02_enable} :
                                bank0_read[12] ? {3'b000, dac11_sinc, 2'b00, dac11_mixer, dac11_interpolation, dac11_data_type, dac11_enable,  3'b000, dac10_sinc, 2'b00, dac10_mixer, dac10_interpolation, dac10_data_type, dac10_enable} :
                                bank0_read[13] ? {3'b000, dac13_sinc, 2'b00, dac13_mixer, dac13_interpolation, dac13_data_type, dac13_enable,  3'b000, dac12_sinc, 2'b00, dac12_mixer, dac12_interpolation, dac12_data_type, dac12_enable} :
                                // ADC Tile Config Bit 0:ADC Tile 0 Enable, Bit 1 ADC Tile 0 PLL Enable Bits 3:2 Reserved, Bit 4: ADC Tile 1 Enabled, Bit 5: ADC Tile 1 PLL Enable Bits 7:6 Reserved...
-                               bank0_read[25] ? {4'h0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b1} :
+                               bank0_read[25] ? {4'h0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b0, 1'b0, 2'b00, 1'b1, 1'b1} :
                                bank0_read[26] ? {6'b0, adc01_mixer, adc01_decimation, adc01_data_type, adc01_enable,  6'b0, adc00_mixer, adc00_decimation, adc00_data_type, adc00_enable} :
                                bank0_read[27] ? {6'b0, adc03_mixer, adc03_decimation, adc03_data_type, adc03_enable,  6'b0, adc02_mixer, adc02_decimation, adc02_data_type, adc02_enable} :
                                bank0_read[28] ? {6'b0, adc11_mixer, adc11_decimation, adc11_data_type, adc11_enable,  6'b0, adc10_mixer, adc10_decimation, adc10_data_type, adc10_enable} :

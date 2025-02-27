@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 27 21:16:29 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Feb 27 22:22:26 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" DEVICE="xczu28dr" NAME="design_1" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
@@ -3053,22 +3053,22 @@
         <PARAMETER NAME="C_ADC0_Clock_Dist" VALUE="0"/>
         <PARAMETER NAME="C_ADC0_Clock_Source" VALUE="0"/>
         <PARAMETER NAME="C_ADC0_Clock_Source_MX" VALUE="0"/>
-        <PARAMETER NAME="C_ADC0_Decimation" VALUE="1"/>
+        <PARAMETER NAME="C_ADC0_Decimation" VALUE="4"/>
         <PARAMETER NAME="C_ADC0_Enable" VALUE="1"/>
-        <PARAMETER NAME="C_ADC0_FBDIV" VALUE="10"/>
-        <PARAMETER NAME="C_ADC0_Fabric_Freq" VALUE="250.000"/>
+        <PARAMETER NAME="C_ADC0_FBDIV" VALUE="60"/>
+        <PARAMETER NAME="C_ADC0_Fabric_Freq" VALUE="128.000"/>
         <PARAMETER NAME="C_ADC0_Fs_Max" VALUE="4.096"/>
         <PARAMETER NAME="C_ADC0_Link_Coupling" VALUE="0"/>
         <PARAMETER NAME="C_ADC0_Multi_Tile_Sync" VALUE="false"/>
         <PARAMETER NAME="C_ADC0_OBS_Fabric_Freq" VALUE="0.0"/>
-        <PARAMETER NAME="C_ADC0_OutDiv" VALUE="6"/>
-        <PARAMETER NAME="C_ADC0_Outclk_Freq" VALUE="15.625"/>
-        <PARAMETER NAME="C_ADC0_PLL_Enable" VALUE="false"/>
+        <PARAMETER NAME="C_ADC0_OutDiv" VALUE="3"/>
+        <PARAMETER NAME="C_ADC0_Outclk_Freq" VALUE="32.000"/>
+        <PARAMETER NAME="C_ADC0_PLL_Enable" VALUE="true"/>
         <PARAMETER NAME="C_ADC0_Refclk_Div" VALUE="1"/>
-        <PARAMETER NAME="C_ADC0_Refclk_Freq" VALUE="2000.000"/>
-        <PARAMETER NAME="C_ADC0_Sampling_Rate" VALUE="2.0"/>
+        <PARAMETER NAME="C_ADC0_Refclk_Freq" VALUE="204.800"/>
+        <PARAMETER NAME="C_ADC0_Sampling_Rate" VALUE="4.096"/>
         <PARAMETER NAME="C_ADC0_Slices" VALUE="2"/>
-        <PARAMETER NAME="C_ADC0_Vco" VALUE="12000.0"/>
+        <PARAMETER NAME="C_ADC0_Vco" VALUE="12288.0"/>
         <PARAMETER NAME="C_ADC10_Dig_Port" VALUE="0"/>
         <PARAMETER NAME="C_ADC11_Dig_Port" VALUE="0"/>
         <PARAMETER NAME="C_ADC12_Dig_Port" VALUE="0"/>
@@ -3223,8 +3223,8 @@
         <PARAMETER NAME="C_ADC_Data_Width32" VALUE="8"/>
         <PARAMETER NAME="C_ADC_Data_Width33" VALUE="8"/>
         <PARAMETER NAME="C_ADC_Debug" VALUE="false"/>
-        <PARAMETER NAME="C_ADC_Decimation_Mode00" VALUE="1"/>
-        <PARAMETER NAME="C_ADC_Decimation_Mode01" VALUE="1"/>
+        <PARAMETER NAME="C_ADC_Decimation_Mode00" VALUE="4"/>
+        <PARAMETER NAME="C_ADC_Decimation_Mode01" VALUE="4"/>
         <PARAMETER NAME="C_ADC_Decimation_Mode02" VALUE="0"/>
         <PARAMETER NAME="C_ADC_Decimation_Mode03" VALUE="0"/>
         <PARAMETER NAME="C_ADC_Decimation_Mode10" VALUE="0"/>
@@ -3464,21 +3464,21 @@
         <PARAMETER NAME="C_DAC0_Clock_Source" VALUE="4"/>
         <PARAMETER NAME="C_DAC0_Clock_Source_MX" VALUE="4"/>
         <PARAMETER NAME="C_DAC0_Enable" VALUE="1"/>
-        <PARAMETER NAME="C_DAC0_FBDIV" VALUE="10"/>
-        <PARAMETER NAME="C_DAC0_Fabric_Freq" VALUE="400.000"/>
+        <PARAMETER NAME="C_DAC0_FBDIV" VALUE="60"/>
+        <PARAMETER NAME="C_DAC0_Fabric_Freq" VALUE="64.000"/>
         <PARAMETER NAME="C_DAC0_Fs_Max" VALUE="6.554"/>
-        <PARAMETER NAME="C_DAC0_Interpolation" VALUE="1"/>
+        <PARAMETER NAME="C_DAC0_Interpolation" VALUE="4"/>
         <PARAMETER NAME="C_DAC0_Link_Coupling" VALUE="0"/>
         <PARAMETER NAME="C_DAC0_Multi_Tile_Sync" VALUE="false"/>
-        <PARAMETER NAME="C_DAC0_OutDiv" VALUE="2"/>
-        <PARAMETER NAME="C_DAC0_Outclk_Freq" VALUE="50.000"/>
-        <PARAMETER NAME="C_DAC0_PLL_Enable" VALUE="false"/>
+        <PARAMETER NAME="C_DAC0_OutDiv" VALUE="3"/>
+        <PARAMETER NAME="C_DAC0_Outclk_Freq" VALUE="64.000"/>
+        <PARAMETER NAME="C_DAC0_PLL_Enable" VALUE="true"/>
         <PARAMETER NAME="C_DAC0_Refclk_Div" VALUE="1"/>
-        <PARAMETER NAME="C_DAC0_Refclk_Freq" VALUE="6400.000"/>
-        <PARAMETER NAME="C_DAC0_Sampling_Rate" VALUE="6.4"/>
+        <PARAMETER NAME="C_DAC0_Refclk_Freq" VALUE="204.800"/>
+        <PARAMETER NAME="C_DAC0_Sampling_Rate" VALUE="4.096"/>
         <PARAMETER NAME="C_DAC0_Slices" VALUE="4"/>
         <PARAMETER NAME="C_DAC0_VOP" VALUE="20.0"/>
-        <PARAMETER NAME="C_DAC0_Vco" VALUE="12800.0"/>
+        <PARAMETER NAME="C_DAC0_Vco" VALUE="12288.0"/>
         <PARAMETER NAME="C_DAC1_Band" VALUE="0"/>
         <PARAMETER NAME="C_DAC1_Clock_Dist" VALUE="0"/>
         <PARAMETER NAME="C_DAC1_Clock_Source" VALUE="5"/>
@@ -3604,7 +3604,7 @@
         <PARAMETER NAME="C_DAC_Decoder_Mode31" VALUE="0"/>
         <PARAMETER NAME="C_DAC_Decoder_Mode32" VALUE="0"/>
         <PARAMETER NAME="C_DAC_Decoder_Mode33" VALUE="0"/>
-        <PARAMETER NAME="C_DAC_Interpolation_Mode00" VALUE="1"/>
+        <PARAMETER NAME="C_DAC_Interpolation_Mode00" VALUE="4"/>
         <PARAMETER NAME="C_DAC_Interpolation_Mode01" VALUE="0"/>
         <PARAMETER NAME="C_DAC_Interpolation_Mode02" VALUE="0"/>
         <PARAMETER NAME="C_DAC_Interpolation_Mode03" VALUE="0"/>
@@ -3823,15 +3823,15 @@
         <PARAMETER NAME="ADC0_Clock_Source" VALUE="0"/>
         <PARAMETER NAME="ADC0_Clock_Source_MX" VALUE="0"/>
         <PARAMETER NAME="ADC0_Enable" VALUE="1"/>
-        <PARAMETER NAME="ADC0_Fabric_Freq" VALUE="250.000"/>
+        <PARAMETER NAME="ADC0_Fabric_Freq" VALUE="128.000"/>
         <PARAMETER NAME="ADC0_Link_Coupling" VALUE="0"/>
         <PARAMETER NAME="ADC0_Multi_Tile_Sync" VALUE="false"/>
         <PARAMETER NAME="ADC0_OBS_Fabric_Freq" VALUE="0.0"/>
-        <PARAMETER NAME="ADC0_Outclk_Freq" VALUE="15.625"/>
-        <PARAMETER NAME="ADC0_PLL_Enable" VALUE="false"/>
+        <PARAMETER NAME="ADC0_Outclk_Freq" VALUE="32.000"/>
+        <PARAMETER NAME="ADC0_PLL_Enable" VALUE="true"/>
         <PARAMETER NAME="ADC0_Refclk_Div" VALUE="1"/>
-        <PARAMETER NAME="ADC0_Refclk_Freq" VALUE="2000.000"/>
-        <PARAMETER NAME="ADC0_Sampling_Rate" VALUE="2.0"/>
+        <PARAMETER NAME="ADC0_Refclk_Freq" VALUE="204.800"/>
+        <PARAMETER NAME="ADC0_Sampling_Rate" VALUE="4.096"/>
         <PARAMETER NAME="ADC1_Band" VALUE="0"/>
         <PARAMETER NAME="ADC1_Clock_Dist" VALUE="0"/>
         <PARAMETER NAME="ADC1_Clock_Source" VALUE="1"/>
@@ -3960,8 +3960,8 @@
         <PARAMETER NAME="ADC_Data_Width32" VALUE="8"/>
         <PARAMETER NAME="ADC_Data_Width33" VALUE="8"/>
         <PARAMETER NAME="ADC_Debug" VALUE="false"/>
-        <PARAMETER NAME="ADC_Decimation_Mode00" VALUE="1"/>
-        <PARAMETER NAME="ADC_Decimation_Mode01" VALUE="1"/>
+        <PARAMETER NAME="ADC_Decimation_Mode00" VALUE="4"/>
+        <PARAMETER NAME="ADC_Decimation_Mode01" VALUE="4"/>
         <PARAMETER NAME="ADC_Decimation_Mode02" VALUE="0"/>
         <PARAMETER NAME="ADC_Decimation_Mode03" VALUE="0"/>
         <PARAMETER NAME="ADC_Decimation_Mode10" VALUE="0"/>
@@ -4201,14 +4201,14 @@
         <PARAMETER NAME="DAC0_Clock_Source" VALUE="4"/>
         <PARAMETER NAME="DAC0_Clock_Source_MX" VALUE="4"/>
         <PARAMETER NAME="DAC0_Enable" VALUE="1"/>
-        <PARAMETER NAME="DAC0_Fabric_Freq" VALUE="400.000"/>
+        <PARAMETER NAME="DAC0_Fabric_Freq" VALUE="64.000"/>
         <PARAMETER NAME="DAC0_Link_Coupling" VALUE="0"/>
         <PARAMETER NAME="DAC0_Multi_Tile_Sync" VALUE="false"/>
-        <PARAMETER NAME="DAC0_Outclk_Freq" VALUE="50.000"/>
-        <PARAMETER NAME="DAC0_PLL_Enable" VALUE="false"/>
+        <PARAMETER NAME="DAC0_Outclk_Freq" VALUE="64.000"/>
+        <PARAMETER NAME="DAC0_PLL_Enable" VALUE="true"/>
         <PARAMETER NAME="DAC0_Refclk_Div" VALUE="1"/>
-        <PARAMETER NAME="DAC0_Refclk_Freq" VALUE="6400.000"/>
-        <PARAMETER NAME="DAC0_Sampling_Rate" VALUE="6.4"/>
+        <PARAMETER NAME="DAC0_Refclk_Freq" VALUE="204.800"/>
+        <PARAMETER NAME="DAC0_Sampling_Rate" VALUE="4.096"/>
         <PARAMETER NAME="DAC0_VOP" VALUE="20.0"/>
         <PARAMETER NAME="DAC1_Band" VALUE="0"/>
         <PARAMETER NAME="DAC1_Clock_Dist" VALUE="0"/>
@@ -4321,7 +4321,7 @@
         <PARAMETER NAME="DAC_Decoder_Mode31" VALUE="0"/>
         <PARAMETER NAME="DAC_Decoder_Mode32" VALUE="0"/>
         <PARAMETER NAME="DAC_Decoder_Mode33" VALUE="0"/>
-        <PARAMETER NAME="DAC_Interpolation_Mode00" VALUE="1"/>
+        <PARAMETER NAME="DAC_Interpolation_Mode00" VALUE="4"/>
         <PARAMETER NAME="DAC_Interpolation_Mode01" VALUE="0"/>
         <PARAMETER NAME="DAC_Interpolation_Mode02" VALUE="0"/>
         <PARAMETER NAME="DAC_Interpolation_Mode03" VALUE="0"/>
@@ -4696,8 +4696,8 @@
             <CONNECTION INSTANCE="design_1_imp" PORT="adc0_clk_clk_p"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="15625000" DIR="O" NAME="clk_adc0" SIGIS="clk"/>
-        <PORT CLKFREQUENCY="50000000" DIR="O" NAME="clk_dac0" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="32000000" DIR="O" NAME="clk_adc0" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="64000000" DIR="O" NAME="clk_dac0" SIGIS="clk"/>
         <PORT DIR="I" NAME="dac0_clk_n" SIGIS="clk" SIGNAME="usp_rf_data_converter_0_dac0_clk_n">
           <CONNECTIONS>
             <CONNECTION INSTANCE="design_1_imp" PORT="dac0_clk_clk_n"/>

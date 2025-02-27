@@ -105,6 +105,10 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 5
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableLutRouteBelPower 1
   set_param runs.launchOptions { -jobs 20  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu28dr-ffvg1517-2-e
