@@ -68,3 +68,5 @@ c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip
 before sourcing this Tcl script or use write_project_tcl.
 INFO: [BD 5-148] Tcl file written out <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/design_1.tcl>.
 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 12:47:44 2025...
