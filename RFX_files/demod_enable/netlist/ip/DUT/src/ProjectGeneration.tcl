@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {DUT}
-	set IP_Revision {371588070}
+	set IP_Revision {371931201}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {User Company}
@@ -56,7 +56,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set SynthesisTool {Vivado}
 	set TargetDir {C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src}
 	set TopLevelModule {dut}
-	set TopLevelSimulinkHandle 139
+	set TopLevelSimulinkHandle 138
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface step_size Name {step_size}
