@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Mar  3 12:33:42 2025
-# Process ID: 20076
+# Start of session at: Mon Mar  3 17:40:00 2025
+# Process ID: 22636
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2324 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11260 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.xpr
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray\vivado.jou
-# Running On        :EEE-R446-28
+# Running On        :EEE-R446-02
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
@@ -17,9 +17,9 @@
 # CPU Physical cores:14
 # CPU Logical cores :20
 # Host memory       :16833 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19383 MB
-# Available Virtual :12292 MB
+# Swap memory       :39508 MB
+# Total Virtual     :56341 MB
+# Available Virtual :41150 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.xpr
@@ -38,7 +38,11 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 avai
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 1612.398 ; gain = 408.746
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_DUT_receiver_0_0
+
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1773.551 ; gain = 567.949
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd}
 Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd>...
@@ -59,14 +63,603 @@ Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Successfully read diagram <design_1> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd>
-write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/design_1.tcl
-WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
-/DUT_data_in_0, /DUT_receiver_0
-Please add the following user repository(s):
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip
-before sourcing this Tcl script or use write_project_tcl.
-INFO: [BD 5-148] Tcl file written out <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/design_1.tcl>.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/clb20123/documents/fo-rfsoc-4yp/2x2_files/pray/pray.tmp/dut_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+can't use empty string as operand of "/"
+update_compile_order -fileset sources_1
+set_property name DUT_receiver [ipx::current_core]
+close_project
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+delete_bd_objs [get_bd_intf_nets DUT_receiver_0_m_axis] [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_nets xlconstant_1_dout] [get_bd_cells DUT_receiver_0]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets DUT_receiver_0_m_axis] [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_nets xlconstant_1_dout] [get_bd_cells DUT_receiver_0]'
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_cells ps8_0_axi_periph]
+delete_bd_objs [get_bd_intf_nets axi_dma_M_AXI_S2MM] [get_bd_intf_nets axi_dma_M_AXI_MM2S] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_intf_nets axi_dma_M_AXIS_MM2S] [get_bd_intf_nets DUT_receiver_0_m_axis] [get_bd_cells axi_dma]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_cells rst_ps8_0_96M]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_nets xlconstant_1_dout] [get_bd_cells DUT_receiver_0]
+set_property location {6 2202 705} [get_bd_cells usp_rf_data_converter_0]
+delete_bd_objs [get_bd_intf_nets adc0_clk_1] [get_bd_intf_ports adc0_clk]
+delete_bd_objs [get_bd_intf_nets dac0_clk_1] [get_bd_intf_ports dac0_clk]
+delete_bd_objs [get_bd_intf_nets vin0_01_1]
+delete_bd_objs [get_bd_intf_nets sysref_in_1]
+delete_bd_objs [get_bd_intf_ports vin0_01]
+delete_bd_objs [get_bd_intf_ports sysref_in]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_vout00] [get_bd_intf_ports vout00]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]'
+Including slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> into address space </axi_dma/Data_MM2S>.
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'design_1_DUT_0_0' is locked:
+* IP definition 'DUT (1.0)' for IP 'design_1_DUT_0_0' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'fir_data.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+set_property location {2 969 250} [get_bd_cells DUT_0]
+copy_bd_objs /  [get_bd_cells {xlconstant_0}]
+set_property location {1 554 257} [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins DUT_0/fir_data_tready] [get_bd_pins DUT_0/m_axis_tready]
+WARNING: [BD 41-1306] The connection to interface pin </DUT_0/fir_data_tready> is being overridden by the user with net <DUT_0_fir_data_tready>. This pin will not be connected as a part of interface connection <fir_data>.
+WARNING: [BD 41-1306] The connection to interface pin </DUT_0/m_axis_tready> is being overridden by the user with net <DUT_0_fir_data_tready>. This pin will not be connected as a part of interface connection <m_axis>.
+delete_bd_objs [get_bd_nets DUT_0_fir_data_tready]
+set_property location {2 1013 255} [get_bd_cells DUT_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+set_property location {4 1367 385} [get_bd_cells DUT_data_in_0]
+set_property location {5 1771 396} [get_bd_cells axi_dma]
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+connect_bd_intf_net [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins DUT_0/s_axis]
+set_property location {2 371 244} [get_bd_cells DUT_0]
+connect_bd_intf_net [get_bd_intf_pins DUT_0/m_axis] [get_bd_intf_pins axi_dma/S_AXIS_S2MM]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+Slave segment '/axi_dma/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "Custom" DAC0_AXIS_SOURCE "Custom" }  [get_bd_cells usp_rf_data_converter_0]
+set_property location {1 80 164} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins DUT_0/step_size]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  design_1_DUT_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_DUT_0_0 (DUT 1.0) from revision 371929094 to revision 371929741
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'fir_data'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'dut_s_axi' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_DUT_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'fir_data_tready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'fir_data_tvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_aresetn'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_araddr'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_arready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_arvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_awaddr'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_awready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_awvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_bready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_bresp'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_bvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_rdata'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_rready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_rresp'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_rvalid'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_wdata'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_wready'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_wstrb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dut_s_axi_wvalid'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_DUT_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_DUT_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_DUT_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_3: SmartConnect design_1_axi_smc_3 is in High-performance Mode.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /usp_rf_data_converter_0/s00_axis(32) and /DUT_data_in_0/m_axis(4)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /DUT_0/s_axis(4) and /usp_rf_data_converter_0/m00_axis(16)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /DUT_data_in_0/s_axis(0) and /axi_dma/M_AXIS_MM2S(4)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /axi_dma/M_AXIS_MM2S(undef)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/DUT_0/dut_aresetn
 
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_data_in_0/s_axis_tdata'(1) to pin: '/axi_dma/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/usp_rf_data_converter_0/s00_axis_tdata'(256) to pin: '/DUT_data_in_0/m_axis_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_data_in_0/s_axis_tdata'(1) to pin: '/axi_dma/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/usp_rf_data_converter_0/s00_axis_tdata'(256) to pin: '/DUT_data_in_0/m_axis_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
+VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+WARNING: [IP_Flow 19-519] IP 'design_1_DUT_0_0' detected a language mismatch between 'Verilog Synthesis Wrapper' and 'VHDL Synthesis' output products. Please check with the IP provider to see if this is expected.
+WARNING: [IP_Flow 19-519] IP 'design_1_DUT_0_0' detected a language mismatch between 'Verilog Simulation Wrapper' and 'VHDL Simulation' output products. Please check with the IP provider to see if this is expected.
+can't use empty string as operand of "/"
+INFO: [IP_Flow 19-3420] Updated dut_fifo_generator_i0 to use current project options
+INFO: [IP_Flow 19-3420] Updated dut_fifo_generator_i1 to use current project options
+INFO: [IP_Flow 19-3420] Updated dut_fir_compiler_v7_2_i0 to use current project options
+INFO: [IP_Flow 19-3420] Updated dut_mult_gen_v12_0_i0 to use current project options
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DUT_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma .
+Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/hw_handoff/design_1_axi_smc_3.hwh
+Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_smc_3/bd_0/synth/design_1_axi_smc_3.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_96M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 2403.160 ; gain = 318.090
+catch { config_ip_cache -export [get_ips -all design_1_DUT_0_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_DUT_0_0
+catch { config_ip_cache -export [get_ips -all design_1_axi_dma_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_dma_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d1784d8ce0a6ad76 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/design_1_axi_dma_1.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/design_1_axi_dma_1_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/design_1_axi_dma_1_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/design_1_axi_dma_1_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/design_1_axi_dma_1_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_axi_dma_3/design_1_axi_dma_3_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_dma_3, cache-ID = d1784d8ce0a6ad76; cache size = 46.133 MB.
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_3
+catch { config_ip_cache -export [get_ips -all design_1_rst_ps8_0_96M_3] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rst_ps8_0_96M_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 84fdea816dbca264 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/8/4/84fdea816dbca264/design_1_rst_ps8_0_96M_1.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/8/4/84fdea816dbca264/design_1_rst_ps8_0_96M_1_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/8/4/84fdea816dbca264/design_1_rst_ps8_0_96M_1_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/8/4/84fdea816dbca264/design_1_rst_ps8_0_96M_1_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/8/4/84fdea816dbca264/design_1_rst_ps8_0_96M_1_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_96M_3/design_1_rst_ps8_0_96M_3_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps8_0_96M_3, cache-ID = 84fdea816dbca264; cache size = 46.133 MB.
+catch { config_ip_cache -export [get_ips -all design_1_xbar_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry bf1db54df888c609 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/b/f/bf1db54df888c609/design_1_xbar_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/b/f/bf1db54df888c609/design_1_xbar_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/b/f/bf1db54df888c609/design_1_xbar_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/b/f/bf1db54df888c609/design_1_xbar_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/b/f/bf1db54df888c609/design_1_xbar_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_1, cache-ID = bf1db54df888c609; cache size = 46.133 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 112b904721ae71ae to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/1/1/112b904721ae71ae/design_1_auto_pc_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/1/1/112b904721ae71ae/design_1_auto_pc_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/1/1/112b904721ae71ae/design_1_auto_pc_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/1/1/112b904721ae71ae/design_1_auto_pc_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/ip/2024.1/1/1/112b904721ae71ae/design_1_auto_pc_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 112b904721ae71ae; cache size = 46.133 MB.
+export_ip_user_files -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_DUT_0_0_synth_1 design_1_axi_smc_3_synth_1 -jobs 20
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_DUT_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_smc_3
+[Mon Mar  3 17:53:11 2025] Launched design_1_DUT_0_0_synth_1, design_1_axi_smc_3_synth_1...
+Run output will be captured here:
+design_1_DUT_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.runs/design_1_DUT_0_0_synth_1/runme.log
+design_1_axi_smc_3_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.runs/design_1_axi_smc_3_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.ip_user_files -ipstatic_source_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/modelsim} {questa=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/questa} {riviera=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/riviera} {activehdl=C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_nets xlconstant_1_dout] [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_intf_nets DUT_0_m_axis] [get_bd_cells DUT_0]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_cells rst_ps8_0_96M]
+delete_bd_objs [get_bd_intf_nets axi_dma_M_AXI_S2MM] [get_bd_intf_nets axi_dma_M_AXI_MM2S] [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets axi_dma_M_AXIS_MM2S] [get_bd_cells axi_dma]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_cells ps8_0_axi_periph]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+delete_bd_objs [get_bd_intf_nets adc0_clk_1]
+delete_bd_objs [get_bd_intf_nets dac0_clk_1]
+delete_bd_objs [get_bd_intf_nets vin0_01_1]
+delete_bd_objs [get_bd_intf_ports adc0_clk]
+delete_bd_objs [get_bd_intf_ports dac0_clk]
+delete_bd_objs [get_bd_intf_ports vin0_01]
+delete_bd_objs [get_bd_intf_nets sysref_in_1] [get_bd_intf_ports sysref_in]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_vout00]
+delete_bd_objs [get_bd_intf_ports vout00]
+delete_bd_objs [get_bd_nets rst_ps8_0_96M_peripheral_aresetn1]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT_data_in:1.0 DUT_data_in_1
+endgroup
+delete_bd_objs [get_bd_cells DUT_data_in_1]
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'design_1_DUT_0_1' is locked:
+* IP definition 'DUT (1.0)' for IP 'design_1_DUT_0_1' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'dut_s_axi.ADDR_WIDTH' value '3' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+set_property location {2 376 480} [get_bd_cells DUT_0]
+delete_bd_objs [get_bd_cells DUT_0]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+report_ip_status -name ip_status
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'design_1_DUT_0_2' is locked:
+* IP definition 'DUT (1.0)' for IP 'design_1_DUT_0_2' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'fir_data.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+set_property location {2 691 415} [get_bd_cells DUT_0]
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  design_1_DUT_0_2] -log ip_upgrade.log
+Upgrading 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_DUT_0_2 (DUT 1.0) from revision 371930166 to revision 371930452
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'fir_data'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_DUT_0_2'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'fir_data_tready'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'fir_data_tvalid'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_DUT_0_2'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_DUT_0_2' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_DUT_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_ultra_ps_e_0/Data' to slave segment '/usp_rf_data_converter_0/s_axi/Reg'. Please either complete or remove this path to resolve.
+ERROR: [BD 41-1075] Cannot assign slave segment '/usp_rf_data_converter_0/s_axi/Reg' into address space '/zynq_ultra_ps_e_0/Data' at address '0x8004_0000 [ 256K ]'. Master segment '/zynq_ultra_ps_e_0/Data/SEG_usp_rf_data_converter_0_Reg' is invalid. The proposed address '0x8004_0000 [ 256K ]' cannot be assigned through an incomplete addressing path.
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+delete_bd_objs [get_bd_cells DUT_0]
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'design_1_DUT_0_3' is locked:
+* IP definition 'DUT (1.0)' for IP 'design_1_DUT_0_3' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+set_property location {2 734 352} [get_bd_cells DUT_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+set_property location {5 1600 456} [get_bd_cells usp_rf_data_converter_0]
+connect_bd_intf_net [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+set_property location {6 2052 410} [get_bd_cells DUT_0]
+connect_bd_intf_net [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins DUT_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_0/m_axis] [get_bd_intf_pins axi_dma/S_AXIS_S2MM]
+delete_bd_objs [get_bd_cells xlconstant_2]
+set_property location {3 786 360} [get_bd_cells xlconstant_1]
+set_property location {5 1938 586} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins DUT_0/step_size]
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "Custom" DAC0_AXIS_SOURCE "Custom" }  [get_bd_cells usp_rf_data_converter_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+Slave segment '/axi_dma/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+regenerate_bd_layout
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_nets xlconstant_1_dout] [get_bd_intf_nets DUT_0_m_axis] [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_cells DUT_0]
+set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets axi_dma_M_AXIS_MM2S] [get_bd_intf_nets axi_dma_M_AXI_MM2S] [get_bd_intf_nets axi_dma_M_AXI_S2MM] [get_bd_cells axi_dma]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_cells ps8_0_axi_periph]
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'design_1_DUT_0_4' is locked:
+* IP definition 'DUT (1.0)' for IP 'design_1_DUT_0_4' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)" Clk_MM "/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+connect_bd_intf_net [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins DUT_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_0/m_axis] [get_bd_intf_pins axi_dma/S_AXIS_S2MM]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins DUT_0/step_size]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+Slave segment '/axi_dma/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/clb20123/documents/fo-rfsoc-4yp/2x2_files/pray/pray.tmp/dut_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+can't use empty string as operand of "/"
+current_project pray
+current_project DUT_v1_0_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property name DUT_Receiver [ipx::current_core]
+close_project
+export_ip_user_files -of_objects  [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file delete -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/design_1.bd
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+file delete -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/design_1
+file delete -force c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.gen/sources_1/bd/design_1
+create_bd_design "pls_work"
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\pray\pray.srcs\sources_1\bd\pls_work\pls_work.bd> 
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'pls_work_DUT_0_0' is locked:
+* IP definition 'DUT (1.0)' for IP 'pls_work_DUT_0_0' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs pls_work]
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/pray/pray.srcs/sources_1/bd/pls_work/ui/bd_eb96019.ui> 
+close_project
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project PLEASE C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE -part xczu28dr-ffvg1517-2-e
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+set_property target_language VHDL [current_project]
+set_property  ip_repo_paths  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+create_bd_design "PYNQ_Design"
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/clb20123/documents/fo-rfsoc-4yp/2x2_files/please/please.tmp/dut_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+can't use empty string as operand of "/"
+update_compile_order -fileset sources_1
+set_property name DUT_Receiver [ipx::current_core]
+set_property display_name DUT_Receiver [ipx::current_core]
+close_project
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'PYNQ_Design_DUT_0_0' is locked:
+* IP definition 'DUT (1.0)' for IP 'PYNQ_Design_DUT_0_0' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+report_ip_status -name ip_status 
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 12:47:44 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 18:13:04 2025...

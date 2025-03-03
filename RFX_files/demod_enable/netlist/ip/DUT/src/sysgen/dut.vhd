@@ -1,26 +1,26 @@
--- Generated from Simulink block sin_wave_demodulate_2021b/DUT/Algorithm/Modulate
+-- Generated from Simulink block sin_wave_demodulate_2021b/DUT/Algorithm/Demodulate
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity dut_modulate is
+entity dut_demodulate is
   port (
     in1 : in std_logic_vector( 16-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
     out1 : out std_logic_vector( 16-1 downto 0 )
   );
-end dut_modulate;
-architecture structural of dut_modulate is 
-  signal accumulator_s_net : std_logic_vector( 14-1 downto 0 );
+end dut_demodulate;
+architecture structural of dut_demodulate is 
   signal register_q_net : std_logic_vector( 14-1 downto 0 );
-  signal lut_data_net : std_logic_vector( 16-1 downto 0 );
-  signal step_size_net : std_logic_vector( 16-1 downto 0 );
-  signal ce_net : std_logic;
-  signal clk_net : std_logic;
-  signal dither_dout_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 12-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 8-1 downto 0 );
+  signal step_size_net : std_logic_vector( 16-1 downto 0 );
+  signal lut_data_net : std_logic_vector( 16-1 downto 0 );
+  signal clk_net : std_logic;
+  signal accumulator_s_net : std_logic_vector( 14-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 12-1 downto 0 );
+  signal dither_dout_net : std_logic_vector( 16-1 downto 0 );
+  signal ce_net : std_logic;
 begin
   out1 <= lut_data_net;
   step_size_net <= in1;
@@ -119,36 +119,39 @@ entity dut_algorithm is
     ce_1 : in std_logic;
     tvalid_out : out std_logic_vector( 1-1 downto 0 );
     tdata_out : out std_logic_vector( 32-1 downto 0 );
-    tlast_out : out std_logic_vector( 1-1 downto 0 )
+    tlast_out : out std_logic_vector( 1-1 downto 0 );
+    out1 : out std_logic
   );
 end dut_algorithm;
 architecture structural of dut_algorithm is 
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal step_size_net : std_logic_vector( 16-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
   signal lut_data_net : std_logic_vector( 16-1 downto 0 );
-  signal fir_compiler_7_2_m_axis_data_tdata_real_net : std_logic_vector( 47-1 downto 0 );
-  signal mult_p_net : std_logic_vector( 16-1 downto 0 );
-  signal shift_op_net : std_logic_vector( 32-1 downto 0 );
+  signal clk_net : std_logic;
   signal fir_compiler_7_2_s_axis_data_tready_net : std_logic;
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal fir_compiler_7_2_m_axis_data_tdata_real_net : std_logic_vector( 47-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal step_size_net : std_logic_vector( 16-1 downto 0 );
+  signal mult_p_net : std_logic_vector( 16-1 downto 0 );
   signal fir_compiler_7_2_m_axis_data_tvalid_net : std_logic;
+  signal shift_op_net : std_logic_vector( 32-1 downto 0 );
 begin
-  tvalid_out <= delay3_q_net;
+  tvalid_out <= logical_y_net_x0;
   tdata_out <= convert_dout_net;
   tlast_out <= delay1_q_net;
+  out1 <= fir_compiler_7_2_s_axis_data_tready_net;
   logical_y_net <= tvalid_in;
   tdata_slice_y_net <= tdata_in;
   tlast_slice_y_net <= tlast_in;
   step_size_net <= step_size;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  modulate : entity xil_defaultlib.dut_modulate 
+  demodulate : entity xil_defaultlib.dut_demodulate 
   port map (
     in1 => step_size_net,
     clk_1 => clk_net,
@@ -264,6 +267,15 @@ begin
     ce => ce_net,
     op => shift_op_net
   );
+  logical : entity xil_defaultlib.sysgen_logical_9fe0499d61 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d0 => delay3_q_net,
+    d1(0) => fir_compiler_7_2_m_axis_data_tvalid_net,
+    y => logical_y_net_x0
+  );
 end structural;
 -- Generated from Simulink block sin_wave_demodulate_2021b/DUT/Master FIFO
 library IEEE;
@@ -285,27 +297,27 @@ entity dut_master_fifo is
   );
 end dut_master_fifo;
 architecture structural of dut_master_fifo is 
-  signal fifo_dout_net : std_logic_vector( 33-1 downto 0 );
-  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal clk_net : std_logic;
-  signal ce_net : std_logic;
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 33-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
   signal fifo_empty_net : std_logic;
-  signal fifo_af_net : std_logic;
   signal fifo_full_net : std_logic;
+  signal fifo_dout_net : std_logic_vector( 33-1 downto 0 );
+  signal fifo_af_net : std_logic;
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal concat1_y_net : std_logic_vector( 33-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
 begin
   m_axis_tvalid <= inverter4_op_net;
   m_axis_tdata <= tdata_slice_y_net;
   m_axis_tlast <= tlast_slice_y_net;
   tready_out <= inverter2_op_net;
-  delay3_q_net <= tvalid_out;
+  logical_y_net <= tvalid_out;
   convert_dout_net <= tdata_out;
   delay1_q_net <= tlast_out;
   m_axis_tready_net <= m_axis_tready;
@@ -336,7 +348,7 @@ begin
     en => '1',
     rst => '0',
     din => concat1_y_net,
-    we => delay3_q_net(0),
+    we => logical_y_net(0),
     re => m_axis_tready_net(0),
     clk => clk_net,
     ce => ce_net,
@@ -406,21 +418,21 @@ entity dut_slave_fifo is
   );
 end dut_slave_fifo;
 architecture structural of dut_slave_fifo is 
-  signal fifo_empty_net : std_logic;
-  signal clk_net : std_logic;
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal inverter2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
   signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal fifo_full_net : std_logic;
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
-  signal concat_y_net : std_logic_vector( 33-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal concat_y_net : std_logic_vector( 33-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
   signal fifo_dout_net : std_logic_vector( 33-1 downto 0 );
+  signal fifo_empty_net : std_logic;
   signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal fifo_full_net : std_logic;
 begin
   tvalid_in <= logical_y_net;
   tdata_in <= tdata_slice_y_net;
@@ -429,7 +441,7 @@ begin
   s_axis_tvalid_net <= s_axis_tvalid;
   s_axis_tdata_net <= s_axis_tdata;
   s_axis_tlast_net <= s_axis_tlast;
-  inverter2_op_net_x0 <= tready_in;
+  logical_y_net_x0 <= tready_in;
   clk_net <= clk_1;
   ce_net <= ce_1;
   concat : entity xil_defaultlib.sysgen_concat_656c6a69b2 
@@ -458,7 +470,7 @@ begin
     rst => '0',
     din => concat_y_net,
     we => s_axis_tvalid_net(0),
-    re => inverter2_op_net_x0(0),
+    re => logical_y_net_x0(0),
     clk => clk_net,
     ce => ce_net,
     we_ce => ce_net,
@@ -489,7 +501,7 @@ begin
     ce => '0',
     clr => '0',
     d0 => inverter2_op_net,
-    d1 => inverter2_op_net_x0,
+    d1 => logical_y_net_x0,
     y => logical_y_net
   );
   tdata_slice : entity xil_defaultlib.dut_xlslice 
@@ -536,28 +548,30 @@ entity dut_struct is
   );
 end dut_struct;
 architecture structural of dut_struct is 
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal fir_compiler_7_2_s_axis_data_tready_net : std_logic;
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal tdata_slice_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
   signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
   signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
   signal step_size_net : std_logic_vector( 16-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 32-1 downto 0 );
-  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal ce_net : std_logic;
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net_x0 : std_logic_vector( 32-1 downto 0 );
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
 begin
   m_axis_tvalid <= inverter4_op_net;
   m_axis_tdata <= tdata_slice_y_net_x0;
-  m_axis_tlast <= tlast_slice_y_net_x0;
+  m_axis_tlast <= tlast_slice_y_net;
   s_axis_tready <= inverter1_op_net;
   s_axis_tvalid_net <= s_axis_tvalid;
   s_axis_tdata_net <= s_axis_tdata;
@@ -570,17 +584,18 @@ begin
   port map (
     tvalid_in => logical_y_net,
     tdata_in => tdata_slice_y_net,
-    tlast_in => tlast_slice_y_net,
+    tlast_in => tlast_slice_y_net_x0,
     step_size => step_size_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    tvalid_out => delay3_q_net,
+    tvalid_out => logical_y_net_x1,
     tdata_out => convert_dout_net,
-    tlast_out => delay1_q_net
+    tlast_out => delay1_q_net,
+    out1 => fir_compiler_7_2_s_axis_data_tready_net
   );
   master_fifo : entity xil_defaultlib.dut_master_fifo 
   port map (
-    tvalid_out => delay3_q_net,
+    tvalid_out => logical_y_net_x1,
     tdata_out => convert_dout_net,
     tlast_out => delay1_q_net,
     m_axis_tready => m_axis_tready_net,
@@ -588,7 +603,7 @@ begin
     ce_1 => ce_net,
     m_axis_tvalid => inverter4_op_net,
     m_axis_tdata => tdata_slice_y_net_x0,
-    m_axis_tlast => tlast_slice_y_net_x0,
+    m_axis_tlast => tlast_slice_y_net,
     tready_out => inverter2_op_net
   );
   slave_fifo : entity xil_defaultlib.dut_slave_fifo 
@@ -596,13 +611,22 @@ begin
     s_axis_tvalid => s_axis_tvalid_net,
     s_axis_tdata => s_axis_tdata_net,
     s_axis_tlast => s_axis_tlast_net,
-    tready_in => inverter2_op_net,
+    tready_in => logical_y_net_x0,
     clk_1 => clk_net,
     ce_1 => ce_net,
     tvalid_in => logical_y_net,
     tdata_in => tdata_slice_y_net,
-    tlast_in => tlast_slice_y_net,
+    tlast_in => tlast_slice_y_net_x0,
     s_axis_tready => inverter1_op_net
+  );
+  logical : entity xil_defaultlib.sysgen_logical_9fe0499d61 
+  port map (
+    clk => '0',
+    ce => '0',
+    clr => '0',
+    d0(0) => fir_compiler_7_2_s_axis_data_tready_net,
+    d1 => inverter2_op_net,
+    y => logical_y_net_x0
   );
 end structural;
 -- Generated from Simulink block 
@@ -655,7 +679,7 @@ entity dut is
 end dut;
 architecture structural of dut is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "dut,sysgen_core_2024_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynquplusRFSOC,part=xczu43dr,speed=-2-e,package=fsve1156,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=10,system_simulink_period=4.88281e-10,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=4.88281e-05,addsub=2,concat=2,convert=2,delay=2,fifo=2,fir_compiler_v7_2=1,inv=4,lfsr=1,logical=1,mult=1,register=1,shift=1,slice=4,sprom=1,}";
+  attribute core_generation_info of structural : architecture is "dut,sysgen_core_2024_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynquplusRFSOC,part=xczu43dr,speed=-2-e,package=fsve1156,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=10,system_simulink_period=4.88281e-10,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=4.88281e-05,addsub=2,concat=2,convert=2,delay=2,fifo=2,fir_compiler_v7_2=1,inv=4,lfsr=1,logical=3,mult=1,register=1,shift=1,slice=4,sprom=1,}";
   signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
 begin

@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "DUT_0",
     "component_reference": "User_Company:VMC:DUT:1.0",
-    "ip_revision": "371588070",
+    "ip_revision": "371931201",
     "gen_directory": "../../../../dut.gen/sources_1/ip/DUT_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "371588070" } ],
+        "IPREVISION": [ { "value": "371931201" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../dut.gen/sources_1/ip/DUT_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
