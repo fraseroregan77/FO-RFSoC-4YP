@@ -130,13 +130,14 @@ set bCheckIPs 1
 if { $bCheckIPs == 1 } {
    set list_check_ips "\ 
 User_Company:VMC:DUT_data_in:1.0\
-User_Company:VMC:DUT_rec:1.0\
 xilinx.com:ip:zynq_ultra_ps_e:3.5\
 xilinx.com:ip:usp_rf_data_converter:2.6\
+xilinx.com:ip:xlconstant:1.1\
+User_Company:VMC:DUT_rec:1.0\
 xilinx.com:ip:axi_dma:7.1\
 xilinx.com:ip:smartconnect:1.0\
 xilinx.com:ip:proc_sys_reset:5.0\
-xilinx.com:ip:xlconstant:1.1\
+xilinx.com:ip:system_ila:1.1\
 "
 
    set list_ips_missing ""
@@ -204,14 +205,14 @@ proc create_root_design { parentCell } {
 
   set adc0_clk [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 adc0_clk ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {2000000000.0} \
+   CONFIG.FREQ_HZ {204800000.0} \
    ] $adc0_clk
 
   set vin0_01 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 vin0_01 ]
 
   set dac0_clk [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 dac0_clk ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {6400000000.0} \
+   CONFIG.FREQ_HZ {204800000.0} \
    ] $dac0_clk
 
   set vout00 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 vout00 ]
@@ -221,9 +222,6 @@ proc create_root_design { parentCell } {
 
   # Create instance: DUT_data_in_0, and set properties
   set DUT_data_in_0 [ create_bd_cell -type ip -vlnv User_Company:VMC:DUT_data_in:1.0 DUT_data_in_0 ]
-
-  # Create instance: DUT_rec_0, and set properties
-  set DUT_rec_0 [ create_bd_cell -type ip -vlnv User_Company:VMC:DUT_rec:1.0 DUT_rec_0 ]
 
   # Create instance: zynq_ultra_ps_e_0, and set properties
   set zynq_ultra_ps_e_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0 ]
@@ -257,6 +255,20 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
   ] $usp_rf_data_converter_0
 
 
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+
+  # Create instance: xlconstant_1, and set properties
+  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+  set_property -dict [list \
+    CONFIG.CONST_VAL {63} \
+    CONFIG.CONST_WIDTH {16} \
+  ] $xlconstant_1
+
+
+  # Create instance: DUT_rec_0, and set properties
+  set DUT_rec_0 [ create_bd_cell -type ip -vlnv User_Company:VMC:DUT_rec:1.0 DUT_rec_0 ]
+
   # Create instance: axi_dma, and set properties
   set axi_dma [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma ]
   set_property -dict [list \
@@ -283,22 +295,31 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
   set_property CONFIG.NUM_MI {2} $ps8_0_axi_periph
 
 
-  # Create instance: xlconstant_0, and set properties
-  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
-
-  # Create instance: xlconstant_1, and set properties
-  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+  # Create instance: system_ila_0, and set properties
+  set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
   set_property -dict [list \
-    CONFIG.CONST_VAL {63} \
-    CONFIG.CONST_WIDTH {16} \
-  ] $xlconstant_1
+    CONFIG.C_MON_TYPE {INTERFACE} \
+    CONFIG.C_NUM_MONITOR_SLOTS {2} \
+    CONFIG.C_SLOT_0_APC_EN {0} \
+    CONFIG.C_SLOT_0_AXI_DATA_SEL {1} \
+    CONFIG.C_SLOT_0_AXI_TRIG_SEL {1} \
+    CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+    CONFIG.C_SLOT_1_APC_EN {0} \
+    CONFIG.C_SLOT_1_AXI_DATA_SEL {1} \
+    CONFIG.C_SLOT_1_AXI_TRIG_SEL {1} \
+    CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+  ] $system_ila_0
 
 
   # Create interface connections
   connect_bd_intf_net -intf_net DUT_data_in_0_m_axis [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
   connect_bd_intf_net -intf_net DUT_rec_0_m_axis [get_bd_intf_pins DUT_rec_0/m_axis] [get_bd_intf_pins axi_dma/S_AXIS_S2MM]
+connect_bd_intf_net -intf_net [get_bd_intf_nets DUT_rec_0_m_axis] [get_bd_intf_pins DUT_rec_0/m_axis] [get_bd_intf_pins system_ila_0/SLOT_0_AXIS]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets DUT_rec_0_m_axis]
   connect_bd_intf_net -intf_net adc0_clk_1 [get_bd_intf_ports adc0_clk] [get_bd_intf_pins usp_rf_data_converter_0/adc0_clk]
   connect_bd_intf_net -intf_net axi_dma_M_AXIS_MM2S [get_bd_intf_pins DUT_data_in_0/s_axis] [get_bd_intf_pins axi_dma/M_AXIS_MM2S]
+connect_bd_intf_net -intf_net [get_bd_intf_nets axi_dma_M_AXIS_MM2S] [get_bd_intf_pins DUT_data_in_0/s_axis] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets axi_dma_M_AXIS_MM2S]
   connect_bd_intf_net -intf_net axi_dma_M_AXI_MM2S [get_bd_intf_pins axi_dma/M_AXI_MM2S] [get_bd_intf_pins axi_smc/S01_AXI]
   connect_bd_intf_net -intf_net axi_dma_M_AXI_S2MM [get_bd_intf_pins axi_dma/M_AXI_S2MM] [get_bd_intf_pins axi_smc/S00_AXI]
   connect_bd_intf_net -intf_net axi_smc_M00_AXI [get_bd_intf_pins axi_smc/M00_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HPC0_FPD]
@@ -312,10 +333,10 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
   connect_bd_intf_net -intf_net zynq_ultra_ps_e_0_M_AXI_HPM0_LPD [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD] [get_bd_intf_pins ps8_0_axi_periph/S00_AXI]
 
   # Create port connections
-  connect_bd_net -net rst_ps8_0_96M_peripheral_aresetn [get_bd_pins rst_ps8_0_96M/peripheral_aresetn] [get_bd_pins axi_smc/aresetn] [get_bd_pins ps8_0_axi_periph/S00_ARESETN] [get_bd_pins axi_dma/axi_resetn] [get_bd_pins ps8_0_axi_periph/M00_ARESETN] [get_bd_pins ps8_0_axi_periph/ARESETN] [get_bd_pins usp_rf_data_converter_0/m0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn] [get_bd_pins ps8_0_axi_periph/M01_ARESETN]
+  connect_bd_net -net rst_ps8_0_96M_peripheral_aresetn [get_bd_pins rst_ps8_0_96M/peripheral_aresetn] [get_bd_pins axi_smc/aresetn] [get_bd_pins ps8_0_axi_periph/S00_ARESETN] [get_bd_pins axi_dma/axi_resetn] [get_bd_pins ps8_0_axi_periph/M00_ARESETN] [get_bd_pins ps8_0_axi_periph/ARESETN] [get_bd_pins usp_rf_data_converter_0/m0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn] [get_bd_pins ps8_0_axi_periph/M01_ARESETN] [get_bd_pins system_ila_0/resetn]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins xlconstant_0/dout] [get_bd_pins DUT_data_in_0/mux_en]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins xlconstant_1/dout] [get_bd_pins DUT_rec_0/step_size]
-  connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins axi_dma/m_axi_s2mm_aclk] [get_bd_pins axi_smc/aclk] [get_bd_pins zynq_ultra_ps_e_0/saxihpc0_fpd_aclk] [get_bd_pins rst_ps8_0_96M/slowest_sync_clk] [get_bd_pins axi_dma/m_axi_mm2s_aclk] [get_bd_pins DUT_data_in_0/clk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_lpd_aclk] [get_bd_pins ps8_0_axi_periph/S00_ACLK] [get_bd_pins axi_dma/s_axi_lite_aclk] [get_bd_pins ps8_0_axi_periph/M00_ACLK] [get_bd_pins ps8_0_axi_periph/ACLK] [get_bd_pins DUT_rec_0/clk] [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk] [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk] [get_bd_pins usp_rf_data_converter_0/s_axi_aclk] [get_bd_pins ps8_0_axi_periph/M01_ACLK]
+  connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins axi_dma/m_axi_s2mm_aclk] [get_bd_pins axi_smc/aclk] [get_bd_pins zynq_ultra_ps_e_0/saxihpc0_fpd_aclk] [get_bd_pins rst_ps8_0_96M/slowest_sync_clk] [get_bd_pins axi_dma/m_axi_mm2s_aclk] [get_bd_pins DUT_data_in_0/clk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_lpd_aclk] [get_bd_pins ps8_0_axi_periph/S00_ACLK] [get_bd_pins axi_dma/s_axi_lite_aclk] [get_bd_pins ps8_0_axi_periph/M00_ACLK] [get_bd_pins ps8_0_axi_periph/ACLK] [get_bd_pins DUT_rec_0/clk] [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk] [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk] [get_bd_pins usp_rf_data_converter_0/s_axi_aclk] [get_bd_pins ps8_0_axi_periph/M01_ACLK] [get_bd_pins system_ila_0/clk]
   connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] [get_bd_pins rst_ps8_0_96M/ext_reset_in]
 
   # Create address segments

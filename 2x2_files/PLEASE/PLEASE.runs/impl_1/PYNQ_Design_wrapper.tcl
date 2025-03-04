@@ -116,7 +116,7 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/wt [current_project]
   set_property parent.project_path C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip
+  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip
   C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip
 } [current_project]
   update_ip_catalog

@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/users/clb20123/documents/fo-rfsoc-4yp/2x2_files/please/please.tmp/dut_v1_0_project/DUT_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ab5d61b5455143bea0ada609d6553f3b"/>
+    <Option Name="Id" Val="fab776652eb54f9dbb8109b74cf2a231"/>
     <Option Name="Part" Val="xczu28dr-ffvg1517-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -48,8 +48,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>

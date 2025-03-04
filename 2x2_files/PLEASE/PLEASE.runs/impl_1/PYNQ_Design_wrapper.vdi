@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Mar  4 09:48:47 2025
-# Process ID: 26780
+# Start of session at: Tue Mar  4 20:04:19 2025
+# Process ID: 15248
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1
 # Command line: vivado.exe -log PYNQ_Design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PYNQ_Design_wrapper.tcl -notrace
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.vdi
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1\vivado.jou
-# Running On        :EEE-R446-30
+# Running On        :EEE-R446-02
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
@@ -17,34 +17,37 @@
 # CPU Physical cores:14
 # CPU Logical cores :20
 # Host memory       :16833 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19383 MB
-# Available Virtual :7863 MB
+# Swap memory       :39507 MB
+# Total Virtual     :56341 MB
+# Available Virtual :38467 MB
 #-----------------------------------------------------------
 source PYNQ_Design_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 629.316 ; gain = 201.023
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 631.191 ; gain = 200.273
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 758.289 ; gain = 110.410
 Command: link_design -top PYNQ_Design_wrapper -part xczu28dr-ffvg1517-2-e
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/PYNQ_Design_DUT_data_in_0_0.dcp' for cell 'PYNQ_Design_i/DUT_data_in_0'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/PYNQ_Design_DUT_rec_0_0.dcp' for cell 'PYNQ_Design_i/DUT_rec_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0.dcp' for cell 'PYNQ_Design_i/axi_dma'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0.dcp' for cell 'PYNQ_Design_i/axi_smc'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_0/PYNQ_Design_rst_ps8_0_96M_0.dcp' for cell 'PYNQ_Design_i/rst_ps8_0_96M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.dcp' for cell 'PYNQ_Design_i/axi_dma'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/PYNQ_Design_axi_smc_1.dcp' for cell 'PYNQ_Design_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.dcp' for cell 'PYNQ_Design_i/rst_ps8_0_96M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0.dcp' for cell 'PYNQ_Design_i/system_ila_0'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0.dcp' for cell 'PYNQ_Design_i/usp_rf_data_converter_0'
 INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.dcp' for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_0/PYNQ_Design_xbar_0.dcp' for cell 'PYNQ_Design_i/ps8_0_axi_periph/xbar'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.dcp' for cell 'PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.627 . Memory (MB): peak = 1900.105 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1.dcp' for cell 'PYNQ_Design_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1.dcp' for cell 'PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.669 . Memory (MB): peak = 1971.383 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 371 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: PYNQ_Design_i/system_ila_0/U0/ila_lib UUID: 7f72fa40-4e7b-5ae0-9a76-04860771c7d7 
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0'
@@ -55,6 +58,12 @@ Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEA
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i0/dut_fifo_generator_i0.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/constrs/dut.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0/U0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/constrs/dut.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc:66]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3010.223 ; gain = 783.652
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0/dut_struct/algorithm/fir_compiler_7_2/dut_fir_compiler_v7_2_i0_instance/U0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0/dut_struct/algorithm/fir_compiler_7_2/dut_fir_compiler_v7_2_i0_instance/U0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0'
@@ -67,166 +76,165 @@ Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEA
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fifo_generator_i0/dut_fifo_generator_i0.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/constrs/dut.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/constrs/dut.xdc] for cell 'PYNQ_Design_i/DUT_rec_0/U0'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0/U0'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0/U0'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc:66]
-get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2921.652 ; gain = 773.965
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0.xdc:52]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0.xdc:56]
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0.xdc:61]
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_1/bd_8d08_psr_aclk_0_board.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_1/bd_8d08_psr_aclk_0_board.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_1/bd_8d08_psr_aclk_0.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_1/bd_8d08_psr_aclk_0.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:49]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:52]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:55]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:59]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:63]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:66]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:70]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:73]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:76]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:79]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:82]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:85]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:88]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:91]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:94]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:97]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:100]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:104]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:107]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:110]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:113]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:116]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:119]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:122]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:125]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:128]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:131]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:134]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:137]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:140]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:143]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:146]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:149]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:152]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:155]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:161]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:164]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:167]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:171]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:174]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:178]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:181]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc:184]
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_11/bd_8d08_sawn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:49]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:52]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:55]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:59]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:63]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:66]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:70]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:73]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:76]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:79]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:85]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:88]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:91]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:94]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:97]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:100]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:104]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:107]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:110]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:113]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:116]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:119]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:122]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:125]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:128]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:131]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:134]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:137]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:140]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:143]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:146]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:149]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:152]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:155]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:161]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:164]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:167]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:171]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:174]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:178]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:181]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc:184]
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_12/bd_8d08_swn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:49]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:52]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:55]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:59]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:63]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:66]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:70]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:73]
-INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:76]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:76]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:79]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:82]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:85]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:88]
-INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc:88]
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_13/bd_8d08_sbn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_18/bd_8d08_sarn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_18/bd_8d08_sarn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_19/bd_8d08_srn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_19/bd_8d08_srn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_21/bd_8d08_m00arn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_21/bd_8d08_m00arn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_22/bd_8d08_m00rn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_22/bd_8d08_m00rn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_23/bd_8d08_m00awn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_23/bd_8d08_m00awn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_24/bd_8d08_m00wn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_24/bd_8d08_m00wn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_25/bd_8d08_m00bn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/ip/ip_25/bd_8d08_m00bn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/smartconnect.xdc] for cell 'PYNQ_Design_i/axi_smc/inst'
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/smartconnect.xdc:1]
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/smartconnect.xdc] for cell 'PYNQ_Design_i/axi_smc/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_0/PYNQ_Design_rst_ps8_0_96M_0_board.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_0/PYNQ_Design_rst_ps8_0_96M_0_board.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_0/PYNQ_Design_rst_ps8_0_96M_0.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_0/PYNQ_Design_rst_ps8_0_96M_0.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.xdc:61]
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr_aclk_0_board.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr_aclk_0_board.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr_aclk_0.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr_aclk_0.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc:184]
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_sawn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc:184]
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_swn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:73]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:88]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc:88]
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sbn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_18/bd_4dc9_sarn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_18/bd_4dc9_sarn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_19/bd_4dc9_srn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_19/bd_4dc9_srn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/bd_4dc9_m00arn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/bd_4dc9_m00arn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_22/bd_4dc9_m00rn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_22/bd_4dc9_m00rn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/bd_4dc9_m00awn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/bd_4dc9_m00awn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/bd_4dc9_m00wn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/bd_4dc9_m00wn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/bd_4dc9_m00bn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/bd_4dc9_m00bn_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/smartconnect.xdc] for cell 'PYNQ_Design_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/smartconnect.xdc:1]
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/smartconnect.xdc] for cell 'PYNQ_Design_i/axi_smc/inst'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_board.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_board.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'PYNQ_Design_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'PYNQ_Design_i/system_ila_0/U0/ila_lib/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'PYNQ_Design_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'PYNQ_Design_i/system_ila_0/U0/ila_lib/U0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0/PYNQ_Design_axi_dma_0_clocks.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_clocks.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_clocks.xdc] for cell 'PYNQ_Design_i/axi_dma/U0'
 INFO: [Project 1-1714] 148 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-1687] 465 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2925.840 ; gain = 0.000
+INFO: [Project 1-1687] 467 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3015.082 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 114 instances were transformed.
+  A total of 206 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 92 instances
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 39 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 73 instances
 
-25 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2925.840 ; gain = 2223.742
+link_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 3015.082 ; gain = 2256.793
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
@@ -238,117 +246,129 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2925.840 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3015.082 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 128512e11
+Ending Cache Timing Information Task | Checksum: 13e09ce1b
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2925.840 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3015.082 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Initialization
 
 Phase 1.1 Core Generation And Design Setup
-Phase 1.1 Core Generation And Design Setup | Checksum: 128512e11
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3309.605 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3421.805 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3421.805 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 14d9f27f8
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 3421.805 ; gain = 19.918
+Phase 1.1 Core Generation And Design Setup | Checksum: 14d9f27f8
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 3421.805 ; gain = 19.918
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 128512e11
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 14d9f27f8
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3309.605 ; gain = 0.000
-Phase 1 Initialization | Checksum: 128512e11
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 3421.805 ; gain = 19.918
+Phase 1 Initialization | Checksum: 14d9f27f8
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3309.605 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 3421.805 ; gain = 19.918
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: 128512e11
+Phase 2.1 Timer Update | Checksum: 14d9f27f8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.529 . Memory (MB): peak = 3323.418 ; gain = 13.812
+Time (s): cpu = 00:00:07 ; elapsed = 00:01:23 . Memory (MB): peak = 3427.906 ; gain = 26.020
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: 128512e11
+Phase 2.2 Timing Data Collection | Checksum: 14d9f27f8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.576 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Phase 2 Timer Update And Timing Data Collection | Checksum: 128512e11
+Time (s): cpu = 00:00:07 ; elapsed = 00:01:23 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Phase 2 Timer Update And Timing Data Collection | Checksum: 14d9f27f8
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.578 . Memory (MB): peak = 3323.418 ; gain = 13.812
+Time (s): cpu = 00:00:07 ; elapsed = 00:01:23 . Memory (MB): peak = 3427.906 ; gain = 26.020
 
 Phase 3 Retarget
 INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
-INFO: [Opt 31-1566] Pulled 4 inverters resulting in an inversion of 20 pins
-INFO: [Opt 31-138] Pushed 59 inverter(s) to 1847 load pin(s).
+INFO: [Opt 31-1566] Pulled 5 inverters resulting in an inversion of 33 pins
+INFO: [Opt 31-138] Pushed 63 inverter(s) to 1873 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell PYNQ_Design_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell PYNQ_Design_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell PYNQ_Design_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM_BLK_MEM_1.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 1bdf0ef27
+Phase 3 Retarget | Checksum: 13d8fa0bc
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.973 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Retarget | Checksum: 1bdf0ef27
-INFO: [Opt 31-389] Phase Retarget created 80 cells and removed 462 cells
-INFO: [Opt 31-1021] In phase Retarget, 52 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:08 ; elapsed = 00:01:23 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Retarget | Checksum: 13d8fa0bc
+INFO: [Opt 31-389] Phase Retarget created 86 cells and removed 479 cells
+INFO: [Opt 31-1021] In phase Retarget, 119 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 4 Constant propagation | Checksum: 1acf5c310
+Phase 4 Constant propagation | Checksum: 8b971b3e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Constant propagation | Checksum: 1acf5c310
-INFO: [Opt 31-389] Phase Constant propagation created 28 cells and removed 188 cells
-INFO: [Opt 31-1021] In phase Constant propagation, 52 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:08 ; elapsed = 00:01:24 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Constant propagation | Checksum: 8b971b3e
+INFO: [Opt 31-389] Phase Constant propagation created 28 cells and removed 204 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 101 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
-Phase 5 Sweep | Checksum: 16d0ff506
+Phase 5 Sweep | Checksum: 9be5605c
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Sweep | Checksum: 16d0ff506
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 406 cells
-INFO: [Opt 31-1021] In phase Sweep, 156 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:09 ; elapsed = 00:01:24 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Sweep | Checksum: 9be5605c
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 186 cells
+INFO: [Opt 31-1021] In phase Sweep, 1161 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 6 BUFG optimization
 INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
-Phase 6 BUFG optimization | Checksum: 16d0ff506
+Phase 6 BUFG optimization | Checksum: 9be5605c
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
-BUFG optimization | Checksum: 16d0ff506
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
+BUFG optimization | Checksum: 9be5605c
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 196ff1be3
+Phase 7 Shift Register Optimization | Checksum: a3d2e194
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Shift Register Optimization | Checksum: 196ff1be3
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Shift Register Optimization | Checksum: a3d2e194
 INFO: [Opt 31-389] Phase Shift Register Optimization created 16 cells and removed 32 cells
 
 Phase 8 Post Processing Netlist
-Phase 8 Post Processing Netlist | Checksum: e10a5fca
+Phase 8 Post Processing Netlist | Checksum: 7b8b5357
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Post Processing Netlist | Checksum: e10a5fca
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Post Processing Netlist | Checksum: 7b8b5357
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
-INFO: [Opt 31-1021] In phase Post Processing Netlist, 64 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 121 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 12be543b0
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 170f642d2
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3323.418 ; gain = 0.000
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 12be543b0
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3427.906 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 170f642d2
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
-Phase 9 Finalization | Checksum: 12be543b0
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
+Phase 9 Finalization | Checksum: 170f642d2
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
 Opt_design Change Summary
 =========================
 
@@ -356,18 +376,18 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |              80  |             462  |                                             52  |
-|  Constant propagation         |              28  |             188  |                                             52  |
-|  Sweep                        |               0  |             406  |                                            156  |
+|  Retarget                     |              86  |             479  |                                            119  |
+|  Constant propagation         |              28  |             204  |                                            101  |
+|  Sweep                        |               0  |             186  |                                           1161  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |              16  |              32  |                                              0  |
-|  Post Processing Netlist      |               0  |               0  |                                             64  |
+|  Post Processing Netlist      |               0  |               0  |                                            121  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 12be543b0
+Ending Logic Optimization Task | Checksum: 170f642d2
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.418 ; gain = 13.812
+Time (s): cpu = 00:00:10 ; elapsed = 00:01:25 . Memory (MB): peak = 3427.906 ; gain = 26.020
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -380,30 +400,30 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 19 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 22 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 7 WE to EN ports
-Number of BRAM Ports augmented: 6 newly gated: 7 Total Ports: 38
-Ending PowerOpt Patch Enables Task | Checksum: 171ea904d
+Number of BRAM Ports augmented: 9 newly gated: 7 Total Ports: 44
+Ending PowerOpt Patch Enables Task | Checksum: 1412825ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 171ea904d
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1412825ed
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3576.270 ; gain = 252.852
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3742.277 ; gain = 314.371
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 171ea904d
+Ending Final Cleanup Task | Checksum: 1412825ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3576.270 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3742.277 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 169cea8e3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 116585f05
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3576.270 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3742.277 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-55 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+66 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 3576.270 ; gain = 650.430
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:01:38 . Memory (MB): peak = 3742.277 ; gain = 727.195
 INFO: [Vivado 12-24828] Executing command : report_drc -file PYNQ_Design_wrapper_drc_opted.rpt -pb PYNQ_Design_wrapper_drc_opted.pb -rpx PYNQ_Design_wrapper_drc_opted.rpx
 Command: report_drc -file PYNQ_Design_wrapper_drc_opted.rpt -pb PYNQ_Design_wrapper_drc_opted.pb -rpx PYNQ_Design_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -412,18 +432,19 @@ INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/clb20123/Docume
 report_drc completed successfully
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3576.270 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3742.277 ; gain = 0.000
 Writing XDEF routing.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3576.270 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 3742.277 ; gain = 0.000
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.091 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.132 . Memory (MB): peak = 3576.270 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.100 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.145 . Memory (MB): peak = 3742.277 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3576.270 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3742.277 ; gain = 0.000
+INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu28dr'
@@ -443,29 +464,29 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11920049d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c3938e07
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3576.270 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3576.270 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3742.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3742.277 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17287831e
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 186352dbe
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 4457.629 ; gain = 881.359
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 4559.844 ; gain = 817.566
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 182b2a98b
+Phase 1.3 Build Placer Netlist Model | Checksum: 23b0c6c9a
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 4457.629 ; gain = 881.359
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 4559.844 ; gain = 817.566
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 182b2a98b
+Phase 1.4 Constrain Clocks/Macros | Checksum: 23b0c6c9a
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 4457.629 ; gain = 881.359
-Phase 1 Placer Initialization | Checksum: 182b2a98b
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 4559.844 ; gain = 817.566
+Phase 1 Placer Initialization | Checksum: 23b0c6c9a
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 4457.629 ; gain = 881.359
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 4559.844 ; gain = 817.566
 
 Phase 2 Global Placement
 
@@ -474,71 +495,72 @@ Phase 2.1 Floorplanning
 Phase 2.1.1 Partition Driven Placement
 
 Phase 2.1.1.1 PBP: Partition Driven Placement
-Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1cfadd095
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 23cfb9af3
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4457.629 ; gain = 881.359
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 4559.844 ; gain = 817.566
 
 Phase 2.1.1.2 PBP: Clock Region Placement
 INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
-Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 19be57948
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1e894b47c
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 4457.629 ; gain = 881.359
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 4559.844 ; gain = 817.566
 
 Phase 2.1.1.3 PBP: Discrete Incremental
-Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 21775ebdd
+Phase 2.1.1.3 PBP: Discrete Incremental | Checksum: 1f6493d3f
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 4457.629 ; gain = 881.359
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 4559.844 ; gain = 817.566
 
 Phase 2.1.1.4 PBP: Compute Congestion
-Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 21775ebdd
+Phase 2.1.1.4 PBP: Compute Congestion | Checksum: 1f6493d3f
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 4474.492 ; gain = 898.223
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 4600.461 ; gain = 858.184
 
 Phase 2.1.1.5 PBP: Macro Placement
-Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1a841d5f6
+Phase 2.1.1.5 PBP: Macro Placement | Checksum: 1edb63a9d
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 4478.531 ; gain = 902.262
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 4604.516 ; gain = 862.238
 
 Phase 2.1.1.6 PBP: UpdateTiming
-Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 22ef43899
+Phase 2.1.1.6 PBP: UpdateTiming | Checksum: 13f204041
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 4480.547 ; gain = 904.277
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4606.465 ; gain = 864.188
 
 Phase 2.1.1.7 PBP: Add part constraints
-Phase 2.1.1.7 PBP: Add part constraints | Checksum: 22ef43899
+Phase 2.1.1.7 PBP: Add part constraints | Checksum: 13f204041
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 4480.547 ; gain = 904.277
-Phase 2.1.1 Partition Driven Placement | Checksum: 22ef43899
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4606.465 ; gain = 864.188
+Phase 2.1.1 Partition Driven Placement | Checksum: 13f204041
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 4480.547 ; gain = 904.277
-Phase 2.1 Floorplanning | Checksum: 13d3b1586
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4606.465 ; gain = 864.188
+Phase 2.1 Floorplanning | Checksum: 208c9612e
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 4480.547 ; gain = 904.277
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4606.465 ; gain = 864.188
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 13d3b1586
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 208c9612e
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 4480.547 ; gain = 904.277
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4606.465 ; gain = 864.188
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 13d3b1586
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 208c9612e
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 4480.547 ; gain = 904.277
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 4606.465 ; gain = 864.188
 
 Phase 2.4 Global Placement Core
 
 Phase 2.4.1 UpdateTiming Before Physical Synthesis
-Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1efae9b1a
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 20bdac628
 
-Time (s): cpu = 00:01:25 ; elapsed = 00:00:54 . Memory (MB): peak = 4711.941 ; gain = 1135.672
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:10 . Memory (MB): peak = 4860.070 ; gain = 1117.793
 
 Phase 2.4.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 490 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 595 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 187 nets or LUTs. Breaked 0 LUT, combined 187 existing LUTs and moved 0 existing LUT
-INFO: [Physopt 32-1030] Pass 1. Identified 1 candidate driver set for equivalent driver rewiring.
-INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 238 nets or LUTs. Breaked 0 LUT, combined 238 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 2 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 2 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 2 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4860.070 ; gain = 0.000
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -549,7 +571,7 @@ INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was
 INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4711.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 4860.070 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -558,9 +580,9 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |            187  |                   187  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |            238  |                   238  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     1  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
@@ -568,64 +590,64 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |            187  |                   187  |           0  |           5  |  00:00:00  |
+|  Total                                            |            0  |            238  |                   239  |           0  |           5  |  00:00:01  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1ea6e7f2c
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1485b3d2a
 
-Time (s): cpu = 00:01:26 ; elapsed = 00:00:56 . Memory (MB): peak = 4711.941 ; gain = 1135.672
-Phase 2.4 Global Placement Core | Checksum: 1b05ea7ba
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:12 . Memory (MB): peak = 4860.070 ; gain = 1117.793
+Phase 2.4 Global Placement Core | Checksum: 14064d38a
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:01:08 . Memory (MB): peak = 4711.941 ; gain = 1135.672
-Phase 2 Global Placement | Checksum: 1b05ea7ba
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:18 . Memory (MB): peak = 4860.070 ; gain = 1117.793
+Phase 2 Global Placement | Checksum: 14064d38a
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:01:08 . Memory (MB): peak = 4711.941 ; gain = 1135.672
+Time (s): cpu = 00:02:07 ; elapsed = 00:01:18 . Memory (MB): peak = 4860.070 ; gain = 1117.793
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1edc644e9
+Phase 3.1 Commit Multi Column Macros | Checksum: 142994ac5
 
-Time (s): cpu = 00:02:00 ; elapsed = 00:01:14 . Memory (MB): peak = 4711.941 ; gain = 1135.672
+Time (s): cpu = 00:02:18 ; elapsed = 00:01:24 . Memory (MB): peak = 4860.070 ; gain = 1117.793
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2385547dc
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 159d8353d
 
-Time (s): cpu = 00:02:02 ; elapsed = 00:01:15 . Memory (MB): peak = 4711.941 ; gain = 1135.672
+Time (s): cpu = 00:02:19 ; elapsed = 00:01:25 . Memory (MB): peak = 4860.070 ; gain = 1117.793
 
 Phase 3.3 Small Shape DP
 
 Phase 3.3.1 Small Shape Clustering
-Phase 3.3.1 Small Shape Clustering | Checksum: 18414e7f2
+Phase 3.3.1 Small Shape Clustering | Checksum: 1f168162e
 
-Time (s): cpu = 00:02:24 ; elapsed = 00:01:27 . Memory (MB): peak = 4714.992 ; gain = 1138.723
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:37 . Memory (MB): peak = 4863.863 ; gain = 1121.586
 
 Phase 3.3.2 Slice Area Swap
 
 Phase 3.3.2.1 Slice Area Swap Initial
-Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 233053b4f
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1d7a8c234
 
-Time (s): cpu = 00:02:36 ; elapsed = 00:01:34 . Memory (MB): peak = 4733.895 ; gain = 1157.625
-Phase 3.3.2 Slice Area Swap | Checksum: 233053b4f
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:43 . Memory (MB): peak = 4882.145 ; gain = 1139.867
+Phase 3.3.2 Slice Area Swap | Checksum: 1d7a8c234
 
-Time (s): cpu = 00:02:36 ; elapsed = 00:01:34 . Memory (MB): peak = 4738.910 ; gain = 1162.641
-Phase 3.3 Small Shape DP | Checksum: 1af2cd4b4
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:43 . Memory (MB): peak = 4887.180 ; gain = 1144.902
+Phase 3.3 Small Shape DP | Checksum: 1813a8ce8
 
-Time (s): cpu = 00:02:59 ; elapsed = 00:01:46 . Memory (MB): peak = 4745.918 ; gain = 1169.648
+Time (s): cpu = 00:03:16 ; elapsed = 00:01:55 . Memory (MB): peak = 4893.270 ; gain = 1150.992
 
 Phase 3.4 Re-assign LUT pins
-Phase 3.4 Re-assign LUT pins | Checksum: 1f9d8b3cb
+Phase 3.4 Re-assign LUT pins | Checksum: 15969ac49
 
-Time (s): cpu = 00:03:00 ; elapsed = 00:01:47 . Memory (MB): peak = 4745.918 ; gain = 1169.648
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:56 . Memory (MB): peak = 4893.270 ; gain = 1150.992
 
 Phase 3.5 Pipeline Register Optimization
-Phase 3.5 Pipeline Register Optimization | Checksum: 1eb6efa89
+Phase 3.5 Pipeline Register Optimization | Checksum: 189ec4a65
 
-Time (s): cpu = 00:03:00 ; elapsed = 00:01:47 . Memory (MB): peak = 4745.918 ; gain = 1169.648
-Phase 3 Detail Placement | Checksum: 1eb6efa89
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:56 . Memory (MB): peak = 4893.270 ; gain = 1150.992
+Phase 3 Detail Placement | Checksum: 189ec4a65
 
-Time (s): cpu = 00:03:00 ; elapsed = 00:01:47 . Memory (MB): peak = 4745.918 ; gain = 1169.648
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:56 . Memory (MB): peak = 4893.270 ; gain = 1150.992
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -633,7 +655,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 14ae512a2
+Post Placement Optimization Initialization | Checksum: 14cf552bc
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -641,34 +663,34 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.464 | TNS=0.000 |
-Phase 1 Physical Synthesis Initialization | Checksum: 12c24e0e9
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.742 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1b2599864
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.393 . Memory (MB): peak = 4805.219 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.505 . Memory (MB): peak = 4952.688 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: 10af84437
+Ending Physical Synthesis Task | Checksum: 1b1c0ee36
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.488 . Memory (MB): peak = 4805.219 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 14ae512a2
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.619 . Memory (MB): peak = 4952.688 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 14cf552bc
 
-Time (s): cpu = 00:03:22 ; elapsed = 00:02:01 . Memory (MB): peak = 4805.219 ; gain = 1228.949
+Time (s): cpu = 00:03:40 ; elapsed = 00:02:11 . Memory (MB): peak = 4952.688 ; gain = 1210.410
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=4.464. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: be7e982b
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.742. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 170a05b17
 
-Time (s): cpu = 00:03:22 ; elapsed = 00:02:01 . Memory (MB): peak = 4805.219 ; gain = 1228.949
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:12 . Memory (MB): peak = 4952.688 ; gain = 1210.410
 
-Time (s): cpu = 00:03:22 ; elapsed = 00:02:01 . Memory (MB): peak = 4805.219 ; gain = 1228.949
-Phase 4.1 Post Commit Optimization | Checksum: be7e982b
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:12 . Memory (MB): peak = 4952.688 ; gain = 1210.410
+Phase 4.1 Post Commit Optimization | Checksum: 170a05b17
 
-Time (s): cpu = 00:03:22 ; elapsed = 00:02:02 . Memory (MB): peak = 4805.219 ; gain = 1228.949
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Time (s): cpu = 00:03:41 ; elapsed = 00:02:12 . Memory (MB): peak = 4952.688 ; gain = 1210.410
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 4989.242 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 17c1f4769
+Phase 4.2 Post Placement Cleanup | Checksum: 1d7f3a151
 
-Time (s): cpu = 00:03:39 ; elapsed = 00:02:13 . Memory (MB): peak = 4814.836 ; gain = 1238.566
+Time (s): cpu = 00:03:57 ; elapsed = 00:02:24 . Memory (MB): peak = 4989.242 ; gain = 1246.965
 
 Phase 4.3 Placer Reporting
 
@@ -684,47 +706,47 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |___________|___________________|___________________|___________________|
 |       East|                1x1|                1x1|                2x2|
 |___________|___________________|___________________|___________________|
-|       West|                1x1|                1x1|                1x1|
+|       West|                1x1|                1x1|                2x2|
 |___________|___________________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 17c1f4769
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1d7f3a151
 
-Time (s): cpu = 00:03:39 ; elapsed = 00:02:13 . Memory (MB): peak = 4814.836 ; gain = 1238.566
-Phase 4.3 Placer Reporting | Checksum: 17c1f4769
+Time (s): cpu = 00:03:57 ; elapsed = 00:02:24 . Memory (MB): peak = 4989.242 ; gain = 1246.965
+Phase 4.3 Placer Reporting | Checksum: 1d7f3a151
 
-Time (s): cpu = 00:03:39 ; elapsed = 00:02:13 . Memory (MB): peak = 4814.836 ; gain = 1238.566
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:24 . Memory (MB): peak = 4989.242 ; gain = 1246.965
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 4989.242 ; gain = 0.000
 
-Time (s): cpu = 00:03:39 ; elapsed = 00:02:14 . Memory (MB): peak = 4814.836 ; gain = 1238.566
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b93e5e69
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:24 . Memory (MB): peak = 4989.242 ; gain = 1246.965
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 24be607a8
 
-Time (s): cpu = 00:03:39 ; elapsed = 00:02:14 . Memory (MB): peak = 4814.836 ; gain = 1238.566
-Ending Placer Task | Checksum: 1b509662f
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:24 . Memory (MB): peak = 4989.242 ; gain = 1246.965
+Ending Placer Task | Checksum: 1c616f8d8
 
-Time (s): cpu = 00:03:39 ; elapsed = 00:02:14 . Memory (MB): peak = 4814.836 ; gain = 1238.566
-95 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:24 . Memory (MB): peak = 4989.242 ; gain = 1246.965
+107 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:03:44 ; elapsed = 00:02:17 . Memory (MB): peak = 4814.836 ; gain = 1238.566
+place_design: Time (s): cpu = 00:04:03 ; elapsed = 00:02:27 . Memory (MB): peak = 4989.242 ; gain = 1246.965
 INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
 Running report generation with 2 threads.
 INFO: [Vivado 12-24828] Executing command : report_io -file PYNQ_Design_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 4814.836 ; gain = 0.000
-INFO: [Vivado 12-24828] Executing command : report_utilization -file PYNQ_Design_wrapper_utilization_placed.rpt -pb PYNQ_Design_wrapper_utilization_placed.pb
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 4989.242 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file PYNQ_Design_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.051 . Memory (MB): peak = 4814.836 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 4989.242 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file PYNQ_Design_wrapper_utilization_placed.rpt -pb PYNQ_Design_wrapper_utilization_placed.pb
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.996 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.059 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4989.242 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4989.242 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper_placed.dcp' has been generated.
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
@@ -733,24 +755,24 @@ INFO: [Common 17-1540] The version limit for your license is '2024.10' and has e
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 4814.836 ; gain = 0.000
-INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 4.465 | TNS= 0.000 | 
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 4989.242 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 3.733 | TNS= 0.000 | 
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
 INFO: [Common 17-83] Releasing license: Implementation
-107 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+119 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.939 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4989.242 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4989.242 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xczu28dr'
@@ -766,130 +788,142 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: 66d9b2e1 ConstDB: 0 ShapeSum: 87f9e0f2 RouteDB: c635d25c
-Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4814.836 ; gain = 0.000
-Post Restoration Checksum: NetGraph: 7e29c4f8 | NumContArr: c9f631d3 | Constraints: e89e5c9b | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 2f3674e03
+Checksum: PlaceDB: 58f63929 ConstDB: 0 ShapeSum: fd385657 RouteDB: 6fe86958
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4989.242 ; gain = 0.000
+Post Restoration Checksum: NetGraph: f204a207 | NumContArr: fa7aa971 | Constraints: e98294ca | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 398aadadf
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4989.242 ; gain = 0.000
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 2f3674e03
+Phase 2.1 Fix Topology Constraints | Checksum: 398aadadf
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4989.242 ; gain = 0.000
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 2f3674e03
+Phase 2.2 Pre Route Cleanup | Checksum: 398aadadf
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4814.836 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4989.242 ; gain = 0.000
 
 Phase 2.3 Global Clock Net Routing
  Number of Nodes with overlaps = 0
-Phase 2.3 Global Clock Net Routing | Checksum: 2c6941c63
+Phase 2.3 Global Clock Net Routing | Checksum: 1ff096512
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 5323.531 ; gain = 508.695
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 5457.820 ; gain = 468.578
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 243c962e0
+Phase 2.4 Update Timing | Checksum: 349ad4465
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 5323.531 ; gain = 508.695
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.551  | TNS=0.000  | WHS=-0.057 | THS=-16.042|
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 5457.820 ; gain = 468.578
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.914  | TNS=0.000  | WHS=-0.071 | THS=-16.092|
 
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 2ab18f687
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 5457.820 ; gain = 468.578
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.914  | TNS=0.000  | WHS=-0.100 | THS=-14.124|
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 336f5cc6e
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 5457.820 ; gain = 468.578
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0 %
-  Global Horizontal Routing Utilization  = 0 %
+  Global Vertical Routing Utilization    = 0.000463331 %
+  Global Horizontal Routing Utilization  = 0.000237793 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 18150
+  Number of Failed Nets               = 21822
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 15527
-  Number of Partially Routed Nets     = 2623
+  Number of Unrouted Nets             = 18717
+  Number of Partially Routed Nets     = 3105
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 2c91d9ed4
+Phase 2 Router Initialization | Checksum: 2995250dd
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 3 Global Routing
-Phase 3 Global Routing | Checksum: 2c91d9ed4
+Phase 3 Global Routing | Checksum: 2995250dd
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
-Phase 4.1 Initial Net Routing Pass | Checksum: 216fd0f2b
+Phase 4.1 Initial Net Routing Pass | Checksum: 1a8ee626d
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 5426.348 ; gain = 611.512
-Phase 4 Initial Routing | Checksum: 29f7a5276
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 5623.062 ; gain = 633.820
+Phase 4 Initial Routing | Checksum: 1d8fa2df2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 5 Rip-up And Reroute
 
 Phase 5.1 Global Iteration 0
- Number of Nodes with overlaps = 3024
- Number of Nodes with overlaps = 240
- Number of Nodes with overlaps = 9
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.737  | TNS=0.000  | WHS=-0.013 | THS=-0.028 |
-
-Phase 5.1 Global Iteration 0 | Checksum: 27d7eb1d2
-
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:24 . Memory (MB): peak = 5426.348 ; gain = 611.512
-
-Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 3673
+ Number of Nodes with overlaps = 265
+ Number of Nodes with overlaps = 5
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.737  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.218  | TNS=0.000  | WHS=-0.003 | THS=-0.003 |
 
-Phase 5.2 Global Iteration 1 | Checksum: 294ab601d
+Phase 5.1 Global Iteration 0 | Checksum: 1a42bd9d5
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 5426.348 ; gain = 611.512
-Phase 5 Rip-up And Reroute | Checksum: 294ab601d
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:28 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.218  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 277ab9168
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:29 . Memory (MB): peak = 5623.062 ; gain = 633.820
+Phase 5 Rip-up And Reroute | Checksum: 277ab9168
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:29 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.737  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.218  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.737  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.218  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
-Phase 6.1 Delay CleanUp | Checksum: 268c0a9af
+Phase 6.1 Delay CleanUp | Checksum: 299454cb1
 
-Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 6.2 Clock Skew Optimization
-Phase 6.2 Clock Skew Optimization | Checksum: 268c0a9af
+Phase 6.2 Clock Skew Optimization | Checksum: 299454cb1
 
-Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 5426.348 ; gain = 611.512
-Phase 6 Delay and Skew Optimization | Checksum: 268c0a9af
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 5623.062 ; gain = 633.820
+Phase 6 Delay and Skew Optimization | Checksum: 299454cb1
 
-Time (s): cpu = 00:00:56 ; elapsed = 00:00:27 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Hold Fix Iter
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.737  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.218  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
-Phase 7.1 Hold Fix Iter | Checksum: 3268f6691
+Phase 7.1 Hold Fix Iter | Checksum: 2242d6896
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:28 . Memory (MB): peak = 5426.348 ; gain = 611.512
-Phase 7 Post Hold Fix | Checksum: 3268f6691
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:32 . Memory (MB): peak = 5623.062 ; gain = 633.820
+Phase 7 Post Hold Fix | Checksum: 2242d6896
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:28 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:32 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.774587 %
-  Global Horizontal Routing Utilization  = 0.598922 %
+  Global Vertical Routing Utilization    = 0.805057 %
+  Global Horizontal Routing Utilization  = 0.659031 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -899,55 +933,55 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 8 Route finalize | Checksum: 3268f6691
+Phase 8 Route finalize | Checksum: 2242d6896
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:28 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:32 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 3268f6691
+Phase 9 Verifying routed nets | Checksum: 2242d6896
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:28 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:33 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: 3268f6691
+Phase 10 Depositing Routes | Checksum: 2242d6896
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 11 Resolve XTalk
-Phase 11 Resolve XTalk | Checksum: 3268f6691
+Phase 11 Resolve XTalk | Checksum: 2242d6896
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 12 Post Process Routing
-Phase 12 Post Process Routing | Checksum: 3268f6691
+Phase 12 Post Process Routing | Checksum: 2242d6896
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Phase 13 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=3.737  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.218  | TNS=0.000  | WHS=0.010  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 13 Post Router Timing | Checksum: 3268f6691
+Phase 13 Post Router Timing | Checksum: 2242d6896
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 611.512
-Total Elapsed time in route_design: 28.759 secs
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 5623.062 ; gain = 633.820
+Total Elapsed time in route_design: 33.315 secs
 
 Phase 14 Post-Route Event Processing
-Phase 14 Post-Route Event Processing | Checksum: 203b33838
+Phase 14 Post-Route Event Processing | Checksum: 239660175
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 5623.062 ; gain = 633.820
 INFO: [Route 35-16] Router Completed Successfully
-Ending Routing Task | Checksum: 203b33838
+Ending Routing Task | Checksum: 239660175
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 611.512
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:34 . Memory (MB): peak = 5623.062 ; gain = 633.820
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-125 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+138 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:03 ; elapsed = 00:00:31 . Memory (MB): peak = 5426.348 ; gain = 611.512
+route_design: Time (s): cpu = 00:01:16 ; elapsed = 00:00:36 . Memory (MB): peak = 5623.062 ; gain = 633.820
 INFO: [Vivado 12-24828] Executing command : report_drc -file PYNQ_Design_wrapper_drc_routed.rpt -pb PYNQ_Design_wrapper_drc_routed.pb -rpx PYNQ_Design_wrapper_drc_routed.rpx
 Command: report_drc -file PYNQ_Design_wrapper_drc_routed.rpt -pb PYNQ_Design_wrapper_drc_routed.pb -rpx PYNQ_Design_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -960,11 +994,12 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 5426.348 ; gain = 0.000
+report_methodology: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 5623.062 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file PYNQ_Design_wrapper_timing_summary_routed.rpt -pb PYNQ_Design_wrapper_timing_summary_routed.pb -rpx PYNQ_Design_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
 INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
 Running report generation with 2 threads.
 INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file PYNQ_Design_wrapper_incremental_reuse_routed.rpt
@@ -977,30 +1012,28 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-142 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+155 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 5426.348 ; gain = 0.000
+report_power: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 5623.062 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file PYNQ_Design_wrapper_clock_utilization_routed.rpt
 WARNING: [Device 21-9320] Failed to find the Oracle tile group with name 'HSR_BOUNDARY_TOP'. This is required for Clock regions and Virtual grid.
 WARNING: [Device 21-2174] Failed to initialize Virtual grid.
-report_clock_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5426.348 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file PYNQ_Design_wrapper_bus_skew_routed.rpt -pb PYNQ_Design_wrapper_bus_skew_routed.pb -rpx PYNQ_Design_wrapper_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: E, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-generate_parallel_reports: Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 5426.348 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:41 ; elapsed = 00:00:27 . Memory (MB): peak = 5623.062 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.090 . Memory (MB): peak = 5426.348 ; gain = 0.000
-Wrote PlaceDB: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5426.348 ; gain = 0.000
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5426.348 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 5623.062 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5623.062 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5623.062 ; gain = 0.000
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.324 . Memory (MB): peak = 5426.348 ; gain = 0.000
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 5426.348 ; gain = 0.000
-Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 5426.348 ; gain = 0.000
-Write Physdb Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5426.348 ; gain = 0.000
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.255 . Memory (MB): peak = 5623.062 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 5623.062 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 5623.062 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 5623.062 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 5426.348 ; gain = 0.000
 INFO: [Memdata 28-167] Found XPM memory block PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the PYNQ_Design_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the PYNQ_Design_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
@@ -1030,14 +1063,17 @@ INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC DPOP-3] PREG Output pipelining: DSP PYNQ_Design_i/DUT_rec_0/U0/dut_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2 output PYNQ_Design_i/DUT_rec_0/U0/dut_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[0].use_dsp.use_dsp48e2.iDSP48E2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-4] MREG Output pipelining: DSP PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A2)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*A5*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A3)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A4)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
-WARNING: [DRC RTSTAT-10] No routable loads: 24 net(s) have no routable loads. The problem bus(es) and/or net(s) are PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i... and (the first 15 of 24 listed).
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A3)*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A3*A1)+(A3*(~A1)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A4)+((~A4)*A3*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A3*A1)+(A3*(~A1)*(~A4))+((~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A6' of cell PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A5)+((~A5)*(~A1)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 49 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/slave_fifo/fifo/comp1.core_instance1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, PYNQ_Design_i/DUT_rec_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_2_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], PYNQ_Design_i/DUT_data_in_0/U0/dut_struct/master_fifo/fifo/comp0.core_instance0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_2_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_2_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2]... and (the first 15 of 47 listed).
 INFO: [DRC REQP-1677] enum_USE_MULT_NONE_connects_CEM_GND: PYNQ_Design_i/DUT_rec_0/U0/dut_struct/algorithm/fir_compiler_7_2/dut_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate_hb_hilb_ipol.i_single_rate_hb_hilb_ipol/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e2.i_dsp48e2: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
 INFO: [DRC REQP-1679] enum_MREG_0_connects_CEM_GND: PYNQ_Design_i/DUT_rec_0/U0/dut_struct/algorithm/fir_compiler_7_2/dut_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate_hb_hilb_ipol.i_single_rate_hb_hilb_ipol/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e2.i_dsp48e2: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 7 Warnings, 2 Advisories
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 10 Warnings, 2 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -1049,7 +1085,7 @@ Creating bitstream...
 Writing bitstream ./PYNQ_Design_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
-179 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+192 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 5426.348 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Mar  4 09:54:11 2025...
+write_bitstream: Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 5623.062 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  4 20:11:28 2025...

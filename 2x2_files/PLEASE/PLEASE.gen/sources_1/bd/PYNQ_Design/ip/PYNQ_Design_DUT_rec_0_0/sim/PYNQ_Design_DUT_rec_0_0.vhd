@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: User_Company:VMC:DUT_rec:1.0
--- IP Revision: 371931202
+-- IP Revision: 372023434
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

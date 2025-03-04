@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Tue Mar  4 09:45:58 2025
---Host        : EEE-R446-30 running 64-bit major release  (build 9200)
+--Date        : Tue Mar  4 20:00:41 2025
+--Host        : EEE-R446-02 running 64-bit major release  (build 9200)
 --Command     : generate_target PYNQ_Design.bd
 --Design      : PYNQ_Design
 --Purpose     : IP block netlist
@@ -275,7 +275,7 @@ entity s00_couplers_imp_4QTF46 is
 end s00_couplers_imp_4QTF46;
 
 architecture STRUCTURE of s00_couplers_imp_4QTF46 is
-  component PYNQ_Design_auto_pc_0 is
+  component PYNQ_Design_auto_pc_1 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -338,7 +338,7 @@ architecture STRUCTURE of s00_couplers_imp_4QTF46 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component PYNQ_Design_auto_pc_0;
+  end component PYNQ_Design_auto_pc_1;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC;
   signal auto_pc_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 39 downto 0 );
@@ -456,7 +456,7 @@ begin
   s00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   s00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   s00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component PYNQ_Design_auto_pc_0
+auto_pc: component PYNQ_Design_auto_pc_1
      port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1,
@@ -524,7 +524,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity PYNQ_Design_ps8_0_axi_periph_0 is
+entity PYNQ_Design_ps8_0_axi_periph_1 is
   port (
     ACLK : in STD_LOGIC;
     ARESETN : in STD_LOGIC;
@@ -605,10 +605,10 @@ entity PYNQ_Design_ps8_0_axi_periph_0 is
     S00_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_wvalid : in STD_LOGIC
   );
-end PYNQ_Design_ps8_0_axi_periph_0;
+end PYNQ_Design_ps8_0_axi_periph_1;
 
-architecture STRUCTURE of PYNQ_Design_ps8_0_axi_periph_0 is
-  component PYNQ_Design_xbar_0 is
+architecture STRUCTURE of PYNQ_Design_ps8_0_axi_periph_1 is
+  component PYNQ_Design_xbar_1 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -651,7 +651,7 @@ architecture STRUCTURE of PYNQ_Design_ps8_0_axi_periph_0 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  end component PYNQ_Design_xbar_0;
+  end component PYNQ_Design_xbar_1;
   signal m00_couplers_to_ps8_0_axi_periph_ARADDR : STD_LOGIC_VECTOR ( 39 downto 0 );
   signal m00_couplers_to_ps8_0_axi_periph_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
   signal m00_couplers_to_ps8_0_axi_periph_ARVALID : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -995,7 +995,7 @@ s00_couplers: entity work.s00_couplers_imp_4QTF46
       S_AXI_wstrb(3 downto 0) => ps8_0_axi_periph_to_s00_couplers_WSTRB(3 downto 0),
       S_AXI_wvalid => ps8_0_axi_periph_to_s00_couplers_WVALID
     );
-xbar: component PYNQ_Design_xbar_0
+xbar: component PYNQ_Design_xbar_1
      port map (
       aclk => ps8_0_axi_periph_ACLK_net,
       aresetn => ps8_0_axi_periph_ARESETN_net,
@@ -1074,7 +1074,7 @@ entity PYNQ_Design is
     vout00_v_p : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of PYNQ_Design : entity is "PYNQ_Design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=PYNQ_Design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=15,numReposBlks=11,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=2,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_axi4_s2mm_cnt=1,da_clkrst_cnt=2,da_rf_converter_usp_cnt=1,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of PYNQ_Design : entity is "PYNQ_Design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=PYNQ_Design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=16,numReposBlks=12,numNonXlnxBlks=2,numHierBlks=4,maxHierDepth=0,numSysgenBlks=2,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_axi4_s2mm_cnt=2,da_clkrst_cnt=4,da_rf_converter_usp_cnt=2,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of PYNQ_Design : entity is "PYNQ_Design.hwdef";
 end PYNQ_Design;
@@ -1094,20 +1094,6 @@ architecture STRUCTURE of PYNQ_Design is
     s_axis_tready : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component PYNQ_Design_DUT_data_in_0_0;
-  component PYNQ_Design_DUT_rec_0_0 is
-  port (
-    s_axis_tvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axis_tlast : in STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    step_size : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    clk : in STD_LOGIC;
-    m_axis_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tready : out STD_LOGIC_VECTOR ( 0 to 0 )
-  );
-  end component PYNQ_Design_DUT_rec_0_0;
   component PYNQ_Design_zynq_ultra_ps_e_0_0 is
   port (
     maxihpm0_lpd_aclk : in STD_LOGIC;
@@ -1240,7 +1226,31 @@ architecture STRUCTURE of PYNQ_Design is
     s00_axis_tready : out STD_LOGIC
   );
   end component PYNQ_Design_usp_rf_data_converter_0_0;
-  component PYNQ_Design_axi_dma_0 is
+  component PYNQ_Design_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component PYNQ_Design_xlconstant_0_0;
+  component PYNQ_Design_xlconstant_0_1 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component PYNQ_Design_xlconstant_0_1;
+  component PYNQ_Design_DUT_rec_0_0 is
+  port (
+    s_axis_tvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axis_tlast : in STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    step_size : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    clk : in STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_tready : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component PYNQ_Design_DUT_rec_0_0;
+  component PYNQ_Design_axi_dma_1 is
   port (
     s_axi_lite_aclk : in STD_LOGIC;
     m_axi_mm2s_aclk : in STD_LOGIC;
@@ -1306,8 +1316,8 @@ architecture STRUCTURE of PYNQ_Design is
     mm2s_introut : out STD_LOGIC;
     s2mm_introut : out STD_LOGIC
   );
-  end component PYNQ_Design_axi_dma_0;
-  component PYNQ_Design_axi_smc_0 is
+  end component PYNQ_Design_axi_dma_1;
+  component PYNQ_Design_axi_smc_1 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -1329,21 +1339,6 @@ architecture STRUCTURE of PYNQ_Design is
     S00_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S00_AXI_bvalid : out STD_LOGIC;
     S00_AXI_bready : in STD_LOGIC;
-    S01_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S01_AXI_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    S01_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S01_AXI_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    S01_AXI_arlock : in STD_LOGIC_VECTOR ( 0 to 0 );
-    S01_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S01_AXI_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_arvalid : in STD_LOGIC;
-    S01_AXI_arready : out STD_LOGIC;
-    S01_AXI_rdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
-    S01_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S01_AXI_rlast : out STD_LOGIC;
-    S01_AXI_rvalid : out STD_LOGIC;
-    S01_AXI_rready : in STD_LOGIC;
     M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 48 downto 0 );
     M00_AXI_awlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     M00_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -1376,10 +1371,25 @@ architecture STRUCTURE of PYNQ_Design is
     M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M00_AXI_rlast : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC;
-    M00_AXI_rready : out STD_LOGIC
+    M00_AXI_rready : out STD_LOGIC;
+    S01_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S01_AXI_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    S01_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S01_AXI_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    S01_AXI_arlock : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S01_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S01_AXI_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_arvalid : in STD_LOGIC;
+    S01_AXI_arready : out STD_LOGIC;
+    S01_AXI_rdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
+    S01_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S01_AXI_rlast : out STD_LOGIC;
+    S01_AXI_rvalid : out STD_LOGIC;
+    S01_AXI_rready : in STD_LOGIC
   );
-  end component PYNQ_Design_axi_smc_0;
-  component PYNQ_Design_rst_ps8_0_96M_0 is
+  end component PYNQ_Design_axi_smc_1;
+  component PYNQ_Design_rst_ps8_0_96M_1 is
   port (
     slowest_sync_clk : in STD_LOGIC;
     ext_reset_in : in STD_LOGIC;
@@ -1392,30 +1402,66 @@ architecture STRUCTURE of PYNQ_Design is
     interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component PYNQ_Design_rst_ps8_0_96M_0;
-  component PYNQ_Design_xlconstant_0_0 is
+  end component PYNQ_Design_rst_ps8_0_96M_1;
+  component PYNQ_Design_system_ila_0_0 is
   port (
-    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+    clk : in STD_LOGIC;
+    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    SLOT_0_AXIS_tlast : in STD_LOGIC;
+    SLOT_0_AXIS_tvalid : in STD_LOGIC;
+    SLOT_0_AXIS_tready : in STD_LOGIC;
+    resetn : in STD_LOGIC;
+    SLOT_1_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    SLOT_1_AXIS_tkeep : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_1_AXIS_tlast : in STD_LOGIC;
+    SLOT_1_AXIS_tvalid : in STD_LOGIC;
+    SLOT_1_AXIS_tready : in STD_LOGIC
   );
-  end component PYNQ_Design_xlconstant_0_0;
-  component PYNQ_Design_xlconstant_0_1 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component PYNQ_Design_xlconstant_0_1;
+  end component PYNQ_Design_system_ila_0_0;
   signal DUT_data_in_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal DUT_data_in_0_m_axis_TREADY : STD_LOGIC;
   signal DUT_data_in_0_m_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal DUT_rec_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute CONN_BUS_INFO : string;
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis_TDATA : signal is "DUT_rec_0_m_axis xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG : string;
+  attribute DEBUG of DUT_rec_0_m_axis_TDATA : signal is "true";
+  attribute MARK_DEBUG : boolean;
+  attribute MARK_DEBUG of DUT_rec_0_m_axis_TDATA : signal is std.standard.true;
   signal DUT_rec_0_m_axis_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis_TLAST : signal is "DUT_rec_0_m_axis xilinx.com:interface:axis:1.0 None TLAST";
+  attribute DEBUG of DUT_rec_0_m_axis_TLAST : signal is "true";
+  attribute MARK_DEBUG of DUT_rec_0_m_axis_TLAST : signal is std.standard.true;
   signal DUT_rec_0_m_axis_TREADY : STD_LOGIC;
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis_TREADY : signal is "DUT_rec_0_m_axis xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of DUT_rec_0_m_axis_TREADY : signal is "true";
+  attribute MARK_DEBUG of DUT_rec_0_m_axis_TREADY : signal is std.standard.true;
   signal DUT_rec_0_m_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis_TVALID : signal is "DUT_rec_0_m_axis xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of DUT_rec_0_m_axis_TVALID : signal is "true";
+  attribute MARK_DEBUG of DUT_rec_0_m_axis_TVALID : signal is std.standard.true;
   signal adc0_clk_1_CLK_N : STD_LOGIC;
   signal adc0_clk_1_CLK_P : STD_LOGIC;
   signal axi_dma_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TDATA : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TDATA : signal is "true";
+  attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TDATA : signal is std.standard.true;
+  signal axi_dma_M_AXIS_MM2S_TKEEP : STD_LOGIC_VECTOR ( 3 downto 0 );
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TKEEP : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TKEEP : signal is "true";
+  attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TKEEP : signal is std.standard.true;
   signal axi_dma_M_AXIS_MM2S_TLAST : STD_LOGIC;
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TLAST : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TLAST : signal is "true";
+  attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TLAST : signal is std.standard.true;
   signal axi_dma_M_AXIS_MM2S_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TREADY : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TREADY : signal is "true";
+  attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TREADY : signal is std.standard.true;
   signal axi_dma_M_AXIS_MM2S_TVALID : STD_LOGIC;
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TVALID : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TVALID : signal is "true";
+  attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TVALID : signal is std.standard.true;
   signal axi_dma_M_AXI_MM2S_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_dma_M_AXI_MM2S_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_dma_M_AXI_MM2S_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1569,7 +1615,6 @@ architecture STRUCTURE of PYNQ_Design is
   signal NLW_axi_dma_mm2s_prmry_reset_out_n_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_dma_s2mm_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_dma_s2mm_prmry_reset_out_n_UNCONNECTED : STD_LOGIC;
-  signal NLW_axi_dma_m_axis_mm2s_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_rst_ps8_0_96M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps8_0_96M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps8_0_96M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1584,10 +1629,10 @@ architecture STRUCTURE of PYNQ_Design is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of adc0_clk_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 adc0_clk CLK_N";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of adc0_clk_clk_n : signal is "XIL_INTERFACENAME adc0_clk, CAN_DEBUG false, FREQ_HZ 2000000000.0";
+  attribute X_INTERFACE_PARAMETER of adc0_clk_clk_n : signal is "XIL_INTERFACENAME adc0_clk, CAN_DEBUG false, FREQ_HZ 204800000.0";
   attribute X_INTERFACE_INFO of adc0_clk_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 adc0_clk CLK_P";
   attribute X_INTERFACE_INFO of dac0_clk_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 dac0_clk CLK_N";
-  attribute X_INTERFACE_PARAMETER of dac0_clk_clk_n : signal is "XIL_INTERFACENAME dac0_clk, CAN_DEBUG false, FREQ_HZ 6400000000.0";
+  attribute X_INTERFACE_PARAMETER of dac0_clk_clk_n : signal is "XIL_INTERFACENAME dac0_clk, CAN_DEBUG false, FREQ_HZ 204800000.0";
   attribute X_INTERFACE_INFO of dac0_clk_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 dac0_clk CLK_P";
   attribute X_INTERFACE_INFO of sysref_in_diff_n : signal is "xilinx.com:display_usp_rf_data_converter:diff_pins:1.0 sysref_in diff_n";
   attribute X_INTERFACE_INFO of sysref_in_diff_p : signal is "xilinx.com:display_usp_rf_data_converter:diff_pins:1.0 sysref_in diff_p";
@@ -1632,7 +1677,7 @@ DUT_rec_0: component PYNQ_Design_DUT_rec_0_0
       s_axis_tvalid(0) => usp_rf_data_converter_0_m00_axis_TVALID,
       step_size(15 downto 0) => xlconstant_1_dout(15 downto 0)
     );
-axi_dma: component PYNQ_Design_axi_dma_0
+axi_dma: component PYNQ_Design_axi_dma_1
      port map (
       axi_resetn => rst_ps8_0_96M_peripheral_aresetn(0),
       m_axi_mm2s_aclk => zynq_ultra_ps_e_0_pl_clk0,
@@ -1667,7 +1712,7 @@ axi_dma: component PYNQ_Design_axi_dma_0
       m_axi_s2mm_wstrb(3 downto 0) => axi_dma_M_AXI_S2MM_WSTRB(3 downto 0),
       m_axi_s2mm_wvalid => axi_dma_M_AXI_S2MM_WVALID,
       m_axis_mm2s_tdata(31 downto 0) => axi_dma_M_AXIS_MM2S_TDATA(31 downto 0),
-      m_axis_mm2s_tkeep(3 downto 0) => NLW_axi_dma_m_axis_mm2s_tkeep_UNCONNECTED(3 downto 0),
+      m_axis_mm2s_tkeep(3 downto 0) => axi_dma_M_AXIS_MM2S_TKEEP(3 downto 0),
       m_axis_mm2s_tlast => axi_dma_M_AXIS_MM2S_TLAST,
       m_axis_mm2s_tready => axi_dma_M_AXIS_MM2S_TREADY(0),
       m_axis_mm2s_tvalid => axi_dma_M_AXIS_MM2S_TVALID,
@@ -1698,7 +1743,7 @@ axi_dma: component PYNQ_Design_axi_dma_0
       s_axis_s2mm_tready => DUT_rec_0_m_axis_TREADY,
       s_axis_s2mm_tvalid => DUT_rec_0_m_axis_TVALID(0)
     );
-axi_smc: component PYNQ_Design_axi_smc_0
+axi_smc: component PYNQ_Design_axi_smc_1
      port map (
       M00_AXI_araddr(48 downto 0) => axi_smc_M00_AXI_ARADDR(48 downto 0),
       M00_AXI_arburst(1 downto 0) => axi_smc_M00_AXI_ARBURST(1 downto 0),
@@ -1769,7 +1814,7 @@ axi_smc: component PYNQ_Design_axi_smc_0
       aclk => zynq_ultra_ps_e_0_pl_clk0,
       aresetn => rst_ps8_0_96M_peripheral_aresetn(0)
     );
-ps8_0_axi_periph: entity work.PYNQ_Design_ps8_0_axi_periph_0
+ps8_0_axi_periph: entity work.PYNQ_Design_ps8_0_axi_periph_1
      port map (
       ACLK => zynq_ultra_ps_e_0_pl_clk0,
       ARESETN => rst_ps8_0_96M_peripheral_aresetn(0),
@@ -1850,7 +1895,7 @@ ps8_0_axi_periph: entity work.PYNQ_Design_ps8_0_axi_periph_0
       S00_AXI_wstrb(3 downto 0) => zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WSTRB(3 downto 0),
       S00_AXI_wvalid => zynq_ultra_ps_e_0_M_AXI_HPM0_LPD_WVALID
     );
-rst_ps8_0_96M: component PYNQ_Design_rst_ps8_0_96M_0
+rst_ps8_0_96M: component PYNQ_Design_rst_ps8_0_96M_1
      port map (
       aux_reset_in => '1',
       bus_struct_reset(0) => NLW_rst_ps8_0_96M_bus_struct_reset_UNCONNECTED(0),
@@ -1862,6 +1907,20 @@ rst_ps8_0_96M: component PYNQ_Design_rst_ps8_0_96M_0
       peripheral_aresetn(0) => rst_ps8_0_96M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps8_0_96M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => zynq_ultra_ps_e_0_pl_clk0
+    );
+system_ila_0: component PYNQ_Design_system_ila_0_0
+     port map (
+      SLOT_0_AXIS_tdata(31 downto 0) => DUT_rec_0_m_axis_TDATA(31 downto 0),
+      SLOT_0_AXIS_tlast => DUT_rec_0_m_axis_TLAST(0),
+      SLOT_0_AXIS_tready => DUT_rec_0_m_axis_TREADY,
+      SLOT_0_AXIS_tvalid => DUT_rec_0_m_axis_TVALID(0),
+      SLOT_1_AXIS_tdata(31 downto 0) => axi_dma_M_AXIS_MM2S_TDATA(31 downto 0),
+      SLOT_1_AXIS_tkeep(3 downto 0) => axi_dma_M_AXIS_MM2S_TKEEP(3 downto 0),
+      SLOT_1_AXIS_tlast => axi_dma_M_AXIS_MM2S_TLAST,
+      SLOT_1_AXIS_tready => axi_dma_M_AXIS_MM2S_TREADY(0),
+      SLOT_1_AXIS_tvalid => axi_dma_M_AXIS_MM2S_TVALID,
+      clk => zynq_ultra_ps_e_0_pl_clk0,
+      resetn => rst_ps8_0_96M_peripheral_aresetn(0)
     );
 usp_rf_data_converter_0: component PYNQ_Design_usp_rf_data_converter_0_0
      port map (
