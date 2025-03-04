@@ -1346,9 +1346,9 @@ module PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper (
 
   HSDAC #(
     .SIM_DEVICE           ("ULTRASCALE_PLUS"),
-    .XPA_SAMPLE_RATE_MSPS (6400.0),
+    .XPA_SAMPLE_RATE_MSPS (4096.0),
     .XPA_NUM_DACS         (1),
-    .XPA_PLL_USED         ("No"),
+    .XPA_PLL_USED         ("Yes"),
     .XPA_NUM_DUCS         (0),
     .XPA_CFG0             (1),
     .XPA_CFG1             (0)
@@ -1473,9 +1473,9 @@ module PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper (
   
   HSADC #(
     .SIM_DEVICE           ("ULTRASCALE_PLUS"),
-    .XPA_SAMPLE_RATE_MSPS (2000.0),
+    .XPA_SAMPLE_RATE_MSPS (4096.0),
     .XPA_NUM_ADCS         ("1I"),
-    .XPA_PLL_USED         ("No"),
+    .XPA_PLL_USED         ("Yes"),
     .XPA_NUM_DDCS         (0),
     .XPA_CFG0             (1),
     .XPA_CFG1             (0)

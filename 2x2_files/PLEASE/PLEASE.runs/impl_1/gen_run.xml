@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1741029030">
+<GenRun Id="impl_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1741081586">
   <File Type="ROUTE-PWR" Name="PYNQ_Design_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="PYNQ_Design_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="PYNQ_Design_wrapper_power_summary_routed.pb"/>
@@ -56,13 +56,13 @@
   <File Type="ROUTE-BUS-SKEW-RPX" Name="PYNQ_Design_wrapper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="PYNQ_Design_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PYNQ_Design_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PYNQ_Design_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PYNQ_Design_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PYNQ_Design_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PYNQ_Design_wrapper_bus_skew_postroute_physopted.rpt"/>
   <File Type="BG-BIT" Name="PYNQ_Design_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PYNQ_Design_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PYNQ_Design_wrapper_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="PYNQ_Design_wrapper.nky"/>
   <File Type="BITSTR-BMM" Name="PYNQ_Design_wrapper_bd.bmm"/>
   <File Type="PDI-FILE" Name="PYNQ_Design_wrapper.pdi"/>
@@ -113,14 +113,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -136,8 +142,6 @@
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_DUT_rec_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_usp_rf_data_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_axi_dma_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_rst_ps8_0_96M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_axi_dma_0"/>
 </GenRun>
