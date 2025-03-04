@@ -25,19 +25,19 @@
     'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/FIR Compiler 7.2'
   },
   'Line_225' => {
+    'CodeInstance' => 'dut_struct/algorithm/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Logical'
+  },
+  'Line_234' => {
     'CodeInstance' => 'dut_struct/algorithm/mult',
     'Instance' => 'mult',
     'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Mult'
   },
-  'Line_262' => {
+  'Line_271' => {
     'CodeInstance' => 'dut_struct/algorithm/shift',
     'Instance' => 'shift',
     'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Shift'
-  },
-  'Line_270' => {
-    'CodeInstance' => 'dut_struct/algorithm/logical',
-    'Instance' => 'logical',
-    'SimulinkInstance' => 'sin_wave_demodulate_2021b/DUT/Algorithm/Logical'
   },
   'Line_29' => {
     'CodeInstance' => 'dut_struct/algorithm/demodulate/accumulator',
