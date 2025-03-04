@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param bd.open.in_stealth_mode 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu28dr-ffvg1517-2-e
 
@@ -77,15 +78,15 @@ set_property ip_output_repo c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/P
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd
 add_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i0/dut_fifo_generator_i0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/constrs/dut.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fifo_generator_i0/dut_fifo_generator_i0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/constrs/dut.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fifo_generator_i1/dut_fifo_generator_i1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/dut_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.xdc]
@@ -146,6 +147,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

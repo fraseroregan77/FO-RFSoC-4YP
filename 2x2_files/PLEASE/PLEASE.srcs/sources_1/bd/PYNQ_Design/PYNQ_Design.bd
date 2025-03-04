@@ -269,6 +269,30 @@
         "xci_path": "ip\\PYNQ_Design_usp_rf_data_converter_0_0\\PYNQ_Design_usp_rf_data_converter_0_0.xci",
         "inst_hier_path": "usp_rf_data_converter_0",
         "parameters": {
+          "ADC0_PLL_Enable": {
+            "value": "true"
+          },
+          "ADC0_Refclk_Freq": {
+            "value": "204.800"
+          },
+          "ADC0_Sampling_Rate": {
+            "value": "4.096"
+          },
+          "ADC_Decimation_Mode00": {
+            "value": "8"
+          },
+          "DAC0_PLL_Enable": {
+            "value": "true"
+          },
+          "DAC0_Refclk_Freq": {
+            "value": "204.800"
+          },
+          "DAC0_Sampling_Rate": {
+            "value": "4.096"
+          },
+          "DAC_Interpolation_Mode00": {
+            "value": "8"
+          },
           "DAC_Slice00_Enable": {
             "value": "true"
           }

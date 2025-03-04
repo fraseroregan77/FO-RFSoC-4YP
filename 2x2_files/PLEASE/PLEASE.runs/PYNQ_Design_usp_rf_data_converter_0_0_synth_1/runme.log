@@ -8,12 +8,12 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Mon Mar  3 19:05:58 2025
+  **** Start of session at: Tue Mar  4 09:46:28 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source PYNQ_Design_usp_rf_data_converter_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 629.840 ; gain = 201.988
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 630.641 ; gain = 202.223
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
@@ -27,9 +27,9 @@ INFO: [Common 17-1540] The version limit for your license is '2024.10' and has e
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16116
+INFO: [Synth 8-7075] Helper process launched with PID 16704
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2149.215 ; gain = 384.035
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2153.078 ; gain = 382.098
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'clk_valid', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:347]
 INFO: [Synth 8-11241] undeclared symbol 'adc00_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3994]
@@ -249,16 +249,12 @@ WARNING: [Synth 8-7129] Port drpdo_status[11] in module PYNQ_Design_usp_rf_data_
 WARNING: [Synth 8-7129] Port drpdo_status[10] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[9] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[8] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port drpdo_status[7] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[6] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[5] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[4] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[3] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[2] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port drpdo_status[1] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port drpdo_status[0] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port drprdy_status in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port status_gnt in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adc0_status[15] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adc0_status[14] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adc0_status[13] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
@@ -311,26 +307,29 @@ WARNING: [Synth 8-7129] Port adc3_status[12] in module PYNQ_Design_usp_rf_data_c
 WARNING: [Synth 8-7129] Port adc3_status[11] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adc3_status[10] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port adc3_status[9] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc3_status[8] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc3_status[7] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc3_status[6] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc3_status[5] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2382.082 ; gain = 616.902
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2388.754 ; gain = 617.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2400.008 ; gain = 634.828
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2406.688 ; gain = 635.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2400.008 ; gain = 634.828
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2406.688 ; gain = 635.707
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 2413.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 2420.164 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2526.676 ; gain = 0.008
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
@@ -349,14 +348,14 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/PYNQ_Design_
 INFO: [Project 1-1714] 104 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2526.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2533.328 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2526.676 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 2533.328 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 2526.676 ; gain = 761.496
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2533.328 ; gain = 762.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -364,7 +363,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 2526.676 ; gain = 761.496
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2533.328 ; gain = 762.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -475,16 +474,18 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/i_PYNQ_Design_usp_rf_data_co
 Applied set_property KEEP_HIERARCHY = SOFT for inst/i_PYNQ_Design_usp_rf_data_converter_0_0_irq_sync/sync_dac13_data_irq. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/i_PYNQ_Design_usp_rf_data_converter_0_0_irq_sync/sync_dac13_fifo_irq. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 2526.676 ; gain = 761.496
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2533.328 ; gain = 762.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'tc_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_tile_config'
 INFO: [Synth 8-802] inferred FSM for state register 'const_sm_state_adc0_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_constants_config'
 INFO: [Synth 8-3936] Found unconnected internal register 'rdata_status_reg' and it is trimmed from '16' to '1' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm.v:303]
 INFO: [Synth 8-802] inferred FSM for state register 'bgt_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter_adc'
 INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled'
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter'
+INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control'
@@ -533,6 +534,19 @@ INFO: [Synth 8-3354] encoded FSM with state register 'const_sm_state_adc0_reg' u
        wait_for_125_ns_1 |                            10000 |                            00110
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'bgt_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+    wait_for_tile_config |                              001 |                             0001
+       access_drp_status |                              010 |                             0010
+         read_pll_enable |                              011 |                             0011
+ wait_for_pll_enable_rdy |                              100 |                             0100
+         read_pll_status |                              101 |                             0101
+ wait_for_pll_status_rdy |                              110 |                             0110
+          wait_for_50_us |                              111 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pll_state_machine.status_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -598,6 +612,19 @@ INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+    wait_for_tile_config |                              001 |                             0001
+       access_drp_status |                              010 |                             0010
+         read_pll_enable |                              011 |                             0011
+ wait_for_pll_enable_rdy |                              100 |                             0100
+         read_pll_status |                              101 |                             0101
+ wait_for_pll_status_rdy |                              110 |                             0110
+          wait_for_50_us |                              111 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pll_state_machine.status_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
                     idle |                             0000 |                             0000
          wait_for_config |                             0001 |                             0001
         find_start_stage |                             0010 |                             0010
@@ -638,7 +665,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 2526.676 ; gain = 761.496
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2533.328 ; gain = 762.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -660,25 +687,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:04 . Memory (MB): peak = 2526.676 ; gain = 761.496
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2533.328 ; gain = 762.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 2729.066 ; gain = 963.887
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2740.984 ; gain = 970.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 2750.199 ; gain = 985.020
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 2854.574 ; gain = 1089.395
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -696,37 +723,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:19 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:19 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:19 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:19 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:20 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:20 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -743,47 +770,47 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG_GT |     2|
-|2     |CARRY8  |    21|
+|2     |CARRY8  |    27|
 |3     |HSADC   |     4|
 |4     |HSDAC   |     2|
-|5     |LUT1    |    22|
-|6     |LUT2    |   435|
-|7     |LUT3    |   483|
-|8     |LUT4    |   657|
-|9     |LUT5    |   612|
-|10    |LUT6    |  1383|
-|11    |MUXF7   |    25|
-|12    |FDRE    |  2351|
-|13    |FDSE    |   254|
+|5     |LUT1    |    29|
+|6     |LUT2    |   537|
+|7     |LUT3    |   499|
+|8     |LUT4    |   545|
+|9     |LUT5    |   624|
+|10    |LUT6    |  1447|
+|11    |MUXF7   |    53|
+|12    |FDRE    |  2450|
+|13    |FDSE    |   246|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:20 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 2869.371 ; gain = 977.523
-Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 2869.371 ; gain = 1104.191
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:00 . Memory (MB): peak = 2967.957 ; gain = 1070.336
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2967.957 ; gain = 1196.977
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 2869.371 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2967.957 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC for BUFG_GT inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/adc0_bufg_gt
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC_1 for BUFG_GT inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/dac0_bufg_gt
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2869.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2967.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 819fb145
+Synth Design complete | Checksum: d043e342
 INFO: [Common 17-83] Releasing license: Synthesis
-161 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+165 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:37 . Memory (MB): peak = 2869.371 ; gain = 2180.641
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2869.371 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 2967.957 ; gain = 2278.129
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2967.957 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/PYNQ_Design_usp_rf_data_converter_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP PYNQ_Design_usp_rf_data_converter_0_0, cache-ID = 5ef19dabb4bc2eb9
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP PYNQ_Design_usp_rf_data_converter_0_0, cache-ID = 90174bd9a2ba5951
 INFO: [Coretcl 2-1174] Renamed 104 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2869.371 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2967.957 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/PYNQ_Design_usp_rf_data_converter_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file PYNQ_Design_usp_rf_data_converter_0_0_utilization_synth.rpt -pb PYNQ_Design_usp_rf_data_converter_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar  3 19:07:53 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  4 09:47:57 2025...

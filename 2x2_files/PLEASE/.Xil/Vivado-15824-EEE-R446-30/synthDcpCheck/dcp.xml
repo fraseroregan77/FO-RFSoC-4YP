@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Checkpoint Version="22" Minor="0">
+	<BUILD_NUMBER Name="5076996"/>
+	<FULL_BUILD Name="SW Build 5076996 on Wed May 22 18:37:14 MDT 2024"/>
+	<PRODUCT Name="Vivado v2024.1 (64-bit)"/>
+	<Part Name="xczu28dr-ffvg1517-2-e"/>
+	<FeatureSet Name="FeatureSet_Classic"/>
+	<NEXTGEN_VERSAL Name="0"/>
+	<Top Name="PYNQ_Design_wrapper"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<MacroLevel Name="1"/>
+	<RunGenerated Name="1"/>
+	<HDPlatform Name="0"/>
+	<XPMLIBRARY Name="XPM_CDC"/>
+	<XPMLIBRARY Name="XPM_FIFO"/>
+	<XPMLIBRARY Name="XPM_MEMORY"/>
+	<File Type="VERILOG_STUB" Name="PYNQ_Design_wrapper_stub.v" ModTime="1741029093"/>
+	<File Type="VHDL_STUB" Name="PYNQ_Design_wrapper_stub.vhdl" ModTime="1741029093"/>
+	<File Type="PARAMXML" Name="PYNQ_Design_wrapper_param.xml" ModTime="1741029093"/>
+	<File Type="PARAMXML" Name="PYNQ_Design_wrapper_param.xml" ModTime="1741029093"/>
+	<File Type="XN" Name="PYNQ_Design_wrapper.xn" ModTime="1741029093"/>
+	<File Type="EDIF" Name="PYNQ_Design_wrapper.edf" ModTime="1741029093"/>
+	<File Type="INCR" Name="PYNQ_Design_wrapper.incr" ModTime="1741029093"/>
+	<File Type="RDA" Name="PYNQ_Design_wrapper.rda" ModTime="1741029093"/>
+	<File Type="JSON_RDA" Name="PYNQ_Design_wrapper_rda.json" ModTime="1741029093"/>
+	<File Type="WDF" Name="PYNQ_Design_wrapper.wdf" ModTime="1741029093"/>
+	<File Type="SYNTH" Name="PYNQ_Design_wrapper.synth" ModTime="1741029093"/>
+	<File Type="HWDEF" Name="PYNQ_Design_wrapper.hwdef" ModTime="1741029093"/>
+	<File Type="HWDEF" Name="PYNQ_Design_wrapper.hwdef" ModTime="1741029093"/>
+</Checkpoint>
+

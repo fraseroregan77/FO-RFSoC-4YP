@@ -244,7 +244,17 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
 
   # Create instance: usp_rf_data_converter_0, and set properties
   set usp_rf_data_converter_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:usp_rf_data_converter:2.6 usp_rf_data_converter_0 ]
-  set_property CONFIG.DAC_Slice00_Enable {true} $usp_rf_data_converter_0
+  set_property -dict [list \
+    CONFIG.ADC0_PLL_Enable {true} \
+    CONFIG.ADC0_Refclk_Freq {204.800} \
+    CONFIG.ADC0_Sampling_Rate {4.096} \
+    CONFIG.ADC_Decimation_Mode00 {8} \
+    CONFIG.DAC0_PLL_Enable {true} \
+    CONFIG.DAC0_Refclk_Freq {204.800} \
+    CONFIG.DAC0_Sampling_Rate {4.096} \
+    CONFIG.DAC_Interpolation_Mode00 {8} \
+    CONFIG.DAC_Slice00_Enable {true} \
+  ] $usp_rf_data_converter_0
 
 
   # Create instance: axi_dma, and set properties
