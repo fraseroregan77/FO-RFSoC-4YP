@@ -4,7 +4,7 @@
     "xci_name": "PYNQ_Design_DUT_rec_0_0",
     "cell_name": "DUT_rec_0",
     "component_reference": "User_Company:VMC:DUT_rec:1.0",
-    "ip_revision": "371931202",
+    "ip_revision": "372023434",
     "gen_directory": "../../../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0",
     "parameters": {
       "component_parameters": {
@@ -26,7 +26,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "371931202" } ],
+        "IPREVISION": [ { "value": "372023434" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

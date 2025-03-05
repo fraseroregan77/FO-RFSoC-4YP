@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1741081586">
+<GenRun Id="impl_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1741118461">
   <File Type="ROUTE-PWR" Name="PYNQ_Design_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="PYNQ_Design_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="PYNQ_Design_wrapper_power_summary_routed.pb"/>
@@ -126,7 +126,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -137,11 +139,10 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_DUT_data_in_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_DUT_rec_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_usp_rf_data_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_rst_ps8_0_96M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_axi_dma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_axi_smc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_DUT_rec_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="PYNQ_Design_system_ila_0_0"/>
 </GenRun>

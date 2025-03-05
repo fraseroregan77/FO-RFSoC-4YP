@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Mar  4 09:41:44 2025
-# Process ID: 15824
+# Start of session at: Tue Mar  4 19:52:19 2025
+# Process ID: 19008
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8004 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE\vivado.jou
-# Running On        :EEE-R446-30
+# Running On        :EEE-R446-02
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
@@ -17,18 +17,14 @@
 # CPU Physical cores:14
 # CPU Logical cores :20
 # Host memory       :16833 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19383 MB
-# Available Virtual :11248 MB
+# Swap memory       :39507 MB
+# Total Virtual     :56341 MB
+# Available Virtual :40980 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
 Scanning sources...
 Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
@@ -38,7 +34,15 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 avai
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1601.898 ; gain = 401.062
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'PYNQ_Design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+PYNQ_Design_DUT_rec_0_0
+
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1579.102 ; gain = 365.711
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
 Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>...
@@ -46,8 +50,8 @@ Adding component instance block -- User_Company:VMC:DUT_data_in:1.0 - DUT_data_i
 Adding component instance block -- User_Company:VMC:DUT_rec:1.0 - DUT_rec_0
 Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
 Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.6 - usp_rf_data_converter_0
-INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 15625000
-INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 50000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 32000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 32000000
 Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma
 Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
@@ -59,28 +63,192 @@ Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Successfully read diagram <PYNQ_Design> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+delete_bd_objs [get_bd_nets xlconstant_1_dout] [get_bd_intf_nets DUT_rec_0_m_axis] [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_cells DUT_rec_0]
+set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/clb20123/documents/fo-rfsoc-4yp/2x2_files/please/please.tmp/dut_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+can't use empty string as operand of "/"
+update_compile_order -fileset sources_1
+set_property name DUT_rec [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property display_name DUT_rec [ipx::current_core]
+close_project
 startgroup
-set_property -dict [list \
-  CONFIG.ADC0_PLL_Enable {true} \
-  CONFIG.ADC0_Refclk_Freq {204.800} \
-  CONFIG.ADC0_Sampling_Rate {4.096} \
-  CONFIG.ADC_Decimation_Mode00 {8} \
-  CONFIG.DAC0_PLL_Enable {true} \
-  CONFIG.DAC0_Refclk_Freq {204.800} \
-  CONFIG.DAC0_Sampling_Rate {4.096} \
-  CONFIG.DAC_Interpolation_Mode00 {8} \
-] [get_bd_cells usp_rf_data_converter_0]
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT:1.0 DUT_0
+WARNING: [IP_Flow 19-2162] IP 'PYNQ_Design_DUT_0_0' is locked:
+* IP definition 'DUT (1.0)' for IP 'PYNQ_Design_DUT_0_0' has been replaced in the IP Catalog by 'DUT_data_in (1.0)'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 'm_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [IP_Flow 19-2322] Failed to set user parameter 's_axis.HAS_TKEEP' value '0' for IP 'DUT_0'.
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+report_ip_status -name ip_status 
+delete_bd_objs [get_bd_cells DUT_0]
+set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+save_bd_design
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
+report_ip_status -name ip_status 
+close_bd_design [get_bd_designs PYNQ_Design]
+close_project
+open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>...
+Adding component instance block -- User_Company:VMC:DUT_data_in:1.0 - DUT_data_in_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.6 - usp_rf_data_converter_0
 INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 32000000
 INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 32000000
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/axi_dma/M_AXIS_MM2S'. Parameter ignored.
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/axi_dma/M_AXIS_MM2S'. Parameter ignored.
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Successfully read diagram <PYNQ_Design> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
+startgroup
+create_bd_cell -type ip -vlnv User_Company:VMC:DUT_rec:1.0 DUT_rec_0
 endgroup
+set_property location {1 150 349} [get_bd_cells DUT_rec_0]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_cells rst_ps8_0_96M]
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets axi_dma_M_AXI_MM2S] [get_bd_intf_nets axi_dma_M_AXI_S2MM] [get_bd_intf_nets axi_dma_M_AXIS_MM2S] [get_bd_cells axi_dma]
+delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_cells ps8_0_axi_periph]
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
+delete_bd_objs [get_bd_intf_nets adc0_clk_1]
+delete_bd_objs [get_bd_intf_nets dac0_clk_1]
+delete_bd_objs [get_bd_intf_nets vin0_01_1]
+delete_bd_objs [get_bd_intf_nets sysref_in_1]
+delete_bd_objs [get_bd_intf_ports adc0_clk]
+delete_bd_objs [get_bd_intf_ports dac0_clk]
+delete_bd_objs [get_bd_intf_ports vin0_01]
+delete_bd_objs [get_bd_intf_ports sysref_in]
+delete_bd_objs [get_bd_nets rst_ps8_0_96M_peripheral_aresetn]
+delete_bd_objs [get_bd_intf_nets usp_rf_data_converter_0_vout00]
+delete_bd_objs [get_bd_intf_ports vout00]
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4_s2mm -config {Dest_Intf "/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD" Bridge_IP "New AXI DMA (High/Medium frequency transfer)" Conn_m_axis "1" Clk_Stream "Auto" Clk_MM "Auto" }  [get_bd_intf_pins DUT_data_in_0/s_axis]
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+delete_bd_objs [get_bd_intf_nets DUT_data_in_0_m_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_data_in_0/m_axis] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
+connect_bd_intf_net [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins DUT_rec_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins DUT_rec_0/m_axis] [get_bd_intf_pins axi_dma/S_AXIS_S2MM]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins DUT_rec_0/step_size]
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "Custom" DAC0_AXIS_SOURCE "Custom" }  [get_bd_cells usp_rf_data_converter_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
+Slave segment '/axi_dma/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins DUT_rec_0/clk]
+INFO: [BD 5-455] Automation on '/usp_rf_data_converter_0/m0_axis_aclk' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {96} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {DUT_rec_0_m_axis}]
+true
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets DUT_rec_0_m_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/zynq_ultra_ps_e_0/pl_clk0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Instantiating new System ILA block '/system_ila_0' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting source clock pin /zynq_ultra_ps_e_0/pl_clk0 to the following sink clock pins :
+/system_ila_0/clk
+Debug Automation : Connecting source reset pin /rst_ps8_0_96M/peripheral_aresetn to the following sink reset pins :
+/system_ila_0/resetn
+Debug Automation : Connecting interface connection /DUT_rec_0_m_axis, to System ILA slot interface pin /system_ila_0/SLOT_0_AXIS for debug.
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axi_dma_M_AXIS_MM2S}]
+true
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axi_dma_M_AXIS_MM2S] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/zynq_ultra_ps_e_0/pl_clk0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode INTERFACE, with 1 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting interface connection /axi_dma_M_AXIS_MM2S, to System ILA slot interface pin /system_ila_0/SLOT_1_AXIS for debug.
 save_bd_design
 Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
 Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
 reset_run synth_1
-INFO: [Project 1-1160] Copying file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp to C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1 and adding it to utils fileset
-reset_run PYNQ_Design_usp_rf_data_converter_0_0_synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp with file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 20
 WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
@@ -105,8 +273,11 @@ Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address spa
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
 INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_0: SmartConnect PYNQ_Design_axi_smc_0 is in High-performance Mode.
-xit::source_ipfile: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1819.766 ; gain = 32.109
+INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1: SmartConnect PYNQ_Design_axi_smc_1 is in High-performance Mode.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
@@ -121,97 +292,145 @@ WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match betw
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
 Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-WARNING: [BD 41-2384] Width mismatch when connecting pin: '/usp_rf_data_converter_0/s00_axis_tdata'(256) to pin: '/DUT_data_in_0/m_axis_tdata'(32) - Only lower order bits will be connected.
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_data_in_0/s_axis_tdata'(1) to pin: '/axi_dma/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/usp_rf_data_converter_0/s00_axis_tdata'(256) to pin: '/DUT_data_in_0/m_axis_tdata'(32) - Only lower order bits will be connected.
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_rec_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
 VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd
-WARNING: [BD 41-2384] Width mismatch when connecting pin: '/usp_rf_data_converter_0/s00_axis_tdata'(256) to pin: '/DUT_data_in_0/m_axis_tdata'(32) - Only lower order bits will be connected.
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_data_in_0/s_axis_tdata'(1) to pin: '/axi_dma/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/usp_rf_data_converter_0/s00_axis_tdata'(256) to pin: '/DUT_data_in_0/m_axis_tdata'(32) - Only lower order bits will be connected.
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_rec_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
 VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/sim/PYNQ_Design.vhd
 VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd
-INFO: [BD 41-1029] Generation completed for the IP Integrator block usp_rf_data_converter_0 .
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/hw_handoff/PYNQ_Design_axi_smc_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/bd_0/synth/PYNQ_Design_axi_smc_0.hwdef
+can't use empty string as operand of "/"
+INFO: [IP_Flow 19-3420] Updated dut_fifo_generator_i0 to use current project options
+INFO: [IP_Flow 19-3420] Updated dut_fifo_generator_i1 to use current project options
+INFO: [IP_Flow 19-3420] Updated dut_fir_compiler_v7_2_i0 to use current project options
+INFO: [IP_Flow 19-3420] Updated dut_mult_gen_v12_0_i0 to use current project options
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DUT_rec_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma .
+Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/hw_handoff/PYNQ_Design_axi_smc_1.hwh
+Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/synth/PYNQ_Design_axi_smc_1.hwdef
 INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_96M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0_ooc.xdc'
+Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/hw_handoff/PYNQ_Design_system_ila_0_0.hwh
+Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/synth/PYNQ_Design_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_ooc.xdc'
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
 Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hw_handoff/PYNQ_Design.hwh
 Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.hwdef
 INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
-INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_auto_pc_0
-INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_axi_smc_0
-INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_usp_rf_data_converter_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_DUT_rec_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_auto_pc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_axi_dma_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_axi_smc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_rst_ps8_0_96M_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_system_ila_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_xbar_1
 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_auto_pc_0
-INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 112b904721ae71ae to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.dcp.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.dcp
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_sim_netlist.v.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_sim_netlist.v
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_sim_netlist.vhdl.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_sim_netlist.vhdl
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.v.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.v
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.vhdl.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_auto_pc_0, cache-ID = 112b904721ae71ae; cache size = 38.705 MB.
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_axi_smc_0
-INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry fa411b12e97e9d1d to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/f/a/fa411b12e97e9d1d/PYNQ_Design_axi_smc_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0.dcp.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0.dcp
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/f/a/fa411b12e97e9d1d/PYNQ_Design_axi_smc_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_sim_netlist.v.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_sim_netlist.v
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/f/a/fa411b12e97e9d1d/PYNQ_Design_axi_smc_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_sim_netlist.vhdl.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_sim_netlist.vhdl
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/f/a/fa411b12e97e9d1d/PYNQ_Design_axi_smc_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_stub.v.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_stub.v
-INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/f/a/fa411b12e97e9d1d/PYNQ_Design_axi_smc_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_stub.vhdl.
-INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_0/PYNQ_Design_axi_smc_0_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_axi_smc_0, cache-ID = fa411b12e97e9d1d; cache size = 38.706 MB.
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_usp_rf_data_converter_0_0
-config_ip_cache: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2146.984 ; gain = 21.789
-[Tue Mar  4 09:46:26 2025] Launched PYNQ_Design_usp_rf_data_converter_0_0_synth_1, synth_1...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_DUT_rec_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_auto_pc_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 112b904721ae71ae to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_auto_pc_1, cache-ID = 112b904721ae71ae; cache size = 46.126 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_axi_dma_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d1784d8ce0a6ad76 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/PYNQ_Design_axi_dma_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/PYNQ_Design_axi_dma_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/PYNQ_Design_axi_dma_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/PYNQ_Design_axi_dma_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/1/d1784d8ce0a6ad76/PYNQ_Design_axi_dma_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_axi_dma_1, cache-ID = d1784d8ce0a6ad76; cache size = 46.126 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_axi_smc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_rst_ps8_0_96M_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 84fdea816dbca264 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/8/4/84fdea816dbca264/PYNQ_Design_rst_ps8_0_96M_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/8/4/84fdea816dbca264/PYNQ_Design_rst_ps8_0_96M_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/8/4/84fdea816dbca264/PYNQ_Design_rst_ps8_0_96M_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/8/4/84fdea816dbca264/PYNQ_Design_rst_ps8_0_96M_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/8/4/84fdea816dbca264/PYNQ_Design_rst_ps8_0_96M_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_rst_ps8_0_96M_1, cache-ID = 84fdea816dbca264; cache size = 46.126 MB.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_system_ila_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_xbar_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry bf1db54df888c609 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/b/f/bf1db54df888c609/PYNQ_Design_xbar_0.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1.dcp.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1.dcp
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/b/f/bf1db54df888c609/PYNQ_Design_xbar_0_sim_netlist.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_sim_netlist.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_sim_netlist.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/b/f/bf1db54df888c609/PYNQ_Design_xbar_0_sim_netlist.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_sim_netlist.vhdl
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/b/f/bf1db54df888c609/PYNQ_Design_xbar_0_stub.v to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_stub.v.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_stub.v
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/b/f/bf1db54df888c609/PYNQ_Design_xbar_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_stub.vhdl.
+INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1_stub.vhdl
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_xbar_1, cache-ID = bf1db54df888c609; cache size = 46.126 MB.
+[Tue Mar  4 20:01:02 2025] Launched PYNQ_Design_DUT_rec_0_0_synth_1, PYNQ_Design_system_ila_0_0_synth_1, PYNQ_Design_axi_smc_1_synth_1, synth_1...
 Run output will be captured here:
-PYNQ_Design_usp_rf_data_converter_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/runme.log
+PYNQ_Design_DUT_rec_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_DUT_rec_0_0_synth_1/runme.log
+PYNQ_Design_system_ila_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_system_ila_0_0_synth_1/runme.log
+PYNQ_Design_axi_smc_1_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_axi_smc_1_synth_1/runme.log
 synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/runme.log
-[Tue Mar  4 09:46:26 2025] Launched impl_1...
+[Tue Mar  4 20:01:02 2025] Launched impl_1...
 Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:41 ; elapsed = 00:01:02 . Memory (MB): peak = 2149.289 ; gain = 361.633
+launch_runs: Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 2552.496 ; gain = 217.590
 open_run impl_1
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.614 . Memory (MB): peak = 3067.922 ; gain = 9.781
-INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.663 . Memory (MB): peak = 3447.203 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 384 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 3210.148 ; gain = 8.152
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 3620.918 ; gain = 7.934
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
 INFO: [Project 1-853] Binary constraint restore complete.
 INFO: [Designutils 20-5722] Start Reading Physical Databases.
 Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3659.559 ; gain = 0.000
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4081.938 ; gain = 0.000
 Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 3659.559 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3681.293 ; gain = 21.734
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3681.293 ; gain = 0.000
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4081.938 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4106.043 ; gain = 24.105
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4106.043 ; gain = 0.000
 Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4024.711 ; gain = 343.418
-Read Physdb Files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4024.711 ; gain = 365.152
+Read RouteStorage: Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4438.129 ; gain = 332.086
+Read Physdb Files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4438.129 ; gain = 356.191
 Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4024.711 ; gain = 365.152
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 4024.711 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4438.129 ; gain = 356.191
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 4438.129 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 118 instances were transformed.
+  A total of 216 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 92 instances
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 39 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 73 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 75 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRLC32E => SRL16E: 4 instances
 
-open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 4453.230 ; gain = 2302.035
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 4720.621 ; gain = 2168.125
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
 close_design
 write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl
 WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
@@ -227,4 +446,6 @@ INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/clb20123/Documents/F
 INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
 INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 1 seconds
-write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 4932.941 ; gain = 0.000
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 5328.719 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  4 20:14:37 2025...

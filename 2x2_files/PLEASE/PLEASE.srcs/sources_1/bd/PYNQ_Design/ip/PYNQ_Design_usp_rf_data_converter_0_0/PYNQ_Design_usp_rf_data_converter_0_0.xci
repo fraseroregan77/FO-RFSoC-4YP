@@ -1939,7 +1939,7 @@
           "mode": "slave",
           "parameters": {
             "CAN_DEBUG": [ { "value": "false", "value_permission": "bd", "resolve_type": "generated", "format": "bool", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "2000000000.0", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+            "FREQ_HZ": [ { "value": "204800000.0", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "CLK_N": [ { "physical_name": "adc0_clk_n" } ],
@@ -1970,7 +1970,7 @@
           "mode": "slave",
           "parameters": {
             "CAN_DEBUG": [ { "value": "false", "value_permission": "bd", "resolve_type": "generated", "format": "bool", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "6400000000.0", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
+            "FREQ_HZ": [ { "value": "204800000.0", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
             "CLK_N": [ { "physical_name": "dac0_clk_n" } ],

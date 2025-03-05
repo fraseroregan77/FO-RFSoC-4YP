@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6E45AECD2D30806A",
+      "boundary_crc": "0x6E45AECD59B35CC8",
       "device": "xczu28dr-ffvg1517-2-e",
       "gen_directory": "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design",
       "name": "PYNQ_Design",
@@ -12,9 +12,11 @@
     },
     "design_tree": {
       "DUT_data_in_0": "",
-      "DUT_rec_0": "",
       "zynq_ultra_ps_e_0": "",
       "usp_rf_data_converter_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "DUT_rec_0": "",
       "axi_dma": "",
       "axi_smc": "",
       "rst_ps8_0_96M": "",
@@ -26,8 +28,7 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "xlconstant_0": "",
-      "xlconstant_1": ""
+      "system_ila_0": ""
     },
     "interface_ports": {
       "sysref_in": {
@@ -55,7 +56,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "2000000000.0"
+            "value": "204800000.0"
           }
         },
         "port_maps": {
@@ -94,7 +95,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "6400000000.0"
+            "value": "204800000.0"
           }
         },
         "port_maps": {
@@ -131,13 +132,6 @@
         "xci_name": "PYNQ_Design_DUT_data_in_0_0",
         "xci_path": "ip\\PYNQ_Design_DUT_data_in_0_0\\PYNQ_Design_DUT_data_in_0_0.xci",
         "inst_hier_path": "DUT_data_in_0"
-      },
-      "DUT_rec_0": {
-        "vlnv": "User_Company:VMC:DUT_rec:1.0",
-        "ip_revision": "371931202",
-        "xci_name": "PYNQ_Design_DUT_rec_0_0",
-        "xci_path": "ip\\PYNQ_Design_DUT_rec_0_0\\PYNQ_Design_DUT_rec_0_0.xci",
-        "inst_hier_path": "DUT_rec_0"
       },
       "zynq_ultra_ps_e_0": {
         "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.5",
@@ -298,11 +292,40 @@
           }
         }
       },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "PYNQ_Design_xlconstant_0_0",
+        "xci_path": "ip\\PYNQ_Design_xlconstant_0_0\\PYNQ_Design_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "PYNQ_Design_xlconstant_0_1",
+        "xci_path": "ip\\PYNQ_Design_xlconstant_0_1\\PYNQ_Design_xlconstant_0_1.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "63"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "DUT_rec_0": {
+        "vlnv": "User_Company:VMC:DUT_rec:1.0",
+        "ip_revision": "372023434",
+        "xci_name": "PYNQ_Design_DUT_rec_0_0",
+        "xci_path": "ip\\PYNQ_Design_DUT_rec_0_0\\PYNQ_Design_DUT_rec_0_0.xci",
+        "inst_hier_path": "DUT_rec_0"
+      },
       "axi_dma": {
         "vlnv": "xilinx.com:ip:axi_dma:7.1",
         "ip_revision": "32",
-        "xci_name": "PYNQ_Design_axi_dma_0",
-        "xci_path": "ip\\PYNQ_Design_axi_dma_0\\PYNQ_Design_axi_dma_0.xci",
+        "xci_name": "PYNQ_Design_axi_dma_1",
+        "xci_path": "ip\\PYNQ_Design_axi_dma_1\\PYNQ_Design_axi_dma_1.xci",
         "inst_hier_path": "axi_dma",
         "parameters": {
           "c_include_mm2s_dre": {
@@ -375,8 +398,8 @@
       "axi_smc": {
         "vlnv": "xilinx.com:ip:smartconnect:1.0",
         "ip_revision": "23",
-        "xci_name": "PYNQ_Design_axi_smc_0",
-        "xci_path": "ip\\PYNQ_Design_axi_smc_0\\PYNQ_Design_axi_smc_0.xci",
+        "xci_name": "PYNQ_Design_axi_smc_1",
+        "xci_path": "ip\\PYNQ_Design_axi_smc_1\\PYNQ_Design_axi_smc_1.xci",
         "inst_hier_path": "axi_smc",
         "parameters": {
           "NUM_SI": {
@@ -452,15 +475,15 @@
       "rst_ps8_0_96M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "ip_revision": "15",
-        "xci_name": "PYNQ_Design_rst_ps8_0_96M_0",
-        "xci_path": "ip\\PYNQ_Design_rst_ps8_0_96M_0\\PYNQ_Design_rst_ps8_0_96M_0.xci",
+        "xci_name": "PYNQ_Design_rst_ps8_0_96M_1",
+        "xci_path": "ip\\PYNQ_Design_rst_ps8_0_96M_1\\PYNQ_Design_rst_ps8_0_96M_1.xci",
         "inst_hier_path": "rst_ps8_0_96M"
       },
       "ps8_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\PYNQ_Design_ps8_0_axi_periph_0\\PYNQ_Design_ps8_0_axi_periph_0.xci",
+        "xci_path": "ip\\PYNQ_Design_ps8_0_axi_periph_1\\PYNQ_Design_ps8_0_axi_periph_1.xci",
         "inst_hier_path": "ps8_0_axi_periph",
-        "xci_name": "PYNQ_Design_ps8_0_axi_periph_0",
+        "xci_name": "PYNQ_Design_ps8_0_axi_periph_1",
         "parameters": {
           "NUM_MI": {
             "value": "2"
@@ -550,8 +573,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "32",
-            "xci_name": "PYNQ_Design_xbar_0",
-            "xci_path": "ip\\PYNQ_Design_xbar_0\\PYNQ_Design_xbar_0.xci",
+            "xci_name": "PYNQ_Design_xbar_1",
+            "xci_path": "ip\\PYNQ_Design_xbar_1\\PYNQ_Design_xbar_1.xci",
             "inst_hier_path": "ps8_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
@@ -626,8 +649,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "PYNQ_Design_auto_pc_0",
-                "xci_path": "ip\\PYNQ_Design_auto_pc_0\\PYNQ_Design_auto_pc_0.xci",
+                "xci_name": "PYNQ_Design_auto_pc_1",
+                "xci_path": "ip\\PYNQ_Design_auto_pc_1\\PYNQ_Design_auto_pc_1.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -855,25 +878,54 @@
           }
         }
       },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "PYNQ_Design_xlconstant_0_0",
-        "xci_path": "ip\\PYNQ_Design_xlconstant_0_0\\PYNQ_Design_xlconstant_0_0.xci",
-        "inst_hier_path": "xlconstant_0"
-      },
-      "xlconstant_1": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "PYNQ_Design_xlconstant_0_1",
-        "xci_path": "ip\\PYNQ_Design_xlconstant_0_1\\PYNQ_Design_xlconstant_0_1.xci",
-        "inst_hier_path": "xlconstant_1",
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "17",
+        "xci_name": "PYNQ_Design_system_ila_0_0",
+        "xci_path": "ip\\PYNQ_Design_system_ila_0_0\\PYNQ_Design_system_ila_0_0.xci",
+        "inst_hier_path": "system_ila_0",
         "parameters": {
-          "CONST_VAL": {
-            "value": "63"
+          "C_MON_TYPE": {
+            "value": "INTERFACE"
           },
-          "CONST_WIDTH": {
-            "value": "16"
+          "C_NUM_MONITOR_SLOTS": {
+            "value": "2"
+          },
+          "C_SLOT_0_APC_EN": {
+            "value": "0"
+          },
+          "C_SLOT_0_AXI_DATA_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_0_AXI_TRIG_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "C_SLOT_1_APC_EN": {
+            "value": "0"
+          },
+          "C_SLOT_1_AXI_DATA_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_1_AXI_TRIG_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_1_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXIS": {
+            "mode": "Monitor",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "SLOT_1_AXIS": {
+            "mode": "Monitor",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           }
         }
       }
@@ -888,8 +940,17 @@
       "DUT_rec_0_m_axis": {
         "interface_ports": [
           "DUT_rec_0/m_axis",
-          "axi_dma/S_AXIS_S2MM"
-        ]
+          "axi_dma/S_AXIS_S2MM",
+          "system_ila_0/SLOT_0_AXIS"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "adc0_clk_1": {
         "interface_ports": [
@@ -900,8 +961,17 @@
       "axi_dma_M_AXIS_MM2S": {
         "interface_ports": [
           "DUT_data_in_0/s_axis",
-          "axi_dma/M_AXIS_MM2S"
-        ]
+          "axi_dma/M_AXIS_MM2S",
+          "system_ila_0/SLOT_1_AXIS"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "axi_dma_M_AXI_MM2S": {
         "interface_ports": [
@@ -982,7 +1052,8 @@
           "usp_rf_data_converter_0/m0_axis_aresetn",
           "usp_rf_data_converter_0/s0_axis_aresetn",
           "usp_rf_data_converter_0/s_axi_aresetn",
-          "ps8_0_axi_periph/M01_ARESETN"
+          "ps8_0_axi_periph/M01_ARESETN",
+          "system_ila_0/resetn"
         ]
       },
       "xlconstant_0_dout": {
@@ -1015,7 +1086,8 @@
           "usp_rf_data_converter_0/m0_axis_aclk",
           "usp_rf_data_converter_0/s0_axis_aclk",
           "usp_rf_data_converter_0/s_axi_aclk",
-          "ps8_0_axi_periph/M01_ACLK"
+          "ps8_0_axi_periph/M01_ACLK",
+          "system_ila_0/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {
