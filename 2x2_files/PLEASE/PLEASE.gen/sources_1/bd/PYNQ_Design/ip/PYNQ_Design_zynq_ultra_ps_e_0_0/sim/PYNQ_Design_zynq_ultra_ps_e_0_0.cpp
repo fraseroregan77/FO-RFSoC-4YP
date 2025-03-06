@@ -93,7 +93,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -121,7 +121,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_LPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_LPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_LPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_M_AXI_HPM0_LPD_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>("M_AXI_HPM0_LPD_transactor", M_AXI_HPM0_LPD_transactor_param_props);
 
@@ -190,7 +190,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "1");
@@ -218,7 +218,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     S_AXI_HPC0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_HPC0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_HPC0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_S_AXI_HPC0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HPC0_FPD_transactor", S_AXI_HPC0_FPD_transactor_param_props);
 
@@ -322,7 +322,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -350,7 +350,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_LPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_LPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_LPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_M_AXI_HPM0_LPD_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>("M_AXI_HPM0_LPD_transactor", M_AXI_HPM0_LPD_transactor_param_props);
 
@@ -419,7 +419,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "1");
@@ -447,7 +447,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     S_AXI_HPC0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_HPC0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_HPC0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_S_AXI_HPC0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HPC0_FPD_transactor", S_AXI_HPC0_FPD_transactor_param_props);
 
@@ -551,7 +551,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -579,7 +579,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_LPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_LPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_LPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_M_AXI_HPM0_LPD_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>("M_AXI_HPM0_LPD_transactor", M_AXI_HPM0_LPD_transactor_param_props);
 
@@ -648,7 +648,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "1");
@@ -676,7 +676,7 @@ void PYNQ_Design_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     S_AXI_HPC0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_HPC0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_HPC0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_S_AXI_HPC0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HPC0_FPD_transactor", S_AXI_HPC0_FPD_transactor_param_props);
 
@@ -769,7 +769,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -797,7 +797,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     M_AXI_HPM0_LPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_LPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_LPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_M_AXI_HPM0_LPD_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>("M_AXI_HPM0_LPD_transactor", M_AXI_HPM0_LPD_transactor_param_props);
   mp_M_AXI_HPM0_LPD_transactor->AWID(maxigp2_awid);
@@ -847,7 +847,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "1");
@@ -875,7 +875,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     S_AXI_HPC0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_HPC0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_HPC0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_S_AXI_HPC0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HPC0_FPD_transactor", S_AXI_HPC0_FPD_transactor_param_props);
   mp_saxigp0_aruser_converter = new xsc::common::scalar2vectorN_converter<1>("saxigp0_aruser_converter");
@@ -998,7 +998,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    M_AXI_HPM0_LPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_LPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -1026,7 +1026,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     M_AXI_HPM0_LPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_LPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_LPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_LPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_M_AXI_HPM0_LPD_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,16,16,1,1,16,1>("M_AXI_HPM0_LPD_transactor", M_AXI_HPM0_LPD_transactor_param_props);
   mp_M_AXI_HPM0_LPD_transactor->AWID(maxigp2_awid);
@@ -1076,7 +1076,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "96968727");
+    S_AXI_HPC0_FPD_transactor_param_props.addLong("FREQ_HZ", "128000000");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
     S_AXI_HPC0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "1");
@@ -1104,7 +1104,7 @@ PYNQ_Design_zynq_ultra_ps_e_0_0::PYNQ_Design_zynq_ultra_ps_e_0_0(const sc_core::
     S_AXI_HPC0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_HPC0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_HPC0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_HPC0_FPD_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_clk_wiz_0_0_clk_out1");
 
     mp_S_AXI_HPC0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HPC0_FPD_transactor", S_AXI_HPC0_FPD_transactor_param_props);
   mp_saxigp0_aruser_converter = new xsc::common::scalar2vectorN_converter<1>("saxigp0_aruser_converter");

@@ -40,6 +40,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_system_ila_0_0 || ORIG_REF_NAME==PYNQ_Design_system_ila_0_0} -quiet] -quiet
 
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_clk_wiz_0_0 || ORIG_REF_NAME==PYNQ_Design_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0/PYNQ_Design_proc_sys_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_proc_sys_reset_0_0 || ORIG_REF_NAME==PYNQ_Design_proc_sys_reset_0_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/PYNQ_Design_proc_sys_reset_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_proc_sys_reset_1_0 || ORIG_REF_NAME==PYNQ_Design_proc_sys_reset_1_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] -quiet
+
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_0 || ORIG_REF_NAME==PYNQ_Design_auto_pc_0} -quiet] -quiet
 

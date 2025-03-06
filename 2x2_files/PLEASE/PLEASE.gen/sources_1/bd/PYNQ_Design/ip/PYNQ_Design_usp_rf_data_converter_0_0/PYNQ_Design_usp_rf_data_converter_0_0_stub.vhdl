@@ -2,8 +2,8 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
--- Date        : Thu Mar  6 15:23:09 2025
--- Host        : EEE-R343-01 running 64-bit major release  (build 9200)
+-- Date        : Thu Mar  6 21:06:27 2025
+-- Host        : EEE-R446-02 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0_stub.vhdl
 -- Design      : PYNQ_Design_usp_rf_data_converter_0_0
@@ -43,7 +43,7 @@ entity PYNQ_Design_usp_rf_data_converter_0_0 is
     m0_axis_aresetn : in STD_LOGIC;
     vin0_01_p : in STD_LOGIC;
     vin0_01_n : in STD_LOGIC;
-    m00_axis_tdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
+    m00_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     m00_axis_tvalid : out STD_LOGIC;
     m00_axis_tready : in STD_LOGIC;
     dac0_clk_p : in STD_LOGIC;
@@ -53,7 +53,7 @@ entity PYNQ_Design_usp_rf_data_converter_0_0 is
     s0_axis_aresetn : in STD_LOGIC;
     vout00_p : out STD_LOGIC;
     vout00_n : out STD_LOGIC;
-    s00_axis_tdata : in STD_LOGIC_VECTOR ( 255 downto 0 );
+    s00_axis_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s00_axis_tvalid : in STD_LOGIC;
     s00_axis_tready : out STD_LOGIC;
     irq : out STD_LOGIC
@@ -65,7 +65,7 @@ architecture stub of PYNQ_Design_usp_rf_data_converter_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "s_axi_aclk,s_axi_aresetn,s_axi_awaddr[17:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[17:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,sysref_in_p,sysref_in_n,adc0_clk_p,adc0_clk_n,clk_adc0,m0_axis_aclk,m0_axis_aresetn,vin0_01_p,vin0_01_n,m00_axis_tdata[127:0],m00_axis_tvalid,m00_axis_tready,dac0_clk_p,dac0_clk_n,clk_dac0,s0_axis_aclk,s0_axis_aresetn,vout00_p,vout00_n,s00_axis_tdata[255:0],s00_axis_tvalid,s00_axis_tready,irq";
+attribute black_box_pad_pin of stub : architecture is "s_axi_aclk,s_axi_aresetn,s_axi_awaddr[17:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[17:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,sysref_in_p,sysref_in_n,adc0_clk_p,adc0_clk_n,clk_adc0,m0_axis_aclk,m0_axis_aresetn,vin0_01_p,vin0_01_n,m00_axis_tdata[15:0],m00_axis_tvalid,m00_axis_tready,dac0_clk_p,dac0_clk_n,clk_dac0,s0_axis_aclk,s0_axis_aresetn,vout00_p,vout00_n,s00_axis_tdata[15:0],s00_axis_tvalid,s00_axis_tready,irq";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "usp_rf_data_converter_v2_6_9,Vivado 2024.1";
 begin

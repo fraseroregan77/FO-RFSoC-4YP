@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x77E79C80D5CF5A80",
+      "boundary_crc": "0xE8BFC275629B70F0",
       "design_src": "SBD",
       "device": "xczu28dr-ffvg1517-2-e",
       "name": "bd_4dc9",
@@ -79,7 +79,7 @@
             "value_src": "const_prop"
           },
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "DATA_WIDTH": {
@@ -87,8 +87,8 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "96968727",
-            "value_src": "user_prop"
+            "value": "128000000",
+            "value_src": "ip_prop"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -154,7 +154,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "default"
+            "value_src": "ip_prop"
           },
           "PROTOCOL": {
             "value": "AXI4",
@@ -214,7 +214,7 @@
             "value_src": "const_prop"
           },
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "DATA_WIDTH": {
@@ -222,8 +222,8 @@
             "value_src": "auto_prop"
           },
           "FREQ_HZ": {
-            "value": "96968727",
-            "value_src": "user_prop"
+            "value": "128000000",
+            "value_src": "ip_prop"
           },
           "HAS_BRESP": {
             "value": "0",
@@ -289,7 +289,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "default"
+            "value_src": "ip_prop"
           },
           "PROTOCOL": {
             "value": "AXI4",
@@ -349,7 +349,7 @@
             "value_src": "default"
           },
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "DATA_WIDTH": {
@@ -357,8 +357,8 @@
             "value_src": "ip"
           },
           "FREQ_HZ": {
-            "value": "96968727",
-            "value_src": "user_prop"
+            "value": "128000000",
+            "value_src": "ip_prop"
           },
           "HAS_BRESP": {
             "value": "1",
@@ -421,7 +421,7 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "default"
+            "value_src": "ip_prop"
           },
           "PROTOCOL": {
             "value": "AXI4",
@@ -465,12 +465,12 @@
             "value_src": "constant"
           },
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "96968727",
-            "value_src": "user_prop"
+            "value": "128000000",
+            "value_src": "ip_prop"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -482,7 +482,33 @@
           },
           "PHASE": {
             "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "aclk1": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
             "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "128000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
           }
         }
       },
@@ -552,6 +578,10 @@
             "direction": "O"
           },
           "aclk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "aclk1": {
             "type": "clk",
             "direction": "I"
           }
@@ -4140,6 +4170,12 @@
       }
     },
     "nets": {
+      "aclk1_1": {
+        "ports": [
+          "aclk1",
+          "clk_map/aclk1"
+        ]
+      },
       "aclk_1": {
         "ports": [
           "clk_map/S00_ACLK",

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date                      : Thu Mar  6 15:36:35 2025
-| Host                      : EEE-R343-01 running 64-bit major release  (build 9200)
+| Date                      : Thu Mar  6 22:07:37 2025
+| Host                      : EEE-R446-02 running 64-bit major release  (build 9200)
 | Command                   : report_io -file PYNQ_Design_wrapper_io_placed.rpt
 | Design                    : PYNQ_Design_wrapper
 | Device                    : xczu28dr

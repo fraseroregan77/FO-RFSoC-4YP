@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Thu Mar  6 15:31:19 2025
-| Host         : EEE-R343-01
+| Date         : Thu Mar  6 22:05:31 2025
+| Host         : EEE-R446-02
 | Design       : design_1
 | Device       : xczu28dr-ffvg1517-2-E-
 -------------------------------------
@@ -11,30 +11,44 @@ For more information on clockInfo.txt clock routing debug file see https://suppo
 ***********************
 Running Pre-CRP Checker
 ***********************
-Number of global clocks: 2
-	Number of BUFGCE: 1
+Number of global clocks: 4
+	Number of BUFGCE: 2
 	Number of BUFGCE_HDIO: 0
 	Number of BUFG_CTRL: 0
 	Number of BUFGCE_DIV: 0
-	Number of BUFG_GT: 0
+	Number of BUFG_GT: 1
 	Number of BUFG_PS: 1
 	Number of BUFG_FABRIC: 0
-	Running suboptimal placement checker for 1 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+	Running suboptimal placement checker for 1 BUFG_GT clocks (and their loads)...
+		No sub-optimality found
+	Running suboptimal placement checker for 2 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
 Pre-CRP Checker took 0 secs
 
 ********************************
 Clock Net Route Info (CRP Input)
 ********************************
-Clock 1: PYNQ_Design_i/zynq_ultra_ps_e_0/U0/pl_clk0
+Clock 1: PYNQ_Design_i/clk_wiz_0/inst/clk_out1
+	Clock source type: BUFGCE
+	Clock source region: X4Y7
+	Clock regions with locked loads: X1Y0 X1Y2 X5Y0 X5Y4 
+	initial rect ((1, 0), (5, 7))
+
+Clock 2: PYNQ_Design_i/zynq_ultra_ps_e_0/U0/pl_clk0
 	Clock source type: BUFG_PS
 	Clock source region: X1Y2
-	Clock regions with locked loads: X1Y0 X1Y2 X5Y0 X5Y1 X5Y2 X5Y3 X5Y4 X5Y5 
-	initial rect ((0, 0), (5, 5))
+	Clock regions with locked loads: X5Y0 X5Y1 X5Y2 X5Y3 X5Y4 X5Y5 
+	initial rect ((1, 0), (5, 5))
 
-Clock 2: dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i
+Clock 3: dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i
 	Clock source type: BUFGCE
-	Clock source region: X4Y0
-	initial rect ((4, 0), (5, 1))
+	Clock source region: X4Y4
+	initial rect ((2, 0), (4, 4))
+
+Clock 4: PYNQ_Design_i/usp_rf_data_converter_0/inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/clk_adc0
+	Clock source type: BUFG_GT
+	Clock source region: X5Y0
+	Clock regions with locked loads: X4Y7 
+	initial rect ((4, 0), (5, 7))
 
 
 
