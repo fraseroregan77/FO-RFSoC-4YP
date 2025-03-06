@@ -224,3 +224,5 @@ INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
 INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 1 seconds
 write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 4724.496 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 14:09:55 2025...
