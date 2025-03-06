@@ -649,8 +649,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "PYNQ_Design_auto_pc_1",
-                "xci_path": "ip\\PYNQ_Design_auto_pc_1\\PYNQ_Design_auto_pc_1.xci",
+                "xci_name": "PYNQ_Design_auto_pc_0",
+                "xci_path": "ip\\PYNQ_Design_auto_pc_0\\PYNQ_Design_auto_pc_0.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -890,6 +890,9 @@
           },
           "C_NUM_MONITOR_SLOTS": {
             "value": "2"
+          },
+          "C_SLOT": {
+            "value": "1"
           },
           "C_SLOT_0_APC_EN": {
             "value": "0"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar  4 20:00:54 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar  6 13:52:44 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" DEVICE="xczu28dr" NAME="PYNQ_Design" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
@@ -2751,11 +2751,6 @@
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp2_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_aruser" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp2_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp2_arvalid"/>
@@ -2809,11 +2804,6 @@
         <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp2_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_awuser" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp2_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="S00_AXI_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awvalid">
@@ -2910,7 +2900,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="S00_AXI_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="S00_AXI_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S00_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="S00_AXI_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="S00_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="S00_AXI_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="S00_AXI_awburst"/>
@@ -2922,7 +2911,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="S00_AXI_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="S00_AXI_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S00_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="S00_AXI_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="S00_AXI_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="S00_AXI_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="S00_AXI_bready"/>
@@ -6129,7 +6117,7 @@
         <PARAMETER NAME="C_PROBE9_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE9_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE_WIDTH_PROPAGATION" VALUE="AUTO"/>
-        <PARAMETER NAME="C_SLOT" VALUE="0"/>
+        <PARAMETER NAME="C_SLOT" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_APC_EN" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_0_APC_MAX_AR_WAITS" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_0_APC_MAX_AW_WAITS" VALUE="0"/>
@@ -8955,6 +8943,12 @@
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=zynq_ultra_ps_e;v=v3_5;d=pg201-zynq-ultrascale-plus-processing-system.pdf"/>
       </DOCUMENTS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_LPS_OCM" RANGE="0x1000000" USAGE="register"/>
+      </ADDRESSBLOCKS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP0" NAME="HPC0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
+      </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="C_DP_USE_AUDIO" VALUE="0"/>
         <PARAMETER NAME="C_DP_USE_VIDEO" VALUE="0"/>
@@ -10738,11 +10732,6 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp2_aruser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="maxigp2_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arvalid"/>
@@ -10796,11 +10785,6 @@
         <PORT DIR="O" LEFT="2" NAME="maxigp2_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp2_awuser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="maxigp2_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awvalid">
@@ -11129,7 +11113,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="maxigp2_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="maxigp2_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="maxigp2_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="maxigp2_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="maxigp2_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="maxigp2_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="maxigp2_awburst"/>
@@ -11141,7 +11124,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="maxigp2_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="maxigp2_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="maxigp2_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="maxigp2_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="maxigp2_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="maxigp2_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="maxigp2_bready"/>

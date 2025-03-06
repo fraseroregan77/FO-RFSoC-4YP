@@ -10,7 +10,7 @@
       "component_parameters": {
         "C_EN_TIME_TAG": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_TIME_TAG_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_SLOT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_SLOT": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_SLOT_15_TYPE": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_SLOT_14_TYPE": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_SLOT_13_TYPE": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
