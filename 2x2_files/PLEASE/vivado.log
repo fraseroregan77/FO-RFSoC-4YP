@@ -3,43 +3,159 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Mar  6 13:50:25 2025
-# Process ID: 18448
+# Start of session at: Thu Mar  6 14:15:01 2025
+# Process ID: 7968
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2580 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8216 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE\vivado.jou
-# Running On        :EEE-R446-31
+# Running On        :EEE-R343-01
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
-# CPU Frequency     :2496 MHz
-# CPU Physical cores:14
-# CPU Logical cores :20
-# Host memory       :16833 MB
+# Processor Detail  :Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+# CPU Frequency     :3192 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :17060 MB
 # Swap memory       :2550 MB
-# Total Virtual     :19383 MB
-# Available Virtual :11005 MB
+# Total Virtual     :19610 MB
+# Available Virtual :12932 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:55 . Memory (MB): peak = 1580.227 ; gain = 375.992
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1751.703 ; gain = 605.988
 update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1.0
+  **** Build date : Mar  6 2024 at 20:50:54
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-00:00:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1760.953 ; gain = 9.250
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
+set_property PROGRAM.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.bit} [get_hw_devices xczu28dr_0]
+set_property PROBES.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx} [get_hw_devices xczu28dr_0]
+set_property FULL_PROBES.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx} [get_hw_devices xczu28dr_0]
+current_hw_device [get_hw_devices xczu28dr_0]
+refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
+INFO: [Labtools 27-2302] Device xczu28dr (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'PYNQ_Design_i/system_ila_0/U0/ila_lib' at location 'uuid_7F72FA404E7B5AE09A7604860771C7D7' from probes file, since it cannot be found on the programmed device.
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu28dr_0]
+ERROR: [Xicom 50-38] xicom: ERROR: [Xicom 50-24] File D:/Xilinx/Vivado/2024.1/data/xicom/mig_error_ddr4_0.csv does not exist.
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/55555A}
+refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
+INFO: [Labtools 27-2302] Device xczu28dr (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+Processing Interface DUT_rec_0_m_axis_ila1_slot0
+Processing Interface axi_dma_M_AXIS_MM2S_ila1_slot1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:18:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:18:03
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:18:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:18:35
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:18:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:18:51
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:19:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:19:42
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:19:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:19:55
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:20:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:20:01
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:20:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:20:13
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:20:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:20:21
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:20:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:20:38
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
 Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>...
 Adding component instance block -- User_Company:VMC:DUT_data_in:1.0 - DUT_data_in_0
@@ -51,8 +167,6 @@ Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
 Adding component instance block -- User_Company:VMC:DUT_rec:1.0 - DUT_rec_0
 Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma
-WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/axi_dma/M_AXIS_MM2S'. Parameter ignored.
-WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/axi_dma/M_AXIS_MM2S'. Parameter ignored.
 Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
@@ -62,11 +176,238 @@ Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
 Successfully read diagram <PYNQ_Design> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>
-open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2167.398 ; gain = 48.191
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1893.027 ; gain = 9.805
+refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
+INFO: [Labtools 27-2302] Device xczu28dr (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+Processing Interface DUT_rec_0_m_axis_ila1_slot0
+Processing Interface axi_dma_M_AXIS_MM2S_ila1_slot1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:23:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:23:54
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:24:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:24:07
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:24:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:24:31
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:27:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:27:00
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:27:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:27:11
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:28:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:28:55
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:29:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:29:05
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:30:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:30:15
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_1_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:30:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:30:43
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:33:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:33:32
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:33:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:33:47
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:36:22
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/55555A}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:41:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:41:08
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:42:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:43:03
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:46:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:46:32
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:47:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:47:49
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:47:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:47:59
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:48:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:48:02
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:48:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:48:07
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+ipx::get_ipfiles: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3034.453 ; gain = 0.000
+startgroup
+set_property CONFIG.C_DATA_DEPTH {8192} [get_bd_cells system_ila_0]
+endgroup
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_1_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_1_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_1_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:51:45
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:52:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:52:33
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_1_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:53:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 14:53:26
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:53:37
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:55:44
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Mar-06 14:57:06
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 14:57:26
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+startgroup
+set_property CONFIG.ADC0_Outclk_Freq {64.000} [get_bd_cells usp_rf_data_converter_0]
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 32000000
+endgroup
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {usp_rf_data_converter_0_m00_axis}]
+true
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/zynq_ultra_ps_e_0/pl_clk0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode INTERFACE, with 1 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting interface connection /usp_rf_data_converter_0_m00_axis, to System ILA slot interface pin /system_ila_0/SLOT_2_AXIS for debug.
+startgroup
+endgroup
+save_bd_design
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp with file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
+
+reset_run PYNQ_Design_usp_rf_data_converter_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1
+
 reset_run PYNQ_Design_system_ila_0_0_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 20
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_system_ila_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
 WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
 Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
@@ -119,6 +460,7 @@ WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_data_in_0/s_axis
 WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DUT_rec_0/s_axis_tdata'(32) to pin: '/usp_rf_data_converter_0/m00_axis_tdata'(128) - Only lower order bits will be connected.
 VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/sim/PYNQ_Design.vhd
 VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usp_rf_data_converter_0 .
 Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/hw_handoff/PYNQ_Design_axi_smc_1.hwh
 Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/synth/PYNQ_Design_axi_smc_1.hwdef
 INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
@@ -134,6 +476,7 @@ INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_auto_pc_0
 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_axi_smc_1
 INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_system_ila_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP PYNQ_Design_usp_rf_data_converter_0_0
 INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_auto_pc_0
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 112b904721ae71ae to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0
@@ -147,7 +490,7 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.v
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/1/1/112b904721ae71ae/PYNQ_Design_auto_pc_0_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.vhdl.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_auto_pc_0, cache-ID = 112b904721ae71ae; cache size = 77.666 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_auto_pc_0, cache-ID = 112b904721ae71ae; cache size = 86.794 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_axi_smc_1
 INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d7cd78fd037eafe1 to dir: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/7/d7cd78fd037eafe1/PYNQ_Design_axi_smc_1.dcp to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/PYNQ_Design_axi_smc_1.dcp.
@@ -160,44 +503,46 @@ INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/PYNQ_Design_axi_smc_1_stub.v
 INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/d/7/d7cd78fd037eafe1/PYNQ_Design_axi_smc_1_stub.vhdl to c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/PYNQ_Design_axi_smc_1_stub.vhdl.
 INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/PYNQ_Design_axi_smc_1_stub.vhdl
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_axi_smc_1, cache-ID = d7cd78fd037eafe1; cache size = 77.666 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP PYNQ_Design_axi_smc_1, cache-ID = d7cd78fd037eafe1; cache size = 86.794 MB.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_system_ila_0_0
-config_ip_cache: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2172.562 ; gain = 0.000
-[Thu Mar  6 13:52:55 2025] Launched PYNQ_Design_system_ila_0_0_synth_1, synth_1...
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_usp_rf_data_converter_0_0
+config_ip_cache: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3034.453 ; gain = 0.000
+[Thu Mar  6 15:19:06 2025] Launched PYNQ_Design_usp_rf_data_converter_0_0_synth_1, PYNQ_Design_system_ila_0_0_synth_1, synth_1...
 Run output will be captured here:
+PYNQ_Design_usp_rf_data_converter_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/runme.log
 PYNQ_Design_system_ila_0_0_synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_system_ila_0_0_synth_1/runme.log
 synth_1: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/runme.log
-[Thu Mar  6 13:52:55 2025] Launched impl_1...
+[Thu Mar  6 15:19:06 2025] Launched impl_1...
 Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:46 . Memory (MB): peak = 2172.562 ; gain = 5.164
+launch_runs: Time (s): cpu = 00:01:13 ; elapsed = 00:01:45 . Memory (MB): peak = 3034.453 ; gain = 0.000
 open_run impl_1
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.649 . Memory (MB): peak = 3094.281 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 384 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3486.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 476 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 3283.703 ; gain = 5.871
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.201 . Memory (MB): peak = 3676.547 ; gain = 8.777
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
 INFO: [Project 1-853] Binary constraint restore complete.
 INFO: [Designutils 20-5722] Start Reading Physical Databases.
 Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 3765.723 ; gain = 0.000
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 4139.234 ; gain = 0.000
 Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 3765.723 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3768.262 ; gain = 2.539
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3768.262 ; gain = 0.000
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 4139.234 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4170.094 ; gain = 29.660
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4170.094 ; gain = 0.000
 Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4100.238 ; gain = 331.977
-Read Physdb Files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 4100.238 ; gain = 334.516
-Restored from archive | CPU: 14.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 4100.238 ; gain = 334.516
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4100.238 ; gain = 0.000
+Read RouteStorage: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 4502.809 ; gain = 332.715
+Read Physdb Files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 4502.809 ; gain = 363.574
+Restored from archive | CPU: 15.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 4502.809 ; gain = 363.574
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 4502.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 216 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 92 instances
+  A total of 292 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 168 instances
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 39 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
@@ -205,10 +550,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRLC32E => SRL16E: 4 instances
 
-open_run: Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 4370.406 ; gain = 2170.602
-open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 4659.254 ; gain = 188.551
+open_run: Time (s): cpu = 00:01:13 ; elapsed = 00:01:12 . Memory (MB): peak = 4910.176 ; gain = 1875.723
+open_report: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 5790.246 ; gain = 778.488
 WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
 close_design
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_VDISTR
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_VROUTE
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_HROUTE
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_HDISTR
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_BUFG
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_LEAF
+close_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 6722.930 ; gain = 904.406
 write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl
 WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
 /DUT_data_in_0, /DUT_rec_0
@@ -222,5 +574,195 @@ write_hw_platform -fixed -include_bit -force -file C:/Users/clb20123/Documents/F
 INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa ...
 INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 1 seconds
-write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 4724.496 ; gain = 0.000
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 3 seconds
+write_hw_platform: Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 6722.930 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
+INFO: [Labtools 27-2302] Device xczu28dr (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3222] Mismatch between the design programmed into the device xczu28dr (JTAG device index = 0) and the probes file(s) C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx.
+ The hw_probe  in the probes file has port index 9. This port does not exist in the ILA core at location (uuid_7F72FA404E7B5AE09A7604860771C7D7).
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+refresh_hw_target {localhost:3121/xilinx_tcf/Xilinx/55555A}
+save_wave_config {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Mar 09 2024-00:00:37
+    **** Build number : 2024.1.1709942437
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 6722.930 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
+set_property PROGRAM.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.bit} [get_hw_devices xczu28dr_0]
+set_property PROBES.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx} [get_hw_devices xczu28dr_0]
+set_property FULL_PROBES.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx} [get_hw_devices xczu28dr_0]
+current_hw_device [get_hw_devices xczu28dr_0]
+refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
+INFO: [Labtools 27-2302] Device xczu28dr (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+Processing Interface DUT_rec_0_m_axis_ila1_slot0
+Processing Interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processing Interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu28dr_0]
+set_property TRIGGER_COMPARE_VALUE eq128'bXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:47:14
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:48:42
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Mar-06 15:49:07
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq128'hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:49:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 15:49:16
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processed interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:49:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 15:49:51
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processed interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:50:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 15:50:26
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processed interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes PYNQ_Design_i/system_ila_0/U0/net_slot_2_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:50:47
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+startgroup
+endgroup
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Mar-06 15:51:30
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:52:49
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:54:31
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2025-Mar-06 15:54:32
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:54:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 15:54:41
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processed interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 15:54:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 15:54:54
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processed interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+startgroup
+endgroup
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Mar-06 16:00:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu28dr_0] -filter {CELL_NAME=~"PYNQ_Design_i/system_ila_0/U0/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Mar-06 16:00:26
+Processed interface DUT_rec_0_m_axis_ila1_slot0
+Processed interface axi_dma_M_AXIS_MM2S_ila1_slot1
+Processed interface usp_rf_data_converter_0_m00_axis_ila1_slot2
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+startgroup
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.ADC0_Refclk_Freq {409.600} \
+  CONFIG.DAC0_Refclk_Freq {409.600} \
+] [get_bd_cells usp_rf_data_converter_0]
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 32000000
+endgroup
+startgroup
+set_property -dict [list \
+  CONFIG.ADC0_Sampling_Rate {1.024} \
+  CONFIG.ADC_Data_Width00 {1} \
+] [get_bd_cells usp_rf_data_converter_0]
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 32000000
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+create_bd_cell: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 6722.930 ; gain = 0.000
+endgroup
+set_property location {2.5 332 -227} [get_bd_cells clk_wiz_0]
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {110.723} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {128} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.375} \
+  CONFIG.RESET_PORT {resetn} \
+  CONFIG.RESET_TYPE {ACTIVE_LOW} \
+] [get_bd_cells clk_wiz_0]
+set_property location {6 2008 838} [get_bd_cells clk_wiz_0]
+set_property location {7 2915 977} [get_bd_cells clk_wiz_0]
+startgroup
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins usp_rf_data_converter_0/clk_adc0]
+connect_bd_net [get_bd_pins clk_wiz_0/resetn] [get_bd_pins rst_ps8_0_96M/peripheral_aresetn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+set_property location {7 2978 1117} [get_bd_cells proc_sys_reset_0]
+connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins proc_sys_reset_0/dcm_locked]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+disconnect_bd_net /rst_ps8_0_96M_peripheral_aresetn [get_bd_pins usp_rf_data_converter_0/m0_axis_aresetn]
+disconnect_bd_net /zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk]
+connect_bd_net [get_bd_pins usp_rf_data_converter_0/m0_axis_aresetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+connect_bd_net [get_bd_pins usp_rf_data_converter_0/m0_axis_aclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins proc_sys_reset_0/aux_reset_in] [get_bd_pins rst_ps8_0_96M/peripheral_aresetn]
+disconnect_bd_net /rst_ps8_0_96M_peripheral_aresetn [get_bd_pins proc_sys_reset_0/aux_reset_in]
+connect_bd_net [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins rst_ps8_0_96M/peripheral_aresetn]
+save_bd_design
+Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
+save_wave_config {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 16:40:46 2025...

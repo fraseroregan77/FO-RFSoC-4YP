@@ -20,6 +20,10 @@ entity bd_5ea3_wrapper is
     SLOT_1_AXIS_tlast : in STD_LOGIC;
     SLOT_1_AXIS_tready : in STD_LOGIC;
     SLOT_1_AXIS_tvalid : in STD_LOGIC;
+    SLOT_2_AXIS_tdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    SLOT_2_AXIS_tlast : in STD_LOGIC;
+    SLOT_2_AXIS_tready : in STD_LOGIC;
+    SLOT_2_AXIS_tvalid : in STD_LOGIC;
     clk : in STD_LOGIC;
     resetn : in STD_LOGIC
   );
@@ -38,7 +42,11 @@ architecture STRUCTURE of bd_5ea3_wrapper is
     SLOT_1_AXIS_tkeep : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_1_AXIS_tlast : in STD_LOGIC;
     SLOT_1_AXIS_tready : in STD_LOGIC;
-    SLOT_1_AXIS_tvalid : in STD_LOGIC
+    SLOT_1_AXIS_tvalid : in STD_LOGIC;
+    SLOT_2_AXIS_tdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    SLOT_2_AXIS_tlast : in STD_LOGIC;
+    SLOT_2_AXIS_tready : in STD_LOGIC;
+    SLOT_2_AXIS_tvalid : in STD_LOGIC
   );
   end component bd_5ea3;
 begin
@@ -53,6 +61,10 @@ bd_5ea3_i: component bd_5ea3
       SLOT_1_AXIS_tlast => SLOT_1_AXIS_tlast,
       SLOT_1_AXIS_tready => SLOT_1_AXIS_tready,
       SLOT_1_AXIS_tvalid => SLOT_1_AXIS_tvalid,
+      SLOT_2_AXIS_tdata(127 downto 0) => SLOT_2_AXIS_tdata(127 downto 0),
+      SLOT_2_AXIS_tlast => SLOT_2_AXIS_tlast,
+      SLOT_2_AXIS_tready => SLOT_2_AXIS_tready,
+      SLOT_2_AXIS_tvalid => SLOT_2_AXIS_tvalid,
       clk => clk,
       resetn => resetn
     );

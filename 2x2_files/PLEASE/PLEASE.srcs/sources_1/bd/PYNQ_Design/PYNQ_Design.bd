@@ -7,8 +7,7 @@
       "name": "PYNQ_Design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.1",
-      "validated": "true"
+      "tool_version": "2024.1"
     },
     "design_tree": {
       "DUT_data_in_0": "",
@@ -28,7 +27,9 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "system_ila_0": ""
+      "system_ila_0": "",
+      "clk_wiz_0": "",
+      "proc_sys_reset_0": ""
     },
     "interface_ports": {
       "sysref_in": {
@@ -263,14 +264,20 @@
         "xci_path": "ip\\PYNQ_Design_usp_rf_data_converter_0_0\\PYNQ_Design_usp_rf_data_converter_0_0.xci",
         "inst_hier_path": "usp_rf_data_converter_0",
         "parameters": {
+          "ADC0_Outclk_Freq": {
+            "value": "64.000"
+          },
           "ADC0_PLL_Enable": {
             "value": "true"
           },
           "ADC0_Refclk_Freq": {
-            "value": "204.800"
+            "value": "409.600"
           },
           "ADC0_Sampling_Rate": {
-            "value": "4.096"
+            "value": "1.024"
+          },
+          "ADC_Data_Width00": {
+            "value": "1"
           },
           "ADC_Decimation_Mode00": {
             "value": "8"
@@ -279,7 +286,7 @@
             "value": "true"
           },
           "DAC0_Refclk_Freq": {
-            "value": "204.800"
+            "value": "409.600"
           },
           "DAC0_Sampling_Rate": {
             "value": "4.096"
@@ -885,11 +892,14 @@
         "xci_path": "ip\\PYNQ_Design_system_ila_0_0\\PYNQ_Design_system_ila_0_0.xci",
         "inst_hier_path": "system_ila_0",
         "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "8192"
+          },
           "C_MON_TYPE": {
             "value": "INTERFACE"
           },
           "C_NUM_MONITOR_SLOTS": {
-            "value": "2"
+            "value": "3"
           },
           "C_SLOT": {
             "value": "1"
@@ -917,6 +927,18 @@
           },
           "C_SLOT_1_INTF_TYPE": {
             "value": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "C_SLOT_2_APC_EN": {
+            "value": "0"
+          },
+          "C_SLOT_2_AXI_DATA_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_2_AXI_TRIG_SEL": {
+            "value": "1"
+          },
+          "C_SLOT_2_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
           }
         },
         "interface_ports": {
@@ -929,8 +951,44 @@
             "mode": "Monitor",
             "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "SLOT_2_AXIS": {
+            "mode": "Monitor",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           }
         }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "14",
+        "xci_name": "PYNQ_Design_clk_wiz_0_0",
+        "xci_path": "ip\\PYNQ_Design_clk_wiz_0_0\\PYNQ_Design_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "110.723"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "128"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "9.375"
+          },
+          "RESET_PORT": {
+            "value": "resetn"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "15",
+        "xci_name": "PYNQ_Design_proc_sys_reset_0_0",
+        "xci_path": "ip\\PYNQ_Design_proc_sys_reset_0_0\\PYNQ_Design_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
       }
     },
     "interface_nets": {
@@ -1021,8 +1079,17 @@
       "usp_rf_data_converter_0_m00_axis": {
         "interface_ports": [
           "usp_rf_data_converter_0/m00_axis",
-          "DUT_rec_0/s_axis"
-        ]
+          "DUT_rec_0/s_axis",
+          "system_ila_0/SLOT_2_AXIS"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "usp_rf_data_converter_0_vout00": {
         "interface_ports": [
@@ -1044,6 +1111,25 @@
       }
     },
     "nets": {
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "usp_rf_data_converter_0/m0_axis_aclk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "proc_sys_reset_0/dcm_locked"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "usp_rf_data_converter_0/m0_axis_aresetn"
+        ]
+      },
       "rst_ps8_0_96M_peripheral_aresetn": {
         "ports": [
           "rst_ps8_0_96M/peripheral_aresetn",
@@ -1052,11 +1138,18 @@
           "axi_dma/axi_resetn",
           "ps8_0_axi_periph/M00_ARESETN",
           "ps8_0_axi_periph/ARESETN",
-          "usp_rf_data_converter_0/m0_axis_aresetn",
           "usp_rf_data_converter_0/s0_axis_aresetn",
           "usp_rf_data_converter_0/s_axi_aresetn",
           "ps8_0_axi_periph/M01_ARESETN",
-          "system_ila_0/resetn"
+          "system_ila_0/resetn",
+          "clk_wiz_0/resetn",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "usp_rf_data_converter_0_clk_adc0": {
+        "ports": [
+          "usp_rf_data_converter_0/clk_adc0",
+          "clk_wiz_0/clk_in1"
         ]
       },
       "xlconstant_0_dout": {
@@ -1086,7 +1179,6 @@
           "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/ACLK",
           "DUT_rec_0/clk",
-          "usp_rf_data_converter_0/m0_axis_aclk",
           "usp_rf_data_converter_0/s0_axis_aclk",
           "usp_rf_data_converter_0/s_axi_aclk",
           "ps8_0_axi_periph/M01_ACLK",

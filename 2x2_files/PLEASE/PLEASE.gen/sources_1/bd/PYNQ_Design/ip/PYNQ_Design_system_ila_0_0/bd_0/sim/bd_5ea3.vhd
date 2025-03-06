@@ -20,6 +20,10 @@ entity bd_5ea3 is
     SLOT_1_AXIS_tlast : in STD_LOGIC;
     SLOT_1_AXIS_tready : in STD_LOGIC;
     SLOT_1_AXIS_tvalid : in STD_LOGIC;
+    SLOT_2_AXIS_tdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    SLOT_2_AXIS_tlast : in STD_LOGIC;
+    SLOT_2_AXIS_tready : in STD_LOGIC;
+    SLOT_2_AXIS_tvalid : in STD_LOGIC;
     clk : in STD_LOGIC;
     resetn : in STD_LOGIC
   );
@@ -41,7 +45,11 @@ architecture STRUCTURE of bd_5ea3 is
     probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component bd_5ea3_ila_lib_0;
   component bd_5ea3_g_inst_0 is
@@ -57,6 +65,10 @@ architecture STRUCTURE of bd_5ea3 is
     slot_1_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     slot_1_axis_tkeep : in STD_LOGIC_VECTOR ( 3 downto 0 );
     slot_1_axis_tlast : in STD_LOGIC;
+    slot_2_axis_tvalid : in STD_LOGIC;
+    slot_2_axis_tready : in STD_LOGIC;
+    slot_2_axis_tdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    slot_2_axis_tlast : in STD_LOGIC;
     m_slot_0_axis_tvalid : out STD_LOGIC;
     m_slot_0_axis_tready : out STD_LOGIC;
     m_slot_0_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -65,7 +77,11 @@ architecture STRUCTURE of bd_5ea3 is
     m_slot_1_axis_tready : out STD_LOGIC;
     m_slot_1_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_slot_1_axis_tkeep : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    m_slot_1_axis_tlast : out STD_LOGIC
+    m_slot_1_axis_tlast : out STD_LOGIC;
+    m_slot_2_axis_tvalid : out STD_LOGIC;
+    m_slot_2_axis_tready : out STD_LOGIC;
+    m_slot_2_axis_tdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
+    m_slot_2_axis_tlast : out STD_LOGIC
   );
   end component bd_5ea3_g_inst_0;
   signal Conn1_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -73,6 +89,10 @@ architecture STRUCTURE of bd_5ea3 is
   signal Conn1_TLAST : STD_LOGIC;
   signal Conn1_TREADY : STD_LOGIC;
   signal Conn1_TVALID : STD_LOGIC;
+  signal Conn2_TDATA : STD_LOGIC_VECTOR ( 127 downto 0 );
+  signal Conn2_TLAST : STD_LOGIC;
+  signal Conn2_TREADY : STD_LOGIC;
+  signal Conn2_TVALID : STD_LOGIC;
   signal Conn_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Conn_TLAST : STD_LOGIC;
   signal Conn_TREADY : STD_LOGIC;
@@ -87,6 +107,10 @@ architecture STRUCTURE of bd_5ea3 is
   signal net_slot_1_axis_tlast : STD_LOGIC;
   signal net_slot_1_axis_tready : STD_LOGIC;
   signal net_slot_1_axis_tvalid : STD_LOGIC;
+  signal net_slot_2_axis_tdata : STD_LOGIC_VECTOR ( 127 downto 0 );
+  signal net_slot_2_axis_tlast : STD_LOGIC;
+  signal net_slot_2_axis_tready : STD_LOGIC;
+  signal net_slot_2_axis_tvalid : STD_LOGIC;
   signal resetn_1 : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tlast : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TLAST";
@@ -95,9 +119,12 @@ architecture STRUCTURE of bd_5ea3 is
   attribute X_INTERFACE_INFO of SLOT_1_AXIS_tlast : signal is "xilinx.com:interface:axis:1.0 SLOT_1_AXIS TLAST";
   attribute X_INTERFACE_INFO of SLOT_1_AXIS_tready : signal is "xilinx.com:interface:axis:1.0 SLOT_1_AXIS TREADY";
   attribute X_INTERFACE_INFO of SLOT_1_AXIS_tvalid : signal is "xilinx.com:interface:axis:1.0 SLOT_1_AXIS TVALID";
+  attribute X_INTERFACE_INFO of SLOT_2_AXIS_tlast : signal is "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TLAST";
+  attribute X_INTERFACE_INFO of SLOT_2_AXIS_tready : signal is "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TREADY";
+  attribute X_INTERFACE_INFO of SLOT_2_AXIS_tvalid : signal is "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TVALID";
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 CLK.CLK CLK";
   attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXIS, ASSOCIATED_RESET resetn, CLK_DOMAIN PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 96968727, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
+  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_0_AXIS:SLOT_1_AXIS:SLOT_2_AXIS, ASSOCIATED_RESET resetn, CLK_DOMAIN PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 96968727, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
   attribute X_INTERFACE_INFO of resetn : signal is "xilinx.com:signal:reset:1.0 RST.RESETN RST";
   attribute X_INTERFACE_PARAMETER of resetn : signal is "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW";
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tdata : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA";
@@ -105,12 +132,18 @@ architecture STRUCTURE of bd_5ea3 is
   attribute X_INTERFACE_INFO of SLOT_1_AXIS_tdata : signal is "xilinx.com:interface:axis:1.0 SLOT_1_AXIS TDATA";
   attribute X_INTERFACE_PARAMETER of SLOT_1_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_1_AXIS, CLK_DOMAIN PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 96968727, HAS_TKEEP 1, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of SLOT_1_AXIS_tkeep : signal is "xilinx.com:interface:axis:1.0 SLOT_1_AXIS TKEEP";
+  attribute X_INTERFACE_INFO of SLOT_2_AXIS_tdata : signal is "xilinx.com:interface:axis:1.0 SLOT_2_AXIS TDATA";
+  attribute X_INTERFACE_PARAMETER of SLOT_2_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_2_AXIS, CLK_DOMAIN PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0, FREQ_HZ 96968727, HAS_TKEEP 0, HAS_TLAST 0, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
 begin
   Conn1_TDATA(31 downto 0) <= SLOT_1_AXIS_tdata(31 downto 0);
   Conn1_TKEEP(3 downto 0) <= SLOT_1_AXIS_tkeep(3 downto 0);
   Conn1_TLAST <= SLOT_1_AXIS_tlast;
   Conn1_TREADY <= SLOT_1_AXIS_tready;
   Conn1_TVALID <= SLOT_1_AXIS_tvalid;
+  Conn2_TDATA(127 downto 0) <= SLOT_2_AXIS_tdata(127 downto 0);
+  Conn2_TLAST <= SLOT_2_AXIS_tlast;
+  Conn2_TREADY <= SLOT_2_AXIS_tready;
+  Conn2_TVALID <= SLOT_2_AXIS_tvalid;
   Conn_TDATA(31 downto 0) <= SLOT_0_AXIS_tdata(31 downto 0);
   Conn_TLAST <= SLOT_0_AXIS_tlast;
   Conn_TREADY <= SLOT_0_AXIS_tready;
@@ -130,6 +163,10 @@ g_inst: component bd_5ea3_g_inst_0
       m_slot_1_axis_tlast => net_slot_1_axis_tlast,
       m_slot_1_axis_tready => net_slot_1_axis_tready,
       m_slot_1_axis_tvalid => net_slot_1_axis_tvalid,
+      m_slot_2_axis_tdata(127 downto 0) => net_slot_2_axis_tdata(127 downto 0),
+      m_slot_2_axis_tlast => net_slot_2_axis_tlast,
+      m_slot_2_axis_tready => net_slot_2_axis_tready,
+      m_slot_2_axis_tvalid => net_slot_2_axis_tvalid,
       slot_0_axis_tdata(31 downto 0) => Conn_TDATA(31 downto 0),
       slot_0_axis_tlast => Conn_TLAST,
       slot_0_axis_tready => Conn_TREADY,
@@ -138,19 +175,27 @@ g_inst: component bd_5ea3_g_inst_0
       slot_1_axis_tkeep(3 downto 0) => Conn1_TKEEP(3 downto 0),
       slot_1_axis_tlast => Conn1_TLAST,
       slot_1_axis_tready => Conn1_TREADY,
-      slot_1_axis_tvalid => Conn1_TVALID
+      slot_1_axis_tvalid => Conn1_TVALID,
+      slot_2_axis_tdata(127 downto 0) => Conn2_TDATA(127 downto 0),
+      slot_2_axis_tlast => Conn2_TLAST,
+      slot_2_axis_tready => Conn2_TREADY,
+      slot_2_axis_tvalid => Conn2_TVALID
     );
 ila_lib: component bd_5ea3_ila_lib_0
      port map (
       clk => clk_1,
       probe0(31 downto 0) => net_slot_0_axis_tdata(31 downto 0),
       probe1(0) => net_slot_0_axis_tvalid,
+      probe10(0) => net_slot_2_axis_tvalid,
+      probe11(0) => net_slot_2_axis_tready,
+      probe12(0) => net_slot_2_axis_tlast,
       probe2(0) => net_slot_0_axis_tready,
       probe3(0) => net_slot_0_axis_tlast,
       probe4(31 downto 0) => net_slot_1_axis_tdata(31 downto 0),
       probe5(3 downto 0) => net_slot_1_axis_tkeep(3 downto 0),
       probe6(0) => net_slot_1_axis_tvalid,
       probe7(0) => net_slot_1_axis_tready,
-      probe8(0) => net_slot_1_axis_tlast
+      probe8(0) => net_slot_1_axis_tlast,
+      probe9(127 downto 0) => net_slot_2_axis_tdata(127 downto 0)
     );
 end STRUCTURE;
