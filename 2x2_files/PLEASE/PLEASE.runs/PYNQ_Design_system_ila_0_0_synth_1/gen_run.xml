@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="PYNQ_Design_system_ila_0_0_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1741269173">
+<GenRun Id="PYNQ_Design_system_ila_0_0_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1741274338">
   <File Type="PA-TCL" Name="PYNQ_Design_system_ila_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="PYNQ_Design_system_ila_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="PYNQ_Design_system_ila_0_0_reports.tcl"/>

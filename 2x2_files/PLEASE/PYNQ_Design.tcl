@@ -243,6 +243,7 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
   # Create instance: usp_rf_data_converter_0, and set properties
   set usp_rf_data_converter_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:usp_rf_data_converter:2.6 usp_rf_data_converter_0 ]
   set_property -dict [list \
+    CONFIG.ADC0_Outclk_Freq {64.000} \
     CONFIG.ADC0_PLL_Enable {true} \
     CONFIG.ADC0_Refclk_Freq {204.800} \
     CONFIG.ADC0_Sampling_Rate {4.096} \
@@ -298,8 +299,9 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
   # Create instance: system_ila_0, and set properties
   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
   set_property -dict [list \
+    CONFIG.C_DATA_DEPTH {8192} \
     CONFIG.C_MON_TYPE {INTERFACE} \
-    CONFIG.C_NUM_MONITOR_SLOTS {2} \
+    CONFIG.C_NUM_MONITOR_SLOTS {3} \
     CONFIG.C_SLOT {1} \
     CONFIG.C_SLOT_0_APC_EN {0} \
     CONFIG.C_SLOT_0_AXI_DATA_SEL {1} \
@@ -309,6 +311,10 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
     CONFIG.C_SLOT_1_AXI_DATA_SEL {1} \
     CONFIG.C_SLOT_1_AXI_TRIG_SEL {1} \
     CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+    CONFIG.C_SLOT_2_APC_EN {0} \
+    CONFIG.C_SLOT_2_AXI_DATA_SEL {1} \
+    CONFIG.C_SLOT_2_AXI_TRIG_SEL {1} \
+    CONFIG.C_SLOT_2_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
   ] $system_ila_0
 
 
@@ -329,6 +335,8 @@ connect_bd_intf_net -intf_net [get_bd_intf_nets axi_dma_M_AXIS_MM2S] [get_bd_int
   connect_bd_intf_net -intf_net ps8_0_axi_periph_M01_AXI [get_bd_intf_pins ps8_0_axi_periph/M01_AXI] [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
   connect_bd_intf_net -intf_net sysref_in_1 [get_bd_intf_ports sysref_in] [get_bd_intf_pins usp_rf_data_converter_0/sysref_in]
   connect_bd_intf_net -intf_net usp_rf_data_converter_0_m00_axis [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins DUT_rec_0/s_axis]
+connect_bd_intf_net -intf_net [get_bd_intf_nets usp_rf_data_converter_0_m00_axis] [get_bd_intf_pins usp_rf_data_converter_0/m00_axis] [get_bd_intf_pins system_ila_0/SLOT_2_AXIS]
+  set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets usp_rf_data_converter_0_m00_axis]
   connect_bd_intf_net -intf_net usp_rf_data_converter_0_vout00 [get_bd_intf_ports vout00] [get_bd_intf_pins usp_rf_data_converter_0/vout00]
   connect_bd_intf_net -intf_net vin0_01_1 [get_bd_intf_ports vin0_01] [get_bd_intf_pins usp_rf_data_converter_0/vin0_01]
   connect_bd_intf_net -intf_net zynq_ultra_ps_e_0_M_AXI_HPM0_LPD [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD] [get_bd_intf_pins ps8_0_axi_periph/S00_AXI]

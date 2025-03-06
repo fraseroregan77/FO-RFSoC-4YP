@@ -62,9 +62,9 @@
 ###############################################################################
 
 #Generated clocks on internal nodes inside IP
-create_clock -period 31.250 -name RFADC0_CLK [get_pins -hier rx0_u_adc/INTERNAL_FBRC_DIV2_MUX*]
+create_clock -period 15.625 -name RFADC0_CLK [get_pins -hier rx0_u_adc/INTERNAL_FBRC_DIV2_MUX*]
 set RFADC0_CLK  [get_clocks -of_objects [get_pins -hier rx0_u_adc/INTERNAL_FBRC_DIV2_MUX*]]
-create_clock -period 31.250 -name RFADC0_CLK_dummy [get_pins -hier rx0_u_adc/INTERNAL_FBRC_DIV1_MUX*]
+create_clock -period 15.625 -name RFADC0_CLK_dummy [get_pins -hier rx0_u_adc/INTERNAL_FBRC_DIV1_MUX*]
 set RFADC0_CLK_dummy  [get_clocks -of_objects [get_pins -hier rx0_u_adc/INTERNAL_FBRC_DIV1_MUX*]]
 set_clock_sense -stop_propagation [get_pins -hier rx*_u_adc/INTERNAL_FBRC_DIV1_MUX*]
 

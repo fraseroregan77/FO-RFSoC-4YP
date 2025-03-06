@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar  6 13:52:44 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar  6 15:18:49 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" DEVICE="xczu28dr" NAME="PYNQ_Design" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
@@ -3035,14 +3035,14 @@
         <PARAMETER NAME="ALL_PROBE_SAME_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_ADV_TRIGGER" VALUE="FALSE"/>
         <PARAMETER NAME="C_BRAM_CNT" VALUE="0.0"/>
-        <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_DATA_DEPTH" VALUE="8192"/>
         <PARAMETER NAME="C_DDR_CLK_GEN" VALUE="FALSE"/>
         <PARAMETER NAME="C_EN_DDR_ILA" VALUE="FALSE"/>
         <PARAMETER NAME="C_EN_STRG_QUAL" VALUE="0"/>
         <PARAMETER NAME="C_EN_TIME_TAG" VALUE="0"/>
         <PARAMETER NAME="C_INPUT_PIPE_STAGES" VALUE="0"/>
         <PARAMETER NAME="C_MON_TYPE" VALUE="INTERFACE"/>
-        <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="2"/>
+        <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="3"/>
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="0"/>
@@ -6527,7 +6527,7 @@
         <PARAMETER NAME="C_SLOT_2_AXI_W_SEL" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_2_AXI_W_SEL_DATA" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_2_AXI_W_SEL_TRIG" VALUE="1"/>
-        <PARAMETER NAME="C_SLOT_2_INTF_TYPE" VALUE="xilinx.com:interface:aximm_rtl:1.0"/>
+        <PARAMETER NAME="C_SLOT_2_INTF_TYPE" VALUE="xilinx.com:interface:axis_rtl:1.0"/>
         <PARAMETER NAME="C_SLOT_2_MAX_RD_BURSTS" VALUE="2"/>
         <PARAMETER NAME="C_SLOT_2_MAX_WR_BURSTS" VALUE="2"/>
         <PARAMETER NAME="C_SLOT_2_TXN_CNTR_EN" VALUE="1"/>
@@ -6872,6 +6872,9 @@
         <PORT DIR="I" NAME="SLOT_1_AXIS_tlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_1_AXIS_tready" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_1_AXIS_tvalid" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="127" NAME="SLOT_2_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="SLOT_2_AXIS_tready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="SLOT_2_AXIS_tvalid" SIGIS="undef"/>
         <PORT CLKFREQUENCY="96968727" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
@@ -6926,6 +6929,26 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_1_AXIS_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="usp_rf_data_converter_0_m00_axis" NAME="SLOT_2_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="96968727"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_2_AXIS_tdata"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_2_AXIS_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_2_AXIS_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
     <MODULE COREREVISION="9" FULLNAME="/usp_rf_data_converter_0" HWVERSION="2.6" INSTANCE="usp_rf_data_converter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="usp_rf_data_converter" VLNV="xilinx.com:ip:usp_rf_data_converter:2.6">
@@ -6953,7 +6976,7 @@
         <PARAMETER NAME="C_ADC0_Multi_Tile_Sync" VALUE="false"/>
         <PARAMETER NAME="C_ADC0_OBS_Fabric_Freq" VALUE="0.0"/>
         <PARAMETER NAME="C_ADC0_OutDiv" VALUE="3"/>
-        <PARAMETER NAME="C_ADC0_Outclk_Freq" VALUE="32.000"/>
+        <PARAMETER NAME="C_ADC0_Outclk_Freq" VALUE="64.000"/>
         <PARAMETER NAME="C_ADC0_PLL_Enable" VALUE="true"/>
         <PARAMETER NAME="C_ADC0_Refclk_Div" VALUE="1"/>
         <PARAMETER NAME="C_ADC0_Refclk_Freq" VALUE="204.800"/>
@@ -7718,7 +7741,7 @@
         <PARAMETER NAME="ADC0_Link_Coupling" VALUE="0"/>
         <PARAMETER NAME="ADC0_Multi_Tile_Sync" VALUE="false"/>
         <PARAMETER NAME="ADC0_OBS_Fabric_Freq" VALUE="0.0"/>
-        <PARAMETER NAME="ADC0_Outclk_Freq" VALUE="32.000"/>
+        <PARAMETER NAME="ADC0_Outclk_Freq" VALUE="64.000"/>
         <PARAMETER NAME="ADC0_PLL_Enable" VALUE="true"/>
         <PARAMETER NAME="ADC0_Refclk_Div" VALUE="1"/>
         <PARAMETER NAME="ADC0_Refclk_Freq" VALUE="204.800"/>
@@ -8587,7 +8610,7 @@
             <CONNECTION INSTANCE="PYNQ_Design_imp" PORT="adc0_clk_clk_p"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="32000000" DIR="O" NAME="clk_adc0" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="64000000" DIR="O" NAME="clk_adc0" SIGIS="clk"/>
         <PORT CLKFREQUENCY="32000000" DIR="O" NAME="clk_dac0" SIGIS="clk"/>
         <PORT DIR="I" NAME="dac0_clk_n" SIGIS="clk" SIGNAME="usp_rf_data_converter_0_dac0_clk_n">
           <CONNECTIONS>
