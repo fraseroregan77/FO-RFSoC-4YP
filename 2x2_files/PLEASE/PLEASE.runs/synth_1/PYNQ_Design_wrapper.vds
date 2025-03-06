@@ -3,31 +3,31 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Mar  6 13:20:09 2025
-# Process ID: 12884
+# Start of session at: Thu Mar  6 13:54:28 2025
+# Process ID: 13444
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
 # Command line: vivado.exe -log PYNQ_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PYNQ_Design_wrapper.tcl
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.vds
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1\vivado.jou
-# Running On        :EEE-R343-01
+# Running On        :EEE-R446-31
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
-# CPU Frequency     :3192 MHz
-# CPU Physical cores:4
-# CPU Logical cores :4
-# Host memory       :17060 MB
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16833 MB
 # Swap memory       :2550 MB
-# Total Virtual     :19610 MB
-# Available Virtual :9451 MB
+# Total Virtual     :19383 MB
+# Available Virtual :8678 MB
 #-----------------------------------------------------------
 source PYNQ_Design_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 603.832 ; gain = 197.992
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 628.781 ; gain = 198.113
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
-add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 723.500 ; gain = 102.434
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 748.566 ; gain = 102.324
 Command: read_checkpoint -auto_incremental -incremental C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -41,40 +41,40 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11260
+INFO: [Synth 8-7075] Helper process launched with PID 928
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2225.359 ; gain = 384.352
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2254.906 ; gain = 382.980
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_wrapper' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:30]
 INFO: [Synth 8-3491] module 'PYNQ_Design' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1063' bound to instance 'PYNQ_Design_i' of component 'PYNQ_Design' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:46]
 INFO: [Synth 8-638] synthesizing module 'PYNQ_Design' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1082]
-INFO: [Synth 8-3491] module 'PYNQ_Design_DUT_data_in_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_DUT_data_in_0_0_stub.vhdl:6' bound to instance 'DUT_data_in_0' of component 'PYNQ_Design_DUT_data_in_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1654]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_DUT_data_in_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_DUT_data_in_0_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'PYNQ_Design_DUT_rec_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_DUT_rec_0_0_stub.vhdl:6' bound to instance 'DUT_rec_0' of component 'PYNQ_Design_DUT_rec_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1667]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_DUT_rec_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_DUT_rec_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'PYNQ_Design_DUT_data_in_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_DUT_data_in_0_0_stub.vhdl:6' bound to instance 'DUT_data_in_0' of component 'PYNQ_Design_DUT_data_in_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1654]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_DUT_data_in_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_DUT_data_in_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'PYNQ_Design_DUT_rec_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_DUT_rec_0_0_stub.vhdl:6' bound to instance 'DUT_rec_0' of component 'PYNQ_Design_DUT_rec_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1667]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_DUT_rec_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_DUT_rec_0_0_stub.vhdl:22]
 WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1253]
-INFO: [Synth 8-3491] module 'PYNQ_Design_axi_dma_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_axi_dma_1_stub.vhdl:6' bound to instance 'axi_dma' of component 'PYNQ_Design_axi_dma_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1680]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_axi_dma_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_axi_dma_1_stub.vhdl:76]
-INFO: [Synth 8-3491] module 'PYNQ_Design_axi_smc_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_axi_smc_1_stub.vhdl:6' bound to instance 'axi_smc' of component 'PYNQ_Design_axi_smc_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1746]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_axi_smc_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_axi_smc_1_stub.vhdl:80]
+INFO: [Synth 8-3491] module 'PYNQ_Design_axi_dma_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_axi_dma_1_stub.vhdl:6' bound to instance 'axi_dma' of component 'PYNQ_Design_axi_dma_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1680]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_axi_dma_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_axi_dma_1_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'PYNQ_Design_axi_smc_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_axi_smc_1_stub.vhdl:6' bound to instance 'axi_smc' of component 'PYNQ_Design_axi_smc_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1746]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_axi_smc_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_axi_smc_1_stub.vhdl:80]
 INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_ps8_0_axi_periph_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:610]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1Y83KYE' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:56]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1Y83KYE' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:56]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_REI0Y0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:154]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_REI0Y0' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:154]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_4QTF46' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:277]
-INFO: [Synth 8-3491] module 'PYNQ_Design_auto_pc_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_auto_pc_1_stub.vhdl:6' bound to instance 'auto_pc' of component 'PYNQ_Design_auto_pc_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:459]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_auto_pc_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_auto_pc_1_stub.vhdl:72]
+INFO: [Synth 8-3491] module 'PYNQ_Design_auto_pc_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'PYNQ_Design_auto_pc_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:459]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_auto_pc_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_auto_pc_0_stub.vhdl:72]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_4QTF46' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:277]
-INFO: [Synth 8-3491] module 'PYNQ_Design_xbar_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_xbar_1_stub.vhdl:6' bound to instance 'xbar' of component 'PYNQ_Design_xbar_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:998]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_xbar_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_xbar_1_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'PYNQ_Design_xbar_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_xbar_1_stub.vhdl:6' bound to instance 'xbar' of component 'PYNQ_Design_xbar_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:998]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_xbar_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_xbar_1_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_ps8_0_axi_periph_1' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:610]
-INFO: [Synth 8-3491] module 'PYNQ_Design_rst_ps8_0_96M_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_rst_ps8_0_96M_1_stub.vhdl:6' bound to instance 'rst_ps8_0_96M' of component 'PYNQ_Design_rst_ps8_0_96M_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1898]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_rst_ps8_0_96M_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_rst_ps8_0_96M_1_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'PYNQ_Design_system_ila_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_system_ila_0_0_stub.vhdl:6' bound to instance 'system_ila_0' of component 'PYNQ_Design_system_ila_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1911]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_system_ila_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_system_ila_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'PYNQ_Design_usp_rf_data_converter_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_usp_rf_data_converter_0_0_stub.vhdl:6' bound to instance 'usp_rf_data_converter_0' of component 'PYNQ_Design_usp_rf_data_converter_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1925]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_usp_rf_data_converter_0_0_stub.vhdl:54]
+INFO: [Synth 8-3491] module 'PYNQ_Design_rst_ps8_0_96M_1' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_rst_ps8_0_96M_1_stub.vhdl:6' bound to instance 'rst_ps8_0_96M' of component 'PYNQ_Design_rst_ps8_0_96M_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1898]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_rst_ps8_0_96M_1' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_rst_ps8_0_96M_1_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'PYNQ_Design_system_ila_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_system_ila_0_0_stub.vhdl:6' bound to instance 'system_ila_0' of component 'PYNQ_Design_system_ila_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1911]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_system_ila_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_system_ila_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'PYNQ_Design_usp_rf_data_converter_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_usp_rf_data_converter_0_0_stub.vhdl:6' bound to instance 'usp_rf_data_converter_0' of component 'PYNQ_Design_usp_rf_data_converter_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1925]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_usp_rf_data_converter_0_0_stub.vhdl:54]
 INFO: [Synth 8-3491] module 'PYNQ_Design_xlconstant_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xlconstant_0_0/synth/PYNQ_Design_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'PYNQ_Design_xlconstant_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1971]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_xlconstant_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xlconstant_0_0/synth/PYNQ_Design_xlconstant_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
@@ -85,8 +85,8 @@ INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_xlconstant_0_1' [c:/Users/
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_xlconstant_0_1' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xlconstant_0_1/synth/PYNQ_Design_xlconstant_0_1.v:53]
-INFO: [Synth 8-3491] module 'PYNQ_Design_zynq_ultra_ps_e_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_zynq_ultra_ps_e_0_0_stub.vhdl:6' bound to instance 'zynq_ultra_ps_e_0' of component 'PYNQ_Design_zynq_ultra_ps_e_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1979]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_zynq_ultra_ps_e_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-12884-EEE-R343-01/realtime/PYNQ_Design_zynq_ultra_ps_e_0_0_stub.vhdl:94]
+INFO: [Synth 8-3491] module 'PYNQ_Design_zynq_ultra_ps_e_0_0' declared at 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_zynq_ultra_ps_e_0_0_stub.vhdl:6' bound to instance 'zynq_ultra_ps_e_0' of component 'PYNQ_Design_zynq_ultra_ps_e_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1979]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_zynq_ultra_ps_e_0_0' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/.Xil/Vivado-13444-EEE-R446-31/realtime/PYNQ_Design_zynq_ultra_ps_e_0_0_stub.vhdl:94]
 INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1082]
 INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_wrapper' (0#1) [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:30]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_4QTF46 is either unconnected or has no load
@@ -106,18 +106,18 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module PYNQ_Design_ps8_0_axi_periph_
 WARNING: [Synth 8-7129] Port S00_ACLK in module PYNQ_Design_ps8_0_axi_periph_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module PYNQ_Design_ps8_0_axi_periph_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2325.215 ; gain = 484.207
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2355.367 ; gain = 483.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2343.141 ; gain = 502.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2373.238 ; gain = 501.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2343.141 ; gain = 502.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2373.238 ; gain = 501.312
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2343.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2373.238 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -125,7 +125,6 @@ Initializing timing engine
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/PYNQ_Design_DUT_data_in_0_0/PYNQ_Design_DUT_data_in_0_0_in_context.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/PYNQ_Design_DUT_data_in_0_0/PYNQ_Design_DUT_data_in_0_0_in_context.xdc] for cell 'PYNQ_Design_i/DUT_data_in_0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0'
-create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2384.840 ; gain = 12.641
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0_in_context.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0_in_context.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0'
@@ -139,24 +138,24 @@ Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEA
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_0_in_context.xdc] for cell 'PYNQ_Design_i/rst_ps8_0_96M'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1/PYNQ_Design_xbar_0_in_context.xdc] for cell 'PYNQ_Design_i/ps8_0_axi_periph/xbar'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1/PYNQ_Design_xbar_0_in_context.xdc] for cell 'PYNQ_Design_i/ps8_0_axi_periph/xbar'
-Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_0_in_context.xdc] for cell 'PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_0_in_context.xdc] for cell 'PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_in_context.xdc] for cell 'PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_in_context.xdc] for cell 'PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0_in_context.xdc] for cell 'PYNQ_Design_i/system_ila_0'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0_in_context.xdc] for cell 'PYNQ_Design_i/system_ila_0'
 Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2384.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2415.074 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2384.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2415.074 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '15.625' specified during out-of-context synthesis of instance 'PYNQ_Design_i/usp_rf_data_converter_0' at clock pin 'm0_axis_aclk' is different from the actual clock period '10.312', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2384.840 ; gain = 543.832
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2415.074 ; gain = 543.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -164,7 +163,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2384.840 ; gain = 543.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2415.074 ; gain = 543.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -204,10 +203,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/s0
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/system_ila_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2384.840 ; gain = 543.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2415.074 ; gain = 543.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 2384.840 ; gain = 543.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2415.074 ; gain = 543.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -236,25 +235,25 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module PYNQ_Design_ps8_0_axi_periph_
 WARNING: [Synth 8-7129] Port S00_ACLK in module PYNQ_Design_ps8_0_axi_periph_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module PYNQ_Design_ps8_0_axi_periph_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2384.840 ; gain = 543.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2415.074 ; gain = 543.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 2724.066 ; gain = 883.059
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 2751.027 ; gain = 879.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 2724.492 ; gain = 883.484
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 2751.453 ; gain = 879.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 2735.117 ; gain = 894.109
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 2762.336 ; gain = 890.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -272,37 +271,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -313,7 +312,7 @@ Report BlackBoxes:
 |      |BlackBox name                         |Instances |
 +------+--------------------------------------+----------+
 |1     |PYNQ_Design_xbar_1                    |         1|
-|2     |PYNQ_Design_auto_pc_1                 |         1|
+|2     |PYNQ_Design_auto_pc_0                 |         1|
 |3     |PYNQ_Design_DUT_data_in_0_0           |         1|
 |4     |PYNQ_Design_DUT_rec_0_0               |         1|
 |5     |PYNQ_Design_axi_dma_1                 |         1|
@@ -330,7 +329,7 @@ Report Cell Usage:
 +------+-------------------------------------------+------+
 |1     |PYNQ_Design_DUT_data_in_0_0_bbox           |     1|
 |2     |PYNQ_Design_DUT_rec_0_0_bbox               |     1|
-|3     |PYNQ_Design_auto_pc_1_bbox                 |     1|
+|3     |PYNQ_Design_auto_pc_0_bbox                 |     1|
 |4     |PYNQ_Design_axi_dma_1_bbox                 |     1|
 |5     |PYNQ_Design_axi_smc_1_bbox                 |     1|
 |6     |PYNQ_Design_rst_ps8_0_96M_1_bbox           |     1|
@@ -340,24 +339,24 @@ Report Cell Usage:
 |10    |PYNQ_Design_zynq_ultra_ps_e_0_0_bbox       |     1|
 +------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 2777.105 ; gain = 905.180
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 2749.914 ; gain = 867.207
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:54 . Memory (MB): peak = 2749.914 ; gain = 908.906
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 2777.105 ; gain = 863.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 2777.105 ; gain = 905.180
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2749.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2777.105 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2749.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.105 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 19d23e72
+Synth Design complete | Checksum: 9b50e2f0
 INFO: [Common 17-83] Releasing license: Synthesis
 67 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:20 . Memory (MB): peak = 2749.914 ; gain = 2017.426
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 2777.105 ; gain = 2018.656
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file PYNQ_Design_wrapper_utilization_synth.rpt -pb PYNQ_Design_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 13:21:54 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 13:55:29 2025...

@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Tue Mar  4 20:00:41 2025
---Host        : EEE-R446-02 running 64-bit major release  (build 9200)
+--Date        : Thu Mar  6 13:52:36 2025
+--Host        : EEE-R446-31 running 64-bit major release  (build 9200)
 --Command     : generate_target PYNQ_Design.bd
 --Design      : PYNQ_Design
 --Purpose     : IP block netlist
@@ -275,7 +275,7 @@ entity s00_couplers_imp_4QTF46 is
 end s00_couplers_imp_4QTF46;
 
 architecture STRUCTURE of s00_couplers_imp_4QTF46 is
-  component PYNQ_Design_auto_pc_1 is
+  component PYNQ_Design_auto_pc_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -338,7 +338,7 @@ architecture STRUCTURE of s00_couplers_imp_4QTF46 is
     m_axi_rvalid : in STD_LOGIC;
     m_axi_rready : out STD_LOGIC
   );
-  end component PYNQ_Design_auto_pc_1;
+  end component PYNQ_Design_auto_pc_0;
   signal S_ACLK_1 : STD_LOGIC;
   signal S_ARESETN_1 : STD_LOGIC;
   signal auto_pc_to_s00_couplers_ARADDR : STD_LOGIC_VECTOR ( 39 downto 0 );
@@ -456,7 +456,7 @@ begin
   s00_couplers_to_auto_pc_WLAST <= S_AXI_wlast;
   s00_couplers_to_auto_pc_WSTRB(3 downto 0) <= S_AXI_wstrb(3 downto 0);
   s00_couplers_to_auto_pc_WVALID <= S_AXI_wvalid;
-auto_pc: component PYNQ_Design_auto_pc_1
+auto_pc: component PYNQ_Design_auto_pc_0
      port map (
       aclk => S_ACLK_1,
       aresetn => S_ARESETN_1,
@@ -1339,6 +1339,21 @@ architecture STRUCTURE of PYNQ_Design is
     S00_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S00_AXI_bvalid : out STD_LOGIC;
     S00_AXI_bready : in STD_LOGIC;
+    S01_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S01_AXI_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    S01_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S01_AXI_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    S01_AXI_arlock : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S01_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S01_AXI_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_arvalid : in STD_LOGIC;
+    S01_AXI_arready : out STD_LOGIC;
+    S01_AXI_rdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
+    S01_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S01_AXI_rlast : out STD_LOGIC;
+    S01_AXI_rvalid : out STD_LOGIC;
+    S01_AXI_rready : in STD_LOGIC;
     M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 48 downto 0 );
     M00_AXI_awlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     M00_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -1371,22 +1386,7 @@ architecture STRUCTURE of PYNQ_Design is
     M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M00_AXI_rlast : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC;
-    M00_AXI_rready : out STD_LOGIC;
-    S01_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S01_AXI_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    S01_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S01_AXI_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    S01_AXI_arlock : in STD_LOGIC_VECTOR ( 0 to 0 );
-    S01_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S01_AXI_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_arvalid : in STD_LOGIC;
-    S01_AXI_arready : out STD_LOGIC;
-    S01_AXI_rdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
-    S01_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S01_AXI_rlast : out STD_LOGIC;
-    S01_AXI_rvalid : out STD_LOGIC;
-    S01_AXI_rready : in STD_LOGIC
+    M00_AXI_rready : out STD_LOGIC
   );
   end component PYNQ_Design_axi_smc_1;
   component PYNQ_Design_rst_ps8_0_96M_1 is
@@ -1410,12 +1410,12 @@ architecture STRUCTURE of PYNQ_Design is
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_0_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC;
     SLOT_1_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SLOT_1_AXIS_tkeep : in STD_LOGIC_VECTOR ( 3 downto 0 );
     SLOT_1_AXIS_tlast : in STD_LOGIC;
     SLOT_1_AXIS_tvalid : in STD_LOGIC;
-    SLOT_1_AXIS_tready : in STD_LOGIC
+    SLOT_1_AXIS_tready : in STD_LOGIC;
+    resetn : in STD_LOGIC
   );
   end component PYNQ_Design_system_ila_0_0;
   signal DUT_data_in_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
