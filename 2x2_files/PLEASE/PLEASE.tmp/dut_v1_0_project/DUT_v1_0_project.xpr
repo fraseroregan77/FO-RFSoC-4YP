@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/users/clb20123/documents/fo-rfsoc-4yp/2x2_files/please/please.tmp/dut_v1_0_project/DUT_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="fab776652eb54f9dbb8109b74cf2a231"/>
+    <Option Name="Id" Val="3ab91cfe07594df59b71592a2f0f0042"/>
     <Option Name="Part" Val="xczu28dr-ffvg1517-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -48,8 +48,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -92,7 +92,7 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/dut_fifo_generator_i0/dut_fifo_generator_i0.xci">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/x16_bit_demod_fifo_generator_i0/x16_bit_demod_fifo_generator_i0.xci">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,7 +100,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/dut_fifo_generator_i1/dut_fifo_generator_i1.xci">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/x16_bit_demod_fifo_generator_i1/x16_bit_demod_fifo_generator_i1.xci">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -108,7 +108,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/dut_mult_gen_v12_0_i0/dut_mult_gen_v12_0_i0.xci">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/x16_bit_demod_mult_gen_v12_0_i0/x16_bit_demod_mult_gen_v12_0_i0.xci">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -116,7 +116,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/dut_fir_compiler_v7_2_i0/dut_fir_compiler_v7_2_i0.xci">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/x16_bit_demod_fir_compiler_v7_2_i0/x16_bit_demod_fir_compiler_v7_2_i0.xci">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -124,7 +124,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/conv_pkg.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/conv_pkg.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -132,7 +132,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/synth_reg_w_init.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/synth_reg_w_init.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -140,7 +140,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/dut_entity_declarations.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/x16_bit_demod_entity_declarations.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -148,7 +148,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/xlclockdriver_rd.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/xlclockdriver_rd.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -156,7 +156,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/single_reg_w_init.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/single_reg_w_init.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -164,7 +164,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/srl33e.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/srl33e.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -172,7 +172,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/synth_reg.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/synth_reg.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -180,7 +180,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/synth_reg_reg.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/synth_reg_reg.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -188,7 +188,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/dut.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/x16_bit_demod.vhd">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -196,14 +196,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/xpm_288367_vivado.mem">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/xpm_288367_vivado.mem">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/srl17e.vhd">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/srl17e.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="Library" Val="xil_defaultlib"/>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -212,18 +212,18 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/component.xml">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="dut"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/hdl/dut.vhd"/>
+        <Option Name="TopModule" Val="x16_bit_demod"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/hdl/x16_bit_demod.vhd"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip/DUT/src/ip/constrs/dut.xdc">
+      <File Path="$PPRDIR/../../../../../../../../Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/constrs/x16_bit_demod.xdc">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -237,7 +237,7 @@
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="dut"/>
+        <Option Name="TopModule" Val="x16_bit_demod"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>

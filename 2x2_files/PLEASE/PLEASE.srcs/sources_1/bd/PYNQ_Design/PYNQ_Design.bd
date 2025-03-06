@@ -129,7 +129,7 @@
     "components": {
       "DUT_data_in_0": {
         "vlnv": "User_Company:VMC:DUT_data_in:1.0",
-        "ip_revision": "1",
+        "ip_revision": "372192693",
         "xci_name": "PYNQ_Design_DUT_data_in_0_0",
         "xci_path": "ip\\PYNQ_Design_DUT_data_in_0_0\\PYNQ_Design_DUT_data_in_0_0.xci",
         "inst_hier_path": "DUT_data_in_0"
@@ -282,6 +282,9 @@
           "ADC_Decimation_Mode00": {
             "value": "8"
           },
+          "DAC0_Outclk_Freq": {
+            "value": "128.000"
+          },
           "DAC0_PLL_Enable": {
             "value": "true"
           },
@@ -289,7 +292,10 @@
             "value": "409.600"
           },
           "DAC0_Sampling_Rate": {
-            "value": "4.096"
+            "value": "1.024"
+          },
+          "DAC_Data_Width00": {
+            "value": "1"
           },
           "DAC_Interpolation_Mode00": {
             "value": "8"
@@ -323,7 +329,7 @@
       },
       "DUT_rec_0": {
         "vlnv": "User_Company:VMC:DUT_rec:1.0",
-        "ip_revision": "372023434",
+        "ip_revision": "372192586",
         "xci_name": "PYNQ_Design_DUT_rec_0_0",
         "xci_path": "ip\\PYNQ_Design_DUT_rec_0_0\\PYNQ_Design_DUT_rec_0_0.xci",
         "inst_hier_path": "DUT_rec_0"
@@ -1115,7 +1121,8 @@
         "ports": [
           "clk_wiz_0/clk_out1",
           "proc_sys_reset_0/slowest_sync_clk",
-          "usp_rf_data_converter_0/m0_axis_aclk"
+          "usp_rf_data_converter_0/m0_axis_aclk",
+          "DUT_rec_0/clk"
         ]
       },
       "clk_wiz_0_locked": {
@@ -1172,17 +1179,16 @@
           "zynq_ultra_ps_e_0/saxihpc0_fpd_aclk",
           "rst_ps8_0_96M/slowest_sync_clk",
           "axi_dma/m_axi_mm2s_aclk",
-          "DUT_data_in_0/clk",
           "zynq_ultra_ps_e_0/maxihpm0_lpd_aclk",
           "ps8_0_axi_periph/S00_ACLK",
           "axi_dma/s_axi_lite_aclk",
           "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/ACLK",
-          "DUT_rec_0/clk",
           "usp_rf_data_converter_0/s0_axis_aclk",
           "usp_rf_data_converter_0/s_axi_aclk",
           "ps8_0_axi_periph/M01_ACLK",
-          "system_ila_0/clk"
+          "system_ila_0/clk",
+          "DUT_data_in_0/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

@@ -1,0 +1,172 @@
+{
+  'Line_154' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate',
+    'Instance' => 'demodulate',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate'
+  },
+  'Line_161' => {
+    'CodeInstance' => 'dut_struct/algorithm/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Convert'
+  },
+  'Line_182' => {
+    'CodeInstance' => 'dut_struct/algorithm/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Delay1'
+  },
+  'Line_197' => {
+    'CodeInstance' => 'dut_struct/algorithm/delay3',
+    'Instance' => 'delay3',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Delay3'
+  },
+  'Line_212' => {
+    'CodeInstance' => 'dut_struct/algorithm/fir_compiler_7_2',
+    'Instance' => 'fir_compiler_7_2',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/FIR Compiler 7.2'
+  },
+  'Line_225' => {
+    'CodeInstance' => 'dut_struct/algorithm/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Logical'
+  },
+  'Line_234' => {
+    'CodeInstance' => 'dut_struct/algorithm/mult',
+    'Instance' => 'mult',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Mult'
+  },
+  'Line_271' => {
+    'CodeInstance' => 'dut_struct/algorithm/shift',
+    'Instance' => 'shift',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Shift'
+  },
+  'Line_29' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate/accumulator',
+    'Instance' => 'accumulator',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate/Accumulator'
+  },
+  'Line_326' => {
+    'CodeInstance' => 'dut_struct/master_fifo/concat1',
+    'Instance' => 'concat1',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO/Concat1'
+  },
+  'Line_335' => {
+    'CodeInstance' => 'dut_struct/master_fifo/fifo',
+    'Instance' => 'fifo',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO/FIFO'
+  },
+  'Line_362' => {
+    'CodeInstance' => 'dut_struct/master_fifo/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO/Inverter2'
+  },
+  'Line_370' => {
+    'CodeInstance' => 'dut_struct/master_fifo/inverter4',
+    'Instance' => 'inverter4',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO/Inverter4'
+  },
+  'Line_378' => {
+    'CodeInstance' => 'dut_struct/master_fifo/tdata_slice',
+    'Instance' => 'tdata_slice',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO/tdata_slice'
+  },
+  'Line_38' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate/AddSub1'
+  },
+  'Line_389' => {
+    'CodeInstance' => 'dut_struct/master_fifo/tlast_slice',
+    'Instance' => 'tlast_slice',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO/tlast_slice'
+  },
+  'Line_447' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/concat',
+    'Instance' => 'concat',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/Concat'
+  },
+  'Line_456' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/fifo',
+    'Instance' => 'fifo',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/FIFO'
+  },
+  'Line_47' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate/Convert'
+  },
+  'Line_482' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/Inverter1'
+  },
+  'Line_490' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/inverter2',
+    'Instance' => 'inverter2',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/Inverter2'
+  },
+  'Line_498' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/Logical'
+  },
+  'Line_507' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/tdata_slice',
+    'Instance' => 'tdata_slice',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/tdata_slice'
+  },
+  'Line_518' => {
+    'CodeInstance' => 'dut_struct/slave_fifo/tlast_slice',
+    'Instance' => 'tlast_slice',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO/tlast_slice'
+  },
+  'Line_583' => {
+    'CodeInstance' => 'dut_struct/algorithm',
+    'Instance' => 'algorithm',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm'
+  },
+  'Line_596' => {
+    'CodeInstance' => 'dut_struct/master_fifo',
+    'Instance' => 'master_fifo',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Master FIFO'
+  },
+  'Line_609' => {
+    'CodeInstance' => 'dut_struct/slave_fifo',
+    'Instance' => 'slave_fifo',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Slave FIFO'
+  },
+  'Line_622' => {
+    'CodeInstance' => 'dut_struct/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Logical'
+  },
+  'Line_648' => {
+    'CodeInstance' => 'dut_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_68' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate/dither',
+    'Instance' => 'dither',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate/Dither'
+  },
+  'Line_686' => {
+    'CodeInstance' => 'dut_default_clock_driver',
+    'Instance' => 'dut_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_694' => {
+    'CodeInstance' => 'dut_struct',
+    'Instance' => 'dut_struct',
+    'SimulinkInstance' => 'DUT'
+  },
+  'Line_75' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate/lut',
+    'Instance' => 'lut',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate/LUT'
+  },
+  'Line_93' => {
+    'CodeInstance' => 'dut_struct/algorithm/demodulate/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'demodulate_16_bit/DUT/Algorithm/Demodulate/Register'
+  }
+}
