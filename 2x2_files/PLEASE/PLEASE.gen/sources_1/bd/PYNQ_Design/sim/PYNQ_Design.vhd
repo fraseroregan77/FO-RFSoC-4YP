@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Thu Mar  6 13:52:36 2025
---Host        : EEE-R446-31 running 64-bit major release  (build 9200)
+--Date        : Thu Mar  6 15:18:20 2025
+--Host        : EEE-R343-01 running 64-bit major release  (build 9200)
 --Command     : generate_target PYNQ_Design.bd
 --Design      : PYNQ_Design
 --Purpose     : IP block netlist
@@ -1415,7 +1415,11 @@ architecture STRUCTURE of PYNQ_Design is
     SLOT_1_AXIS_tlast : in STD_LOGIC;
     SLOT_1_AXIS_tvalid : in STD_LOGIC;
     SLOT_1_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC
+    resetn : in STD_LOGIC;
+    SLOT_2_AXIS_tdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    SLOT_2_AXIS_tlast : in STD_LOGIC;
+    SLOT_2_AXIS_tvalid : in STD_LOGIC;
+    SLOT_2_AXIS_tready : in STD_LOGIC
   );
   end component PYNQ_Design_system_ila_0_0;
   signal DUT_data_in_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1563,8 +1567,17 @@ architecture STRUCTURE of PYNQ_Design is
   signal sysref_in_1_diff_n : STD_LOGIC;
   signal sysref_in_1_diff_p : STD_LOGIC;
   signal usp_rf_data_converter_0_m00_axis_TDATA : STD_LOGIC_VECTOR ( 127 downto 0 );
+  attribute CONN_BUS_INFO of usp_rf_data_converter_0_m00_axis_TDATA : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TDATA : signal is "true";
+  attribute MARK_DEBUG of usp_rf_data_converter_0_m00_axis_TDATA : signal is std.standard.true;
   signal usp_rf_data_converter_0_m00_axis_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of usp_rf_data_converter_0_m00_axis_TREADY : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TREADY : signal is "true";
+  attribute MARK_DEBUG of usp_rf_data_converter_0_m00_axis_TREADY : signal is std.standard.true;
   signal usp_rf_data_converter_0_m00_axis_TVALID : STD_LOGIC;
+  attribute CONN_BUS_INFO of usp_rf_data_converter_0_m00_axis_TVALID : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TVALID : signal is "true";
+  attribute MARK_DEBUG of usp_rf_data_converter_0_m00_axis_TVALID : signal is std.standard.true;
   signal usp_rf_data_converter_0_vout00_V_N : STD_LOGIC;
   signal usp_rf_data_converter_0_vout00_V_P : STD_LOGIC;
   signal vin0_01_1_V_N : STD_LOGIC;
@@ -1919,6 +1932,10 @@ system_ila_0: component PYNQ_Design_system_ila_0_0
       SLOT_1_AXIS_tlast => axi_dma_M_AXIS_MM2S_TLAST,
       SLOT_1_AXIS_tready => axi_dma_M_AXIS_MM2S_TREADY(0),
       SLOT_1_AXIS_tvalid => axi_dma_M_AXIS_MM2S_TVALID,
+      SLOT_2_AXIS_tdata(127 downto 0) => usp_rf_data_converter_0_m00_axis_TDATA(127 downto 0),
+      SLOT_2_AXIS_tlast => '0',
+      SLOT_2_AXIS_tready => usp_rf_data_converter_0_m00_axis_TREADY(0),
+      SLOT_2_AXIS_tvalid => usp_rf_data_converter_0_m00_axis_TVALID,
       clk => zynq_ultra_ps_e_0_pl_clk0,
       resetn => rst_ps8_0_96M_peripheral_aresetn(0)
     );

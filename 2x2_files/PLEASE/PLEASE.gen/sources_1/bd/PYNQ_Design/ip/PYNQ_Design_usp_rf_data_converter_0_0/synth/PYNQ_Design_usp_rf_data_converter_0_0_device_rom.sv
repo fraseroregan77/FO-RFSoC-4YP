@@ -94,7 +94,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_device_rom (
        30'h070a7a3e,  // PLL Coarse Frequency setup (ADC0)
        30'h070b7008,  // PLL Coarse Frequency setup (ADC0)
        30'h0711003d,  // PLL Voltage Regulator setup (ADC0)
-       30'h072c0025,  // CLK_DIV (ADC0)
+       30'h072c0024,  // CLK_DIV (ADC0)
        30'h07280280,  // SYSREF Distribution (ADC0)
        30'h072dffc0,  // HSCOM_PWR_MASK (ADC0)
        30'h00020801,  // ADC00 Data Width
