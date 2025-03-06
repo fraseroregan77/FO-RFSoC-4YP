@@ -1,0 +1,61 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar  6 18:58:59 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_DUT_data_in_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PYNQ_Design_DUT_data_in_0_0 (User_Company:VMC:DUT_data_in:1.0) from (Rev. 1) to (Rev. 372192693)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PYNQ_Design_DUT_data_in_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm_axis_tdata' width 16 differs from original width 32
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar  6 18:55:52 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_DUT_rec_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PYNQ_Design_DUT_rec_0_0 (User_Company:VMC:DUT_rec:1.0) from (Rev. 372023434) to (Rev. 372192586)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PYNQ_Design_DUT_rec_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'm_axis_tdata' width 16 differs from original width 32
+
+-Upgraded port 's_axis_tdata' width 16 differs from original width 32
+
+
