@@ -7,8 +7,7 @@
       "name": "PYNQ_Design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.1",
-      "validated": "true"
+      "tool_version": "2024.1"
     },
     "design_tree": {
       "DUT_data_in_0": "",
@@ -890,6 +889,9 @@
           },
           "C_NUM_MONITOR_SLOTS": {
             "value": "2"
+          },
+          "C_SLOT": {
+            "value": "1"
           },
           "C_SLOT_0_APC_EN": {
             "value": "0"

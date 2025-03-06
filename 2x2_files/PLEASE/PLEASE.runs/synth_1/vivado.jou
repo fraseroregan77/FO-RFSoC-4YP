@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Mar  4 20:03:13 2025
-# Process ID: 12924
+# Start of session at: Thu Mar  6 13:20:09 2025
+# Process ID: 12884
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
 # Command line: vivado.exe -log PYNQ_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PYNQ_Design_wrapper.tcl
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.vds
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1\vivado.jou
-# Running On        :EEE-R446-02
+# Running On        :EEE-R343-01
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
-# CPU Frequency     :2496 MHz
-# CPU Physical cores:14
-# CPU Logical cores :20
-# Host memory       :16833 MB
-# Swap memory       :39507 MB
-# Total Virtual     :56341 MB
-# Available Virtual :38465 MB
+# Processor Detail  :Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+# CPU Frequency     :3192 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :17060 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19610 MB
+# Available Virtual :9451 MB
 #-----------------------------------------------------------
 source PYNQ_Design_wrapper.tcl -notrace
