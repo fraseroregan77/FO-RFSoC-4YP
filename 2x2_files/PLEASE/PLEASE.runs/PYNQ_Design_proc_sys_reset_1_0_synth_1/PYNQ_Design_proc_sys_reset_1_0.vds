@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Mar  6 21:05:34 2025
+# Process ID: 11720
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1
+# Command line: vivado.exe -log PYNQ_Design_proc_sys_reset_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PYNQ_Design_proc_sys_reset_1_0.tcl
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1/PYNQ_Design_proc_sys_reset_1_0.vds
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1\vivado.jou
+# Running On        :EEE-R446-02
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16833 MB
+# Swap memory       :39507 MB
+# Total Virtual     :56341 MB
+# Available Virtual :20416 MB
+#-----------------------------------------------------------
+source PYNQ_Design_proc_sys_reset_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 629.930 ; gain = 200.539
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_proc_sys_reset_1_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 35e12345ef39c81f to dir: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/3/5/35e12345ef39c81f/PYNQ_Design_proc_sys_reset_0_0.dcp to C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1/PYNQ_Design_proc_sys_reset_1_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/3/5/35e12345ef39c81f/PYNQ_Design_proc_sys_reset_0_0_sim_netlist.v to C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1/PYNQ_Design_proc_sys_reset_1_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/3/5/35e12345ef39c81f/PYNQ_Design_proc_sys_reset_0_0_sim_netlist.vhdl to C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1/PYNQ_Design_proc_sys_reset_1_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/3/5/35e12345ef39c81f/PYNQ_Design_proc_sys_reset_0_0_stub.v to C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1/PYNQ_Design_proc_sys_reset_1_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip/2024.1/3/5/35e12345ef39c81f/PYNQ_Design_proc_sys_reset_0_0_stub.vhdl to C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_proc_sys_reset_1_0_synth_1/PYNQ_Design_proc_sys_reset_1_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP PYNQ_Design_proc_sys_reset_1_0, cache-ID = 35e12345ef39c81f.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 21:05:55 2025...

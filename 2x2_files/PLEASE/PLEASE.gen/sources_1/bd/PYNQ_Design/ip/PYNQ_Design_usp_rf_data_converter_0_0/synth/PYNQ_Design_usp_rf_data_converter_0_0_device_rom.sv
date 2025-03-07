@@ -79,25 +79,25 @@ module PYNQ_Design_usp_rf_data_converter_0_0_device_rom (
     (* rom_style = "distributed" *) reg [29:0] data_array [0:77] = '{
        30'h07230000,  // Clock Network Control 0 (ADC0)
        30'h07240001,  // Clock Network Control 1 (ADC0)
-       30'h0717003a,  // PLL FB Div (ADC0)
-       30'h070c0081,  // PLL Output Divide (ADC0)
+       30'h0717001c,  // PLL FB Div (ADC0)
+       30'h070c00c4,  // PLL Output Divide (ADC0)
        30'h07100010,  // PLL Ref clock divide (ADC0)
        30'h07000080,  // PLL SDM CONFIG0 (ADC0)
        30'h07060111,  // PLL SDM seed (ADC0)
        30'h07070011,  // PLL SDM seed setup (ADC0)
        30'h070e0507,  // PLL ChargePump setup (ADC0)
        30'h0712ffff,  // PLL ChargePump setup (ADC0)
-       30'h07137f9c,  // PLL loop filter setup (ADC0)
+       30'h07137f9a,  // PLL loop filter setup (ADC0)
        30'h07140006,  // PLL loop filter setup (ADC0)
        30'h07155800,  // PLL VCO setup (ADC0)
        30'h07160008,  // PLL VCO setup (ADC0)
        30'h070a7a3e,  // PLL Coarse Frequency setup (ADC0)
        30'h070b7008,  // PLL Coarse Frequency setup (ADC0)
        30'h0711003d,  // PLL Voltage Regulator setup (ADC0)
-       30'h072c0024,  // CLK_DIV (ADC0)
+       30'h072c0022,  // CLK_DIV (ADC0)
        30'h07280280,  // SYSREF Distribution (ADC0)
        30'h072dffc0,  // HSCOM_PWR_MASK (ADC0)
-       30'h00020801,  // ADC00 Data Width
+       30'h00020101,  // ADC00 Data Width
        30'h00100003,  // ADC00 Decimation Config
        30'h00110004,  // ADC00 Decimation Mode
        30'h00200000,  // ADC00 Mixer Config 0
@@ -106,8 +106,8 @@ module PYNQ_Design_usp_rf_data_converter_0_0_device_rom (
        30'h007101f1,  // ADC00 RX MC Config 0
        30'h00518243,  // ADC00 TI_DCB_CTRL0
        30'h0055904a,  // ADC00 TI_TIME_SKEW_CTRL0
-       30'h00060008,  // ADC00 FABRIC_DEBUG
-       30'h01020801,  // ADC01 Data Width
+       30'h00060001,  // ADC00 FABRIC_DEBUG
+       30'h01020101,  // ADC01 Data Width
        30'h01100003,  // ADC01 Decimation Config
        30'h01110004,  // ADC01 Decimation Mode
        30'h01200000,  // ADC01 Mixer Config 0
@@ -116,31 +116,31 @@ module PYNQ_Design_usp_rf_data_converter_0_0_device_rom (
        30'h017101f9,  // ADC01 RX MC Config 0
        30'h01518247,  // ADC01 TI_DCB_CTRL0
        30'h0155904a,  // ADC01 TI_TIME_SKEW_CTRL0
-       30'h01060008,  // ADC01 FABRIC_DEBUG
+       30'h01060001,  // ADC01 FABRIC_DEBUG
        30'h0f280600,  // SYSREF Distribution (ADC1)
        30'h17288880,  // SYSREF Distribution (ADC2)
        30'h1f281700,  // SYSREF Distribution (ADC3)
        30'h27230000,  // Clock Network Control 0 (DAC0)
        30'h27240001,  // Clock Network Control 1 (DAC0)
-       30'h2717003a,  // PLL FB Div (DAC0)
-       30'h270c0081,  // PLL Output Divide (DAC0)
+       30'h2717001c,  // PLL FB Div (DAC0)
+       30'h270c00c4,  // PLL Output Divide (DAC0)
        30'h27100010,  // PLL Ref clock divide (DAC0)
        30'h27000080,  // PLL SDM CONFIG0 (DAC0)
        30'h27060111,  // PLL SDM seed (DAC0)
        30'h27070011,  // PLL SDM seed setup (DAC0)
        30'h270e0507,  // PLL ChargePump setup (DAC0)
        30'h2712ffff,  // PLL ChargePump setup (DAC0)
-       30'h27137f9c,  // PLL loop filter setup (DAC0)
+       30'h27137f9a,  // PLL loop filter setup (DAC0)
        30'h27140006,  // PLL loop filter setup (DAC0)
        30'h27155800,  // PLL VCO setup (DAC0)
        30'h27160008,  // PLL VCO setup (DAC0)
        30'h270a7a3e,  // PLL Coarse Frequency setup (DAC0)
        30'h270b7008,  // PLL Coarse Frequency setup (DAC0)
        30'h2711003d,  // PLL Voltage Regulator setup (DAC0)
-       30'h272c0015,  // CLK_DIV (DAC0)
+       30'h272c0011,  // CLK_DIV (DAC0)
        30'h2728c980,  // SYSREF Distribution (DAC0)
        30'h272dffc0,  // HSCOM_PWR_MASK (DAC0)
-       30'h20020110,  // DAC00 Data Width
+       30'h20020101,  // DAC00 Data Width
        30'h20100004,  // DAC00 Interpolation Control
        30'h20110000,  // DAC00 Interpolation Data
        30'h20200000,  // DAC00 Mixer Config 0

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA77E7DBBE9B0B5A7",
+      "boundary_crc": "0xB7A9165D88A94E2E",
       "design_src": "SBD",
       "device": "xczu28dr-ffvg1517-2-e",
       "name": "bd_5ea3",
@@ -22,11 +22,11 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
-            "value_src": "default_prop"
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
+            "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "96968727",
+            "value": "128000000",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -53,7 +53,7 @@
             "value": [
               "xilinx.com:interface:datatypes:1.0 {",
               "TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
-              "maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
               "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
               "}"
             ],
@@ -64,7 +64,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "4",
+            "value": "2",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -87,11 +87,11 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
-            "value_src": "default_prop"
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
+            "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "96968727",
+            "value": "128000000",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -146,11 +146,11 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
-            "value_src": "default_prop"
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
+            "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "96968727",
+            "value": "128000000",
             "value_src": "default"
           },
           "HAS_TKEEP": {
@@ -182,7 +182,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "16",
+            "value": "2",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -212,11 +212,11 @@
             "value": "resetn"
           },
           "CLK_DOMAIN": {
-            "value": "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value": "PYNQ_Design_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "96968727",
+            "value": "128000000",
             "value_src": "default_prop"
           },
           "FREQ_TOLERANCE_HZ": {
@@ -272,7 +272,7 @@
             "value": "0"
           },
           "C_ILA_CLK_FREQ": {
-            "value": "96968727"
+            "value": "128000000"
           },
           "C_INPUT_PIPE_STAGES": {
             "value": "0"
@@ -287,7 +287,7 @@
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "32"
+            "value": "16"
           },
           "C_PROBE10_TYPE": {
             "value": "0"
@@ -359,7 +359,7 @@
             "value": "0"
           },
           "C_PROBE9_WIDTH": {
-            "value": "128"
+            "value": "16"
           },
           "C_TRIGIN_EN": {
             "value": "false"
@@ -389,7 +389,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXIS_TDATA_WIDTH": {
-            "value": "32"
+            "value": "16"
           },
           "C_SLOT_0_AXIS_TDEST_WIDTH": {
             "value": "0"
@@ -443,7 +443,7 @@
             "value": "FT"
           },
           "C_SLOT_2_AXIS_TDATA_WIDTH": {
-            "value": "128"
+            "value": "16"
           },
           "C_SLOT_2_AXIS_TDEST_WIDTH": {
             "value": "0"

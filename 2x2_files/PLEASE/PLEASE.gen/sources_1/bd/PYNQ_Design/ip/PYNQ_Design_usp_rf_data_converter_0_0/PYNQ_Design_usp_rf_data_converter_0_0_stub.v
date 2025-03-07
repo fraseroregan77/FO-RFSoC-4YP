@@ -2,8 +2,8 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Thu Mar  6 15:23:09 2025
-// Host        : EEE-R343-01 running 64-bit major release  (build 9200)
+// Date        : Thu Mar  6 21:06:27 2025
+// Host        : EEE-R446-02 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/PYNQ_Design_usp_rf_data_converter_0_0_stub.v
 // Design      : PYNQ_Design_usp_rf_data_converter_0_0
@@ -22,7 +22,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0(s_axi_aclk, s_axi_aresetn, s_axi_aw
   adc0_clk_n, clk_adc0, m0_axis_aclk, m0_axis_aresetn, vin0_01_p, vin0_01_n, m00_axis_tdata, 
   m00_axis_tvalid, m00_axis_tready, dac0_clk_p, dac0_clk_n, clk_dac0, s0_axis_aclk, 
   s0_axis_aresetn, vout00_p, vout00_n, s00_axis_tdata, s00_axis_tvalid, s00_axis_tready, irq)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_aresetn,s_axi_awaddr[17:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[17:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,sysref_in_p,sysref_in_n,adc0_clk_p,adc0_clk_n,m0_axis_aresetn,vin0_01_p,vin0_01_n,m00_axis_tdata[127:0],m00_axis_tvalid,m00_axis_tready,dac0_clk_p,dac0_clk_n,s0_axis_aresetn,vout00_p,vout00_n,s00_axis_tdata[255:0],s00_axis_tvalid,s00_axis_tready,irq" */
+/* synthesis syn_black_box black_box_pad_pin="s_axi_aresetn,s_axi_awaddr[17:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[17:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,sysref_in_p,sysref_in_n,adc0_clk_p,adc0_clk_n,m0_axis_aresetn,vin0_01_p,vin0_01_n,m00_axis_tdata[15:0],m00_axis_tvalid,m00_axis_tready,dac0_clk_p,dac0_clk_n,s0_axis_aresetn,vout00_p,vout00_n,s00_axis_tdata[15:0],s00_axis_tvalid,s00_axis_tready,irq" */
 /* synthesis syn_force_seq_prim="s_axi_aclk" */
 /* synthesis syn_force_seq_prim="clk_adc0" */
 /* synthesis syn_force_seq_prim="m0_axis_aclk" */
@@ -56,7 +56,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0(s_axi_aclk, s_axi_aresetn, s_axi_aw
   input m0_axis_aresetn;
   input vin0_01_p;
   input vin0_01_n;
-  output [127:0]m00_axis_tdata;
+  output [15:0]m00_axis_tdata;
   output m00_axis_tvalid;
   input m00_axis_tready;
   input dac0_clk_p;
@@ -66,7 +66,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0(s_axi_aclk, s_axi_aresetn, s_axi_aw
   input s0_axis_aresetn;
   output vout00_p;
   output vout00_n;
-  input [255:0]s00_axis_tdata;
+  input [15:0]s00_axis_tdata;
   input s00_axis_tvalid;
   output s00_axis_tready;
   output irq;

@@ -119,7 +119,7 @@ set_false_path -from $RFADC3_CLK -to [get_pins -filter {REF_PIN_NAME == D} -of [
 set_false_path -from $RFADC3_CLK_dummy -to [get_pins -filter {REF_PIN_NAME == D} -of [get_cells -hier IP2Bus_Data_reg[*]]]
 
 #Generated clocks on internal nodes inside IP
-create_clock -period 31.250 -name RFDAC0_CLK [get_pins -hier tx0_u_dac/INTERNAL_FBRC_MUX*]
+create_clock -period 7.813 -name RFDAC0_CLK [get_pins -hier tx0_u_dac/INTERNAL_FBRC_MUX*]
 set RFDAC0_CLK  [get_clocks -of_objects [get_pins -hier tx0_u_dac/INTERNAL_FBRC_MUX*]]
 
 # Exclude paths from the fabric clock to the status registers

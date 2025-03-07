@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "PYNQ_Design_zynq_ultra_ps_e_0_0_synth_1" START { ROLLUP_AUTO }
+set_param bd.open.in_stealth_mode 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -71,15 +72,15 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_repo_paths {
-  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip
-  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip
+  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip
+  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xci
+read_ip -quiet C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc]
 

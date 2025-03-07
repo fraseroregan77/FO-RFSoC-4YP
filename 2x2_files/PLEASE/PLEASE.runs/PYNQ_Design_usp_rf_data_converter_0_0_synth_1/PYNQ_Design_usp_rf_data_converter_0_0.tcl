@@ -56,8 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "PYNQ_Design_usp_rf_data_converter_0_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
 set_param bd.open.in_stealth_mode 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -74,8 +72,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_repo_paths {
-  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip
-  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip
+  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip
+  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip [current_project]

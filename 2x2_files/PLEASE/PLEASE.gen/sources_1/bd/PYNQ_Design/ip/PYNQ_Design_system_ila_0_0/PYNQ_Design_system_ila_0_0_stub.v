@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Thu Mar  6 15:23:20 2025
-// Host        : EEE-R343-01 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0_stub.v
+// Date        : Thu Mar  6 21:06:28 2025
+// Host        : EEE-R446-02 running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top PYNQ_Design_system_ila_0_0 -prefix
+//               PYNQ_Design_system_ila_0_0_ PYNQ_Design_system_ila_0_0_stub.v
 // Design      : PYNQ_Design_system_ila_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu28dr-ffvg1517-2-e
@@ -19,10 +19,10 @@ module PYNQ_Design_system_ila_0_0(clk, SLOT_0_AXIS_tdata, SLOT_0_AXIS_tlast,
   SLOT_0_AXIS_tvalid, SLOT_0_AXIS_tready, SLOT_1_AXIS_tdata, SLOT_1_AXIS_tkeep, 
   SLOT_1_AXIS_tlast, SLOT_1_AXIS_tvalid, SLOT_1_AXIS_tready, SLOT_2_AXIS_tdata, 
   SLOT_2_AXIS_tlast, SLOT_2_AXIS_tvalid, SLOT_2_AXIS_tready, resetn)
-/* synthesis syn_black_box black_box_pad_pin="SLOT_0_AXIS_tdata[31:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,SLOT_1_AXIS_tdata[31:0],SLOT_1_AXIS_tkeep[3:0],SLOT_1_AXIS_tlast,SLOT_1_AXIS_tvalid,SLOT_1_AXIS_tready,SLOT_2_AXIS_tdata[127:0],SLOT_2_AXIS_tlast,SLOT_2_AXIS_tvalid,SLOT_2_AXIS_tready,resetn" */
+/* synthesis syn_black_box black_box_pad_pin="SLOT_0_AXIS_tdata[15:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,SLOT_1_AXIS_tdata[31:0],SLOT_1_AXIS_tkeep[3:0],SLOT_1_AXIS_tlast,SLOT_1_AXIS_tvalid,SLOT_1_AXIS_tready,SLOT_2_AXIS_tdata[15:0],SLOT_2_AXIS_tlast,SLOT_2_AXIS_tvalid,SLOT_2_AXIS_tready,resetn" */
 /* synthesis syn_force_seq_prim="clk" */;
   input clk /* synthesis syn_isclock = 1 */;
-  input [31:0]SLOT_0_AXIS_tdata;
+  input [15:0]SLOT_0_AXIS_tdata;
   input SLOT_0_AXIS_tlast;
   input SLOT_0_AXIS_tvalid;
   input SLOT_0_AXIS_tready;
@@ -31,7 +31,7 @@ module PYNQ_Design_system_ila_0_0(clk, SLOT_0_AXIS_tdata, SLOT_0_AXIS_tlast,
   input SLOT_1_AXIS_tlast;
   input SLOT_1_AXIS_tvalid;
   input SLOT_1_AXIS_tready;
-  input [127:0]SLOT_2_AXIS_tdata;
+  input [15:0]SLOT_2_AXIS_tdata;
   input SLOT_2_AXIS_tlast;
   input SLOT_2_AXIS_tvalid;
   input SLOT_2_AXIS_tready;

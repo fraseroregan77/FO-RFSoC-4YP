@@ -115,7 +115,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
 
 
   // ADC AXI Streaming Data for ADC00
-  output [127:0]    m00_axis_tdata,
+  output [15:0]    m00_axis_tdata,
   output            m00_axis_tvalid,
   input             m00_axis_tready,
 
@@ -134,7 +134,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   output            vout00_n,
 
   // DAC AXI Streaming Data for DAC00
-  input  [255:0]    s00_axis_tdata,
+  input  [15:0]    s00_axis_tdata,
   input             s00_axis_tvalid,
   output            s00_axis_tready,
 
@@ -1069,7 +1069,8 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
 
   wire  [127:0]    adc00_data_i;
 
-  assign  dac00_data_i  =  s00_axis_tdata;
+  assign  dac00_data_i[255:16]  =  240'b0;
+  assign  dac00_data_i[15:0]    =  s00_axis_tdata;
 
   PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper
   PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i(
@@ -1593,7 +1594,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
     .reset                  (master_reset)
  );
 
-  assign  m00_axis_tdata  =  adc00_data_i[127:0];
+  assign  m00_axis_tdata  =  adc00_data_i[15:0];
 
 
 
@@ -2039,7 +2040,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      dac0_ref_clk_freq <= 32'd204800;
+      dac0_ref_clk_freq <= 32'd409600;
     end
     else if (bank1_write[192])
     begin
@@ -2050,7 +2051,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      dac0_sample_rate <= 32'd4096000;
+      dac0_sample_rate <= 32'd1024000;
     end
     else if (bank1_write[193])
     begin
@@ -2429,7 +2430,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      adc0_ref_clk_freq <= 32'd204800;
+      adc0_ref_clk_freq <= 32'd409600;
     end
     else if (bank9_write[192])
     begin
@@ -2440,7 +2441,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      adc0_sample_rate <= 32'd4096000;
+      adc0_sample_rate <= 32'd1024000;
     end
     else if (bank9_write[193])
     begin

@@ -3,30 +3,30 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Mar  6 15:19:11 2025
-# Process ID: 13644
+# Start of session at: Thu Mar  6 21:03:51 2025
+# Process ID: 1252
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1
 # Command line: vivado.exe -log PYNQ_Design_usp_rf_data_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PYNQ_Design_usp_rf_data_converter_0_0.tcl
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/PYNQ_Design_usp_rf_data_converter_0_0.vds
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1\vivado.jou
-# Running On        :EEE-R343-01
+# Running On        :EEE-R446-02
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
-# CPU Frequency     :3192 MHz
-# CPU Physical cores:4
-# CPU Logical cores :4
-# Host memory       :17060 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19610 MB
-# Available Virtual :4662 MB
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16833 MB
+# Swap memory       :39507 MB
+# Total Virtual     :56341 MB
+# Available Virtual :39601 MB
 #-----------------------------------------------------------
 source PYNQ_Design_usp_rf_data_converter_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 603.570 ; gain = 197.688
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 628.277 ; gain = 199.691
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/mod_enable/netlist/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_enable/netlist/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: PYNQ_Design_usp_rf_data_converter_0_0
 Command: synth_design -top PYNQ_Design_usp_rf_data_converter_0_0 -part xczu28dr-ffvg1517-2-e -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -36,65 +36,65 @@ INFO: [Common 17-1540] The version limit for your license is '2024.10' and has e
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9524
+INFO: [Synth 8-7075] Helper process launched with PID 18104
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2125.043 ; gain = 382.641
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2150.074 ; gain = 382.281
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'clk_valid', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:347]
-INFO: [Synth 8-11241] undeclared symbol 'adc00_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3994]
-INFO: [Synth 8-11241] undeclared symbol 'adc01_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3995]
-INFO: [Synth 8-11241] undeclared symbol 'adc02_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3996]
-INFO: [Synth 8-11241] undeclared symbol 'adc03_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3997]
-INFO: [Synth 8-11241] undeclared symbol 'adc10_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3998]
-INFO: [Synth 8-11241] undeclared symbol 'adc11_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3999]
-INFO: [Synth 8-11241] undeclared symbol 'adc12_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4000]
-INFO: [Synth 8-11241] undeclared symbol 'adc13_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4001]
-INFO: [Synth 8-11241] undeclared symbol 'adc20_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4002]
-INFO: [Synth 8-11241] undeclared symbol 'adc21_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4003]
-INFO: [Synth 8-11241] undeclared symbol 'adc22_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4004]
-INFO: [Synth 8-11241] undeclared symbol 'adc23_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4005]
-INFO: [Synth 8-11241] undeclared symbol 'adc30_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4006]
-INFO: [Synth 8-11241] undeclared symbol 'adc31_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4007]
-INFO: [Synth 8-11241] undeclared symbol 'adc32_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4008]
-INFO: [Synth 8-11241] undeclared symbol 'adc33_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4009]
-INFO: [Synth 8-11241] undeclared symbol 'adc00_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4010]
-INFO: [Synth 8-11241] undeclared symbol 'adc01_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4011]
-INFO: [Synth 8-11241] undeclared symbol 'adc02_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4012]
-INFO: [Synth 8-11241] undeclared symbol 'adc03_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4013]
-INFO: [Synth 8-11241] undeclared symbol 'adc10_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4014]
-INFO: [Synth 8-11241] undeclared symbol 'adc11_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4015]
-INFO: [Synth 8-11241] undeclared symbol 'adc12_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4016]
-INFO: [Synth 8-11241] undeclared symbol 'adc13_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4017]
-INFO: [Synth 8-11241] undeclared symbol 'adc20_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4018]
-INFO: [Synth 8-11241] undeclared symbol 'adc21_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4019]
-INFO: [Synth 8-11241] undeclared symbol 'adc22_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4020]
-INFO: [Synth 8-11241] undeclared symbol 'adc23_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4021]
-INFO: [Synth 8-11241] undeclared symbol 'adc30_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4022]
-INFO: [Synth 8-11241] undeclared symbol 'adc31_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4023]
-INFO: [Synth 8-11241] undeclared symbol 'adc32_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4024]
-INFO: [Synth 8-11241] undeclared symbol 'adc33_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4025]
-INFO: [Synth 8-11241] undeclared symbol 'adc01_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4048]
-INFO: [Synth 8-11241] undeclared symbol 'adc02_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4050]
-INFO: [Synth 8-11241] undeclared symbol 'adc03_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4052]
-INFO: [Synth 8-11241] undeclared symbol 'adc10_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4054]
-INFO: [Synth 8-11241] undeclared symbol 'adc11_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4056]
-INFO: [Synth 8-11241] undeclared symbol 'adc12_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4058]
-INFO: [Synth 8-11241] undeclared symbol 'adc13_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4060]
-INFO: [Synth 8-11241] undeclared symbol 'adc20_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4062]
-INFO: [Synth 8-11241] undeclared symbol 'adc21_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4064]
-INFO: [Synth 8-11241] undeclared symbol 'adc22_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4066]
-INFO: [Synth 8-11241] undeclared symbol 'adc23_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4068]
-INFO: [Synth 8-11241] undeclared symbol 'adc30_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4070]
-INFO: [Synth 8-11241] undeclared symbol 'adc31_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4072]
-INFO: [Synth 8-11241] undeclared symbol 'adc32_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4074]
-INFO: [Synth 8-11241] undeclared symbol 'adc33_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4076]
+INFO: [Synth 8-11241] undeclared symbol 'adc00_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3995]
+INFO: [Synth 8-11241] undeclared symbol 'adc01_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3996]
+INFO: [Synth 8-11241] undeclared symbol 'adc02_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3997]
+INFO: [Synth 8-11241] undeclared symbol 'adc03_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3998]
+INFO: [Synth 8-11241] undeclared symbol 'adc10_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3999]
+INFO: [Synth 8-11241] undeclared symbol 'adc11_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4000]
+INFO: [Synth 8-11241] undeclared symbol 'adc12_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4001]
+INFO: [Synth 8-11241] undeclared symbol 'adc13_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4002]
+INFO: [Synth 8-11241] undeclared symbol 'adc20_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4003]
+INFO: [Synth 8-11241] undeclared symbol 'adc21_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4004]
+INFO: [Synth 8-11241] undeclared symbol 'adc22_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4005]
+INFO: [Synth 8-11241] undeclared symbol 'adc23_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4006]
+INFO: [Synth 8-11241] undeclared symbol 'adc30_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4007]
+INFO: [Synth 8-11241] undeclared symbol 'adc31_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4008]
+INFO: [Synth 8-11241] undeclared symbol 'adc32_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4009]
+INFO: [Synth 8-11241] undeclared symbol 'adc33_tdd_mode_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4010]
+INFO: [Synth 8-11241] undeclared symbol 'adc00_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4011]
+INFO: [Synth 8-11241] undeclared symbol 'adc01_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4012]
+INFO: [Synth 8-11241] undeclared symbol 'adc02_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4013]
+INFO: [Synth 8-11241] undeclared symbol 'adc03_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4014]
+INFO: [Synth 8-11241] undeclared symbol 'adc10_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4015]
+INFO: [Synth 8-11241] undeclared symbol 'adc11_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4016]
+INFO: [Synth 8-11241] undeclared symbol 'adc12_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4017]
+INFO: [Synth 8-11241] undeclared symbol 'adc13_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4018]
+INFO: [Synth 8-11241] undeclared symbol 'adc20_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4019]
+INFO: [Synth 8-11241] undeclared symbol 'adc21_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4020]
+INFO: [Synth 8-11241] undeclared symbol 'adc22_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4021]
+INFO: [Synth 8-11241] undeclared symbol 'adc23_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4022]
+INFO: [Synth 8-11241] undeclared symbol 'adc30_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4023]
+INFO: [Synth 8-11241] undeclared symbol 'adc31_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4024]
+INFO: [Synth 8-11241] undeclared symbol 'adc32_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4025]
+INFO: [Synth 8-11241] undeclared symbol 'adc33_tdd_obs_i', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4026]
+INFO: [Synth 8-11241] undeclared symbol 'adc01_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4049]
+INFO: [Synth 8-11241] undeclared symbol 'adc02_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4051]
+INFO: [Synth 8-11241] undeclared symbol 'adc03_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4053]
+INFO: [Synth 8-11241] undeclared symbol 'adc10_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4055]
+INFO: [Synth 8-11241] undeclared symbol 'adc11_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4057]
+INFO: [Synth 8-11241] undeclared symbol 'adc12_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4059]
+INFO: [Synth 8-11241] undeclared symbol 'adc13_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4061]
+INFO: [Synth 8-11241] undeclared symbol 'adc20_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4063]
+INFO: [Synth 8-11241] undeclared symbol 'adc21_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4065]
+INFO: [Synth 8-11241] undeclared symbol 'adc22_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4067]
+INFO: [Synth 8-11241] undeclared symbol 'adc23_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4069]
+INFO: [Synth 8-11241] undeclared symbol 'adc30_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4071]
+INFO: [Synth 8-11241] undeclared symbol 'adc31_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4073]
+INFO: [Synth 8-11241] undeclared symbol 'adc32_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4075]
+INFO: [Synth 8-11241] undeclared symbol 'adc33_cal_frozen', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:4077]
 INFO: [Synth 8-11241] undeclared symbol 'dpto_cntr_ld_en', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment.v:503]
 INFO: [Synth 8-11241] undeclared symbol 'dpto_cnt_en', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment.v:504]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_block' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:65]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper.v:59]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_tile_config' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_tile_config.sv:57]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_device_rom' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_device_rom.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_device_rom' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_device_rom.sv:57]
@@ -108,17 +108,17 @@ INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
-INFO: [Synth 8-6157] synthesizing module 'HSDAC' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
-INFO: [Synth 8-6155] done synthesizing module 'HSDAC' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
-INFO: [Synth 8-6157] synthesizing module 'HSDAC__parameterized0' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
-INFO: [Synth 8-6155] done synthesizing module 'HSDAC__parameterized0' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
-INFO: [Synth 8-6157] synthesizing module 'HSADC' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
-INFO: [Synth 8-6155] done synthesizing module 'HSADC' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
-INFO: [Synth 8-6157] synthesizing module 'HSADC__parameterized0' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
-INFO: [Synth 8-6155] done synthesizing module 'HSADC__parameterized0' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
+INFO: [Synth 8-6157] synthesizing module 'HSDAC' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
+INFO: [Synth 8-6155] done synthesizing module 'HSDAC' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
+INFO: [Synth 8-6157] synthesizing module 'HSDAC__parameterized0' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
+INFO: [Synth 8-6155] done synthesizing module 'HSDAC__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73626]
+INFO: [Synth 8-6157] synthesizing module 'HSADC' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
+INFO: [Synth 8-6155] done synthesizing module 'HSADC' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
+INFO: [Synth 8-6157] synthesizing module 'HSADC__parameterized0' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
+INFO: [Synth 8-6155] done synthesizing module 'HSADC__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:73517]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper.v:59]
-WARNING: [Synth 8-7071] port 'adc0_clk_fifo_lm' of module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' is unconnected for instance 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:1075]
-WARNING: [Synth 8-7023] instance 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i' of module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' has 363 connections declared, but only 362 given [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:1075]
+WARNING: [Synth 8-7071] port 'adc0_clk_fifo_lm' of module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' is unconnected for instance 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:1076]
+WARNING: [Synth 8-7023] instance 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i' of module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' has 363 connections declared, but only 362 given [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:1076]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_axi_lite_ipif' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_axi_lite_ipif.v:87]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment.v:83]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_counter_f' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_counter_f.v:53]
@@ -137,8 +137,8 @@ INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/clb2
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_drp_control.v:58]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control_top' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_drp_control_top.v:58]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_irq_sync' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_irq_sync.v:57]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [D:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [D:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_irq_sync' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_irq_sync.v:57]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_powerup_state_irq' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_powerup_state_irq.v:59]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_irq_req_ack' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_irq_req_ack.v:59]
@@ -147,8 +147,8 @@ INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_overvol_irq' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_overvol_irq.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_overvol_irq' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_overvol_irq.v:59]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0bufg_gt_ctrl.v:58]
-INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:2212]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:2212]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:2212]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp_diablo.v:2212]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0bufg_gt_ctrl.v:58]
 INFO: [Synth 8-6157] synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_reset_count' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_rst_cnt.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'PYNQ_Design_usp_rf_data_converter_0_0_reset_count' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_rst_cnt.v:59]
@@ -186,36 +186,36 @@ WARNING: [Synth 8-3848] Net adc2_bg_cal_off in module/entity PYNQ_Design_usp_rf_
 WARNING: [Synth 8-3848] Net adc3_bg_cal_off in module/entity PYNQ_Design_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_constants_config.sv:204]
 WARNING: [Synth 8-6014] Unused sequential element timer_125ns_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm.v:126]
 WARNING: [Synth 8-6014] Unused sequential element por_timer_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:133]
-WARNING: [Synth 8-6014] Unused sequential element adc01_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2479]
-WARNING: [Synth 8-6014] Unused sequential element adc01_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2480]
-WARNING: [Synth 8-6014] Unused sequential element adc02_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2492]
-WARNING: [Synth 8-6014] Unused sequential element adc02_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2493]
-WARNING: [Synth 8-6014] Unused sequential element adc03_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2505]
-WARNING: [Synth 8-6014] Unused sequential element adc03_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2506]
-WARNING: [Synth 8-6014] Unused sequential element adc10_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2719]
-WARNING: [Synth 8-6014] Unused sequential element adc10_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2720]
-WARNING: [Synth 8-6014] Unused sequential element adc11_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2732]
-WARNING: [Synth 8-6014] Unused sequential element adc11_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2733]
-WARNING: [Synth 8-6014] Unused sequential element adc12_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2745]
-WARNING: [Synth 8-6014] Unused sequential element adc12_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2746]
-WARNING: [Synth 8-6014] Unused sequential element adc13_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2758]
-WARNING: [Synth 8-6014] Unused sequential element adc13_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2759]
-WARNING: [Synth 8-6014] Unused sequential element adc20_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2972]
-WARNING: [Synth 8-6014] Unused sequential element adc20_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2973]
-WARNING: [Synth 8-6014] Unused sequential element adc21_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2985]
-WARNING: [Synth 8-6014] Unused sequential element adc21_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2986]
-WARNING: [Synth 8-6014] Unused sequential element adc22_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2998]
-WARNING: [Synth 8-6014] Unused sequential element adc22_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2999]
-WARNING: [Synth 8-6014] Unused sequential element adc23_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3011]
-WARNING: [Synth 8-6014] Unused sequential element adc23_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3012]
-WARNING: [Synth 8-6014] Unused sequential element adc30_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3225]
-WARNING: [Synth 8-6014] Unused sequential element adc30_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3226]
-WARNING: [Synth 8-6014] Unused sequential element adc31_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3238]
-WARNING: [Synth 8-6014] Unused sequential element adc31_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3239]
-WARNING: [Synth 8-6014] Unused sequential element adc32_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3251]
-WARNING: [Synth 8-6014] Unused sequential element adc32_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3252]
-WARNING: [Synth 8-6014] Unused sequential element adc33_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3264]
-WARNING: [Synth 8-6014] Unused sequential element adc33_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3265]
+WARNING: [Synth 8-6014] Unused sequential element adc01_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2480]
+WARNING: [Synth 8-6014] Unused sequential element adc01_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2481]
+WARNING: [Synth 8-6014] Unused sequential element adc02_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2493]
+WARNING: [Synth 8-6014] Unused sequential element adc02_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2494]
+WARNING: [Synth 8-6014] Unused sequential element adc03_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2506]
+WARNING: [Synth 8-6014] Unused sequential element adc03_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2507]
+WARNING: [Synth 8-6014] Unused sequential element adc10_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2720]
+WARNING: [Synth 8-6014] Unused sequential element adc10_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2721]
+WARNING: [Synth 8-6014] Unused sequential element adc11_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2733]
+WARNING: [Synth 8-6014] Unused sequential element adc11_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2734]
+WARNING: [Synth 8-6014] Unused sequential element adc12_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2746]
+WARNING: [Synth 8-6014] Unused sequential element adc12_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2747]
+WARNING: [Synth 8-6014] Unused sequential element adc13_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2759]
+WARNING: [Synth 8-6014] Unused sequential element adc13_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2760]
+WARNING: [Synth 8-6014] Unused sequential element adc20_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2973]
+WARNING: [Synth 8-6014] Unused sequential element adc20_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2974]
+WARNING: [Synth 8-6014] Unused sequential element adc21_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2986]
+WARNING: [Synth 8-6014] Unused sequential element adc21_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2987]
+WARNING: [Synth 8-6014] Unused sequential element adc22_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:2999]
+WARNING: [Synth 8-6014] Unused sequential element adc22_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3000]
+WARNING: [Synth 8-6014] Unused sequential element adc23_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3012]
+WARNING: [Synth 8-6014] Unused sequential element adc23_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3013]
+WARNING: [Synth 8-6014] Unused sequential element adc30_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3226]
+WARNING: [Synth 8-6014] Unused sequential element adc30_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3227]
+WARNING: [Synth 8-6014] Unused sequential element adc31_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3239]
+WARNING: [Synth 8-6014] Unused sequential element adc31_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3240]
+WARNING: [Synth 8-6014] Unused sequential element adc32_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3252]
+WARNING: [Synth 8-6014] Unused sequential element adc32_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3253]
+WARNING: [Synth 8-6014] Unused sequential element adc33_cal_freeze_reg_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3265]
+WARNING: [Synth 8-6014] Unused sequential element adc33_disable_cal_freeze_input_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:3266]
 WARNING: [Synth 8-3848] Net dac1_reset_cnt in module/entity PYNQ_Design_usp_rf_data_converter_0_0_block does not have driver. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:756]
 WARNING: [Synth 8-3848] Net adc1_reset_cnt in module/entity PYNQ_Design_usp_rf_data_converter_0_0_block does not have driver. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:843]
 WARNING: [Synth 8-3848] Net adc2_reset_cnt in module/entity PYNQ_Design_usp_rf_data_converter_0_0_block does not have driver. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:885]
@@ -322,24 +322,24 @@ WARNING: [Synth 8-7129] Port adc3_status[6] in module PYNQ_Design_usp_rf_data_co
 WARNING: [Synth 8-7129] Port adc3_status[5] in module PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2360.707 ; gain = 618.305
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2386.480 ; gain = 618.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2378.641 ; gain = 636.238
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 2404.387 ; gain = 636.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2378.641 ; gain = 636.238
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 2404.387 ; gain = 636.594
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.309 . Memory (MB): peak = 2392.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 2417.941 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2505.270 ; gain = 0.000
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2531.070 ; gain = 0.039
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
@@ -353,19 +353,19 @@ WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not 
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.xdc] for cell 'inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PYNQ_Design_usp_rf_data_converter_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/PYNQ_Design_usp_rf_data_converter_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PYNQ_Design_usp_rf_data_converter_0_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PYNQ_Design_usp_rf_data_converter_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/PYNQ_Design_usp_rf_data_converter_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 104 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2505.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2531.070 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.382 . Memory (MB): peak = 2505.301 ; gain = 0.031
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 2531.070 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2505.301 ; gain = 762.898
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 2531.070 ; gain = 763.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -373,7 +373,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 2505.301 ; gain = 762.898
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 2531.070 ; gain = 763.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -484,7 +484,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/i_PYNQ_Design_usp_rf_data_co
 Applied set_property KEEP_HIERARCHY = SOFT for inst/i_PYNQ_Design_usp_rf_data_converter_0_0_irq_sync/sync_dac13_data_irq. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/i_PYNQ_Design_usp_rf_data_converter_0_0_irq_sync/sync_dac13_fifo_irq. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 2505.301 ; gain = 762.898
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 2531.070 ; gain = 763.277
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'tc_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_tile_config'
 INFO: [Synth 8-802] inferred FSM for state register 'const_sm_state_adc0_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_constants_config'
@@ -497,6 +497,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter'
 INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control'
 ---------------------------------------------------------------------------------------------------
@@ -655,6 +656,18 @@ INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using en
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          gnt_dummy_read |                              001 |                              110
+         gnt_tile_config |                              010 |                              001
+              gnt_status |                              011 |                              010
+                 gnt_por |                              100 |                              011
+                 gnt_bgt |                              101 |                              100
+                gnt_user |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
                     IDLE |                              000 |                              000
                  READING |                              001 |                              001
                READ_WAIT |                              010 |                              010
@@ -675,7 +688,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 2505.301 ; gain = 762.898
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 2531.070 ; gain = 763.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -697,25 +710,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:25 ; elapsed = 00:01:40 . Memory (MB): peak = 2505.301 ; gain = 762.898
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:09 . Memory (MB): peak = 2531.070 ; gain = 763.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:40 ; elapsed = 00:02:05 . Memory (MB): peak = 2725.633 ; gain = 983.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 2743.148 ; gain = 975.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:02:40 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:37 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:19 ; elapsed = 00:02:46 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:40 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -733,37 +746,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:25 ; elapsed = 00:02:53 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:02:53 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:02:53 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:02:53 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:02:54 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:02:54 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -790,37 +803,37 @@ Report Cell Usage:
 |9     |LUT5    |   624|
 |10    |LUT6    |  1447|
 |11    |MUXF7   |    53|
-|12    |FDRE    |  2450|
+|12    |FDRE    |  2454|
 |13    |FDSE    |   246|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:26 ; elapsed = 00:02:54 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:55 ; elapsed = 00:02:31 . Memory (MB): peak = 2944.352 ; gain = 1075.289
-Synthesis Optimization Complete : Time (s): cpu = 00:02:27 ; elapsed = 00:02:54 . Memory (MB): peak = 2944.352 ; gain = 1201.949
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:31 . Memory (MB): peak = 2966.445 ; gain = 1071.969
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:43 . Memory (MB): peak = 2966.445 ; gain = 1198.652
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 2944.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 2966.445 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC for BUFG_GT inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/adc0_bufg_gt
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC_1 for BUFG_GT inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/dac0_bufg_gt
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2944.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2966.445 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: d043e342
+Synth Design complete | Checksum: 8c33c5c1
 INFO: [Common 17-83] Releasing license: Synthesis
-165 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+167 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:41 ; elapsed = 00:03:13 . Memory (MB): peak = 2944.352 ; gain = 2280.473
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 2944.352 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 2966.445 ; gain = 2278.152
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2966.445 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/PYNQ_Design_usp_rf_data_converter_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP PYNQ_Design_usp_rf_data_converter_0_0, cache-ID = a7c7e796b521262b
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP PYNQ_Design_usp_rf_data_converter_0_0, cache-ID = 2c0037a0d713b492
 INFO: [Coretcl 2-1174] Renamed 104 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2944.352 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2966.445 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/PYNQ_Design_usp_rf_data_converter_0_0_synth_1/PYNQ_Design_usp_rf_data_converter_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file PYNQ_Design_usp_rf_data_converter_0_0_utilization_synth.rpt -pb PYNQ_Design_usp_rf_data_converter_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 15:23:13 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 21:06:29 2025...

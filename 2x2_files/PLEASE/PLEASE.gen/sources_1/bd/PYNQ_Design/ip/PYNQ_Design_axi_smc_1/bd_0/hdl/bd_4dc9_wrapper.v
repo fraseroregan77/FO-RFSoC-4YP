@@ -75,6 +75,7 @@ module bd_4dc9_wrapper
     S01_AXI_rresp,
     S01_AXI_rvalid,
     aclk,
+    aclk1,
     aresetn);
   output [48:0]M00_AXI_araddr;
   output [1:0]M00_AXI_arburst;
@@ -143,6 +144,7 @@ module bd_4dc9_wrapper
   output [1:0]S01_AXI_rresp;
   output S01_AXI_rvalid;
   input aclk;
+  input aclk1;
   input aresetn;
 
   wire [48:0]M00_AXI_araddr;
@@ -212,6 +214,7 @@ module bd_4dc9_wrapper
   wire [1:0]S01_AXI_rresp;
   wire S01_AXI_rvalid;
   wire aclk;
+  wire aclk1;
   wire aresetn;
 
   bd_4dc9 bd_4dc9_i
@@ -282,5 +285,6 @@ module bd_4dc9_wrapper
         .S01_AXI_rresp(S01_AXI_rresp),
         .S01_AXI_rvalid(S01_AXI_rvalid),
         .aclk(aclk),
+        .aclk1(aclk1),
         .aresetn(aresetn));
 endmodule
