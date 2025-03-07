@@ -8,13 +8,6 @@
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PGENDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -51,11 +44,11 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_usp_rf_data_converter_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_DUT_receiver_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_dma_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_DUT_receiver_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_usp_rf_data_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps8_0_96M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_dma_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_DUT_data_in_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
 </GenRun>

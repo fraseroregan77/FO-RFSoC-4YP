@@ -48,8 +48,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../RFX_files/mod_enable/netlist/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../RFX_files/demod_enable/netlist/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../RFX_files/16_bit_modulate"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../RFX_files/demod_16_bit"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -92,7 +92,7 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/bd/pls_work/pls_work.bd">
+      <File Path="$PSRCDIR/sources_1/bd/twobytwo/twobytwo.bd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

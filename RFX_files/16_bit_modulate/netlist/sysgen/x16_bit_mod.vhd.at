@@ -1,43 +1,43 @@
 {
   'Line_135' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz/addsub',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz/addsub',
     'Instance' => 'addsub',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz/AddSub'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz/AddSub'
   },
   'Line_144' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz/addsub1',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz/addsub1',
     'Instance' => 'addsub1',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz/AddSub1'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz/AddSub1'
   },
   'Line_153' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz/convert',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz/convert',
     'Instance' => 'convert',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz/Convert'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz/Convert'
   },
   'Line_174' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz/lfsr',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz/lfsr',
     'Instance' => 'lfsr',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz/LFSR'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz/LFSR'
   },
   'Line_181' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz/rom',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz/rom',
     'Instance' => 'rom',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz/ROM'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz/ROM'
   },
   'Line_199' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz/register_x0',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz/register_x0',
     'Instance' => 'register_x0',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz/Register'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz/Register'
   },
   'Line_261' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz',
-    'Instance' => 'x125khz',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz'
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz',
+    'Instance' => 'x100mhz',
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz'
   },
   'Line_268' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x500mhz',
-    'Instance' => 'x500mhz',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/500MHz'
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100khz',
+    'Instance' => 'x100khz',
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100kHz'
   },
   'Line_275' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant_x0',
@@ -55,9 +55,9 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant2'
   },
   'Line_29' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz/addsub',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz/addsub',
     'Instance' => 'addsub',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz/AddSub'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz/AddSub'
   },
   'Line_296' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant5',
@@ -85,9 +85,9 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Mult'
   },
   'Line_38' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz/addsub1',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz/addsub1',
     'Instance' => 'addsub1',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz/AddSub1'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz/AddSub1'
   },
   'Line_391' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/mux',
@@ -110,9 +110,9 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Master FIFO/Concat1'
   },
   'Line_47' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz/convert',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz/convert',
     'Instance' => 'convert',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz/Convert'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz/Convert'
   },
   'Line_477' => {
     'CodeInstance' => 'x16_bit_mod_struct/master_fifo/fifo',
@@ -175,9 +175,9 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Slave FIFO/tlast_slice'
   },
   'Line_68' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz/lfsr',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz/lfsr',
     'Instance' => 'lfsr',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz/LFSR'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz/LFSR'
   },
   'Line_723' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm',
@@ -195,9 +195,9 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Slave FIFO'
   },
   'Line_75' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz/rom',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz/rom',
     'Instance' => 'rom',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz/ROM'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz/ROM'
   },
   'Line_778' => {
     'CodeInstance' => 'x16_bit_mod_default_clock_driver/clockdriver',
@@ -215,8 +215,8 @@
     'SimulinkInstance' => '16_bit_mod'
   },
   'Line_93' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x125khz/register_x0',
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/x100mhz/register_x0',
     'Instance' => 'register_x0',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/125kHz/Register'
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/100MHz/Register'
   }
 }

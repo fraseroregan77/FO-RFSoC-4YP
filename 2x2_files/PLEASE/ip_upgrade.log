@@ -1,6 +1,162 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Mar  7 21:37:33 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_DUT_rec_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PYNQ_Design_DUT_rec_0_0 (User_Company:VMC:DUT_rec:1.0 (Rev. 372288647)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Mar  7 21:37:33 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_DUT_data_in_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PYNQ_Design_DUT_data_in_0_0 (User_Company:VMC:DUT_data_in:1.0) from (Rev. 372192693) to (Rev. 372288366)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Mar  7 21:36:46 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_DUT_rec_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PYNQ_Design_DUT_rec_0_0 (User_Company:VMC:DUT_rec:1.0) from (Rev. 372192586) to (Rev. 372288647)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Mar  7 21:36:45 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'DUT_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of DUT_2 (User_Company:VMC:DUT:1.0) from (Rev. 372192586) to (Rev. 372288366)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'DUT_2'. These changes may impact your design.
+
+
+-Upgraded port 's_axis_tdata' width 1 differs from original width 16
+
+-Upgrade has removed port 'step_size'
+
+-Upgrade has added port 'mux_en'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Mar  7 21:36:45 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'DUT_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of DUT_1 (User_Company:VMC:DUT:1.0) from (Rev. 372192076) to (Rev. 372288366)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Mar  7 21:36:45 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'DUT_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of DUT_0 (User_Company:VMC:DUT:1.0) from (Rev. 372191676) to (Rev. 372288366)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'DUT_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axis_tdata' width 1 differs from original width 16
+
+-Upgrade has removed port 'step_size'
+
+-Upgrade has added port 'mux_en'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
 | Date         : Thu Mar  6 18:58:59 2025
 | Host         : EEE-R446-02 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
