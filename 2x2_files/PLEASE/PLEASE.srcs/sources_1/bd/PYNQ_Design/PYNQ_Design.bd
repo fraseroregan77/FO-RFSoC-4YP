@@ -7,8 +7,7 @@
       "name": "PYNQ_Design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.1",
-      "validated": "true"
+      "tool_version": "2024.1"
     },
     "design_tree": {
       "DUT_data_in_0": "",
@@ -132,7 +131,7 @@
     "components": {
       "DUT_data_in_0": {
         "vlnv": "User_Company:VMC:DUT_data_in:1.0",
-        "ip_revision": "372192693",
+        "ip_revision": "372288366",
         "xci_name": "PYNQ_Design_DUT_data_in_0_0",
         "xci_path": "ip\\PYNQ_Design_DUT_data_in_0_0\\PYNQ_Design_DUT_data_in_0_0.xci",
         "inst_hier_path": "DUT_data_in_0"
@@ -332,7 +331,7 @@
       },
       "DUT_rec_0": {
         "vlnv": "User_Company:VMC:DUT_rec:1.0",
-        "ip_revision": "372192586",
+        "ip_revision": "372288647",
         "xci_name": "PYNQ_Design_DUT_rec_0_0",
         "xci_path": "ip\\PYNQ_Design_DUT_rec_0_0\\PYNQ_Design_DUT_rec_0_0.xci",
         "inst_hier_path": "DUT_rec_0"
@@ -1213,18 +1212,18 @@
           "clk_wiz_0/clk_out1",
           "proc_sys_reset_0/slowest_sync_clk",
           "usp_rf_data_converter_0/m0_axis_aclk",
-          "DUT_rec_0/clk",
           "axi_dma/m_axi_s2mm_aclk",
           "zynq_ultra_ps_e_0/maxihpm0_lpd_aclk",
           "zynq_ultra_ps_e_0/saxihpc0_fpd_aclk",
           "ps8_0_axi_periph/S00_ACLK",
           "system_ila_0/clk",
           "axi_dma/m_axi_mm2s_aclk",
-          "DUT_data_in_0/clk",
           "proc_sys_reset_1/slowest_sync_clk",
           "usp_rf_data_converter_0/s0_axis_aclk",
           "axi_smc/aclk1",
-          "axi_smc/aclk"
+          "axi_smc/aclk",
+          "DUT_data_in_0/clk",
+          "DUT_rec_0/clk"
         ]
       },
       "clk_wiz_0_locked": {

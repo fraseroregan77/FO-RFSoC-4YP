@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: User_Company:VMC:DUT:1.0
-// IP Revision: 372192586
+// IP Revision: 372288366
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -56,10 +56,10 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 DUT_2 your_instance_name (
   .s_axis_tvalid(s_axis_tvalid),  // input wire [0 : 0] s_axis_tvalid
-  .s_axis_tdata(s_axis_tdata),    // input wire [15 : 0] s_axis_tdata
+  .s_axis_tdata(s_axis_tdata),    // input wire [0 : 0] s_axis_tdata
   .s_axis_tlast(s_axis_tlast),    // input wire [0 : 0] s_axis_tlast
   .m_axis_tready(m_axis_tready),  // input wire [0 : 0] m_axis_tready
-  .step_size(step_size),          // input wire [15 : 0] step_size
+  .mux_en(mux_en),                // input wire [0 : 0] mux_en
   .clk(clk),                      // input wire clk
   .m_axis_tvalid(m_axis_tvalid),  // output wire [0 : 0] m_axis_tvalid
   .m_axis_tdata(m_axis_tdata),    // output wire [15 : 0] m_axis_tdata

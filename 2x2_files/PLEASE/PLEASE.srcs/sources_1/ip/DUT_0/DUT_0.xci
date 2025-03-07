@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "DUT_0",
     "component_reference": "User_Company:VMC:DUT:1.0",
-    "ip_revision": "372191676",
+    "ip_revision": "372288366",
     "gen_directory": "../../../../PLEASE.gen/sources_1/ip/DUT_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "372191676" } ],
+        "IPREVISION": [ { "value": "372288366" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../PLEASE.gen/sources_1/ip/DUT_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -37,10 +37,10 @@
     "boundary": {
       "ports": {
         "s_axis_tvalid": [ { "direction": "in", "size_left": "0", "size_right": "0" } ],
-        "s_axis_tdata": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
+        "s_axis_tdata": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "s_axis_tlast": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "m_axis_tready": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "1" } ],
-        "step_size": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "mux_en": [ { "direction": "in", "size_left": "0", "size_right": "0" } ],
         "clk": [ { "direction": "in" } ],
         "m_axis_tvalid": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "m_axis_tdata": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
@@ -53,15 +53,15 @@
           "abstraction_type": "xilinx.com:interface:axis_rtl:1.0",
           "mode": "master",
           "parameters": {
-            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "resolve_type": "generated", "usage": "all" } ],
-            "TDATA_NUM_BYTES": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TDEST_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TID_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TUSER_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TREADY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TSTRB": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TKEEP": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TLAST": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "value_src": "constant", "resolve_type": "generated", "usage": "all" } ],
+            "TDATA_NUM_BYTES": [ { "value": "2", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "TDEST_WIDTH": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "TID_WIDTH": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "TUSER_WIDTH": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TREADY": [ { "value": "1", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TSTRB": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TKEEP": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TLAST": [ { "value": "1", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -79,15 +79,15 @@
           "abstraction_type": "xilinx.com:interface:axis_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "resolve_type": "generated", "usage": "all" } ],
-            "TDATA_NUM_BYTES": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TDEST_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TID_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TUSER_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TREADY": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TSTRB": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TKEEP": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TLAST": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "value_src": "constant", "resolve_type": "generated", "usage": "all" } ],
+            "TDATA_NUM_BYTES": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "TDEST_WIDTH": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "TID_WIDTH": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "TUSER_WIDTH": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TREADY": [ { "value": "1", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TSTRB": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TKEEP": [ { "value": "0", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "HAS_TLAST": [ { "value": "1", "value_src": "constant", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -118,15 +118,15 @@
             "CLK": [ { "physical_name": "clk" } ]
           }
         },
-        "step_size": {
+        "mux_en": {
           "vlnv": "xilinx.com:signal:data:1.0",
           "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}", "value_src": "constant", "usage": "all" } ]
+            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "value_src": "constant", "usage": "all" } ]
           },
           "port_maps": {
-            "DATA": [ { "physical_name": "step_size" } ]
+            "DATA": [ { "physical_name": "mux_en" } ]
           }
         }
       }

@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: User_Company:VMC:DUT:1.0
-// IP Revision: 372192076
+// IP Revision: 372288366
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

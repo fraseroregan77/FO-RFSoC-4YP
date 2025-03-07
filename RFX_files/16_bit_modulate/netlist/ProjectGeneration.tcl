@@ -12,7 +12,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set DSPFamily {zynquplus}
 	set DSPPackage {ffve1156}
 	set DSPSpeed {-2-e}
-	set FPGAClockPeriod 10
+	set FPGAClockPeriod 3.003
 	set GenerateTestBench 0
 	set HDLLanguage {vhdl}
 	set IPOOCCacheRootPath {C:/Users/clb20123/AppData/Local/Xilinx/Sysgen/SysgenVivado/win64.o/ip}
@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {DUT}
-	set IP_Revision {372192693}
+	set IP_Revision {372288366}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {User Company}
@@ -49,14 +49,14 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{x16_bit_mod_clock.xdc}}
 		{{x16_bit_mod.xdc}}
 	}
-	set SimPeriod 4.88281e-10
-	set SimTime 4.88281e-05
-	set SimulationTime {1000210.00000000 ns}
+	set SimPeriod 3.003e-09
+	set SimTime 0.0003003
+	set SimulationTime {300503.00300000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
 	set TargetDir {C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist}
 	set TopLevelModule {x16_bit_mod}
-	set TopLevelSimulinkHandle 138.001
+	set TopLevelSimulinkHandle 2.00012
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface mux_en Name {mux_en}

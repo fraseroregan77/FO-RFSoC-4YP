@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 -- IP VLNV: User_Company:VMC:DUT:1.0
--- IP Revision: 372192586
+-- IP Revision: 372288366
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -54,10 +54,10 @@
 COMPONENT DUT_2
   PORT (
     s_axis_tvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    s_axis_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    s_axis_tdata : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     s_axis_tlast : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     m_axis_tready : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    step_size : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    mux_en : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     clk : IN STD_LOGIC;
     m_axis_tvalid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     m_axis_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -77,7 +77,7 @@ your_instance_name : DUT_2
     s_axis_tdata => s_axis_tdata,
     s_axis_tlast => s_axis_tlast,
     m_axis_tready => m_axis_tready,
-    step_size => step_size,
+    mux_en => mux_en,
     clk => clk,
     m_axis_tvalid => m_axis_tvalid,
     m_axis_tdata => m_axis_tdata,
