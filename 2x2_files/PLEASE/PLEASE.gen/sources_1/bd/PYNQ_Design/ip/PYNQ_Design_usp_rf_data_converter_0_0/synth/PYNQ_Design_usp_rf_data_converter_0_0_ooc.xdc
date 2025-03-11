@@ -62,11 +62,11 @@
 # Set AXI-Lite Clock to 100.0MHz
 create_clock -period 10.000 -name PYNQ_Design_usp_rf_data_converter_0_0_axi_aclk [get_ports s_axi_aclk]
 
-# ADC Reference Clock for Tile 0 running at 409.600 MHz
-create_clock -period 2.441 -name PYNQ_Design_usp_rf_data_converter_0_0_adc0_clk [get_ports adc0_clk_p]
+# ADC Reference Clock for Tile 0 running at 204.800 MHz
+create_clock -period 4.883 -name PYNQ_Design_usp_rf_data_converter_0_0_adc0_clk [get_ports adc0_clk_p]
 
-# DAC Reference Clock for Tile 0 running at 409.600 MHz
-create_clock -period 2.441 -name PYNQ_Design_usp_rf_data_converter_0_0_dac0_clk [get_ports dac0_clk_p]
+# DAC Reference Clock for Tile 0 running at 204.800 MHz
+create_clock -period 4.883 -name PYNQ_Design_usp_rf_data_converter_0_0_dac0_clk [get_ports dac0_clk_p]
 
 
 #AXI Streaming Clock for ADC0
