@@ -20,17 +20,4 @@ plot(fgrid,Xabs);
 ylim([0 1e7])
 
 %%
-% Parameters
-fs = 100e6;       % Sampling frequency (333 MHz)
-fc = 500e6;       % Carrier frequency (500 MHz)
-fm = 100e3;       % Message frequency (100 kHz)
 
-% Time vector
-t = 0:1/fs:10000/fs;  % 10 cycles of message signal
-
-x = sin(2*pi*fm*t);
-y = sin(2*pi*fc*t);
-
-z = x.*y
-
-plot(t, z)
