@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Mar  7 20:13:08 2025
+# Process ID: 14308
+# Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2360 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
+# Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/vivado.log
+# Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE\vivado.jou
+# Running On        :EEE-R446-02
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16833 MB
+# Swap memory       :39507 MB
+# Total Virtual     :56341 MB
+# Available Virtual :42842 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
