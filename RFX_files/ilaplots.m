@@ -2,9 +2,9 @@ data = csvread("iladata.csv", 2);
 
 figure;
 plot(data(:, 1), data(:, 6), LineWidth=1.5);
-xlabel("\textbf{}", 'Interpreter','latex')
-ylabel("\textbf{}", 'Interpreter','latex')
-title("\textbf{}", 'Interpreter','latex')
+xlabel("\textbf{Number of Samples}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+title("\textbf{ILA Signal (m\_axis\_tdata)}", 'Interpreter','latex')
 xlim([0 750]);
 
 fs = 333e6;
@@ -17,7 +17,11 @@ fgrid = fgrid(1:floor(N/4));
 
 figure;
 plot(fgrid,Xabs);
+xlabel("\textbf{Frequency (Hz)}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+title("\textbf{FFT of ILA Signal (m\_axis\_tdata)}", 'Interpreter','latex')
 ylim([0 1e7])
+xlim([0 7e7])
 
 %%
 
