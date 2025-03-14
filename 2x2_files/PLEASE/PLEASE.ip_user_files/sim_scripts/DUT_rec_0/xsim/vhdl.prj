@@ -1,0 +1,21 @@
+vhdl xil_defaultlib  \
+"../../../../PLEASE.gen/sources_1/ip/DUT_rec_0/x16_bit_demod_fir_compiler_v7_2_i0/sim/x16_bit_demod_fir_compiler_v7_2_i0.vhd" \
+"../../../../PLEASE.gen/sources_1/ip/DUT_rec_0/x16_bit_demod_mult_gen_v12_0_i0/sim/x16_bit_demod_mult_gen_v12_0_i0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../ipstatic/xil_defaultlib/hdl/conv_pkg.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/synth_reg.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/synth_reg_w_init.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/srl17e.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/srl33e.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/synth_reg_reg.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/single_reg_w_init.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/xlclockdriver_rd.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/x16_bit_demod_entity_declarations.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../ipstatic/xil_defaultlib/hdl/x16_bit_demod.vhd" \
+"../../../../PLEASE.gen/sources_1/ip/DUT_rec_0/sim/DUT_rec_0.vhd" \
+
+# Do not sort compile order
+nosort

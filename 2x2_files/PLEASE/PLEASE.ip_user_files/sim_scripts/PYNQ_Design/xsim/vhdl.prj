@@ -25,13 +25,18 @@ vhdl xil_defaultlib  \
 "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/0ce8/hdl/x16_bit_demod.vhd" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/sim/PYNQ_Design_DUT_rec_0_0.vhd" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/sim/PYNQ_Design_axi_dma_1.vhd" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/sim/bd_4dc9_psr_aclk_0.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/sim/bd_4dc9_psr0_0.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_2/sim/bd_4dc9_psr_aclk_0.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_3/sim/bd_4dc9_psr_aclk1_0.vhd" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/sim/PYNQ_Design_rst_ps8_0_96M_1.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0/sim/PYNQ_Design_proc_sys_reset_0_0.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/sim/PYNQ_Design_proc_sys_reset_1_0.vhd" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/sim/bd_5ea3.vhd" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/sim/bd_5ea3_ila_lib_0.vhd" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/sim/PYNQ_Design_system_ila_0_0.vhd" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0/sim/PYNQ_Design_proc_sys_reset_0_0.vhd" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/sim/PYNQ_Design_proc_sys_reset_1_0.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/sim/bd_9ef2.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_0/sim/bd_9ef2_ila_lib_0.vhd" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/sim/PYNQ_Design_system_ila_1_0.vhd" \
 "../../../bd/PYNQ_Design/sim/PYNQ_Design.vhd" \
 
 # Do not sort compile order

@@ -145,6 +145,21 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_xbar_1 || ORIG_REF_NAME==PYNQ_Design_xbar_1} -quiet] -quiet
 
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_0 || ORIG_REF_NAME==PYNQ_Design_auto_pc_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_1 || ORIG_REF_NAME==PYNQ_Design_auto_ds_1} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_1 || ORIG_REF_NAME==PYNQ_Design_auto_pc_1} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] -quiet
+
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_ps8_0_axi_periph_1/PYNQ_Design_ps8_0_axi_periph_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_ps8_0_axi_periph_1 || ORIG_REF_NAME==PYNQ_Design_ps8_0_axi_periph_1} -quiet] -quiet
 
@@ -156,12 +171,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design
 
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/PYNQ_Design_proc_sys_reset_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_proc_sys_reset_1_0 || ORIG_REF_NAME==PYNQ_Design_proc_sys_reset_1_0} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_0 || ORIG_REF_NAME==PYNQ_Design_auto_pc_0} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] -quiet
 
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_system_ila_0_0 || ORIG_REF_NAME==PYNQ_Design_system_ila_0_0} -quiet] -quiet
@@ -322,6 +331,25 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_rst_ps8_0_96M_1 || ORIG_REF_NAME==PYNQ_Design_rst_ps8_0_96M_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_1 || ORIG_REF_NAME==PYNQ_Design_auto_ds_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_ooc.xdc
+
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_clk_wiz_0_0 || ORIG_REF_NAME==PYNQ_Design_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
@@ -341,13 +369,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/PYNQ_Design_proc_sys_reset_1_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_proc_sys_reset_1_0 || ORIG_REF_NAME==PYNQ_Design_proc_sys_reset_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_ooc.xdc
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_5ea3_ila_lib_0 || ORIG_REF_NAME==bd_5ea3_ila_lib_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet

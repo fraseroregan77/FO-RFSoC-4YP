@@ -56,7 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 1
+set_param chipscope.maxJobs 1
+set_param bd.open.in_stealth_mode 3
+set_param ced.repoPaths C:/Users/clb20123/Documents/Vivado/board_files
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu28dr-ffvg1517-2-e
 
@@ -69,6 +71,8 @@ set_property parent.project_path C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_fi
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property board_part_repo_paths {C:/Users/clb20123/Documents/Vivado/board_files} [current_project]
+set_property board_part xilinx.com:rfsoc2x2:part0:1.1 [current_project]
 set_property ip_repo_paths {
   c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip
   c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip
@@ -132,6 +136,17 @@ set_property used_in_implementation false [get_files -all c:/Users/clb20123/Docu
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0_ooc.xdc]
@@ -139,10 +154,6 @@ set_property used_in_implementation false [get_files -all c:/Users/clb20123/Docu
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0/PYNQ_Design_proc_sys_reset_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/PYNQ_Design_proc_sys_reset_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_1_0/PYNQ_Design_proc_sys_reset_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]

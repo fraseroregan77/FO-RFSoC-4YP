@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../PLEASE.gen/sources_1/ip/DUT_rec_0/x16_bit_demod_fifo_generator_i0/sim/x16_bit_demod_fifo_generator_i0.v" \
+"../../../../PLEASE.gen/sources_1/ip/DUT_rec_0/x16_bit_demod_fifo_generator_i1/sim/x16_bit_demod_fifo_generator_i1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
