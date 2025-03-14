@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Mar 11 15:27:41 2025
-| Host         : EEE-R446-35 running 64-bit major release  (build 9200)
+| Date         : Fri Mar 14 15:01:21 2025
+| Host         : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file PYNQ_Design_wrapper_utilization_synth.rpt -pb PYNQ_Design_wrapper_utilization_synth.pb
 | Design       : PYNQ_Design_wrapper
 | Device       : xczu28dr-ffvg1517-2-e
@@ -32,16 +32,16 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 12872 |     0 |          0 |    425280 |  3.03 |
-|   LUT as Logic             |  9741 |     0 |          0 |    425280 |  2.29 |
-|   LUT as Memory            |  3131 |     0 |          0 |    213600 |  1.47 |
-|     LUT as Distributed RAM |   590 |     0 |            |           |       |
-|     LUT as Shift Register  |  2541 |     0 |            |           |       |
-| CLB Registers              | 17573 |     0 |          0 |    850560 |  2.07 |
-|   Register as Flip Flop    | 17573 |     0 |          0 |    850560 |  2.07 |
+| CLB LUTs*                  | 15019 |     0 |          0 |    425280 |  3.53 |
+|   LUT as Logic             | 11795 |     0 |          0 |    425280 |  2.77 |
+|   LUT as Memory            |  3224 |     0 |          0 |    213600 |  1.51 |
+|     LUT as Distributed RAM |   670 |     0 |            |           |       |
+|     LUT as Shift Register  |  2554 |     0 |            |           |       |
+| CLB Registers              | 19570 |     0 |          0 |    850560 |  2.30 |
+|   Register as Flip Flop    | 19570 |     0 |          0 |    850560 |  2.30 |
 |   Register as Latch        |     0 |     0 |          0 |    850560 |  0.00 |
-| CARRY8                     |   121 |     0 |          0 |     53160 |  0.23 |
-| F7 Muxes                   |    80 |     0 |          0 |    212640 |  0.04 |
+| CARRY8                     |   137 |     0 |          0 |     53160 |  0.26 |
+| F7 Muxes                   |    84 |     0 |          0 |    212640 |  0.04 |
 | F8 Muxes                   |     0 |     0 |          0 |    106320 |  0.00 |
 | F9 Muxes                   |     0 |     0 |          0 |     53160 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
@@ -62,10 +62,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
-| 81    |          Yes |           - |        Reset |
-| 558   |          Yes |         Set |            - |
-| 16934 |          Yes |       Reset |            - |
+| 66    |          Yes |           - |          Set |
+| 219   |          Yes |           - |        Reset |
+| 585   |          Yes |         Set |            - |
+| 18700 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -114,7 +114,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCE     |    1 |     0 |          0 |       216 |  0.46 |
+| BUFGCE     |    2 |     0 |          0 |       216 |  0.93 |
 | BUFGCE_DIV |    0 |     0 |          0 |        32 |  0.00 |
 | BUFG_GT    |    2 |     0 |          0 |       312 |  0.64 |
 | BUFG_PS    |    1 |     0 |          0 |        72 |  1.39 |
@@ -168,21 +168,22 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +--------------+-------+---------------------+
 |   Ref Name   |  Used | Functional Category |
 +--------------+-------+---------------------+
-| FDRE         | 16934 |            Register |
-| LUT6         |  3714 |                 CLB |
-| LUT3         |  2261 |                 CLB |
-| LUT5         |  1973 |                 CLB |
-| LUT4         |  1915 |                 CLB |
-| SRL16E       |  1621 |                 CLB |
-| LUT2         |  1533 |                 CLB |
-| SRLC32E      |  1068 |                 CLB |
-| RAMD32       |  1030 |                 CLB |
-| LUT1         |   681 |                 CLB |
-| FDSE         |   558 |            Register |
-| RAMS32       |   148 |                 CLB |
-| CARRY8       |   121 |                 CLB |
-| FDCE         |    81 |            Register |
-| MUXF7        |    80 |                 CLB |
+| FDRE         | 18700 |            Register |
+| LUT6         |  4692 |                 CLB |
+| LUT5         |  2576 |                 CLB |
+| LUT3         |  2559 |                 CLB |
+| LUT4         |  2151 |                 CLB |
+| LUT2         |  1719 |                 CLB |
+| SRL16E       |  1615 |                 CLB |
+| RAMD32       |  1162 |                 CLB |
+| SRLC32E      |  1087 |                 CLB |
+| LUT1         |   789 |                 CLB |
+| FDSE         |   585 |            Register |
+| FDCE         |   219 |            Register |
+| RAMS32       |   168 |                 CLB |
+| CARRY8       |   137 |                 CLB |
+| MUXF7        |    84 |                 CLB |
+| FDPE         |    66 |            Register |
 | DSP48E2      |    53 |          Arithmetic |
 | RAMB36E2     |    15 |            BLOCKRAM |
 | RAMB18E2     |    12 |            BLOCKRAM |
@@ -191,10 +192,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | HSDAC        |     2 |            Advanced |
 | BUFG_GT_SYNC |     2 |               Clock |
 | BUFG_GT      |     2 |               Clock |
+| BUFGCE       |     2 |               Clock |
 | PS8          |     1 |            Advanced |
 | MMCME4_ADV   |     1 |               Clock |
 | BUFG_PS      |     1 |               Clock |
-| BUFGCE       |     1 |               Clock |
 +--------------+-------+---------------------+
 
 

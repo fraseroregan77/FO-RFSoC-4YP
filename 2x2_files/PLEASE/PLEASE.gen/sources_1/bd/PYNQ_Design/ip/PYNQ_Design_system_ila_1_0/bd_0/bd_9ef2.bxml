@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="bd_9ef2" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1741706438"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1741706438"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1741706438"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1741706438"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1741968323"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1741968323"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1741968313"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1741968313"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\bd_9ef2.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -14,6 +14,12 @@
         <ProcessingOrder Val="NORMAL"/>
       </File>
       <File Name="sim\bd_9ef2.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\bd_9ef2.protoinst">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
@@ -37,12 +43,6 @@
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
-        <ProcessingOrder Val="NORMAL"/>
-      </File>
-      <File Name="sim\bd_9ef2.protoinst">
-        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
     </FileCollection>

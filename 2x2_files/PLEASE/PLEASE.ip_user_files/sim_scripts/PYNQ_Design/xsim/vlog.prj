@@ -1,23 +1,23 @@
-verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/x16_bit_mod_fifo_generator_i0/sim/x16_bit_mod_fifo_generator_i0.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/x16_bit_mod_fifo_generator_i1/sim/x16_bit_mod_fifo_generator_i1.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/sim/PYNQ_Design_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v" \
 
-sv xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
+sv xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_top.sv" \
 
-verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm.v" \
 
-sv xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
+sv xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_device_rom.sv" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm.sv" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_tile_config.sv" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_constants_config.sv" \
 
-verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter_adc.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_register_decode.v" \
@@ -41,45 +41,50 @@ verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/includ
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_xlconstant_0_1/sim/PYNQ_Design_xlconstant_0_1.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fifo_generator_i0/sim/x16_bit_demod_fifo_generator_i0.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fifo_generator_i1/sim/x16_bit_demod_fifo_generator_i1.v" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/sim/bd_4dc9.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_0/sim/bd_4dc9_one_0.v" \
 
-sv xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_2/sim/bd_4dc9_arsw_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_3/sim/bd_4dc9_rsw_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_4/sim/bd_4dc9_awsw_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_5/sim/bd_4dc9_wsw_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_6/sim/bd_4dc9_bsw_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_7/sim/bd_4dc9_s00mmu_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_8/sim/bd_4dc9_s00tr_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_9/sim/bd_4dc9_s00sic_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_10/sim/bd_4dc9_s00a2s_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/sim/bd_4dc9_sawn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/sim/bd_4dc9_swn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/sim/bd_4dc9_sbn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_14/sim/bd_4dc9_s01mmu_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_15/sim/bd_4dc9_s01tr_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_16/sim/bd_4dc9_s01sic_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_17/sim/bd_4dc9_s01a2s_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_18/sim/bd_4dc9_sarn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_19/sim/bd_4dc9_srn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_20/sim/bd_4dc9_m00s2a_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/sim/bd_4dc9_m00arn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_22/sim/bd_4dc9_m00rn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/sim/bd_4dc9_m00awn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/sim/bd_4dc9_m00wn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/sim/bd_4dc9_m00bn_0.sv" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_26/sim/bd_4dc9_m00e_0.sv" \
+sv xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_4/sim/bd_4dc9_arsw_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_5/sim/bd_4dc9_rsw_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_6/sim/bd_4dc9_awsw_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_7/sim/bd_4dc9_wsw_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_8/sim/bd_4dc9_bsw_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_9/sim/bd_4dc9_s00mmu_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_10/sim/bd_4dc9_s00tr_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/sim/bd_4dc9_s00sic_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/sim/bd_4dc9_s00a2s_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/sim/bd_4dc9_sawn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_14/sim/bd_4dc9_swn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_15/sim/bd_4dc9_sbn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_16/sim/bd_4dc9_s01mmu_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_17/sim/bd_4dc9_s01tr_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_18/sim/bd_4dc9_s01sic_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_19/sim/bd_4dc9_s01a2s_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_20/sim/bd_4dc9_sarn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/sim/bd_4dc9_srn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_22/sim/bd_4dc9_m00s2a_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/sim/bd_4dc9_m00arn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/sim/bd_4dc9_m00rn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/sim/bd_4dc9_m00awn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_26/sim/bd_4dc9_m00wn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_27/sim/bd_4dc9_m00bn_0.sv" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_28/sim/bd_4dc9_m00e_0.sv" \
 
-verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" \
+verilog xil_defaultlib --include "D:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/ec67/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/a317/hdl" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/c783/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3242" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/814a/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1017/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog" --include "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/2340/hdl/verilog" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/sim/bd_4dc9.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/sim/PYNQ_Design_axi_smc_1.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/sim/PYNQ_Design_xbar_1.v" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_1/bd_5ea3_g_inst_0_gigantic_mux.v" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_1/sim/bd_5ea3_g_inst_0.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0.v" \
-"../../../bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/sim/PYNQ_Design_auto_cc_0.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_1/bd_5ea3_g_inst_0_gigantic_mux.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_1/sim/bd_5ea3_g_inst_0.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_1/bd_9ef2_g_inst_0_gigantic_mux.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_1/sim/bd_9ef2_g_inst_0.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/sim/PYNQ_Design_auto_ds_0.v" \
 "../../../bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/sim/PYNQ_Design_auto_pc_0.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/sim/PYNQ_Design_auto_ds_1.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/sim/PYNQ_Design_auto_pc_1.v" \
+"../../../bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/sim/PYNQ_Design_auto_cc_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

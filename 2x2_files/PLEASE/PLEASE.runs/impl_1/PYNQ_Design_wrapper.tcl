@@ -104,11 +104,14 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 5
-  set_param bd.open.in_stealth_mode 1
-  set_param runs.launchOptions { -jobs 14  }
+  set_param chipscope.maxJobs 1
+  set_param bd.open.in_stealth_mode 3
+  set_param ced.repoPaths C:/Users/clb20123/Documents/Vivado/board_files
+  set_param runs.launchOptions { -jobs 4  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu28dr-ffvg1517-2-e
+  set_property board_part_repo_paths {C:/Users/clb20123/Documents/Vivado/board_files} [current_project]
+  set_property board_part xilinx.com:rfsoc2x2:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }

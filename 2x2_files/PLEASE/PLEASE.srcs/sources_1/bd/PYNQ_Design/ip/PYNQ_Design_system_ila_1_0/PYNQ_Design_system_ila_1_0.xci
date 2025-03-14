@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "PYNQ_Design_system_ila_1_0",
-    "cell_name": "system_ila_1",
+    "cell_name": "RX/system_ila_1",
     "component_reference": "xilinx.com:ip:system_ila:1.1",
     "ip_revision": "17",
     "gen_directory": "../../../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0",

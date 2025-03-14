@@ -7,7 +7,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_4dc9,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_4dc9,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=35,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=None}" *) (* HW_HANDOFF = "PYNQ_Design_axi_smc_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_4dc9,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_4dc9,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=37,numReposBlks=29,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=None}" *) (* HW_HANDOFF = "PYNQ_Design_axi_smc_1.hwdef" *) 
 module bd_4dc9
    (M00_AXI_araddr,
     M00_AXI_arburst,
@@ -78,7 +78,7 @@ module bd_4dc9
     aclk,
     aclk1,
     aresetn);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, ADDR_WIDTH 49, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, DATA_WIDTH 128, FREQ_HZ 128000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [48:0]M00_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, ADDR_WIDTH 49, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0, DATA_WIDTH 128, FREQ_HZ 128000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 16, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [48:0]M00_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARBURST" *) output [1:0]M00_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARCACHE" *) output [3:0]M00_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARLEN" *) output [7:0]M00_AXI_arlen;
@@ -129,7 +129,7 @@ module bd_4dc9
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WREADY" *) output S00_AXI_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WSTRB" *) input [3:0]S00_AXI_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI WVALID" *) input S00_AXI_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S01_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, DATA_WIDTH 128, FREQ_HZ 128000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S01_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S01_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0, DATA_WIDTH 128, FREQ_HZ 128000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 256, NUM_READ_OUTSTANDING 16, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S01_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI ARBURST" *) input [1:0]S01_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI ARCACHE" *) input [3:0]S01_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI ARLEN" *) input [7:0]S01_AXI_arlen;
@@ -144,8 +144,8 @@ module bd_4dc9
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI RREADY" *) input S01_AXI_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI RRESP" *) output [1:0]S01_AXI_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI RVALID" *) output S01_AXI_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF M00_AXI:S00_AXI:S01_AXI, ASSOCIATED_CLKEN m_sc_aclken, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK1 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK1, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input aclk1;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_CLKEN m_sc_aclken, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK1 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK1, ASSOCIATED_BUSIF M00_AXI:S01_AXI, ASSOCIATED_CLKEN s_sc_aclken, CLK_DOMAIN PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input aclk1;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aresetn;
 
   wire [31:0]S00_AXI_1_AWADDR;
@@ -978,30 +978,48 @@ module clk_map_imp_31BE3G
   output swbd_aclk;
   output [0:0]swbd_aresetn;
 
+  wire clk_map_aclk1_net;
   wire clk_map_aclk_net;
   wire clk_map_aresetn_net;
   wire [0:0]one_dout;
+  wire [0:0]psr0_interconnect_aresetn;
+  wire [0:0]psr_aclk1_interconnect_aresetn;
   wire [0:0]psr_aclk_interconnect_aresetn;
 
-  assign M00_ACLK = clk_map_aclk_net;
-  assign M00_ARESETN[0] = psr_aclk_interconnect_aresetn;
+  assign M00_ACLK = clk_map_aclk1_net;
+  assign M00_ARESETN[0] = psr_aclk1_interconnect_aresetn;
   assign S00_ACLK = clk_map_aclk_net;
   assign S00_ARESETN[0] = psr_aclk_interconnect_aresetn;
-  assign S01_ACLK = clk_map_aclk_net;
-  assign S01_ARESETN[0] = psr_aclk_interconnect_aresetn;
+  assign S01_ACLK = clk_map_aclk1_net;
+  assign S01_ARESETN[0] = psr_aclk1_interconnect_aresetn;
+  assign clk_map_aclk1_net = aclk1;
   assign clk_map_aclk_net = aclk;
   assign clk_map_aresetn_net = aresetn;
   assign swbd_aclk = clk_map_aclk_net;
   assign swbd_aresetn[0] = psr_aclk_interconnect_aresetn;
   bd_4dc9_one_0 one
        (.dout(one_dout));
-  bd_4dc9_psr_aclk_0 psr_aclk
+  bd_4dc9_psr0_0 psr0
        (.aux_reset_in(clk_map_aresetn_net),
         .dcm_locked(1'b1),
         .ext_reset_in(one_dout),
+        .interconnect_aresetn(psr0_interconnect_aresetn),
+        .mb_debug_sys_rst(1'b0),
+        .slowest_sync_clk(clk_map_aclk1_net));
+  bd_4dc9_psr_aclk_0 psr_aclk
+       (.aux_reset_in(clk_map_aresetn_net),
+        .dcm_locked(1'b1),
+        .ext_reset_in(psr0_interconnect_aresetn),
         .interconnect_aresetn(psr_aclk_interconnect_aresetn),
         .mb_debug_sys_rst(1'b0),
         .slowest_sync_clk(clk_map_aclk_net));
+  bd_4dc9_psr_aclk1_0 psr_aclk1
+       (.aux_reset_in(clk_map_aresetn_net),
+        .dcm_locked(1'b1),
+        .ext_reset_in(psr0_interconnect_aresetn),
+        .interconnect_aresetn(psr_aclk1_interconnect_aresetn),
+        .mb_debug_sys_rst(1'b0),
+        .slowest_sync_clk(clk_map_aclk1_net));
 endmodule
 
 module m00_exit_pipeline_imp_1V8YHTZ

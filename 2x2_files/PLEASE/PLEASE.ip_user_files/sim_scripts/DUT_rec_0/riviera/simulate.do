@@ -1,0 +1,14 @@
+transcript off
+onbreak {quit -force}
+onerror {quit -force}
+transcript on
+
+asim +access +r +m+DUT_rec_0  -L xilinx_vip -L xpm -L fifo_generator_v13_2_10 -L xil_defaultlib -L xbip_utils_v3_0_13 -L axi_utils_v2_0_9 -L fir_compiler_v7_2_22 -L xbip_pipe_v3_0_9 -L xbip_bram18k_v3_0_9 -L mult_gen_v12_0_21 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.DUT_rec_0 xil_defaultlib.glbl
+
+do {DUT_rec_0.udo}
+
+run 1000ns
+
+endsim
+
+quit -force

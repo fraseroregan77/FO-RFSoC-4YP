@@ -2040,7 +2040,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      dac0_ref_clk_freq <= 32'd409600;
+      dac0_ref_clk_freq <= 32'd204800;
     end
     else if (bank1_write[192])
     begin
@@ -2430,7 +2430,7 @@ module PYNQ_Design_usp_rf_data_converter_0_0_block (
   always @(posedge Bus2IP_Clk)
     if (~Bus2IP_Resetn)
     begin
-      adc0_ref_clk_freq <= 32'd409600;
+      adc0_ref_clk_freq <= 32'd204800;
     end
     else if (bank9_write[192])
     begin
