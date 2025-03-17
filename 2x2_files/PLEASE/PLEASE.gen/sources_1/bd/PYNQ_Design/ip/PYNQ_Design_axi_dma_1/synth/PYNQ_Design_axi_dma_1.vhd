@@ -60,7 +60,6 @@ ENTITY PYNQ_Design_axi_dma_1 IS
   PORT (
     s_axi_lite_aclk : IN STD_LOGIC;
     m_axi_mm2s_aclk : IN STD_LOGIC;
-    m_axi_s2mm_aclk : IN STD_LOGIC;
     axi_resetn : IN STD_LOGIC;
     s_axi_lite_awvalid : IN STD_LOGIC;
     s_axi_lite_awready : OUT STD_LOGIC;
@@ -97,30 +96,7 @@ ENTITY PYNQ_Design_axi_dma_1 IS
     m_axis_mm2s_tvalid : OUT STD_LOGIC;
     m_axis_mm2s_tready : IN STD_LOGIC;
     m_axis_mm2s_tlast : OUT STD_LOGIC;
-    m_axi_s2mm_awaddr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    m_axi_s2mm_awlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-    m_axi_s2mm_awsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    m_axi_s2mm_awburst : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-    m_axi_s2mm_awprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    m_axi_s2mm_awcache : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    m_axi_s2mm_awvalid : OUT STD_LOGIC;
-    m_axi_s2mm_awready : IN STD_LOGIC;
-    m_axi_s2mm_wdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    m_axi_s2mm_wstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    m_axi_s2mm_wlast : OUT STD_LOGIC;
-    m_axi_s2mm_wvalid : OUT STD_LOGIC;
-    m_axi_s2mm_wready : IN STD_LOGIC;
-    m_axi_s2mm_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-    m_axi_s2mm_bvalid : IN STD_LOGIC;
-    m_axi_s2mm_bready : OUT STD_LOGIC;
-    s2mm_prmry_reset_out_n : OUT STD_LOGIC;
-    s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-    s_axis_s2mm_tvalid : IN STD_LOGIC;
-    s_axis_s2mm_tready : OUT STD_LOGIC;
-    s_axis_s2mm_tlast : IN STD_LOGIC;
     mm2s_introut : OUT STD_LOGIC;
-    s2mm_introut : OUT STD_LOGIC;
     axi_dma_tstvec : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END PYNQ_Design_axi_dma_1;
@@ -263,8 +239,8 @@ ARCHITECTURE PYNQ_Design_axi_dma_1_arch OF PYNQ_Design_axi_dma_1 IS
       m_axi_s2mm_bvalid : IN STD_LOGIC;
       m_axi_s2mm_bready : OUT STD_LOGIC;
       s2mm_prmry_reset_out_n : OUT STD_LOGIC;
-      s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-      s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s_axis_s2mm_tvalid : IN STD_LOGIC;
       s_axis_s2mm_tready : OUT STD_LOGIC;
       s_axis_s2mm_tlast : IN STD_LOGIC;
@@ -287,8 +263,8 @@ ARCHITECTURE PYNQ_Design_axi_dma_1_arch OF PYNQ_Design_axi_dma_1 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF PYNQ_Design_axi_dma_1_arch : ARCHITECTURE IS "PYNQ_Design_axi_dma_1,axi_dma,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF PYNQ_Design_axi_dma_1_arch: ARCHITECTURE IS "PYNQ_Design_axi_dma_1,axi_dma,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_dma,x_ipVersion=7.1,x_ipCoreRevision=32,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_LITE_ADDR_WIDTH=10,C_S_AXI_LITE_DATA_WIDTH=32,C_DLYTMR_RESOLUTION=125,C_PRMRY_IS_ACLK_ASYNC=1,C_ENABLE_MULTI_CHANNEL=0,C_NUM_MM2S_CHANNELS=1,C_NUM_S2MM_CHANNELS=1,C_INCLUDE_SG=0,C_SG_INCLUDE_STSCNTRL_STRM=0,C_SG_USE_STSAPP_LENGTH=0,C_SG_LENGTH_WIDTH=14,C_M_AXI_SG_ADDR_WIDTH=32,C_M_AXI_SG_DATA_WIDTH=32,C_" & 
-"M_AXIS_MM2S_CNTRL_TDATA_WIDTH=32,C_S_AXIS_S2MM_STS_TDATA_WIDTH=32,C_MICRO_DMA=0,C_INCLUDE_MM2S=1,C_INCLUDE_MM2S_SF=1,C_MM2S_BURST_SIZE=256,C_M_AXI_MM2S_ADDR_WIDTH=32,C_M_AXI_MM2S_DATA_WIDTH=128,C_M_AXIS_MM2S_TDATA_WIDTH=32,C_INCLUDE_MM2S_DRE=1,C_INCLUDE_S2MM=1,C_INCLUDE_S2MM_SF=1,C_S2MM_BURST_SIZE=256,C_M_AXI_S2MM_ADDR_WIDTH=32,C_M_AXI_S2MM_DATA_WIDTH=32,C_S_AXIS_S2MM_TDATA_WIDTH=16,C_INCLUDE_S2MM_DRE=1,C_INCREASE_THROUGHPUT=0,C_FAMILY=zynquplus}";
+  ATTRIBUTE CORE_GENERATION_INFO OF PYNQ_Design_axi_dma_1_arch: ARCHITECTURE IS "PYNQ_Design_axi_dma_1,axi_dma,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_dma,x_ipVersion=7.1,x_ipCoreRevision=32,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_LITE_ADDR_WIDTH=10,C_S_AXI_LITE_DATA_WIDTH=32,C_DLYTMR_RESOLUTION=125,C_PRMRY_IS_ACLK_ASYNC=0,C_ENABLE_MULTI_CHANNEL=0,C_NUM_MM2S_CHANNELS=1,C_NUM_S2MM_CHANNELS=1,C_INCLUDE_SG=0,C_SG_INCLUDE_STSCNTRL_STRM=0,C_SG_USE_STSAPP_LENGTH=0,C_SG_LENGTH_WIDTH=14,C_M_AXI_SG_ADDR_WIDTH=32,C_M_AXI_SG_DATA_WIDTH=32,C_" & 
+"M_AXIS_MM2S_CNTRL_TDATA_WIDTH=32,C_S_AXIS_S2MM_STS_TDATA_WIDTH=32,C_MICRO_DMA=0,C_INCLUDE_MM2S=1,C_INCLUDE_MM2S_SF=1,C_MM2S_BURST_SIZE=256,C_M_AXI_MM2S_ADDR_WIDTH=32,C_M_AXI_MM2S_DATA_WIDTH=128,C_M_AXIS_MM2S_TDATA_WIDTH=32,C_INCLUDE_MM2S_DRE=1,C_INCLUDE_S2MM=0,C_INCLUDE_S2MM_SF=1,C_S2MM_BURST_SIZE=16,C_M_AXI_S2MM_ADDR_WIDTH=32,C_M_AXI_S2MM_DATA_WIDTH=32,C_S_AXIS_S2MM_TDATA_WIDTH=32,C_INCLUDE_S2MM_DRE=0,C_INCREASE_THROUGHPUT=0,C_FAMILY=zynquplus}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF axi_resetn: SIGNAL IS "XIL_INTERFACENAME AXI_RESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
@@ -310,26 +286,6 @@ ARCHITECTURE PYNQ_Design_axi_dma_1_arch OF PYNQ_Design_axi_dma_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF m_axi_mm2s_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF m_axi_mm2s_rresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RRESP";
   ATTRIBUTE X_INTERFACE_INFO OF m_axi_mm2s_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_MM2S RVALID";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axi_s2mm_aclk: SIGNAL IS "XIL_INTERFACENAME M_AXI_S2MM_CLK, ASSOCIATED_BUSIF M_AXI_S2MM:S_AXIS_S2MM:S_AXIS_STS, ASSOCIATED_RESET s2mm_prmry_reset_out_n:s2mm_sts_reset_out_n, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 M_AXI_S2MM_CLK CLK";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m_axi_s2mm_awaddr: SIGNAL IS "XIL_INTERFACENAME M_AXI_S2MM, SUPPORTS_NARROW_BURST 0, NUM_WRITE_OUTSTANDING 16, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 128000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE WRITE_ONLY, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 0, NUM_READ_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NU" & 
-"M_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWADDR";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awburst: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWBURST";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awcache: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWCACHE";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awlen: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWLEN";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awprot: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWPROT";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWREADY";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awsize: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWSIZE";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_awvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM AWVALID";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_bready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM BREADY";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_bresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM BRESP";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_bvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM BVALID";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_wdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WDATA";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_wlast: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WLAST";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_wready: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WREADY";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_wstrb: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WSTRB";
-  ATTRIBUTE X_INTERFACE_INFO OF m_axi_s2mm_wvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_S2MM WVALID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF m_axis_mm2s_tdata: SIGNAL IS "XIL_INTERFACENAME M_AXIS_MM2S, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 128000000, PHASE 0.0, CLK_DOMAIN PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0, LAYERED_METADATA undef, INSERT_VIP 0, HAS_BURST 0";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_mm2s_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_MM2S TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_mm2s_tkeep: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_MM2S TKEEP";
@@ -340,19 +296,15 @@ ARCHITECTURE PYNQ_Design_axi_dma_1_arch OF PYNQ_Design_axi_dma_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF mm2s_introut: SIGNAL IS "xilinx.com:signal:interrupt:1.0 MM2S_INTROUT INTERRUPT";
   ATTRIBUTE X_INTERFACE_PARAMETER OF mm2s_prmry_reset_out_n: SIGNAL IS "XIL_INTERFACENAME MM2S_PRMRY_RESET_OUT_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF mm2s_prmry_reset_out_n: SIGNAL IS "xilinx.com:signal:reset:1.0 MM2S_PRMRY_RESET_OUT_N RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s2mm_introut: SIGNAL IS "XIL_INTERFACENAME S2MM_INTROUT, SENSITIVITY LEVEL_HIGH, PortWidth 1";
-  ATTRIBUTE X_INTERFACE_INFO OF s2mm_introut: SIGNAL IS "xilinx.com:signal:interrupt:1.0 S2MM_INTROUT INTERRUPT";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s2mm_prmry_reset_out_n: SIGNAL IS "XIL_INTERFACENAME S2MM_PRMRY_RESET_OUT_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF s2mm_prmry_reset_out_n: SIGNAL IS "xilinx.com:signal:reset:1.0 S2MM_PRMRY_RESET_OUT_N RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_lite_aclk: SIGNAL IS "XIL_INTERFACENAME S_AXI_LITE_ACLK, ASSOCIATED_BUSIF S_AXI_LITE:M_AXI, ASSOCIATED_RESET axi_resetn, FREQ_HZ 96968727, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_lite_aclk: SIGNAL IS "XIL_INTERFACENAME S_AXI_LITE_ACLK, ASSOCIATED_BUSIF S_AXI_LITE:M_AXI, ASSOCIATED_RESET axi_resetn, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 S_AXI_LITE_ACLK CLK";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_araddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_arready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_arvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE ARVALID";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_awaddr: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_awready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWREADY";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_lite_awvalid: SIGNAL IS "XIL_INTERFACENAME S_AXI_LITE, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 96968727, ID_WIDTH 0, ADDR_WIDTH 10, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREAD" & 
-"S 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axi_lite_awvalid: SIGNAL IS "XIL_INTERFACENAME S_AXI_LITE, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 128000000, ID_WIDTH 0, ADDR_WIDTH 10, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 0, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0, NUM_REA" & 
+"D_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_awvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE AWVALID";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_bready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE BREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_bresp: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE BRESP";
@@ -364,20 +316,13 @@ ARCHITECTURE PYNQ_Design_axi_dma_1_arch OF PYNQ_Design_axi_dma_1 IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_wdata: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE WDATA";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_wready: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE WREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_lite_wvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI_LITE WVALID";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_s2mm_tdata: SIGNAL IS "XIL_INTERFACENAME S_AXIS_S2MM, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 128000000, PHASE 0.0, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset" & 
-" {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TDATA";
-  ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tkeep: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TKEEP";
-  ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TLAST";
-  ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TREADY";
-  ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TVALID";
 BEGIN
   U0 : axi_dma
     GENERIC MAP (
       C_S_AXI_LITE_ADDR_WIDTH => 10,
       C_S_AXI_LITE_DATA_WIDTH => 32,
       C_DLYTMR_RESOLUTION => 125,
-      C_PRMRY_IS_ACLK_ASYNC => 1,
+      C_PRMRY_IS_ACLK_ASYNC => 0,
       C_ENABLE_MULTI_CHANNEL => 0,
       C_NUM_MM2S_CHANNELS => 1,
       C_NUM_S2MM_CHANNELS => 1,
@@ -397,13 +342,13 @@ BEGIN
       C_M_AXI_MM2S_DATA_WIDTH => 128,
       C_M_AXIS_MM2S_TDATA_WIDTH => 32,
       C_INCLUDE_MM2S_DRE => 1,
-      C_INCLUDE_S2MM => 1,
+      C_INCLUDE_S2MM => 0,
       C_INCLUDE_S2MM_SF => 1,
-      C_S2MM_BURST_SIZE => 256,
+      C_S2MM_BURST_SIZE => 16,
       C_M_AXI_S2MM_ADDR_WIDTH => 32,
       C_M_AXI_S2MM_DATA_WIDTH => 32,
-      C_S_AXIS_S2MM_TDATA_WIDTH => 16,
-      C_INCLUDE_S2MM_DRE => 1,
+      C_S_AXIS_S2MM_TDATA_WIDTH => 32,
+      C_INCLUDE_S2MM_DRE => 0,
       C_INCREASE_THROUGHPUT => 0,
       C_FAMILY => "zynquplus"
     )
@@ -411,7 +356,7 @@ BEGIN
       s_axi_lite_aclk => s_axi_lite_aclk,
       m_axi_sg_aclk => '0',
       m_axi_mm2s_aclk => m_axi_mm2s_aclk,
-      m_axi_s2mm_aclk => m_axi_s2mm_aclk,
+      m_axi_s2mm_aclk => '0',
       axi_resetn => axi_resetn,
       s_axi_lite_awvalid => s_axi_lite_awvalid,
       s_axi_lite_awready => s_axi_lite_awready,
@@ -458,28 +403,14 @@ BEGIN
       m_axis_mm2s_tready => m_axis_mm2s_tready,
       m_axis_mm2s_tlast => m_axis_mm2s_tlast,
       m_axis_mm2s_cntrl_tready => '0',
-      m_axi_s2mm_awaddr => m_axi_s2mm_awaddr,
-      m_axi_s2mm_awlen => m_axi_s2mm_awlen,
-      m_axi_s2mm_awsize => m_axi_s2mm_awsize,
-      m_axi_s2mm_awburst => m_axi_s2mm_awburst,
-      m_axi_s2mm_awprot => m_axi_s2mm_awprot,
-      m_axi_s2mm_awcache => m_axi_s2mm_awcache,
-      m_axi_s2mm_awvalid => m_axi_s2mm_awvalid,
-      m_axi_s2mm_awready => m_axi_s2mm_awready,
-      m_axi_s2mm_wdata => m_axi_s2mm_wdata,
-      m_axi_s2mm_wstrb => m_axi_s2mm_wstrb,
-      m_axi_s2mm_wlast => m_axi_s2mm_wlast,
-      m_axi_s2mm_wvalid => m_axi_s2mm_wvalid,
-      m_axi_s2mm_wready => m_axi_s2mm_wready,
-      m_axi_s2mm_bresp => m_axi_s2mm_bresp,
-      m_axi_s2mm_bvalid => m_axi_s2mm_bvalid,
-      m_axi_s2mm_bready => m_axi_s2mm_bready,
-      s2mm_prmry_reset_out_n => s2mm_prmry_reset_out_n,
-      s_axis_s2mm_tdata => s_axis_s2mm_tdata,
-      s_axis_s2mm_tkeep => s_axis_s2mm_tkeep,
-      s_axis_s2mm_tvalid => s_axis_s2mm_tvalid,
-      s_axis_s2mm_tready => s_axis_s2mm_tready,
-      s_axis_s2mm_tlast => s_axis_s2mm_tlast,
+      m_axi_s2mm_awready => '0',
+      m_axi_s2mm_wready => '0',
+      m_axi_s2mm_bresp => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 2)),
+      m_axi_s2mm_bvalid => '0',
+      s_axis_s2mm_tdata => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      s_axis_s2mm_tkeep => X"F",
+      s_axis_s2mm_tvalid => '0',
+      s_axis_s2mm_tlast => '0',
       s_axis_s2mm_tuser => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4)),
       s_axis_s2mm_tid => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 5)),
       s_axis_s2mm_tdest => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 5)),
@@ -488,7 +419,6 @@ BEGIN
       s_axis_s2mm_sts_tvalid => '0',
       s_axis_s2mm_sts_tlast => '0',
       mm2s_introut => mm2s_introut,
-      s2mm_introut => s2mm_introut,
       axi_dma_tstvec => axi_dma_tstvec
     );
 END PYNQ_Design_axi_dma_1_arch;

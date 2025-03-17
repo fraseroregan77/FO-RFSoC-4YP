@@ -46,122 +46,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_dem
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_dma_1 || ORIG_REF_NAME==PYNQ_Design_axi_dma_1} -quiet] -quiet
 
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/PYNQ_Design_axi_smc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_1 || ORIG_REF_NAME==PYNQ_Design_axi_smc_1} -quiet] -quiet
-
-# Block Designs: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/bd_4dc9.bd
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_0/bd_4dc9_one_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr0_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_2/bd_4dc9_psr_aclk_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_3/bd_4dc9_psr_aclk1_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_4/bd_4dc9_arsw_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_5/bd_4dc9_rsw_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_6/bd_4dc9_awsw_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_7/bd_4dc9_wsw_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_8/bd_4dc9_bsw_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_9/bd_4dc9_s00mmu_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_10/bd_4dc9_s00tr_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_11/bd_4dc9_s00sic_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_s00a2s_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sawn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_14/bd_4dc9_swn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_15/bd_4dc9_sbn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_16/bd_4dc9_s01mmu_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_17/bd_4dc9_s01tr_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_18/bd_4dc9_s01sic_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_19/bd_4dc9_s01a2s_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_20/bd_4dc9_sarn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/bd_4dc9_srn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_22/bd_4dc9_m00s2a_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/bd_4dc9_m00arn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/bd_4dc9_m00rn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/bd_4dc9_m00awn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_26/bd_4dc9_m00wn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_27/bd_4dc9_m00bn_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_28/bd_4dc9_m00e_0.xci
-# DONT_TOUCH constraint suppressed by (parent) sub-design file.
-
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_rst_ps8_0_96M_1 || ORIG_REF_NAME==PYNQ_Design_rst_ps8_0_96M_1} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_xbar_1/PYNQ_Design_xbar_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_xbar_1 || ORIG_REF_NAME==PYNQ_Design_xbar_1} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_0 || ORIG_REF_NAME==PYNQ_Design_auto_pc_0} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_1 || ORIG_REF_NAME==PYNQ_Design_auto_ds_1} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_1 || ORIG_REF_NAME==PYNQ_Design_auto_pc_1} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] -quiet
-
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_ps8_0_axi_periph_1/PYNQ_Design_ps8_0_axi_periph_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_ps8_0_axi_periph_1 || ORIG_REF_NAME==PYNQ_Design_ps8_0_axi_periph_1} -quiet] -quiet
 
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_clk_wiz_0_0 || ORIG_REF_NAME==PYNQ_Design_clk_wiz_0_0} -quiet] -quiet
@@ -195,6 +81,102 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_ila
 
 # IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_1/bd_9ef2_g_inst_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_g_inst_0 || ORIG_REF_NAME==bd_9ef2_g_inst_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0_0/PYNQ_Design_axi_dma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_dma_0_0 || ORIG_REF_NAME==PYNQ_Design_axi_dma_0_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_xbar_2/PYNQ_Design_xbar_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_xbar_2 || ORIG_REF_NAME==PYNQ_Design_xbar_2} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_ps8_0_axi_periph_2/PYNQ_Design_ps8_0_axi_periph_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_ps8_0_axi_periph_2 || ORIG_REF_NAME==PYNQ_Design_ps8_0_axi_periph_2} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/PYNQ_Design_axi_smc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_2 || ORIG_REF_NAME==PYNQ_Design_axi_smc_2} -quiet] -quiet
+
+# Block Designs: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/bd_4c89.bd
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_0/bd_4c89_one_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_1/bd_4c89_psr_aclk_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_2/bd_4c89_s00mmu_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_3/bd_4c89_s00tr_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_4/bd_4c89_s00sic_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_5/bd_4c89_s00a2s_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_6/bd_4c89_sawn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_7/bd_4c89_swn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_8/bd_4c89_sbn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_9/bd_4c89_m00s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_10/bd_4c89_m00e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/PYNQ_Design_axi_smc_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_1_0 || ORIG_REF_NAME==PYNQ_Design_axi_smc_1_0} -quiet] -quiet
+
+# Block Designs: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/bd_81af.bd
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_0/bd_81af_one_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_1/bd_81af_psr_aclk_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_2/bd_81af_s00mmu_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_3/bd_81af_s00tr_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_4/bd_81af_s00sic_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_5/bd_81af_s00a2s_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_6/bd_81af_sarn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_7/bd_81af_srn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_8/bd_81af_m00s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_9/bd_81af_m00e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_pc_0 || ORIG_REF_NAME==PYNQ_Design_auto_pc_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] -quiet
+
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_1/PYNQ_Design_auto_cc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_1 || ORIG_REF_NAME==PYNQ_Design_auto_cc_1} -quiet] -quiet
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_data_in_0_0/x16_bit_mod_fifo_generator_i1/x16_bit_mod_fifo_generator_i1.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_mod_fifo_generator_i1 || ORIG_REF_NAME==x16_bit_mod_fifo_generator_i1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -236,119 +218,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_1/PYNQ_Design_axi_dma_1_clocks.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_dma_1 || ORIG_REF_NAME==PYNQ_Design_axi_dma_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr0_0_board.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_1/bd_4dc9_psr0_0.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_2/bd_4dc9_psr_aclk_0_board.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_2/bd_4dc9_psr_aclk_0.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_3/bd_4dc9_psr_aclk1_0_board.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_3/bd_4dc9_psr_aclk1_0.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_4/bd_4dc9_arsw_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_5/bd_4dc9_rsw_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_6/bd_4dc9_awsw_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_7/bd_4dc9_wsw_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_8/bd_4dc9_bsw_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_12/bd_4dc9_s00a2s_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sawn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_13/bd_4dc9_sawn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_14/bd_4dc9_swn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_14/bd_4dc9_swn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_15/bd_4dc9_sbn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_15/bd_4dc9_sbn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_19/bd_4dc9_s01a2s_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_20/bd_4dc9_sarn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_20/bd_4dc9_sarn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/bd_4dc9_srn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_21/bd_4dc9_srn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_22/bd_4dc9_m00s2a_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/bd_4dc9_m00arn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_23/bd_4dc9_m00arn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/bd_4dc9_m00rn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_24/bd_4dc9_m00rn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/bd_4dc9_m00awn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_25/bd_4dc9_m00awn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_26/bd_4dc9_m00wn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_26/bd_4dc9_m00wn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_27/bd_4dc9_m00bn_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/bd_0/ip/ip_27/bd_4dc9_m00bn_0_clocks.xdc
-# DONT_TOUCH constraint suppressed by parent sub-design file.
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1/smartconnect.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_1 || ORIG_REF_NAME==PYNQ_Design_axi_smc_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_rst_ps8_0_96M_1 || ORIG_REF_NAME==PYNQ_Design_rst_ps8_0_96M_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/PYNQ_Design_rst_ps8_0_96M_1.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_rst_ps8_0_96M_1 || ORIG_REF_NAME==PYNQ_Design_rst_ps8_0_96M_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_clocks.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_clocks.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_1 || ORIG_REF_NAME==PYNQ_Design_auto_ds_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_1/PYNQ_Design_auto_ds_1_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_1/PYNQ_Design_auto_pc_1_ooc.xdc
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_ooc.xdc
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_clk_wiz_0_0/PYNQ_Design_clk_wiz_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_clk_wiz_0_0 || ORIG_REF_NAME==PYNQ_Design_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -393,5 +267,83 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/bd_9ef2_ooc.xdc
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/PYNQ_Design_system_ila_1_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0_0/PYNQ_Design_axi_dma_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_dma_0_0 || ORIG_REF_NAME==PYNQ_Design_axi_dma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0_0/PYNQ_Design_axi_dma_0_0_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_dma_0_0 || ORIG_REF_NAME==PYNQ_Design_axi_dma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_1/bd_4c89_psr_aclk_0_board.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_1/bd_4c89_psr_aclk_0.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_5/bd_4c89_s00a2s_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_6/bd_4c89_sawn_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_6/bd_4c89_sawn_0_clocks.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_7/bd_4c89_swn_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_7/bd_4c89_swn_0_clocks.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_8/bd_4c89_sbn_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_8/bd_4c89_sbn_0_clocks.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_9/bd_4c89_m00s2a_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/smartconnect.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_2 || ORIG_REF_NAME==PYNQ_Design_axi_smc_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_1/bd_81af_psr_aclk_0_board.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_1/bd_81af_psr_aclk_0.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_5/bd_81af_s00a2s_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_6/bd_81af_sarn_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_6/bd_81af_sarn_0_clocks.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_7/bd_81af_srn_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_7/bd_81af_srn_0_clocks.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/ip/ip_8/bd_81af_m00s2a_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/smartconnect.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_1_0 || ORIG_REF_NAME==PYNQ_Design_axi_smc_1_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_pc_0/PYNQ_Design_auto_pc_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_0 || ORIG_REF_NAME==PYNQ_Design_auto_cc_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_0/PYNQ_Design_auto_cc_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_1/PYNQ_Design_auto_cc_1_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_cc_1 || ORIG_REF_NAME==PYNQ_Design_auto_cc_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_cc_1/PYNQ_Design_auto_cc_1_ooc.xdc
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/PYNQ_Design_ooc.xdc

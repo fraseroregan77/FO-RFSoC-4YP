@@ -3,3 +3,13 @@
     <Process Command="vivado.bat" Owner="clb20123" Host="EEE-R343-01" Pid="13752" HostCore="4" HostMemory="017060270080">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="clb20123" Host="EEE-R343-01" Pid="9304" HostCore="4" HostMemory="017060270080">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="clb20123" Host="EEE-R343-01" Pid="5900" HostCore="4" HostMemory="017060270080">
+    </Process>
+</ProcessHandle>

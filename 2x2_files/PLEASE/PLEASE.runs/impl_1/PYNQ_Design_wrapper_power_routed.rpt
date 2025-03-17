@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Fri Mar 14 15:17:00 2025
+| Date             : Mon Mar 17 12:58:26 2025
 | Host             : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command          : report_power -file PYNQ_Design_wrapper_power_routed.rpt -pb PYNQ_Design_wrapper_power_summary_routed.pb -rpx PYNQ_Design_wrapper_power_routed.rpx
 | Design           : PYNQ_Design_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.528        |
+| Total On-Chip Power (W)  | 4.485        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.328        |
+| Dynamic (W)              | 3.286        |
 | Device Static (W)        | 1.199        |
 | Effective TJA (C/W)      | 0.8          |
 | Max Ambient (C)          | 96.2         |
@@ -52,27 +52,28 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.090 |       31 |       --- |             --- |
-| CLB Logic                |     0.101 |    40374 |       --- |             --- |
-|   LUT as Shift Register  |     0.051 |     1898 |    213600 |            0.89 |
-|   LUT as Distributed RAM |     0.025 |      690 |    213600 |            0.32 |
-|   LUT as Logic           |     0.018 |    11224 |    425280 |            2.64 |
-|   Register               |     0.006 |    19730 |    850560 |            2.32 |
-|   CARRY8                 |    <0.001 |      144 |     53160 |            0.27 |
-|   Others                 |     0.000 |     2033 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |       84 |    425280 |            0.02 |
-| Signals                  |     0.048 |    32467 |       --- |             --- |
-| Block RAM                |     0.018 |       21 |      1080 |            1.94 |
+| Clocks                   |     0.076 |       31 |       --- |             --- |
+| CLB Logic                |     0.079 |    32367 |       --- |             --- |
+|   LUT as Shift Register  |     0.051 |     1844 |    213600 |            0.86 |
+|   LUT as Distributed RAM |     0.014 |      366 |    213600 |            0.17 |
+|   LUT as Logic           |     0.009 |     9250 |    425280 |            2.18 |
+|   Register               |     0.005 |    15620 |    850560 |            1.84 |
+|   CARRY8                 |    <0.001 |      141 |     53160 |            0.27 |
+|   Others                 |     0.000 |     1706 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |       81 |    425280 |            0.02 |
+|   BUFG                   |     0.000 |        1 |        64 |            1.56 |
+| Signals                  |     0.037 |    26081 |       --- |             --- |
+| Block RAM                |     0.022 |       24 |      1080 |            2.22 |
 | RFAMS                    |     0.568 |        6 |       --- |             --- |
 |   RFADC                  |     0.391 |        4 |         4 |          100.00 |
 |   RFDAC                  |     0.177 |        2 |         4 |           50.00 |
 | MMCM                     |     0.097 |        0 |       --- |             --- |
 | DSPs                     |     0.047 |       53 |      4272 |            1.24 |
-| PS8                      |     2.360 |        1 |       --- |             --- |
+| PS8                      |     2.361 |        1 |       --- |             --- |
 | Static Power             |     1.199 |          |           |                 |
 |   PS Static              |     0.097 |          |           |                 |
 |   PL Static              |     1.102 |          |           |                 |
-| Total                    |     4.528 |          |           |                 |
+| Total                    |     4.485 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -82,7 +83,7 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     0.665 |       0.355 |      0.309 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     0.613 |       0.304 |      0.309 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.071 |       0.000 |      0.071 |       NA    | Unspecified | NA         |
 | Vccbram         |       0.850 |     0.006 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.333 |       0.054 |      0.279 |       NA    | Unspecified | NA         |
@@ -95,7 +96,7 @@ Table of Contents
 | Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
-| VCC_PSINTFP     |       0.850 |     0.515 |       0.481 |      0.034 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     0.515 |       0.482 |      0.034 |       NA    | Unspecified | NA         |
 | VCC_PSINTLP     |       0.850 |     0.272 |       0.265 |      0.007 |       NA    | Unspecified | NA         |
 | VPS_MGTRAVCC    |       0.850 |     0.135 |       0.134 |      0.001 |       NA    | Unspecified | NA         |
 | VCC_PSINTFP_DDR |       0.850 |     0.821 |       0.816 |      0.004 |       NA    | Unspecified | NA         |
@@ -160,15 +161,15 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------+
-| Clock                                                                                               | Domain                                                                                                 | Constraint (ns) |
-+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------+
-| RFADC0_CLK                                                                                          | PYNQ_Design_i/usp_rf_data_converter_0/inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/clk_adc0 |            15.6 |
-| RFDAC0_CLK                                                                                          | PYNQ_Design_i/usp_rf_data_converter_0/inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/clk_dac0 |             7.8 |
-| clk_out1_PYNQ_Design_clk_wiz_0_0                                                                    | PYNQ_Design_i/clk_wiz_0/inst/clk_out1_PYNQ_Design_clk_wiz_0_0                                          |             7.8 |
-| clk_pl_0                                                                                            | PYNQ_Design_i/zynq_ultra_ps_e_0/U0/pl_clk_unbuffered[0]                                                |            10.0 |
-| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK                                     |            50.0 |
-+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------+
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                               | Domain                                                                                                    | Constraint (ns) |
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-----------------+
+| RFADC0_CLK                                                                                          | PYNQ_Design_i/usp_rf_data_converter_0/inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/clk_adc0    |            15.6 |
+| RFDAC0_CLK                                                                                          | PYNQ_Design_i/usp_rf_data_converter_0/inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/tx0_u_dac_0 |             7.8 |
+| clk_out1_PYNQ_Design_clk_wiz_0_0                                                                    | PYNQ_Design_i/RX/clk_wiz_0/inst/clk_out1_PYNQ_Design_clk_wiz_0_0                                          |             7.8 |
+| clk_pl_0                                                                                            | PYNQ_Design_i/zynq_ultra_ps_e_0/U0/pl_clk_unbuffered[0]                                                   |            10.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK                                        |            50.0 |
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -180,29 +181,26 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| PYNQ_Design_wrapper         |     3.328 |
-|   PYNQ_Design_i             |     3.325 |
-|     DUT_data_in_0           |     0.007 |
-|       U0                    |     0.007 |
-|     DUT_rec_0               |     0.135 |
-|       U0                    |     0.135 |
-|     axi_dma                 |     0.025 |
-|       U0                    |     0.025 |
-|     axi_smc                 |     0.061 |
-|       inst                  |     0.061 |
-|     clk_wiz_0               |     0.098 |
-|       inst                  |     0.098 |
-|     ps8_0_axi_periph        |     0.021 |
-|       m01_couplers          |     0.003 |
-|       s00_couplers          |     0.008 |
-|       s01_couplers          |     0.008 |
-|       xbar                  |     0.002 |
-|     system_ila_0            |     0.010 |
-|       U0                    |     0.010 |
-|     system_ila_1            |     0.009 |
-|       U0                    |     0.009 |
-|     usp_rf_data_converter_0 |     0.597 |
-|       inst                  |     0.597 |
+| PYNQ_Design_wrapper         |     3.286 |
+|   PYNQ_Design_i             |     3.283 |
+|     RX                      |     0.273 |
+|       DUT_rec_0             |     0.134 |
+|       axi_dma_rx            |     0.017 |
+|       axi_smc               |     0.013 |
+|       clk_wiz_0             |     0.098 |
+|       system_ila_1          |     0.011 |
+|     TX                      |     0.041 |
+|       DUT_data_in_0         |     0.007 |
+|       axi_dma_tx            |     0.013 |
+|       axi_smc_1             |     0.010 |
+|       system_ila_0          |     0.012 |
+|     ps8_0_axi_periph        |     0.017 |
+|       m00_couplers          |     0.002 |
+|       m01_couplers          |     0.002 |
+|       s00_couplers          |     0.012 |
+|       xbar                  |     0.001 |
+|     usp_rf_data_converter_0 |     0.590 |
+|       inst                  |     0.590 |
 |     zynq_ultra_ps_e_0       |     2.362 |
 |       U0                    |     2.362 |
 |   dbg_hub                   |     0.003 |

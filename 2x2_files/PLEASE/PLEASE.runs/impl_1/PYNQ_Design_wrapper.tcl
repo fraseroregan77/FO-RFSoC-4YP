@@ -105,6 +105,11 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableLutRouteBelPower 1
+  set_param xicom.use_bs_reader 1
   set_param bd.open.in_stealth_mode 3
   set_param ced.repoPaths C:/Users/clb20123/Documents/Vivado/board_files
   set_param runs.launchOptions { -jobs 4  }

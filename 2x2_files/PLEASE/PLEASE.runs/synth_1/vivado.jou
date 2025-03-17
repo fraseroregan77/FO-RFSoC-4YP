@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Mar 14 14:50:05 2025
-# Process ID: 15276
+# Start of session at: Mon Mar 17 12:33:16 2025
+# Process ID: 8512
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
 # Command line: vivado.exe -log PYNQ_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PYNQ_Design_wrapper.tcl
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :17060 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19610 MB
-# Available Virtual :10499 MB
+# Swap memory       :3991 MB
+# Total Virtual     :21052 MB
+# Available Virtual :5868 MB
 #-----------------------------------------------------------
 source PYNQ_Design_wrapper.tcl -notrace
