@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar 14 13:40:41 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 18 12:16:37 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:rfsoc2x2:part0:1.1" DEVICE="xczu28dr" NAME="bd_9ef2" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
