@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Mon Mar 17 12:32:41 2025
+--Date        : Tue Mar 18 12:16:28 2025
 --Host        : EEE-R343-01 running 64-bit major release  (build 9200)
 --Command     : generate_target PYNQ_Design.bd
 --Design      : PYNQ_Design
@@ -203,24 +203,24 @@ architecture STRUCTURE of RX_imp_1G0MUP is
   );
   end component PYNQ_Design_xlconstant_0_1;
   signal DUT_rec_0_m_axis1_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  attribute CONN_BUS_INFO : string;
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis1_TDATA : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG : string;
+  attribute DEBUG of DUT_rec_0_m_axis1_TDATA : signal is "true";
   attribute MARK_DEBUG : boolean;
   attribute MARK_DEBUG of DUT_rec_0_m_axis1_TDATA : signal is std.standard.true;
-  attribute conn_bus_info : string;
-  attribute conn_bus_info of DUT_rec_0_m_axis1_TDATA : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TDATA";
-  attribute debug : string;
-  attribute debug of DUT_rec_0_m_axis1_TDATA : signal is "true";
   signal DUT_rec_0_m_axis1_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis1_TLAST : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TLAST";
+  attribute DEBUG of DUT_rec_0_m_axis1_TLAST : signal is "true";
   attribute MARK_DEBUG of DUT_rec_0_m_axis1_TLAST : signal is std.standard.true;
-  attribute conn_bus_info of DUT_rec_0_m_axis1_TLAST : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TLAST";
-  attribute debug of DUT_rec_0_m_axis1_TLAST : signal is "true";
   signal DUT_rec_0_m_axis1_TREADY : STD_LOGIC;
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis1_TREADY : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of DUT_rec_0_m_axis1_TREADY : signal is "true";
   attribute MARK_DEBUG of DUT_rec_0_m_axis1_TREADY : signal is std.standard.true;
-  attribute conn_bus_info of DUT_rec_0_m_axis1_TREADY : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TREADY";
-  attribute debug of DUT_rec_0_m_axis1_TREADY : signal is "true";
   signal DUT_rec_0_m_axis1_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_rec_0_m_axis1_TVALID : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of DUT_rec_0_m_axis1_TVALID : signal is "true";
   attribute MARK_DEBUG of DUT_rec_0_m_axis1_TVALID : signal is std.standard.true;
-  attribute conn_bus_info of DUT_rec_0_m_axis1_TVALID : signal is "DUT_rec_0_m_axis1 xilinx.com:interface:axis:1.0 None TVALID";
-  attribute debug of DUT_rec_0_m_axis1_TVALID : signal is "true";
   signal axi_dma_rx_M_AXI_S2MM_AWADDR : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal axi_dma_rx_M_AXI_S2MM_AWBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_dma_rx_M_AXI_S2MM_AWCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -277,18 +277,18 @@ architecture STRUCTURE of RX_imp_1G0MUP is
   signal rst_ps8_0_96M_peripheral_aresetn : STD_LOGIC;
   signal usp_rf_data_converter_0_clk_adc0 : STD_LOGIC;
   signal usp_rf_data_converter_0_m00_axis_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  attribute CONN_BUS_INFO of usp_rf_data_converter_0_m00_axis_TDATA : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TDATA : signal is "true";
   attribute DONT_TOUCH : boolean;
   attribute DONT_TOUCH of usp_rf_data_converter_0_m00_axis_TDATA : signal is std.standard.true;
-  attribute conn_bus_info of usp_rf_data_converter_0_m00_axis_TDATA : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TDATA";
-  attribute debug of usp_rf_data_converter_0_m00_axis_TDATA : signal is "true";
   signal usp_rf_data_converter_0_m00_axis_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of usp_rf_data_converter_0_m00_axis_TREADY : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TREADY : signal is "true";
   attribute DONT_TOUCH of usp_rf_data_converter_0_m00_axis_TREADY : signal is std.standard.true;
-  attribute conn_bus_info of usp_rf_data_converter_0_m00_axis_TREADY : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TREADY";
-  attribute debug of usp_rf_data_converter_0_m00_axis_TREADY : signal is "true";
   signal usp_rf_data_converter_0_m00_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of usp_rf_data_converter_0_m00_axis_TVALID : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TVALID : signal is "true";
   attribute DONT_TOUCH of usp_rf_data_converter_0_m00_axis_TVALID : signal is std.standard.true;
-  attribute conn_bus_info of usp_rf_data_converter_0_m00_axis_TVALID : signal is "usp_rf_data_converter_0_m00_axis xilinx.com:interface:axis:1.0 None TVALID";
-  attribute debug of usp_rf_data_converter_0_m00_axis_TVALID : signal is "true";
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_axi_dma_rx_s2mm_introut_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_dma_rx_s2mm_prmry_reset_out_n_UNCONNECTED : STD_LOGIC;
@@ -651,45 +651,45 @@ architecture STRUCTURE of TX_imp_1A0AJCC is
   );
   end component PYNQ_Design_system_ila_0_0;
   signal DUT_data_in_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  attribute CONN_BUS_INFO : string;
+  attribute CONN_BUS_INFO of DUT_data_in_0_m_axis_TDATA : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG : string;
+  attribute DEBUG of DUT_data_in_0_m_axis_TDATA : signal is "true";
   attribute DONT_TOUCH : boolean;
   attribute DONT_TOUCH of DUT_data_in_0_m_axis_TDATA : signal is std.standard.true;
-  attribute conn_bus_info : string;
-  attribute conn_bus_info of DUT_data_in_0_m_axis_TDATA : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TDATA";
-  attribute debug : string;
-  attribute debug of DUT_data_in_0_m_axis_TDATA : signal is "true";
   signal DUT_data_in_0_m_axis_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_data_in_0_m_axis_TLAST : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TLAST";
+  attribute DEBUG of DUT_data_in_0_m_axis_TLAST : signal is "true";
   attribute DONT_TOUCH of DUT_data_in_0_m_axis_TLAST : signal is std.standard.true;
-  attribute conn_bus_info of DUT_data_in_0_m_axis_TLAST : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TLAST";
-  attribute debug of DUT_data_in_0_m_axis_TLAST : signal is "true";
   signal DUT_data_in_0_m_axis_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_data_in_0_m_axis_TREADY : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of DUT_data_in_0_m_axis_TREADY : signal is "true";
   attribute DONT_TOUCH of DUT_data_in_0_m_axis_TREADY : signal is std.standard.true;
-  attribute conn_bus_info of DUT_data_in_0_m_axis_TREADY : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TREADY";
-  attribute debug of DUT_data_in_0_m_axis_TREADY : signal is "true";
   signal DUT_data_in_0_m_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of DUT_data_in_0_m_axis_TVALID : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of DUT_data_in_0_m_axis_TVALID : signal is "true";
   attribute DONT_TOUCH of DUT_data_in_0_m_axis_TVALID : signal is std.standard.true;
-  attribute conn_bus_info of DUT_data_in_0_m_axis_TVALID : signal is "DUT_data_in_0_m_axis xilinx.com:interface:axis:1.0 None TVALID";
-  attribute debug of DUT_data_in_0_m_axis_TVALID : signal is "true";
   signal axi_dma_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TDATA : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TDATA : signal is "true";
   attribute MARK_DEBUG : boolean;
   attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TDATA : signal is std.standard.true;
-  attribute conn_bus_info of axi_dma_M_AXIS_MM2S_TDATA : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TDATA";
-  attribute debug of axi_dma_M_AXIS_MM2S_TDATA : signal is "true";
   signal axi_dma_M_AXIS_MM2S_TKEEP : STD_LOGIC_VECTOR ( 3 downto 0 );
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TKEEP : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TKEEP : signal is "true";
   attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TKEEP : signal is std.standard.true;
-  attribute conn_bus_info of axi_dma_M_AXIS_MM2S_TKEEP : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TKEEP";
-  attribute debug of axi_dma_M_AXIS_MM2S_TKEEP : signal is "true";
   signal axi_dma_M_AXIS_MM2S_TLAST : STD_LOGIC;
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TLAST : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TLAST : signal is "true";
   attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TLAST : signal is std.standard.true;
-  attribute conn_bus_info of axi_dma_M_AXIS_MM2S_TLAST : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TLAST";
-  attribute debug of axi_dma_M_AXIS_MM2S_TLAST : signal is "true";
   signal axi_dma_M_AXIS_MM2S_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TREADY : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TREADY : signal is "true";
   attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TREADY : signal is std.standard.true;
-  attribute conn_bus_info of axi_dma_M_AXIS_MM2S_TREADY : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TREADY";
-  attribute debug of axi_dma_M_AXIS_MM2S_TREADY : signal is "true";
   signal axi_dma_M_AXIS_MM2S_TVALID : STD_LOGIC;
+  attribute CONN_BUS_INFO of axi_dma_M_AXIS_MM2S_TVALID : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID";
+  attribute DEBUG of axi_dma_M_AXIS_MM2S_TVALID : signal is "true";
   attribute MARK_DEBUG of axi_dma_M_AXIS_MM2S_TVALID : signal is std.standard.true;
-  attribute conn_bus_info of axi_dma_M_AXIS_MM2S_TVALID : signal is "axi_dma_M_AXIS_MM2S xilinx.com:interface:axis:1.0 None TVALID";
-  attribute debug of axi_dma_M_AXIS_MM2S_TVALID : signal is "true";
   signal axi_dma_tx_M_AXI_MM2S_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_dma_tx_M_AXI_MM2S_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_dma_tx_M_AXI_MM2S_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1964,21 +1964,21 @@ entity PYNQ_Design_ps8_0_axi_periph_2 is
     M00_ACLK : in STD_LOGIC;
     M00_ARESETN : in STD_LOGIC;
     M00_AXI_araddr : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    M00_AXI_arready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M00_AXI_arvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXI_arready : in STD_LOGIC;
+    M00_AXI_arvalid : out STD_LOGIC;
     M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    M00_AXI_awready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M00_AXI_awvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    M00_AXI_bready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXI_awready : in STD_LOGIC;
+    M00_AXI_awvalid : out STD_LOGIC;
+    M00_AXI_bready : out STD_LOGIC;
     M00_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXI_bvalid : in STD_LOGIC;
     M00_AXI_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    M00_AXI_rready : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXI_rready : out STD_LOGIC;
     M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXI_rvalid : in STD_LOGIC;
     M00_AXI_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M00_AXI_wready : in STD_LOGIC_VECTOR ( 0 to 0 );
-    M00_AXI_wvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
+    M00_AXI_wready : in STD_LOGIC;
+    M00_AXI_wvalid : out STD_LOGIC;
     M01_ACLK : in STD_LOGIC;
     M01_ARESETN : in STD_LOGIC;
     M01_AXI_araddr : out STD_LOGIC_VECTOR ( 9 downto 0 );
@@ -2112,20 +2112,20 @@ architecture STRUCTURE of PYNQ_Design_ps8_0_axi_periph_2 is
   signal S00_ACLK_1 : STD_LOGIC;
   signal S00_ARESETN_1 : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_ARADDR : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal m00_couplers_to_ps8_0_axi_periph_ARREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m00_couplers_to_ps8_0_axi_periph_ARREADY : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_ARVALID : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_AWADDR : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal m00_couplers_to_ps8_0_axi_periph_AWREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m00_couplers_to_ps8_0_axi_periph_AWREADY : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_AWVALID : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_BREADY : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal m00_couplers_to_ps8_0_axi_periph_BVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m00_couplers_to_ps8_0_axi_periph_BVALID : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m00_couplers_to_ps8_0_axi_periph_RREADY : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal m00_couplers_to_ps8_0_axi_periph_RVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m00_couplers_to_ps8_0_axi_periph_RVALID : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal m00_couplers_to_ps8_0_axi_periph_WREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal m00_couplers_to_ps8_0_axi_periph_WREADY : STD_LOGIC;
   signal m00_couplers_to_ps8_0_axi_periph_WVALID : STD_LOGIC;
   signal m01_couplers_to_ps8_0_axi_periph_ARADDR : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal m01_couplers_to_ps8_0_axi_periph_ARREADY : STD_LOGIC;
@@ -2279,13 +2279,13 @@ begin
   M00_ACLK_1 <= M00_ACLK;
   M00_ARESETN_1 <= M00_ARESETN;
   M00_AXI_araddr(9 downto 0) <= m00_couplers_to_ps8_0_axi_periph_ARADDR(9 downto 0);
-  M00_AXI_arvalid(0) <= m00_couplers_to_ps8_0_axi_periph_ARVALID;
+  M00_AXI_arvalid <= m00_couplers_to_ps8_0_axi_periph_ARVALID;
   M00_AXI_awaddr(9 downto 0) <= m00_couplers_to_ps8_0_axi_periph_AWADDR(9 downto 0);
-  M00_AXI_awvalid(0) <= m00_couplers_to_ps8_0_axi_periph_AWVALID;
-  M00_AXI_bready(0) <= m00_couplers_to_ps8_0_axi_periph_BREADY;
-  M00_AXI_rready(0) <= m00_couplers_to_ps8_0_axi_periph_RREADY;
+  M00_AXI_awvalid <= m00_couplers_to_ps8_0_axi_periph_AWVALID;
+  M00_AXI_bready <= m00_couplers_to_ps8_0_axi_periph_BREADY;
+  M00_AXI_rready <= m00_couplers_to_ps8_0_axi_periph_RREADY;
   M00_AXI_wdata(31 downto 0) <= m00_couplers_to_ps8_0_axi_periph_WDATA(31 downto 0);
-  M00_AXI_wvalid(0) <= m00_couplers_to_ps8_0_axi_periph_WVALID;
+  M00_AXI_wvalid <= m00_couplers_to_ps8_0_axi_periph_WVALID;
   M01_ACLK_1 <= M01_ACLK;
   M01_ARESETN_1 <= M01_ARESETN;
   M01_AXI_araddr(9 downto 0) <= m01_couplers_to_ps8_0_axi_periph_ARADDR(9 downto 0);
@@ -2320,14 +2320,14 @@ begin
   S00_AXI_rresp(1 downto 0) <= ps8_0_axi_periph_to_s00_couplers_RRESP(1 downto 0);
   S00_AXI_rvalid <= ps8_0_axi_periph_to_s00_couplers_RVALID;
   S00_AXI_wready <= ps8_0_axi_periph_to_s00_couplers_WREADY;
-  m00_couplers_to_ps8_0_axi_periph_ARREADY(0) <= M00_AXI_arready(0);
-  m00_couplers_to_ps8_0_axi_periph_AWREADY(0) <= M00_AXI_awready(0);
+  m00_couplers_to_ps8_0_axi_periph_ARREADY <= M00_AXI_arready;
+  m00_couplers_to_ps8_0_axi_periph_AWREADY <= M00_AXI_awready;
   m00_couplers_to_ps8_0_axi_periph_BRESP(1 downto 0) <= M00_AXI_bresp(1 downto 0);
-  m00_couplers_to_ps8_0_axi_periph_BVALID(0) <= M00_AXI_bvalid(0);
+  m00_couplers_to_ps8_0_axi_periph_BVALID <= M00_AXI_bvalid;
   m00_couplers_to_ps8_0_axi_periph_RDATA(31 downto 0) <= M00_AXI_rdata(31 downto 0);
   m00_couplers_to_ps8_0_axi_periph_RRESP(1 downto 0) <= M00_AXI_rresp(1 downto 0);
-  m00_couplers_to_ps8_0_axi_periph_RVALID(0) <= M00_AXI_rvalid(0);
-  m00_couplers_to_ps8_0_axi_periph_WREADY(0) <= M00_AXI_wready(0);
+  m00_couplers_to_ps8_0_axi_periph_RVALID <= M00_AXI_rvalid;
+  m00_couplers_to_ps8_0_axi_periph_WREADY <= M00_AXI_wready;
   m01_couplers_to_ps8_0_axi_periph_ARREADY <= M01_AXI_arready;
   m01_couplers_to_ps8_0_axi_periph_AWREADY <= M01_AXI_awready;
   m01_couplers_to_ps8_0_axi_periph_BRESP(1 downto 0) <= M01_AXI_bresp(1 downto 0);
@@ -2377,20 +2377,20 @@ m00_couplers: entity work.m00_couplers_imp_1Y83KYE
       M_ACLK => M00_ACLK_1,
       M_ARESETN => M00_ARESETN_1,
       M_AXI_araddr(9 downto 0) => m00_couplers_to_ps8_0_axi_periph_ARADDR(9 downto 0),
-      M_AXI_arready => m00_couplers_to_ps8_0_axi_periph_ARREADY(0),
+      M_AXI_arready => m00_couplers_to_ps8_0_axi_periph_ARREADY,
       M_AXI_arvalid => m00_couplers_to_ps8_0_axi_periph_ARVALID,
       M_AXI_awaddr(9 downto 0) => m00_couplers_to_ps8_0_axi_periph_AWADDR(9 downto 0),
-      M_AXI_awready => m00_couplers_to_ps8_0_axi_periph_AWREADY(0),
+      M_AXI_awready => m00_couplers_to_ps8_0_axi_periph_AWREADY,
       M_AXI_awvalid => m00_couplers_to_ps8_0_axi_periph_AWVALID,
       M_AXI_bready => m00_couplers_to_ps8_0_axi_periph_BREADY,
       M_AXI_bresp(1 downto 0) => m00_couplers_to_ps8_0_axi_periph_BRESP(1 downto 0),
-      M_AXI_bvalid => m00_couplers_to_ps8_0_axi_periph_BVALID(0),
+      M_AXI_bvalid => m00_couplers_to_ps8_0_axi_periph_BVALID,
       M_AXI_rdata(31 downto 0) => m00_couplers_to_ps8_0_axi_periph_RDATA(31 downto 0),
       M_AXI_rready => m00_couplers_to_ps8_0_axi_periph_RREADY,
       M_AXI_rresp(1 downto 0) => m00_couplers_to_ps8_0_axi_periph_RRESP(1 downto 0),
-      M_AXI_rvalid => m00_couplers_to_ps8_0_axi_periph_RVALID(0),
+      M_AXI_rvalid => m00_couplers_to_ps8_0_axi_periph_RVALID,
       M_AXI_wdata(31 downto 0) => m00_couplers_to_ps8_0_axi_periph_WDATA(31 downto 0),
-      M_AXI_wready => m00_couplers_to_ps8_0_axi_periph_WREADY(0),
+      M_AXI_wready => m00_couplers_to_ps8_0_axi_periph_WREADY,
       M_AXI_wvalid => m00_couplers_to_ps8_0_axi_periph_WVALID,
       S_ACLK => ps8_0_axi_periph_ACLK_net,
       S_ARESETN => ps8_0_axi_periph_ARESETN_net,
@@ -2652,6 +2652,7 @@ entity PYNQ_Design is
     adc0_clk_clk_p : in STD_LOGIC;
     dac0_clk_clk_n : in STD_LOGIC;
     dac0_clk_clk_p : in STD_LOGIC;
+    lmk_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
     sysref_in_diff_n : in STD_LOGIC;
     sysref_in_diff_p : in STD_LOGIC;
     vin0_01_v_n : in STD_LOGIC;
@@ -2659,10 +2660,10 @@ entity PYNQ_Design is
     vout00_v_n : out STD_LOGIC;
     vout00_v_p : out STD_LOGIC
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of PYNQ_Design : entity is "PYNQ_Design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=PYNQ_Design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=28,numReposBlks=21,numNonXlnxBlks=2,numHierBlks=7,maxHierDepth=0,numSysgenBlks=2,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_axi4_s2mm_cnt=2,da_board_cnt=1,da_clkrst_cnt=16,da_rf_converter_usp_cnt=2,synth_mode=None}";
-  attribute hw_handoff : string;
-  attribute hw_handoff of PYNQ_Design : entity is "PYNQ_Design.hwdef";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of PYNQ_Design : entity is "PYNQ_Design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=PYNQ_Design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=29,numReposBlks=22,numNonXlnxBlks=2,numHierBlks=7,maxHierDepth=0,numSysgenBlks=2,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=16,da_axi4_s2mm_cnt=2,da_board_cnt=1,da_clkrst_cnt=16,da_rf_converter_usp_cnt=3,synth_mode=None}";
+  attribute HW_HANDOFF : string;
+  attribute HW_HANDOFF of PYNQ_Design : entity is "PYNQ_Design.hwdef";
 end PYNQ_Design;
 
 architecture STRUCTURE of PYNQ_Design is
@@ -2858,17 +2859,22 @@ architecture STRUCTURE of PYNQ_Design is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component PYNQ_Design_rst_ps8_0_96M_1;
+  component PYNQ_Design_xlconstant_0_2 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component PYNQ_Design_xlconstant_0_2;
   signal DUT_data_in_0_m_axis_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  attribute DEBUG : string;
+  attribute DEBUG of DUT_data_in_0_m_axis_TDATA : signal is "true";
   attribute MARK_DEBUG : boolean;
   attribute MARK_DEBUG of DUT_data_in_0_m_axis_TDATA : signal is std.standard.true;
-  attribute debug : string;
-  attribute debug of DUT_data_in_0_m_axis_TDATA : signal is "true";
   signal DUT_data_in_0_m_axis_TREADY : STD_LOGIC;
+  attribute DEBUG of DUT_data_in_0_m_axis_TREADY : signal is "true";
   attribute MARK_DEBUG of DUT_data_in_0_m_axis_TREADY : signal is std.standard.true;
-  attribute debug of DUT_data_in_0_m_axis_TREADY : signal is "true";
   signal DUT_data_in_0_m_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute DEBUG of DUT_data_in_0_m_axis_TVALID : signal is "true";
   attribute MARK_DEBUG of DUT_data_in_0_m_axis_TVALID : signal is std.standard.true;
-  attribute debug of DUT_data_in_0_m_axis_TVALID : signal is "true";
   signal adc0_clk_1_CLK_N : STD_LOGIC;
   signal adc0_clk_1_CLK_P : STD_LOGIC;
   signal axi_smc_1_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 48 downto 0 );
@@ -2911,20 +2917,20 @@ architecture STRUCTURE of PYNQ_Design is
   signal proc_sys_reset_1_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ps8_0_axi_periph_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal ps8_0_axi_periph_M00_AXI_ARREADY : STD_LOGIC;
-  signal ps8_0_axi_periph_M00_AXI_ARVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal ps8_0_axi_periph_M00_AXI_ARVALID : STD_LOGIC;
   signal ps8_0_axi_periph_M00_AXI_AWADDR : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal ps8_0_axi_periph_M00_AXI_AWREADY : STD_LOGIC;
-  signal ps8_0_axi_periph_M00_AXI_AWVALID : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal ps8_0_axi_periph_M00_AXI_BREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal ps8_0_axi_periph_M00_AXI_AWVALID : STD_LOGIC;
+  signal ps8_0_axi_periph_M00_AXI_BREADY : STD_LOGIC;
   signal ps8_0_axi_periph_M00_AXI_BRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal ps8_0_axi_periph_M00_AXI_BVALID : STD_LOGIC;
   signal ps8_0_axi_periph_M00_AXI_RDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal ps8_0_axi_periph_M00_AXI_RREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal ps8_0_axi_periph_M00_AXI_RREADY : STD_LOGIC;
   signal ps8_0_axi_periph_M00_AXI_RRESP : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal ps8_0_axi_periph_M00_AXI_RVALID : STD_LOGIC;
   signal ps8_0_axi_periph_M00_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ps8_0_axi_periph_M00_AXI_WREADY : STD_LOGIC;
-  signal ps8_0_axi_periph_M00_AXI_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal ps8_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal ps8_0_axi_periph_M01_AXI_ARADDR : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal ps8_0_axi_periph_M01_AXI_ARREADY : STD_LOGIC;
   signal ps8_0_axi_periph_M01_AXI_ARVALID : STD_LOGIC;
@@ -2964,18 +2970,19 @@ architecture STRUCTURE of PYNQ_Design is
   signal usp_rf_data_converter_0_clk_adc0 : STD_LOGIC;
   signal usp_rf_data_converter_0_clk_dac0 : STD_LOGIC;
   signal usp_rf_data_converter_0_m00_axis_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TDATA : signal is "true";
   attribute MARK_DEBUG of usp_rf_data_converter_0_m00_axis_TDATA : signal is std.standard.true;
-  attribute debug of usp_rf_data_converter_0_m00_axis_TDATA : signal is "true";
   signal usp_rf_data_converter_0_m00_axis_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TREADY : signal is "true";
   attribute MARK_DEBUG of usp_rf_data_converter_0_m00_axis_TREADY : signal is std.standard.true;
-  attribute debug of usp_rf_data_converter_0_m00_axis_TREADY : signal is "true";
   signal usp_rf_data_converter_0_m00_axis_TVALID : STD_LOGIC;
+  attribute DEBUG of usp_rf_data_converter_0_m00_axis_TVALID : signal is "true";
   attribute MARK_DEBUG of usp_rf_data_converter_0_m00_axis_TVALID : signal is std.standard.true;
-  attribute debug of usp_rf_data_converter_0_m00_axis_TVALID : signal is "true";
   signal usp_rf_data_converter_0_vout00_V_N : STD_LOGIC;
   signal usp_rf_data_converter_0_vout00_V_P : STD_LOGIC;
   signal vin0_01_1_V_N : STD_LOGIC;
   signal vin0_01_1_V_P : STD_LOGIC;
+  signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR : STD_LOGIC_VECTOR ( 39 downto 0 );
   signal zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -3039,25 +3046,26 @@ architecture STRUCTURE of PYNQ_Design is
   signal NLW_zynq_ultra_ps_e_0_saxigp4_bid_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal NLW_zynq_ultra_ps_e_0_saxigp4_bresp_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_zynq_ultra_ps_e_0_saxigp4_rid_UNCONNECTED : STD_LOGIC_VECTOR ( 5 downto 0 );
-  attribute x_interface_info : string;
-  attribute x_interface_info of adc0_clk_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 adc0_clk CLK_N";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of adc0_clk_clk_n : signal is "XIL_INTERFACENAME adc0_clk, CAN_DEBUG false, FREQ_HZ 204800000.0";
-  attribute x_interface_info of adc0_clk_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 adc0_clk CLK_P";
-  attribute x_interface_info of dac0_clk_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 dac0_clk CLK_N";
-  attribute x_interface_parameter of dac0_clk_clk_n : signal is "XIL_INTERFACENAME dac0_clk, CAN_DEBUG false, FREQ_HZ 204800000.0";
-  attribute x_interface_info of dac0_clk_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 dac0_clk CLK_P";
-  attribute x_interface_info of sysref_in_diff_n : signal is "xilinx.com:display_usp_rf_data_converter:diff_pins:1.0 sysref_in diff_n";
-  attribute x_interface_info of sysref_in_diff_p : signal is "xilinx.com:display_usp_rf_data_converter:diff_pins:1.0 sysref_in diff_p";
-  attribute x_interface_info of vin0_01_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 vin0_01 V_N";
-  attribute x_interface_info of vin0_01_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 vin0_01 V_P";
-  attribute x_interface_info of vout00_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 vout00 V_N";
-  attribute x_interface_info of vout00_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 vout00 V_P";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of adc0_clk_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 adc0_clk CLK_N";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of adc0_clk_clk_n : signal is "XIL_INTERFACENAME adc0_clk, CAN_DEBUG false, FREQ_HZ 204800000.0";
+  attribute X_INTERFACE_INFO of adc0_clk_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 adc0_clk CLK_P";
+  attribute X_INTERFACE_INFO of dac0_clk_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 dac0_clk CLK_N";
+  attribute X_INTERFACE_PARAMETER of dac0_clk_clk_n : signal is "XIL_INTERFACENAME dac0_clk, CAN_DEBUG false, FREQ_HZ 204800000.0";
+  attribute X_INTERFACE_INFO of dac0_clk_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 dac0_clk CLK_P";
+  attribute X_INTERFACE_INFO of sysref_in_diff_n : signal is "xilinx.com:display_usp_rf_data_converter:diff_pins:1.0 sysref_in diff_n";
+  attribute X_INTERFACE_INFO of sysref_in_diff_p : signal is "xilinx.com:display_usp_rf_data_converter:diff_pins:1.0 sysref_in diff_p";
+  attribute X_INTERFACE_INFO of vin0_01_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 vin0_01 V_N";
+  attribute X_INTERFACE_INFO of vin0_01_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 vin0_01 V_P";
+  attribute X_INTERFACE_INFO of vout00_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 vout00 V_N";
+  attribute X_INTERFACE_INFO of vout00_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 vout00 V_P";
 begin
   adc0_clk_1_CLK_N <= adc0_clk_clk_n;
   adc0_clk_1_CLK_P <= adc0_clk_clk_p;
   dac0_clk_1_CLK_N <= dac0_clk_clk_n;
   dac0_clk_1_CLK_P <= dac0_clk_clk_p;
+  lmk_reset(0) <= xlconstant_0_dout(0);
   sysref_in_1_diff_n <= sysref_in_diff_n;
   sysref_in_1_diff_p <= sysref_in_diff_p;
   vin0_01_1_V_N <= vin0_01_v_n;
@@ -3131,20 +3139,20 @@ TX: entity work.TX_imp_1A0AJCC
       SLOT_1_AXIS_tvalid(0) => DUT_data_in_0_m_axis_TVALID(0),
       S_AXI_LITE_araddr(9 downto 0) => ps8_0_axi_periph_M00_AXI_ARADDR(9 downto 0),
       S_AXI_LITE_arready => ps8_0_axi_periph_M00_AXI_ARREADY,
-      S_AXI_LITE_arvalid => ps8_0_axi_periph_M00_AXI_ARVALID(0),
+      S_AXI_LITE_arvalid => ps8_0_axi_periph_M00_AXI_ARVALID,
       S_AXI_LITE_awaddr(9 downto 0) => ps8_0_axi_periph_M00_AXI_AWADDR(9 downto 0),
       S_AXI_LITE_awready => ps8_0_axi_periph_M00_AXI_AWREADY,
-      S_AXI_LITE_awvalid => ps8_0_axi_periph_M00_AXI_AWVALID(0),
-      S_AXI_LITE_bready => ps8_0_axi_periph_M00_AXI_BREADY(0),
+      S_AXI_LITE_awvalid => ps8_0_axi_periph_M00_AXI_AWVALID,
+      S_AXI_LITE_bready => ps8_0_axi_periph_M00_AXI_BREADY,
       S_AXI_LITE_bresp(1 downto 0) => ps8_0_axi_periph_M00_AXI_BRESP(1 downto 0),
       S_AXI_LITE_bvalid => ps8_0_axi_periph_M00_AXI_BVALID,
       S_AXI_LITE_rdata(31 downto 0) => ps8_0_axi_periph_M00_AXI_RDATA(31 downto 0),
-      S_AXI_LITE_rready => ps8_0_axi_periph_M00_AXI_RREADY(0),
+      S_AXI_LITE_rready => ps8_0_axi_periph_M00_AXI_RREADY,
       S_AXI_LITE_rresp(1 downto 0) => ps8_0_axi_periph_M00_AXI_RRESP(1 downto 0),
       S_AXI_LITE_rvalid => ps8_0_axi_periph_M00_AXI_RVALID,
       S_AXI_LITE_wdata(31 downto 0) => ps8_0_axi_periph_M00_AXI_WDATA(31 downto 0),
       S_AXI_LITE_wready => ps8_0_axi_periph_M00_AXI_WREADY,
-      S_AXI_LITE_wvalid => ps8_0_axi_periph_M00_AXI_WVALID(0),
+      S_AXI_LITE_wvalid => ps8_0_axi_periph_M00_AXI_WVALID,
       ext_reset_in => zynq_ultra_ps_e_0_pl_resetn0,
       m_axi_mm2s_aclk => usp_rf_data_converter_0_clk_dac0,
       peripheral_aresetn(0) => proc_sys_reset_1_peripheral_aresetn(0)
@@ -3156,21 +3164,21 @@ ps8_0_axi_periph: entity work.PYNQ_Design_ps8_0_axi_periph_2
       M00_ACLK => usp_rf_data_converter_0_clk_dac0,
       M00_ARESETN => proc_sys_reset_1_peripheral_aresetn(0),
       M00_AXI_araddr(9 downto 0) => ps8_0_axi_periph_M00_AXI_ARADDR(9 downto 0),
-      M00_AXI_arready(0) => ps8_0_axi_periph_M00_AXI_ARREADY,
-      M00_AXI_arvalid(0) => ps8_0_axi_periph_M00_AXI_ARVALID(0),
+      M00_AXI_arready => ps8_0_axi_periph_M00_AXI_ARREADY,
+      M00_AXI_arvalid => ps8_0_axi_periph_M00_AXI_ARVALID,
       M00_AXI_awaddr(9 downto 0) => ps8_0_axi_periph_M00_AXI_AWADDR(9 downto 0),
-      M00_AXI_awready(0) => ps8_0_axi_periph_M00_AXI_AWREADY,
-      M00_AXI_awvalid(0) => ps8_0_axi_periph_M00_AXI_AWVALID(0),
-      M00_AXI_bready(0) => ps8_0_axi_periph_M00_AXI_BREADY(0),
+      M00_AXI_awready => ps8_0_axi_periph_M00_AXI_AWREADY,
+      M00_AXI_awvalid => ps8_0_axi_periph_M00_AXI_AWVALID,
+      M00_AXI_bready => ps8_0_axi_periph_M00_AXI_BREADY,
       M00_AXI_bresp(1 downto 0) => ps8_0_axi_periph_M00_AXI_BRESP(1 downto 0),
-      M00_AXI_bvalid(0) => ps8_0_axi_periph_M00_AXI_BVALID,
+      M00_AXI_bvalid => ps8_0_axi_periph_M00_AXI_BVALID,
       M00_AXI_rdata(31 downto 0) => ps8_0_axi_periph_M00_AXI_RDATA(31 downto 0),
-      M00_AXI_rready(0) => ps8_0_axi_periph_M00_AXI_RREADY(0),
+      M00_AXI_rready => ps8_0_axi_periph_M00_AXI_RREADY,
       M00_AXI_rresp(1 downto 0) => ps8_0_axi_periph_M00_AXI_RRESP(1 downto 0),
-      M00_AXI_rvalid(0) => ps8_0_axi_periph_M00_AXI_RVALID,
+      M00_AXI_rvalid => ps8_0_axi_periph_M00_AXI_RVALID,
       M00_AXI_wdata(31 downto 0) => ps8_0_axi_periph_M00_AXI_WDATA(31 downto 0),
-      M00_AXI_wready(0) => ps8_0_axi_periph_M00_AXI_WREADY,
-      M00_AXI_wvalid(0) => ps8_0_axi_periph_M00_AXI_WVALID(0),
+      M00_AXI_wready => ps8_0_axi_periph_M00_AXI_WREADY,
+      M00_AXI_wvalid => ps8_0_axi_periph_M00_AXI_WVALID,
       M01_ACLK => clk_wiz_0_clk_out1,
       M01_ARESETN => proc_sys_reset_0_peripheral_aresetn(0),
       M01_AXI_araddr(9 downto 0) => ps8_0_axi_periph_M01_AXI_ARADDR(9 downto 0),
@@ -3305,6 +3313,10 @@ usp_rf_data_converter_0: component PYNQ_Design_usp_rf_data_converter_0_0
       vin0_01_p => vin0_01_1_V_P,
       vout00_n => usp_rf_data_converter_0_vout00_V_N,
       vout00_p => usp_rf_data_converter_0_vout00_V_P
+    );
+xlconstant_0: component PYNQ_Design_xlconstant_0_2
+     port map (
+      dout(0) => xlconstant_0_dout(0)
     );
 zynq_ultra_ps_e_0: component PYNQ_Design_zynq_ultra_ps_e_0_0
      port map (

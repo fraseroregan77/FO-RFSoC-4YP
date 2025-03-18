@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Mon Mar 17 12:50:17 2025
+| Date         : Tue Mar 18 12:30:31 2025
 | Host         : EEE-R343-01
 | Design       : design_1
 | Device       : xczu28dr-ffvg1517-2-E-
@@ -37,7 +37,7 @@ Clock 1: PYNQ_Design_i/RX/clk_wiz_0/inst/clk_out1
 Clock 2: PYNQ_Design_i/usp_rf_data_converter_0/inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/clk_dac0
 	Clock source type: BUFG_GT
 	Clock source region: X5Y4
-	Clock regions with locked loads: X1Y1 X5Y4 
+	Clock regions with locked loads: X1Y1 
 	initial rect ((0, 1), (5, 4))
 
 Clock 3: PYNQ_Design_i/zynq_ultra_ps_e_0/U0/pl_clk0
@@ -49,7 +49,7 @@ Clock 3: PYNQ_Design_i/zynq_ultra_ps_e_0/U0/pl_clk0
 Clock 4: dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i
 	Clock source type: BUFGCE
 	Clock source region: X4Y5
-	initial rect ((3, 2), (5, 5))
+	initial rect ((2, 2), (5, 5))
 
 Clock 5: PYNQ_Design_i/usp_rf_data_converter_0/inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/clk_adc0
 	Clock source type: BUFG_GT

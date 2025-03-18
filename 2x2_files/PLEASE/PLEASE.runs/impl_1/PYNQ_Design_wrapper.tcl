@@ -109,8 +109,7 @@ set rc [catch {
   set_param power.enableUnconnectedCarry8PinPower 1
   set_param power.enableCarry8RouteBelPower 1
   set_param power.enableLutRouteBelPower 1
-  set_param xicom.use_bs_reader 1
-  set_param bd.open.in_stealth_mode 3
+  set_param bd.open.in_stealth_mode 4
   set_param ced.repoPaths C:/Users/clb20123/Documents/Vivado/board_files
   set_param runs.launchOptions { -jobs 4  }
 OPTRACE "create in-memory project" START { }
@@ -139,6 +138,7 @@ OPTRACE "add files" START { }
   add_files C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

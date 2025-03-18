@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Mar 14 14:42:18 2025
-# Process ID: 7516
+# Start of session at: Tue Mar 18 10:14:22 2025
+# Process ID: 1568
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9152 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1688 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE\vivado.jou
 # Running On        :EEE-R343-01
@@ -17,15 +17,13 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :17060 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19610 MB
-# Available Virtual :12060 MB
+# Swap memory       :4646 MB
+# Total Virtual     :21706 MB
+# Available Virtual :14208 MB
 #-----------------------------------------------------------
 start_gui
 Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
 open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
-Scanning sources...
-Finished scanning sources
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
@@ -35,1079 +33,528 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 avai
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 1707.188 ; gain = 556.281
+open_project: Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 1750.613 ; gain = 610.430
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
 Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>...
-Adding component instance block -- User_Company:VMC:DUT_data_in:1.0 - DUT_data_in_0
 Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
 Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.6 - usp_rf_data_converter_0
 INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
 INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 128000000
-Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
-Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
-Adding component instance block -- User_Company:VMC:DUT_rec:1.0 - DUT_rec_0
-Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma
-Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- User_Company:VMC:DUT_rec:1.0 - DUT_rec_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_1
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_rx
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- User_Company:VMC:DUT_data_in:1.0 - DUT_data_in_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_tx
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/TX/axi_dma_tx/M_AXIS_MM2S'. Parameter ignored.
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/TX/axi_dma_tx/M_AXIS_MM2S'. Parameter ignored.
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
+Successfully read diagram <PYNQ_Design> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1953.195 ; gain = 174.078
+close_bd_design [get_bd_designs PYNQ_Design]
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
+close_project
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+ip_upgrade.log
+myproj
+PLEASE.cache
+PLEASE.gen
+PLEASE.hw
+PLEASE.ip_user_files
+PLEASE.runs
+PLEASE.sim
+PLEASE.srcs
+PLEASE.tmp
+PLEASE.xpr
+PYNQ_Design.tcl
+PYNQ_Design_wrapper.xsa
+rfd_clocking_nlv.log
+rfd_us_nlv_ADC.log
+rfd_us_nlv_DAC.log
+vivado.jou
+vivado.log
+vivado_10668.backup.jou
+vivado_10668.backup.log
+vivado_12368.backup.jou
+vivado_12368.backup.log
+vivado_14308.backup.jou
+vivado_14308.backup.log
+vivado_4492.backup.jou
+vivado_4492.backup.log
+vivado_7516.backup.jou
+vivado_7516.backup.log
+vivado_pid1568.str
+vivado_pid20068.str
+cd Documents/
+couldn't change working directory to "Documents/": no such file or directory
+cd
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+3D Objects
+AppData
+Application Data
+Contacts
+Cookies
+Desktop
+Documents
+Downloads
+Favorites
+IntelGraphicsProfiles
+Links
+Local Settings
+Music
+My Documents
+NetHood
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{95d9734f-6cfb-11ed-befc-38d547199f91}.TM.blf
+NTUSER.DAT{95d9734f-6cfb-11ed-befc-38d547199f91}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{95d9734f-6cfb-11ed-befc-38d547199f91}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+OneDrive
+Pictures
+PrintHood
+Recent
+Saved Games
+Searches
+SendTo
+Start Menu
+Templates
+Videos
+cd Documents/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/
+make block_design
+WARNING: [Common 17-259] Unknown Tcl command 'make block_design' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+vivado -mode batch -source make_project.tcl -notrace
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Mar 18 10:54:04 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+source make_project.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/clb20123/Documents/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc'
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 605.188 ; gain = 199.820
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/clb20123/Documents/rfsoc_quant_amc/boards/RFSoC2x2/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 18 10:54:35 2025...
+vivado -mode batch -source make_block_design.tcl -notrace
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Mar 18 10:54:37 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
+source make_block_design.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/clb20123/Documents/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc'
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/clb20123/Documents/rfsoc_quant_amc/boards/RFSoC2x2/ip'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/clb20123/Documents/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 606.086 ; gain = 200.680
+
+WARNING: [Vivado 12-818] No files matched './rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/block_design.bd'
+INFO: [Project 1-1716] Could not find the wrapper file ./rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/hdl/block_design_wrapper.vhd, checking in project .gen location instead.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 18 10:54:50 2025...
+ERROR: [BD::TCL 103-2041] This script was generated using Vivado <2020.1> and is being run in <2024.1> of Vivado. Please run the script in Vivado <2020.1> then open the design in Vivado <2024.1>. Upgrade the design by running "Tools => Report => Report IP Status...", then run write_bd_tcl to create an updated script.
+ERROR: [Vivado 12-172] File or Directory './rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/hdl/block_design_wrapper.vhd' does not exist
+make.EXE: *** [makefile:10: block_design] Error 1
+ambiguous command name "make": make_bd_intf_pins_external make_bd_pins_external make_diff_pair_ports make_wrapper
+open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1993.762 ; gain = 0.000
+open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+Reading block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.6 - usp_rf_data_converter_0
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 128000000
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_96M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
-Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- User_Company:VMC:DUT_rec:1.0 - DUT_rec_0
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_1
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_rx
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- User_Company:VMC:DUT_data_in:1.0 - DUT_data_in_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_tx
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/TX/axi_dma_tx/M_AXIS_MM2S'. Parameter ignored.
+WARNING: [BD 41-1282] Parameter 'HAS_BURST' is not defined on '/TX/axi_dma_tx/M_AXIS_MM2S'. Parameter ignored.
 Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
+Successfully read diagram <PYNQ_Design> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1993.762 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_bd_design [get_bd_designs PYNQ_Design]
+Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
+close_project
+cd
+cd Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+assets
+bitstream
+block_design.tcl
+constraints.xdc
+drivers
+make_bitstream.tcl
+make_block_design.tcl
+make_project.tcl
+makefile
+notebooks
+README.md
+results
+rfsoc_quant_amc
+vivado.jou
+vivado.log
+vivado_11896.backup.jou
+vivado_11896.backup.log
+vivado_12024.backup.jou
+vivado_12024.backup.log
+vivado_12914.backup.jou
+vivado_12914.backup.log
+cd rfsoc_quant_amc/
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+rfsoc_quant_amc.cache
+rfsoc_quant_amc.hbs
+rfsoc_quant_amc.hw
+rfsoc_quant_amc.ip_user_files
+rfsoc_quant_amc.srcs
+rfsoc_quant_amc.xpr
+open_project
+ERROR: [Common 17-163] Missing value for option 'file', please type 'open_project -help' for usage info.
+open_project rfsoc_quant_amc.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc'
+INFO: [Project 1-313] Project file moved from '/home/andy/Documents/Projects/fraser/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'block_design.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+block_design_auto_cc_2
+block_design_xbar_1
+block_design_adc0_clk_wiz_0
+block_design_auto_cc_1
+block_design_auto_cc_9
+block_design_proc_sys_reset_dac_0
+block_design_xbar_0
+block_design_axis_broadcaster_0_0
+block_design_auto_ds_0
+block_design_auto_cc_3
+block_design_auto_pc_0
+block_design_auto_cc_0
+block_design_auto_cc_4
+block_design_auto_cc_5
+block_design_ps8_0_axi_periph_0
+block_design_axi_smc_0
+block_design_auto_ds_1
+block_design_fir_interp_8_real_0
+block_design_axis_broadcaster_0_1
+block_design_axis_clock_converter_0_0
+block_design_axis_broadcaster_1_0
+block_design_axis_clock_converter_1_0
+block_design_axis_combiner_0_0
+block_design_axis_clock_converter_2_0
+block_design_axis_clock_converter_pkt_0
+block_design_axis_data_fifo_0_0
+block_design_rst_clk_wiz_8M_0
+block_design_axis_data_fifo_1_0
+block_design_axis_data_fifo_2_0
+block_design_fir_decim_4_imag_0
+block_design_fir_decim_8_imag_0
+block_design_fir_interp_4_imag_0
+block_design_rx_dma_2_0
+block_design_fir_decim_4_real_0
+block_design_fir_interp_8_imag_0
+block_design_fir_decim_8_real_0
+block_design_rx_dma_0_0
+block_design_rx_dma_1_0
+block_design_rx_dma_pkt_0
+block_design_rst_adc0_clk_wiz_128M_0
+block_design_system_ila_1_0
+block_design_rst_ps8_0_299M_0
+block_design_rst_ps8_0_99M_0
+block_design_system_ila_0_0
+block_design_axi_smc_1
+block_design_axis_combiner_0_1
+block_design_fir_interp_4_real_0
+block_design_auto_pc_1
+block_design_auto_cc_6
+block_design_auto_cc_7
+block_design_auto_cc_8
+block_design_tx_dma_0
+block_design_auto_cc_10
+block_design_usp_rf_data_converter_0_0
+block_design_ps8_0_axi_periph_1_0
+block_design_xlconstant_0_0
+block_design_zynq_ultra_ps_e_0_0
+
+INFO: [Project 1-230] Project 'rfsoc_quant_amc.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 2000.195 ; gain = 0.000
+rfsoc_quant_amc
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/block_design.bd}
+Reading block design file <C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/block_design.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - adc0_clk_wiz
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_dac
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- user.org:ip:Interleave_IQ:1.0 - Interleave_IQ
+Adding component instance block -- user.org:ip:amc_cnn_16w16a:1.1 - amc_cnn_16w16a
+Adding component instance block -- user.org:ip:amc_cnn_4w16a:1.0 - amc_cnn_4w_16a
+Adding component instance block -- user.org:ip:amc_cnn_8w16a:1.0 - amc_cnn_8w16a
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_0
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_1
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_0
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_1
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_2
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_pkt
+Adding component instance block -- xilinx.com:ip:axis_combiner:1.1 - axis_combiner_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_1
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_2
+Adding component instance block -- user.org:ip:DMAController:3.0 - dma_controller_0
+Adding component instance block -- user.org:ip:DMAController:3.0 - dma_controller_1
+Adding component instance block -- user.org:ip:DMAController:3.0 - dma_controller_2
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_decim_4_imag
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_decim_8_imag
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_decim_4_real
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_decim_8_real
+Adding component instance block -- user.org:ip:packet_generator:1.1 - packet_generator
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - rx_dma_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - rx_dma_1
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - rx_dma_2
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - rx_dma_pkt
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_adc0_clk_wiz_128M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_8M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_299M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
 Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
 Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_1
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
-Successfully read diagram <PYNQ_Design> from block design file <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd>
-open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1884.035 ; gain = 131.598
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Mar 14 14:44:21 2025] Launched synth_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/runme.log
-[Fri Mar 14 14:44:21 2025] Launched impl_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Mar 14 14:50:01 2025] Launched synth_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/runme.log
-[Fri Mar 14 14:50:01 2025] Launched impl_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/runme.log
-open_run impl_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_0
+Adding component instance block -- xilinx.com:ip:axis_combiner:1.1 - axis_combiner_0
+Adding component instance block -- user.org:ip:cyclicBufferMultirate:1.0 - cyclic_buf
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_interp_4_imag
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_interp_4_real
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_interp_8_imag
+Adding component instance block -- xilinx.com:ip:fir_compiler:7.2 - fir_interp_8_real
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph_1
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - tx_dma
+Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.3 - usp_rf_data_converter_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.3 - zynq_ultra_ps_e_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_1/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_2/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /transmitter/tx_dma/Data_MM2S.
+Successfully read diagram <block_design> from block design file <C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/block_design.bd>
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {block_design_axi_smc_1 block_design_axis_broadcaster_0_0 block_design_axis_broadcaster_0_1 block_design_ps8_0_axi_periph_1_0 block_design_fir_decim_8_real_0 block_design_axi_smc_0 block_design_fir_interp_8_imag_0 block_design_axis_combiner_0_0 block_design_axis_broadcaster_1_0 block_design_rst_ps8_0_99M_0 block_design_tx_dma_0 block_design_axis_clock_converter_pkt_0 block_design_fir_interp_4_real_0 block_design_axis_clock_converter_2_0 block_design_ps8_0_axi_periph_0 block_design_zynq_ultra_ps_e_0_0 block_design_axis_clock_converter_1_0 block_design_axis_data_fifo_0_0 block_design_rx_dma_pkt_0 block_design_rx_dma_0_0 block_design_axis_combiner_0_1 block_design_fir_decim_8_imag_0 block_design_rst_clk_wiz_8M_0 block_design_system_ila_0_0 block_design_axis_data_fifo_2_0 block_design_fir_decim_4_imag_0 block_design_rst_adc0_clk_wiz_128M_0 block_design_axis_clock_converter_0_0 block_design_fir_decim_4_real_0 block_design_rst_ps8_0_299M_0 block_design_rx_dma_1_0 block_design_rx_dma_2_0 block_design_fir_interp_8_real_0 block_design_system_ila_1_0 block_design_adc0_clk_wiz_0 block_design_proc_sys_reset_dac_0 block_design_fir_interp_4_imag_0 block_design_axis_data_fifo_1_0 block_design_xlconstant_0_0 block_design_usp_rf_data_converter_0_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/block_design.bd'
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3171.398 ; gain = 0.305
-INFO: [Netlist 29-17] Analyzing 529 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.226 . Memory (MB): peak = 3383.160 ; gain = 10.383
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 3883.148 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 3883.148 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3902.379 ; gain = 19.230
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3902.379 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4238.965 ; gain = 336.586
-Read Physdb Files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 4238.965 ; gain = 355.816
-Restored from archive | CPU: 15.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 4238.965 ; gain = 355.816
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 4238.965 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 560 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 152 instances
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 53 instances
-  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 83 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
-  SRLC32E => SRL16E: 260 instances
+INFO: [IP_Flow 19-3422] Upgraded block_design_adc0_clk_wiz_0 (Clocking Wizard 6.0) from revision 5 to revision 14
+INFO: [IP_Flow 19-3422] Upgraded block_design_axi_smc_0 (AXI SmartConnect 1.0) from revision 13 to revision 23
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_1/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_2/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+INFO: [IP_Flow 19-3422] Upgraded block_design_axi_smc_1 (AXI SmartConnect 1.0) from revision 13 to revision 23
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /transmitter/tx_dma/Data_MM2S.
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_broadcaster_0_0 (AXI4-Stream Broadcaster 1.1) from revision 20 to revision 30
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_broadcaster_0_1 (AXI4-Stream Broadcaster 1.1) from revision 20 to revision 30
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_broadcaster_1_0 (AXI4-Stream Broadcaster 1.1) from revision 20 to revision 30
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_clock_converter_0_0 (AXI4-Stream Clock Converter 1.1) from revision 22 to revision 32
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_clock_converter_1_0 (AXI4-Stream Clock Converter 1.1) from revision 22 to revision 32
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_clock_converter_2_0 (AXI4-Stream Clock Converter 1.1) from revision 22 to revision 32
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_clock_converter_pkt_0 (AXI4-Stream Clock Converter 1.1) from revision 22 to revision 32
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_combiner_0_0 (AXI4-Stream Combiner 1.1) from revision 19 to revision 29
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_combiner_0_1 (AXI4-Stream Combiner 1.1) from revision 19 to revision 29
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_data_fifo_0_0 (AXI4-Stream Data FIFO 2.0) from revision 3 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_data_fifo_1_0 (AXI4-Stream Data FIFO 2.0) from revision 3 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded block_design_axis_data_fifo_2_0 (AXI4-Stream Data FIFO 2.0) from revision 3 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_decim_4_imag_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_decim_4_real_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_decim_8_imag_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_decim_8_real_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_interp_4_imag_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_interp_4_real_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_interp_8_imag_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_fir_interp_8_real_0 (FIR Compiler 7.2) from revision 14 to revision 22
+INFO: [IP_Flow 19-3422] Upgraded block_design_proc_sys_reset_dac_0 (Processor System Reset 5.0) from revision 13 to revision 15
+INFO: [IP_Flow 19-3422] Upgraded block_design_ps8_0_axi_periph_0 (AXI Interconnect 2.1) from revision 22 to revision 32
+INFO: [IP_Flow 19-3422] Upgraded block_design_ps8_0_axi_periph_1_0 (AXI Interconnect 2.1) from revision 22 to revision 32
+INFO: [IP_Flow 19-3422] Upgraded block_design_rst_adc0_clk_wiz_128M_0 (Processor System Reset 5.0) from revision 13 to revision 15
+INFO: [IP_Flow 19-3422] Upgraded block_design_rst_clk_wiz_8M_0 (Processor System Reset 5.0) from revision 13 to revision 15
+INFO: [IP_Flow 19-3422] Upgraded block_design_rst_ps8_0_299M_0 (Processor System Reset 5.0) from revision 13 to revision 15
+INFO: [IP_Flow 19-3422] Upgraded block_design_rst_ps8_0_99M_0 (Processor System Reset 5.0) from revision 13 to revision 15
+INFO: [IP_Flow 19-3422] Upgraded block_design_rx_dma_0_0 (AXI Direct Memory Access 7.1) from revision 22 to revision 32
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+INFO: [IP_Flow 19-3422] Upgraded block_design_rx_dma_1_0 (AXI Direct Memory Access 7.1) from revision 22 to revision 32
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_1/Data_S2MM.
+INFO: [IP_Flow 19-3422] Upgraded block_design_rx_dma_2_0 (AXI Direct Memory Access 7.1) from revision 22 to revision 32
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_2/Data_S2MM.
+INFO: [IP_Flow 19-3422] Upgraded block_design_rx_dma_pkt_0 (AXI Direct Memory Access 7.1) from revision 22 to revision 32
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+ipx::get_ipfiles: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3563.074 ; gain = 12.789
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_CNT' from '0.0' to '24' has been ignored for IP 'block_design_system_ila_0_0'
+INFO: [IP_Flow 19-3422] Upgraded block_design_system_ila_0_0 (System ILA 1.1) from revision 7 to revision 17
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_BRAM_CNT' from '0.0' to '6' has been ignored for IP 'block_design_system_ila_1_0'
+INFO: [IP_Flow 19-3422] Upgraded block_design_system_ila_1_0 (System ILA 1.1) from revision 7 to revision 17
+INFO: [IP_Flow 19-3422] Upgraded block_design_tx_dma_0 (AXI Direct Memory Access 7.1) from revision 22 to revision 32
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /transmitter/tx_dma/Data_MM2S.
+WARNING: [IP_Flow 19-1721] During upgrade of 'block_design_usp_rf_data_converter_0_0':
+Version 2.5 is a minor revision.
 
-open_run: Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 4548.422 ; gain = 2602.902
-open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 5687.309 ; gain = 1070.422
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-close_design
-write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl
-WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
-/DUT_data_in_0, /DUT_rec_0
-Please add the following user repository(s):
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip
-before sourcing this Tcl script or use write_project_tcl.
-INFO: [BD 5-148] Tcl file written out <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl>.
-
-write_hw_platform -fixed -include_bit -force -file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2024.1/data/embeddedsw) loading 4 seconds
-write_hw_platform: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 5712.309 ; gain = 0.000
-open_hw_manager
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2024.1.0
-  **** Build date : Mar  6 2024 at 20:50:54
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2024.1.0
-  ****** Build date   : Mar 09 2024-00:00:37
-    **** Build number : 2024.1.1709942437
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 5712.309 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 5712.309 ; gain = 0.000
-set_property PROGRAM.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.bit} [get_hw_devices xczu28dr_0]
-set_property PROBES.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx} [get_hw_devices xczu28dr_0]
-set_property FULL_PROBES.FILE {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/PYNQ_Design_wrapper.ltx} [get_hw_devices xczu28dr_0]
-current_hw_device [get_hw_devices xczu28dr_0]
-refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
-WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
-WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
-INFO: [Labtools 27-1434] Device xczu28dr (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-WARNING: [Labtools 27-3413] Dropping logic core with cellname:'PYNQ_Design_i/system_ila_0/U0/ila_lib' at location 'uuid_7F72FA404E7B5AE09A7604860771C7D7' from probes file, since it cannot be found on the programmed device.
-WARNING: [Labtools 27-3413] Dropping logic core with cellname:'PYNQ_Design_i/system_ila_1/U0/ila_lib' at location 'uuid_B749EB961FF35C0181A38238A9B5CBD3' from probes file, since it cannot be found on the programmed device.
-current_hw_device [get_hw_devices arm_dap_1]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
-current_hw_device [get_hw_devices xczu28dr_0]
-refresh_hw_device [lindex [get_hw_devices xczu28dr_0] 0]
-INFO: [Labtools 27-1434] Device xczu28dr (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-WARNING: [Labtools 27-3413] Dropping logic core with cellname:'PYNQ_Design_i/system_ila_0/U0/ila_lib' at location 'uuid_7F72FA404E7B5AE09A7604860771C7D7' from probes file, since it cannot be found on the programmed device.
-WARNING: [Labtools 27-3413] Dropping logic core with cellname:'PYNQ_Design_i/system_ila_1/U0/ila_lib' at location 'uuid_B749EB961FF35C0181A38238A9B5CBD3' from probes file, since it cannot be found on the programmed device.
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-validate_bd_design -force
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1: SmartConnect PYNQ_Design_axi_smc_1 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
-INFO: [xilinx.com:ip:axi_dma:7.1-14] /axi_dma 
-                    ##########################################################################################
-                    Clocks connected to AXI DMA are not same. Configuring AXI DMA in ASYNC mode ..........
-                    ##########################################################################################
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /DUT_data_in_0/s_axis(0) and /axi_dma/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /axi_dma/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 5712.309 ; gain = 0.000
-validate_bd_design -force
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma/Data_S2MM.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1: SmartConnect PYNQ_Design_axi_smc_1 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
-INFO: [xilinx.com:ip:axi_dma:7.1-14] /axi_dma 
-                    ##########################################################################################
-                    Clocks connected to AXI DMA are not same. Configuring AXI DMA in ASYNC mode ..........
-                    ##########################################################################################
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /DUT_data_in_0/s_axis(0) and /axi_dma/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s01_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM1_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /axi_dma/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 5712.309 ; gain = 0.000
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 5712.309 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 529 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 5712.309 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Restored from archive | CPU: 16.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 5712.309 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 5712.309 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 560 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 152 instances
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 53 instances
-  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 83 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
-  SRLC32E => SRL16E: 260 instances
-
-open_run: Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 5712.309 ; gain = 0.000
-open_report: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 5712.309 ; gain = 0.000
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-report_cdc
-INFO: [Timing 38-91] UpdateTimingParams: No interconnect No Cell Dly, Speed grade: -2, Temperature grade: E, Delay Type: max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version      : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date              : Fri Mar 14 15:36:07 2025
-| Host              : EEE-R343-01 running 64-bit major release  (build 9200)
-| Command           : report_cdc
-| Design            : PYNQ_Design_wrapper
-| Device            : xczu28dr-ffvg1517
-| Speed File        : -2  PRODUCTION 1.30 05-03-2022
-| Design State      : Routed
-| Temperature Grade : E
---------------------------------------------------------------------------------------------------------------------------------------------------
-
-CDC Report
-
-Severity  Source Clock                                                                                         Destination Clock                                                                                    CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
---------  ---------------------------------------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
-Warning   RFADC0_CLK                                                                                           RFDAC0_CLK                                                                                           No Common Primary Clock  False Path                       8     8       0        0             0  
-Warning   RFADC1_CLK                                                                                           RFDAC0_CLK                                                                                           No Common Primary Clock  False Path                       8     8       0        0             0  
-Warning   RFADC2_CLK                                                                                           RFDAC0_CLK                                                                                           No Common Primary Clock  False Path                       8     8       0        0             0  
-Warning   RFADC3_CLK                                                                                           RFDAC0_CLK                                                                                           No Common Primary Clock  False Path                       8     8       0        0             0  
-Warning   RFDAC1_CLK                                                                                           RFDAC0_CLK                                                                                           No Common Primary Clock  False Path                       8     8       0        0             0  
-Warning   clk_out1_PYNQ_Design_clk_wiz_0_0                                                                     RFDAC0_CLK                                                                                           No Common Primary Clock  Max Delay Datapath Only        475   475       0        0             0  
-Warning   RFDAC0_CLK                                                                                           clk_out1_PYNQ_Design_clk_wiz_0_0                                                                     No Common Primary Clock  Max Delay Datapath Only        247   247       0        0             0  
-Warning   dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK  clk_out1_PYNQ_Design_clk_wiz_0_0                                                                     No Common Primary Clock  Max Delay Datapath Only         11    11       0        0             0  
-Warning   clk_out1_PYNQ_Design_clk_wiz_0_0                                                                     dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK  No Common Primary Clock  Max Delay Datapath Only          4     4       0        0             0  
-Info      clk_pl_0                                                                                             RFDAC0_CLK                                                                                           No Common Primary Clock  Max Delay Datapath Only         13    13       0        0             0  
-Info      clk_pl_0                                                                                             clk_out1_PYNQ_Design_clk_wiz_0_0                                                                     No Common Primary Clock  Max Delay Datapath Only          8     8       0        0             0  
-Info      RFDAC0_CLK                                                                                           clk_pl_0                                                                                             No Common Primary Clock  Max Delay Datapath Only         10    10       0        0             0  
-Info      clk_out1_PYNQ_Design_clk_wiz_0_0                                                                     clk_pl_0                                                                                             No Common Primary Clock  Max Delay Datapath Only          5     5       0        0             0  
-
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:xpm_cdc_gen:1.0 xpm_cdc_gen_0
-endgroup
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
-ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
-/xpm_cdc_gen_0/src_clk
-/xpm_cdc_gen_0/dest_clk
-
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-set_property location {4 951 -164} [get_bd_cells xpm_cdc_gen_0]
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-regenerate_bd_layout
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
-endgroup
-set_property location {7 2670 1170} [get_bd_cells axi_dma_0]
-set_property location {8.5 4172 981} [get_bd_cells axi_dma_0]
-set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC PROPAGATED CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC PROPAGATED] [get_bd_cells axi_dma_0]
-set_property -dict [list \
-  CONFIG.c_addr_width {64} \
-  CONFIG.c_include_mm2s {0} \
-  CONFIG.c_include_sg {0} \
-  CONFIG.c_s2mm_burst_size {256} \
-  CONFIG.c_sg_length_width {26} \
-] [get_bd_cells axi_dma_0]
-set_property location {8 3543 1248} [get_bd_cells axi_dma_0]
-disconnect_bd_intf_net [get_bd_intf_net DUT_rec_0_m_axis] [get_bd_intf_pins DUT_rec_0/m_axis]
-connect_bd_intf_net [get_bd_intf_pins DUT_rec_0/m_axis] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
-connect_bd_net [get_bd_pins axi_dma_0/s_axi_lite_aclk] [get_bd_pins clk_wiz_0/clk_out1]
-connect_bd_net [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins clk_wiz_0/clk_out1]
-connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins axi_dma_0/axi_resetn]
-delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD] [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM1_FPD] [get_bd_cells ps8_0_axi_periph]
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-startgroup
-set_property CONFIG.PSU__USE__M_AXI_GP1 {0} [get_bd_cells zynq_ultra_ps_e_0]
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-WARNING: [BD 41-1684] Pin /zynq_ultra_ps_e_0/maxihpm1_fpd_aclk is now disabled. All connections to this pin have been removed. 
-endgroup
-startgroup
-set_property CONFIG.c_include_s2mm {0} [get_bd_cells axi_dma]
-WARNING: [BD 41-1684] Pin /axi_dma/m_axi_s2mm_aclk is now disabled. All connections to this pin have been removed. 
-delete_bd_objs [get_bd_intf_nets axi_dma_M_AXI_S2MM]
-endgroup
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_dma/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma/S_AXI_LITE]
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (128 MHz)} Clk_slave {/usp_rf_data_converter_0/clk_dac0 (128 MHz)} Clk_xbar {/clk_wiz_0/clk_out1 (128 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
-INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_LOW' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0x0000_0000 [ 2G ]>.
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
-WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' with 'register' usage does not match address space '/axi_dma_0/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {/clk_wiz_0/clk_out1 (128 MHz)} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
-Slave segment '/axi_dma_0/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA001_0000 [ 64K ]>.
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {/usp_rf_data_converter_0/clk_dac0 (128 MHz)} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/usp_rf_data_converter_0/s_axi} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
-endgroup
-regenerate_bd_layout
-set_property name axi_dma_tx [get_bd_cells axi_dma]
-set_property name axi_dma_rx [get_bd_cells axi_dma_0]
-delete_bd_objs [get_bd_intf_nets DUT_rec_0_m_axis]
-set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {DUT_rec_0_m_axis1}]
-true
-apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
-                                                          [get_bd_intf_nets DUT_rec_0_m_axis1] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/clk_wiz_0/clk_out1" SYSTEM_ILA "Auto" APC_EN "0" } \
-                                                         ]
-Debug Automation : Re-customizing System ILA block '/system_ila_1' to mode INTERFACE, with 0 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
-Debug Automation : Connecting interface connection /DUT_rec_0_m_axis1, to System ILA slot interface pin /system_ila_1/SLOT_0_AXIS for debug.
-delete_bd_objs [get_bd_cells xpm_cdc_gen_0]
-regenerate_bd_layout
-disconnect_bd_net /zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins axi_dma_tx/s_axi_lite_aclk]
-connect_bd_net [get_bd_pins axi_dma_tx/s_axi_lite_aclk] [get_bd_pins usp_rf_data_converter_0/clk_dac0]
-disconnect_bd_net /rst_ps8_0_96M_peripheral_aresetn [get_bd_pins axi_dma_tx/axi_resetn]
-connect_bd_net [get_bd_pins axi_dma_tx/axi_resetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
-undo
-INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_dma_tx/axi_resetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]'
-connect_bd_net [get_bd_pins axi_dma_tx/axi_resetn] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-startgroup
-set_property -dict [list \
-  CONFIG.PSU__USE__S_AXI_GP0 {0} \
-  CONFIG.PSU__USE__S_AXI_GP2 {1} \
-  CONFIG.PSU__USE__S_AXI_GP4 {1} \
-] [get_bd_cells zynq_ultra_ps_e_0]
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-WARNING: [BD 41-1684] Pin /zynq_ultra_ps_e_0/saxihpc0_fpd_aclk is now disabled. All connections to this pin have been removed. 
-delete_bd_objs [get_bd_intf_nets axi_smc_M00_AXI]
-endgroup
-delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_S2MM] [get_bd_intf_nets axi_dma_M_AXI_MM2S] [get_bd_cells axi_smc]
-connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/saxihp0_fpd_aclk] [get_bd_pins usp_rf_data_converter_0/clk_dac0]
-connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/saxihp2_fpd_aclk] [get_bd_pins clk_wiz_0/clk_out1]
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (128 MHz)} Clk_slave {/usp_rf_data_converter_0/clk_dac0 (128 MHz)} Clk_xbar {/clk_wiz_0/clk_out1 (128 MHz)} Master {/axi_dma_rx/M_AXI_S2MM} Slave {/zynq_ultra_ps_e_0/S_AXI_HP0_FPD} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP0_FPD]
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/axi_dma_rx/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/axi_dma_rx/Data_S2MM' at <0x0000_0000 [ 2G ]>.
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/axi_dma_rx/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
-WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/axi_dma_rx/Data_S2MM' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_rx/Data_S2MM.
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/usp_rf_data_converter_0/clk_dac0 (128 MHz)} Clk_slave {/clk_wiz_0/clk_out1 (128 MHz)} Clk_xbar {/usp_rf_data_converter_0/clk_dac0 (128 MHz)} Master {/axi_dma_tx/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HP2_FPD} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP2_FPD]
-WARNING: [BD 41-1743] Cannot assign slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' into address space '/axi_dma_tx/Data_MM2S' because no valid addressing path exists. The addressing path from slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' to address space '/axi_dma_tx/Data_MM2S' terminates at master interface '/axi_dma_tx/M_AXI_MM2S'. The apertures for this interface {<0x0_0000_0000 [ 4G ]>} do not intersect with previous path apertures {<0x8_0000_0000 [ 32G ]>}. This assignment will be automatically excluded.
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/axi_dma_tx/Data_MM2S' at <0x0000_0000 [ 2G ]>.
-Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' is being assigned into address space '/axi_dma_tx/Data_MM2S' at <0xFF00_0000 [ 16M ]>.
-WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM' with 'register' usage does not match address space '/axi_dma_tx/Data_MM2S' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /axi_dma_tx/Data_MM2S.
-endgroup
-regenerate_bd_layout
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-CRITICAL WARNING: [BD 41-1363] The clock pins '/ps8_0_axi_periph/M00_ACLK' (interface '/ps8_0_axi_periph/M00_AXI') and '/axi_dma_tx/s_axi_lite_aclk' (interface '/axi_dma_tx/S_AXI_LITE') must be connected to the same source 
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /axi_dma_tx/Data_MM2S.
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc_1/S00_AXI' to master interface '/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
-ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axi_dma_tx/S_AXI_LITE(128000000) and /ps8_0_axi_periph/xbar/M00_AXI(99999001)
-ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /axi_dma_tx/S_AXI_LITE(PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0) and /ps8_0_axi_periph/xbar/M00_AXI(PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /DUT_data_in_0/s_axis(0) and /axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 5878.539 ; gain = 73.910
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-startgroup
-disconnect_bd_net /rst_ps8_0_96M_peripheral_aresetn [get_bd_pins ps8_0_axi_periph/M00_ARESETN]
-disconnect_bd_net /zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins ps8_0_axi_periph/M00_ACLK]
-endgroup
-connect_bd_net [get_bd_pins ps8_0_axi_periph/M00_ACLK] [get_bd_pins usp_rf_data_converter_0/clk_dac0]
-connect_bd_net [get_bd_pins ps8_0_axi_periph/M00_ARESETN] [get_bd_pins proc_sys_reset_1/peripheral_aresetn]
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-save_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5878.539 ; gain = 0.000
-startgroup
-set_property -dict [list CONFIG.c_m_axi_s2mm_data_width.VALUE_SRC USER CONFIG.c_s_axis_s2mm_tdata_width.VALUE_SRC USER] [get_bd_cells axi_dma_rx]
-set_property -dict [list \
-  CONFIG.c_m_axi_s2mm_data_width {128} \
-  CONFIG.c_s_axis_s2mm_tdata_width {64} \
-] [get_bd_cells axi_dma_rx]
-endgroup
-startgroup
-set_property CONFIG.c_s_axis_s2mm_tdata_width {16} [get_bd_cells axi_dma_rx]
-endgroup
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc_1/S00_AXI' to master interface '/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /DUT_data_in_0/s_axis(0) and /axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 5883.293 ; gain = 4.754
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-save_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 5883.293 ; gain = 0.000
-disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins axi_smc_1/aclk1]
-connect_bd_net [get_bd_pins axi_smc_1/aclk1] [get_bd_pins usp_rf_data_converter_0/clk_dac0]
-startgroup
-set_property CONFIG.NUM_CLKS {1} [get_bd_cells axi_smc_1]
-endgroup
-startgroup
-set_property CONFIG.NUM_CLKS {1} [get_bd_cells axi_smc]
-endgroup
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-group_bd_cells RX [get_bd_cells axi_smc] [get_bd_cells DUT_rec_0] [get_bd_cells proc_sys_reset_0] [get_bd_cells system_ila_1] [get_bd_cells axi_dma_rx] [get_bd_cells clk_wiz_0] [get_bd_cells xlconstant_1]
-group_bd_cells TX [get_bd_cells DUT_data_in_0] [get_bd_cells xlconstant_0] [get_bd_cells axi_dma_tx] [get_bd_cells proc_sys_reset_1] [get_bd_cells axi_smc_1] [get_bd_cells system_ila_0]
-regenerate_bd_layout
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: The device(s) attached to /M00_AXI do not share a common clock domain with this smartconnect instance. Modify the clock domain values of the attached device(s) or re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /M00_AXI to prevent further clock DRC violations.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: The device(s) attached to /M00_AXI do not share a common clock domain with this smartconnect instance. Modify the clock domain values of the attached device(s) or re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /M00_AXI to prevent further clock DRC violations.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0) and /RX/axi_smc/M00_AXI(PYNQ_Design_clk_wiz_0_0_clk_out1)
-ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(PYNQ_Design_clk_wiz_0_0_clk_out1) and /TX/axi_smc_1/M00_AXI(PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 5911.227 ; gain = 11.359
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-disconnect_bd_net /usp_rf_data_converter_0_clk_dac0 [get_bd_pins zynq_ultra_ps_e_0/saxihp0_fpd_aclk]
-disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins zynq_ultra_ps_e_0/saxihp2_fpd_aclk]
-connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/saxihp0_fpd_aclk] [get_bd_pins usp_rf_data_converter_0/clk_adc0]
-connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/saxihp2_fpd_aclk] [get_bd_pins usp_rf_data_converter_0/clk_dac0]
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-save_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5917.938 ; gain = 6.711
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: The device(s) attached to /M00_AXI do not share a common clock domain with this smartconnect instance. Modify the clock domain values of the attached device(s) or re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /M00_AXI to prevent further clock DRC violations.
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: The device(s) attached to /M00_AXI do not share a common clock frequency with this smartconnect instance. Modify the clock frequency values of the attached device(s) or re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /M00_AXI to prevent further clock DRC violations.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(64000000) and /RX/axi_smc/M00_AXI(128000000)
-ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(PYNQ_Design_usp_rf_data_converter_0_0_clk_adc0) and /RX/axi_smc/M00_AXI(PYNQ_Design_clk_wiz_0_0_clk_out1)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 5936.043 ; gain = 18.098
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-disconnect_bd_net /usp_rf_data_converter_0_clk_adc0 [get_bd_pins zynq_ultra_ps_e_0/saxihp0_fpd_aclk]
-connect_bd_net [get_bd_pins zynq_ultra_ps_e_0/saxihp0_fpd_aclk] [get_bd_pins RX/clk_out1]
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-save_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 5940.965 ; gain = 4.922
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
-WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 5959.215 ; gain = 18.043
-regenerate_bd_layout
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d1401f35.ui> 
-save_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5972.227 ; gain = 13.012
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp with file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-INFO: [BD 41-1662] The design 'PYNQ_Design.bd' is already validated. Therefore parameter propagation will not be re-run.
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d1401f35.ui> 
-WARNING: [BD 41-2384] Width mismatch when connecting pin: '/TX/DUT_data_in_0/s_axis_tdata'(1) to pin: '/TX/axi_dma_tx/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
-VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd
-WARNING: [BD 41-2384] Width mismatch when connecting pin: '/TX/DUT_data_in_0/s_axis_tdata'(1) to pin: '/TX/axi_dma_tx/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
-VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/sim/PYNQ_Design.vhd
-VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d1401f35.ui> 
-INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] PYNQ_Design_zynq_ultra_ps_e_0_0: 
-Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Amd's SDK, Petalinux or Yocto.
-This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
-design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
-The auto-generated HDF file is all you need to import in Amd's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
-For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+WARNING: [IP_Flow 19-3501] Upgraded block_design_usp_rf_data_converter_0_0 from Zynq Ultrascale+ RF Data Converter 2.3 to Zynq Ultrascale+ RF Data Converter 2.6, with warnings. Please review the message log.
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 128000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 64000000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 128000000
+INFO: [IP_Flow 19-3422] Upgraded block_design_xlconstant_0_0 (Constant 1.1) from revision 7 to revision 9
+Board is 
 INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2_FPD'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block TX/axi_dma_tx .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_96M .
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/hw_handoff/PYNQ_Design_system_ila_0_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/synth/PYNQ_Design_system_ila_0_0.hwdef
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/hw_handoff/PYNQ_Design_system_ila_1_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/synth/PYNQ_Design_system_ila_1_0.hwdef
-INFO: [BD 41-1029] Generation completed for the IP Integrator block RX/axi_dma_rx .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/hw_handoff/PYNQ_Design_axi_smc_2.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/synth/PYNQ_Design_axi_smc_2.hwdef
-INFO: [BD 41-1029] Generation completed for the IP Integrator block RX/axi_smc .
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/hw_handoff/PYNQ_Design_axi_smc_1_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/synth/PYNQ_Design_axi_smc_1_0.hwdef
-INFO: [BD 41-1029] Generation completed for the IP Integrator block TX/axi_smc_1 .
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m00_couplers/auto_cc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_cc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m02_couplers/auto_cc .
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hw_handoff/PYNQ_Design.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.hwdef
-[Fri Mar 14 16:17:13 2025] Launched synth_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/runme.log
-[Fri Mar 14 16:17:13 2025] Launched impl_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:01:10 ; elapsed = 00:01:30 . Memory (MB): peak = 6072.996 ; gain = 92.383
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 6101.203 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 479 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.248 . Memory (MB): peak = 6101.203 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 6101.203 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 6101.203 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6101.203 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6101.203 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 6101.203 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 6101.203 ; gain = 0.000
-Restored from archive | CPU: 19.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 6101.203 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:36 . Memory (MB): peak = 6101.203 ; gain = 17.324
-open_report: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 6108.988 ; gain = 7.785
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-close_design
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl
-WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
-/RX/DUT_rec_0, /TX/DUT_data_in_0
-Please add the following user repository(s):
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip
-before sourcing this Tcl script or use write_project_tcl.
-INFO: [BD 5-148] Tcl file written out <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl>.
-
-write_hw_platform -fixed -include_bit -force -file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-write_hw_platform: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 6146.398 ; gain = 0.000
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtools 27-2312] Device dummy_dap_1 is no longer available.
-Check cable connectivity and that the target board is powered up then
-use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target.
-Use open_hw_target to re-register the hardware device.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-disconnect_bd_net /usp_rf_data_converter_0_clk_dac0 [get_bd_pins usp_rf_data_converter_0/s_axi_aclk]
-connect_bd_net [get_bd_pins usp_rf_data_converter_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-CRITICAL WARNING: [BD 41-1363] The clock pins '/ps8_0_axi_periph/M02_ACLK' (interface '/ps8_0_axi_periph/M02_AXI') and '/usp_rf_data_converter_0/s_axi_aclk' (interface '/usp_rf_data_converter_0/s_axi') must be connected to the same source 
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-CRITICAL WARNING: [BD 41-1344] Reset pin /usp_rf_data_converter_0/s_axi_aresetn (associated clock /usp_rf_data_converter_0/s_axi_aclk) is connected to reset source /TX/proc_sys_reset_1/peripheral_aresetn (synchronous to clock source /usp_rf_data_converter_0/clk_dac0).
-This may prevent design from meeting timing. Instead it should be connected to reset source /rst_ps8_0_96M/peripheral_aresetn.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /usp_rf_data_converter_0/s_axi(99999001) and /ps8_0_axi_periph/m02_couplers/auto_cc/M_AXI(128000000)
-ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /usp_rf_data_converter_0/s_axi(PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0) and /ps8_0_axi_periph/m02_couplers/auto_cc/M_AXI(PYNQ_Design_usp_rf_data_converter_0_0_clk_dac0)
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 6146.398 ; gain = 0.000
-ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
-disconnect_bd_net /usp_rf_data_converter_0_clk_dac0 [get_bd_pins ps8_0_axi_periph/M02_ACLK]
-connect_bd_net [get_bd_pins ps8_0_axi_periph/M02_ACLK] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
-disconnect_bd_net /proc_sys_reset_1_peripheral_aresetn [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn]
-connect_bd_net [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn] [get_bd_pins rst_ps8_0_96M/peripheral_aresetn]
-disconnect_bd_net /proc_sys_reset_1_peripheral_aresetn [get_bd_pins ps8_0_axi_periph/M02_ARESETN]
-connect_bd_net [get_bd_pins ps8_0_axi_periph/M02_ARESETN] [get_bd_pins rst_ps8_0_96M/peripheral_aresetn]
-validate_bd_design
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 6146.398 ; gain = 0.000
-validate_bd_design -force
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 6146.398 ; gain = 0.000
-regenerate_bd_layout
-regenerate_bd_layout
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-save_bd_design
-Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.srcs\sources_1\bd\PYNQ_Design\PYNQ_Design.bd> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d1401f35.ui> 
-save_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6146.398 ; gain = 0.000
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp with file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-INFO: [BD 41-1662] The design 'PYNQ_Design.bd' is already validated. Therefore parameter propagation will not be re-run.
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d1401f35.ui> 
-WARNING: [BD 41-2384] Width mismatch when connecting pin: '/TX/DUT_data_in_0/s_axis_tdata'(1) to pin: '/TX/axi_dma_tx/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
-VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd
-WARNING: [BD 41-2384] Width mismatch when connecting pin: '/TX/DUT_data_in_0/s_axis_tdata'(1) to pin: '/TX/axi_dma_tx/m_axis_mm2s_tdata'(32) - Only lower order bits will be connected.
-VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/sim/PYNQ_Design.vhd
-VHDL Output written to : c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_becc52b1.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d13e1eb7.ui> 
-Wrote  : <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/ui/bd_d1401f35.ui> 
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/hw_handoff/PYNQ_Design_system_ila_0_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/synth/PYNQ_Design_system_ila_0_0.hwdef
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/hw_handoff/PYNQ_Design_system_ila_1_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/synth/PYNQ_Design_system_ila_1_0.hwdef
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/hw_handoff/PYNQ_Design_axi_smc_2.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/synth/PYNQ_Design_axi_smc_2.hwdef
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/hw_handoff/PYNQ_Design_axi_smc_1_0.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_1_0/bd_0/synth/PYNQ_Design_axi_smc_1_0.hwdef
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
-INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_ds .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m00_couplers/auto_cc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_cc .
-Exporting to file c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hw_handoff/PYNQ_Design.hwh
-Generated Hardware Definition File c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.hwdef
-[Mon Mar 17 12:33:11 2025] Launched synth_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/runme.log
-[Mon Mar 17 12:33:11 2025] Launched impl_1...
-Run output will be captured here: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 6146.398 ; gain = 0.000
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 6146.398 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 480 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 6146.398 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Restored from archive | CPU: 17.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 6146.398 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 6146.398 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 517 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 152 instances
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 53 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 44 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 7 instances
-  SRLC32E => SRL16E: 260 instances
-
-open_run: Time (s): cpu = 00:01:23 ; elapsed = 00:01:09 . Memory (MB): peak = 6146.398 ; gain = 0.000
-open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 6453.414 ; gain = 307.016
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-close_design
-write_bd_tcl -force C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl
-WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
-/RX/DUT_rec_0, /TX/DUT_data_in_0
-Please add the following user repository(s):
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip
-c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip
-before sourcing this Tcl script or use write_project_tcl.
-INFO: [BD 5-148] Tcl file written out <C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design.tcl>.
-
-write_hw_platform -fixed -include_bit -force -file C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa ...
-INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
-INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PYNQ_Design_wrapper.xsa
-write_hw_platform: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 6481.391 ; gain = 0.000
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 6481.391 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 480 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.190 . Memory (MB): peak = 6481.391 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Restored from archive | CPU: 16.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 6481.391 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 6481.391 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 517 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 152 instances
-  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 53 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 44 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 7 instances
-  SRLC32E => SRL16E: 260 instances
-
-open_run: Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 6481.391 ; gain = 0.000
-open_report: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 6500.234 ; gain = 18.844
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-validate_bd_design -force
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH> is excluded from all addressing paths.
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /RX/axi_dma_rx/Data_S2MM.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /TX/axi_dma_tx/Data_MM2S.
-Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /TX/axi_dma_tx/Data_MM2S.
-WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/RX/axi_dma_rx' with propagated value(32). Command ignored
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/RX/axi_smc/S00_AXI' to master interface '/RX/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_2: SmartConnect PYNQ_Design_axi_smc_2 is in High-performance Mode.
-INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/TX/axi_smc_1/S00_AXI' to master interface '/TX/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
-INFO: [xilinx.com:ip:smartconnect:1.0-1] PYNQ_Design_axi_smc_1_0: SmartConnect PYNQ_Design_axi_smc_1_0 is in High-performance Mode.
-INFO: [xilinx.com:ip:clk_wiz:6.0-1] /RX/clk_wiz_0 clk_wiz propagate
-CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /TX/DUT_data_in_0/s_axis(0) and /TX/axi_dma_tx/M_AXIS_MM2S(4)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /RX/DUT_rec_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /usp_rf_data_converter_0/m00_axis(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /RX/axi_smc/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /TX/DUT_data_in_0/s_axis(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}) and /TX/axi_dma_tx/M_AXIS_MM2S(undef)
-WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /TX/axi_smc_1/M00_AXI(0)
-validate_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 6677.113 ; gain = 15.008
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [IP_Flow 19-1972] Upgraded block_design_zynq_ultra_ps_e_0_0 from Zynq UltraScale+ MPSoC 3.3 to Zynq UltraScale+ MPSoC 3.5
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_1/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_2/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /receiver/rx_dma_pkt/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /transmitter/tx_dma/Data_MM2S.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'block_design_system_ila_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'block_design_system_ila_1_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\clb20123\Documents\rfsoc_quant_amc\rfsoc_quant_amc\boards\RFSoC2x2\rfsoc_quant_amc\rfsoc_quant_amc\rfsoc_quant_amc.srcs\sources_1\bd\block_design\block_design.bd> 
+Wrote  : <C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/ui/bd_e2aa6730.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:01:12 ; elapsed = 00:01:36 . Memory (MB): peak = 3782.043 ; gain = 1781.848
+export_ip_user_files -of_objects [get_ips {block_design_axi_smc_1 block_design_axis_broadcaster_0_0 block_design_axis_broadcaster_0_1 block_design_ps8_0_axi_periph_1_0 block_design_fir_decim_8_real_0 block_design_axi_smc_0 block_design_fir_interp_8_imag_0 block_design_axis_combiner_0_0 block_design_axis_broadcaster_1_0 block_design_rst_ps8_0_99M_0 block_design_tx_dma_0 block_design_axis_clock_converter_pkt_0 block_design_fir_interp_4_real_0 block_design_axis_clock_converter_2_0 block_design_ps8_0_axi_periph_0 block_design_zynq_ultra_ps_e_0_0 block_design_axis_clock_converter_1_0 block_design_axis_data_fifo_0_0 block_design_rx_dma_pkt_0 block_design_rx_dma_0_0 block_design_axis_combiner_0_1 block_design_fir_decim_8_imag_0 block_design_rst_clk_wiz_8M_0 block_design_system_ila_0_0 block_design_axis_data_fifo_2_0 block_design_fir_decim_4_imag_0 block_design_rst_adc0_clk_wiz_128M_0 block_design_axis_clock_converter_0_0 block_design_fir_decim_4_real_0 block_design_rst_ps8_0_299M_0 block_design_rx_dma_1_0 block_design_rx_dma_2_0 block_design_fir_interp_8_real_0 block_design_system_ila_1_0 block_design_adc0_clk_wiz_0 block_design_proc_sys_reset_dac_0 block_design_fir_interp_4_imag_0 block_design_axis_data_fifo_1_0 block_design_xlconstant_0_0 block_design_usp_rf_data_converter_0_0}] -no_script -sync -force -quiet
 startgroup
-set_property CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} [get_bd_cells RX/clk_wiz_0]
 endgroup
-open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/55555A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/55555A
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-INFO: [Labtools 27-1435] Device xczu28dr (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-CRITICAL WARNING: [Labtools 27-3421] xczu28dr_0 PL Power Status OFF, cannot connect PL TAP.  Check POR_B signal.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+startgroup
+set_property CONFIG.PSU__FPGA_PL1_ENABLE {0} [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [BD 41-1684] Pin /zynq_ultra_ps_e_0/pl_clk1 is now disabled. All connections to this pin have been removed. 
+endgroup
+delete_bd_objs [get_bd_cells rst_ps8_0_299M]
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/ip c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/ip c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip'.
+delete_bd_objs [get_bd_intf_nets Conn] [get_bd_intf_nets transmitter_M00_AXI] [get_bd_intf_nets rfdc_dac_real] [get_bd_intf_nets transmitter_M02_AXI] [get_bd_intf_nets transmitter_M03_AXI] [get_bd_intf_nets transmitter_M04_AXI] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM1_FPD] [get_bd_intf_nets rfdc_dac_imag] [get_bd_intf_nets pre_duc_real] [get_bd_intf_nets pre_duc_imag] [get_bd_cells transmitter]
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets amc_cnn_out] [get_bd_intf_nets ps8_0_axi_periph_M06_AXI] [get_bd_intf_nets axis_fifo_out] [get_bd_intf_nets receiver_M00_AXI] [get_bd_intf_nets broadcast_pkt] [get_bd_intf_nets broadcast_amc] [get_bd_intf_nets axis_combiner] [get_bd_intf_nets combiner_imag] [get_bd_intf_nets ps8_0_axi_periph_M07_AXI] [get_bd_nets receiver_validConv2] [get_bd_nets receiver_sampleNum1] [get_bd_intf_nets ps8_0_axi_periph_M03_AXI] [get_bd_intf_nets ps8_0_axi_periph_M04_AXI] [get_bd_intf_nets ps8_0_axi_periph_M08_AXI] [get_bd_intf_nets ps8_0_axi_periph_M09_AXI] [get_bd_intf_nets dma_controller_out] [get_bd_intf_nets combiner_real] [get_bd_intf_nets ps8_0_axi_periph_M05_AXI] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_nets receiver_validDense1] [get_bd_nets receiver_validInput] [get_bd_nets receiver_validConv1] [get_bd_cells receiver]
+delete_bd_objs [get_bd_intf_nets rfdc_real] [get_bd_intf_nets rfdc_imag] [get_bd_cells system_ila_0]
+delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M02_AXI] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_FPD] [get_bd_nets S00_ARESETN_1] [get_bd_cells ps8_0_axi_periph]

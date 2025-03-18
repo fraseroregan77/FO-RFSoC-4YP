@@ -3620,7 +3620,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
   <spirit:addressSpaces>
     <spirit:addressSpace>
       <spirit:name>Data_SG</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
       <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_SG_ADDR_WIDTH&apos;))">64</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
@@ -3642,7 +3642,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
       <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))">64</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
@@ -3664,7 +3664,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data_MM2S</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
       <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_MM2S_ADDR_WIDTH&apos;))">64</spirit:width>
       <spirit:parameters>
         <spirit:parameter>
@@ -3686,7 +3686,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
     </spirit:addressSpace>
     <spirit:addressSpace>
       <spirit:name>Data_S2MM</spirit:name>
-      <spirit:range spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(pow(2,spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;)))))">16777216T</spirit:range>
       <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M_AXI_S2MM_ADDR_WIDTH&apos;))">64</spirit:width>
       <spirit:parameters>
         <spirit:parameter>

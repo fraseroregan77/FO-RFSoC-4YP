@@ -133,12 +133,12 @@ if { $bCheckIPs == 1 } {
 xilinx.com:ip:zynq_ultra_ps_e:3.5\
 xilinx.com:ip:usp_rf_data_converter:2.6\
 xilinx.com:ip:proc_sys_reset:5.0\
+xilinx.com:ip:xlconstant:1.1\
 xilinx.com:ip:smartconnect:1.0\
 User_Company:VMC:DUT_rec:1.0\
 xilinx.com:ip:system_ila:1.1\
 xilinx.com:ip:axi_dma:7.1\
 xilinx.com:ip:clk_wiz:6.0\
-xilinx.com:ip:xlconstant:1.1\
 User_Company:VMC:DUT_data_in:1.0\
 "
 
@@ -475,6 +475,7 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set lmk_reset [ create_bd_port -dir O -from 0 -to 0 lmk_reset ]
 
   # Create instance: zynq_ultra_ps_e_0, and set properties
   set zynq_ultra_ps_e_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0 ]
@@ -790,6 +791,11 @@ Port;FD4A0000;FD4AFFFF;1|FPD;DPDMA;FD4C0000;FD4CFFFF;1|FPD;DDR_XMPU5_CFG;FD05000
   # Create instance: TX
   create_hier_cell_TX [current_bd_instance .] TX
 
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+  set_property CONFIG.CONST_VAL {0} $xlconstant_0
+
+
   # Create interface connections
   connect_bd_intf_net -intf_net DUT_data_in_0_m_axis [get_bd_intf_pins TX/SLOT_1_AXIS] [get_bd_intf_pins usp_rf_data_converter_0/s00_axis]
   set_property HDL_ATTRIBUTE.DEBUG {true} [get_bd_intf_nets DUT_data_in_0_m_axis]
@@ -814,6 +820,7 @@ Port;FD4A0000;FD4AFFFF;1|FPD;DPDMA;FD4C0000;FD4CFFFF;1|FPD;DDR_XMPU5_CFG;FD05000
   connect_bd_net -net rst_ps8_0_96M_peripheral_aresetn [get_bd_pins rst_ps8_0_96M/peripheral_aresetn] [get_bd_pins ps8_0_axi_periph/S00_ARESETN] [get_bd_pins ps8_0_axi_periph/ARESETN] [get_bd_pins RX/resetn] [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn] [get_bd_pins ps8_0_axi_periph/M02_ARESETN]
   connect_bd_net -net usp_rf_data_converter_0_clk_adc0 [get_bd_pins usp_rf_data_converter_0/clk_adc0] [get_bd_pins RX/clk_in1]
   connect_bd_net -net usp_rf_data_converter_0_clk_dac0 [get_bd_pins usp_rf_data_converter_0/clk_dac0] [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk] [get_bd_pins ps8_0_axi_periph/M00_ACLK] [get_bd_pins TX/m_axi_mm2s_aclk] [get_bd_pins zynq_ultra_ps_e_0/saxihp2_fpd_aclk]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins xlconstant_0/dout] [get_bd_ports lmk_reset]
   connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins zynq_ultra_ps_e_0/pl_clk0] [get_bd_pins rst_ps8_0_96M/slowest_sync_clk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk] [get_bd_pins ps8_0_axi_periph/ACLK] [get_bd_pins ps8_0_axi_periph/S00_ACLK] [get_bd_pins usp_rf_data_converter_0/s_axi_aclk] [get_bd_pins ps8_0_axi_periph/M02_ACLK]
   connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0] [get_bd_pins rst_ps8_0_96M/ext_reset_in] [get_bd_pins TX/ext_reset_in]
 

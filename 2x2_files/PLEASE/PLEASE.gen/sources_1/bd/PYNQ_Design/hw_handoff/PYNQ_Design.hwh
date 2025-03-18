@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 17 12:33:02 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Mar 18 12:16:47 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:rfsoc2x2:part0:1.1" DEVICE="xczu28dr" NAME="PYNQ_Design" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
@@ -22,6 +22,11 @@
     <PORT CLKFREQUENCY="204800000.0" DIR="I" NAME="dac0_clk_clk_p" SIGIS="clk" SIGNAME="usp_rf_data_converter_0_dac0_clk_p">
       <CONNECTIONS>
         <CONNECTION INSTANCE="usp_rf_data_converter_0" PORT="dac0_clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="lmk_reset" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="sysref_in_diff_n" SIGIS="undef" SIGNAME="usp_rf_data_converter_0_sysref_in_n">
@@ -12172,12 +12177,12 @@
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_arready">
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_arvalid">
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_arvalid"/>
           </CONNECTIONS>
@@ -12187,17 +12192,17 @@
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_awready">
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_awvalid">
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_bready">
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_bready"/>
           </CONNECTIONS>
@@ -12207,7 +12212,7 @@
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_bvalid">
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_bvalid"/>
           </CONNECTIONS>
@@ -12217,7 +12222,7 @@
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_rready">
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_rready"/>
           </CONNECTIONS>
@@ -12227,7 +12232,7 @@
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_rvalid">
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_rvalid"/>
           </CONNECTIONS>
@@ -12237,12 +12242,12 @@
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_wready">
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_wvalid">
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="TX_axi_dma_tx_s_axi_lite_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_dma_tx" PORT="s_axi_lite_wvalid"/>
           </CONNECTIONS>
@@ -12492,11 +12497,6 @@
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_aruser" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_arvalid"/>
@@ -12550,11 +12550,6 @@
         <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_awuser" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="maxigp0_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="S00_AXI_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awvalid">
@@ -12651,7 +12646,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="S00_AXI_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="S00_AXI_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S00_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="S00_AXI_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="S00_AXI_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="S00_AXI_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="S00_AXI_awburst"/>
@@ -12663,7 +12657,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="S00_AXI_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="S00_AXI_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S00_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="S00_AXI_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="S00_AXI_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="S00_AXI_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="S00_AXI_bready"/>
@@ -14788,10 +14781,36 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="PYNQ_Design_xlconstant_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="lmk_reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE CONFIGURABLE="TRUE" COREREVISION="3" FULLNAME="/zynq_ultra_ps_e_0" HWVERSION="3.5" INSTANCE="zynq_ultra_ps_e_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" IS_PL="FALSE" MODTYPE="zynq_ultra_ps_e" VLNV="xilinx.com:ip:zynq_ultra_ps_e:3.5">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=zynq_ultra_ps_e;v=v3_5;d=pg201-zynq-ultrascale-plus-processing-system.pdf"/>
       </DOCUMENTS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_LPS_OCM" RANGE="0x1000000" USAGE="register"/>
+      </ADDRESSBLOCKS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_HIGH" RANGE="0x800000000" USAGE="memory"/>
+      </ADDRESSBLOCKS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
+      </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP4" NAME="HP2_DDR_HIGH" RANGE="0x800000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
@@ -16589,11 +16608,6 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp0_aruser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_aruser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_aruser"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="maxigp0_arvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_arvalid"/>
@@ -16647,11 +16661,6 @@
         <PORT DIR="O" LEFT="2" NAME="maxigp0_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awsize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="15" NAME="maxigp0_awuser" RIGHT="0" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awuser">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S00_AXI_awuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="maxigp0_awvalid" SIGIS="undef" SIGNAME="ps8_0_axi_periph_S00_AXI_awvalid">
@@ -16756,18 +16765,6 @@
             <CONNECTION INSTANCE="TX_proc_sys_reset_1" PORT="ext_reset_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="48" NAME="saxigp2_araddr" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="saxigp2_arburst" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="saxigp2_arcache" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="5" NAME="saxigp2_arid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="7" NAME="saxigp2_arlen" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp2_arlock" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="saxigp2_arprot" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="saxigp2_arqos" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="saxigp2_arready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="saxigp2_arsize" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp2_aruser" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp2_arvalid" SIGIS="undef"/>
         <PORT DIR="I" LEFT="48" NAME="saxigp2_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="RX_axi_smc_M00_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_awaddr"/>
@@ -16783,7 +16780,6 @@
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_awcache"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="5" NAME="saxigp2_awid" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="7" NAME="saxigp2_awlen" RIGHT="0" SIGIS="undef" SIGNAME="RX_axi_smc_M00_AXI_awlen">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_awlen"/>
@@ -16814,13 +16810,11 @@
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_awsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="saxigp2_awuser" SIGIS="undef"/>
         <PORT DIR="I" NAME="saxigp2_awvalid" SIGIS="undef" SIGNAME="RX_axi_smc_M00_AXI_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="5" NAME="saxigp2_bid" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="saxigp2_bready" SIGIS="undef" SIGNAME="RX_axi_smc_M00_AXI_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_bready"/>
@@ -16836,12 +16830,6 @@
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="127" NAME="saxigp2_rdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="5" NAME="saxigp2_rid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="saxigp2_rlast" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp2_rready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="saxigp2_rresp" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="saxigp2_rvalid" SIGIS="undef"/>
         <PORT DIR="I" LEFT="127" NAME="saxigp2_wdata" RIGHT="0" SIGIS="undef" SIGNAME="RX_axi_smc_M00_AXI_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RX_axi_smc" PORT="M00_AXI_wdata"/>
@@ -16882,7 +16870,6 @@
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_arcache"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="5" NAME="saxigp4_arid" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="7" NAME="saxigp4_arlen" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_smc_1_M00_AXI_arlen">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_arlen"/>
@@ -16913,34 +16900,16 @@
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_arsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="saxigp4_aruser" SIGIS="undef"/>
         <PORT DIR="I" NAME="saxigp4_arvalid" SIGIS="undef" SIGNAME="TX_axi_smc_1_M00_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="48" NAME="saxigp4_awaddr" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="saxigp4_awburst" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="saxigp4_awcache" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="5" NAME="saxigp4_awid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="7" NAME="saxigp4_awlen" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp4_awlock" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="saxigp4_awprot" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="saxigp4_awqos" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="saxigp4_awready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="saxigp4_awsize" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp4_awuser" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp4_awvalid" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="5" NAME="saxigp4_bid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp4_bready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="saxigp4_bresp" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="saxigp4_bvalid" SIGIS="undef"/>
         <PORT DIR="O" LEFT="127" NAME="saxigp4_rdata" RIGHT="0" SIGIS="undef" SIGNAME="TX_axi_smc_1_M00_AXI_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="5" NAME="saxigp4_rid" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="saxigp4_rlast" SIGIS="undef" SIGNAME="TX_axi_smc_1_M00_AXI_rlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_rlast"/>
@@ -16961,11 +16930,6 @@
             <CONNECTION INSTANCE="TX_axi_smc_1" PORT="M00_AXI_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="saxigp4_wdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp4_wlast" SIGIS="undef"/>
-        <PORT DIR="O" NAME="saxigp4_wready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="15" NAME="saxigp4_wstrb" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="saxigp4_wvalid" SIGIS="undef"/>
         <PORT CLKFREQUENCY="128000000" DIR="I" NAME="saxihp0_fpd_aclk" SIGIS="clk" SIGNAME="RX_clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="RX_clk_wiz_0" PORT="clk_out1"/>
@@ -17021,7 +16985,6 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="maxigp0_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="maxigp0_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="maxigp0_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="maxigp0_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="maxigp0_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="maxigp0_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="maxigp0_awburst"/>
@@ -17033,7 +16996,6 @@
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="maxigp0_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="maxigp0_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="maxigp0_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="maxigp0_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="maxigp0_awvalid"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="maxigp0_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="maxigp0_bready"/>
@@ -17085,40 +17047,19 @@
           <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
           <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="saxigp2_araddr"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="saxigp2_arburst"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="saxigp2_arcache"/>
-            <PORTMAP LOGICAL="ARID" PHYSICAL="saxigp2_arid"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="saxigp2_arlen"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="saxigp2_arlock"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="saxigp2_arprot"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="saxigp2_arqos"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="saxigp2_arready"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="saxigp2_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="saxigp2_aruser"/>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="saxigp2_arvalid"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="saxigp2_awaddr"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="saxigp2_awburst"/>
             <PORTMAP LOGICAL="AWCACHE" PHYSICAL="saxigp2_awcache"/>
-            <PORTMAP LOGICAL="AWID" PHYSICAL="saxigp2_awid"/>
             <PORTMAP LOGICAL="AWLEN" PHYSICAL="saxigp2_awlen"/>
             <PORTMAP LOGICAL="AWLOCK" PHYSICAL="saxigp2_awlock"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="saxigp2_awprot"/>
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="saxigp2_awqos"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="saxigp2_awready"/>
             <PORTMAP LOGICAL="AWSIZE" PHYSICAL="saxigp2_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="saxigp2_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="saxigp2_awvalid"/>
-            <PORTMAP LOGICAL="BID" PHYSICAL="saxigp2_bid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="saxigp2_bready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="saxigp2_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="saxigp2_bvalid"/>
-            <PORTMAP LOGICAL="RDATA" PHYSICAL="saxigp2_rdata"/>
-            <PORTMAP LOGICAL="RID" PHYSICAL="saxigp2_rid"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="saxigp2_rlast"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="saxigp2_rready"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="saxigp2_rresp"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="saxigp2_rvalid"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="saxigp2_wdata"/>
             <PORTMAP LOGICAL="WLAST" PHYSICAL="saxigp2_wlast"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="saxigp2_wready"/>
@@ -17162,42 +17103,18 @@
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="saxigp4_araddr"/>
             <PORTMAP LOGICAL="ARBURST" PHYSICAL="saxigp4_arburst"/>
             <PORTMAP LOGICAL="ARCACHE" PHYSICAL="saxigp4_arcache"/>
-            <PORTMAP LOGICAL="ARID" PHYSICAL="saxigp4_arid"/>
             <PORTMAP LOGICAL="ARLEN" PHYSICAL="saxigp4_arlen"/>
             <PORTMAP LOGICAL="ARLOCK" PHYSICAL="saxigp4_arlock"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="saxigp4_arprot"/>
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="saxigp4_arqos"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="saxigp4_arready"/>
             <PORTMAP LOGICAL="ARSIZE" PHYSICAL="saxigp4_arsize"/>
-            <PORTMAP LOGICAL="ARUSER" PHYSICAL="saxigp4_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="saxigp4_arvalid"/>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="saxigp4_awaddr"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="saxigp4_awburst"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="saxigp4_awcache"/>
-            <PORTMAP LOGICAL="AWID" PHYSICAL="saxigp4_awid"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="saxigp4_awlen"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="saxigp4_awlock"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="saxigp4_awprot"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="saxigp4_awqos"/>
-            <PORTMAP LOGICAL="AWREADY" PHYSICAL="saxigp4_awready"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="saxigp4_awsize"/>
-            <PORTMAP LOGICAL="AWUSER" PHYSICAL="saxigp4_awuser"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="saxigp4_awvalid"/>
-            <PORTMAP LOGICAL="BID" PHYSICAL="saxigp4_bid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="saxigp4_bready"/>
-            <PORTMAP LOGICAL="BRESP" PHYSICAL="saxigp4_bresp"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="saxigp4_bvalid"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="saxigp4_rdata"/>
-            <PORTMAP LOGICAL="RID" PHYSICAL="saxigp4_rid"/>
             <PORTMAP LOGICAL="RLAST" PHYSICAL="saxigp4_rlast"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="saxigp4_rready"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="saxigp4_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="saxigp4_rvalid"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="saxigp4_wdata"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="saxigp4_wlast"/>
-            <PORTMAP LOGICAL="WREADY" PHYSICAL="saxigp4_wready"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="saxigp4_wstrb"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="saxigp4_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>

@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Mar 17 12:33:16 2025
-# Process ID: 8512
+# Start of session at: Tue Mar 18 12:16:55 2025
+# Process ID: 15964
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1
 # Command line: vivado.exe -log PYNQ_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PYNQ_Design_wrapper.tcl
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.vds
@@ -17,18 +17,18 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :17060 MB
-# Swap memory       :3991 MB
-# Total Virtual     :21052 MB
-# Available Virtual :5868 MB
+# Swap memory       :4646 MB
+# Total Virtual     :21706 MB
+# Available Virtual :3811 MB
 #-----------------------------------------------------------
 Sourcing tcl script 'D:/Xilinx/Vivado/2024.1/scripts/Vivado_init.tcl'
 source PYNQ_Design_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 605.723 ; gain = 201.832
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 605.656 ; gain = 200.281
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
-add_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 742.668 ; gain = 120.121
+add_files: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 742.883 ; gain = 119.238
 Command: read_checkpoint -auto_incremental -incremental C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -40,9 +40,9 @@ INFO: [Common 17-1540] The version limit for your license is '2024.10' and has e
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15872
+INFO: [Synth 8-7075] Helper process launched with PID 7960
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2243.828 ; gain = 384.227
+Starting RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2243.066 ; gain = 383.562
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'clk_valid', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:347]
 INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_5_3.v:2516]
@@ -145,9 +145,9 @@ INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wir
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog/xsdbm_v3_0_2_bs_core.vh:419]
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/8745/hdl/verilog/xsdbm_v3_0_2_bs_core.vh:465]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_wrapper' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:30]
-INFO: [Synth 8-3491] module 'PYNQ_Design' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2649' bound to instance 'PYNQ_Design_i' of component 'PYNQ_Design' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'PYNQ_Design' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2668]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_wrapper' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:31]
+INFO: [Synth 8-3491] module 'PYNQ_Design' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2649' bound to instance 'PYNQ_Design_i' of component 'PYNQ_Design' [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'PYNQ_Design' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2669]
 INFO: [Synth 8-638] synthesizing module 'RX_imp_1G0MUP' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:61]
 INFO: [Synth 8-3491] module 'PYNQ_Design_DUT_rec_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/synth/PYNQ_Design_DUT_rec_0_0.vhd:59' bound to instance 'DUT_rec_0' of component 'PYNQ_Design_DUT_rec_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:341]
 INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_DUT_rec_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/synth/PYNQ_Design_DUT_rec_0_0.vhd:74]
@@ -8408,7 +8408,7 @@ WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_31_
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_4QTF46' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:1524]
 INFO: [Synth 8-3491] module 'PYNQ_Design_xbar_2' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xbar_2/synth/PYNQ_Design_xbar_2.v:53' bound to instance 'xbar' of component 'PYNQ_Design_xbar_2' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2563]
 INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_ps8_0_axi_periph_2' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2061]
-INFO: [Synth 8-3491] module 'PYNQ_Design_rst_ps8_0_96M_1' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/synth/PYNQ_Design_rst_ps8_0_96M_1.vhd:59' bound to instance 'rst_ps8_0_96M' of component 'PYNQ_Design_rst_ps8_0_96M_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3251]
+INFO: [Synth 8-3491] module 'PYNQ_Design_rst_ps8_0_96M_1' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/synth/PYNQ_Design_rst_ps8_0_96M_1.vhd:59' bound to instance 'rst_ps8_0_96M' of component 'PYNQ_Design_rst_ps8_0_96M_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3259]
 INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_rst_ps8_0_96M_1' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/synth/PYNQ_Design_rst_ps8_0_96M_1.vhd:74]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -8421,12 +8421,13 @@ INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_rst_ps8_0_96M_1' [c:/Users/
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
 INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/synth/PYNQ_Design_rst_ps8_0_96M_1.vhd:129]
 INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_rst_ps8_0_96M_1' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_rst_ps8_0_96M_1/synth/PYNQ_Design_rst_ps8_0_96M_1.vhd:74]
-INFO: [Synth 8-3491] module 'PYNQ_Design_usp_rf_data_converter_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.v:58' bound to instance 'usp_rf_data_converter_0' of component 'PYNQ_Design_usp_rf_data_converter_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3264]
+INFO: [Synth 8-3491] module 'PYNQ_Design_usp_rf_data_converter_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0.v:58' bound to instance 'usp_rf_data_converter_0' of component 'PYNQ_Design_usp_rf_data_converter_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3272]
 WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_tile_config.sv:262]
 WARNING: [Synth 8-7071] port 'adc0_clk_fifo_lm' of module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' is unconnected for instance 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:1076]
 WARNING: [Synth 8-7023] instance 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i' of module 'PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper' has 363 connections declared, but only 362 given [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_block.v:1076]
 INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_drp_control.v:97]
-INFO: [Synth 8-3491] module 'PYNQ_Design_zynq_ultra_ps_e_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/synth/PYNQ_Design_zynq_ultra_ps_e_0_0.vhd:56' bound to instance 'zynq_ultra_ps_e_0' of component 'PYNQ_Design_zynq_ultra_ps_e_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3309]
+INFO: [Synth 8-3491] module 'PYNQ_Design_xlconstant_0_2' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_xlconstant_0_2/synth/PYNQ_Design_xlconstant_0_2.v:53' bound to instance 'xlconstant_0' of component 'PYNQ_Design_xlconstant_0_2' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3317]
+INFO: [Synth 8-3491] module 'PYNQ_Design_zynq_ultra_ps_e_0_0' declared at 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/synth/PYNQ_Design_zynq_ultra_ps_e_0_0.vhd:56' bound to instance 'zynq_ultra_ps_e_0' of component 'PYNQ_Design_zynq_ultra_ps_e_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3321]
 INFO: [Synth 8-638] synthesizing module 'PYNQ_Design_zynq_ultra_ps_e_0_0' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/synth/PYNQ_Design_zynq_ultra_ps_e_0_0.vhd:189]
 	Parameter C_DP_USE_AUDIO bound to: 0 - type: integer 
 	Parameter C_DP_USE_VIDEO bound to: 0 - type: integer 
@@ -8529,8 +8530,8 @@ WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP2IN' of module 'PS8' is unco
 WARNING: [Synth 8-7071] port 'PSS_ALTO_CORE_PAD_REFP3IN' of module 'PS8' is unconnected for instance 'PS8_i' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3891]
 WARNING: [Synth 8-7023] instance 'PS8_i' of module 'PS8' has 1015 connections declared, but only 957 given [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_5_3.v:3891]
 INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_zynq_ultra_ps_e_0_0' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/synth/PYNQ_Design_zynq_ultra_ps_e_0_0.vhd:189]
-INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2668]
-INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_wrapper' (0#1) [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design' (0#1) [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:2669]
+INFO: [Synth 8-256] done synthesizing module 'PYNQ_Design_wrapper' (0#1) [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/hdl/PYNQ_Design_wrapper.vhd:31]
 WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/0ce8/hdl/xlclockdriver_rd.vhd:212]
 WARNING: [Synth 8-6014] Unused sequential element op_mem_91_20_reg[0] was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/0ce8/hdl/x16_bit_demod_entity_declarations.vhd:403]
 WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/0ce8/hdl/x16_bit_demod_entity_declarations.vhd:414]
@@ -8730,9 +8731,9 @@ WARNING: [Synth 8-6014] Unused sequential element adc2_start_rising_held_reg was
 WARNING: [Synth 8-6014] Unused sequential element adc3_start_rising_held_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_constants_config.sv:441]
 WARNING: [Synth 8-6014] Unused sequential element timer_125ns_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm.v:126]
 WARNING: [Synth 8-6014] Unused sequential element por_timer_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled.sv:133]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'usp_rf_data_converter_0'. This will prevent further optimization [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3264]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'TX'. This will prevent further optimization [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3111]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX'. This will prevent further optimization [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3067]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'usp_rf_data_converter_0'. This will prevent further optimization [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3272]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'TX'. This will prevent further optimization [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3119]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RX'. This will prevent further optimization [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/synth/PYNQ_Design.vhd:3075]
 WARNING: [Synth 8-6014] Unused sequential element g_no_sclr.g_sclr_end.sclr_end_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:15538]
 WARNING: [Synth 8-6014] Unused sequential element g_parallel.flush_buff_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:15843]
 WARNING: [Synth 8-6014] Unused sequential element g_parallel.flush_sym_buff_reg was removed.  [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fir_compiler_v7_2_i0/hdl/fir_compiler_v7_2_vh_rfs.vhd:15844]
@@ -8848,26 +8849,26 @@ WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_5_3_zy
 WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_5_3_zynq_ultra_ps_e is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:31 ; elapsed = 00:02:44 . Memory (MB): peak = 3673.945 ; gain = 1814.344
+Finished RTL Elaboration : Time (s): cpu = 00:02:26 ; elapsed = 00:02:39 . Memory (MB): peak = 3672.086 ; gain = 1812.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:32 ; elapsed = 00:02:46 . Memory (MB): peak = 3673.945 ; gain = 1814.344
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:27 ; elapsed = 00:02:41 . Memory (MB): peak = 3672.086 ; gain = 1812.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:32 ; elapsed = 00:02:46 . Memory (MB): peak = 3673.945 ; gain = 1814.344
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:27 ; elapsed = 00:02:41 . Memory (MB): peak = 3672.086 ; gain = 1812.582
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3673.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3674.289 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 595 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0/U0'
-create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3792.660 ; gain = 20.367
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3913.562 ; gain = 2.176
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc] for cell 'PYNQ_Design_i/zynq_ultra_ps_e_0/U0'
 Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc] for cell 'PYNQ_Design_i/usp_rf_data_converter_0/inst'
 INFO: [Timing 38-2] Deriving generated clocks [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_clocks.xdc:66]
@@ -8967,6 +8968,13 @@ Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEA
 Finished Parsing XDC File [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'PYNQ_Design_i/TX/system_ila_0/U0/ila_lib/U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PYNQ_Design_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/PYNQ_Design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc:7]
+Finished Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PYNQ_Design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PYNQ_Design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PYNQ_Design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PYNQ_Design_wrapper_propImpl.xdc].
@@ -8992,7 +9000,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/PYNQ_Design_
 INFO: [Project 1-1714] 163 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 3916.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3928.375 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 451 instances were transformed.
   BUFG => BUFGCE: 2 instances
@@ -9003,9 +9011,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDR => FDRE: 84 instances
   SRL16 => SRL16E: 5 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3917.461 ; gain = 0.695
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3929.684 ; gain = 1.309
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:04:55 ; elapsed = 00:05:06 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Finished Constraint Validation : Time (s): cpu = 00:04:51 ; elapsed = 00:05:02 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -9013,34 +9021,34 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:04:55 ; elapsed = 00:05:06 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:51 ; elapsed = 00:05:02 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for PYNQ_Design_i/zynq_ultra_ps_e_0/U0/PS8_i. (constraint file  c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_zynq_ultra_ps_e_0_0/PYNQ_Design_zynq_ultra_ps_e_0_0.xdc, line 25).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/DUT_data_in_0/U0/x16_bit_mod_struct/slave_fifo/fifo/\comp1.core_instance1 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 182).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/DUT_data_in_0/U0/x16_bit_mod_struct/master_fifo/fifo/\comp0.core_instance0 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 185).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/DUT_data_in_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 188).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/zynq_ultra_ps_e_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 193).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/usp_rf_data_converter_0/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 196).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0/x16_bit_demod_struct/algorithm/fir_compiler_7_2/x16_bit_demod_fir_compiler_v7_2_i0_instance/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 204).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0/x16_bit_demod_struct/slave_fifo/fifo/\comp1.core_instance1 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 207).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0/x16_bit_demod_struct/master_fifo/fifo/\comp0.core_instance0 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 210).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 213).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/axi_dma_tx/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 216).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/rst_ps8_0_96M/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 222).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/clk_wiz_0/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 228).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/proc_sys_reset_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 236).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/proc_sys_reset_1/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 242).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/system_ila_0/U0/ila_lib/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 248).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/system_ila_1/U0/ila_lib/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 260).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_dma_rx/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 272).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_smc/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 305).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/axi_smc_1/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 330).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 333).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/m00_couplers/auto_cc/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 340).
-Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/m01_couplers/auto_cc/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 345).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/zynq_ultra_ps_e_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 189).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/usp_rf_data_converter_0/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 192).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/rst_ps8_0_96M/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 200).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_smc/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 233).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0/x16_bit_demod_struct/algorithm/fir_compiler_7_2/x16_bit_demod_fir_compiler_v7_2_i0_instance/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 236).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0/x16_bit_demod_struct/slave_fifo/fifo/\comp1.core_instance1 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 239).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0/x16_bit_demod_struct/master_fifo/fifo/\comp0.core_instance0 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 242).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/DUT_rec_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 245).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/proc_sys_reset_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 248).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/system_ila_1/U0/ila_lib/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 254).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_dma_rx/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 266).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/clk_wiz_0/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 272).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/DUT_data_in_0/U0/x16_bit_mod_struct/slave_fifo/fifo/\comp1.core_instance1 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 280).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/DUT_data_in_0/U0/x16_bit_mod_struct/master_fifo/fifo/\comp0.core_instance0 /U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 283).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/DUT_data_in_0/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 286).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/axi_dma_tx/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 289).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/proc_sys_reset_1/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 295).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/axi_smc_1/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 323).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/system_ila_0/U0/ila_lib/U0. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 326).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 338).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/m00_couplers/auto_cc/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 345).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/ps8_0_axi_periph/m01_couplers/auto_cc/inst. (constraint file  C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/dont_touch.xdc, line 350).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/usp_rf_data_converter_0. (constraint file  auto generated constraint).
@@ -9077,6 +9085,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/system_ila_0. (c
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/system_ila_0/U0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/system_ila_0/U0/ila_lib. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/system_ila_0/U0/g_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/xlconstant_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_smc/inst/s00_nodes/s00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_smc/inst/s00_nodes/s00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_smc/inst/s00_nodes/s00_w_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
@@ -9241,751 +9250,25 @@ Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/RX/axi_smc/inst/s00
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for PYNQ_Design_i/TX/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:56 ; elapsed = 00:05:08 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:52 ; elapsed = 00:05:03 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
-got a mismatch PYNQ_Design_ps8_0_axi_periph_2
-got a mismatch m02_couplers_imp_76BH63
-got a mismatch axi_infrastructure_v1_1_0_axi2vector__parameterized0
-got a mismatch axi_infrastructure_v1_1_0_vector2axi__parameterized0
-got a mismatch axi_infrastructure_v1_1_0_axi2vector__parameterized1
-got a mismatch axi_infrastructure_v1_1_0_vector2axi__parameterized1
-WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:05:06 ; elapsed = 00:05:18 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Finished Doing Graph Differ : Time (s): cpu = 00:05:05 ; elapsed = 00:05:17 . Memory (MB): peak = 3931.934 ; gain = 2072.430
+---------------------------------------------------------------------------------
+x16_bit_demod_algorithm__GC0PYNQ_Design__GCB0single_rate__GB1x16_bit_demod_struct__GC0RX_imp_1G0MUP__GCB0PYNQ_Design__GCB1single_rate__GB2PYNQ_Design_usp_rf_data_converter_0_0_register_decode__GB1PYNQ_Design_usp_rf_data_converter_0_0_block__GC0single_rate__GB0RX_imp_1G0MUP__GCB1---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:05:10 ; elapsed = 00:05:22 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:05:06 ; elapsed = 00:05:18 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:13 ; elapsed = 00:05:25 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3936] Found unconnected internal register 'g_parallel.i_cntrl.we_gen_algn_reg' and it is trimmed from '3' to '2' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fir_compiler_v7_2_i0/hdl/axi_utils_v2_0_vh_rfs.vhd:15888]
-INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'fifo_generator_v13_2_10_rd_fwft'
-INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm'
-INFO: [Synth 8-802] inferred FSM for state register 'sig_psm_state_reg' in module 'axi_datamover_ibttcc'
-INFO: [Synth 8-802] inferred FSM for state register 'sig_csm_state_reg' in module 'axi_datamover_ibttcc'
-INFO: [Synth 8-802] inferred FSM for state register 'sig_cmdcntl_sm_state_reg' in module 'axi_datamover_s2mm_realign'
-INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
-INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
-INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized8'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
-INFO: [Synth 8-802] inferred FSM for state register 'smpl_cs_reg' in module 'axi_dma_smple_sm__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
-INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
-INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.gen_write.write_cs_reg' in module 'sc_mmu_v1_0_13_decerr_slave__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized9'
-INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__2'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__2'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2__xdcDup__1'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__3'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__3'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1'
-INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2'
-INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2'
-INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'fifo_generator_v13_2_10_rd_fwft__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'tc_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_tile_config'
-INFO: [Synth 8-802] inferred FSM for state register 'const_sm_state_adc0_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_constants_config'
-INFO: [Synth 8-3936] Found unconnected internal register 'rdata_status_reg' and it is trimmed from '16' to '1' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_usp_rf_data_converter_0_0/synth/PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm.v:303]
-INFO: [Synth 8-802] inferred FSM for state register 'bgt_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter_adc'
-INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled'
-INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter'
-INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control'
-INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' in module 'fifo_generator_v13_2_10_rd_fwft', re-encoding will not be performed
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 invalid |                               00 |                               00
-            stage1_valid |                               10 |                               10
-       both_stages_valid |                               11 |                               11
-            stage2_valid |                               01 |                               01
----------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                               00 |                               00
-            execute_xfer |                               01 |                               01
-             wait_status |                               10 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'smpl_cs_reg' using encoding 'sequential' in module 'axi_dma_smple_sm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 ch_init |                          0000001 |                              000
-           wait_for_pcmd |                          0000010 |                              001
-          ch_error_trap1 |                          0000100 |                              101
-          ch_error_trap2 |                          0001000 |                              110
-      ch_wait_for_sf_cmd |                          0010000 |                              010
-         ch_ld_child_cmd |                          0100000 |                              011
-          ch_chk_if_done |                          1000000 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'sig_csm_state_reg' using encoding 'one-hot' in module 'axi_datamover_ibttcc'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  p_init |                              000 |                              000
-          p_wait_for_cmd |                              001 |                              001
-          p_ld_first_cmd |                              010 |                              010
-          p_ld_child_cmd |                              011 |                              011
-            p_error_trap |                              100 |                              111
-           p_ld_last_cmd |                              101 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'sig_psm_state_reg' using encoding 'sequential' in module 'axi_datamover_ibttcc'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    init |                              000 |                              000
-    ld_dre_scatter_first |                              001 |                              001
-           chk_pop_first |                              010 |                              010
-   ld_dre_scatter_second |                              011 |                              011
-              error_trap |                              100 |                              101
-          chk_pop_second |                              101 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'sig_cmdcntl_sm_state_reg' using encoding 'sequential' in module 'axi_datamover_s2mm_realign'
-INFO: [Synth 8-6904] The RAM "xpm_memory_base__parameterized0:/gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=15) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 invalid |                               00 |                               00
-            stage1_valid |                               01 |                               10
-       both_stages_valid |                               10 |                               11
-            stage2_valid |                               11 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 invalid |                               00 |                               00
-            stage1_valid |                               01 |                               10
-       both_stages_valid |                               10 |                               11
-            stage2_valid |                               11 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized2'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized3'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized4'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized5'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized6'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized7'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized8'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-              RESET_ADDR |                          0000001 |                          0000001
-            REQUEST_READ |                          0000010 |                          0000010
-           WAIT_READ_ACK |                          0000100 |                          0000100
-             OUTPUT_DATA |                          0001000 |                          0001000
-                    IDLE |                          0010000 |                          0010000
-         INCREMENT_BLOCK |                          0100000 |                          0100000
-       INCREMENT_ADDRESS |                          1000000 |                          1000000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                               00 |                               00
-            execute_xfer |                               01 |                               01
-             wait_status |                               10 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'smpl_cs_reg' using encoding 'sequential' in module 'axi_dma_smple_sm__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    init |                         00000001 |                              000
-            wait_for_cmd |                         00000010 |                              001
-                  calc_1 |                         00000100 |                              010
-                  calc_2 |                         00001000 |                              011
-                  calc_3 |                         00010000 |                              100
-       wait_on_xfer_push |                         00100000 |                              101
-             chk_if_done |                         01000000 |                              110
-              error_trap |                         10000000 |                              111
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc'
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 invalid |                               00 |                               00
-            stage1_valid |                               01 |                               10
-       both_stages_valid |                               10 |                               11
-            stage2_valid |                               11 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-            P_WRITE_IDLE |                              001 |                               00
-            P_WRITE_DATA |                              010 |                               01
-            P_WRITE_RESP |                              100 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_13_decerr_slave__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-                    IDLE |                             0001 |                             0001
-                     REG |                             0010 |                             0010
-                     P2S |                             0100 |                             0100
-                     S2P |                             1000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'xsdbs_v1_0_4_reg_p2s__parameterized9'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-*
-              RESET_ADDR |                          0000001 |                          0000001
-            REQUEST_READ |                          0000010 |                          0000010
-           WAIT_READ_ACK |                          0000100 |                          0000100
-             OUTPUT_DATA |                          0001000 |                          0001000
-                    IDLE |                          0010000 |                          0010000
-         INCREMENT_BLOCK |                          0100000 |                          0100000
-       INCREMENT_ADDRESS |                          1000000 |                          1000000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__2'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__2'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2__xdcDup__1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__3'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__xdcDup__3'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized1'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                SRC_IDLE |                               00 |                               00
-            SRC_DRV_SEND |                               01 |                               01
-       SRC_WAIT_RCV_DONE |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               DEST_IDLE |                               00 |                               00
-          DEST_DRV_VALID |                               01 |                               01
-            DEST_DRV_ACK |                               10 |                               10
-                  iSTATE |                               11 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_30_lite_async__parameterized2'
-INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' in module 'fifo_generator_v13_2_10_rd_fwft__parameterized0', re-encoding will not be performed
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 invalid |                               00 |                               00
-            stage1_valid |                               10 |                               10
-       both_stages_valid |                               11 |                               11
-            stage2_valid |                               01 |                               01
----------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 SM_IDLE |                               01 |                               00
-               SM_CMD_EN |                               11 |                               01
-         SM_CMD_ACCEPTED |                               10 |                               10
-            SM_DONE_WAIT |                               00 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 SM_IDLE |                               01 |                               00
-               SM_CMD_EN |                               11 |                               01
-         SM_CMD_ACCEPTED |                               10 |                               10
-                 SM_DONE |                               00 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-            wait_for_drp |                              001 |                              011
-            memory_delay |                              010 |                              001
-        check_tile_index |                              011 |                              010
-               write_drp |                              100 |                              100
-      wait_for_write_rdy |                              101 |                              101
-                finished |                              110 |                              110
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'tc_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_tile_config'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-          wait_for_start |                              001 |                              001
-            wait_for_drp |                              010 |                              010
-            check_subdrp |                              011 |                              011
-               write_drp |                              100 |                              100
-      wait_for_write_rdy |                              101 |                              101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'const_sm_state_adc0_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_constants_config'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                            00000 |                            00000
-             request_drp |                            00001 |                            00001
-        write_vbg_ctrl_1 |                            00010 |                            00010
-        write_vbg_ctrl_2 |                            00011 |                            00011
-        write_vbg_ctrl_3 |                            00100 |                            00100
-        write_vbg_ctrl_4 |                            00101 |                            00101
-        write_vbg_ctrl_5 |                            00110 |                            00111
-        write_vbg_ctrl_6 |                            00111 |                            01000
-       wait_for_125_ns_2 |                            01000 |                            01001
-        write_vbg_ctrl_7 |                            01001 |                            01010
-        write_vbg_ctrl_8 |                            01010 |                            01011
-       read_vbg_status_1 |                            01011 |                            01100
-       read_vbg_status_2 |                            01100 |                            01101
-     wait_for_vbg_status |                            01101 |                            01110
-        write_vbg_ctrl_9 |                            01110 |                            01111
-       write_vbg_ctrl_10 |                            01111 |                            10000
-       wait_for_125_ns_1 |                            10000 |                            00110
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'bgt_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_bgt_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                             0000
-    wait_for_tile_config |                              001 |                             0001
-       access_drp_status |                              010 |                             0010
-         read_pll_enable |                              011 |                             0011
- wait_for_pll_enable_rdy |                              100 |                             0100
-         read_pll_status |                              101 |                             0101
- wait_for_pll_status_rdy |                              110 |                             0110
-          wait_for_50_us |                              111 |                             1100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'pll_state_machine.status_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                             0000 |                             0000
-         wait_for_config |                             0001 |                             0001
-        find_start_stage |                             0010 |                             0010
-            memory_delay |                             0011 |                             0011
-               op_decode |                             0100 |                             0100
-                  finish |                             0101 |                             1110
-             request_drp |                             0110 |                             0101
-                read_drp |                             0111 |                             0110
-       wait_for_read_rdy |                             1000 |                             0111
-          dummy_read_drp |                             1001 |                             1000
- wait_for_dummy_read_rdy |                             1010 |                             1001
-               write_drp |                             1011 |                             1010
-      wait_for_write_rdy |                             1100 |                             1011
-            decode_event |                             1101 |                             1100
-          wait_for_event |                             1110 |                             1101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-          gnt_dummy_read |                              001 |                              111
-         gnt_tile_config |                              010 |                              001
-        gnt_const_config |                              011 |                              010
-              gnt_status |                              100 |                              011
-                 gnt_por |                              101 |                              100
-                 gnt_bgt |                              110 |                              101
-                gnt_user |                              111 |                              110
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter_adc'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                     000000000001 |                             0000
-         wait_for_config |                     000000000010 |                             0001
-    wait_for_supplies_up |                     000000000100 |                             0010
-          wait_for_timer |                     000000001000 |                             0011
-             request_drp |                     000000010000 |                             0100
-                read_drp |                     000000100000 |                             0101
-       wait_for_read_rdy |                     000001000000 |                             0110
-          dummy_read_drp |                     000010000000 |                             0111
- wait_for_dummy_read_rdy |                     000100000000 |                             1000
-               write_drp |                     001000000000 |                             1001
-      wait_for_write_rdy |                     010000000000 |                             1010
-                  finish |                     100000000000 |                             1011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'one-hot' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm_disabled'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-          gnt_dummy_read |                              001 |                              110
-         gnt_tile_config |                              010 |                              001
-              gnt_status |                              011 |                              010
-                 gnt_por |                              100 |                              011
-                 gnt_bgt |                              101 |                              100
-                gnt_user |                              110 |                              101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                             0000
-    wait_for_tile_config |                              001 |                             0001
-       access_drp_status |                              010 |                             0010
-         read_pll_enable |                              011 |                             0011
- wait_for_pll_enable_rdy |                              100 |                             0100
-         read_pll_status |                              101 |                             0101
- wait_for_pll_status_rdy |                              110 |                             0110
-          wait_for_50_us |                              111 |                             1100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'pll_state_machine.status_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                             0000 |                             0000
-         wait_for_config |                             0001 |                             0001
-        find_start_stage |                             0010 |                             0010
-            memory_delay |                             0011 |                             0011
-               op_decode |                             0100 |                             0100
-                  finish |                             0101 |                             1110
-             request_drp |                             0110 |                             0101
-                read_drp |                             0111 |                             0110
-       wait_for_read_rdy |                             1000 |                             0111
-          dummy_read_drp |                             1001 |                             1000
- wait_for_dummy_read_rdy |                             1010 |                             1001
-               write_drp |                             1011 |                             1010
-      wait_for_write_rdy |                             1100 |                             1011
-            decode_event |                             1101 |                             1100
-          wait_for_event |                             1110 |                             1101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_por_fsm__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                              000 |                              000
-          gnt_dummy_read |                              001 |                              110
-         gnt_tile_config |                              010 |                              001
-              gnt_status |                              011 |                              010
-                 gnt_por |                              100 |                              011
-                 gnt_bgt |                              101 |                              100
-                gnt_user |                              110 |                              101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_arbiter__parameterized0'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                              000 |                              000
-                 READING |                              001 |                              001
-               READ_WAIT |                              010 |                              010
-              WRITE_WAIT |                              011 |                              011
-                 WRITING |                              100 |                              100
-                 B_VALID |                              101 |                              101
-              BRESP_WAIT |                              110 |                              110
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encoding 'sequential' in module 'PYNQ_Design_usp_rf_data_converter_0_0_slave_attachment'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    idle |                            00001 |                              000
-             send_enable |                            00010 |                              001
-                wait_rdy |                            00100 |                              010
-               read_done |                            01000 |                              100
-              write_done |                            10000 |                              011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'PYNQ_Design_usp_rf_data_converter_0_0_drp_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:29 ; elapsed = 00:05:43 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:05:17 ; elapsed = 00:05:30 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -9993,12 +9276,59 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 
 Incremental Synthesis Report Summary:
 
-1. Incremental synthesis run: no
+1. Incremental synthesis run: yes
 
-   Reason for not running incremental synthesis : Design change found in an area of the design that prevents previous synthesis information being used
+   Stitch points used : unchanged
 
 
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+2. Change Summary
+
+Report Incremental Modules: 
++------+--------------------------------+------------+----------+----------+
+|      |Changed Modules                 |Replication |Instances |Changed % |
++------+--------------------------------+------------+----------+----------+
+|1     |PYNQ_Design_clk_wiz_0_0_clk_wiz |           1|         4|    0.0020|
++------+--------------------------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 202391
+   Resynthesis Design Size (number of cells) : 41218
+   Resynth % : 20.3655,  Reuse % : 79.6345
+
+3. Reference Checkpoint Information
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.1 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+-------------------------------------------------------------------+------------+----------+
+|      |RTL Partition                                                      |Replication |Instances |
++------+-------------------------------------------------------------------+------------+----------+
+|1     |muxpart__724_PYNQ_Design_usp_rf_data_converter_0_0_register_decode |           1|     41213|
+|2     |PYNQ_Design_clk_wiz_0_0                                            |           1|         4|
+|3     |single_rate__GB0_#REUSE#                                           |           1|         0|
+|4     |single_rate__GB1_#REUSE#                                           |           1|         0|
+|5     |single_rate__GB2_#REUSE#                                           |           1|         0|
+|6     |x16_bit_demod_algorithm__GC0_#REUSE#                               |           1|         0|
+|7     |x16_bit_demod_struct__GC0_#REUSE#                                  |           1|         0|
+|8     |RX_imp_1G0MUP__GCB0_#REUSE#                                        |           1|         0|
+|9     |RX_imp_1G0MUP__GCB1_#REUSE#                                        |           1|         0|
+|10    |PYNQ_Design_usp_rf_data_converter_0_0_register_decode__GB1_#REUSE# |           1|         0|
+|11    |PYNQ_Design_usp_rf_data_converter_0_0_block__GC0_#REUSE#           |           1|         0|
+|12    |PYNQ_Design__GCB0_#REUSE#                                          |           1|         0|
+|13    |PYNQ_Design__GCB1_#REUSE#                                          |           1|         0|
++------+-------------------------------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -10017,393 +9347,41 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '70' to '62' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg' and it is trimmed from '3' to '2' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '70' to '62' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/r.r_pipe/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1.
 WARNING: [Synth 8-3332] Sequential element (x16_bit_demod_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_demod.
-INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_init_reg_reg' into 'I_WRESP_STATUS_FIFO/sig_init_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:1934]
-INFO: [Synth 8-4471] merging register 'GEN_ENABLE_INDET_BTT.I_SF_DATA_CNTL_STATUS_FIFO/sig_init_reg2_reg' into 'I_WRESP_STATUS_FIFO/sig_init_reg2_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:1935]
-INFO: [Synth 8-4471] merging register 'sig_stop_request_reg' into 'sig_sready_stop_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:19473]
-INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_reset_reg_reg' into 'I_DRE_CNTL_FIFO/sig_init_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:44093]
-INFO: [Synth 8-4471] merging register 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_stop_request_reg' into 'GEN_INCLUDE_SCATTER.I_S2MM_SCATTER/I_MSSAI_SKID_BUF/sig_sready_stop_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:44088]
-INFO: [Synth 8-6904] The RAM "axi_dma_rx/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /\I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=15) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-4471] merging register 'ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_stop_request_reg' into 'ENABLE_AXIS_SKID.I_INDET_BTT_SKID_BUF/sig_sready_stop_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:19473]
-INFO: [Synth 8-5546] ROM "DIFF_WIDTH_OR_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DIFF_WIDTH_OR_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DIFF_WIDTH_OR_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DIFF_WIDTH_OR_DRE_WDC.I_WDC_STBS_SET/lvar_num_set" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "GEN_INDET_BTT.I_STRT_STRB_GEN/var_end_vector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "GEN_INDET_BTT.I_STRT_STRB_GEN/var_start_vector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:1934]
-INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:1935]
-INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/GEN_CMD_BTT_EQL_23.cmnd_data_reg' and it is trimmed from '185' to '107' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/6f54/hdl/axi_sg_v4_1_rfs.vhd:12161]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_pipelined.mesg_reg_reg' and it is trimmed from '47' to '17' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:4502]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_pipelined.mesg_reg_reg' and it is trimmed from '33' to '3' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:4502]
-INFO: [Synth 8-6904] The RAM "axi_dma_rx/U0/\I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=15) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma.
-INFO: [Synth 8-3332] Sequential element (I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/FSM_onehot_sig_csm_state_reg[3]) is unused and will be removed from module axi_dma.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_4c89.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_4c89.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (proc_sys_reset_0/U0/\EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (proc_sys_reset_0/U0/\EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2 )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (proc_sys_reset_0/U0/\EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3 )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (proc_sys_reset_0/U0/\EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4 )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (proc_sys_reset_0/U0/\EXT_LPF/AUX_LPF[1].asr_lpf_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (proc_sys_reset_0/U0/\EXT_LPF/lpf_asr_reg )
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1__1.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/shift_reg1_reg[1023] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/shift_reg0_reg[1023] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_trig/shift_cap_strg_qual_reg )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/slaveRegDo_ff7_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[7].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[6].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[5].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[3].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[2].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[1].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[1].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/reg_4 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[3].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[2].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[7].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[6].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[5].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE_MU1.MU_STATUS[4].mu_tpid_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/reg_3 /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (system_ila_1/U0/ila_lib/U0/ila_core_inst/\u_ila_regs/N_DDR_MODE.PROBE_STATUS[4].probe_width_reg /\I_EN_STAT_EQ1.U_STAT/xsdb_reg_reg[4] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-5546] ROM "instr_adc0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "instr_dac0" won't be mapped to RAM because it is too sparse
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'adc3_slice3_irq_en_reg[0]' (FDRE) to 'adc3_slice3_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice2_irq_en_reg[0]' (FDRE) to 'adc3_slice2_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice1_irq_en_reg[0]' (FDRE) to 'adc3_slice1_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice0_irq_en_reg[0]' (FDRE) to 'adc3_slice0_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice3_irq_en_reg[0]' (FDRE) to 'adc2_slice3_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice2_irq_en_reg[0]' (FDRE) to 'adc2_slice2_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice1_irq_en_reg[0]' (FDRE) to 'adc2_slice1_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice0_irq_en_reg[0]' (FDRE) to 'adc2_slice0_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice3_irq_en_reg[0]' (FDRE) to 'adc1_slice3_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice2_irq_en_reg[0]' (FDRE) to 'adc1_slice2_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice1_irq_en_reg[0]' (FDRE) to 'adc1_slice1_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice0_irq_en_reg[0]' (FDRE) to 'adc1_slice0_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice3_irq_en_reg[0]' (FDRE) to 'adc0_slice3_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice2_irq_en_reg[0]' (FDRE) to 'adc0_slice2_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice1_irq_en_reg[0]' (FDRE) to 'adc0_slice1_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice0_irq_en_reg[0]' (FDRE) to 'adc0_slice0_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice3_irq_en_reg[0]' (FDRE) to 'dac1_slice3_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice2_irq_en_reg[0]' (FDRE) to 'dac1_slice2_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice1_irq_en_reg[0]' (FDRE) to 'dac1_slice1_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice0_irq_en_reg[0]' (FDRE) to 'dac1_slice0_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice3_irq_en_reg[0]' (FDRE) to 'dac0_slice3_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice2_irq_en_reg[0]' (FDRE) to 'dac0_slice2_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice1_irq_en_reg[0]' (FDRE) to 'dac0_slice1_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice0_irq_en_reg[0]' (FDRE) to 'dac0_slice0_irq_en_reg[1]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice3_irq_en_reg[1]' (FDRE) to 'adc3_slice3_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice2_irq_en_reg[1]' (FDRE) to 'adc3_slice2_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice1_irq_en_reg[1]' (FDRE) to 'adc3_slice1_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice0_irq_en_reg[1]' (FDRE) to 'adc3_slice0_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice3_irq_en_reg[1]' (FDRE) to 'adc2_slice3_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice2_irq_en_reg[1]' (FDRE) to 'adc2_slice2_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice1_irq_en_reg[1]' (FDRE) to 'adc2_slice1_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice0_irq_en_reg[1]' (FDRE) to 'adc2_slice0_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice3_irq_en_reg[1]' (FDRE) to 'adc1_slice3_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice2_irq_en_reg[1]' (FDRE) to 'adc1_slice2_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice1_irq_en_reg[1]' (FDRE) to 'adc1_slice1_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice0_irq_en_reg[1]' (FDRE) to 'adc1_slice0_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice3_irq_en_reg[1]' (FDRE) to 'adc0_slice3_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice2_irq_en_reg[1]' (FDRE) to 'adc0_slice2_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice1_irq_en_reg[1]' (FDRE) to 'adc0_slice1_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice0_irq_en_reg[1]' (FDRE) to 'adc0_slice0_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac1_fifo_disable_reg[1]' (FDRE) to 'dac1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice3_irq_en_reg[1]' (FDRE) to 'dac1_slice3_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice2_irq_en_reg[1]' (FDRE) to 'dac1_slice2_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice1_irq_en_reg[1]' (FDRE) to 'dac1_slice1_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice0_irq_en_reg[1]' (FDRE) to 'dac1_slice0_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac0_fifo_disable_reg[1]' (FDRE) to 'dac0_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice3_irq_en_reg[1]' (FDRE) to 'dac0_slice3_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice2_irq_en_reg[1]' (FDRE) to 'dac0_slice2_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice1_irq_en_reg[1]' (FDRE) to 'dac0_slice1_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice0_irq_en_reg[1]' (FDRE) to 'dac0_slice0_irq_en_reg[2]'
-INFO: [Synth 8-3886] merging instance 'adc3_fifo_disable_reg[2]' (FDRE) to 'adc3_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc2_fifo_disable_reg[2]' (FDRE) to 'adc2_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc1_fifo_disable_reg[2]' (FDRE) to 'adc1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc0_fifo_disable_reg[2]' (FDRE) to 'adc0_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac1_fifo_disable_reg[2]' (FDRE) to 'dac1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice3_irq_en_reg[2]' (FDRE) to 'dac1_slice3_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice2_irq_en_reg[2]' (FDRE) to 'dac1_slice2_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice1_irq_en_reg[2]' (FDRE) to 'dac1_slice1_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice0_irq_en_reg[2]' (FDRE) to 'dac1_slice0_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac0_fifo_disable_reg[2]' (FDRE) to 'dac0_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice3_irq_en_reg[2]' (FDRE) to 'dac0_slice3_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice2_irq_en_reg[2]' (FDRE) to 'dac0_slice2_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice1_irq_en_reg[2]' (FDRE) to 'dac0_slice1_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice0_irq_en_reg[2]' (FDRE) to 'dac0_slice0_irq_en_reg[3]'
-INFO: [Synth 8-3886] merging instance 'adc3_fifo_disable_reg[3]' (FDRE) to 'adc3_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc2_fifo_disable_reg[3]' (FDRE) to 'adc2_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc1_fifo_disable_reg[3]' (FDRE) to 'adc1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc0_fifo_disable_reg[3]' (FDRE) to 'adc0_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac1_fifo_disable_reg[3]' (FDRE) to 'dac1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice3_irq_en_reg[3]' (FDRE) to 'dac1_slice3_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice2_irq_en_reg[3]' (FDRE) to 'dac1_slice2_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice1_irq_en_reg[3]' (FDRE) to 'dac1_slice1_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice0_irq_en_reg[3]' (FDRE) to 'dac1_slice0_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac0_fifo_disable_reg[3]' (FDRE) to 'dac0_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice3_irq_en_reg[3]' (FDRE) to 'dac0_slice3_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice2_irq_en_reg[3]' (FDRE) to 'dac0_slice2_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice1_irq_en_reg[3]' (FDRE) to 'dac0_slice1_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dac0_slice0_irq_en_reg[3]' (FDRE) to 'dac0_slice0_irq_en_reg[4]'
-INFO: [Synth 8-3886] merging instance 'adc3_fifo_disable_reg[4]' (FDRE) to 'adc3_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice3_irq_en_reg[4]' (FDRE) to 'adc3_slice3_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice2_irq_en_reg[4]' (FDRE) to 'adc3_slice2_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice1_irq_en_reg[4]' (FDRE) to 'adc3_slice1_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc3_slice0_irq_en_reg[4]' (FDRE) to 'adc3_slice0_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc2_fifo_disable_reg[4]' (FDRE) to 'adc2_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice3_irq_en_reg[4]' (FDRE) to 'adc2_slice3_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice2_irq_en_reg[4]' (FDRE) to 'adc2_slice2_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice1_irq_en_reg[4]' (FDRE) to 'adc2_slice1_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc2_slice0_irq_en_reg[4]' (FDRE) to 'adc2_slice0_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc1_fifo_disable_reg[4]' (FDRE) to 'adc1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice3_irq_en_reg[4]' (FDRE) to 'adc1_slice3_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice2_irq_en_reg[4]' (FDRE) to 'adc1_slice2_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice1_irq_en_reg[4]' (FDRE) to 'adc1_slice1_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc1_slice0_irq_en_reg[4]' (FDRE) to 'adc1_slice0_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc0_fifo_disable_reg[4]' (FDRE) to 'adc0_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice3_irq_en_reg[4]' (FDRE) to 'adc0_slice3_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice2_irq_en_reg[4]' (FDRE) to 'adc0_slice2_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice1_irq_en_reg[4]' (FDRE) to 'adc0_slice1_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'adc0_slice0_irq_en_reg[4]' (FDRE) to 'adc0_slice0_irq_en_reg[5]'
-INFO: [Synth 8-3886] merging instance 'dac1_fifo_disable_reg[4]' (FDRE) to 'dac1_fifo_disable_reg[15]'
-INFO: [Synth 8-3886] merging instance 'dac1_slice3_irq_en_reg[4]' (FDRE) to 'dac1_slice3_irq_en_reg[5]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc3_slice3_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc3_slice2_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc3_slice1_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc3_slice0_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc2_slice3_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc2_slice2_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc2_slice1_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc2_slice0_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc1_slice3_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc1_slice2_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc1_slice1_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc1_slice0_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc0_slice3_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc0_slice2_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc0_slice1_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc0_slice0_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac1_slice3_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac1_slice2_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac1_slice1_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac1_slice0_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac0_slice3_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac0_slice2_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac0_slice1_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac0_slice0_irq_en_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc3_fifo_disable_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc2_fifo_disable_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc1_fifo_disable_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\adc0_fifo_disable_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac1_fifo_disable_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac0_fifo_disable_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\const_operation_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/constants_config/\subdrp_index_adc0_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cal_const_done_r_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/constants_config/\data_stop_adc0_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/bgt_fsm_adc/\vbg_ctrl_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/constants_config/\subdrp_addr_adc0_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/rts_drp_access_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/bgt_fsm_dac/\vbg_ctrl_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/rts_drp_access_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\restart_fg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\signal_lost_r_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/\mem_data_adc0_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\signal_lost_r_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_PYNQ_Design_usp_rf_data_converter_0_0_powerup_state_irq/dac1_powerup_state_out_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_PYNQ_Design_usp_rf_data_converter_0_0_powerup_state_irq/adc1_powerup_state_out_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_PYNQ_Design_usp_rf_data_converter_0_0_powerup_state_irq/adc2_powerup_state_out_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_PYNQ_Design_usp_rf_data_converter_0_0_powerup_state_irq/adc3_powerup_state_out_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_axi_lite_ipif/\I_SLAVE_ATTACHMENT/s_axi_rresp_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_axi_lite_ipif/\I_SLAVE_ATTACHMENT/s_axi_bresp_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_disabled_adc3/\drpaddr_por_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_disabled_adc2/\drpaddr_por_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_disabled_adc1/\drpaddr_por_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\pll_state_machine.drpwe_status_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\pll_state_machine.drpdi_status_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/bgt_fsm_adc/\drp_addr_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\drpaddr_por_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\pll_state_machine.drpaddr_status_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_disabled_dac1/\drpaddr_por_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\pll_state_machine.drpwe_status_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\pll_state_machine.drpdi_status_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/tile_config/\ram/data_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\pll_state_machine.drpaddr_status_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\drp_addr_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/bgt_fsm_dac/\drp_addr_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\drpaddr_por_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\por_timer_start_val_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\por_timer_start_val_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/constants_config/\mu_adc0_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/constants_config/\subdrp_addr_adc0_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\signal_lost_r_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\signal_lost_r_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/\drpaddr_por_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/constants_config/\adc0_drpaddr_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/\drpaddr_por_reg[7] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-DSP Report: Generating DSP gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg, operation Mode is: (A2*B2)'.
-DSP Report: register gDSP.gDSP_only.iDSP/inferred_dsp.reg_inputs.b_reg_reg is absorbed into DSP gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg.
-DSP Report: register gDSP.gDSP_only.iDSP/inferred_dsp.reg_inputs.a_reg_reg is absorbed into DSP gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg.
-DSP Report: register gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg is absorbed into DSP gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg.
-DSP Report: operator gDSP.gDSP_only.iDSP/multOp is absorbed into DSP gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg.
-INFO: [Synth 8-5544] ROM "I_STRT_STRB_GEN/var_end_vector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "I_STRT_STRB_GEN/var_start_vector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "I_END_STRB_GEN/var_end_vector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'sig_rd_xfer_cmplt_reg' into 'sig_last_mmap_dbeat_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:12438]
-INFO: [Synth 8-4471] merging register 'sig_stop_request_reg' into 'sig_sready_stop_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:19473]
-INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:1934]
-INFO: [Synth 8-4471] merging register 'I_CMD_STATUS/GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO/sig_init_reg2_reg' into 'I_CMD_STATUS/I_CMD_FIFO/sig_init_reg2_reg' [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd:1935]
-INFO: [Synth 8-3936] Found unconnected internal register 'INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM/GEN_CMD_BTT_LESS_23.cmnd_data_reg' and it is trimmed from '153' to '75' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/6f54/hdl/axi_sg_v4_1_rfs.vhd:12121]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_pipelined.mesg_reg_reg' and it is trimmed from '47' to '17' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:4502]
-INFO: [Synth 8-3936] Found unconnected internal register 'exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_pipelined.mesg_reg_reg' and it is trimmed from '33' to '3' bits. [c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:4502]
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/addsub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/addsub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/addsub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100mhz/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100khz/addsub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100khz/addsub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100khz/addsub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100khz/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100khz/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/algorithm/x100khz/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/master_fifo/fifo/latency_gt_0.reg/partial_one.last_srlc33e/reg_array[0].fde_used.u2) is unused and will be removed from module x16_bit_mod.
-WARNING: [Synth 8-3332] Sequential element (x16_bit_mod_struct/slave_fifo/fifo/latency_gt_0.reg/partial_one.last_srlc33e/reg_array[0].fde_used.u2) is unused and will be removed from module x16_bit_mod.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma__parameterized1.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma__parameterized1.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_dma__parameterized1.
-INFO: [Synth 8-3332] Sequential element (I_RST_MODULE/REG_HRD_RST_OUT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_dma__parameterized1.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/FDRE_inst) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module bd_81af.
-WARNING: [Synth 8-3332] Sequential element (clk_map/psr_aclk/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N) is unused and will be removed from module bd_81af.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[2]) is unused and will be removed from module sc_mmu_v1_0_13_top__parameterized0.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_13_top__parameterized0.
-INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_13_top__parameterized0.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized1__2.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:36 ; elapsed = 00:06:51 . Memory (MB): peak = 3918.562 ; gain = 2058.961
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:25 ; elapsed = 00:05:41 . Memory (MB): peak = 3931.934 ; gain = 2072.430
 ---------------------------------------------------------------------------------
- Sort Area is x16_bit_demod_algorithm__GC0 gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg_0 : 0 0 : 3544 3544 : Used 1 time 100
- Sort Area is PYNQ_Design__GCB0 gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg_0 : 0 0 : 3512 3512 : Used 1 time 100
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:05:28 ; elapsed = 00:05:43 . Memory (MB): peak = 3931.934 ; gain = 2072.430
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:02 ; elapsed = 00:07:25 . Memory (MB): peak = 4453.137 ; gain = 2593.535
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:52 ; elapsed = 00:06:12 . Memory (MB): peak = 4447.012 ; gain = 2587.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
-INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:07:18 ; elapsed = 00:07:42 . Memory (MB): peak = 4630.309 ; gain = 2770.707
+Finished Timing Optimization : Time (s): cpu = 00:05:53 ; elapsed = 00:06:13 . Memory (MB): peak = 4447.012 ; gain = 2587.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance PYNQ_Design_i/RX/DUT_rec_0/U0/algorithmi_0/demodulate/lut/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance PYNQ_Design_i/i_0/TX/DUT_data_in_0/U0/x16_bit_mod_struct/algorithm/x100mhz/rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7052] The timing for the instance PYNQ_Design_i/i_0/TX/DUT_data_in_0/U0/x16_bit_mod_struct/algorithm/x100khz/rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:07:51 ; elapsed = 00:08:28 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Technology Mapping : Time (s): cpu = 00:05:53 ; elapsed = 00:06:13 . Memory (MB): peak = 4456.605 ; gain = 2597.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:05:55 ; elapsed = 00:06:15 . Memory (MB): peak = 4456.605 ; gain = 2597.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -10626,37 +9604,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:588]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:08:06 ; elapsed = 00:08:44 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished IO Insertion : Time (s): cpu = 00:06:09 ; elapsed = 00:06:31 . Memory (MB): peak = 4484.195 ; gain = 2624.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:08:06 ; elapsed = 00:08:44 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:09 ; elapsed = 00:06:31 . Memory (MB): peak = 4484.195 ; gain = 2624.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:15 ; elapsed = 00:08:54 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:20 ; elapsed = 00:06:41 . Memory (MB): peak = 4486.816 ; gain = 2627.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:08:16 ; elapsed = 00:08:54 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:20 ; elapsed = 00:06:42 . Memory (MB): peak = 4486.816 ; gain = 2627.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:08:17 ; elapsed = 00:08:55 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:21 ; elapsed = 00:06:43 . Memory (MB): peak = 4487.863 ; gain = 2628.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:08:17 ; elapsed = 00:08:55 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:21 ; elapsed = 00:06:43 . Memory (MB): peak = 4487.863 ; gain = 2628.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -10736,53 +9714,54 @@ Report Cell Usage:
 |2     |BUFG_GT         |     2|
 |3     |BUFG_PS         |     1|
 |4     |CARRY4          |    63|
-|5     |CARRY8          |    81|
+|5     |CARRY8          |    83|
 |6     |CFGLUT5         |   177|
 |7     |DSP_ALU         |    53|
-|10    |DSP_A_B_DATA    |    53|
-|11    |DSP_C_DATA      |    53|
-|13    |DSP_MULTIPLIER  |    53|
-|15    |DSP_M_DATA      |    53|
-|17    |DSP_OUTPUT      |    53|
-|19    |DSP_PREADD      |    53|
-|20    |DSP_PREADD_DATA |    53|
-|22    |HSADC           |     4|
-|23    |HSDAC           |     2|
-|24    |LUT1            |   658|
-|25    |LUT2            |  1177|
-|26    |LUT3            |  1886|
-|27    |LUT4            |  1713|
-|28    |LUT5            |  1966|
-|29    |LUT6            |  3914|
-|30    |MMCME4_ADV      |     1|
-|31    |MUXCY           |    80|
-|32    |MUXF7           |    81|
-|33    |PS8             |     1|
-|34    |RAM32M          |     1|
-|35    |RAM32M16        |    42|
-|36    |RAM32X1D        |     3|
-|37    |RAMB18E2        |    10|
-|41    |RAMB36E2        |    19|
-|44    |SRL16           |     5|
-|45    |SRL16E          |  1467|
-|46    |SRLC16E         |     4|
-|47    |SRLC32E         |   875|
-|48    |FDCE            |   123|
-|49    |FDE             |    76|
-|50    |FDPE            |    33|
-|51    |FDR             |    36|
-|52    |FDRE            | 14356|
-|53    |FDSE            |   442|
+|8     |DSP_A_B_DATA    |    53|
+|9     |DSP_C_DATA      |    53|
+|10    |DSP_MULTIPLIER  |    53|
+|11    |DSP_M_DATA      |    53|
+|12    |DSP_OUTPUT      |    53|
+|13    |DSP_PREADD      |    53|
+|14    |DSP_PREADD_DATA |    53|
+|15    |HSADC           |     4|
+|16    |HSDAC           |     2|
+|17    |LUT1            |   661|
+|18    |LUT2            |  1176|
+|19    |LUT3            |  1889|
+|20    |LUT4            |  1715|
+|21    |LUT5            |  1973|
+|22    |LUT6            |  3915|
+|23    |MMCME4_ADV      |     1|
+|24    |MUXCY           |    80|
+|25    |MUXF7           |    81|
+|26    |PS8             |     1|
+|27    |RAM32M          |     1|
+|28    |RAM32M16        |    42|
+|29    |RAM32X1D        |     3|
+|30    |RAMB18E2        |    10|
+|31    |RAMB36E2        |    19|
+|32    |SRL16           |     5|
+|33    |SRL16E          |  1467|
+|34    |SRLC16E         |     4|
+|35    |SRLC32E         |   875|
+|36    |FDCE            |   123|
+|37    |FDE             |    76|
+|38    |FDPE            |    33|
+|39    |FDR             |    36|
+|40    |FDRE            | 14361|
+|41    |FDSE            |   442|
+|42    |OBUF            |     1|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:08:17 ; elapsed = 00:08:55 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:22 ; elapsed = 00:06:43 . Memory (MB): peak = 4487.863 ; gain = 2628.359
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2772 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:03:34 ; elapsed = 00:06:58 . Memory (MB): peak = 4658.281 ; gain = 2554.062
-Synthesis Optimization Complete : Time (s): cpu = 00:08:18 ; elapsed = 00:09:06 . Memory (MB): peak = 4658.281 ; gain = 2798.680
+Synthesis finished with 0 errors, 0 critical warnings and 1821 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:04:44 . Memory (MB): peak = 4488.402 ; gain = 2369.051
+Synthesis Optimization Complete : Time (s): cpu = 00:06:22 ; elapsed = 00:06:52 . Memory (MB): peak = 4488.402 ; gain = 2628.898
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4658.281 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 701 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 4488.402 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 703 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: PYNQ_Design_i/RX/system_ila_1/U0/ila_lib UUID: 4f880629-31ce-5c66-bb67-99a734a8a49d 
@@ -10791,7 +9770,7 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC PYNQ_Design_i/usp_rf_data_converter_0/inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC for BUFG_GT PYNQ_Design_i/usp_rf_data_converter_0/inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/adc0_bufg_gt
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC PYNQ_Design_i/usp_rf_data_converter_0/inst/PYNQ_Design_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC_1 for BUFG_GT PYNQ_Design_i/usp_rf_data_converter_0/inst/i_PYNQ_Design_usp_rf_data_converter_0_0_bufg_gt_ctrl/dac0_bufg_gt
 INFO: [Opt 31-326] The CLKFBOUT to CLKFBIN net for instance PYNQ_Design_i/RX/clk_wiz_0/inst/mmcme4_adv_inst with COMPENSATION=INTERNAL is optimized away to aid design routability
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 4691.328 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4553.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 448 instances were transformed.
   (CARRY4) => CARRY8: 53 instances
@@ -10806,13 +9785,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
   SRL16 => SRL16E: 5 instances
 
-Synth Design complete | Checksum: e46ea087
+Synth Design complete | Checksum: 45649061
 INFO: [Common 17-83] Releasing license: Synthesis
-1426 Infos, 673 Warnings, 0 Critical Warnings and 0 Errors encountered.
+1018 Infos, 599 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:09:03 ; elapsed = 00:10:09 . Memory (MB): peak = 4691.328 ; gain = 3938.773
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 4691.328 ; gain = 0.000
+synth_design: Time (s): cpu = 00:07:07 ; elapsed = 00:07:52 . Memory (MB): peak = 4553.992 ; gain = 3801.195
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 4553.992 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.runs/synth_1/PYNQ_Design_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 4691.328 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 4553.992 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_utilization -file PYNQ_Design_wrapper_utilization_synth.rpt -pb PYNQ_Design_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 17 12:44:59 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 18 12:25:56 2025...

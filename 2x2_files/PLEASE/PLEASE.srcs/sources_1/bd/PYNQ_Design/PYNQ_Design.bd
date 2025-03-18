@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6E45AECD59B35CC8",
+      "boundary_crc": "0x129A2E8A634A947C",
       "device": "xczu28dr-ffvg1517-2-e",
       "gen_directory": "../../../../PLEASE.gen/sources_1/bd/PYNQ_Design",
       "name": "PYNQ_Design",
@@ -44,7 +44,8 @@
         "proc_sys_reset_1": "",
         "axi_smc_1": "",
         "system_ila_0": ""
-      }
+      },
+      "xlconstant_0": ""
     },
     "interface_ports": {
       "sysref_in": {
@@ -139,6 +140,13 @@
             "direction": "O"
           }
         }
+      }
+    },
+    "ports": {
+      "lmk_reset": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -2463,6 +2471,18 @@
             ]
           }
         }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "PYNQ_Design_xlconstant_0_2",
+        "xci_path": "ip\\PYNQ_Design_xlconstant_0_2\\PYNQ_Design_xlconstant_0_2.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2607,6 +2627,12 @@
           "ps8_0_axi_periph/M00_ACLK",
           "TX/m_axi_mm2s_aclk",
           "zynq_ultra_ps_e_0/saxihp2_fpd_aclk"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "lmk_reset"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {

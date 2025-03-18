@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Mon Mar 17 12:32:41 2025
+--Date        : Tue Mar 18 12:16:28 2025
 --Host        : EEE-R343-01 running 64-bit major release  (build 9200)
 --Command     : generate_target PYNQ_Design_wrapper.bd
 --Design      : PYNQ_Design_wrapper
@@ -18,6 +18,7 @@ entity PYNQ_Design_wrapper is
     adc0_clk_clk_p : in STD_LOGIC;
     dac0_clk_clk_n : in STD_LOGIC;
     dac0_clk_clk_p : in STD_LOGIC;
+    lmk_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
     sysref_in_diff_n : in STD_LOGIC;
     sysref_in_diff_p : in STD_LOGIC;
     vin0_01_v_n : in STD_LOGIC;
@@ -30,6 +31,7 @@ end PYNQ_Design_wrapper;
 architecture STRUCTURE of PYNQ_Design_wrapper is
   component PYNQ_Design is
   port (
+    lmk_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
     sysref_in_diff_n : in STD_LOGIC;
     sysref_in_diff_p : in STD_LOGIC;
     adc0_clk_clk_n : in STD_LOGIC;
@@ -49,6 +51,7 @@ PYNQ_Design_i: component PYNQ_Design
       adc0_clk_clk_p => adc0_clk_clk_p,
       dac0_clk_clk_n => dac0_clk_clk_n,
       dac0_clk_clk_p => dac0_clk_clk_p,
+      lmk_reset(0) => lmk_reset(0),
       sysref_in_diff_n => sysref_in_diff_n,
       sysref_in_diff_p => sysref_in_diff_p,
       vin0_01_v_n => vin0_01_v_n,
