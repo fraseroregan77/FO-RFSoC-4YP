@@ -140,27 +140,75 @@ architecture arch of ii_dsp_top is
 
       -- User registers
       dsp_rst              : out std_logic;
-      nco_driver           : out std_logic
+      nco_driver           : out std_logic_vector(0 downto 0);
+      mux_en               : out std_logic_vector(0 downto 0)      
     );
   end component;
   
-  component sin_wave_modulate
-  port (
-    m_axis_tready : in std_logic_vector( 1-1 downto 0 );
-    s_axis_tdata : in std_logic_vector( 1-1 downto 0 );
-    s_axis_tlast : in std_logic_vector( 1-1 downto 0 );
-    s_axis_tvalid : in std_logic_vector( 1-1 downto 0 );
-    clk : in std_logic;
-    m_axis_tdata : out std_logic_vector( 32-1 downto 0 );
-    m_axis_tlast : out std_logic_vector( 1-1 downto 0 );
-    m_axis_tvalid : out std_logic_vector( 1-1 downto 0 );
-    s_axis_tready : out std_logic_vector( 1-1 downto 0 )
+--  component sin_wave_modulate
+--  port (
+--    m_axis_tready : in std_logic_vector( 1-1 downto 0 );
+--    s_axis_tdata : in std_logic_vector( 1-1 downto 0 );
+--    s_axis_tlast : in std_logic_vector( 1-1 downto 0 );
+--    s_axis_tvalid : in std_logic_vector( 1-1 downto 0 );
+--    clk : in std_logic;
+--    m_axis_tdata : out std_logic_vector( 32-1 downto 0 );
+--    m_axis_tlast : out std_logic_vector( 1-1 downto 0 );
+--    m_axis_tvalid : out std_logic_vector( 1-1 downto 0 );
+--    s_axis_tready : out std_logic_vector( 1-1 downto 0 )
+--  );
+--  end component;
+
+-- User Component instantiation
+-- COMPONENT Data_generation_clean
+--  PORT (
+--    m_axis_tready : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tdata : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tlast : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    clk : IN STD_LOGIC;
+--    m_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+--    m_axis_tlast : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    m_axis_tvalid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tready : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) 
+--  );
+--END COMPONENT;
+
+
+--COMPONENT DUT_data_in_0
+--  PORT (
+--    s_axis_tvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tdata : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tlast : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    m_axis_tready : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    mux_en : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    clk : IN STD_LOGIC;
+--    m_axis_tvalid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    m_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+--    m_axis_tlast : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+--    s_axis_tready : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) 
+--  );
+--END COMPONENT;
+
+COMPONENT DUT_data_in_16bit
+  PORT (
+    s_axis_tvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axis_tdata : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axis_tlast : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    m_axis_tready : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    mux_en : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    m_axis_tvalid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    m_axis_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    m_axis_tlast : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axis_tready : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) 
   );
-  end component;
-  
+END COMPONENT;  
 
   signal dsp_rst              : std_logic;
-  signal nco_driver           : std_logic;
+  signal nco_driver           : std_logic_vector(0 downto 0);
+  signal nco_mux_en           : std_logic_vector(0 downto 0);
+  
   
   --user signals`
   
@@ -174,6 +222,8 @@ architecture arch of ii_dsp_top is
   signal m_axis_tvalid      : std_logic_vector( 1-1 downto 0 );
   signal s_axis_tready      : std_logic_vector( 1-1 downto 0 );
   
+  
+  signal m_axis_tdata_temp       : std_logic_vector( 15 downto 0 );
 
   --attribute MARK_DEBUG : string;
   --attribute MARK_DEBUG of user_code_output : signal is "True";
@@ -218,29 +268,88 @@ begin
 
     -- User registers
     dsp_rst              => dsp_rst,
-    nco_driver           => nco_driver
+    nco_driver           => nco_driver,
+    mux_en               => nco_mux_en
   );
   
  -- user_code_input <= s_axis_rx_desc_tdata(0)(15 downto 0);
   
   
-  user_code : sin_wave_modulate
-  port map (
-    m_axis_tready => m_axis_tx_tready,
-    s_axis_tdata => s_axis_tx_tdata,
-    s_axis_tlast => s_axis_tx_tlast,
-    s_axis_tvalid => s_axis_tx_tvalid,
+--  user_code : Data_generation_1
+ -- port map (
+ --   m_axis_tready => m_axis_tx_tready(0 downto 0),
+ --   s_axis_tdata => nco_driver,
+ --   s_axis_tlast => s_axis_tx_tlast(0 downto 0),
+ --   s_axis_tvalid => s_axis_tx_tvalid(0 downto 0),
+ --   clk => axis_clk,
+ --   m_axis_tdata => m_axis_tx_tdata(0)(32-1 downto 0),
+  --  m_axis_tlast => m_axis_tx_tlast(0 downto 0),
+ --   m_axis_tvalid => m_axis_tx_tvalid(0 downto 0),
+ --   s_axis_tready => s_axis_tx_tready(0 downto 0)
+ -- );
+
+--fraser_user_code : Data_generation_clean
+--  PORT MAP (
+--    m_axis_tready => m_axis_tx_tready(0 downto 0),
+--    s_axis_tdata => nco_driver,
+--    s_axis_tlast => "1",
+--    s_axis_tvalid => "1",
+--    clk => axis_clk,
+--    m_axis_tdata => m_axis_tx_tdata(0)(31 downto 0),
+--    m_axis_tlast => m_axis_tx_tlast(0 downto 0),
+--    m_axis_tvalid => m_axis_tx_tvalid(0 downto 0),
+--    s_axis_tready => open
+--  );  
+
+--fraser_user_code : DUT_data_in_0
+--  PORT MAP (
+--    s_axis_tvalid => "1",
+--    s_axis_tdata => nco_driver,
+--    s_axis_tlast => "1",
+--    m_axis_tready => m_axis_tx_tready(0 downto 0),
+--    mux_en => nco_mux_en,
+--    clk => axis_clk,
+--    m_axis_tvalid => m_axis_tx_tvalid(0 downto 0),
+--    m_axis_tdata => m_axis_tx_tdata(0)(31 downto 0),
+--    m_axis_tlast => m_axis_tx_tlast(0 downto 0),
+--    s_axis_tready => open
+--  );
+
+
+--fraser_user_code : DUT_data_in_0
+--  PORT MAP (
+--    s_axis_tvalid => "1",
+--    s_axis_tdata => nco_driver,
+--    s_axis_tlast => "1",
+--    m_axis_tready => m_axis_tx_tready(0 downto 0),
+--    mux_en => nco_mux_en,
+--    clk => axis_clk,
+--    m_axis_tvalid => m_axis_tx_tvalid(0 downto 0),
+--    m_axis_tdata => m_axis_tdata_temp,
+--    m_axis_tlast => m_axis_tx_tlast(0 downto 0),
+--    s_axis_tready => open
+--  );
+  
+  fraser_user_code : DUT_data_in_16bit
+  PORT MAP (
+    s_axis_tvalid => "1",
+    s_axis_tdata => nco_driver,
+    s_axis_tlast => "1",
+    m_axis_tready => m_axis_tx_tready(0 downto 0),
+    mux_en => nco_mux_en,
     clk => axis_clk,
-    m_axis_tdata => m_axis_tx_tdata,
-    m_axis_tlast => m_axis_tx_tlast,
-    m_axis_tvalid => m_axis_tx_tvalid,
-    s_axis_tready => s_axis_tx_tready
+    m_axis_tvalid => m_axis_tx_tvalid(0 downto 0),
+    m_axis_tdata => m_axis_tdata_temp,
+    m_axis_tlast => m_axis_tx_tlast(0 downto 0),
+    s_axis_tready => open
   );
   
   
-  s_axis_tx_tdata(0) <= nco_driver;
-  -- m_axis_tready <= 
-  -- m_axis_tdata <= s_axis_tx_tdata(0)(31 downto 0);  
+  -- s_axis_tx_tdata(0)(0 downto 0) <= nco_driver;
+  
+  --m_axis_tready <= 
+  --m_axis_tdata <= s_axis_tx_tdata(0)(31 downto 0);
+  
   
 --------------------------------------------------------------------------------
 -- Pass-through the ADC user interface and RX interface signals
@@ -262,10 +371,27 @@ begin
 --------------------------------------------------------------------------------
 -- Pass-through the DAC user interface and TX interface signals
 --------------------------------------------------------------------------------
-  m_axis_tx_tdata  <= s_axis_tx_tdata;
-  m_axis_tx_tlast  <= s_axis_tx_tlast;
-  s_axis_tx_tready <= m_axis_tx_tready;
-  m_axis_tx_tvalid <= s_axis_tx_tvalid;
+ -- m_axis_tx_tdata  <= s_axis_tx_tdata;
+ -- m_axis_tx_tlast  <= s_axis_tx_tlast;
+ -- s_axis_tx_tready <= m_axis_tx_tready;
+ -- m_axis_tx_tvalid <= s_axis_tx_tvalid;
+
+   m_axis_tx_tdata(0) <= m_axis_tdata_temp(15 downto 0) &  m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) &
+                         m_axis_tdata_temp(15 downto 0) &  m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) &
+                         m_axis_tdata_temp(15 downto 0) &  m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) &
+                         m_axis_tdata_temp(15 downto 0) &  m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0) & m_axis_tdata_temp(15 downto 0);
+
+
+--  m_axis_tx_tdata(0) <= m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &
+--                         m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &
+--                         m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &
+--                         m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) &  m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16) & m_axis_tdata_temp(31 downto 16);
+                         
+  m_axis_tx_tdata(15 downto 1)  <= s_axis_tx_tdata(15 downto 1);
+  m_axis_tx_tlast(15 downto 1)  <= s_axis_tx_tlast(15 downto 1);
+  s_axis_tx_tready(15 downto 1) <= m_axis_tx_tready(15 downto 1);
+  m_axis_tx_tvalid(15 downto 1) <= s_axis_tx_tvalid(15 downto 1);
+
 
 end arch;
 

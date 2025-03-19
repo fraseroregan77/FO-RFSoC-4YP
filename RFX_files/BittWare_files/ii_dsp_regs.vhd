@@ -66,7 +66,8 @@ entity ii_dsp_regs is
 
     -- User registers
     dsp_rst              : out std_logic;
-    nco_driver           : out std_logic
+    nco_driver           : out std_logic_vector(0 downto 0);
+    mux_en               : out std_logic_vector(0 downto 0)
   );
 end ii_dsp_regs;
 
@@ -148,9 +149,14 @@ begin
   reg_init(1)(0)             <= '1';             -- default dsp_rst value
   reg_i(1)                   <= reg_o(1);
   
-  nco_driver                 <= reg_o(2)(0);
+  nco_driver                 <= reg_o(2)(0 downto 0);
   reg_init(2)(0)             <= '1';             -- default dsp_rst value (Setting this to 0 starts the NCO output)
   reg_i(2)                   <= reg_o(2);
+
+  mux_en                     <= reg_o(3)(0 downto 0);
+  reg_init(3)(0)             <= '0';             -- default dsp_rst value (Setting this to 0 starts the NCO output)
+  reg_i(3)                   <= reg_o(3);
+
 
 end arch;
 
