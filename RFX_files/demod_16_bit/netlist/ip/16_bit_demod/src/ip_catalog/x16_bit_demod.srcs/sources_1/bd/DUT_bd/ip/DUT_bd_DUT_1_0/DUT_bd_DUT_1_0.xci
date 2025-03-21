@@ -4,7 +4,7 @@
     "xci_name": "DUT_bd_DUT_1_0",
     "cell_name": "DUT_1",
     "component_reference": "User_Company:VMC:DUT:1.0",
-    "ip_revision": "372288647",
+    "ip_revision": "373471523",
     "gen_directory": "../../../../../../x16_bit_demod.gen/sources_1/bd/DUT_bd/ip/DUT_bd_DUT_1_0",
     "parameters": {
       "component_parameters": {
@@ -26,7 +26,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "372288647" } ],
+        "IPREVISION": [ { "value": "373471523" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../x16_bit_demod.gen/sources_1/bd/DUT_bd/ip/DUT_bd_DUT_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

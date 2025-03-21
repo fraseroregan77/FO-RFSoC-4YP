@@ -3,7 +3,7 @@
 	"modules": {
 		"PYNQ_Design": {
 			"proto_instances": {
-				"/RX/DUT_rec_0/m_axis": {
+				"/RX/DUT_0/m_axis": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "clk"},
@@ -13,7 +13,7 @@
 						"TVALID": { "actual": "m_axis_tvalid[0:0]"}
 					}
 				},
-				"/RX/DUT_rec_0/s_axis": {
+				"/RX/DUT_0/s_axis": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "clk"},
@@ -27,6 +27,7 @@
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "clk_out1"},
+						"ARREADY": { "actual": "M00_AXI_arready"},
 						"AWADDR": { "actual": "M00_AXI_awaddr[48:0]"},
 						"AWBURST": { "actual": "M00_AXI_awburst[1:0]"},
 						"AWCACHE": { "actual": "M00_AXI_awcache[3:0]"},
@@ -40,6 +41,9 @@
 						"BREADY": { "actual": "M00_AXI_bready"},
 						"BRESP": { "actual": "M00_AXI_bresp[1:0]"},
 						"BVALID": { "actual": "M00_AXI_bvalid"},
+						"RDATA": { "actual": "M00_AXI_rdata[127:0]"},
+						"RLAST": { "actual": "M00_AXI_rlast"},
+						"RVALID": { "actual": "M00_AXI_rvalid"},
 						"WDATA": { "actual": "M00_AXI_wdata[127:0]"},
 						"WLAST": { "actual": "M00_AXI_wlast"},
 						"WREADY": { "actual": "M00_AXI_wready"},

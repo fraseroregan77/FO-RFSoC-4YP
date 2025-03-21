@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Mar 18 12:25:55 2025
+| Date         : Fri Mar 21 14:23:26 2025
 | Host         : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file PYNQ_Design_wrapper_utilization_synth.rpt -pb PYNQ_Design_wrapper_utilization_synth.pb
 | Design       : PYNQ_Design_wrapper
@@ -32,17 +32,17 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 12366 |     0 |          0 |    425280 |  2.91 |
-|   LUT as Logic             |  9492 |     0 |          0 |    425280 |  2.23 |
-|   LUT as Memory            |  2874 |     0 |          0 |    213600 |  1.35 |
+| CLB LUTs*                  | 14866 |     0 |          0 |    425280 |  3.50 |
+|   LUT as Logic             | 11231 |     0 |          0 |    425280 |  2.64 |
+|   LUT as Memory            |  3635 |     0 |          0 |    213600 |  1.70 |
 |     LUT as Distributed RAM |   346 |     0 |            |           |       |
-|     LUT as Shift Register  |  2528 |     0 |            |           |       |
-| CLB Registers              | 15071 |     0 |          0 |    850560 |  1.77 |
-|   Register as Flip Flop    | 15071 |     0 |          0 |    850560 |  1.77 |
+|     LUT as Shift Register  |  3289 |     0 |            |           |       |
+| CLB Registers              | 18222 |     0 |          0 |    850560 |  2.14 |
+|   Register as Flip Flop    | 18222 |     0 |          0 |    850560 |  2.14 |
 |   Register as Latch        |     0 |     0 |          0 |    850560 |  0.00 |
-| CARRY8                     |   136 |     0 |          0 |     53160 |  0.26 |
-| F7 Muxes                   |    81 |     0 |          0 |    212640 |  0.04 |
-| F8 Muxes                   |     0 |     0 |          0 |    106320 |  0.00 |
+| CARRY8                     |   196 |     0 |          0 |     53160 |  0.37 |
+| F7 Muxes                   |   186 |     0 |          0 |    212640 |  0.09 |
+| F8 Muxes                   |    49 |     0 |          0 |    106320 |  0.05 |
 | F9 Muxes                   |     0 |     0 |          0 |     53160 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -64,8 +64,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 33    |          Yes |           - |          Set |
 | 123   |          Yes |           - |        Reset |
-| 442   |          Yes |         Set |            - |
-| 14473 |          Yes |       Reset |            - |
+| 447   |          Yes |         Set |            - |
+| 17619 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -75,9 +75,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |   24 |     0 |          0 |      1080 |  2.22 |
-|   RAMB36/FIFO*    |   19 |     0 |          0 |      1080 |  1.76 |
-|     RAMB36E2 only |   19 |       |            |           |       |
+| Block RAM Tile    |  141 |     0 |          0 |      1080 | 13.06 |
+|   RAMB36/FIFO*    |  136 |     0 |          0 |      1080 | 12.59 |
+|     RAMB36E2 only |  136 |       |            |           |       |
 |   RAMB18          |   10 |     0 |          0 |      2160 |  0.46 |
 |     RAMB18E2 only |   10 |       |            |           |       |
 | URAM              |    0 |     0 |          0 |        80 |  0.00 |
@@ -168,24 +168,25 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +--------------+-------+---------------------+
 |   Ref Name   |  Used | Functional Category |
 +--------------+-------+---------------------+
-| FDRE         | 14473 |            Register |
-| LUT6         |  3915 |                 CLB |
-| LUT5         |  1973 |                 CLB |
-| LUT3         |  1889 |                 CLB |
-| LUT4         |  1715 |                 CLB |
-| SRL16E       |  1624 |                 CLB |
-| LUT2         |  1176 |                 CLB |
-| SRLC32E      |  1052 |                 CLB |
-| LUT1         |   661 |                 CLB |
+| FDRE         | 17619 |            Register |
+| LUT6         |  4753 |                 CLB |
+| LUT3         |  2510 |                 CLB |
+| SRL16E       |  2354 |                 CLB |
+| LUT5         |  2068 |                 CLB |
+| LUT4         |  1976 |                 CLB |
+| LUT2         |  1659 |                 CLB |
+| SRLC32E      |  1387 |                 CLB |
+| LUT1         |   694 |                 CLB |
 | RAMD32       |   600 |                 CLB |
-| FDSE         |   442 |            Register |
-| CARRY8       |   136 |                 CLB |
+| FDSE         |   447 |            Register |
+| CARRY8       |   196 |                 CLB |
+| MUXF7        |   186 |                 CLB |
+| RAMB36E2     |   136 |            BLOCKRAM |
 | FDCE         |   123 |            Register |
 | RAMS32       |    86 |                 CLB |
-| MUXF7        |    81 |                 CLB |
 | DSP48E2      |    53 |          Arithmetic |
+| MUXF8        |    49 |                 CLB |
 | FDPE         |    33 |            Register |
-| RAMB36E2     |    19 |            BLOCKRAM |
 | RAMB18E2     |    10 |            BLOCKRAM |
 | SRLC16E      |     4 |                 CLB |
 | HSADC        |     4 |            Advanced |

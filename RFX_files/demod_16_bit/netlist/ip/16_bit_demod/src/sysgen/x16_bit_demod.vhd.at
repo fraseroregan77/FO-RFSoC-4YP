@@ -24,47 +24,42 @@
     'Instance' => 'fir_compiler_7_2',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/FIR Compiler 7.2'
   },
-  'Line_225' => {
+  'Line_227' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/logical',
     'Instance' => 'logical',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Logical'
   },
-  'Line_234' => {
+  'Line_236' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/mult',
     'Instance' => 'mult',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Mult'
-  },
-  'Line_271' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/shift',
-    'Instance' => 'shift',
-    'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Shift'
   },
   'Line_29' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/demodulate/accumulator',
     'Instance' => 'accumulator',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Demodulate/Accumulator'
   },
-  'Line_326' => {
+  'Line_320' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/concat1',
     'Instance' => 'concat1',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO/Concat1'
   },
-  'Line_335' => {
+  'Line_329' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/fifo',
     'Instance' => 'fifo',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO/FIFO'
   },
-  'Line_362' => {
+  'Line_356' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/inverter2',
     'Instance' => 'inverter2',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO/Inverter2'
   },
-  'Line_370' => {
+  'Line_364' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/inverter4',
     'Instance' => 'inverter4',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO/Inverter4'
   },
-  'Line_378' => {
+  'Line_372' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/tdata_slice',
     'Instance' => 'tdata_slice',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO/tdata_slice'
@@ -74,17 +69,17 @@
     'Instance' => 'addsub1',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Demodulate/AddSub1'
   },
-  'Line_389' => {
+  'Line_383' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/tlast_slice',
     'Instance' => 'tlast_slice',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO/tlast_slice'
   },
-  'Line_447' => {
+  'Line_441' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/concat',
     'Instance' => 'concat',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/Concat'
   },
-  'Line_456' => {
+  'Line_450' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/fifo',
     'Instance' => 'fifo',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/FIFO'
@@ -94,52 +89,52 @@
     'Instance' => 'convert',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Demodulate/Convert'
   },
-  'Line_482' => {
+  'Line_476' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/inverter1',
     'Instance' => 'inverter1',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/Inverter1'
   },
-  'Line_490' => {
+  'Line_484' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/inverter2',
     'Instance' => 'inverter2',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/Inverter2'
   },
-  'Line_498' => {
+  'Line_492' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/logical',
     'Instance' => 'logical',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/Logical'
   },
-  'Line_507' => {
+  'Line_501' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/tdata_slice',
     'Instance' => 'tdata_slice',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/tdata_slice'
   },
-  'Line_518' => {
+  'Line_512' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/tlast_slice',
     'Instance' => 'tlast_slice',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO/tlast_slice'
   },
-  'Line_583' => {
+  'Line_577' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm',
     'Instance' => 'algorithm',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm'
   },
-  'Line_596' => {
+  'Line_590' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo',
     'Instance' => 'master_fifo',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Master FIFO'
   },
-  'Line_609' => {
+  'Line_603' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo',
     'Instance' => 'slave_fifo',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Slave FIFO'
   },
-  'Line_622' => {
+  'Line_616' => {
     'CodeInstance' => 'x16_bit_demod_struct/logical',
     'Instance' => 'logical',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Logical'
   },
-  'Line_648' => {
+  'Line_642' => {
     'CodeInstance' => 'x16_bit_demod_default_clock_driver/clockdriver',
     'Instance' => 'clockdriver',
     'SimulinkInstance' => ''
@@ -149,12 +144,12 @@
     'Instance' => 'dither',
     'SimulinkInstance' => 'demodulate_16_bit/16_bit_demod/Algorithm/Demodulate/Dither'
   },
-  'Line_686' => {
+  'Line_680' => {
     'CodeInstance' => 'x16_bit_demod_default_clock_driver',
     'Instance' => 'x16_bit_demod_default_clock_driver',
     'SimulinkInstance' => ''
   },
-  'Line_694' => {
+  'Line_688' => {
     'CodeInstance' => 'x16_bit_demod_struct',
     'Instance' => 'x16_bit_demod_struct',
     'SimulinkInstance' => '16_bit_demod'

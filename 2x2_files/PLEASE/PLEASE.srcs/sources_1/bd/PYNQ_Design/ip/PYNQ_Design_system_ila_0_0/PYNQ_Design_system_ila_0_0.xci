@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "PYNQ_Design_system_ila_0_0",
-    "cell_name": "TX/system_ila_0",
+    "cell_name": "TX_ILA",
     "component_reference": "xilinx.com:ip:system_ila:1.1",
     "ip_revision": "17",
     "gen_directory": "../../../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0",
@@ -2571,7 +2571,7 @@
         "C_PROBE2_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_PROBE1_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_PROBE0_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_DATA_DEPTH": [ { "value": "1024", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "C_DATA_DEPTH": [ { "value": "8192", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_NUM_OF_PROBES": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_XLNX_HW_PROBE_INFO": [ { "value": "DEFAULT", "resolve_type": "user", "usage": "all" } ],
         "Component_Name": [ { "value": "PYNQ_Design_system_ila_0_0", "resolve_type": "user", "usage": "all" } ],
