@@ -4342,6 +4342,51 @@ module bd_9ef2_g_inst_0_gigantic_mux # (
 
  
  
+     assign m_slot_2_axi_awid = slot_2_axi_awid ;
+     assign m_slot_2_axi_awaddr = slot_2_axi_awaddr ;
+     assign m_slot_2_axi_awprot = slot_2_axi_awprot ;
+     assign m_slot_2_axi_awlen = slot_2_axi_awlen ;
+     assign m_slot_2_axi_awuser = slot_2_axi_awuser ;
+     assign m_slot_2_axi_awsize = slot_2_axi_awsize ;
+     assign m_slot_2_axi_awburst = slot_2_axi_awburst ;
+     assign m_slot_2_axi_awcache = slot_2_axi_awcache ;
+     assign m_slot_2_axi_awlock = slot_2_axi_awlock ;
+     assign m_slot_2_axi_awvalid = slot_2_axi_awvalid ;
+     assign m_slot_2_axi_awready = slot_2_axi_awready ;
+     assign m_slot_2_axi_wdata = slot_2_axi_wdata ;
+     assign m_slot_2_axi_wuser = slot_2_axi_wuser ;
+     assign m_slot_2_axi_wstrb = slot_2_axi_wstrb ;
+     assign m_slot_2_axi_wlast = slot_2_axi_wlast ;
+     assign m_slot_2_axi_wvalid = slot_2_axi_wvalid ;
+     assign m_slot_2_axi_wready = slot_2_axi_wready ;
+     assign m_slot_2_axi_bid = slot_2_axi_bid ;
+     assign m_slot_2_axi_bresp = slot_2_axi_bresp ;
+     assign m_slot_2_axi_bvalid = slot_2_axi_bvalid ;
+     assign m_slot_2_axi_buser = slot_2_axi_buser ;
+     assign m_slot_2_axi_bready = slot_2_axi_bready ;
+     assign m_slot_2_axi_arid = slot_2_axi_arid ;
+     assign m_slot_2_axi_araddr = slot_2_axi_araddr ;
+     assign m_slot_2_axi_arlen = slot_2_axi_arlen ;
+     assign m_slot_2_axi_arsize = slot_2_axi_arsize ;
+     assign m_slot_2_axi_arburst = slot_2_axi_arburst ;
+     assign m_slot_2_axi_arcache = slot_2_axi_arcache ;
+     assign m_slot_2_axi_arprot = slot_2_axi_arprot ;
+     assign m_slot_2_axi_arlock = slot_2_axi_arlock ;
+     assign m_slot_2_axi_arvalid = slot_2_axi_arvalid ;
+     assign m_slot_2_axi_arready = slot_2_axi_arready ;
+     assign m_slot_2_axi_aruser = slot_2_axi_aruser ;
+     assign m_slot_2_axi_rid = slot_2_axi_rid ;
+     assign m_slot_2_axi_rdata = slot_2_axi_rdata ;
+     assign m_slot_2_axi_rresp = slot_2_axi_rresp ;
+     assign m_slot_2_axi_rlast = slot_2_axi_rlast ;
+     assign m_slot_2_axi_rvalid = slot_2_axi_rvalid ;
+     assign m_slot_2_axi_rready = slot_2_axi_rready ;
+     assign m_slot_2_axi_ruser = slot_2_axi_ruser ;
+     assign m_slot_2_axi_awqos = slot_2_axi_awqos ;
+     assign m_slot_2_axi_awregion = slot_2_axi_awregion ;
+     assign m_slot_2_axi_arqos = slot_2_axi_arqos ;
+     assign m_slot_2_axi_arregion = slot_2_axi_arregion ;
+     assign m_slot_2_axi_wid = slot_2_axi_wid ;
 
      assign m_slot_0_axis_tvalid = slot_0_axis_tvalid ;
      assign m_slot_0_axis_tready = slot_0_axis_tready ;

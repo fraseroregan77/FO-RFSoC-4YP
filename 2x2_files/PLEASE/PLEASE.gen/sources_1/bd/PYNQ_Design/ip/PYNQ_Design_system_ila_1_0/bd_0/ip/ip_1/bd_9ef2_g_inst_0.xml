@@ -2208,7 +2208,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DATA_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.DATA_WIDTH">128</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2226,7 +2226,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.FREQ_HZ">128000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2244,7 +2244,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.ADDR_WIDTH">32</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.ADDR_WIDTH">49</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2352,7 +2352,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>HAS_REGION</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_REGION">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_REGION">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2379,7 +2379,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>HAS_RRESP</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_RRESP">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_RRESP">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2397,7 +2397,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_READ_OUTSTANDING">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_READ_OUTSTANDING">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2406,7 +2406,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_WRITE_OUTSTANDING">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_WRITE_OUTSTANDING">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2433,7 +2433,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.CLK_DOMAIN"/>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SLOT_2_AXI.CLK_DOMAIN">PYNQ_Design_clk_wiz_0_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2489,7 +2489,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.slot_2_axi" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.slot_2_axi" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -19448,7 +19448,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DATA_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.DATA_WIDTH">128</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19466,7 +19466,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.FREQ_HZ">128000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19484,7 +19484,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ADDR_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.ADDR_WIDTH">32</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.ADDR_WIDTH">49</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19592,7 +19592,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>HAS_REGION</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_REGION">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_REGION">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19619,7 +19619,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>HAS_RRESP</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_RRESP">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_RRESP">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19637,7 +19637,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_READ_OUTSTANDING</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_READ_OUTSTANDING">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_READ_OUTSTANDING">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19646,7 +19646,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>NUM_WRITE_OUTSTANDING</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_WRITE_OUTSTANDING">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_WRITE_OUTSTANDING">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19673,7 +19673,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.CLK_DOMAIN"/>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_SLOT_2_AXI.CLK_DOMAIN">PYNQ_Design_clk_wiz_0_0_clk_out1</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -19729,7 +19729,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.m_slot_2_axi" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot;">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.m_slot_2_axi" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot;">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -31156,7 +31156,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4e123292</spirit:value>
+            <spirit:value>9:84d4ad57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31172,11 +31172,11 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 18 12:16:36 UTC 2025</spirit:value>
+            <spirit:value>Fri Mar 21 14:10:39 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:190a445e</spirit:value>
+            <spirit:value>9:ebed5753</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31192,11 +31192,11 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 18 12:16:37 UTC 2025</spirit:value>
+            <spirit:value>Fri Mar 21 14:10:39 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:190a445e</spirit:value>
+            <spirit:value>9:ebed5753</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31212,11 +31212,11 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 18 12:16:36 UTC 2025</spirit:value>
+            <spirit:value>Fri Mar 21 14:10:39 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4e123292</spirit:value>
+            <spirit:value>9:84d4ad57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31232,11 +31232,11 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Mar 18 12:16:36 UTC 2025</spirit:value>
+            <spirit:value>Fri Mar 21 14:10:39 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4e123292</spirit:value>
+            <spirit:value>9:84d4ad57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -48640,7 +48640,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS&apos;)) )">5</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS&apos;)) )">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -48654,7 +48654,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_b_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_b_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -48664,7 +48664,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS&apos;)) )">5</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS&apos;)) )">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -48678,7 +48678,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_r_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_r_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -49408,7 +49408,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS&apos;)) )">5</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS&apos;)) )">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -49422,7 +49422,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_aw_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_aw_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -49432,7 +49432,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS&apos;)) )">5</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS&apos;)) )">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -49446,7 +49446,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_ar_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_ar_cnt" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_TXN_CNTR_EN&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52363,7 +52363,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">48</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -52380,7 +52380,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awaddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awaddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52407,7 +52407,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52434,7 +52434,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52461,7 +52461,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52488,7 +52488,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52515,7 +52515,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52542,7 +52542,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52565,7 +52565,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52588,7 +52588,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52598,7 +52598,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -52615,7 +52615,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52625,7 +52625,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) / 8) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -52642,7 +52642,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wstrb" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_WSTRB&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wstrb" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_WSTRB&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52665,7 +52665,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52688,7 +52688,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52711,7 +52711,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_wready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52765,7 +52765,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_bresp" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BRESP&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_bresp" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BRESP&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52788,7 +52788,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_bvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_bvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52811,7 +52811,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_bready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_bready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52848,7 +52848,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">48</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -52865,7 +52865,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_araddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_araddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52892,7 +52892,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52919,7 +52919,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52946,7 +52946,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -52973,7 +52973,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53000,7 +53000,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53027,7 +53027,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53050,7 +53050,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53073,7 +53073,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53110,7 +53110,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -53127,7 +53127,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53177,7 +53177,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53200,7 +53200,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -53223,7 +53223,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_rready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70339,7 +70339,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">48</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -70356,7 +70356,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awaddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awaddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70383,7 +70383,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70410,7 +70410,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70434,7 +70434,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70461,7 +70461,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70488,7 +70488,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70515,7 +70515,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70538,7 +70538,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70561,7 +70561,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70571,7 +70571,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -70588,7 +70588,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_W_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_W_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70598,7 +70598,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) / 8) - 1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -70612,7 +70612,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wstrb" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_WSTRB&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_W_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wstrb" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_WSTRB&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_W_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70635,7 +70635,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70658,7 +70658,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot;">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot;">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70681,7 +70681,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_wready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70735,7 +70735,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_bresp" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BRESP&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_B_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_bresp" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BRESP&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_B_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70758,7 +70758,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_bvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_bvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70781,7 +70781,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_bready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_bready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70818,7 +70818,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH&apos;)) - 1)">48</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -70835,7 +70835,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_araddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_araddr" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70862,7 +70862,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arlen" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70886,7 +70886,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arsize" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70913,7 +70913,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arburst" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_BURST&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70940,7 +70940,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arcache" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_CACHE&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70967,7 +70967,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arprot" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_PROT&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -70994,7 +70994,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arlock" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_LOCK&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -71017,7 +71017,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -71040,7 +71040,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -71077,7 +71077,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH&apos;)) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -71094,7 +71094,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_R_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rdata" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_R_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -71144,7 +71144,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rlast" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -71167,7 +71167,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rvalid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -71190,7 +71190,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_rready" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) != &quot;RT&quot; ">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -95088,7 +95088,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_awqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -95142,7 +95142,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.slot_2_axi_arqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -97248,7 +97248,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_awqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AW_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -97302,7 +97302,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m_slot_2_axi_arqos" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS&apos;)) > 2 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_HAS_QOS&apos;)) = 1 and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4LITE&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_PROTOCOL&apos;)) != &quot;AXI4S&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_MON_MODE&apos;)) == &quot;FT&quot; and spirit:decode(id(&apos;MODELPARAM_VALUE.C_SLOT_2_AXI_AR_SEL&apos;)) = 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -99827,7 +99827,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_NUM_MONITOR_SLOTS</spirit:name>
         <spirit:displayName>C Num Monitor Slots</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS">2</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_NUM_MONITOR_SLOTS">3</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_0_TXN_CNTR_EN</spirit:name>
@@ -99932,12 +99932,12 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_MAX_RD_BURSTS</spirit:name>
         <spirit:displayName>Max Read Burst</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS">5</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_MAX_WR_BURSTS</spirit:name>
         <spirit:displayName>Max Write  Burst</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS">5</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_3_MAX_RD_BURSTS</spirit:name>
@@ -100187,7 +100187,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_HAS_RRESP</spirit:name>
         <spirit:displayName>C Slot 2 HAS RRESP</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_HAS_RRESP">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_HAS_RRESP">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_HAS_LOCK</spirit:name>
@@ -100212,7 +100212,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_HAS_REGION</spirit:name>
         <spirit:displayName>C Slot 2 HAS REGION</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_HAS_REGION">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_HAS_REGION">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_HAS_BURST</spirit:name>
@@ -101182,27 +101182,27 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_AWUSER_WIDTH</spirit:name>
         <spirit:displayName>C SLOT 2 Axi AWUSER Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_AWUSER_WIDTH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_AWUSER_WIDTH">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_WUSER_WIDTH</spirit:name>
         <spirit:displayName>C SLOT 2 Axi WUSER Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_WUSER_WIDTH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_WUSER_WIDTH">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_BUSER_WIDTH</spirit:name>
         <spirit:displayName>C SLOT 2 Axi BUSER Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_BUSER_WIDTH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_BUSER_WIDTH">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_ARUSER_WIDTH</spirit:name>
         <spirit:displayName>C SLOT 2 Axi ARUSER Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_ARUSER_WIDTH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_ARUSER_WIDTH">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_RUSER_WIDTH</spirit:name>
         <spirit:displayName>C SLOT 2 Axi RUSER Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_RUSER_WIDTH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_RUSER_WIDTH">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_3_AXI_AWUSER_WIDTH</spirit:name>
@@ -102042,7 +102042,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_SLOT_2_MON_MODE</spirit:name>
         <spirit:displayName>Slot 2 Mon Mode</spirit:displayName>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_MON_MODE">RT</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_MON_MODE">FT</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_SLOT_3_MON_MODE</spirit:name>
@@ -105757,17 +105757,17 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_ADDR_WIDTH</spirit:name>
         <spirit:displayName>C Slot 2 Axi Addr Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH">32</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH">49</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_DATA_WIDTH</spirit:name>
         <spirit:displayName>C Slot 2 Axi Data Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH">32</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH">128</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SLOT_2_AXI_ID_WIDTH</spirit:name>
         <spirit:displayName>C Slot 2 Axi Id Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_ID_WIDTH">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SLOT_2_AXI_ID_WIDTH">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_SLOT_2_AXI_PROTOCOL</spirit:name>
@@ -107183,12 +107183,12 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_SLOT_2_MAX_RD_BURSTS</spirit:name>
       <spirit:displayName>AXI Max Read Burst </spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS" spirit:choiceRef="choice_list_236dd123" spirit:order="2.260627e+08" spirit:configGroups="1 UnGrouped radioGroup">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS" spirit:choiceRef="choice_list_236dd123" spirit:order="2.260627e+08" spirit:configGroups="1 UnGrouped radioGroup">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_MAX_WR_BURSTS</spirit:name>
       <spirit:displayName>AXI Max Write Burst </spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS" spirit:choiceRef="choice_list_236dd123" spirit:order="2.260627e+08" spirit:configGroups="1 UnGrouped radioGroup">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS" spirit:choiceRef="choice_list_236dd123" spirit:order="2.260627e+08" spirit:configGroups="1 UnGrouped radioGroup">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_3_MAX_RD_BURSTS</spirit:name>
@@ -108343,7 +108343,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_SLOT_2_HAS_RRESP</spirit:name>
       <spirit:displayName>C Slot 2 HAS RRESP</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_HAS_RRESP" spirit:choiceRef="choice_list_8af5a703" spirit:order="1160010" spirit:configGroups="0 UnGrouped radioGroup">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_HAS_RRESP" spirit:choiceRef="choice_list_8af5a703" spirit:order="1160010" spirit:configGroups="0 UnGrouped radioGroup">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_HAS_PROT</spirit:name>
@@ -108358,7 +108358,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_SLOT_2_HAS_REGION</spirit:name>
       <spirit:displayName>C Slot 2 HAS REGION</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_HAS_REGION" spirit:choiceRef="choice_list_8af5a703" spirit:order="1160040" spirit:configGroups="0 UnGrouped radioGroup">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_HAS_REGION" spirit:choiceRef="choice_list_8af5a703" spirit:order="1160040" spirit:configGroups="0 UnGrouped radioGroup">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_HAS_QOS</spirit:name>
@@ -109153,27 +109153,27 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_AWUSER_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi AWUSER Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_AWUSER_WIDTH" spirit:order="4410" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_AWUSER_WIDTH" spirit:order="4410" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_WUSER_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi WUSER Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_WUSER_WIDTH" spirit:order="4420" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_WUSER_WIDTH" spirit:order="4420" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_BUSER_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi BUSER Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_BUSER_WIDTH" spirit:order="4430" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_BUSER_WIDTH" spirit:order="4430" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_ARUSER_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi ARUSER Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_ARUSER_WIDTH" spirit:order="4440" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_ARUSER_WIDTH" spirit:order="4440" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_RUSER_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi RUSER Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_RUSER_WIDTH" spirit:order="4450" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_RUSER_WIDTH" spirit:order="4450" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_1_AXI_AWUSER_WIDTH</spirit:name>
@@ -109748,17 +109748,17 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_ID_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi Id Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_ID_WIDTH" spirit:order="12000" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_ID_WIDTH" spirit:order="12000" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_DATA_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi Data Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="12100" spirit:configGroups="0 UnGrouped radioGroup">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="12100" spirit:configGroups="0 UnGrouped radioGroup">128</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_2_AXI_ADDR_WIDTH</spirit:name>
       <spirit:displayName>C Slot 2 Axi Addr Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH" spirit:order="12200" spirit:minimum="1" spirit:maximum="64" spirit:rangeType="long">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH" spirit:order="12200" spirit:minimum="1" spirit:maximum="64" spirit:rangeType="long">49</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_1_AXIS_TUSER_WIDTH</spirit:name>
@@ -113218,7 +113218,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_NUM_MONITOR_SLOTS</spirit:name>
       <spirit:displayName>C Num Monitor Slots</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_MONITOR_SLOTS" spirit:order="83300" spirit:configGroups="0 UnGrouped radioGroup" spirit:minimum="0" spirit:maximum="16" spirit:rangeType="long">2</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_NUM_MONITOR_SLOTS" spirit:order="83300" spirit:configGroups="0 UnGrouped radioGroup" spirit:minimum="0" spirit:maximum="16" spirit:rangeType="long">3</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -113238,7 +113238,7 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
     <spirit:parameter>
       <spirit:name>C_SLOT_2_MON_MODE</spirit:name>
       <spirit:displayName>Slot 2 Mon Mode</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_MON_MODE" spirit:choiceRef="choice_list_47247750" spirit:order="4" spirit:configGroups="0 UnGrouped radioGroup">RT</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_SLOT_2_MON_MODE" spirit:choiceRef="choice_list_47247750" spirit:order="4" spirit:configGroups="0 UnGrouped radioGroup">FT</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_SLOT_3_MON_MODE</spirit:name>
@@ -113825,6 +113825,36 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.TDEST_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.TID_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_1_AXIS.TUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.ARUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.AWUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.BUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_BRESP" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_BURST" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_CACHE" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_LOCK" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_PROT" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_QOS" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_REGION" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_RRESP" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.HAS_WSTRB" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.ID_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.PHASE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.PROTOCOL" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.READ_WRITE_MODE" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.RUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.RUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.SUPPORTS_NARROW_BURST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_SLOT_2_AXI.WUSER_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.ASSOCIATED_PORT" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SIGNAL_CLOCK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
@@ -113857,6 +113887,36 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.TDEST_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.TID_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_1_AXIS.TUSER_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.ADDR_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.ARUSER_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.AWUSER_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.BUSER_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.DATA_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.FREQ_HZ" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_BRESP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_BURST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_CACHE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_LOCK" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_PROT" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_QOS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_REGION" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_RRESP" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.HAS_WSTRB" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.ID_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.MAX_BURST_LENGTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_WRITE_OUTSTANDING" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.PHASE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.PROTOCOL" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.READ_WRITE_MODE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.RUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.RUSER_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.SUPPORTS_NARROW_BURST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.SLOT_2_AXI.WUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_EN_GIGAMUX" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUM_MONITOR_SLOTS" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUM_OF_PROBES" xilinx:valueSource="user"/>
@@ -113878,6 +113938,35 @@ lot_5_axi:slot_6_axi:slot_7_axi:slot_8_axi:slot_9_axi:slot_10_axi:slot_11_axi:sl
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_1_HAS_TREADY" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_1_HAS_TSTRB" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_1_MON_MODE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_ADDR_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_ARUSER_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_AR_SEL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_AWUSER_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_AW_SEL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_AXLEN_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_AXLOCK_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_BUSER_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_B_SEL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_DATA_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_ID_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_PROTOCOL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_RUSER_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_R_SEL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_WUSER_WIDTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_AXI_W_SEL" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_BRESP" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_BURST" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_CACHE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_LOCK" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_PROT" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_QOS" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_REGION" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_RRESP" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_HAS_WSTRB" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_MAX_RD_BURSTS" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_MAX_WR_BURSTS" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_MON_MODE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_SLOT_2_TXN_CNTR_EN" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

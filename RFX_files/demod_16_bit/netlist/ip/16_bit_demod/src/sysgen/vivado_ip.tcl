@@ -60,14 +60,14 @@ lappend params_list CONFIG.Control_Broadcast_Fanout {false}
 lappend params_list CONFIG.Control_Column_Fanout {false}
 lappend params_list CONFIG.Control_LUT_Pipeline {false}
 lappend params_list CONFIG.Control_Path_Fanout {false}
-lappend params_list CONFIG.DATA_Has_TLAST {Not_Required}
+lappend params_list CONFIG.DATA_Has_TLAST {Packet_Framing}
 lappend params_list CONFIG.DATA_TUSER_Width {1}
 lappend params_list CONFIG.Data_Buffer_Type {Automatic}
-lappend params_list CONFIG.Data_Fractional_Bits {0}
+lappend params_list CONFIG.Data_Fractional_Bits {14}
 lappend params_list CONFIG.Data_Path_Broadcast {false}
 lappend params_list CONFIG.Data_Path_Fanout {false}
 lappend params_list CONFIG.Data_Sign {Signed}
-lappend params_list CONFIG.Data_Width {32}
+lappend params_list CONFIG.Data_Width {16}
 lappend params_list CONFIG.Decimation_Rate {1}
 lappend params_list CONFIG.Disable_Half_Band_Centre_Tap {false}
 lappend params_list CONFIG.DisplayReloadOrder {false}
@@ -81,7 +81,7 @@ lappend params_list CONFIG.Gen_MIF_from_Spec {false}
 lappend params_list CONFIG.HardwareOversamplingRate {1}
 lappend params_list CONFIG.Has_ACLKEN {true}
 lappend params_list CONFIG.Has_ARESETn {false}
-lappend params_list CONFIG.Input_Buffer_Type {Automatic}
+lappend params_list CONFIG.Input_Buffer_Type {Distributed}
 lappend params_list CONFIG.Inter_Column_Pipe_Length {4}
 lappend params_list CONFIG.Interpolation_Rate {1}
 lappend params_list CONFIG.M_DATA_Has_TREADY {false}
@@ -99,7 +99,7 @@ lappend params_list CONFIG.Optimization_Selection {None}
 lappend params_list CONFIG.Other {false}
 lappend params_list CONFIG.Output_Buffer_Type {Automatic}
 lappend params_list CONFIG.Output_Rounding_Mode {Full_Precision}
-lappend params_list CONFIG.Output_Width {47}
+lappend params_list CONFIG.Output_Width {31}
 lappend params_list CONFIG.Passband_Max {0.50000000}
 lappend params_list CONFIG.Passband_Min {0.00000000}
 lappend params_list CONFIG.Pattern_List {P4-0,P4-1,P4-2,P4-3,P4-4}

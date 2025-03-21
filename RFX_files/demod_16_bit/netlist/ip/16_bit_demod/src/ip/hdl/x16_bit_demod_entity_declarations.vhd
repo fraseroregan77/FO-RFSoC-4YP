@@ -321,49 +321,6 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_shift_0c6f52abe1 is
-  port (
-    ip : in std_logic_vector((16 - 1) downto 0);
-    op : out std_logic_vector((32 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end sysgen_shift_0c6f52abe1;
-architecture behavior of sysgen_shift_0c6f52abe1
-is
-  signal ip_1_23: signed((16 - 1) downto 0);
-  type array_type_op_mem_46_20 is array (0 to (1 - 1)) of signed((32 - 1) downto 0);
-  signal op_mem_46_20: array_type_op_mem_46_20 := (
-    0 => "00000000000000000000000000000000");
-  signal op_mem_46_20_front_din: signed((32 - 1) downto 0);
-  signal op_mem_46_20_back: signed((32 - 1) downto 0);
-  signal op_mem_46_20_push_front_pop_back_en: std_logic;
-  signal internal_ip_33_3_convert: signed((32 - 1) downto 0);
-begin
-  ip_1_23 <= std_logic_vector_to_signed(ip);
-  op_mem_46_20_back <= op_mem_46_20(0);
-  proc_op_mem_46_20: process (clk)
-  is
-    variable i: integer;
-  begin
-    if (clk'event and (clk = '1')) then
-      if ((ce = '1') and (op_mem_46_20_push_front_pop_back_en = '1')) then
-        op_mem_46_20(0) <= op_mem_46_20_front_din;
-      end if;
-    end if;
-  end process proc_op_mem_46_20;
-  internal_ip_33_3_convert <= std_logic_vector_to_signed(convert_type(signed_to_std_logic_vector(ip_1_23), 16, 0, xlSigned, 32, 0, xlSigned, xlRound, xlSaturate));
-  op_mem_46_20_front_din <= internal_ip_33_3_convert;
-  op_mem_46_20_push_front_pop_back_en <= '1';
-  op <= signed_to_std_logic_vector(op_mem_46_20_back);
-end behavior;
-
-library xil_defaultlib;
-use xil_defaultlib.conv_pkg.all;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
 entity sysgen_addsub_7306b52037 is
   port (
     a : in std_logic_vector((14 - 1) downto 0);
@@ -1300,45 +1257,51 @@ use IEEE.numeric_std.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 
-entity xlfir_compiler_ae65b408d3e27b03bc0c852f0d847079 is 
+entity xlfir_compiler_706bdf671826ad1aa9bbfc9ef4a98d13 is 
   port(
     ce:in std_logic;
     ce_logic_1:in std_logic;
     clk:in std_logic;
     clk_logic_1:in std_logic;
-    m_axis_data_tdata_real:out std_logic_vector(46 downto 0);
+    m_axis_data_tdata_real:out std_logic_vector(30 downto 0);
+    m_axis_data_tlast:out std_logic;
     m_axis_data_tvalid:out std_logic;
-    s_axis_data_tdata_real:in std_logic_vector(31 downto 0);
+    s_axis_data_tdata_real:in std_logic_vector(15 downto 0);
+    s_axis_data_tlast:in std_logic;
     s_axis_data_tready:out std_logic;
     src_ce:in std_logic;
     src_clk:in std_logic
   );
-end xlfir_compiler_ae65b408d3e27b03bc0c852f0d847079; 
+end xlfir_compiler_706bdf671826ad1aa9bbfc9ef4a98d13; 
 
-architecture behavior of xlfir_compiler_ae65b408d3e27b03bc0c852f0d847079  is
+architecture behavior of xlfir_compiler_706bdf671826ad1aa9bbfc9ef4a98d13  is
   component x16_bit_demod_fir_compiler_v7_2_i0
     port(
       aclk:in std_logic;
       aclken:in std_logic;
-      m_axis_data_tdata:out std_logic_vector(47 downto 0);
+      m_axis_data_tdata:out std_logic_vector(31 downto 0);
+      m_axis_data_tlast:out std_logic;
       m_axis_data_tvalid:out std_logic;
-      s_axis_data_tdata:in std_logic_vector(31 downto 0);
+      s_axis_data_tdata:in std_logic_vector(15 downto 0);
+      s_axis_data_tlast:in std_logic;
       s_axis_data_tready:out std_logic;
       s_axis_data_tvalid:in std_logic
     );
 end component;
-signal m_axis_data_tdata_net: std_logic_vector(47 downto 0) := (others=>'0');
-signal s_axis_data_tdata_net: std_logic_vector(31 downto 0) := (others=>'0');
+signal m_axis_data_tdata_net: std_logic_vector(31 downto 0) := (others=>'0');
+signal s_axis_data_tdata_net: std_logic_vector(15 downto 0) := (others=>'0');
 begin
-  m_axis_data_tdata_real <= m_axis_data_tdata_net(46 downto 0);
-  s_axis_data_tdata_net(31 downto 0) <= s_axis_data_tdata_real;
+  m_axis_data_tdata_real <= m_axis_data_tdata_net(30 downto 0);
+  s_axis_data_tdata_net(15 downto 0) <= s_axis_data_tdata_real;
   x16_bit_demod_fir_compiler_v7_2_i0_instance : x16_bit_demod_fir_compiler_v7_2_i0
     port map(
       aclk=>clk,
       aclken=>ce,
       m_axis_data_tdata=>m_axis_data_tdata_net,
+      m_axis_data_tlast=>m_axis_data_tlast,
       m_axis_data_tvalid=>m_axis_data_tvalid,
       s_axis_data_tdata=>s_axis_data_tdata_net,
+      s_axis_data_tlast=>s_axis_data_tlast,
       s_axis_data_tready=>s_axis_data_tready,
       s_axis_data_tvalid=>ce_logic_1
     );

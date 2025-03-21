@@ -60,21 +60,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design
 # IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/bd_0/ip/ip_10/bd_4c89_m00e_0.xci
 # DONT_TOUCH constraint suppressed by (parent) sub-design file.
 
-# IP: bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/PYNQ_Design_DUT_rec_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_DUT_rec_0_0 || ORIG_REF_NAME==PYNQ_Design_DUT_rec_0_0} -quiet] -quiet
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_mult_gen_v12_0_i0/x16_bit_demod_mult_gen_v12_0_i0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_mult_gen_v12_0_i0 || ORIG_REF_NAME==x16_bit_demod_mult_gen_v12_0_i0} -quiet] -quiet
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fir_compiler_v7_2_i0/x16_bit_demod_fir_compiler_v7_2_i0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0 || ORIG_REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0} -quiet] -quiet
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fifo_generator_i1/x16_bit_demod_fifo_generator_i1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i1 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i1} -quiet] -quiet
-
-# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fifo_generator_i0/x16_bit_demod_fifo_generator_i0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i0 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i0} -quiet] -quiet
-
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0/PYNQ_Design_proc_sys_reset_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_proc_sys_reset_0_0 || ORIG_REF_NAME==PYNQ_Design_proc_sys_reset_0_0} -quiet] -quiet
 
@@ -89,6 +74,21 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_ila
 
 # IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_1/bd_9ef2_g_inst_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_g_inst_0 || ORIG_REF_NAME==bd_9ef2_g_inst_0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_2/bd_9ef2_slot_2_aw_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_slot_2_aw_0 || ORIG_REF_NAME==bd_9ef2_slot_2_aw_0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_3/bd_9ef2_slot_2_w_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_slot_2_w_0 || ORIG_REF_NAME==bd_9ef2_slot_2_w_0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_4/bd_9ef2_slot_2_b_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_slot_2_b_0 || ORIG_REF_NAME==bd_9ef2_slot_2_b_0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_5/bd_9ef2_slot_2_ar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_slot_2_ar_0 || ORIG_REF_NAME==bd_9ef2_slot_2_ar_0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_1_0/bd_0/ip/ip_6/bd_9ef2_slot_2_r_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_9ef2_slot_2_r_0 || ORIG_REF_NAME==bd_9ef2_slot_2_r_0} -quiet] -quiet
 
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_axi_dma_0_0/PYNQ_Design_axi_dma_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_dma_0_0 || ORIG_REF_NAME==PYNQ_Design_axi_dma_0_0} -quiet] -quiet
@@ -171,6 +171,21 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_5ea3_g_i
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_xlconstant_0_2/PYNQ_Design_xlconstant_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_xlconstant_0_2 || ORIG_REF_NAME==PYNQ_Design_xlconstant_0_2} -quiet] -quiet
 
+# IP: bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/PYNQ_Design_DUT_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_DUT_0_0 || ORIG_REF_NAME==PYNQ_Design_DUT_0_0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_fifo_generator_i0/x16_bit_demod_fifo_generator_i0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i0 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_fifo_generator_i1/x16_bit_demod_fifo_generator_i1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i1 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i1} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_fir_compiler_v7_2_i0/x16_bit_demod_fir_compiler_v7_2_i0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0 || ORIG_REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0} -quiet] -quiet
+
+# IP: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_mult_gen_v12_0_i0/x16_bit_demod_mult_gen_v12_0_i0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==x16_bit_demod_mult_gen_v12_0_i0 || ORIG_REF_NAME==x16_bit_demod_mult_gen_v12_0_i0} -quiet] -quiet
+
 # IP: bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] -quiet
 
@@ -231,18 +246,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_axi_smc_2/smartconnect.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_axi_smc_2 || ORIG_REF_NAME==PYNQ_Design_axi_smc_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0 || ORIG_REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fifo_generator_i1/x16_bit_demod_fifo_generator_i1.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i1 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/x16_bit_demod_fifo_generator_i0/x16_bit_demod_fifo_generator_i0.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i0 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_rec_0_0/constrs/x16_bit_demod.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_DUT_rec_0_0 || ORIG_REF_NAME==PYNQ_Design_DUT_rec_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0/PYNQ_Design_proc_sys_reset_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_proc_sys_reset_0_0 || ORIG_REF_NAME==PYNQ_Design_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -333,6 +336,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/bd_0/bd_5ea3_ooc.xdc
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_system_ila_0_0/PYNQ_Design_system_ila_0_0_ooc.xdc
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_fifo_generator_i0/x16_bit_demod_fifo_generator_i0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i0 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/constrs/x16_bit_demod.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_DUT_0_0 || ORIG_REF_NAME==PYNQ_Design_DUT_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_fifo_generator_i1/x16_bit_demod_fifo_generator_i1.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_demod_fifo_generator_i1 || ORIG_REF_NAME==x16_bit_demod_fifo_generator_i1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0/x16_bit_demod_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0 || ORIG_REF_NAME==x16_bit_demod_fir_compiler_v7_2_i0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_auto_ds_0/PYNQ_Design_auto_ds_0_clocks.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==PYNQ_Design_auto_ds_0 || ORIG_REF_NAME==PYNQ_Design_auto_ds_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

@@ -558,3 +558,9 @@ delete_bd_objs [get_bd_intf_nets Conn] [get_bd_intf_nets transmitter_M00_AXI] [g
 delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M00_AXI] [get_bd_intf_nets amc_cnn_out] [get_bd_intf_nets ps8_0_axi_periph_M06_AXI] [get_bd_intf_nets axis_fifo_out] [get_bd_intf_nets receiver_M00_AXI] [get_bd_intf_nets broadcast_pkt] [get_bd_intf_nets broadcast_amc] [get_bd_intf_nets axis_combiner] [get_bd_intf_nets combiner_imag] [get_bd_intf_nets ps8_0_axi_periph_M07_AXI] [get_bd_nets receiver_validConv2] [get_bd_nets receiver_sampleNum1] [get_bd_intf_nets ps8_0_axi_periph_M03_AXI] [get_bd_intf_nets ps8_0_axi_periph_M04_AXI] [get_bd_intf_nets ps8_0_axi_periph_M08_AXI] [get_bd_intf_nets ps8_0_axi_periph_M09_AXI] [get_bd_intf_nets dma_controller_out] [get_bd_intf_nets combiner_real] [get_bd_intf_nets ps8_0_axi_periph_M05_AXI] [get_bd_intf_nets ps8_0_axi_periph_M01_AXI] [get_bd_nets receiver_validDense1] [get_bd_nets receiver_validInput] [get_bd_nets receiver_validConv1] [get_bd_cells receiver]
 delete_bd_objs [get_bd_intf_nets rfdc_real] [get_bd_intf_nets rfdc_imag] [get_bd_cells system_ila_0]
 delete_bd_objs [get_bd_intf_nets ps8_0_axi_periph_M02_AXI] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_FPD] [get_bd_nets S00_ARESETN_1] [get_bd_cells ps8_0_axi_periph]
+save_bd_design
+WARNING: [BD 41-597] NET <zynq_ultra_ps_e_0_pl_clk1> has no source
+Wrote  : <C:\Users\clb20123\Documents\rfsoc_quant_amc\rfsoc_quant_amc\boards\RFSoC2x2\rfsoc_quant_amc\rfsoc_quant_amc\rfsoc_quant_amc.srcs\sources_1\bd\block_design\block_design.bd> 
+Wrote  : <C:/Users/clb20123/Documents/rfsoc_quant_amc/rfsoc_quant_amc/boards/RFSoC2x2/rfsoc_quant_amc/rfsoc_quant_amc/rfsoc_quant_amc.srcs/sources_1/bd/block_design/ui/bd_e2aa6730.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 18 13:57:11 2025...
