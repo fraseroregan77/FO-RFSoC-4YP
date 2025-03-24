@@ -9,6 +9,7 @@
 \usepackage{amsmath}
 \usepackage{hyphenat}
 \usepackage{tikz}
+\usepackage{pgfplots}
 \usepackage[]{minted}
 \usepackage[fancyvrb=true]{listings}
 \usepackage{etoolbox}
@@ -24,9 +25,14 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{siunitx}
 \usepackage{circuitikz}
+\usepackage{tikz-timing}
 \usepackage{physics}
 \usepackage{setspace}
+\usepackage{svg}
 \usepackage{epsfig}
+\usepackage{titlesec}
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1em}
 \onehalfspacing
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{5}
@@ -38,7 +44,7 @@
 %styling
 \usemintedstyle{vs}
 \BeforeBeginEnvironment{minted}{\begin{tcolorbox}}
-\newminted{Matlab}{frame=lines, framerule=1pt}
+\newminted{vhdl}{frame=lines, framerule=1pt}
 \AfterEndEnvironment{minted}{\end{tcolorbox}}
 \setlength{\headheight}{14.88316pt}
 \pagestyle{fancy}
@@ -97,9 +103,15 @@
     {\Large April 2025\par}
     \vfill
 \end{titlepage}
+\section*{Acknowledgements}
+
+
+
 \newpage
 \tableofcontents
 \newpage
+
+
 
 \section*{Nomenclature}
 \begin{itemize}
@@ -131,14 +143,17 @@ SDK & Software Development Kit\\
 OS & Operating System\\
 AM & Amplitude Modulation\\
 OFDM & Orthogonal Frequency Division Multiplexing\\
-IPI & IP Integrator\\
 NCO & Numerically Controlled Oscillator\\
 LUT & Look Up Table\\
 ROM & Read Only Memory\\
 SFDR & Spurious Free Dynamic Range\\
 MUX & Multiplexer\\
 FIR & Finite Impulse Response (Filter) \\
+IPI & IP Integrator\\
 DMA & Direct Memory Access\\
+QSFP & Quad Small Form-factor Pluggable\\
+Tcl & Tool command language\\
+PLL & Phase Locked Loop
 \end{tabular}
 \newpage
 \subsection*{Symbols}
@@ -153,6 +168,17 @@ n & Number of Bits\\
 \newpage
 
 \section{Abstract}
+
+%Can put this somewhere
+
+\begin{comment}
+    \begin{figure}
+    \centering
+    \includesvg{IMAGES/RFX-Card.svg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\end{comment}
 
 \newpage
 \section{Introduction}
@@ -181,7 +207,20 @@ The PYNQ project by AMD \cite{PYNQ} is another supporting framework that focuses
 
 The Advanced eXtensible Interface (AXI) is a communication protocol defined by ARM as part of the Advanced Microcontroller Bus Architecture (AMBA) standard \cite{axi_article}. The AXI4 standard has three different forms: AXI4-Lite, for simple, low-throughput communications,for example, driving an enable register pin; AXI4-Stream, for high-speed streaming data; and full AXI4, which is used for high-performance applications. Typically, embedded systems, such as FPGAs, operate with a master-slave topology between different devices \cite{strathsdr_axi}. The master device can connect to multiple slave devices through a communication protocol, and slave devices can be controlled by multiple masters, executing commands only when driven by a master device. AXI follows this same principle, with read and write channels transferring data between the master and slave components in a hardware design.
 
-\textcolor{red}{AXI LITE?????}
+
+AXI4 uses handshake operations, where a handshake is successful when both the valid and ready signals are high on the same clock cycle \cite{strathsdr_axi}. 
+
+\textcolor{red}{need to get photo or graph of axi transactions}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.2]{}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+AXI4-Lite has both a read and write transaction, with the former using the \textbf{read address} and \textbf{read data} channels, and the latter using the \textbf{write address}, \textbf{write data}, and \textbf{write response} channels \cite{strathsdr_axi}. To summarise an AXI4-Lite handshake, the read transaction is performed when the master sends an address on the \textbf{read address} channel, after which the \textbf{valid} and \textbf{ready} signals are asserted, performing the handshake, which is then followed by the read operation where the slave sends the data at the requested memory address using the \textbf{read data} channel. To perform write operations, the master sends an address value using the \textbf{write address} channel, which performs a basic handshake. The master then sends the data that is to be written into the memory address to the slave, this uses the \textbf{write data} channel. Finally, the slave responds using the \textbf{write response} channel, which indicates to the master whether the write operation was successful or not. There is vast support for AXI4-Lite on AMD devices, especially using Model Composer, inputs to designs (Gateway In)(s) can be implemented as an AXI4-Lite register, which allows for simple control once the designs are generated into IP cores in Vivado.
+ 
 
 AXI4-Stream does not need a memory address channel since it does not move data between different memory locations, but rather moves data between different points on the FPGA. AXI4-Stream uses nine signals, but the most relevant can be seen below in Table \ref{tab:AXI4-Stream signals}.
 
@@ -198,7 +237,7 @@ AXI4-Stream does not need a memory address channel since it does not move data b
     \label{tab:AXI4-Stream signals}
 \end{table}
 
-All AXI4-Stream signals propogate from master to slave, except for TREADY, which travels in the opposite direction. To implement AXI4-Stream in a design, there is a naming convention that must be obliged, that is:
+All AXI4-Stream signals propogate from master to slave, except for TREADY, which travels in the opposite direction. To implement AXI4-Stream in a design, there is a naming convention that must be followed, that is:
 
 \[<Role>\_<ClassName>\_<SignalName>\]
 
@@ -206,13 +245,14 @@ For example, to implement a stream of data on the master side, the signal would 
 
 \[m\_\ axis\_\ tdata\]
 
-\textcolor{red}{NOT FINISHED}
+The AXI4 protocol plays a fundamental role in modern embedded systems, particularly in AMD SoC devices. In this project, AXI4-Stream is essential for efficiently transferring large volumes of data between multiple IP cores within the FPGA, ensuring high-performance communication and system integration.
+
 
 This project focuses on the BittWare RFX-8440 (referred to as the RFX from now on) L band transceiver PCIe card \cite{bittware2024rfx}. A high performance hardware device powered by a Gen3 RFSoC, with up to eight RFDCs, featuring Multi gigahertz bandwidth for any SDR applications necessary. Traditionally, PYNQ is only natively available on certain development boards created by AMD such as the RFSoC 2x2, 4x2, or the PYNQ Z-2 board. For PS-PL communication, the RFX uses PetaLinux, a Linux Software Development Kit (SDK) used for embedded Xilinx (AMD) processing systems. PetaLinux is a powerful tool for embedded system design, however, it is less user friendly than PYNQ due to the user needing a proprietary knowledge of the Linux kernel. PetaLinux is a small Linux based operating system which targets a specific hardware image using an exported .xsa file, and runs entirely on the PS.
 
 Linux based operating systems (OS) are uncommon in most home laptops/PCs but are extremely common in industry applications. Linux is almost guaranteed to be the operating system of choice for data centres, R\&D labs, servers, and even more. Linux is extremely important to the infrastructure of communication systems, as all network protocol servers will run some sort of Linux distribution. Linux is so popular because of its open-source nature, meaning that anyone has access to the source code, giving them the ability to customise the operating system and create specific distributions. 
 
-GNU Radio has many tutorials to get someone up to speed with the software, as well as having a recommended reading section for general SDR and communication techniques. These tutorials range from simple Amplitude Modulation (AM), to Orthogonal Frequency Division Multiplexing (OFDM), a far more advanced communication technique, where a signal is split up into multiple narrowband carrier frequencies rather than taking up lots of bandwidth with one carrier frequency. These tutorials are an extremely useful learning tool, as they provide an interactive experience where someone can build different types of communication systems along with learning about them.
+GNU Radio has many tutorials to get someone up to speed with the software, as well as having a recommended reading section for general SDR and communication techniques. These tutorials range from simple Amplitude Modulation (AM), to Orthogonal Frequency Division Multiplexing (OFDM), a far more advanced communication technique, where a signal is split up into multiple narrowband carrier frequencies rather than taking up lots of bandwidth with one carrier frequency \cite{ofdm_paper}. These tutorials are an extremely useful learning tool, as they provide an interactive experience where someone can build different types of communication systems along with learning about them.
 
 GNU Radio has been around for over 20 years, and with the ever growing application and need for SDR systems to be used in everyday environments, GNU Radio has served as an incredibly useful tool. Whether someone is new to SDR or is a veteran, GNU Radio provides a fantastic platform for developing these systems. As mentioned earlier, GNU Radio provides something called an ‘out of tree’ (OOT) module, this is essentially a custom block that is either written in C++ (for more computationally intensive DSP) or Python (for simpler tasks). These OOT modules are aptly named since they are not part of GNU Radios ‘source tree’ [10], or more simply, are not native to the software. There are a number of heavily supported hardware that GNU Radio mentions on their website. This hardware is usually relatively inexpensive which makes it great for beginners, however, the RFX is not one of these boards. GNU Radio has something called the ‘Catch-All Clause’ which states that any hardware device that can be accessed by an operating system can support GNU Radio, usually by writing custom device drivers in the form of sinks or sources. Since this project focuses mostly on the deployment of an SDR system, there is a workaround for writing custom drivers for the RFX.
 
@@ -257,19 +297,23 @@ section plan:
     \item Initial testing with RFX - spectrum analyser from BittWare
     \item With axi stream, talk about how the data needs to be formatted before being sent out.
     \item Talk about ILA t
+    \item \textcolor{red}{talk about gnu radio proposed design}
+    \item \textcolor{red}{}
 \end{itemize}                          
 \newpage
 
-Initially, the system design was comprised of a \enquote{simple} transmitter and receiver that would connect the DAC and ADC through an SMA coaxial RF cable. This sort of design is usually developed as someone's first venture into SDR design, as it provides a solid understanding of both the radio architecture, along with the development cycle required to undergo such designs. This design would then be validated on both the BittWare RFX card, along with the RFSoC 2x2 development board. The reason for using multiple boards to validate this design was due to the more simple PS interface used by the 2x2, PYNQ. There is far more documentation for PYNQ online, so theoretically, systems using PYNQ could have a quicker and more streamlined development when compared to those using PetaLinux, since each PetaLinux image is dependant upon the hardware design, and can not be swapped out at will, like PYNQ's overlays.
+The  system design featured a transmitter and receiver setup, linking the DAC and ADC via an SMA coaxial RF cable. This approach is commonly employed as an introductory step in SDR development, as it provides a strong foundation in radio architecture and the associated development cycle. The design was subsequently validated on both the BittWare RFX card and the RFSoC 2x2 development board. Multiple platforms were utilized to leverage the advantages of the 2x2 board’s simpler PS interface, PYNQ. PYNQ offers significantly more online documentation, theoretically enabling a faster and more efficient development process compared to PetaLinux. Unlike PetaLinux, where each image is tied to a specific hardware configuration, PYNQ’s overlays allow for greater flexibility, facilitating a more adaptable development workflow.
+ 
+\subsection{Digital Logic Design}
 
-\textcolor{red}{MAYBE ADD BLOCK DIAGRAM OR CIRCUITIKZ MODEL OF TX AND RX}
+Primarily, the digital logic was designed using Vitis Model Composer through MATLAB and Simulink. This software abstracts the need to extensively write VHDL code, which can be very tenuous and time consuming, by using a number of pre-defined \enquote{blocks}, ranging from simple adders, to more complex operations such as the Fourier Transform. The digital logic in this design will realise an AM transmitter ($T_X$) and receiver ($R_X$). A high level overview of this system can be seen below in Figure \ref{fig:am_tx_rx}.
 
 \begin{figure}[h]
    \centering
     \begin{circuitikz}
         % TX side
-        \draw (0, 0) node[mixer, fill=yellow!50](mix){};
-        \draw (mix.w) -- ++(-1, 0) to[twoport, fill=red!50, t=$NCO$]  ++(-1, 0) -- ++(-1.5, 0);
+        \draw (0, 0) node[mixer, fill=yellow!50](mix){Mixer};
+        \draw (mix.w) -- ++(-1, 0) to[twoport, fill=red!50, t=$NCO$, l_=Data Step Size]  ++(-1, 0) -- ++(-1.5, 0);
         \draw (mix.e) -- ++(1, 0) -- ++(0, 1) node[dinantenna](ant1){} node[left]{$T_X$}
         \draw[thick] (ant1.s) -- ++(0, -1);
         \draw [latex-] (0,-0.5) -- ++(0,-2) node[midway, right] {};
@@ -278,7 +322,7 @@ Initially, the system design was comprised of a \enquote{simple} transmitter and
         \draw[thick](ant1.right) node[waves, xscale=0.8, anchor=left](){};
         
         % RX side
-        \draw (5, 0) node[mixer, fill=yellow!50](mix2){};
+        \draw (5, 0) node[mixer, fill=yellow!50](mix2){Mixer};
         \draw (mix2.w) -- ++(-1, 0) -- ++(0, 1) node[dinantenna](ant2){} node[right]{$R_X$};
         \draw[thick] (ant2.s) -- ++(0, -1);
         \draw (mix2.e) -- ++(1, 0) to[lowpass, fill=cyan!30, l=LP Filter] ++(1, 0) -- ++(1.5, 0);
@@ -288,15 +332,11 @@ Initially, the system design was comprised of a \enquote{simple} transmitter and
         \draw (0, -2.5) to[twoport, t=$NCO$, fill=red!50, l=Carrier Step Size] ++(5, 0);
         \draw [latex-] (2.5,-3) -- ++(0,-1.5) node[midway, right] {};
 
-    \end{circuitikz}t
+    \end{circuitikz}
 
     \caption{High Level Overview of AM Transmitter and Receiver System}
     \label{fig:am_tx_rx}
 \end{figure}
- 
-\subsection{Digital Logic Design}
-
-Primarily, the digital logic was designed using Vitis Model Composer through MATLAB and Simulink. This software abstracts the need to extensively write VHDL code, which can be very tenuous and time consuming, by using a number of pre-defined \enquote{blocks}, ranging from simple adders, to more complex operations such as the Fourier Transform.
 
 \subsubsection{Transmitter Design}
 
@@ -327,7 +367,7 @@ Where $N$ is the depth of the LUT, $f_d$ is the desired output frequency of the 
     \label{eq:LUT depth}
 \end{equation}
 
-The transmitter design features two NCOs, one which generates the data signal, and one for the carrier signal. Modulation, in this case, refers to carrier modulation, which is when a signal is multiplied by a carrier frequency to be transmitted across a channel. The other type of modulation is called baseband modulation, and refers to the transformation of digital bits to \enquote{symbols} in a communications system. There are many different types of carrier modulation in communications systems, all with different benefits and use cases, but for simplicity; AM was used in designing this transmitter. The transmitter design in Model Composer can be seen below in Figure \ref{fig:transmitter design}.
+The transmitter design features two NCOs, one which generates the data signal, and one for the carrier signal. Modulation, in this case, refers to carrier modulation, which is when a signal is multiplied by a carrier frequency to be transmitted across a channel. The other type of modulation is called baseband modulation, and refers to the transformation of digital bits to \enquote{symbols} in a communications system. The transmitter design in Model Composer can be seen below in Figure \ref{fig:transmitter design}.
 
 %Need to get new photo for this - make components closer and remove that scope
 \begin{figure}[h]
@@ -359,7 +399,7 @@ Following on from this, the modulated signal, $S(t)$, can then be derived using 
 
 \begin{equation}
 \begin{aligned}
-   S(t) =  D(t)\times C(t) &= Acos(2\pi f_dt) cos(2\pi f_ct) \\
+   S(t) =  D(t)\times C(t) &= Acos(2\pi f_dt) cos(2\pi f_ct)\\
      &= \frac{A}{2} \left[cos(2\pi (f_c-f_d)t)+cos(2\pi (f_c+f_d)t)\right]
 \end{aligned}
 \end{equation}
@@ -401,32 +441,135 @@ The receiver takes the input of the RF-ADC and demodulates it with an NCO set to
 
 \subsubsection{IP Integrator Design}
 
-Model Composer is a great tool for testing the functionality of a hardware design through simulations, but to actually implement the designs, HDL code must be generated using the system generator tool. This tool allows a user to specify the target hardware device (or chip) and generate custom code, either in VHDL or Verilog to then be exported as IP to be used in the Vivado design suite. Since Vivado projects are specific to the target hardware, separate projects for the RFSoC 2x2 and the RFX were needed, due to the difference in both chip generations and design goals.
+Model Composer is a great tool for testing the functionality of a hardware design through simulations, but to actually implement the designs, HDL code must be generated using the system generator tool. This tool allows a user to specify the target hardware device (or chip) and generate custom code, either in VHDL or Verilog to then be exported as IP, to then be used in Vivado's IP Integrator (IPI) tool. Since Vivado projects are specific to the target hardware, separate projects for the RFSoC 2x2 and the RFX were needed, due to the difference in both chip generations and design goals.
 
 \paragraph{RFSoC 2x2 Design Validation} 
 
-Given the lack of accessibility of the RFX, it was decided that the best approach for testing and developing this project was to use the RFSoC 2x2 development board as a means to work on the project whilst unable to visit the BittWare office.
-
-The 2x2 was used to verify the functionality of the transmitter and receiver designs from Model Composer on real hardware through a simple loopback test. Custom IP generated from Model Composer can be added by pointing to the \enquote{ip} folder (found inside the \enquote{netlist} folder of the Model Composer project) in Vivado. After IP is added, it can be used in any block design and connected to a number of proprietary IP blocks that come standard with Vivado. Figure \ref{fig:2x2_IPI} shows the realised loopback configuration for the RFSoC 2x2.
+Given the lack of accessibility of the RFX, it was decided that the best approach for testing and developing this project was to use the RFSoC 2x2 development board as a means to work on the project whilst unable to visit the BittWare office. The 2x2 was used to verify the functionality of the transmitter and receiver designs from Model Composer on real hardware through a loopback configuration. Custom IP generated from Model Composer can be added by pointing to the \enquote{ip} folder (found inside the \enquote{netlist} folder of the Model Composer project) in Vivado. After IP is added, it can be used in any block design and connected to a number of proprietary IP blocks that come standard with Vivado. Figure \ref{fig:2x2_IPI} shows the Loopback configuration model on the RFSoC 2x2 in Vivado's IP integrator.
 
 \textcolor{red}{maybe look a changing photo to more vertical to get better fit}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.4]{IMAGES/2x2_IPI.PNG}
+    \includegraphics[scale=0.5]{IMAGES/2x2_IPI.PNG}
     \caption{Vivado IP Integrator Design for RFSoC 2x2 Loopback Configuration}
     \label{fig:2x2_IPI}
 \end{figure}
 
-To read from the output of the receiver, and write to the input of the transmitter, an AXI Direct Memory Access (DMA) controller was used. The AXI DMA is instructed by a processor core, in this case the PS, to move data between points in a design \cite{strathsdr_axi}. To enable the DMA inside a block design, the \textit{S\_AXI\_HPCO\_FPD} port of the PS was connected to the slave port of the transmitter, \textit{s\_ axi}. Doing so instantiates a number of different components that can be seen in Figure \ref{fig:2x2_IPI}, including the DMA, an AXI interconnect, and a number of other IP cores which allow the design to function properly. Vivado features a \enquote{run design automation} which includes some of the aforementioned IP cores which allow the AXI interfaces to connect properly.
+To read from the output of the receiver, and write to the input of the transmitter, an AXI Direct Memory Access (DMA) controller was used. The AXI DMA is instructed by a processor core, in this case the PS, to move data between points in a design \cite{strathsdr_axi}. The DMA is used for accessing the shared memory between the PS and PL, allowing for high speed data transfers between different IP. At the core of this design is the ZYNQ Ultrascale+ RF Data Converter, which is the equivalent IP core of the RFDCs previously mentioned. The RFDC IP core combines the RF-ADC and RF-DAC in one single package, with  data being inputted to the DAC side, and received from the ADC side.
 
-\paragraph{BittWare RFX-8440 2x100gbe Design Implementation} The Design implementation for the RFX is slightly different to that of the RFSoC 2x2, as the custom transmitter and receiver were instantiated as components inside of a significantly larger design.
+Configuring the RFDCs in Vivado takes significant design effort, as the master and slave sides can potentially require different clocking speeds, which complicates design efforts as the correct clock has to be meticulously connected to each component on both the transmit and receive side. It is best practice to clock everything on the transmit side with the same frequency as the RF-DAC, and do the same for the receive side with the RF-ADC. Doing so limits the risk of crossing a clock domain, which can make the design fail timing requirements (an important metric in FPGA programming) and have a plethora of issues in practice. A clock domain is a region of the FPGA that operates from a single clock source \cite{ClockDomainCrossing}. In this design, there are three clock domains, one for the transmit side, one for the receive side, and another for the PL. The RFDCs have a built in mixer, for doing further modulation up to extremely high frequencies, to transmit 5G signals, for example. However, this mixer was not used, this was to demonstrate the signal generated in hardware, along with the custom mixer that modulates and demodulates the signal. After the RFDCs were configured, the ADC and DAC output clocks were then connected to their respective parts of the design for transmitting and receiving. The RF-ADC could only output a $64MHz$ output clock, which is significantly slower than the required $128MHz$. To solve this issue, a \textbf{Clocking Wizard} IP was used to increase the clock frequency to its required value.
 
-When shipping their cards, BittWare includes a number of \enquote{reference} designs, which are used to help customers understand and test the operation of the card, without having to design systems completely from the ground up. This design approach was taken for this project, as the previously mentioned transmitter and receiver were implemented within a larger design, rather than a fully custom one. The reference design in this case is the RFX8440-2x100gbe, which configures the entire FPGA, including all RFDC channels, the gigabit transceivers, and the PS. The block diagram for the 2x100gbe design can be seen in Figure \ref{}.
+\textcolor{red}{clocking settings?}
 
-\textcolor{red}{ADD BLOCK DESIGN FOR RFX FROM DEREK}
+Notice that there are two \enquote{sub-blocks} within this design, with one for the transmit side, and another for the receive side. This has been done to mitigate the crossing of clock domains inside of the hardware design. Figure \ref{fig:TX_sub-block} shows the transmit side sub-block.
 
-This design is very complicated, since it features all components of the FPGA in a single bitstream. Inside of the design, and in Figure \ref{}, is the DSP placeholder block, which has been designed for customers or other engineers to implement there own form of DSP without having to reconfigure the entire design with all of the I/O. Despite what Figure \ref{} shows, the DSP placeholder is not an actual block inside of the Vivado IP integrator design that can be replaced with the users IP, but rather a VHDL file named \textbf{ii\_dsp\_top.vhd}. This functionality of this file 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.45]{IMAGES/TX_IPI.PNG}
+    \caption{Transmit Side Sub-Block Inside Vivado IP Integrator}
+    \label{fig:TX_sub-block}
+\end{figure}
+
+It must be noted that there is now 2 DMA IP cores within this design, one specifically for reading, and another for writing. In practice, this would operate by sending a DMA buffer (a certain amount of allocated memory for the DMA IP to access through read and write channels on the PS) to the custom transmit IP, which then starts the NCO to send a signal. In the software, the DMA buffer would then be read from the output of the receive side DMA, confirming the loopback configuration. The two sub-blocks were created to completely separate both the ADC and DAC clocks, therefore reducing any problems that can occur when crossing clock domains.
+
+The RFSoC 2x2 is no longer manufactured and has since been replaced by the newer RFSoC 4x2, this means that using newer versions of Vivado can be difficult since the board files are not included with the Vivado package. The board files can be independently used in Vivado through some Tcl commands that can be found on the RFSoC website.
+
+\paragraph{BittWare RFX-8440 2x100gbe Design Implementation} The Design implementation for the RFX is slightly different to that of the RFSoC 2x2, as the custom transmitter and receiver were instantiated as components inside of a significantly larger design. When shipping their cards, BittWare includes a number of \enquote{reference} designs, which are used to help customers understand and test the operation of the card, without having to design systems completely from the ground up. This design approach was taken for this project, as the previously mentioned transmitter and receiver were implemented within a larger design, rather than a fully custom one. The reference design in this case is the RFX8440-2x100gbe, which configures the entire FPGA, including all RFDC channels, the gigabit transceivers, and the PS. The project is aptly named because of it uses the two 100 gigabit Ethernet Quad Small Form-factor Pluggable (QSFP) transceivers, which can be connected to the card for high speed optical communications. The block diagram from BittWare's framework logic guide of the 2x100gbe design can be seen in Figure \ref{fig:2x100gbe_block_diagram} \cite{RFX_framework}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=1]{IMAGES/Picture 1.png}
+    \caption{Block Diagram of BittWare RFX-8440 With 2x100GBE Links}
+    \label{fig:2x100gbe_block_diagram}
+\end{figure}
+
+\textcolor{red}{ADD BLOCK DESIGN FOR RFX FROM DEREK \& talk about how to build the project}
+
+This design is highly complex, since it features all components of the FPGA in a single bitstream. Inside of the design, and in Figure \ref{fig:2x100gbe_block_diagram}, is the DSP placeholder block, which has been designed for customers or other engineers to implement there own form of DSP without having to reconfigure the entire design with all of the I/O. Despite what Figure \ref{fig:2x100gbe_block_diagram} shows, the DSP placeholder is not an actual block inside of the Vivado IP integrator design that can be replaced with the users IP, but rather a VHDL file named \textbf{ii\_dsp\_top.vhd}. Functionally, this file connects the RFDCs together, involving no DSP at either the DAC or ADC side. The reference designs are inside a folder that can be downloaded or purchased by customers that may be interested in starting their designs from a known point. Building the Vivado project involves navigating to the 2x100gbe project folder inside of the Vivado Tool command language (Tcl) console \cite{AMD_Vivado_Tcl}, then running the \textbf{Build\_Vivado.tcl} script. This script launches the project and builds the block design(s) with the necessary IP added, and connections already made, a process which can take up to an hour.
+
+Implementing custom IP inside of the 2x100gbe design is slightly different to that of the 2x2 design, as it is not added inside of a block design, but rather through a component instantiation using VHDL. When the transmitter IP is added to the project, its output products are generated, which includes an instantiation template inside of the \textbf{.vho} file. VHDL components are how separate top level entity declarations can be re-used inside of other designs. The component definition for the transmitter design can be seen in Listing \ref{list: tx def}.
+
+\begin{listing}[h]
+\begin{minted}{vhdl}
+COMPONENT DUT_data_in_16bit
+  PORT (
+    s_axis_tvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axis_tdata  : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axis_tlast  : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    m_axis_tready : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    mux_en        : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    clk           : IN STD_LOGIC;
+    m_axis_tvalid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    m_axis_tdata  : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+    m_axis_tlast  : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    s_axis_tready : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
+  );
+END COMPONENT;
+
+\end{minted}
+\caption{Transmitter Component Definition}
+\label{list: tx def}
+\end{listing}
+
+After defining the component inside of the \textbf{dsp\_top} entity, it can then be instantiated, as in Listing \ref{list: component instantiation}.
+
+\begin{listing}[h]
+\begin{minted}{vhdl}
+  fraser_user_code : DUT_data_in_16bit
+  PORT MAP (
+    s_axis_tvalid => "1",
+    s_axis_tdata => nco_driver,
+    s_axis_tlast => "1",
+    m_axis_tready => m_axis_tx_tready(0 downto 0),
+    mux_en => nco_mux_en,
+    clk => axis_clk,
+    m_axis_tvalid => m_axis_tx_tvalid(0 downto 0),
+    m_axis_tdata => m_axis_tdata_temp,
+    m_axis_tlast => m_axis_tx_tlast(0 downto 0),
+    s_axis_tready => open
+  );
+\end{minted}
+\caption{VHDL Transmitter Component Instantiation}
+\label{list: component instantiation}
+\end{listing}
+
+The component instantiation is what actually includes the component in the design, where the signals from the 2x100gbe design are connected to the inputs and outputs of the custom transmitter. The 2x100gbe design configures all of the RF-ADC and RF-DAC channels, however, the goal is to only transmit over one channel, which means the transmitter component needs to take over one of these channels. The transmitter component 
+\textcolor{red}{need to finish this section - get code from bittware and images}
+
+
+
+\newpage
+\subsection{Processing System Design}
+
+Although the design of the PL is crucial to the physical operation of the FPGA, the PS design is crucial in interfacing and monitoring SoC devices through different development kits such as PYNQ and PetaLinux.
+
+\subsubsection{PYNQ}
+
+Starting with the PYNQ design for the RFSoC 2x2, this is created through a jupyter notebook interfacing with different Python libraries. After building the project for the 2x2 and generating the bitstream, the block design was then exported to the default file locations. To obtain the overlay, a shell script was written to save time navigating through the file system trying to find the \textbf{.bit} and \textbf{.hwh} files. The script also saves the overlays into the \textbf{Overlays} folder whilst keeping a copy of the files in their normal location. The names of the two files must be the same otherwise PYNQ will not recognise the overlay, the script also takes care of this.
+
+After loading the overlay into the board, the IP contents of the bitstream can be inspected using the two lines of code found in Listing \ref{list:overlay_content}.
+
+\begin{listing}[H]
+\begin{minted}{vhdl}
+ol = Overlay("Design_1_wrapper.bit")
+ol? 
+\end{minted}
+\caption{Python Code for Inspecting Overlay Content}
+\label{list:overlay_content}
+\end{listing}
+
+The question mark operator exports the contents of the bitstream into the jupyter notebook environment to ensure the right overlay is being used. From there, the controllable IP cores can be assigned to a Python variable, which allows for more readable code when calling different functions inside of the notebook.
+
+After loading the overlay onto the FPGA, it is necessary to configure the reference clocks in software before initiating any PS–PL communication. The two required reference clocks for configuring the 2x2 board are the LMX and LMK clocks. These reference clocks are aptly named because they provide a high precision, low jitter clock for the RFDCs to use as a reference when generating their own clocks. Jitter refers to the variation in clock period between two consecutive cycles over a span of 1000 cycles \cite{jitter}. The required frequencies for the LMK and LMX clocks can be found in the  Xilinx PYNQ GitHub repository, specifically in the \textbf{xrfclk} package, which also includes a built in function to set the reference clocks with user defined frequencies, according to the board.
+
+Although the RFDCs are pre-configured in hardware, they must also be properly initialized in software for the design to function correctly. Extensive resources are available online for configuring RFDCs, with the StrathSDR GitHub page being a particularly valuable source, offering numerous open-source projects that utilize RFSoC and configure it through PYNQ. This is achieved using the \textbf{xrfdc} Python package, which provides an interface to the RFDCs, ensuring proper clock configuration, dynamic Phase-Locked Loop (PLL) adjustments without requiring a bitstream reload, and setting mixer parameters along with Nyquist zones. The data converter settings are configured in two Python function declarations, but can be altered by the user to specify different sampling frequencies, or ADC/DAC tiles.
+
+Following on from this, the 
+
+
+\subsubsection{PetaLinux}
+
 
 \newpage
 \section{Results and Analysis}
@@ -436,7 +579,18 @@ This design is very complicated, since it features all components of the FPGA in
     \item Initial testing with RFX - spectrum analyser from BittWare
     \item All resulting graphs and waveforms - troubles of different sections
     \item Talk about ILA for debugging on RFX
+    \item Talk about adding the constant lmk\_reset.
+    \item 
 \end{itemize}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{IMAGES/received_zoomed.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
 
 \newpage
 \section{Conclusion and Further Work}
