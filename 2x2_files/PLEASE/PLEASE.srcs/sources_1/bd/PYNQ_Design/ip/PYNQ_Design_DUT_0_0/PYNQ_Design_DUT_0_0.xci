@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "PYNQ_Design_DUT_0_0",
-    "cell_name": "DUT_0",
+    "cell_name": "RX/DUT_0",
     "component_reference": "User_Company:VMC:DUT:1.0",
     "ip_revision": "373471523",
     "gen_directory": "../../../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_DUT_0_0",
