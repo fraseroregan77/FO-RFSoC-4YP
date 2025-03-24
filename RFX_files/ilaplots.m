@@ -24,4 +24,29 @@ ylim([0 1e7])
 xlim([0 7e7])
 
 %%
+data = csvread("ILA_Data_saxisTX.csv", 2);
 
+figure;
+plot(data(:, 1), data(:, 4), LineWidth=1.5);
+xlabel("\textbf{Number of Samples}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+title("\textbf{ILA Signal (m\_axis\_tx\_tdata)}", 'Interpreter','latex')
+xlim([300 1100]);
+%xlim([0 16000])
+grid on
+
+fs = 300e6;
+X = fft(data(:, 4));
+Xabs = abs(X); % Obtain the magnitude
+N = length(Xabs);
+fgrid = fs*(0:(N-1))/(N);
+Xabs = Xabs(1:floor(N/4));
+fgrid = fgrid(1:floor(N/4));
+
+figure;
+plot(fgrid,Xabs);
+xlabel("\textbf{Frequency (Hz)}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+title("\textbf{FFT of ILA Signal (m\_axis\_tx\_tdata)}", 'Interpreter','latex')
+ylim([0 1e7])
+xlim([0 7e7])
