@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {DUT}
-	set IP_Revision {372288366}
+	set IP_Revision {373758010}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {User Company}
@@ -50,8 +50,8 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{x16_bit_mod.xdc}}
 	}
 	set SimPeriod 3.003e-09
-	set SimTime 0.0003003
-	set SimulationTime {300503.00300000 ns}
+	set SimTime 3.003e-05
+	set SimulationTime {30233.00300000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
 	set TargetDir {C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist}

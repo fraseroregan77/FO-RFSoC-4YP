@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Fri Mar 21 14:06:53 2025
---Host        : EEE-R343-01 running 64-bit major release  (build 9200)
+--Date        : Mon Mar 24 21:15:37 2025
+--Host        : EEE-R446-02 running 64-bit major release  (build 9200)
 --Command     : generate_target DUT_bd.bd
 --Design      : DUT_bd
 --Purpose     : IP block netlist
@@ -15,7 +15,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity DUT_bd is
   port (
     clk : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -41,12 +41,12 @@ architecture STRUCTURE of DUT_bd is
     step_size : in STD_LOGIC_VECTOR ( 15 downto 0 );
     clk : in STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tready : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DUT_bd_DUT_1_0;
-  signal DUT_1_m_axis_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal DUT_1_m_axis_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal DUT_1_m_axis_TLAST : STD_LOGIC_VECTOR ( 0 to 0 );
   signal DUT_1_m_axis_TREADY : STD_LOGIC_VECTOR ( 0 to 0 );
   signal DUT_1_m_axis_TVALID : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -61,7 +61,7 @@ architecture STRUCTURE of DUT_bd is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF m_axis:s_axis, CLK_DOMAIN DUT_bd_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 m_axis TDATA";
-  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, CLK_DOMAIN DUT_bd_clk, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, PHASE 0.0, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, CLK_DOMAIN DUT_bd_clk, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, PHASE 0.0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of m_axis_tlast : signal is "xilinx.com:interface:axis:1.0 m_axis TLAST";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 m_axis TREADY";
   attribute X_INTERFACE_INFO of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 m_axis TVALID";
@@ -75,7 +75,7 @@ architecture STRUCTURE of DUT_bd is
 begin
   DUT_1_m_axis_TREADY(0) <= m_axis_tready(0);
   clk_1 <= clk;
-  m_axis_tdata(15 downto 0) <= DUT_1_m_axis_TDATA(15 downto 0);
+  m_axis_tdata(31 downto 0) <= DUT_1_m_axis_TDATA(31 downto 0);
   m_axis_tlast(0) <= DUT_1_m_axis_TLAST(0);
   m_axis_tvalid(0) <= DUT_1_m_axis_TVALID(0);
   s_axis_1_TDATA(15 downto 0) <= s_axis_tdata(15 downto 0);
@@ -86,7 +86,7 @@ begin
 DUT_1: component DUT_bd_DUT_1_0
      port map (
       clk => clk_1,
-      m_axis_tdata(15 downto 0) => DUT_1_m_axis_TDATA(15 downto 0),
+      m_axis_tdata(31 downto 0) => DUT_1_m_axis_TDATA(31 downto 0),
       m_axis_tlast(0) => DUT_1_m_axis_TLAST(0),
       m_axis_tready(0) => DUT_1_m_axis_TREADY(0),
       m_axis_tvalid(0) => DUT_1_m_axis_TVALID(0),

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x92EADF28ABF0F75C",
+      "boundary_crc": "0xCE4D2F72F19ADA0D",
       "design_src": "SYSGEN",
       "device": "xczu43dr-fsve1156-2-e",
       "gen_directory": "../../../../x16_bit_demod.gen/sources_1/bd/DUT_bd",
@@ -52,7 +52,7 @@
             "value": [
               "xilinx.com:interface:datatypes:1.0 {",
               "TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
-              "maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
               "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
               "}"
             ],
@@ -63,7 +63,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "2",
+            "value": "4",
             "value_src": "const_prop"
           },
           "TDEST_WIDTH": {
@@ -83,7 +83,7 @@
           "TDATA": {
             "physical_name": "m_axis_tdata",
             "direction": "O",
-            "left": "15",
+            "left": "31",
             "right": "0"
           },
           "TLAST": {
@@ -236,7 +236,7 @@
     "components": {
       "DUT_1": {
         "vlnv": "User_Company:VMC:DUT:1.0",
-        "ip_revision": "373471523",
+        "ip_revision": "373756509",
         "xci_name": "DUT_bd_DUT_1_0",
         "xci_path": "ip\\DUT_bd_DUT_1_0\\DUT_bd_DUT_1_0.xci",
         "inst_hier_path": "DUT_1"

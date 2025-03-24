@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>User_Company</spirit:vendor>
   <spirit:library>VMC</spirit:library>
-  <spirit:name>DUT_data_in</spirit:name>
+  <spirit:name>Data_generation</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -159,7 +159,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>227f72a7</spirit:value>
+            <spirit:value>e0efa2b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -175,7 +175,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>227f72a7</spirit:value>
+            <spirit:value>e0efa2b2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -390,6 +390,10 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
+        <spirit:name>x16_bit_mod_c_addsub_v12_0_i0/x16_bit_mod_c_addsub_v12_0_i0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>x16_bit_mod_fifo_generator_i0/x16_bit_mod_fifo_generator_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -457,12 +461,16 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
       <spirit:file>
         <spirit:name>hdl/x16_bit_mod.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5ab4586f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7815f0ca</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>x16_bit_mod_c_addsub_v12_0_i0/x16_bit_mod_c_addsub_v12_0_i0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
       <spirit:file>
         <spirit:name>x16_bit_mod_fifo_generator_i0/x16_bit_mod_fifo_generator_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
@@ -543,7 +551,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/DUT_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/Data_generation_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -573,20 +581,23 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
       <xilinx:taxonomies>
         <xilinx:taxonomy>/Vitis_Model_Composer</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>DUT</xilinx:displayName>
+      <xilinx:displayName>Data_generation</xilinx:displayName>
       <xilinx:definitionSource>sysgen</xilinx:definitionSource>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>372288366</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-03-07T21:36:13Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>User_Company:VMC:DUT:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2025-03-24T21:45:43Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8f3b85bc"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0232b5bc"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f4a8354a"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9424fc71"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a8337775"/>
     </xilinx:packagingInfo>

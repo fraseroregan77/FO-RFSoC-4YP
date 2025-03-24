@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog/x16_bit_demod.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="4de3dc30b17a46178c12649ddb934450"/>
+    <Option Name="Id" Val="933efd2130a04ab0aed47d5274ad4b47"/>
     <Option Name="Part" Val="xczu43dr-fsve1156-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -45,7 +45,6 @@
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val=""/>
-    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../../../../../Vivado/board_files"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -102,7 +101,7 @@
       <File Path="$PSRCDIR/sources_1/imports/hdl/DUT_bd_wrapper.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/DUT_bd/hdl/DUT_bd_wrapper.vhd"/>
-          <Attr Name="ImportTime" Val="1742566013"/>
+          <Attr Name="ImportTime" Val="1742850937"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -119,7 +118,7 @@
         <FileInfo SFType="VHDL2008">
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/x16_bit_demod_mod.vhd"/>
-          <Attr Name="ImportTime" Val="1742565987"/>
+          <Attr Name="ImportTime" Val="1742850925"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -134,7 +133,7 @@
       <File Path="$PSRCDIR/constrs_1/imports/sysgen/x16_bit_demod_clock.xdc">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/x16_bit_demod_clock.xdc"/>
-          <Attr Name="ImportTime" Val="1742565934"/>
+          <Attr Name="ImportTime" Val="1742850911"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -142,7 +141,7 @@
       <File Path="$PSRCDIR/constrs_1/imports/sysgen/x16_bit_demod.xdc">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../sysgen/x16_bit_demod.xdc"/>
-          <Attr Name="ImportTime" Val="1742565934"/>
+          <Attr Name="ImportTime" Val="1742850911"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

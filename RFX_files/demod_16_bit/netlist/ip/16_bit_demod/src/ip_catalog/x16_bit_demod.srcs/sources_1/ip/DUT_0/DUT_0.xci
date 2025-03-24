@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "DUT_0",
     "component_reference": "User_Company:VMC:DUT:1.0",
-    "ip_revision": "373471523",
+    "ip_revision": "373756509",
     "gen_directory": "../../../../x16_bit_demod.gen/sources_1/ip/DUT_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "373471523" } ],
+        "IPREVISION": [ { "value": "373756509" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../x16_bit_demod.gen/sources_1/ip/DUT_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -43,7 +43,7 @@
         "step_size": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "clk": [ { "direction": "in" } ],
         "m_axis_tvalid": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
-        "m_axis_tdata": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "m_axis_tdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "m_axis_tlast": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "s_axis_tready": [ { "direction": "out", "size_left": "0", "size_right": "0" } ]
       },
@@ -53,7 +53,7 @@
           "abstraction_type": "xilinx.com:interface:axis_rtl:1.0",
           "mode": "master",
           "parameters": {
-            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "resolve_type": "generated", "usage": "all" } ],
+            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "resolve_type": "generated", "usage": "all" } ],
             "TDATA_NUM_BYTES": [ { "value": "1", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "TDEST_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "TID_WIDTH": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],

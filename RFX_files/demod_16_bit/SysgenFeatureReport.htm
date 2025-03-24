@@ -45,12 +45,18 @@
        
        var sgBanner = new Image();
        // ** Insert data **
-       sgBanner.src='File:///D:/Xilinx/Vivado/2024.1/data/sysgen/images/sgbanner.jpg';
-       var modelName = 'demodulate_16_bit';
+       sgBanner.src='File:///C:/Xilinx/Vivado/2024.1/data/sysgen/images/sgbanner.jpg';
+       var modelName = 'demodulate_16_bit1';
 var jTblExternally_Connected_Blocks = new Array();
- jTblExternally_Connected_Blocks[0] = { val1:"demodulate_16_bit/16_bit_demod/Algorithm/Convert",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit/16_bit_demod/Algorithm/Convert');",val2:"dout",act2:"" };
- jTblExternally_Connected_Blocks[1] = { val1:"demodulate_16_bit/16_bit_demod/Algorithm/FIR Compiler 7.2",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit/16_bit_demod/Algorithm/FIR Compiler 7.2');",val2:"m_axis_data_tlast, m_axis_data_tdata_real",act2:"" };
- jTblExternally_Connected_Blocks[2] = { val1:"demodulate_16_bit/16_bit_demod/Algorithm/Mult",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit/16_bit_demod/Algorithm/Mult');",val2:"p",act2:"" };
+ jTblExternally_Connected_Blocks[0] = { val1:"demodulate_16_bit1/16_bit_demod/Slave FIFO/tdata_slice",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Slave FIFO/tdata_slice');",val2:"y",act2:"" };
+ jTblExternally_Connected_Blocks[1] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Convert",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Convert');",val2:"dout",act2:"" };
+ jTblExternally_Connected_Blocks[2] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/AddSub",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/AddSub');",val2:"s",act2:"" };
+ jTblExternally_Connected_Blocks[3] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/AddSub1",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/AddSub1');",val2:"s",act2:"" };
+ jTblExternally_Connected_Blocks[4] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/Convert",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/Convert');",val2:"dout",act2:"" };
+ jTblExternally_Connected_Blocks[5] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/ROM",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/ROM');",val2:"data",act2:"" };
+ jTblExternally_Connected_Blocks[6] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Mult",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Mult');",val2:"p",act2:"" };
+ jTblExternally_Connected_Blocks[7] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/Shift1",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/Shift1');",val2:"op",act2:"" };
+ jTblExternally_Connected_Blocks[8] = { val1:"demodulate_16_bit1/16_bit_demod/Algorithm/step_size",act1:"matlab:load_system('xbsIndex');xlHiliteOne('demodulate_16_bit1/16_bit_demod/Algorithm/step_size');",val2:"gw_in_outport",act2:"" };
  
        var maxStrLen = 35; 
        var displaymode = 0;
