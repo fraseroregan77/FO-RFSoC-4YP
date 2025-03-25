@@ -62,25 +62,52 @@
 \definecolor{mylilas}{RGB}{170,55,241}
 
 
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+morekeywords={self},              % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
 \begin{document}
 
 
-\lstset{language=Matlab,%
-    %basicstyle=\color{red},
-    breaklines=true,%
-    morekeywords={matlab2tikz},
-    keywordstyle=\color{blue},%
-    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
-    identifierstyle=\color{black},%
-    stringstyle=\color{mylilas},
-    commentstyle=\color{mygreen},%
-    showstringspaces=false,%without this there will be a symbol in the places where there is a space
-    numbers=left,%
-    numberstyle={\tiny \color{black}},% size of the numbers
-    numbersep=9pt, % this defines how far the numbers are from the text
-    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
-    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
-}
 
 
 
@@ -116,7 +143,9 @@
 \section*{Nomenclature}
 \begin{itemize}
     \item \textcolor{red}{\large Fix references to all have same format and include access dates}
+    \textcolor{red}{GO THROUGH AND FIX NOMENCLATURE and equation symbols}
 \end{itemize}
+\addcontentsline{toc}{section}{Nomenclature}
 
 
 \subsection*{Abbreviations}
@@ -140,9 +169,11 @@ RTL & Register Transfer Level\\
 HLS & High Level Synthesis\\
 AXI & Advanced eXtensible Interface\\
 SDK & Software Development Kit\\
+XSA & Xilinx Support Archive\\
 OS & Operating System\\
 AM & Amplitude Modulation\\
 OFDM & Orthogonal Frequency Division Multiplexing\\
+FT & Fourier Transform
 NCO & Numerically Controlled Oscillator\\
 LUT & Look Up Table\\
 ROM & Read Only Memory\\
@@ -190,6 +221,7 @@ The primary aim of this project is to implement an SDR system on a novel piece o
 
 \newpage
 \section{Background \& Literature Review}
+\subsection{RFSoC Architecture}
 This project will focus on the implementation of the aforementioned software and design techniques onto the Zynq UltraScale+ RFSoC (which from now on will just be referred to as the RFSoC) by AMD \cite{amd_zynq_rfsoc}. The RFSoC is an all configurable system-on-chip (SoC) device targeted towards RF applications \cite{RFSoC_Book}. A system-on-chip is an integrated circuit (IC) that features almost all high level functions needed for computation into a single chip, as opposed to the traditional method of having these different components mounted to the motherboard. This allows for a far smaller and more portable package, making it ideal for applications such as communications, mobile devices, and many more. The RFSoCs architecture features two main sections, the Processing System (PS), and the Programmable Logic (PL). The AMD RFSoC utilises the software programmability of processors, in the form of either two or four ARM cores (depending on the generation), along with the hardware programmability of a Field Programmable Gate Array (FPGA). The PL features a number of different \enquote{hardened} blocks, aptly named due to the fact that they have their own dedicated space on the silicon and can not be reconfigured in either software or hardware. The different hardened blocks can be seen below in Figure \ref{fig:RFSoC_overview}.
 
 \begin{figure}[h]
@@ -199,14 +231,7 @@ This project will focus on the implementation of the aforementioned software and
     \label{fig:RFSoC_overview}
 \end{figure}
 
-From left to right, the hardened blocks shown in Figure \ref{fig:RFSoC_overview} are: Gigabit (GTY) transceivers, a high speed serial data link needed for communication to a core network when working with modern communication standards. Additionally, Soft Decision Forward Error Correction (SD-FEC) blocks feature on the chip, since almost all forms of wireless communications require, at some stage, an error correction phase which mitigates against the different errors procured in the wireless channel. Finally, the RFSoC has dedicated RF Data Converter (RFDC) blocks. These blocks can be configured as either Digital to Analogue Converters (DACs), for data transmission, or Analogue to Digital Converters (ADCs), which are used to convert real data to the digital domain, where the signal can be analysed using numerous DSP techniques.
-
-The PYNQ project by AMD \cite{PYNQ} is another supporting framework that focuses on SoC devices. PYNQ utilises Python application programming interfaces (APIs) to streamline the development of embedded systems on AMD chips. PYNQ itself is a small linux based boot image that runs on the chip, with different commands to control the hardware; however, PYNQ also utilises Jupyter notebooks, in which python code can be ran in different cells, along with accompanying markdown code for readability. Hardware Description Language (HDL) \enquote{bitstreams} can be accessed in the notebook as \enquote{overlays}. The overlays must be used in the project by exporting the Vivado block design, and locating the \textbf{\textit{.hwh}} and \textbf{\textit{.bit}} files. From there, they can be implemented, however an engineer may need and can be reused indefinitely, unless the overlay itself needs to be altered. There are many methods to design a custom overlay to be used in PYNQ; however, the most common ways include writing custom Register Transfer Level (RTL) code using VHDL or Verilog; Writing C/C++ code to be synthesised into HDL code through AMDs Vitis High Level Synthesis (HLS) tool \cite{AMD_Vitis_HLS_2024}; or through Vitis Model Composer, a block based modelling system that uses MATLAB and Simulink to generate HDL code \cite{AMD_Vitis_Model_Composer_2024}.
-
-\textcolor{red}{axi section here}
-
 The Advanced eXtensible Interface (AXI) is a communication protocol defined by ARM as part of the Advanced Microcontroller Bus Architecture (AMBA) standard \cite{axi_article}. The AXI4 standard has three different forms: AXI4-Lite, for simple, low-throughput communications,for example, driving an enable register pin; AXI4-Stream, for high-speed streaming data; and full AXI4, which is used for high-performance applications. Typically, embedded systems, such as FPGAs, operate with a master-slave topology between different devices \cite{strathsdr_axi}. The master device can connect to multiple slave devices through a communication protocol, and slave devices can be controlled by multiple masters, executing commands only when driven by a master device. AXI follows this same principle, with read and write channels transferring data between the master and slave components in a hardware design.
-
 
 AXI4 uses handshake operations, where a handshake is successful when both the valid and ready signals are high on the same clock cycle \cite{strathsdr_axi}. 
 
@@ -247,14 +272,43 @@ For example, to implement a stream of data on the master side, the signal would 
 
 The AXI4 protocol plays a fundamental role in modern embedded systems, particularly in AMD SoC devices. In this project, AXI4-Stream is essential for efficiently transferring large volumes of data between multiple IP cores within the FPGA, ensuring high-performance communication and system integration.
 
+From left to right, the hardened blocks shown in Figure \ref{fig:RFSoC_overview} are: Gigabit (GTY) transceivers, a high speed serial data link needed for communication to a core network when working with modern communication standards. Additionally, Soft Decision Forward Error Correction (SD-FEC) blocks feature on the chip, since almost all forms of wireless communications require, at some stage, an error correction phase which mitigates against the different errors procured in the wireless channel. Finally, the RFSoC has dedicated RF Data Converter (RFDC) blocks. These blocks can be configured as either Digital to Analogue Converters (DACs), for data transmission, or Analogue to Digital Converters (ADCs), which are used to convert real data to the digital domain, where the signal can be analysed using numerous DSP techniques.
 
-This project focuses on the BittWare RFX-8440 (referred to as the RFX from now on) L band transceiver PCIe card \cite{bittware2024rfx}. A high performance hardware device powered by a Gen3 RFSoC, with up to eight RFDCs, featuring Multi gigahertz bandwidth for any SDR applications necessary. Traditionally, PYNQ is only natively available on certain development boards created by AMD such as the RFSoC 2x2, 4x2, or the PYNQ Z-2 board. For PS-PL communication, the RFX uses PetaLinux, a Linux Software Development Kit (SDK) used for embedded Xilinx (AMD) processing systems. PetaLinux is a powerful tool for embedded system design, however, it is less user friendly than PYNQ due to the user needing a proprietary knowledge of the Linux kernel. PetaLinux is a small Linux based operating system which targets a specific hardware image using an exported .xsa file, and runs entirely on the PS.
+\subsection{Supporting Toolchains and Software}
+
+The PYNQ project by AMD \cite{PYNQ} is another supporting framework that focuses on SoC devices. PYNQ utilises Python application programming interfaces (APIs) to streamline the development of embedded systems on AMD chips. PYNQ itself is a small linux based boot image that runs on the chip, with different commands to control the hardware; however, PYNQ also utilises Jupyter notebooks, in which python code can be ran in different cells, along with accompanying markdown code for readability. Hardware Description Language (HDL) \enquote{bitstreams} can be accessed in the notebook as \enquote{overlays}. The overlays must be used in the project by exporting the Vivado block design, and locating the \textbf{\textit{.hwh}} and \textbf{\textit{.bit}} files. From there, they can be implemented, however an engineer may need and can be reused indefinitely, unless the overlay itself needs to be altered. There are many methods to design a custom overlay to be used in PYNQ; however, the most common ways include writing custom Register Transfer Level (RTL) code using VHDL or Verilog; Writing C/C++ code to be synthesised into HDL code through AMDs Vitis High Level Synthesis (HLS) tool \cite{AMD_Vitis_HLS_2024}; or through Vitis Model Composer, a block based modelling system that uses MATLAB and Simulink to generate HDL code \cite{AMD_Vitis_Model_Composer_2024}.
+
+
+This project focuses on the BittWare RFX-8440 (referred to as the RFX from now on) L band transceiver PCIe card \cite{bittware2024rfx}. A high performance hardware device powered by a Gen3 RFSoC, with up to eight RFDCs, featuring Multi gigahertz bandwidth for any SDR applications necessary. Traditionally, PYNQ is only natively available on certain development boards created by AMD such as the RFSoC 2x2, 4x2, or the PYNQ Z-2 board. For PS-PL communication, the RFX uses PetaLinux, a Linux Software Development Kit (SDK) used for embedded Xilinx (AMD) processing systems. PetaLinux is a powerful tool for embedded system design, however, it is less user friendly than PYNQ due to the user needing a proprietary knowledge of the Linux kernel. PetaLinux is a small Linux based operating system which targets a specific hardware image using an exported Xilinx Support Archive (.xsa) file, and runs entirely on the PS.
 
 Linux based operating systems (OS) are uncommon in most home laptops/PCs but are extremely common in industry applications. Linux is almost guaranteed to be the operating system of choice for data centres, R\&D labs, servers, and even more. Linux is extremely important to the infrastructure of communication systems, as all network protocol servers will run some sort of Linux distribution. Linux is so popular because of its open-source nature, meaning that anyone has access to the source code, giving them the ability to customise the operating system and create specific distributions. 
 
 GNU Radio has many tutorials to get someone up to speed with the software, as well as having a recommended reading section for general SDR and communication techniques. These tutorials range from simple Amplitude Modulation (AM), to Orthogonal Frequency Division Multiplexing (OFDM), a far more advanced communication technique, where a signal is split up into multiple narrowband carrier frequencies rather than taking up lots of bandwidth with one carrier frequency \cite{ofdm_paper}. These tutorials are an extremely useful learning tool, as they provide an interactive experience where someone can build different types of communication systems along with learning about them.
 
 GNU Radio has been around for over 20 years, and with the ever growing application and need for SDR systems to be used in everyday environments, GNU Radio has served as an incredibly useful tool. Whether someone is new to SDR or is a veteran, GNU Radio provides a fantastic platform for developing these systems. As mentioned earlier, GNU Radio provides something called an ‘out of tree’ (OOT) module, this is essentially a custom block that is either written in C++ (for more computationally intensive DSP) or Python (for simpler tasks). These OOT modules are aptly named since they are not part of GNU Radios ‘source tree’ [10], or more simply, are not native to the software. There are a number of heavily supported hardware that GNU Radio mentions on their website. This hardware is usually relatively inexpensive which makes it great for beginners, however, the RFX is not one of these boards. GNU Radio has something called the ‘Catch-All Clause’ which states that any hardware device that can be accessed by an operating system can support GNU Radio, usually by writing custom device drivers in the form of sinks or sources. Since this project focuses mostly on the deployment of an SDR system, there is a workaround for writing custom drivers for the RFX.
+
+\subsection{Important DSP Fundamentals}
+
+Throughout this project, a number of DSP and communication theory was used to design, assess, and confirm the operation of different systems within this project. This section will cover a number of basic DSP and communication fundamentals to allow the reader to have a better understanding of the different concepts being discussed throughout this project. Arguably the most important concept in DSP (and signal processing in general) is the Fourier Transform (FT). The FT is a highly complex concept with many different applications in different fields of engineering and science, so this report will not dive particularly deep into the derivation of how the FT came to be, but will focus more on its definition, and how it is used in this case. The FT stems from the Fourier series, discovered by Joseph Fourier, which essentially states that any periodic signal can be decomposed into a sum of different harmonically related sine and cosine components \cite{RFSoC_Book}. In the context of signal processing, the FT takes any signal, which is assumed to periodic (if not - it is assumed the signal is periodic at $t=\infty$), and produces a number of coefficients that represent a magnitude and phase of the signal over time. These coefficients can then be plotted to produce a waveform which can tell an engineer about the frequency properties of a signal. The FT is defined in Equation \ref{eq:fourier Transform}.
+
+\begin{equation}
+    X(j\omega) = \int_{-\infty}^{\infty}x(t)e^{-j\omega t}dt\label{eq:fourier Transform}
+\end{equation}
+
+Taking the FT of a wave form can be thought of as transforming the signal from the time domain, to the frequency domain. To illustrate this, a time domain and its frequency domain counterpart were plotted in MATLAB. This is shown in Figure \ref{fig:FT_example}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.45]{IMAGES/Sine.png}
+    \includegraphics[scale=0.45]{IMAGES/Sine_FT.png}
+    \caption{Time and Frequency Domain Representations of Sinusoid at $1Hz$}
+    \label{fig:FT_example}
+\end{figure}
+
+The FT of the signal shows a peak at $1Hz$, which is the exact frequency of the signal present. However, in more real world examples, the FT of a signal can show multiple peaks at different frequencies as signals can have many different frequency components. In most cases, the FT is not directly computed, as it is quite inefficient to calculate as it takes $n^2$ operations. More commonly, a DSP algorithm called the Fast Fourier Transform (FFT) of a signal is calculated as it is far more computationally inexpensive, allowing for more complex signals to be analysed.
+
+\subsection{Previous Work}
+\textcolor{red}{Maybe change this name}
 
 section plan:
 
@@ -298,7 +352,7 @@ section plan:
     \item With axi stream, talk about how the data needs to be formatted before being sent out.
     \item Talk about ILA t
     \item \textcolor{red}{talk about gnu radio proposed design}
-    \item \textcolor{red}{}
+    \item \textcolor{red}{talk about issues ran into that and why u made changes to fix them - then go into more detail in Discussion}
 \end{itemize}                          
 \newpage
 
@@ -477,6 +531,8 @@ The RFSoC 2x2 is no longer manufactured and has since been replaced by the newer
 
 \paragraph{BittWare RFX-8440 2x100gbe Design Implementation} The Design implementation for the RFX is slightly different to that of the RFSoC 2x2, as the custom transmitter and receiver were instantiated as components inside of a significantly larger design. When shipping their cards, BittWare includes a number of \enquote{reference} designs, which are used to help customers understand and test the operation of the card, without having to design systems completely from the ground up. This design approach was taken for this project, as the previously mentioned transmitter and receiver were implemented within a larger design, rather than a fully custom one. The reference design in this case is the RFX8440-2x100gbe, which configures the entire FPGA, including all RFDC channels, the gigabit transceivers, and the PS. The project is aptly named because of it uses the two 100 gigabit Ethernet Quad Small Form-factor Pluggable (QSFP) transceivers, which can be connected to the card for high speed optical communications. The block diagram from BittWare's framework logic guide of the 2x100gbe design can be seen in Figure \ref{fig:2x100gbe_block_diagram} \cite{RFX_framework}.
 
+\textcolor{red}{TALK ABOUT THE FOLDER STRUCTURE}
+
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=1]{IMAGES/Picture 1.png}
@@ -484,13 +540,11 @@ The RFSoC 2x2 is no longer manufactured and has since been replaced by the newer
     \label{fig:2x100gbe_block_diagram}
 \end{figure}
 
-\textcolor{red}{ADD BLOCK DESIGN FOR RFX FROM DEREK \& talk about how to build the project}
-
 This design is highly complex, since it features all components of the FPGA in a single bitstream. Inside of the design, and in Figure \ref{fig:2x100gbe_block_diagram}, is the DSP placeholder block, which has been designed for customers or other engineers to implement there own form of DSP without having to reconfigure the entire design with all of the I/O. Despite what Figure \ref{fig:2x100gbe_block_diagram} shows, the DSP placeholder is not an actual block inside of the Vivado IP integrator design that can be replaced with the users IP, but rather a VHDL file named \textbf{ii\_dsp\_top.vhd}. Functionally, this file connects the RFDCs together, involving no DSP at either the DAC or ADC side. The reference designs are inside a folder that can be downloaded or purchased by customers that may be interested in starting their designs from a known point. Building the Vivado project involves navigating to the 2x100gbe project folder inside of the Vivado Tool command language (Tcl) console \cite{AMD_Vivado_Tcl}, then running the \textbf{Build\_Vivado.tcl} script. This script launches the project and builds the block design(s) with the necessary IP added, and connections already made, a process which can take up to an hour.
 
 Implementing custom IP inside of the 2x100gbe design is slightly different to that of the 2x2 design, as it is not added inside of a block design, but rather through a component instantiation using VHDL. When the transmitter IP is added to the project, its output products are generated, which includes an instantiation template inside of the \textbf{.vho} file. VHDL components are how separate top level entity declarations can be re-used inside of other designs. The component definition for the transmitter design can be seen in Listing \ref{list: tx def}.
 
-\begin{listing}[h]
+\begin{listing}[h!]
 \begin{minted}{vhdl}
 COMPONENT DUT_data_in_16bit
   PORT (
@@ -514,7 +568,7 @@ END COMPONENT;
 
 After defining the component inside of the \textbf{dsp\_top} entity, it can then be instantiated, as in Listing \ref{list: component instantiation}.
 
-\begin{listing}[h]
+\begin{listing}[h!]
 \begin{minted}{vhdl}
   fraser_user_code : DUT_data_in_16bit
   PORT MAP (
@@ -563,12 +617,25 @@ The question mark operator exports the contents of the bitstream into the jupyte
 
 After loading the overlay onto the FPGA, it is necessary to configure the reference clocks in software before initiating any PS–PL communication. The two required reference clocks for configuring the 2x2 board are the LMX and LMK clocks. These reference clocks are aptly named because they provide a high precision, low jitter clock for the RFDCs to use as a reference when generating their own clocks. Jitter refers to the variation in clock period between two consecutive cycles over a span of 1000 cycles \cite{jitter}. The required frequencies for the LMK and LMX clocks can be found in the  Xilinx PYNQ GitHub repository, specifically in the \textbf{xrfclk} package, which also includes a built in function to set the reference clocks with user defined frequencies, according to the board.
 
-Although the RFDCs are pre-configured in hardware, they must also be properly initialized in software for the design to function correctly. Extensive resources are available online for configuring RFDCs, with the StrathSDR GitHub page being a particularly valuable source, offering numerous open-source projects that utilize RFSoC and configure it through PYNQ. This is achieved using the \textbf{xrfdc} Python package, which provides an interface to the RFDCs, ensuring proper clock configuration, dynamic Phase-Locked Loop (PLL) adjustments without requiring a bitstream reload, and setting mixer parameters along with Nyquist zones. The data converter settings are configured in two Python function declarations, but can be altered by the user to specify different sampling frequencies, or ADC/DAC tiles.
+Although the RFDCs are pre-configured in hardware, they must also be properly initialized in software for the design to function correctly. Extensive resources are available online for configuring RFDCs, with the StrathSDR GitHub page being a particularly valuable source, offering numerous open-source projects that utilize RFSoC and configure it through PYNQ. This is achieved using the \textbf{xrfdc} Python package, which provides an interface to the RFDCs, ensuring proper clock configuration, dynamic Phase-Locked Loop (PLL) adjustments without requiring a bitstream reload, and setting mixer parameters along with Nyquist zones. The data converter settings are configured in two Python function declarations, but can be altered by the user to specify different sampling frequencies, or ADC/DAC tiles. The settings for the RFDCs have the mixer configured as a fine mixer that outputs $0Hz$ to allow for correct DAC and ADC mixing. Even though no mixer was used in the hardware configuration, the older generation RFSoCs expect some mixer settings to be applied in software to allow for correct configuration so this was chosen since it would not interfere with the incoming signal and still allow for data transmission.
 
-Following on from this, the 
+Following on from this, the PS-PL communication could be established. This was done through the assignment of the both the DMAs and RFDC to a Python variable, which could be called back later when transferring data. The exact name of the IP that is assigned to the variable can be found through the previously mentioned $(?)$ operator under the \textbf{IP Blocks} section. The variable is then assigned through the use of the $(.)$ operator to assign a new variable to specific IP. Listing \ref{list:DMA Assignment} shows the assignment of a variable $tx\_dma$ to the transmit side DMA block.
 
+\begin{listing}[h]
+\begin{minted}{vhdl}
+tx_dma = ol.TX.axi_dma_tx
+\end{minted}
+\caption{Python DMA Variable Assignment}
+\label{list:DMA Assignment}
+\end{listing}
+
+Finally, the built-in \textbf{Allocate} package is used to allocate DMA buffers in memory which can then be transferred between PS and PL. In this design, both the send buffer and the receive buffer both have a size of 4000 samples (the maximum at which PYNQ allows), to ensure clarity when receiving data. The data can then be sent using the \textbf{transfer} function on both the send and receive DMA channels. These lines of code are then followed by the \textbf{wait} function which waits until the DMA channel goes back to an idle state. Following on from this, the received DMA buffer can be plotted using the \textbf{matplotlib} package, a comprehensive tool for data visualisation and plotting.
 
 \subsubsection{PetaLinux}
+
+PetaLinux has a more complex deployment process, as a PetaLinux image needs to be accompanied by a specific bitstream. This means that testing and confirming design choices can take significantly longer when working with a board that does not support PYNQ. BittWare thankfully has a set build process for creating and customising PetaLinux images through some documentation and build scripts. However, the RFX needs specific hardware settings to configure properly, specifically on the PS, which needs to have a number of different ports enabled for communication with the images boot file system. This means that creating completely custom images in PetaLinux can be a painstaking and long process which takes significant design effort and time. This is another reason as to why the reference design was used, as the hardware design was properly configured to allow the PetaLinux image to build and run properly, as it had been through significant testing throughout its design stage.
+
+The first step in creating the PetaLinux image is to export the hardware image (bitstream) to a \textbf{.xsa} file, saved in the specified PetaLinux folder within the larger reference design folder. This xsa file is slightly different to the overlays seen in PYNQ development, as it features a number of different files inside which tell the PetaLinux build about the hardware design - rather than the two overlay files that PYNQ needs to configure hardware. Although, newer PYNQ releases do feature support for xsa files, which streamlines the development process slightly, since the \textbf{.bit} and \textbf{.hwh} files do not need to be found within the file structure of the Vivado project.
 
 
 \newpage
