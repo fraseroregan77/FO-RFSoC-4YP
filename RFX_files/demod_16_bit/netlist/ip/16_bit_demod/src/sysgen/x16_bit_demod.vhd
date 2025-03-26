@@ -1,32 +1,32 @@
--- Generated from Simulink block demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1
+-- Generated from Simulink block 16_bit_demod/Algorithm/Carrier NCO
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
-entity x16_bit_demod_data_nco1 is
+entity x16_bit_demod_carrier_nco is
   port (
     in1 : in std_logic_vector( 16-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    out1 : out std_logic_vector( 16-1 downto 0 )
+    out1 : out std_logic_vector( 8-1 downto 0 )
   );
-end x16_bit_demod_data_nco1;
-architecture structural of x16_bit_demod_data_nco1 is 
-  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 8-1 downto 0 );
+end x16_bit_demod_carrier_nco;
+architecture structural of x16_bit_demod_carrier_nco is 
   signal clk_net : std_logic;
+  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
   signal ce_net : std_logic;
+  signal convert_dout_net : std_logic_vector( 8-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net : std_logic_vector( 16-1 downto 0 );
+  signal rom_data_net : std_logic_vector( 8-1 downto 0 );
   signal lfsr_dout_net : std_logic_vector( 16-1 downto 0 );
   signal step_size_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 12-1 downto 0 );
-  signal rom_data_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net : std_logic_vector( 16-1 downto 0 );
 begin
   out1 <= rom_data_net;
   step_size_net <= in1;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  addsub : entity xil_defaultlib.sysgen_addsub_03ac6d9419 
+  addsub : entity xil_defaultlib.sysgen_addsub_5767157b55 
   port map (
     clr => '0',
     a => register_q_net,
@@ -35,7 +35,7 @@ begin
     ce => ce_net,
     s => addsub_s_net
   );
-  addsub1 : entity xil_defaultlib.sysgen_addsub_b3d16028b0 
+  addsub1 : entity xil_defaultlib.sysgen_addsub_b2bb3d03ab 
   port map (
     clr => '0',
     a => addsub_s_net,
@@ -48,8 +48,8 @@ begin
   generic map (
     bool_conversion => 0,
     din_arith => 1,
-    din_bin_pt => 3,
-    din_width => 12,
+    din_bin_pt => 0,
+    din_width => 16,
     dout_arith => 1,
     dout_bin_pt => 0,
     dout_width => 8,
@@ -75,10 +75,10 @@ begin
   rom : entity xil_defaultlib.x16_bit_demod_xlsprom 
   generic map (
     c_address_width => 8,
-    c_width => 16,
+    c_width => 8,
     latency => 1,
-    mem_init_file => "xpm_288367_vivado.mem",
-    mem_size => 4096,
+    mem_init_file => "xpm_5519eb_vivado.mem",
+    mem_size => 2048,
     mem_type => "block",
     read_reset_val => "0"
   )
@@ -104,7 +104,7 @@ begin
     q => register_q_net
   );
 end structural;
--- Generated from Simulink block demodulate_16_bit1/16_bit_demod/Algorithm
+-- Generated from Simulink block 16_bit_demod/Algorithm
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -112,47 +112,43 @@ use xil_defaultlib.conv_pkg.all;
 entity x16_bit_demod_algorithm is
   port (
     tvalid_in : in std_logic_vector( 1-1 downto 0 );
-    tlast_in : in std_logic_vector( 1-1 downto 0 );
     tdata_in1 : in std_logic_vector( 16-1 downto 0 );
+    tlast_in : in std_logic_vector( 1-1 downto 0 );
     step_size : in std_logic_vector( 16-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
-    tready_out : out std_logic;
     tvalid_out : out std_logic_vector( 1-1 downto 0 );
-    tlast_out : out std_logic;
-    tdata_out1 : out std_logic_vector( 32-1 downto 0 )
+    tdata_out1 : out std_logic_vector( 32-1 downto 0 );
+    tlast_out : out std_logic_vector( 1-1 downto 0 )
   );
 end x16_bit_demod_algorithm;
 architecture structural of x16_bit_demod_algorithm is 
-  signal fir_compiler_7_2_m_axis_data_tlast_net : std_logic;
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal fir_compiler_7_2_s_axis_data_tready_net : std_logic;
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 16-1 downto 0 );
   signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
-  signal shift1_op_net : std_logic_vector( 47-1 downto 0 );
-  signal fir_compiler_7_2_m_axis_data_tdata_real_net : std_logic_vector( 47-1 downto 0 );
-  signal clk_net : std_logic;
+  signal tdata_slice_y_net : std_logic_vector( 16-1 downto 0 );
   signal step_size_net : std_logic_vector( 16-1 downto 0 );
-  signal mult_p_net : std_logic_vector( 32-1 downto 0 );
-  signal fir_compiler_7_2_m_axis_data_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal rom_data_net : std_logic_vector( 16-1 downto 0 );
-  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
   signal ce_net : std_logic;
+  signal rom_data_net : std_logic_vector( 8-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal shift1_op_net : std_logic_vector( 39-1 downto 0 );
+  signal mult_p_net : std_logic_vector( 24-1 downto 0 );
+  signal fir_compiler_7_2_m_axis_data_tvalid_net : std_logic;
+  signal fir_compiler_7_2_s_axis_data_tready_net : std_logic;
+  signal fir_compiler_7_2_m_axis_data_tdata_real_net : std_logic_vector( 39-1 downto 0 );
 begin
-  tready_out <= fir_compiler_7_2_s_axis_data_tready_net;
-  tvalid_out <= logical_y_net_x0;
-  tlast_out <= fir_compiler_7_2_m_axis_data_tlast_net;
+  tvalid_out <= delay3_q_net;
   tdata_out1 <= convert_dout_net;
+  tlast_out <= delay1_q_net;
   logical_y_net <= tvalid_in;
-  tlast_slice_y_net <= tlast_in;
   tdata_slice_y_net <= tdata_in1;
+  tlast_slice_y_net <= tlast_in;
   step_size_net <= step_size;
   clk_net <= clk_1;
   ce_net <= ce_1;
-  data_nco1 : entity xil_defaultlib.x16_bit_demod_data_nco1 
+  carrier_nco : entity xil_defaultlib.x16_bit_demod_carrier_nco 
   port map (
     in1 => step_size_net,
     clk_1 => clk_net,
@@ -189,21 +185,12 @@ begin
     ce => ce_net,
     q => delay3_q_net
   );
-  logical : entity xil_defaultlib.sysgen_logical_7e7ee00252 
-  port map (
-    clk => '0',
-    ce => '0',
-    clr => '0',
-    d0 => delay3_q_net,
-    d1 => fir_compiler_7_2_m_axis_data_tvalid_net,
-    y => logical_y_net_x0
-  );
   convert : entity xil_defaultlib.x16_bit_demod_xlconvert 
   generic map (
     bool_conversion => 0,
     din_arith => 2,
     din_bin_pt => 0,
-    din_width => 47,
+    din_width => 39,
     dout_arith => 1,
     dout_bin_pt => 0,
     dout_width => 32,
@@ -219,9 +206,8 @@ begin
     ce => ce_net,
     dout => convert_dout_net
   );
-  fir_compiler_7_2 : entity xil_defaultlib.xlfir_compiler_e7708bfcc3b908d8f3caac31339ecf01 
+  fir_compiler_7_2 : entity xil_defaultlib.xlfir_compiler_eb3f90d274b15ddda022d4b70f208c0c 
   port map (
-    s_axis_data_tlast => delay1_q_net(0),
     s_axis_data_tdata_real => mult_p_net,
     src_clk => clk_net,
     src_ce => ce_net,
@@ -230,8 +216,7 @@ begin
     clk_logic_1 => clk_net,
     ce_logic_1 => ce_net,
     s_axis_data_tready => fir_compiler_7_2_s_axis_data_tready_net,
-    m_axis_data_tvalid => fir_compiler_7_2_m_axis_data_tvalid_net(0),
-    m_axis_data_tlast => fir_compiler_7_2_m_axis_data_tlast_net,
+    m_axis_data_tvalid => fir_compiler_7_2_m_axis_data_tvalid_net,
     m_axis_data_tdata_real => fir_compiler_7_2_m_axis_data_tdata_real_net
   );
   mult : entity xil_defaultlib.x16_bit_demod_xlmult 
@@ -240,22 +225,22 @@ begin
     a_bin_pt => 0,
     a_width => 16,
     b_arith => xlSigned,
-    b_bin_pt => 15,
-    b_width => 16,
+    b_bin_pt => 0,
+    b_width => 8,
     c_a_type => 1,
     c_a_width => 16,
     c_b_type => 0,
-    c_b_width => 16,
+    c_b_width => 8,
     c_baat => 16,
-    c_output_width => 32,
+    c_output_width => 24,
     c_type => 0,
     core_name0 => "x16_bit_demod_mult_gen_v12_0_i0",
     extra_registers => 0,
     multsign => 2,
     overflow => 1,
     p_arith => xlSigned,
-    p_bin_pt => 15,
-    p_width => 32,
+    p_bin_pt => 0,
+    p_width => 24,
     quantization => 1
   )
   port map (
@@ -271,7 +256,7 @@ begin
     core_ce => ce_net,
     p => mult_p_net
   );
-  shift1 : entity xil_defaultlib.sysgen_shift_a7c220a113 
+  shift1 : entity xil_defaultlib.sysgen_shift_588459dbe3 
   port map (
     clr => '0',
     ip => fir_compiler_7_2_m_axis_data_tdata_real_net,
@@ -280,7 +265,7 @@ begin
     op => shift1_op_net
   );
 end structural;
--- Generated from Simulink block demodulate_16_bit1/16_bit_demod/Master FIFO
+-- Generated from Simulink block 16_bit_demod/Master FIFO
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -289,7 +274,7 @@ entity x16_bit_demod_master_fifo is
   port (
     tvalid_out : in std_logic_vector( 1-1 downto 0 );
     tdata_out : in std_logic_vector( 32-1 downto 0 );
-    tlast_out : in std_logic;
+    tlast_out : in std_logic_vector( 1-1 downto 0 );
     m_axis_tready : in std_logic_vector( 1-1 downto 0 );
     clk_1 : in std_logic;
     ce_1 : in std_logic;
@@ -300,29 +285,29 @@ entity x16_bit_demod_master_fifo is
   );
 end x16_bit_demod_master_fifo;
 architecture structural of x16_bit_demod_master_fifo is 
-  signal fifo_empty_net : std_logic;
-  signal fifo_af_net : std_logic;
-  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
   signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal concat1_y_net : std_logic_vector( 33-1 downto 0 );
-  signal fifo_dout_net : std_logic_vector( 33-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
   signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal concat1_y_net : std_logic_vector( 33-1 downto 0 );
+  signal clk_net : std_logic;
+  signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
+  signal ce_net : std_logic;
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
   signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal fifo_full_net : std_logic;
-  signal ce_net : std_logic;
-  signal clk_net : std_logic;
-  signal fir_compiler_7_2_m_axis_data_tlast_net : std_logic;
+  signal fifo_dout_net : std_logic_vector( 33-1 downto 0 );
+  signal fifo_empty_net : std_logic;
+  signal fifo_af_net : std_logic;
 begin
   m_axis_tvalid <= inverter4_op_net;
   m_axis_tdata <= tdata_slice_y_net;
   m_axis_tlast <= tlast_slice_y_net;
   tready_out <= inverter2_op_net;
-  logical_y_net <= tvalid_out;
+  delay3_q_net <= tvalid_out;
   convert_dout_net <= tdata_out;
-  fir_compiler_7_2_m_axis_data_tlast_net <= tlast_out;
+  delay1_q_net <= tlast_out;
   m_axis_tready_net <= m_axis_tready;
   clk_net <= clk_1;
   ce_net <= ce_1;
@@ -332,7 +317,7 @@ begin
     ce => '0',
     clr => '0',
     in0 => convert_dout_net,
-    in1(0) => fir_compiler_7_2_m_axis_data_tlast_net,
+    in1 => delay1_q_net,
     y => concat1_y_net
   );
   fifo : entity xil_defaultlib.x16_bit_demod_xlfifogen_u 
@@ -351,7 +336,7 @@ begin
     en => '1',
     rst => '0',
     din => concat1_y_net,
-    we => logical_y_net(0),
+    we => delay3_q_net(0),
     re => m_axis_tready_net(0),
     clk => clk_net,
     ce => ce_net,
@@ -401,7 +386,7 @@ begin
     y => tlast_slice_y_net
   );
 end structural;
--- Generated from Simulink block demodulate_16_bit1/16_bit_demod/Slave FIFO
+-- Generated from Simulink block 16_bit_demod/Slave FIFO
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -421,21 +406,21 @@ entity x16_bit_demod_slave_fifo is
   );
 end x16_bit_demod_slave_fifo;
 architecture structural of x16_bit_demod_slave_fifo is 
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal fifo_empty_net : std_logic;
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tdata_net : std_logic_vector( 16-1 downto 0 );
   signal ce_net : std_logic;
   signal concat_y_net : std_logic_vector( 17-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal fifo_dout_net : std_logic_vector( 17-1 downto 0 );
   signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal clk_net : std_logic;
-  signal tdata_slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal inverter2_op_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tdata_net : std_logic_vector( 16-1 downto 0 );
   signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal clk_net : std_logic;
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal fifo_dout_net : std_logic_vector( 17-1 downto 0 );
   signal fifo_full_net : std_logic;
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal fifo_empty_net : std_logic;
 begin
   tvalid_in <= logical_y_net;
   tdata_in <= tdata_slice_y_net;
@@ -444,7 +429,7 @@ begin
   s_axis_tvalid_net <= s_axis_tvalid;
   s_axis_tdata_net <= s_axis_tdata;
   s_axis_tlast_net <= s_axis_tlast;
-  logical_y_net_x0 <= tready_in;
+  inverter2_op_net_x0 <= tready_in;
   clk_net <= clk_1;
   ce_net <= ce_1;
   concat : entity xil_defaultlib.sysgen_concat_f66466f9a6 
@@ -473,7 +458,7 @@ begin
     rst => '0',
     din => concat_y_net,
     we => s_axis_tvalid_net(0),
-    re => logical_y_net_x0(0),
+    re => inverter2_op_net_x0(0),
     clk => clk_net,
     ce => ce_net,
     we_ce => ce_net,
@@ -504,7 +489,7 @@ begin
     ce => '0',
     clr => '0',
     d0 => inverter2_op_net,
-    d1 => logical_y_net_x0,
+    d1 => inverter2_op_net_x0,
     y => logical_y_net
   );
   tdata_slice : entity xil_defaultlib.x16_bit_demod_xlslice 
@@ -530,7 +515,7 @@ begin
     y => tlast_slice_y_net
   );
 end structural;
--- Generated from Simulink block demodulate_16_bit1/16_bit_demod_struct
+-- Generated from Simulink block 16_bit_demod_struct
 library IEEE;
 use IEEE.std_logic_1164.all;
 library xil_defaultlib;
@@ -551,30 +536,28 @@ entity x16_bit_demod_struct is
   );
 end x16_bit_demod_struct;
 architecture structural of x16_bit_demod_struct is 
-  signal s_axis_tdata_net : std_logic_vector( 16-1 downto 0 );
-  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net : std_logic_vector( 32-1 downto 0 );
-  signal ce_net : std_logic;
   signal inverter4_op_net : std_logic_vector( 1-1 downto 0 );
-  signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x1 : std_logic_vector( 1-1 downto 0 );
-  signal fir_compiler_7_2_m_axis_data_tlast_net : std_logic;
-  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tvalid_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tdata_net : std_logic_vector( 16-1 downto 0 );
   signal step_size_net : std_logic_vector( 16-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal fir_compiler_7_2_s_axis_data_tready_net : std_logic;
   signal clk_net : std_logic;
-  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net_x0 : std_logic_vector( 1-1 downto 0 );
-  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal delay3_q_net : std_logic_vector( 1-1 downto 0 );
   signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal tlast_slice_y_net_x0 : std_logic_vector( 1-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal s_axis_tlast_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net : std_logic_vector( 16-1 downto 0 );
+  signal m_axis_tready_net : std_logic_vector( 1-1 downto 0 );
+  signal delay1_q_net : std_logic_vector( 1-1 downto 0 );
   signal tlast_slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal tdata_slice_y_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal convert_dout_net : std_logic_vector( 32-1 downto 0 );
+  signal inverter2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal tdata_slice_y_net_x0 : std_logic_vector( 32-1 downto 0 );
+  signal ce_net : std_logic;
 begin
   m_axis_tvalid <= inverter4_op_net;
-  m_axis_tdata <= tdata_slice_y_net;
-  m_axis_tlast <= tlast_slice_y_net;
+  m_axis_tdata <= tdata_slice_y_net_x0;
+  m_axis_tlast <= tlast_slice_y_net_x0;
   s_axis_tready <= inverter1_op_net;
   s_axis_tvalid_net <= s_axis_tvalid;
   s_axis_tdata_net <= s_axis_tdata;
@@ -585,28 +568,27 @@ begin
   ce_net <= ce_1;
   algorithm : entity xil_defaultlib.x16_bit_demod_algorithm 
   port map (
-    tvalid_in => logical_y_net_x1,
-    tlast_in => tlast_slice_y_net_x0,
-    tdata_in1 => tdata_slice_y_net_x0,
+    tvalid_in => logical_y_net,
+    tdata_in1 => tdata_slice_y_net,
+    tlast_in => tlast_slice_y_net,
     step_size => step_size_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    tready_out => fir_compiler_7_2_s_axis_data_tready_net,
-    tvalid_out => logical_y_net_x0,
-    tlast_out => fir_compiler_7_2_m_axis_data_tlast_net,
-    tdata_out1 => convert_dout_net
+    tvalid_out => delay3_q_net,
+    tdata_out1 => convert_dout_net,
+    tlast_out => delay1_q_net
   );
   master_fifo : entity xil_defaultlib.x16_bit_demod_master_fifo 
   port map (
-    tvalid_out => logical_y_net_x0,
+    tvalid_out => delay3_q_net,
     tdata_out => convert_dout_net,
-    tlast_out => fir_compiler_7_2_m_axis_data_tlast_net,
+    tlast_out => delay1_q_net,
     m_axis_tready => m_axis_tready_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     m_axis_tvalid => inverter4_op_net,
-    m_axis_tdata => tdata_slice_y_net,
-    m_axis_tlast => tlast_slice_y_net,
+    m_axis_tdata => tdata_slice_y_net_x0,
+    m_axis_tlast => tlast_slice_y_net_x0,
     tready_out => inverter2_op_net
   );
   slave_fifo : entity xil_defaultlib.x16_bit_demod_slave_fifo 
@@ -614,22 +596,13 @@ begin
     s_axis_tvalid => s_axis_tvalid_net,
     s_axis_tdata => s_axis_tdata_net,
     s_axis_tlast => s_axis_tlast_net,
-    tready_in => logical_y_net,
+    tready_in => inverter2_op_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
-    tvalid_in => logical_y_net_x1,
-    tdata_in => tdata_slice_y_net_x0,
-    tlast_in => tlast_slice_y_net_x0,
+    tvalid_in => logical_y_net,
+    tdata_in => tdata_slice_y_net,
+    tlast_in => tlast_slice_y_net,
     s_axis_tready => inverter1_op_net
-  );
-  logical : entity xil_defaultlib.sysgen_logical_7e7ee00252 
-  port map (
-    clk => '0',
-    ce => '0',
-    clr => '0',
-    d0(0) => fir_compiler_7_2_s_axis_data_tready_net,
-    d1 => inverter2_op_net,
-    y => logical_y_net
   );
 end structural;
 -- Generated from Simulink block 
@@ -639,11 +612,11 @@ library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 entity x16_bit_demod_default_clock_driver is
   port (
-    x16_bit_demod_sysclk : in std_logic;
-    x16_bit_demod_sysce : in std_logic;
-    x16_bit_demod_sysclr : in std_logic;
-    x16_bit_demod_clk1 : out std_logic;
-    x16_bit_demod_ce1 : out std_logic
+    x16_bit_demod_x0_sysclk : in std_logic;
+    x16_bit_demod_x0_sysce : in std_logic;
+    x16_bit_demod_x0_sysclr : in std_logic;
+    x16_bit_demod_x0_clk1 : out std_logic;
+    x16_bit_demod_x0_ce1 : out std_logic
   );
 end x16_bit_demod_default_clock_driver;
 architecture structural of x16_bit_demod_default_clock_driver is 
@@ -654,11 +627,11 @@ begin
     log_2_period => 1
   )
   port map (
-    sysclk => x16_bit_demod_sysclk,
-    sysce => x16_bit_demod_sysce,
-    sysclr => x16_bit_demod_sysclr,
-    clk => x16_bit_demod_clk1,
-    ce => x16_bit_demod_ce1
+    sysclk => x16_bit_demod_x0_sysclk,
+    sysce => x16_bit_demod_x0_sysce,
+    sysclr => x16_bit_demod_x0_sysclr,
+    clk => x16_bit_demod_x0_clk1,
+    ce => x16_bit_demod_x0_ce1
   );
 end structural;
 -- Generated from Simulink block 
@@ -682,17 +655,17 @@ entity x16_bit_demod is
 end x16_bit_demod;
 architecture structural of x16_bit_demod is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "x16_bit_demod,sysgen_core_2024_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynquplusRFSOC,part=xczu43dr,speed=-2-e,package=fsve1156,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.003,system_simulink_period=3.003e-09,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=0.0003003,addsub=2,concat=2,convert=2,delay=2,fifo=2,fir_compiler_v7_2=1,inv=4,lfsr=1,logical=3,mult=1,register=1,shift=1,slice=4,sprom=1,}";
-  signal clk_1_net : std_logic;
+  attribute core_generation_info of structural : architecture is "x16_bit_demod,sysgen_core_2024_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynquplusRFSOC,part=xczu43dr,speed=-2-e,package=fsve1156,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.003,system_simulink_period=3.003e-09,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=0.0003003,addsub=2,concat=2,convert=2,delay=2,fifo=2,fir_compiler_v7_2=1,inv=4,lfsr=1,logical=1,mult=1,register=1,shift=1,slice=4,sprom=1,}";
   signal ce_1_net : std_logic;
+  signal clk_1_net : std_logic;
 begin
   x16_bit_demod_default_clock_driver : entity xil_defaultlib.x16_bit_demod_default_clock_driver 
   port map (
-    x16_bit_demod_sysclk => clk,
-    x16_bit_demod_sysce => '1',
-    x16_bit_demod_sysclr => '0',
-    x16_bit_demod_clk1 => clk_1_net,
-    x16_bit_demod_ce1 => ce_1_net
+    x16_bit_demod_x0_sysclk => clk,
+    x16_bit_demod_x0_sysce => '1',
+    x16_bit_demod_x0_sysclr => '0',
+    x16_bit_demod_x0_clk1 => clk_1_net,
+    x16_bit_demod_x0_ce1 => ce_1_net
   );
   x16_bit_demod_struct : entity xil_defaultlib.x16_bit_demod_struct 
   port map (

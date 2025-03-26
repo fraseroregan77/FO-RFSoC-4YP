@@ -1,172 +1,162 @@
 {
-  'Line_155' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1',
-    'Instance' => 'data_nco1',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1'
+  'Line_151' => {
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco',
+    'Instance' => 'carrier_nco',
+    'SimulinkInstance' => '16_bit_demod/Algorithm/Carrier NCO'
   },
-  'Line_162' => {
+  'Line_158' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/delay1',
     'Instance' => 'delay1',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Delay1'
   },
-  'Line_177' => {
+  'Line_173' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/delay3',
     'Instance' => 'delay3',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Delay3'
   },
-  'Line_192' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/logical',
-    'Instance' => 'logical',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Logical'
-  },
-  'Line_201' => {
+  'Line_188' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/convert',
     'Instance' => 'convert',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Convert'
   },
-  'Line_222' => {
+  'Line_209' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/fir_compiler_7_2',
     'Instance' => 'fir_compiler_7_2',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/FIR Compiler 7.2'
   },
-  'Line_237' => {
+  'Line_222' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/mult',
     'Instance' => 'mult',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Mult'
   },
-  'Line_274' => {
+  'Line_259' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/shift1',
     'Instance' => 'shift1',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Shift1'
   },
   'Line_29' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1/addsub',
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/addsub',
     'Instance' => 'addsub',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/AddSub'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/AddSub'
   },
-  'Line_329' => {
+  'Line_314' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/concat1',
     'Instance' => 'concat1',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO/Concat1'
   },
-  'Line_338' => {
+  'Line_323' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/fifo',
     'Instance' => 'fifo',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO/FIFO'
   },
-  'Line_365' => {
+  'Line_350' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/inverter2',
     'Instance' => 'inverter2',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO/Inverter2'
   },
-  'Line_373' => {
+  'Line_358' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/inverter4',
     'Instance' => 'inverter4',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO/Inverter4'
   },
-  'Line_38' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1/addsub1',
-    'Instance' => 'addsub1',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/AddSub1'
-  },
-  'Line_381' => {
+  'Line_366' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/tdata_slice',
     'Instance' => 'tdata_slice',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO/tdata_slice'
   },
-  'Line_392' => {
+  'Line_377' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo/tlast_slice',
     'Instance' => 'tlast_slice',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO/tlast_slice'
   },
-  'Line_450' => {
+  'Line_38' => {
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/AddSub1'
+  },
+  'Line_435' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/concat',
     'Instance' => 'concat',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/Concat'
   },
-  'Line_459' => {
+  'Line_444' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/fifo',
     'Instance' => 'fifo',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/FIFO'
   },
   'Line_47' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1/convert',
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/convert',
     'Instance' => 'convert',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/Convert'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/Convert'
   },
-  'Line_485' => {
+  'Line_470' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/inverter1',
     'Instance' => 'inverter1',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/Inverter1'
   },
-  'Line_493' => {
+  'Line_478' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/inverter2',
     'Instance' => 'inverter2',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/Inverter2'
   },
-  'Line_501' => {
+  'Line_486' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/logical',
     'Instance' => 'logical',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/Logical'
   },
-  'Line_510' => {
+  'Line_495' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/tdata_slice',
     'Instance' => 'tdata_slice',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/tdata_slice'
   },
-  'Line_521' => {
+  'Line_506' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo/tlast_slice',
     'Instance' => 'tlast_slice',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO/tlast_slice'
   },
-  'Line_586' => {
+  'Line_569' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm',
     'Instance' => 'algorithm',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm'
+    'SimulinkInstance' => '16_bit_demod/Algorithm'
   },
-  'Line_599' => {
+  'Line_581' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo',
     'Instance' => 'master_fifo',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO'
+    'SimulinkInstance' => '16_bit_demod/Master FIFO'
   },
-  'Line_612' => {
+  'Line_594' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo',
     'Instance' => 'slave_fifo',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO'
+    'SimulinkInstance' => '16_bit_demod/Slave FIFO'
   },
-  'Line_625' => {
-    'CodeInstance' => 'x16_bit_demod_struct/logical',
-    'Instance' => 'logical',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Logical'
-  },
-  'Line_651' => {
+  'Line_624' => {
     'CodeInstance' => 'x16_bit_demod_default_clock_driver/clockdriver',
     'Instance' => 'clockdriver',
     'SimulinkInstance' => ''
   },
-  'Line_68' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1/lfsr',
-    'Instance' => 'lfsr',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/LFSR'
-  },
-  'Line_689' => {
+  'Line_662' => {
     'CodeInstance' => 'x16_bit_demod_default_clock_driver',
     'Instance' => 'x16_bit_demod_default_clock_driver',
     'SimulinkInstance' => ''
   },
-  'Line_697' => {
+  'Line_670' => {
     'CodeInstance' => 'x16_bit_demod_struct',
     'Instance' => 'x16_bit_demod_struct',
     'SimulinkInstance' => '16_bit_demod'
   },
+  'Line_68' => {
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/lfsr',
+    'Instance' => 'lfsr',
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/LFSR'
+  },
   'Line_75' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1/rom',
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/rom',
     'Instance' => 'rom',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/ROM'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/ROM'
   },
   'Line_93' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/data_nco1/register_x0',
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/register_x0',
     'Instance' => 'register_x0',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Data NCO1/Register'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/Register'
   }
 }

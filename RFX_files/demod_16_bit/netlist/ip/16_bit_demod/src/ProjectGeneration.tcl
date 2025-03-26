@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {DUT}
-	set IP_Revision {373756509}
+	set IP_Revision {373920585}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {User Company}
@@ -43,7 +43,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{single_reg_w_init.vhd} -lib {xil_defaultlib}}
 		{{xlclockdriver_rd.vhd} -lib {xil_defaultlib}}
 		{{vivado_ip.tcl}}
-		{{xpm_288367_vivado.mem}}
+		{{xpm_5519eb_vivado.mem}}
 		{{x16_bit_demod_entity_declarations.vhd} -lib {xil_defaultlib}}
 		{{x16_bit_demod.vhd} -lib {xil_defaultlib}}
 		{{x16_bit_demod_clock.xdc}}
@@ -56,7 +56,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set SynthesisTool {Vivado}
 	set TargetDir {C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src}
 	set TopLevelModule {x16_bit_demod}
-	set TopLevelSimulinkHandle 3404
+	set TopLevelSimulinkHandle 2344.01
 	set VHDLLib {xil_defaultlib}
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface step_size Name {step_size}
@@ -71,7 +71,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface step_size Interface 0
 	dict set TopLevelPortInterface step_size InterfaceName {}
 	dict set TopLevelPortInterface step_size InterfaceString {DATA}
-	dict set TopLevelPortInterface step_size ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface step_size ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface step_size Locs {}
 	dict set TopLevelPortInterface step_size IOStandard {}
 	dict set TopLevelPortInterface m_axis_tready Name {m_axis_tready}
@@ -86,7 +86,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tready Interface 0
 	dict set TopLevelPortInterface m_axis_tready InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tready InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tready ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface m_axis_tready ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface m_axis_tready Locs {}
 	dict set TopLevelPortInterface m_axis_tready IOStandard {}
 	dict set TopLevelPortInterface s_axis_tlast Name {s_axis_tlast}
@@ -101,7 +101,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tlast Interface 0
 	dict set TopLevelPortInterface s_axis_tlast InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tlast InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tlast ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface s_axis_tlast ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface s_axis_tlast Locs {}
 	dict set TopLevelPortInterface s_axis_tlast IOStandard {}
 	dict set TopLevelPortInterface s_axis_tdata Name {s_axis_tdata}
@@ -116,7 +116,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tdata Interface 0
 	dict set TopLevelPortInterface s_axis_tdata InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tdata InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tdata ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface s_axis_tdata ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface s_axis_tdata Locs {}
 	dict set TopLevelPortInterface s_axis_tdata IOStandard {}
 	dict set TopLevelPortInterface s_axis_tvalid Name {s_axis_tvalid}
@@ -131,7 +131,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tvalid Interface 0
 	dict set TopLevelPortInterface s_axis_tvalid InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tvalid InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tvalid ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface s_axis_tvalid ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface s_axis_tvalid Locs {}
 	dict set TopLevelPortInterface s_axis_tvalid IOStandard {}
 	dict set TopLevelPortInterface m_axis_tvalid Name {m_axis_tvalid}
@@ -146,7 +146,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tvalid Interface 0
 	dict set TopLevelPortInterface m_axis_tvalid InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tvalid InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tvalid ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface m_axis_tvalid ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface m_axis_tvalid Locs {}
 	dict set TopLevelPortInterface m_axis_tvalid IOStandard {}
 	dict set TopLevelPortInterface m_axis_tdata Name {m_axis_tdata}
@@ -161,7 +161,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tdata Interface 0
 	dict set TopLevelPortInterface m_axis_tdata InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tdata InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tdata ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface m_axis_tdata ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface m_axis_tdata Locs {}
 	dict set TopLevelPortInterface m_axis_tdata IOStandard {}
 	dict set TopLevelPortInterface m_axis_tlast Name {m_axis_tlast}
@@ -176,7 +176,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface m_axis_tlast Interface 0
 	dict set TopLevelPortInterface m_axis_tlast InterfaceName {}
 	dict set TopLevelPortInterface m_axis_tlast InterfaceString {DATA}
-	dict set TopLevelPortInterface m_axis_tlast ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface m_axis_tlast ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface m_axis_tlast Locs {}
 	dict set TopLevelPortInterface m_axis_tlast IOStandard {}
 	dict set TopLevelPortInterface s_axis_tready Name {s_axis_tready}
@@ -191,7 +191,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface s_axis_tready Interface 0
 	dict set TopLevelPortInterface s_axis_tready InterfaceName {}
 	dict set TopLevelPortInterface s_axis_tready InterfaceString {DATA}
-	dict set TopLevelPortInterface s_axis_tready ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface s_axis_tready ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface s_axis_tready Locs {}
 	dict set TopLevelPortInterface s_axis_tready IOStandard {}
 	dict set TopLevelPortInterface clk Name {clk}
@@ -205,7 +205,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface clk Interface 6
 	dict set TopLevelPortInterface clk InterfaceName {}
 	dict set TopLevelPortInterface clk InterfaceString {CLOCK}
-	dict set TopLevelPortInterface clk ClockDomain {x16_bit_demod}
+	dict set TopLevelPortInterface clk ClockDomain {x16_bit_demod_x0}
 	dict set TopLevelPortInterface clk Locs {}
 	dict set TopLevelPortInterface clk IOStandard {}
 	dict set TopLevelPortInterface clk AssociatedInterfaces {}

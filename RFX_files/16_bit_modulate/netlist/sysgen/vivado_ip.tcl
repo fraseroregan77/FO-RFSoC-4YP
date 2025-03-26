@@ -36,40 +36,6 @@
 #-----------------------------------------------------------------
 
 set existingipslist [get_ips]
-if {[lsearch $existingipslist x16_bit_mod_c_addsub_v12_0_i0] < 0} {
-create_ip -name c_addsub -version 12.0 -vendor xilinx.com -library ip -module_name x16_bit_mod_c_addsub_v12_0_i0
-set params_list [list]
-lappend params_list CONFIG.Component_Name {x16_bit_mod_c_addsub_v12_0_i0}
-lappend params_list CONFIG.AINIT_Value {0}
-lappend params_list CONFIG.A_Type {Signed}
-lappend params_list CONFIG.A_Width {33}
-lappend params_list CONFIG.Add_Mode {Add}
-lappend params_list CONFIG.B_Constant {false}
-lappend params_list CONFIG.B_Type {Signed}
-lappend params_list CONFIG.B_Value {0}
-lappend params_list CONFIG.B_Width {33}
-lappend params_list CONFIG.Borrow_Sense {Active_Low}
-lappend params_list CONFIG.Bypass {false}
-lappend params_list CONFIG.Bypass_CE_Priority {Bypass_Overrides_CE}
-lappend params_list CONFIG.Bypass_Sense {Active_Low}
-lappend params_list CONFIG.CE {false}
-lappend params_list CONFIG.C_In {false}
-lappend params_list CONFIG.C_Out {false}
-lappend params_list CONFIG.Implementation {Fabric}
-lappend params_list CONFIG.Latency {0}
-lappend params_list CONFIG.Out_Width {33}
-lappend params_list CONFIG.SCLR {false}
-lappend params_list CONFIG.SINIT {false}
-lappend params_list CONFIG.SINIT_Value {0}
-lappend params_list CONFIG.SSET {false}
-lappend params_list CONFIG.Sync_CE_Priority {Sync_Overrides_CE}
-lappend params_list CONFIG.Sync_Ctrl_Priority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips x16_bit_mod_c_addsub_v12_0_i0]
-}
-
-
-set existingipslist [get_ips]
 if {[lsearch $existingipslist x16_bit_mod_mult_gen_v12_0_i0] < 0} {
 create_ip -name mult_gen -version 12.0 -vendor xilinx.com -library ip -module_name x16_bit_mod_mult_gen_v12_0_i0
 set params_list [list]
@@ -77,12 +43,12 @@ lappend params_list CONFIG.Component_Name {x16_bit_mod_mult_gen_v12_0_i0}
 lappend params_list CONFIG.clockenable {true}
 lappend params_list CONFIG.multiplier_construction {Use_Mults}
 lappend params_list CONFIG.optgoal {Speed}
-lappend params_list CONFIG.outputwidthhigh {31}
-lappend params_list CONFIG.pipestages {2}
+lappend params_list CONFIG.outputwidthhigh {15}
+lappend params_list CONFIG.pipestages {3}
 lappend params_list CONFIG.portatype {Signed}
-lappend params_list CONFIG.portawidth {16}
+lappend params_list CONFIG.portawidth {8}
 lappend params_list CONFIG.portbtype {Signed}
-lappend params_list CONFIG.portbwidth {16}
+lappend params_list CONFIG.portbwidth {8}
 lappend params_list CONFIG.sclrcepriority {CE_Overrides_SCLR}
 lappend params_list CONFIG.syncclear {true}
 lappend params_list CONFIG.use_custom_output_width {true}
