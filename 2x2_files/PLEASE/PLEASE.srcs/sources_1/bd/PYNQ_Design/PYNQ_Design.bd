@@ -7,7 +7,8 @@
       "name": "PYNQ_Design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2024.1"
+      "tool_version": "2024.1",
+      "validated": "true"
     },
     "design_tree": {
       "RFDC": "",
@@ -15,7 +16,6 @@
       "ps8_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {
-          "auto_ds": "",
           "auto_pc": ""
         },
         "m00_couplers": {
@@ -393,30 +393,6 @@
               }
             },
             "components": {
-              "auto_ds": {
-                "vlnv": "xilinx.com:ip:axi_dwidth_converter:2.1",
-                "ip_revision": "31",
-                "xci_name": "PYNQ_Design_auto_ds_0",
-                "xci_path": "ip\\PYNQ_Design_auto_ds_0\\PYNQ_Design_auto_ds_0.xci",
-                "inst_hier_path": "ps8_0_axi_periph/s00_couplers/auto_ds",
-                "parameters": {
-                  "MI_DATA_WIDTH": {
-                    "value": "32"
-                  },
-                  "SI_DATA_WIDTH": {
-                    "value": "128"
-                  }
-                },
-                "interface_ports": {
-                  "S_AXI": {
-                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                    "mode": "Slave",
-                    "bridges": [
-                      "M_AXI"
-                    ]
-                  }
-                }
-              },
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "31",
@@ -443,22 +419,16 @@
               }
             },
             "interface_nets": {
-              "auto_ds_to_auto_pc": {
-                "interface_ports": [
-                  "auto_ds/M_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
                 ]
               },
-              "s00_couplers_to_auto_ds": {
+              "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
-                  "auto_ds/S_AXI"
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -466,14 +436,12 @@
               "S_ACLK_1": {
                 "ports": [
                   "S_ACLK",
-                  "auto_ds/s_axi_aclk",
                   "auto_pc/aclk"
                 ]
               },
               "S_ARESETN_1": {
                 "ports": [
                   "S_ARESETN",
-                  "auto_ds/s_axi_aresetn",
                   "auto_pc/aresetn"
                 ]
               }
@@ -1257,11 +1225,11 @@
               "clk_wiz_0/clk_out1",
               "clk_out1",
               "RX_ILA/clk",
-              "proc_sys_reset_0/slowest_sync_clk",
               "axi_dma_rx/s_axi_lite_aclk",
               "axi_dma_rx/m_axi_s2mm_aclk",
+              "Receiver_0/clk",
               "axi_smc/aclk",
-              "Receiver_0/clk"
+              "proc_sys_reset_0/slowest_sync_clk"
             ]
           },
           "clk_wiz_0_locked": {
@@ -1580,8 +1548,8 @@
               "proc_sys_reset_1/peripheral_aresetn",
               "peripheral_aresetn",
               "TX_ILA/resetn",
-              "axi_smc_1/aresetn",
-              "axi_dma_tx/axi_resetn"
+              "axi_dma_tx/axi_resetn",
+              "axi_smc_1/aresetn"
             ]
           },
           "usp_rf_data_converter_0_clk_dac0": {
@@ -1589,10 +1557,10 @@
               "m_axi_mm2s_aclk",
               "axi_dma_tx/m_axi_mm2s_aclk",
               "TX_ILA/clk",
-              "proc_sys_reset_1/slowest_sync_clk",
               "axi_dma_tx/s_axi_lite_aclk",
+              "Data_generation_0/clk",
               "axi_smc_1/aclk",
-              "Data_generation_0/clk"
+              "proc_sys_reset_1/slowest_sync_clk"
             ]
           },
           "xlconstant_0_dout": {
@@ -1917,20 +1885,83 @@
       "zynq_ultra_ps_e_0_pl_clk0": {
         "ports": [
           "PS/pl_clk0",
-          "rst_ps8_0_96M/slowest_sync_clk",
           "ps8_0_axi_periph/ACLK",
           "ps8_0_axi_periph/S00_ACLK",
           "RFDC/s_axi_aclk",
           "ps8_0_axi_periph/M02_ACLK",
-          "PS/maxihpm0_lpd_aclk"
+          "PS/maxihpm0_lpd_aclk",
+          "rst_ps8_0_96M/slowest_sync_clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {
         "ports": [
           "PS/pl_resetn0",
-          "rst_ps8_0_96M/ext_reset_in",
-          "TX/ext_reset_in"
+          "TX/ext_reset_in",
+          "rst_ps8_0_96M/ext_reset_in"
         ]
+      }
+    },
+    "addressing": {
+      "/RX/axi_dma_rx": {
+        "address_spaces": {
+          "Data_S2MM": {
+            "segments": {
+              "SEG_PS_HP0_DDR_LOW": {
+                "address_block": "/PS/SAXIGP2/HP0_DDR_LOW",
+                "offset": "0x0000000000000000",
+                "range": "2G"
+              },
+              "SEG_PS_HP0_LPS_OCM": {
+                "address_block": "/PS/SAXIGP2/HP0_LPS_OCM",
+                "offset": "0x00000000FF000000",
+                "range": "16M",
+                "is_excluded": "TRUE"
+              }
+            }
+          }
+        }
+      },
+      "/TX/axi_dma_tx": {
+        "address_spaces": {
+          "Data_MM2S": {
+            "segments": {
+              "SEG_PS_HP1_DDR_LOW": {
+                "address_block": "/PS/SAXIGP3/HP1_DDR_LOW",
+                "offset": "0x00000000",
+                "range": "2G"
+              },
+              "SEG_PS_HP1_LPS_OCM": {
+                "address_block": "/PS/SAXIGP3/HP1_LPS_OCM",
+                "offset": "0xFF000000",
+                "range": "16M",
+                "is_excluded": "TRUE"
+              }
+            }
+          }
+        }
+      },
+      "/PS": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
+              "SEG_RFDC_Reg": {
+                "address_block": "/RFDC/s_axi/Reg",
+                "offset": "0x0080000000",
+                "range": "256K"
+              },
+              "SEG_axi_dma_rx_Reg": {
+                "address_block": "/RX/axi_dma_rx/S_AXI_LITE/Reg",
+                "offset": "0x0080040000",
+                "range": "64K"
+              },
+              "SEG_axi_dma_tx_Reg": {
+                "address_block": "/TX/axi_dma_tx/S_AXI_LITE/Reg",
+                "offset": "0x0080050000",
+                "range": "64K"
+              }
+            }
+          }
+        }
       }
     }
   }

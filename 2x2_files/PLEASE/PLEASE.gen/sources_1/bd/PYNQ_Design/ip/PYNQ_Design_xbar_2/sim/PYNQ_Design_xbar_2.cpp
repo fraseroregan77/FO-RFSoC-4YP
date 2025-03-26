@@ -345,7 +345,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'S00_AXI' transactor parameters
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
     S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     S00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -375,7 +375,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     S00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<32,40,1,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
 
@@ -451,7 +451,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M00_AXI' transactor parameters
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
     M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -481,7 +481,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
 
@@ -584,7 +584,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M01_AXI' transactor parameters
     xsc::common_cpp::properties M01_AXI_transactor_param_props;
     M01_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M01_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -614,7 +614,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M01_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M01_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
 
@@ -717,7 +717,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M02_AXI' transactor parameters
     xsc::common_cpp::properties M02_AXI_transactor_param_props;
     M02_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M02_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -747,7 +747,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M02_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M02_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
 
@@ -1133,7 +1133,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'S00_AXI' transactor parameters
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
     S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     S00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1163,7 +1163,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     S00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<32,40,1,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
 
@@ -1239,7 +1239,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M00_AXI' transactor parameters
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
     M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1269,7 +1269,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
 
@@ -1372,7 +1372,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M01_AXI' transactor parameters
     xsc::common_cpp::properties M01_AXI_transactor_param_props;
     M01_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M01_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1402,7 +1402,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M01_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M01_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
 
@@ -1505,7 +1505,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M02_AXI' transactor parameters
     xsc::common_cpp::properties M02_AXI_transactor_param_props;
     M02_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M02_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1535,7 +1535,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M02_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M02_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
 
@@ -1921,7 +1921,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'S00_AXI' transactor parameters
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
     S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     S00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1951,7 +1951,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     S00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<32,40,1,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
 
@@ -2027,7 +2027,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M00_AXI' transactor parameters
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
     M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2057,7 +2057,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
 
@@ -2160,7 +2160,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M01_AXI' transactor parameters
     xsc::common_cpp::properties M01_AXI_transactor_param_props;
     M01_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M01_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2190,7 +2190,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M01_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M01_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
 
@@ -2293,7 +2293,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
   // 'M02_AXI' transactor parameters
     xsc::common_cpp::properties M02_AXI_transactor_param_props;
     M02_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M02_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2323,7 +2323,7 @@ void PYNQ_Design_xbar_2::before_end_of_elaboration()
     M02_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M02_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
 
@@ -2530,7 +2530,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure S00_AXI_transactor
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
     S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     S00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2560,7 +2560,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     S00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<32,40,1,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
   mp_S00_AXI_transactor->AWADDR(s_axi_awaddr);
@@ -2617,7 +2617,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure M00_AXI_transactor
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
     M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2647,7 +2647,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     M00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
   mp_m_axi_awaddr_converter_0 = new xsc::common::vector2vector_converter<40,120>("m_axi_awaddr_converter_0");
@@ -2807,7 +2807,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure M01_AXI_transactor
     xsc::common_cpp::properties M01_AXI_transactor_param_props;
     M01_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M01_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2837,7 +2837,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     M01_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M01_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
   mp_m_axi_awaddr_converter_1 = new xsc::common::vector2vector_converter<40,120>("m_axi_awaddr_converter_1");
@@ -2967,7 +2967,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure M02_AXI_transactor
     xsc::common_cpp::properties M02_AXI_transactor_param_props;
     M02_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M02_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -2997,7 +2997,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     M02_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M02_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
   mp_m_axi_awaddr_converter_2 = new xsc::common::vector2vector_converter<40,120>("m_axi_awaddr_converter_2");
@@ -3316,7 +3316,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure S00_AXI_transactor
     xsc::common_cpp::properties S00_AXI_transactor_param_props;
     S00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    S00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     S00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     S00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -3346,7 +3346,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     S00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     S00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    S00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_S00_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<32,40,1,1,1,1,1,1>("S00_AXI_transactor", S00_AXI_transactor_param_props);
   mp_S00_AXI_transactor->AWADDR(s_axi_awaddr);
@@ -3403,7 +3403,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure M00_AXI_transactor
     xsc::common_cpp::properties M00_AXI_transactor_param_props;
     M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M00_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -3433,7 +3433,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     M00_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
   mp_m_axi_awaddr_converter_0 = new xsc::common::vector2vector_converter<40,120>("m_axi_awaddr_converter_0");
@@ -3593,7 +3593,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure M01_AXI_transactor
     xsc::common_cpp::properties M01_AXI_transactor_param_props;
     M01_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M01_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M01_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -3623,7 +3623,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     M01_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M01_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
   mp_m_axi_awaddr_converter_1 = new xsc::common::vector2vector_converter<40,120>("m_axi_awaddr_converter_1");
@@ -3753,7 +3753,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
   // configure M02_AXI_transactor
     xsc::common_cpp::properties M02_AXI_transactor_param_props;
     M02_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "99999001");
+    M02_AXI_transactor_param_props.addLong("FREQ_HZ", "96968727");
     M02_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -3783,7 +3783,7 @@ PYNQ_Design_xbar_2::PYNQ_Design_xbar_2(const sc_core::sc_module_name& nm) : PYNQ
     M02_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M02_AXI_transactor_param_props.addString("PROTOCOL", "AXI4LITE");
     M02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_0_pl_clk0");
+    M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "PYNQ_Design_zynq_ultra_ps_e_0_1_pl_clk0");
 
     mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
   mp_m_axi_awaddr_converter_2 = new xsc::common::vector2vector_converter<40,120>("m_axi_awaddr_converter_2");

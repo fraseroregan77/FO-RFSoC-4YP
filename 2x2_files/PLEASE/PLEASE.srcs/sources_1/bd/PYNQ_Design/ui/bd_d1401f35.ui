@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-399,-117",
+   "Default View_TopLeft":"-285,-131",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
@@ -17,17 +17,17 @@ preplace inst proc_sys_reset_1 -pg 1 -lvl 2 -x 590 -y 100 -defaultsOSRD
 preplace inst axi_smc_1 -pg 1 -lvl 2 -x 590 -y 260 -defaultsOSRD
 preplace inst TX_ILA -pg 1 -lvl 3 -x 890 -y 370 -defaultsOSRD
 preplace inst Data_generation_0 -pg 1 -lvl 2 -x 590 -y 440 -defaultsOSRD
-preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 4 30 370 410 350 770 140 NJ
-preplace netloc usp_rf_data_converter_0_clk_dac0 1 0 3 20 360 400 530 790J
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 NJ 80 NJ
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 4 40 370 410 350 770 140 NJ
+preplace netloc usp_rf_data_converter_0_clk_dac0 1 0 3 30 360 400 530 790J
 preplace netloc xlconstant_0_dout 1 1 1 NJ 440
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 NJ 80 NJ
 preplace netloc DUT_data_in_0_m_axis 1 2 2 780 460 NJ
 preplace netloc axi_dma_M_AXIS_MM2S 1 1 2 390 340 NJ
 preplace netloc axi_dma_tx_M_AXI_MM2S 1 1 1 N 240
 preplace netloc axi_smc_1_M00_AXI 1 2 2 NJ 260 NJ
 preplace netloc ps8_0_axi_periph_M00_AXI 1 0 1 NJ 240
 levelinfo -pg 1 0 200 590 890 1030
-pagesize -pg 1 -db -bbox -sgen -170 0 1230 540
+pagesize -pg 1 -db -bbox -sgen -170 0 1250 540
 "
 }
 0

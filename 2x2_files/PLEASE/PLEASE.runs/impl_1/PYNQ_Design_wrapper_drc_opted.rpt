@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Fri Mar 21 14:29:19 2025
+| Date         : Wed Mar 26 12:28:44 2025
 | Host         : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command      : report_drc -file PYNQ_Design_wrapper_drc_opted.rpt -pb PYNQ_Design_wrapper_drc_opted.pb -rpx PYNQ_Design_wrapper_drc_opted.rpx
 | Design       : PYNQ_Design_wrapper
@@ -24,18 +24,30 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+--------+----------+------------------------+------------+
-| Rule   | Severity | Description            | Violations |
-+--------+----------+------------------------+------------+
-| DPOP-4 | Warning  | MREG Output pipelining | 1          |
-+--------+----------+------------------------+------------+
+             Violations found: 3
++-----------+----------+-------------------------------------+------------+
+| Rule      | Severity | Description                         | Violations |
++-----------+----------+-------------------------------------+------------+
+| DPOP-4    | Warning  | MREG Output pipelining              | 1          |
+| REQP-1677 | Advisory | enum_USE_MULT_NONE_connects_CEM_GND | 1          |
+| REQP-1679 | Advisory | enum_MREG_0_connects_CEM_GND        | 1          |
++-----------+----------+-------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 DPOP-4#1 Warning
 MREG Output pipelining  
-DSP PYNQ_Design_i/TX/DUT_data_in_0/U0/x16_bit_mod_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage PYNQ_Design_i/TX/DUT_data_in_0/U0/x16_bit_mod_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP PYNQ_Design_i/TX/Data_generation_0/U0/x16_bit_mod_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg multiplier stage PYNQ_Design_i/TX/Data_generation_0/U0/x16_bit_mod_struct/algorithm/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1677#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+PYNQ_Design_i/RX/Receiver_0/U0/x16_bit_demod_struct/algorithm/fir_compiler_7_2/x16_bit_demod_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e2.i_dsp48e2: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+PYNQ_Design_i/RX/Receiver_0/U0/x16_bit_demod_struct/algorithm/fir_compiler_7_2/x16_bit_demod_fir_compiler_v7_2_i0_instance/U0/i_synth/g_single_rate.i_single_rate/g_op_paths[0].g_combine.i_ext_mult/g_two_col_comb.i_gen_upper_bits/i_add_accum/g_dsp48.g_dsp48e2.i_dsp48e2: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
 Related violations: <none>
 
 

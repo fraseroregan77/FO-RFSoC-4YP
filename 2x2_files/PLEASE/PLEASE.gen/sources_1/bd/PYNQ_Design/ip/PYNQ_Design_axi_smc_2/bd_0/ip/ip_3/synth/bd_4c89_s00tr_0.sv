@@ -52,8 +52,8 @@
 
 (* X_CORE_INFO = "sc_transaction_regulator_v1_0_11_top,Vivado 2024.1" *)
 (* CHECK_LICENSE_TYPE = "bd_4c89_s00tr_0,sc_transaction_regulator_v1_0_11_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_4c89_s00tr_0,sc_transaction_regulator_v1_0_11_top,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_transaction_regulator,x_ipVersion=1.0,x_ipCoreRevision=11,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_IS_CASCADED=0,C_ENABLE_PIPELINING=0x1,C_NUM_READ_THREADS=1,C_NUM_WRITE_THREADS=1,C_MEP_IDENTIFIER_WIDTH=2,C_MEP_IDENTIFIER=2,C_SEP_ROUTE_WIDTH=1,C_RDATA_WIDTH=128,C_WDATA_WIDTH=128,C_S_ID_WIDTH=0,C_M_ID_WIDTH=2,C_ADDR_WIDTH=64,C_SUPPORTS_READ_DEADLOCK=\
-0,C_SUPPORTS_WRITE_DEADLOCK=1,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32,C_NUM_READ_OUTSTANDING=2,C_NUM_WRITE_OUTSTANDING=16,C_SINGLE_ISSUING=0}" *)
+(* CORE_GENERATION_INFO = "bd_4c89_s00tr_0,sc_transaction_regulator_v1_0_11_top,{x_ipProduct=Vivado 2024.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_transaction_regulator,x_ipVersion=1.0,x_ipCoreRevision=11,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_IS_CASCADED=0,C_ENABLE_PIPELINING=0x1,C_NUM_READ_THREADS=1,C_NUM_WRITE_THREADS=1,C_MEP_IDENTIFIER_WIDTH=2,C_MEP_IDENTIFIER=1,C_SEP_ROUTE_WIDTH=1,C_RDATA_WIDTH=128,C_WDATA_WIDTH=128,C_S_ID_WIDTH=0,C_M_ID_WIDTH=2,C_ADDR_WIDTH=64,C_SUPPORTS_READ_DEADLOCK=\
+0,C_SUPPORTS_WRITE_DEADLOCK=0,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32,C_NUM_READ_OUTSTANDING=2,C_NUM_WRITE_OUTSTANDING=16,C_SINGLE_ISSUING=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_4c89_s00tr_0 (
   aclk,
@@ -210,7 +210,7 @@ output wire m_axi_bready;
     .C_NUM_READ_THREADS(1),
     .C_NUM_WRITE_THREADS(1),
     .C_MEP_IDENTIFIER_WIDTH(2),
-    .C_MEP_IDENTIFIER(2),
+    .C_MEP_IDENTIFIER(1),
     .C_SEP_ROUTE_WIDTH(1),
     .C_RDATA_WIDTH(128),
     .C_WDATA_WIDTH(128),
@@ -218,14 +218,14 @@ output wire m_axi_bready;
     .C_M_ID_WIDTH(2),
     .C_ADDR_WIDTH(64),
     .C_SUPPORTS_READ_DEADLOCK(0),
-    .C_SUPPORTS_WRITE_DEADLOCK(1),
+    .C_SUPPORTS_WRITE_DEADLOCK(0),
     .C_READ_ACCEPTANCE(32),
     .C_WRITE_ACCEPTANCE(32),
     .C_NUM_READ_OUTSTANDING(2),
     .C_NUM_WRITE_OUTSTANDING(16),
     .C_SINGLE_ISSUING(0)
   ) inst (
-    .mep_identifier(2'H2),
+    .mep_identifier(2'H1),
     .aclk(aclk),
     .aclken(1'D1),
     .aresetn(aresetn),

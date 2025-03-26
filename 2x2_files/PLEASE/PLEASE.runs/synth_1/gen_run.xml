@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1742566273" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1742990667" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PYNQ_Design_wrapper.dcp">
   <File Type="PA-TCL" Name="PYNQ_Design_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PYNQ_Design_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="PYNQ_Design_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="PYNQ_Design_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="PYNQ_Design_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="PYNQ_Design_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="PYNQ_Design_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PYNQ_Design_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PYNQ_Design_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/PYNQ_Design/PYNQ_Design.bd">
