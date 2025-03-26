@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\vivado_project\vivado_project.runs\helloworld_usp_rf_data_converter_0_2_synth_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied
