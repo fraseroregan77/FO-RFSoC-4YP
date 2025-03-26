@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>User_Company</spirit:vendor>
   <spirit:library>customized_ip</spirit:library>
-  <spirit:name>PYNQ_Design_Data_generation_0_0</spirit:name>
+  <spirit:name>PYNQ_Design_DataGen_0_0</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -597,12 +597,12 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">PYNQ_Design_Data_generation_0_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">PYNQ_Design_DataGen_0_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
-      <xilinx:displayName>Data_generation</xilinx:displayName>
+      <xilinx:displayName>DataGen</xilinx:displayName>
       <xilinx:definitionSource>sysgen</xilinx:definitionSource>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
@@ -648,7 +648,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8f3b85bc"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f4a8354a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="90d6aacd"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9424fc71"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a8337775"/>
     </xilinx:packagingInfo>

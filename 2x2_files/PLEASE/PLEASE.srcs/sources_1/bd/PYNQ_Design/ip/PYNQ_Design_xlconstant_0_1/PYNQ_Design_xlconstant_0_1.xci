@@ -10,11 +10,11 @@
       "component_parameters": {
         "Component_Name": [ { "value": "PYNQ_Design_xlconstant_0_1", "resolve_type": "user", "usage": "all" } ],
         "CONST_WIDTH": [ { "value": "16", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "CONST_VAL": [ { "value": "63", "value_src": "user", "resolve_type": "user", "usage": "all" } ]
+        "CONST_VAL": [ { "value": "40", "value_src": "user", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "CONST_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "CONST_VAL": [ { "value": "0x003F", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
+        "CONST_VAL": [ { "value": "0x0028", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynquplusRFSOC" } ],

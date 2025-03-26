@@ -33,7 +33,7 @@
         "axi_dma_rx": "",
         "clk_wiz_0": "",
         "xlconstant_1": "",
-        "Receiver_0": ""
+        "Receiver_1": ""
       },
       "TX": {
         "xlconstant_0": "",
@@ -41,7 +41,7 @@
         "proc_sys_reset_1": "",
         "axi_smc_1": "",
         "TX_ILA": "",
-        "Data_generation_0": ""
+        "DataGen_0": ""
       },
       "LMK_Reset": "",
       "PS": ""
@@ -1191,26 +1191,26 @@
             "inst_hier_path": "RX/xlconstant_1",
             "parameters": {
               "CONST_VAL": {
-                "value": "63"
+                "value": "40"
               },
               "CONST_WIDTH": {
                 "value": "16"
               }
             }
           },
-          "Receiver_0": {
+          "Receiver_1": {
             "vlnv": "User_Company:VMC:Receiver:1.0",
             "ip_revision": "1",
-            "xci_name": "PYNQ_Design_Receiver_0_0",
-            "xci_path": "ip\\PYNQ_Design_Receiver_0_0\\PYNQ_Design_Receiver_0_0.xci",
-            "inst_hier_path": "RX/Receiver_0"
+            "xci_name": "PYNQ_Design_Receiver_1_0",
+            "xci_path": "ip\\PYNQ_Design_Receiver_1_0\\PYNQ_Design_Receiver_1_0.xci",
+            "inst_hier_path": "RX/Receiver_1"
           }
         },
         "interface_nets": {
           "DUT_0_m_axis": {
             "interface_ports": [
               "axi_dma_rx/S_AXIS_S2MM",
-              "Receiver_0/m_axis",
+              "Receiver_1/m_axis",
               "RX_ILA/SLOT_0_AXIS"
             ]
           },
@@ -1241,7 +1241,7 @@
           "usp_rf_data_converter_0_m00_axis": {
             "interface_ports": [
               "SLOT_1_AXIS",
-              "Receiver_0/s_axis",
+              "Receiver_1/s_axis",
               "RX_ILA/SLOT_1_AXIS"
             ],
             "hdl_attributes": {
@@ -1261,7 +1261,7 @@
               "axi_dma_rx/s_axi_lite_aclk",
               "axi_dma_rx/m_axi_s2mm_aclk",
               "axi_smc/aclk",
-              "Receiver_0/clk"
+              "Receiver_1/clk"
             ]
           },
           "clk_wiz_0_locked": {
@@ -1295,7 +1295,7 @@
           "xlconstant_1_dout": {
             "ports": [
               "xlconstant_1/dout",
-              "Receiver_0/step_size"
+              "Receiver_1/step_size"
             ]
           }
         }
@@ -1519,19 +1519,19 @@
               }
             }
           },
-          "Data_generation_0": {
-            "vlnv": "User_Company:VMC:Data_generation:1.0",
+          "DataGen_0": {
+            "vlnv": "User_Company:VMC:DataGen:1.0",
             "ip_revision": "1",
-            "xci_name": "PYNQ_Design_Data_generation_0_0",
-            "xci_path": "ip\\PYNQ_Design_Data_generation_0_0\\PYNQ_Design_Data_generation_0_0.xci",
-            "inst_hier_path": "TX/Data_generation_0"
+            "xci_name": "PYNQ_Design_DataGen_0_0",
+            "xci_path": "ip\\PYNQ_Design_DataGen_0_0\\PYNQ_Design_DataGen_0_0.xci",
+            "inst_hier_path": "TX/DataGen_0"
           }
         },
         "interface_nets": {
           "DUT_data_in_0_m_axis": {
             "interface_ports": [
               "SLOT_1_AXIS",
-              "Data_generation_0/m_axis",
+              "DataGen_0/m_axis",
               "TX_ILA/SLOT_1_AXIS"
             ],
             "hdl_attributes": {
@@ -1542,7 +1542,7 @@
           },
           "axi_dma_M_AXIS_MM2S": {
             "interface_ports": [
-              "Data_generation_0/s_axis",
+              "DataGen_0/s_axis",
               "axi_dma_tx/M_AXIS_MM2S",
               "TX_ILA/SLOT_0_AXIS"
             ],
@@ -1592,13 +1592,13 @@
               "proc_sys_reset_1/slowest_sync_clk",
               "axi_dma_tx/s_axi_lite_aclk",
               "axi_smc_1/aclk",
-              "Data_generation_0/clk"
+              "DataGen_0/clk"
             ]
           },
           "xlconstant_0_dout": {
             "ports": [
               "xlconstant_0/dout",
-              "Data_generation_0/mux_en"
+              "DataGen_0/mux_en"
             ]
           },
           "zynq_ultra_ps_e_0_pl_resetn0": {
@@ -1931,6 +1931,69 @@
           "rst_ps8_0_96M/ext_reset_in",
           "TX/ext_reset_in"
         ]
+      }
+    },
+    "addressing": {
+      "/RX/axi_dma_rx": {
+        "address_spaces": {
+          "Data_S2MM": {
+            "segments": {
+              "SEG_PS_HP0_DDR_LOW": {
+                "address_block": "/PS/SAXIGP2/HP0_DDR_LOW",
+                "offset": "0x0000000000000000",
+                "range": "2G"
+              },
+              "SEG_PS_HP0_LPS_OCM": {
+                "address_block": "/PS/SAXIGP2/HP0_LPS_OCM",
+                "offset": "0x00000000FF000000",
+                "range": "16M",
+                "is_excluded": "TRUE"
+              }
+            }
+          }
+        }
+      },
+      "/TX/axi_dma_tx": {
+        "address_spaces": {
+          "Data_MM2S": {
+            "segments": {
+              "SEG_PS_HP1_DDR_LOW": {
+                "address_block": "/PS/SAXIGP3/HP1_DDR_LOW",
+                "offset": "0x00000000",
+                "range": "2G"
+              },
+              "SEG_PS_HP1_LPS_OCM": {
+                "address_block": "/PS/SAXIGP3/HP1_LPS_OCM",
+                "offset": "0xFF000000",
+                "range": "16M",
+                "is_excluded": "TRUE"
+              }
+            }
+          }
+        }
+      },
+      "/PS": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
+              "SEG_RFDC_Reg": {
+                "address_block": "/RFDC/s_axi/Reg",
+                "offset": "0x0080000000",
+                "range": "256K"
+              },
+              "SEG_axi_dma_rx_Reg": {
+                "address_block": "/RX/axi_dma_rx/S_AXI_LITE/Reg",
+                "offset": "0x0080040000",
+                "range": "64K"
+              },
+              "SEG_axi_dma_tx_Reg": {
+                "address_block": "/TX/axi_dma_tx/S_AXI_LITE/Reg",
+                "offset": "0x0080050000",
+                "range": "64K"
+              }
+            }
+          }
+        }
       }
     }
   }

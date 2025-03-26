@@ -18,10 +18,14 @@
   <File Type="BITSTR-MMI" Name="PYNQ_Design_wrapper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="PYNQ_Design_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="PYNQ_Design_wrapper.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PYNQ_Design_wrapper_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="PYNQ_Design_wrapper.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="PYNQ_Design_wrapper_boot.pdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="PYNQ_Design_wrapper.npi"/>
   <File Type="OPT-DRC" Name="PYNQ_Design_wrapper_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="PYNQ_Design_wrapper.rbd"/>
   <File Type="OPT-HWDEF" Name="PYNQ_Design_wrapper.hwdef"/>
   <File Type="PLACE-IO" Name="PYNQ_Design_wrapper_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="PYNQ_Design_wrapper_utilization_placed.rpt"/>
@@ -55,17 +59,13 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PYNQ_Design_wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PYNQ_Design_wrapper_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PYNQ_Design_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PYNQ_Design_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="PYNQ_Design_wrapper_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PYNQ_Design_wrapper_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="PYNQ_Design_wrapper.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="PYNQ_Design_wrapper_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="PYNQ_Design_wrapper_pld.pdi"/>
   <File Type="RCFI_FILE" Name="PYNQ_Design_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="PYNQ_Design_wrapper.cfi"/>
   <File Type="RNPI_FILE" Name="PYNQ_Design_wrapper.rnpi"/>
-  <File Type="NPI_FILE" Name="PYNQ_Design_wrapper.npi"/>
-  <File Type="RBD_FILE" Name="PYNQ_Design_wrapper.rbd"/>
   <File Type="ROUTE-RQS" Name="PYNQ_Design_wrapper_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="PYNQ_Design_wrapper_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
