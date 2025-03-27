@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="DUT_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1743077264"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1743077264"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1743077264"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1743077261"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1743084810"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1743084810"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1743084810"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1743084806"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\DUT_bd.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

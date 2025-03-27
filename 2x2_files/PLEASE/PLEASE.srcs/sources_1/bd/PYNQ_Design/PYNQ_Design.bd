@@ -1475,10 +1475,10 @@
             "xci_path": "ip\\PYNQ_Design_Receiver_0_0\\PYNQ_Design_Receiver_0_0.xci",
             "inst_hier_path": "RX/Receiver_0",
             "interface_ports": {
-              "x16_bit_demod_s_axi": {
+              "x16_bit_demod_step_size_s_axi": {
                 "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
                 "mode": "Slave",
-                "memory_map_ref": "x16_bit_demod_s_axi"
+                "memory_map_ref": "x16_bit_demod_step_size_s_axi"
               }
             }
           }
@@ -1486,7 +1486,7 @@
         "interface_nets": {
           "Conn1": {
             "interface_ports": [
-              "Receiver_0/x16_bit_demod_s_axi",
+              "Receiver_0/x16_bit_demod_step_size_s_axi",
               "x16_bit_demod_s_axi"
             ]
           },
@@ -1542,9 +1542,9 @@
               "RX_ILA/clk",
               "axi_dma_rx/s_axi_lite_aclk",
               "axi_dma_rx/m_axi_s2mm_aclk",
-              "Receiver_0/clk",
               "axi_smc/aclk",
-              "proc_sys_reset_0/slowest_sync_clk"
+              "proc_sys_reset_0/slowest_sync_clk",
+              "Receiver_0/clk"
             ]
           },
           "clk_wiz_0_locked": {
@@ -1559,8 +1559,8 @@
               "peripheral_aresetn",
               "RX_ILA/resetn",
               "axi_dma_rx/axi_resetn",
-              "Receiver_0/x16_bit_demod_aresetn",
-              "axi_smc/aresetn"
+              "axi_smc/aresetn",
+              "Receiver_0/x16_bit_demod_aresetn"
             ]
           },
           "rst_ps8_0_96M_peripheral_aresetn": {
@@ -1870,8 +1870,8 @@
               "peripheral_aresetn",
               "TX_ILA/resetn",
               "axi_dma_tx/axi_resetn",
-              "Data_gen_0/x16_bit_mod_aresetn",
-              "axi_smc_1/aresetn"
+              "axi_smc_1/aresetn",
+              "Data_gen_0/x16_bit_mod_aresetn"
             ]
           },
           "usp_rf_data_converter_0_clk_dac0": {
@@ -1880,9 +1880,9 @@
               "axi_dma_tx/m_axi_mm2s_aclk",
               "TX_ILA/clk",
               "axi_dma_tx/s_axi_lite_aclk",
-              "Data_gen_0/clk",
               "axi_smc_1/aclk",
-              "proc_sys_reset_1/slowest_sync_clk"
+              "proc_sys_reset_1/slowest_sync_clk",
+              "Data_gen_0/clk"
             ]
           },
           "zynq_ultra_ps_e_0_pl_resetn0": {
@@ -2289,11 +2289,11 @@
                 "range": "256K"
               },
               "SEG_Receiver_0_reg0": {
-                "address_block": "/RX/Receiver_0/x16_bit_demod_s_axi/reg0",
+                "address_block": "/RX/Receiver_0/x16_bit_demod_step_size_s_axi/reg0",
                 "offset": "0x0080060000",
                 "range": "64K",
-                "offset_base_param": "C_X16_BIT_DEMOD_S_AXI_BASEADDR",
-                "offset_high_param": "C_X16_BIT_DEMOD_S_AXI_HIGHADDR"
+                "offset_base_param": "C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_BASEADDR",
+                "offset_high_param": "C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_HIGHADDR"
               },
               "SEG_axi_dma_rx_Reg": {
                 "address_block": "/RX/axi_dma_rx/S_AXI_LITE/Reg",

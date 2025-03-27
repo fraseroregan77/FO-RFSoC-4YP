@@ -1092,81 +1092,81 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity x16_bit_demod_axi_lite_interface is 
+entity x16_bit_demod_step_size_axi_lite_interface is 
     port(
         step_size : out std_logic_vector(15 downto 0);
         clk : out std_logic;
-        x16_bit_demod_aclk : in std_logic;
-        x16_bit_demod_aresetn : in std_logic;
-        x16_bit_demod_s_axi_awaddr : in std_logic;
-        x16_bit_demod_s_axi_awvalid : in std_logic;
-        x16_bit_demod_s_axi_awready : out std_logic;
-        x16_bit_demod_s_axi_wdata : in std_logic_vector(32-1 downto 0);
-        x16_bit_demod_s_axi_wstrb : in std_logic_vector(32/8-1 downto 0);
-        x16_bit_demod_s_axi_wvalid : in std_logic;
-        x16_bit_demod_s_axi_wready : out std_logic;
-        x16_bit_demod_s_axi_bresp : out std_logic_vector(1 downto 0);
-        x16_bit_demod_s_axi_bvalid : out std_logic;
-        x16_bit_demod_s_axi_bready : in std_logic;
-        x16_bit_demod_s_axi_araddr : in std_logic;
-        x16_bit_demod_s_axi_arvalid : in std_logic;
-        x16_bit_demod_s_axi_arready : out std_logic;
-        x16_bit_demod_s_axi_rdata : out std_logic_vector(32-1 downto 0);
-        x16_bit_demod_s_axi_rresp : out std_logic_vector(1 downto 0);
-        x16_bit_demod_s_axi_rvalid : out std_logic;
-        x16_bit_demod_s_axi_rready : in std_logic
+        x16_bit_demod_step_size_aclk : in std_logic;
+        x16_bit_demod_step_size_aresetn : in std_logic;
+        x16_bit_demod_step_size_s_axi_awaddr : in std_logic;
+        x16_bit_demod_step_size_s_axi_awvalid : in std_logic;
+        x16_bit_demod_step_size_s_axi_awready : out std_logic;
+        x16_bit_demod_step_size_s_axi_wdata : in std_logic_vector(32-1 downto 0);
+        x16_bit_demod_step_size_s_axi_wstrb : in std_logic_vector(32/8-1 downto 0);
+        x16_bit_demod_step_size_s_axi_wvalid : in std_logic;
+        x16_bit_demod_step_size_s_axi_wready : out std_logic;
+        x16_bit_demod_step_size_s_axi_bresp : out std_logic_vector(1 downto 0);
+        x16_bit_demod_step_size_s_axi_bvalid : out std_logic;
+        x16_bit_demod_step_size_s_axi_bready : in std_logic;
+        x16_bit_demod_step_size_s_axi_araddr : in std_logic;
+        x16_bit_demod_step_size_s_axi_arvalid : in std_logic;
+        x16_bit_demod_step_size_s_axi_arready : out std_logic;
+        x16_bit_demod_step_size_s_axi_rdata : out std_logic_vector(32-1 downto 0);
+        x16_bit_demod_step_size_s_axi_rresp : out std_logic_vector(1 downto 0);
+        x16_bit_demod_step_size_s_axi_rvalid : out std_logic;
+        x16_bit_demod_step_size_s_axi_rready : in std_logic
     );
-end x16_bit_demod_axi_lite_interface;
-architecture structural of x16_bit_demod_axi_lite_interface is 
-component x16_bit_demod_axi_lite_interface_verilog is
+end x16_bit_demod_step_size_axi_lite_interface;
+architecture structural of x16_bit_demod_step_size_axi_lite_interface is 
+component x16_bit_demod_step_size_axi_lite_interface_verilog is
     port(
         step_size : out std_logic_vector(15 downto 0);
         clk : out std_logic;
-        x16_bit_demod_aclk : in std_logic;
-        x16_bit_demod_aresetn : in std_logic;
-        x16_bit_demod_s_axi_awaddr : in std_logic;
-        x16_bit_demod_s_axi_awvalid : in std_logic;
-        x16_bit_demod_s_axi_awready : out std_logic;
-        x16_bit_demod_s_axi_wdata : in std_logic_vector(32-1 downto 0);
-        x16_bit_demod_s_axi_wstrb : in std_logic_vector(32/8-1 downto 0);
-        x16_bit_demod_s_axi_wvalid : in std_logic;
-        x16_bit_demod_s_axi_wready : out std_logic;
-        x16_bit_demod_s_axi_bresp : out std_logic_vector(1 downto 0);
-        x16_bit_demod_s_axi_bvalid : out std_logic;
-        x16_bit_demod_s_axi_bready : in std_logic;
-        x16_bit_demod_s_axi_araddr : in std_logic;
-        x16_bit_demod_s_axi_arvalid : in std_logic;
-        x16_bit_demod_s_axi_arready : out std_logic;
-        x16_bit_demod_s_axi_rdata : out std_logic_vector(32-1 downto 0);
-        x16_bit_demod_s_axi_rresp : out std_logic_vector(1 downto 0);
-        x16_bit_demod_s_axi_rvalid : out std_logic;
-        x16_bit_demod_s_axi_rready : in std_logic
+        x16_bit_demod_step_size_aclk : in std_logic;
+        x16_bit_demod_step_size_aresetn : in std_logic;
+        x16_bit_demod_step_size_s_axi_awaddr : in std_logic;
+        x16_bit_demod_step_size_s_axi_awvalid : in std_logic;
+        x16_bit_demod_step_size_s_axi_awready : out std_logic;
+        x16_bit_demod_step_size_s_axi_wdata : in std_logic_vector(32-1 downto 0);
+        x16_bit_demod_step_size_s_axi_wstrb : in std_logic_vector(32/8-1 downto 0);
+        x16_bit_demod_step_size_s_axi_wvalid : in std_logic;
+        x16_bit_demod_step_size_s_axi_wready : out std_logic;
+        x16_bit_demod_step_size_s_axi_bresp : out std_logic_vector(1 downto 0);
+        x16_bit_demod_step_size_s_axi_bvalid : out std_logic;
+        x16_bit_demod_step_size_s_axi_bready : in std_logic;
+        x16_bit_demod_step_size_s_axi_araddr : in std_logic;
+        x16_bit_demod_step_size_s_axi_arvalid : in std_logic;
+        x16_bit_demod_step_size_s_axi_arready : out std_logic;
+        x16_bit_demod_step_size_s_axi_rdata : out std_logic_vector(32-1 downto 0);
+        x16_bit_demod_step_size_s_axi_rresp : out std_logic_vector(1 downto 0);
+        x16_bit_demod_step_size_s_axi_rvalid : out std_logic;
+        x16_bit_demod_step_size_s_axi_rready : in std_logic
     );
 end component;
 begin
-inst : x16_bit_demod_axi_lite_interface_verilog
+inst : x16_bit_demod_step_size_axi_lite_interface_verilog
     port map(
     step_size => step_size,
     clk => clk,
-    x16_bit_demod_aclk => x16_bit_demod_aclk,
-    x16_bit_demod_aresetn => x16_bit_demod_aresetn,
-    x16_bit_demod_s_axi_awaddr => x16_bit_demod_s_axi_awaddr,
-    x16_bit_demod_s_axi_awvalid => x16_bit_demod_s_axi_awvalid,
-    x16_bit_demod_s_axi_awready => x16_bit_demod_s_axi_awready,
-    x16_bit_demod_s_axi_wdata => x16_bit_demod_s_axi_wdata,
-    x16_bit_demod_s_axi_wstrb => x16_bit_demod_s_axi_wstrb,
-    x16_bit_demod_s_axi_wvalid => x16_bit_demod_s_axi_wvalid,
-    x16_bit_demod_s_axi_wready => x16_bit_demod_s_axi_wready,
-    x16_bit_demod_s_axi_bresp => x16_bit_demod_s_axi_bresp,
-    x16_bit_demod_s_axi_bvalid => x16_bit_demod_s_axi_bvalid,
-    x16_bit_demod_s_axi_bready => x16_bit_demod_s_axi_bready,
-    x16_bit_demod_s_axi_araddr => x16_bit_demod_s_axi_araddr,
-    x16_bit_demod_s_axi_arvalid => x16_bit_demod_s_axi_arvalid,
-    x16_bit_demod_s_axi_arready => x16_bit_demod_s_axi_arready,
-    x16_bit_demod_s_axi_rdata => x16_bit_demod_s_axi_rdata,
-    x16_bit_demod_s_axi_rresp => x16_bit_demod_s_axi_rresp,
-    x16_bit_demod_s_axi_rvalid => x16_bit_demod_s_axi_rvalid,
-    x16_bit_demod_s_axi_rready => x16_bit_demod_s_axi_rready
+    x16_bit_demod_step_size_aclk => x16_bit_demod_step_size_aclk,
+    x16_bit_demod_step_size_aresetn => x16_bit_demod_step_size_aresetn,
+    x16_bit_demod_step_size_s_axi_awaddr => x16_bit_demod_step_size_s_axi_awaddr,
+    x16_bit_demod_step_size_s_axi_awvalid => x16_bit_demod_step_size_s_axi_awvalid,
+    x16_bit_demod_step_size_s_axi_awready => x16_bit_demod_step_size_s_axi_awready,
+    x16_bit_demod_step_size_s_axi_wdata => x16_bit_demod_step_size_s_axi_wdata,
+    x16_bit_demod_step_size_s_axi_wstrb => x16_bit_demod_step_size_s_axi_wstrb,
+    x16_bit_demod_step_size_s_axi_wvalid => x16_bit_demod_step_size_s_axi_wvalid,
+    x16_bit_demod_step_size_s_axi_wready => x16_bit_demod_step_size_s_axi_wready,
+    x16_bit_demod_step_size_s_axi_bresp => x16_bit_demod_step_size_s_axi_bresp,
+    x16_bit_demod_step_size_s_axi_bvalid => x16_bit_demod_step_size_s_axi_bvalid,
+    x16_bit_demod_step_size_s_axi_bready => x16_bit_demod_step_size_s_axi_bready,
+    x16_bit_demod_step_size_s_axi_araddr => x16_bit_demod_step_size_s_axi_araddr,
+    x16_bit_demod_step_size_s_axi_arvalid => x16_bit_demod_step_size_s_axi_arvalid,
+    x16_bit_demod_step_size_s_axi_arready => x16_bit_demod_step_size_s_axi_arready,
+    x16_bit_demod_step_size_s_axi_rdata => x16_bit_demod_step_size_s_axi_rdata,
+    x16_bit_demod_step_size_s_axi_rresp => x16_bit_demod_step_size_s_axi_rresp,
+    x16_bit_demod_step_size_s_axi_rvalid => x16_bit_demod_step_size_s_axi_rvalid,
+    x16_bit_demod_step_size_s_axi_rready => x16_bit_demod_step_size_s_axi_rready
 );
 end structural;
 library xil_defaultlib;

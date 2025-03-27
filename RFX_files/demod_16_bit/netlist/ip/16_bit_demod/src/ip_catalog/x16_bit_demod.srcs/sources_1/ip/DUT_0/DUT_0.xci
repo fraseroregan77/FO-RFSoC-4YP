@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "DUT_0",
     "component_reference": "User_Company:VMC:DUT:1.0",
-    "ip_revision": "373982996",
+    "ip_revision": "373991877",
     "gen_directory": "../../../../x16_bit_demod.gen/sources_1/ip/DUT_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "373982996" } ],
+        "IPREVISION": [ { "value": "373991877" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../x16_bit_demod.gen/sources_1/ip/DUT_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -42,27 +42,27 @@
         "m_axis_tready": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "1" } ],
         "clk": [ { "direction": "in" } ],
         "x16_bit_demod_aresetn": [ { "direction": "in" } ],
-        "x16_bit_demod_s_axi_awaddr": [ { "direction": "in", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_awvalid": [ { "direction": "in", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_wdata": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_wstrb": [ { "direction": "in", "size_left": "3", "size_right": "0", "driver_value": "1" } ],
-        "x16_bit_demod_s_axi_wvalid": [ { "direction": "in", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_bready": [ { "direction": "in", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_araddr": [ { "direction": "in", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_arvalid": [ { "direction": "in", "driver_value": "0" } ],
-        "x16_bit_demod_s_axi_rready": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_awaddr": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_awvalid": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_wdata": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_wstrb": [ { "direction": "in", "size_left": "3", "size_right": "0", "driver_value": "1" } ],
+        "x16_bit_demod_step_size_s_axi_wvalid": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_bready": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_araddr": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_arvalid": [ { "direction": "in", "driver_value": "0" } ],
+        "x16_bit_demod_step_size_s_axi_rready": [ { "direction": "in", "driver_value": "0" } ],
         "m_axis_tvalid": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "m_axis_tdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "m_axis_tlast": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "s_axis_tready": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
-        "x16_bit_demod_s_axi_awready": [ { "direction": "out" } ],
-        "x16_bit_demod_s_axi_wready": [ { "direction": "out" } ],
-        "x16_bit_demod_s_axi_bresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
-        "x16_bit_demod_s_axi_bvalid": [ { "direction": "out" } ],
-        "x16_bit_demod_s_axi_arready": [ { "direction": "out" } ],
-        "x16_bit_demod_s_axi_rdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
-        "x16_bit_demod_s_axi_rresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
-        "x16_bit_demod_s_axi_rvalid": [ { "direction": "out" } ]
+        "x16_bit_demod_step_size_s_axi_awready": [ { "direction": "out" } ],
+        "x16_bit_demod_step_size_s_axi_wready": [ { "direction": "out" } ],
+        "x16_bit_demod_step_size_s_axi_bresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "x16_bit_demod_step_size_s_axi_bvalid": [ { "direction": "out" } ],
+        "x16_bit_demod_step_size_s_axi_arready": [ { "direction": "out" } ],
+        "x16_bit_demod_step_size_s_axi_rdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "x16_bit_demod_step_size_s_axi_rresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "x16_bit_demod_step_size_s_axi_rvalid": [ { "direction": "out" } ]
       },
       "interfaces": {
         "m_axis": {
@@ -117,11 +117,11 @@
             "TREADY": [ { "physical_name": "s_axis_tready" } ]
           }
         },
-        "x16_bit_demod_s_axi": {
+        "x16_bit_demod_step_size_s_axi": {
           "vlnv": "xilinx.com:interface:aximm:1.0",
           "abstraction_type": "xilinx.com:interface:aximm_rtl:1.0",
           "mode": "slave",
-          "memory_map_ref": "x16_bit_demod_s_axi",
+          "memory_map_ref": "x16_bit_demod_step_size_s_axi",
           "parameters": {
             "DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PROTOCOL": [ { "value": "AXI4", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
@@ -156,23 +156,23 @@
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
           },
           "port_maps": {
-            "AWADDR": [ { "physical_name": "x16_bit_demod_s_axi_awaddr" } ],
-            "AWVALID": [ { "physical_name": "x16_bit_demod_s_axi_awvalid" } ],
-            "AWREADY": [ { "physical_name": "x16_bit_demod_s_axi_awready" } ],
-            "WDATA": [ { "physical_name": "x16_bit_demod_s_axi_wdata" } ],
-            "WSTRB": [ { "physical_name": "x16_bit_demod_s_axi_wstrb" } ],
-            "WVALID": [ { "physical_name": "x16_bit_demod_s_axi_wvalid" } ],
-            "WREADY": [ { "physical_name": "x16_bit_demod_s_axi_wready" } ],
-            "BRESP": [ { "physical_name": "x16_bit_demod_s_axi_bresp" } ],
-            "BVALID": [ { "physical_name": "x16_bit_demod_s_axi_bvalid" } ],
-            "BREADY": [ { "physical_name": "x16_bit_demod_s_axi_bready" } ],
-            "ARADDR": [ { "physical_name": "x16_bit_demod_s_axi_araddr" } ],
-            "ARVALID": [ { "physical_name": "x16_bit_demod_s_axi_arvalid" } ],
-            "ARREADY": [ { "physical_name": "x16_bit_demod_s_axi_arready" } ],
-            "RDATA": [ { "physical_name": "x16_bit_demod_s_axi_rdata" } ],
-            "RRESP": [ { "physical_name": "x16_bit_demod_s_axi_rresp" } ],
-            "RVALID": [ { "physical_name": "x16_bit_demod_s_axi_rvalid" } ],
-            "RREADY": [ { "physical_name": "x16_bit_demod_s_axi_rready" } ]
+            "AWADDR": [ { "physical_name": "x16_bit_demod_step_size_s_axi_awaddr" } ],
+            "AWVALID": [ { "physical_name": "x16_bit_demod_step_size_s_axi_awvalid" } ],
+            "AWREADY": [ { "physical_name": "x16_bit_demod_step_size_s_axi_awready" } ],
+            "WDATA": [ { "physical_name": "x16_bit_demod_step_size_s_axi_wdata" } ],
+            "WSTRB": [ { "physical_name": "x16_bit_demod_step_size_s_axi_wstrb" } ],
+            "WVALID": [ { "physical_name": "x16_bit_demod_step_size_s_axi_wvalid" } ],
+            "WREADY": [ { "physical_name": "x16_bit_demod_step_size_s_axi_wready" } ],
+            "BRESP": [ { "physical_name": "x16_bit_demod_step_size_s_axi_bresp" } ],
+            "BVALID": [ { "physical_name": "x16_bit_demod_step_size_s_axi_bvalid" } ],
+            "BREADY": [ { "physical_name": "x16_bit_demod_step_size_s_axi_bready" } ],
+            "ARADDR": [ { "physical_name": "x16_bit_demod_step_size_s_axi_araddr" } ],
+            "ARVALID": [ { "physical_name": "x16_bit_demod_step_size_s_axi_arvalid" } ],
+            "ARREADY": [ { "physical_name": "x16_bit_demod_step_size_s_axi_arready" } ],
+            "RDATA": [ { "physical_name": "x16_bit_demod_step_size_s_axi_rdata" } ],
+            "RRESP": [ { "physical_name": "x16_bit_demod_step_size_s_axi_rresp" } ],
+            "RVALID": [ { "physical_name": "x16_bit_demod_step_size_s_axi_rvalid" } ],
+            "RREADY": [ { "physical_name": "x16_bit_demod_step_size_s_axi_rready" } ]
           }
         },
         "clk": {
@@ -180,7 +180,7 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "ASSOCIATED_BUSIF": [ { "value": "x16_bit_demod_s_axi:m_axis:s_axis", "value_src": "constant", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "x16_bit_demod_step_size_s_axi:m_axis:s_axis", "value_src": "constant", "usage": "all" } ],
             "ASSOCIATED_RESET": [ { "value": "x16_bit_demod_aresetn", "value_src": "constant", "usage": "all" } ],
             "FREQ_HZ": [ { "value": "100000000", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -207,8 +207,8 @@
         }
       },
       "memory_maps": {
-        "x16_bit_demod_s_axi": {
-          "display_name": "x16_bit_demod_s_axi",
+        "x16_bit_demod_step_size_s_axi": {
+          "display_name": "x16_bit_demod_step_size_s_axi",
           "address_blocks": {
             "reg0": {
               "base_address": "0x0",
@@ -216,8 +216,8 @@
               "display_name": "reg0",
               "usage": "register",
               "parameters": {
-                "OFFSET_BASE_PARAM": [ { "value": "C_X16_BIT_DEMOD_S_AXI_BASEADDR" } ],
-                "OFFSET_HIGH_PARAM": [ { "value": "C_X16_BIT_DEMOD_S_AXI_HIGHADDR" } ]
+                "OFFSET_BASE_PARAM": [ { "value": "C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_BASEADDR" } ],
+                "OFFSET_HIGH_PARAM": [ { "value": "C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_HIGHADDR" } ]
               }
             }
           }

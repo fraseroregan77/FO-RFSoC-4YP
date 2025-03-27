@@ -238,15 +238,15 @@
     "components": {
       "DUT_1": {
         "vlnv": "User_Company:VMC:DUT:1.0",
-        "ip_revision": "373982996",
+        "ip_revision": "373991877",
         "xci_name": "DUT_bd_DUT_1_0",
         "xci_path": "ip\\DUT_bd_DUT_1_0\\DUT_bd_DUT_1_0.xci",
         "inst_hier_path": "DUT_1",
         "interface_ports": {
-          "x16_bit_demod_s_axi": {
+          "x16_bit_demod_step_size_s_axi": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "mode": "Slave",
-            "memory_map_ref": "x16_bit_demod_s_axi"
+            "memory_map_ref": "x16_bit_demod_step_size_s_axi"
           }
         }
       },
@@ -707,7 +707,7 @@
       "microblaze_1_axi_periph_M00_AXI": {
         "interface_ports": [
           "microblaze_1_axi_periph/M00_AXI",
-          "DUT_1/x16_bit_demod_s_axi"
+          "DUT_1/x16_bit_demod_step_size_s_axi"
         ]
       },
       "microblaze_1_debug": {
@@ -795,11 +795,11 @@
           "Data": {
             "segments": {
               "SEG_DUT_1_reg0": {
-                "address_block": "/DUT_1/x16_bit_demod_s_axi/reg0",
+                "address_block": "/DUT_1/x16_bit_demod_step_size_s_axi/reg0",
                 "offset": "0x00010000",
                 "range": "64K",
-                "offset_base_param": "C_X16_BIT_DEMOD_S_AXI_BASEADDR",
-                "offset_high_param": "C_X16_BIT_DEMOD_S_AXI_HIGHADDR"
+                "offset_base_param": "C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_BASEADDR",
+                "offset_high_param": "C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_HIGHADDR"
               },
               "SEG_dlmb_bram_if_cntlr_Mem": {
                 "address_block": "/microblaze_1_local_memory/dlmb_bram_if_cntlr/SLMB/Mem",

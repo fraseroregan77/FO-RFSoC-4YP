@@ -238,7 +238,7 @@
     "components": {
       "DUT_1": {
         "vlnv": "User_Company:VMC:DUT:1.0",
-        "ip_revision": "373982738",
+        "ip_revision": "373990248",
         "xci_name": "DUT_bd_DUT_1_0",
         "xci_path": "ip\\DUT_bd_DUT_1_0\\DUT_bd_DUT_1_0.xci",
         "inst_hier_path": "DUT_1",

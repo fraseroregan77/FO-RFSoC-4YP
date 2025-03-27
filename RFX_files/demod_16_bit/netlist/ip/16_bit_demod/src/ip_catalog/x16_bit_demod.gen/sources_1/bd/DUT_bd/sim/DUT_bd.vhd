@@ -2,8 +2,8 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
---Date        : Thu Mar 27 12:12:26 2025
---Host        : EEE-R448-31 running 64-bit major release  (build 9200)
+--Date        : Thu Mar 27 14:40:21 2025
+--Host        : EEE-R448-32 running 64-bit major release  (build 9200)
 --Command     : generate_target DUT_bd.bd
 --Design      : DUT_bd
 --Purpose     : IP block netlist
@@ -869,27 +869,27 @@ architecture STRUCTURE of DUT_bd is
     m_axis_tready : in STD_LOGIC_VECTOR ( 0 to 0 );
     clk : in STD_LOGIC;
     x16_bit_demod_aresetn : in STD_LOGIC;
-    x16_bit_demod_s_axi_awaddr : in STD_LOGIC;
-    x16_bit_demod_s_axi_awvalid : in STD_LOGIC;
-    x16_bit_demod_s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    x16_bit_demod_s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    x16_bit_demod_s_axi_wvalid : in STD_LOGIC;
-    x16_bit_demod_s_axi_bready : in STD_LOGIC;
-    x16_bit_demod_s_axi_araddr : in STD_LOGIC;
-    x16_bit_demod_s_axi_arvalid : in STD_LOGIC;
-    x16_bit_demod_s_axi_rready : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_awaddr : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_awvalid : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    x16_bit_demod_step_size_s_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    x16_bit_demod_step_size_s_axi_wvalid : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_bready : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_araddr : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_arvalid : in STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_rready : in STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_tlast : out STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tready : out STD_LOGIC_VECTOR ( 0 to 0 );
-    x16_bit_demod_s_axi_awready : out STD_LOGIC;
-    x16_bit_demod_s_axi_wready : out STD_LOGIC;
-    x16_bit_demod_s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    x16_bit_demod_s_axi_bvalid : out STD_LOGIC;
-    x16_bit_demod_s_axi_arready : out STD_LOGIC;
-    x16_bit_demod_s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    x16_bit_demod_s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    x16_bit_demod_s_axi_rvalid : out STD_LOGIC
+    x16_bit_demod_step_size_s_axi_awready : out STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_wready : out STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    x16_bit_demod_step_size_s_axi_bvalid : out STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_arready : out STD_LOGIC;
+    x16_bit_demod_step_size_s_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    x16_bit_demod_step_size_s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    x16_bit_demod_step_size_s_axi_rvalid : out STD_LOGIC
   );
   end component DUT_bd_DUT_1_0;
   component DUT_bd_microblaze_1_0 is
@@ -1114,23 +1114,23 @@ DUT_1: component DUT_bd_DUT_1_0
       s_axis_tready(0) => s_axis_1_TREADY(0),
       s_axis_tvalid(0) => s_axis_1_TVALID(0),
       x16_bit_demod_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
-      x16_bit_demod_s_axi_araddr => microblaze_1_axi_periph_M00_AXI_ARADDR(0),
-      x16_bit_demod_s_axi_arready => microblaze_1_axi_periph_M00_AXI_ARREADY,
-      x16_bit_demod_s_axi_arvalid => microblaze_1_axi_periph_M00_AXI_ARVALID,
-      x16_bit_demod_s_axi_awaddr => microblaze_1_axi_periph_M00_AXI_AWADDR(0),
-      x16_bit_demod_s_axi_awready => microblaze_1_axi_periph_M00_AXI_AWREADY,
-      x16_bit_demod_s_axi_awvalid => microblaze_1_axi_periph_M00_AXI_AWVALID,
-      x16_bit_demod_s_axi_bready => microblaze_1_axi_periph_M00_AXI_BREADY,
-      x16_bit_demod_s_axi_bresp(1 downto 0) => microblaze_1_axi_periph_M00_AXI_BRESP(1 downto 0),
-      x16_bit_demod_s_axi_bvalid => microblaze_1_axi_periph_M00_AXI_BVALID,
-      x16_bit_demod_s_axi_rdata(31 downto 0) => microblaze_1_axi_periph_M00_AXI_RDATA(31 downto 0),
-      x16_bit_demod_s_axi_rready => microblaze_1_axi_periph_M00_AXI_RREADY,
-      x16_bit_demod_s_axi_rresp(1 downto 0) => microblaze_1_axi_periph_M00_AXI_RRESP(1 downto 0),
-      x16_bit_demod_s_axi_rvalid => microblaze_1_axi_periph_M00_AXI_RVALID,
-      x16_bit_demod_s_axi_wdata(31 downto 0) => microblaze_1_axi_periph_M00_AXI_WDATA(31 downto 0),
-      x16_bit_demod_s_axi_wready => microblaze_1_axi_periph_M00_AXI_WREADY,
-      x16_bit_demod_s_axi_wstrb(3 downto 0) => microblaze_1_axi_periph_M00_AXI_WSTRB(3 downto 0),
-      x16_bit_demod_s_axi_wvalid => microblaze_1_axi_periph_M00_AXI_WVALID
+      x16_bit_demod_step_size_s_axi_araddr => microblaze_1_axi_periph_M00_AXI_ARADDR(0),
+      x16_bit_demod_step_size_s_axi_arready => microblaze_1_axi_periph_M00_AXI_ARREADY,
+      x16_bit_demod_step_size_s_axi_arvalid => microblaze_1_axi_periph_M00_AXI_ARVALID,
+      x16_bit_demod_step_size_s_axi_awaddr => microblaze_1_axi_periph_M00_AXI_AWADDR(0),
+      x16_bit_demod_step_size_s_axi_awready => microblaze_1_axi_periph_M00_AXI_AWREADY,
+      x16_bit_demod_step_size_s_axi_awvalid => microblaze_1_axi_periph_M00_AXI_AWVALID,
+      x16_bit_demod_step_size_s_axi_bready => microblaze_1_axi_periph_M00_AXI_BREADY,
+      x16_bit_demod_step_size_s_axi_bresp(1 downto 0) => microblaze_1_axi_periph_M00_AXI_BRESP(1 downto 0),
+      x16_bit_demod_step_size_s_axi_bvalid => microblaze_1_axi_periph_M00_AXI_BVALID,
+      x16_bit_demod_step_size_s_axi_rdata(31 downto 0) => microblaze_1_axi_periph_M00_AXI_RDATA(31 downto 0),
+      x16_bit_demod_step_size_s_axi_rready => microblaze_1_axi_periph_M00_AXI_RREADY,
+      x16_bit_demod_step_size_s_axi_rresp(1 downto 0) => microblaze_1_axi_periph_M00_AXI_RRESP(1 downto 0),
+      x16_bit_demod_step_size_s_axi_rvalid => microblaze_1_axi_periph_M00_AXI_RVALID,
+      x16_bit_demod_step_size_s_axi_wdata(31 downto 0) => microblaze_1_axi_periph_M00_AXI_WDATA(31 downto 0),
+      x16_bit_demod_step_size_s_axi_wready => microblaze_1_axi_periph_M00_AXI_WREADY,
+      x16_bit_demod_step_size_s_axi_wstrb(3 downto 0) => microblaze_1_axi_periph_M00_AXI_WSTRB(3 downto 0),
+      x16_bit_demod_step_size_s_axi_wvalid => microblaze_1_axi_periph_M00_AXI_WVALID
     );
 clk_wiz_1: component DUT_bd_clk_wiz_1_0
      port map (

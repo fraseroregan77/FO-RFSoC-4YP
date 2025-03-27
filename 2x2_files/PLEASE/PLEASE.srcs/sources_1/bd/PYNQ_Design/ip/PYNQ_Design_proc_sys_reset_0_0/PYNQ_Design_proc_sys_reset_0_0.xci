@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "PYNQ_Design_proc_sys_reset_0_0",
-    "cell_name": "proc_sys_reset_0",
+    "cell_name": "RX/proc_sys_reset_0",
     "component_reference": "xilinx.com:ip:proc_sys_reset:5.0",
     "ip_revision": "15",
     "gen_directory": "../../../../../../PLEASE.gen/sources_1/bd/PYNQ_Design/ip/PYNQ_Design_proc_sys_reset_0_0",

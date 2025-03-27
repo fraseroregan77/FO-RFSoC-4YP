@@ -30,7 +30,7 @@ typedef uint32_t u32;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 x16_bit_demod_BaseAddress;
+    u32 x16_bit_demod_step_size_BaseAddress;
 } x16_bit_demod_Config;
 #endif
 /**
@@ -40,7 +40,7 @@ typedef struct {
 * API functions.
 */
 typedef struct {
-    u32 x16_bit_demod_BaseAddress;
+    u32 x16_bit_demod_step_size_BaseAddress;
     u32 IsReady;
 } x16_bit_demod;
 /***************** Macros (Inline Functions) Definitions *********************/

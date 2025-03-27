@@ -1,6 +1,168 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 14:42:14 2025
+| Host         : EEE-R448-32 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_Receiver_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of PYNQ_Design_Receiver_0_0 (User_Company:VMC:Receiver:1.0 (Rev. 1)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'PYNQ_Design_Receiver_0_0'.
+
+
+-Upgrade has removed interface 'x16_bit_demod_s_axi'
+
+-Upgrade has added interface 'x16_bit_demod_step_size_s_axi' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'PYNQ_Design_Receiver_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_araddr'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_arready'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_arvalid'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_awaddr'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_awready'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_awvalid'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_bready'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_bresp'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_bvalid'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_rdata'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_rready'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_rresp'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_rvalid'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_wdata'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_wready'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_wstrb'
+
+-Upgrade has removed port 'x16_bit_demod_s_axi_wvalid'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_araddr'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_arready'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_arvalid'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_awaddr'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_awready'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_awvalid'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_bready'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_bresp'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_bvalid'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_rdata'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_rready'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_rresp'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_rvalid'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_wdata'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_wready'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_wstrb'
+
+-Upgrade has added port 'x16_bit_demod_step_size_s_axi_wvalid'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'PYNQ_Design_Receiver_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 'x16_bit_demod_s_axi/reg0'
+
+-Upgrade has added address block 'x16_bit_demod_step_size_s_axi/reg0'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 14:32:28 2025
+| Host         : EEE-R448-32 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_Receiver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PYNQ_Design_Receiver_0_0 (User_Company:VMC:Receiver:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 14:32:28 2025
+| Host         : EEE-R448-32 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_Data_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PYNQ_Design_Data_gen_0_0 (User_Company:VMC:Data_gen:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
 | Date         : Thu Mar 27 12:36:12 2025
 | Host         : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

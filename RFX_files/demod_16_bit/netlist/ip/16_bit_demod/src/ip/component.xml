@@ -100,11 +100,11 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>x16_bit_demod_s_axi</spirit:name>
+      <spirit:name>x16_bit_demod_step_size_s_axi</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
       <spirit:slave>
-        <spirit:memoryMapRef spirit:memoryMapRef="x16_bit_demod_s_axi"/>
+        <spirit:memoryMapRef spirit:memoryMapRef="x16_bit_demod_step_size_s_axi"/>
       </spirit:slave>
       <spirit:portMaps>
         <spirit:portMap>
@@ -112,7 +112,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>AWADDR</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_awaddr</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_awaddr</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -120,7 +120,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>AWVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_awvalid</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_awvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -128,7 +128,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>AWREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_awready</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_awready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -136,7 +136,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_wdata</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_wdata</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -144,7 +144,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WSTRB</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_wstrb</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_wstrb</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -152,7 +152,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_wvalid</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_wvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -160,7 +160,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>WREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_wready</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_wready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -168,7 +168,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>BRESP</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_bresp</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_bresp</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -176,7 +176,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>BVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_bvalid</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_bvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -184,7 +184,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>BREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_bready</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_bready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -192,7 +192,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>ARADDR</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_araddr</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_araddr</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -200,7 +200,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>ARVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_arvalid</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_arvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -208,7 +208,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>ARREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_arready</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_arready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -216,7 +216,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RDATA</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_rdata</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_rdata</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -224,7 +224,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RRESP</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_rresp</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_rresp</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -232,7 +232,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RVALID</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_rvalid</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_rvalid</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -240,7 +240,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
             <spirit:name>RREADY</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>x16_bit_demod_s_axi_rready</spirit:name>
+            <spirit:name>x16_bit_demod_step_size_s_axi_rready</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -263,7 +263,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">x16_bit_demod_s_axi:m_axis:s_axis</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">x16_bit_demod_step_size_s_axi:m_axis:s_axis</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>ASSOCIATED_RESET</spirit:name>
@@ -296,8 +296,8 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
   </spirit:busInterfaces>
   <spirit:memoryMaps>
     <spirit:memoryMap>
-      <spirit:name>x16_bit_demod_s_axi</spirit:name>
-      <spirit:displayName>x16_bit_demod_s_axi</spirit:displayName>
+      <spirit:name>x16_bit_demod_step_size_s_axi</spirit:name>
+      <spirit:displayName>x16_bit_demod_step_size_s_axi</spirit:displayName>
       <spirit:addressBlock>
         <spirit:name>reg0</spirit:name>
         <spirit:displayName>reg0</spirit:displayName>
@@ -308,11 +308,11 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>OFFSET_BASE_PARAM</spirit:name>
-            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.X16_BIT_DEMOD_S_AXI.REG0.OFFSET_BASE_PARAM">C_X16_BIT_DEMOD_S_AXI_BASEADDR</spirit:value>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.X16_BIT_DEMOD_STEP_SIZE_S_AXI.REG0.OFFSET_BASE_PARAM">C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_BASEADDR</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
-            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.X16_BIT_DEMOD_S_AXI.REG0.OFFSET_HIGH_PARAM">C_X16_BIT_DEMOD_S_AXI_HIGHADDR</spirit:value>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.X16_BIT_DEMOD_STEP_SIZE_S_AXI.REG0.OFFSET_HIGH_PARAM">C_X16_BIT_DEMOD_STEP_SIZE_S_AXI_HIGHADDR</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:addressBlock>
@@ -332,7 +332,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a45a5922</spirit:value>
+            <spirit:value>d84a5db8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -348,7 +348,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a45a5922</spirit:value>
+            <spirit:value>d84a5db8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -362,7 +362,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0b71db7e</spirit:value>
+            <spirit:value>e7d27477</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -500,7 +500,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_awaddr</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_awaddr</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -516,7 +516,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_awvalid</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_awvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -532,7 +532,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_wdata</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_wdata</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -552,7 +552,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_wstrb</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_wstrb</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
@@ -572,7 +572,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_wvalid</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_wvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -588,7 +588,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_bready</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_bready</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -604,7 +604,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_araddr</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_araddr</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -620,7 +620,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_arvalid</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_arvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -636,7 +636,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_rready</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_rready</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -720,7 +720,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_awready</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_awready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -733,7 +733,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_wready</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_wready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -746,7 +746,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_bresp</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_bresp</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -763,7 +763,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_bvalid</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_bvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -776,7 +776,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_arready</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_arready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -789,7 +789,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_rdata</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_rdata</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -806,7 +806,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_rresp</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_rresp</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -823,7 +823,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>x16_bit_demod_s_axi_rvalid</spirit:name>
+        <spirit:name>x16_bit_demod_step_size_s_axi_rvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -922,7 +922,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/x16_bit_demod_axi_lite_interface_verilog.v</spirit:name>
+        <spirit:name>hdl/x16_bit_demod_step_size_axi_lite_interface_verilog.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
@@ -1032,7 +1032,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/x16_bit_demod_axi_lite_interface_verilog.v</spirit:name>
+        <spirit:name>hdl/x16_bit_demod_step_size_axi_lite_interface_verilog.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -1146,14 +1146,14 @@ mmediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spi
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>User_Company:VMC:DUT:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2025-03-27T12:17:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-03-27T14:41:49Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d80494cd"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="f5ff40f5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5ec0df51"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="55049f5c"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4afc0c11"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="88c791aa"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5e826c88"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="a0a811b6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a8337775"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

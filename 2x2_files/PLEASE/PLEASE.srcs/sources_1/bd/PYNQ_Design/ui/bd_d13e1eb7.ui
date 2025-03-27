@@ -5,33 +5,33 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port M00_AXI -pg 1 -lvl 5 -x 1450 -y 410 -defaultsOSRD
-preplace port SLOT_1_AXIS -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
-preplace port S_AXI_LITE -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
-preplace port x16_bit_demod_s_axi -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
-preplace port port-id_clk_out1 -pg 1 -lvl 5 -x 1450 -y 60 -defaultsOSRD
-preplace port port-id_resetn -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace port port-id_clk_in1 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
-preplace portBus peripheral_aresetn -pg 1 -lvl 5 -x 1450 -y 290 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 3 -x 1010 -y 410 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1010 -y 250 -defaultsOSRD
-preplace inst RX_ILA -pg 1 -lvl 4 -x 1310 -y 510 -defaultsOSRD
-preplace inst axi_dma_rx -pg 1 -lvl 2 -x 650 -y 410 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 1010 -y 70 -defaultsOSRD
+preplace port M00_AXI -pg 1 -lvl 5 -x 1460 -y 410 -defaultsOSRD
+preplace port SLOT_1_AXIS -pg 1 -lvl 0 -x -30 -y 400 -defaultsOSRD
+preplace port S_AXI_LITE -pg 1 -lvl 0 -x -30 -y 370 -defaultsOSRD
+preplace port x16_bit_demod_s_axi -pg 1 -lvl 0 -x -30 -y 470 -defaultsOSRD
+preplace port port-id_clk_out1 -pg 1 -lvl 5 -x 1460 -y 60 -defaultsOSRD
+preplace port port-id_resetn -pg 1 -lvl 0 -x -30 -y 60 -defaultsOSRD
+preplace port port-id_clk_in1 -pg 1 -lvl 0 -x -30 -y 80 -defaultsOSRD
+preplace portBus peripheral_aresetn -pg 1 -lvl 5 -x 1460 -y 290 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 1020 -y 410 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1020 -y 250 -defaultsOSRD
+preplace inst RX_ILA -pg 1 -lvl 4 -x 1320 -y 510 -defaultsOSRD
+preplace inst axi_dma_rx -pg 1 -lvl 2 -x 670 -y 410 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 1020 -y 70 -defaultsOSRD
 preplace inst Receiver_0 -pg 1 -lvl 1 -x 270 -y 480 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 0 5 50 380 480 300 830 140 1210 60 NJ
-preplace netloc clk_wiz_0_locked 1 2 2 840 150 1180
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 5 60 390 460 510 840 530 1180 290 NJ
-preplace netloc rst_ps8_0_96M_peripheral_aresetn 1 0 3 NJ 60 NJ 60 820
+preplace netloc clk_wiz_0_clk_out1 1 0 5 20 380 510 300 840 140 1220 60 NJ
+preplace netloc clk_wiz_0_locked 1 2 2 850 150 1190
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 0 5 30 390 490 510 850 530 1190 290 NJ
+preplace netloc rst_ps8_0_96M_peripheral_aresetn 1 0 3 NJ 60 NJ 60 830
 preplace netloc usp_rf_data_converter_0_clk_adc0 1 0 3 NJ 80 NJ 80 NJ
 preplace netloc Conn1 1 0 1 NJ 470
-preplace netloc DUT_0_m_axis 1 1 3 470 520 NJ 520 1200J
+preplace netloc DUT_0_m_axis 1 1 3 500 520 NJ 520 1210J
 preplace netloc axi_dma_rx_M_AXI_S2MM 1 2 1 N 390
-preplace netloc axi_smc_M00_AXI 1 3 2 1190 410 NJ
+preplace netloc axi_smc_M00_AXI 1 3 2 1200 410 NJ
 preplace netloc ps8_0_axi_periph_M01_AXI 1 0 2 NJ 370 NJ
-preplace netloc usp_rf_data_converter_0_m00_axis 1 0 4 40 310 NJ 310 820J 490 NJ
-levelinfo -pg 1 0 270 650 1010 1310 1450
-pagesize -pg 1 -db -bbox -sgen -190 0 1730 910
+preplace netloc usp_rf_data_converter_0_m00_axis 1 0 4 10 310 NJ 310 830J 490 NJ
+levelinfo -pg 1 -30 270 670 1020 1320 1460
+pagesize -pg 1 -db -bbox -sgen -220 0 1730 910
 "
 }
 0

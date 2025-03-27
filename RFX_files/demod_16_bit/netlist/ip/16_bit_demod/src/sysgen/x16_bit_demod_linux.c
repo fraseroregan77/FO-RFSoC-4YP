@@ -118,9 +118,9 @@ int x16_bit_demod_Initialize(x16_bit_demod *InstancePtr, const char* InstanceNam
         return XST_OPEN_DEVICE_FAILED;
     }
 
-    // NOTE: slave interface '' should be mapped to uioX/map0
-    InstancePtr->x16_bit_demod_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
-    assert(InstancePtr->x16_bit_demod_BaseAddress);
+    // NOTE: slave interface 'step_size' should be mapped to uioX/map0
+    InstancePtr->x16_bit_demod_step_size_BaseAddress = (u32)mmap(NULL, InfoPtr->maps[0].size, PROT_READ|PROT_WRITE, MAP_SHARED, InfoPtr->uio_fd, 0 * getpagesize());
+    assert(InstancePtr->x16_bit_demod_step_size_BaseAddress);
 
     InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
@@ -133,7 +133,7 @@ int x16_bit_demod_Release(x16_bit_demod *InstancePtr) {
     assert(InstancePtr != NULL);
     assert(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    munmap((void*)InstancePtr->x16_bit_demod_BaseAddress, InfoPtr->maps[0].size);
+    munmap((void*)InstancePtr->x16_bit_demod_step_size_BaseAddress, InfoPtr->maps[0].size);
 
     close(InfoPtr->uio_fd);
 

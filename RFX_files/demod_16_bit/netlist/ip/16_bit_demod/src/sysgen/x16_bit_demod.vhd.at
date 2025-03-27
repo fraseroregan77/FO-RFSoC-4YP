@@ -140,8 +140,8 @@
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/LFSR'
   },
   'Line_681' => {
-    'CodeInstance' => 'x16_bit_demod_axi_lite_interface',
-    'Instance' => 'x16_bit_demod_axi_lite_interface',
+    'CodeInstance' => 'x16_bit_demod_step_size_axi_lite_interface',
+    'Instance' => 'x16_bit_demod_step_size_axi_lite_interface',
     'SimulinkInstance' => ''
   },
   'Line_705' => {
