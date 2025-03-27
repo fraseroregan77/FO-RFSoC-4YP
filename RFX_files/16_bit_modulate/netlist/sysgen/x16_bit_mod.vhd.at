@@ -95,14 +95,14 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Mux1'
   },
   'Line_392' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/shift',
-    'Instance' => 'shift',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Shift'
-  },
-  'Line_400' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/reinterpret',
     'Instance' => 'reinterpret',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Reinterpret'
+  },
+  'Line_400' => {
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/shift',
+    'Instance' => 'shift',
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Shift'
   },
   'Line_455' => {
     'CodeInstance' => 'x16_bit_mod_struct/master_fifo/concat1',
@@ -204,12 +204,17 @@
     'Instance' => 'clockdriver',
     'SimulinkInstance' => ''
   },
-  'Line_803' => {
+  'Line_822' => {
+    'CodeInstance' => 'x16_bit_mod_axi_lite_interface',
+    'Instance' => 'x16_bit_mod_axi_lite_interface',
+    'SimulinkInstance' => ''
+  },
+  'Line_846' => {
     'CodeInstance' => 'x16_bit_mod_default_clock_driver',
     'Instance' => 'x16_bit_mod_default_clock_driver',
     'SimulinkInstance' => ''
   },
-  'Line_811' => {
+  'Line_854' => {
     'CodeInstance' => 'x16_bit_mod_struct',
     'Instance' => 'x16_bit_mod_struct',
     'SimulinkInstance' => '16_bit_mod'

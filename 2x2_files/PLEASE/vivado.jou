@@ -3,54 +3,40 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Mar 26 19:44:13 2025
-# Process ID: 14656
+# Start of session at: Thu Mar 27 12:14:49 2025
+# Process ID: 12688
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18556 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9208 C:\Users\clb20123\Documents\FO-RFSoC-4YP\2x2_files\PLEASE\PLEASE.xpr
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE\vivado.jou
-# Running On        :EEE-R446-01
+# Running On        :EEE-R448-31
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
-# CPU Frequency     :2496 MHz
-# CPU Physical cores:14
-# CPU Logical cores :20
-# Host memory       :16833 MB
-# Swap memory       :2998 MB
-# Total Virtual     :19831 MB
-# Available Virtual :10462 MB
+# Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+# CPU Frequency     :3408 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8459 MB
+# Swap memory       :6356 MB
+# Total Virtual     :14815 MB
+# Available Virtual :2926 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr
-update_compile_order -fileset sources_1
 open_bd_design {C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.srcs/sources_1/bd/PYNQ_Design/PYNQ_Design.bd}
-set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip [current_project]
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit [current_project]
 update_ip_catalog
-update_ip_catalog -rebuild
 set_property  ip_repo_paths  {} [current_project]
 update_ip_catalog
 update_ip_catalog -rebuild
-set_property  ip_repo_paths  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate [current_project]
-update_ip_catalog
-ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip/component.xml
-update_compile_order -fileset sources_1
-set_property name DataGen [ipx::current_core]
-set_property display_name DataGen [ipx::current_core]
-set_property previous_version_for_upgrade User_Company:VMC:DUT:1.0 [ipx::current_core]
-set_property core_revision 1 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate
-set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit} [current_project]
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit [current_project]
 update_ip_catalog
 ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip/component.xml
-update_compile_order -fileset sources_1
 set_property name Receiver [ipx::current_core]
+update_compile_order -fileset sources_1
 set_property display_name Receiver [ipx::current_core]
 set_property previous_version_for_upgrade User_Company:VMC:DUT:1.0 [ipx::current_core]
 set_property core_revision 1 [ipx::current_core]
@@ -61,31 +47,59 @@ ipx::save_core [ipx::current_core]
 ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
 update_ip_catalog -rebuild -repo_path c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit
+set_property  ip_repo_paths  {c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate} [current_project]
+update_ip_catalog
+ipx::edit_ip_in_project -upgrade true -name DUT_v1_0_project -directory C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.tmp/DUT_v1_0_project c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate/netlist/ip/component.xml
+update_compile_order -fileset sources_1
+set_property name Data_gen [ipx::current_core]
+set_property display_name Data_gen [ipx::current_core]
+set_property previous_version_for_upgrade User_Company:VMC:DUT:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate
 startgroup
-create_bd_cell -type ip -vlnv User_Company:VMC:Receiver:1.0 RX/Receiver_1
+create_bd_cell -type ip -vlnv User_Company:VMC:Receiver:1.0 RX/Receiver_0
 endgroup
-disconnect_bd_intf_net [get_bd_intf_net RX/usp_rf_data_converter_0_m00_axis] [get_bd_intf_pins RX/Receiver_0/s_axis]
-connect_bd_intf_net [get_bd_intf_pins RX/SLOT_1_AXIS] [get_bd_intf_pins RX/Receiver_1/s_axis]
-connect_bd_net [get_bd_pins RX/Receiver_1/clk] [get_bd_pins RX/clk_wiz_0/clk_out1]
-connect_bd_net [get_bd_pins RX/Receiver_1/step_size] [get_bd_pins RX/xlconstant_1/dout]
-disconnect_bd_intf_net [get_bd_intf_net RX/DUT_0_m_axis] [get_bd_intf_pins RX/Receiver_0/m_axis]
-connect_bd_intf_net [get_bd_intf_pins RX/Receiver_1/m_axis] [get_bd_intf_pins RX/axi_dma_rx/S_AXIS_S2MM]
-delete_bd_objs [get_bd_cells RX/Receiver_0]
+set_property location {1 200 7} [get_bd_cells RX/Receiver_0]
+disconnect_bd_intf_net [get_bd_intf_net RX/usp_rf_data_converter_0_m00_axis] [get_bd_intf_pins RX/Receiver_1/s_axis]
+connect_bd_intf_net [get_bd_intf_pins RX/SLOT_1_AXIS] [get_bd_intf_pins RX/Receiver_0/s_axis]
+connect_bd_net [get_bd_pins RX/Receiver_0/clk] [get_bd_pins RX/clk_wiz_0/clk_out1]
+set_property location {3 566 3} [get_bd_cells RX/Receiver_0]
+connect_bd_net [get_bd_pins RX/Receiver_0/x16_bit_demod_aresetn] [get_bd_pins RX/proc_sys_reset_0/peripheral_aresetn]
+delete_bd_objs [get_bd_nets RX/xlconstant_1_dout] [get_bd_cells RX/Receiver_1]
+startgroup
+set_property CONFIG.NUM_MI {5} [get_bd_cells ps8_0_axi_periph]
+endgroup
+set_property location {-128 74} [get_bd_intf_pins RX/SLOT_1_AXIS]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 RX/vio_0
+endgroup
+undo
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps8_0_axi_periph/M03_AXI] [get_bd_intf_pins RX/Receiver_0/x16_bit_demod_s_axi]
+connect_bd_intf_net [get_bd_intf_pins RX/Receiver_0/m_axis] [get_bd_intf_pins RX/axi_dma_rx/S_AXIS_S2MM]
 regenerate_bd_layout -hierarchy [get_bd_cells RX]
 startgroup
-set_property CONFIG.CONST_VAL {40} [get_bd_cells RX/xlconstant_1]
+create_bd_cell -type ip -vlnv User_Company:VMC:Data_gen:1.0 TX/Data_gen_0
 endgroup
-startgroup
-create_bd_cell -type ip -vlnv User_Company:VMC:DataGen:1.0 TX/DataGen_0
-endgroup
-disconnect_bd_intf_net [get_bd_intf_net TX/axi_dma_M_AXIS_MM2S] [get_bd_intf_pins TX/Data_generation_0/s_axis]
-connect_bd_intf_net [get_bd_intf_pins TX/DataGen_0/s_axis] [get_bd_intf_pins TX/axi_dma_tx/M_AXIS_MM2S]
-disconnect_bd_intf_net [get_bd_intf_net TX/DUT_data_in_0_m_axis] [get_bd_intf_pins TX/Data_generation_0/m_axis]
-connect_bd_intf_net [get_bd_intf_pins TX/SLOT_1_AXIS] [get_bd_intf_pins TX/DataGen_0/m_axis]
-connect_bd_net [get_bd_pins TX/DataGen_0/mux_en] [get_bd_pins TX/xlconstant_0/dout]
-connect_bd_net [get_bd_pins TX/m_axi_mm2s_aclk] [get_bd_pins TX/DataGen_0/clk]
-delete_bd_objs [get_bd_cells TX/Data_generation_0]
+set_property location {1 219 -8} [get_bd_cells TX/Data_gen_0]
+disconnect_bd_intf_net [get_bd_intf_net TX/axi_dma_M_AXIS_MM2S] [get_bd_intf_pins TX/DataGen_0/s_axis]
+connect_bd_intf_net [get_bd_intf_pins TX/Data_gen_0/s_axis] [get_bd_intf_pins TX/axi_dma_tx/M_AXIS_MM2S]
+connect_bd_net [get_bd_pins TX/m_axi_mm2s_aclk] [get_bd_pins TX/Data_gen_0/clk]
+connect_bd_net [get_bd_pins TX/Data_gen_0/x16_bit_mod_aresetn] [get_bd_pins TX/proc_sys_reset_1/peripheral_aresetn]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps8_0_axi_periph/M04_AXI] [get_bd_intf_pins TX/Data_gen_0/x16_bit_mod_s_axi]
+disconnect_bd_intf_net [get_bd_intf_net TX/DUT_data_in_0_m_axis] [get_bd_intf_pins TX/DataGen_0/m_axis]
+connect_bd_intf_net [get_bd_intf_pins TX/SLOT_1_AXIS] [get_bd_intf_pins TX/Data_gen_0/m_axis]
+delete_bd_objs [get_bd_nets TX/xlconstant_0_dout] [get_bd_cells TX/DataGen_0]
+delete_bd_objs [get_bd_cells TX/xlconstant_0]
 regenerate_bd_layout -hierarchy [get_bd_cells TX]
+delete_bd_objs [get_bd_cells RX/xlconstant_1]
+regenerate_bd_layout -hierarchy [get_bd_cells RX]
+save_bd_design
 assign_bd_address
 validate_bd_design
 save_bd_design

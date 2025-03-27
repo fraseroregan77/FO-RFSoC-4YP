@@ -281,6 +281,42 @@
                 "TU": "register"
             },
             "V8": {
+                "VT": "AC",
+                "BA": "0x0080060000",
+                "HA": "0x008006FFFF",
+                "BP": "C_X16_BIT_DEMOD_S_AXI_BASEADDR",
+                "HP": "C_X16_BIT_DEMOD_S_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/PS",
+                "MI": "M_AXI_HPM0_LPD",
+                "MS": "SEG_Receiver_0_reg0",
+                "MV": "xilinx.com:ip:zynq_ultra_ps_e:3.5",
+                "SX": "/RX/Receiver_0",
+                "SI": "x16_bit_demod_s_axi",
+                "SS": "reg0",
+                "SV": "User_Company:VMC:Receiver:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V9": {
+                "VT": "AC",
+                "BA": "0x0080070000",
+                "HA": "0x008007FFFF",
+                "BP": "C_X16_BIT_MOD_S_AXI_BASEADDR",
+                "HP": "C_X16_BIT_MOD_S_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/PS",
+                "MI": "M_AXI_HPM0_LPD",
+                "MS": "SEG_Data_gen_0_reg0",
+                "MV": "xilinx.com:ip:zynq_ultra_ps_e:3.5",
+                "SX": "/TX/Data_gen_0",
+                "SI": "x16_bit_mod_s_axi",
+                "SS": "reg0",
+                "SV": "User_Company:VMC:Data_gen:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V10": {
                 "VT": "ACE",
                 "BA": "0x00000000FF000000",
                 "HA": "0x00000000FFFFFFFF",
@@ -299,7 +335,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V9": {
+            "V11": {
                 "VT": "ACE",
                 "BA": "0xFF000000",
                 "HA": "0xFFFFFFFF",
@@ -360,6 +396,16 @@
             },
             {
                 "src": "V9",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V10",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V11",
                 "trg": "V2",
                 "EH": "2"
             }

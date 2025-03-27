@@ -2,22 +2,22 @@
   'Line_151' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco',
     'Instance' => 'carrier_nco',
-    'SimulinkInstance' => '16_bit_demod/Algorithm/Carrier NCO'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO'
   },
   'Line_158' => {
+    'CodeInstance' => 'x16_bit_demod_struct/algorithm/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Convert'
+  },
+  'Line_179' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/delay1',
     'Instance' => 'delay1',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Delay1'
   },
-  'Line_173' => {
+  'Line_194' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/delay3',
     'Instance' => 'delay3',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Delay3'
-  },
-  'Line_188' => {
-    'CodeInstance' => 'x16_bit_demod_struct/algorithm/convert',
-    'Instance' => 'convert',
-    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Convert'
   },
   'Line_209' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/fir_compiler_7_2',
@@ -117,37 +117,42 @@
   'Line_569' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm',
     'Instance' => 'algorithm',
-    'SimulinkInstance' => '16_bit_demod/Algorithm'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm'
   },
   'Line_581' => {
     'CodeInstance' => 'x16_bit_demod_struct/master_fifo',
     'Instance' => 'master_fifo',
-    'SimulinkInstance' => '16_bit_demod/Master FIFO'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Master FIFO'
   },
   'Line_594' => {
     'CodeInstance' => 'x16_bit_demod_struct/slave_fifo',
     'Instance' => 'slave_fifo',
-    'SimulinkInstance' => '16_bit_demod/Slave FIFO'
+    'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Slave FIFO'
   },
   'Line_624' => {
     'CodeInstance' => 'x16_bit_demod_default_clock_driver/clockdriver',
     'Instance' => 'clockdriver',
     'SimulinkInstance' => ''
   },
-  'Line_662' => {
-    'CodeInstance' => 'x16_bit_demod_default_clock_driver',
-    'Instance' => 'x16_bit_demod_default_clock_driver',
-    'SimulinkInstance' => ''
-  },
-  'Line_670' => {
-    'CodeInstance' => 'x16_bit_demod_struct',
-    'Instance' => 'x16_bit_demod_struct',
-    'SimulinkInstance' => '16_bit_demod'
-  },
   'Line_68' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/lfsr',
     'Instance' => 'lfsr',
     'SimulinkInstance' => 'demodulate_16_bit1/16_bit_demod/Algorithm/Carrier NCO/LFSR'
+  },
+  'Line_681' => {
+    'CodeInstance' => 'x16_bit_demod_axi_lite_interface',
+    'Instance' => 'x16_bit_demod_axi_lite_interface',
+    'SimulinkInstance' => ''
+  },
+  'Line_705' => {
+    'CodeInstance' => 'x16_bit_demod_default_clock_driver',
+    'Instance' => 'x16_bit_demod_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_713' => {
+    'CodeInstance' => 'x16_bit_demod_struct',
+    'Instance' => 'x16_bit_demod_struct',
+    'SimulinkInstance' => '16_bit_demod'
   },
   'Line_75' => {
     'CodeInstance' => 'x16_bit_demod_struct/algorithm/carrier_nco/rom',

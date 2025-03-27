@@ -334,6 +334,30 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+entity sysgen_reinterpret_ec012024da is
+  port (
+    input_port : in std_logic_vector((16 - 1) downto 0);
+    output_port : out std_logic_vector((16 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_reinterpret_ec012024da;
+architecture behavior of sysgen_reinterpret_ec012024da
+is
+  signal input_port_1_40: signed((16 - 1) downto 0);
+  signal output_port_5_5_force: unsigned((16 - 1) downto 0);
+begin
+  input_port_1_40 <= std_logic_vector_to_signed(input_port);
+  output_port_5_5_force <= signed_to_unsigned(input_port_1_40);
+  output_port <= unsigned_to_std_logic_vector(output_port_5_5_force);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 entity sysgen_shift_d7d841523c is
   port (
     ip : in std_logic_vector((16 - 1) downto 0);
@@ -367,30 +391,6 @@ begin
   op_mem_46_20_front_din <= ip_1_23;
   op_mem_46_20_push_front_pop_back_en <= '1';
   op <= signed_to_std_logic_vector(op_mem_46_20_back);
-end behavior;
-
-library xil_defaultlib;
-use xil_defaultlib.conv_pkg.all;
-
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-entity sysgen_reinterpret_ec012024da is
-  port (
-    input_port : in std_logic_vector((16 - 1) downto 0);
-    output_port : out std_logic_vector((16 - 1) downto 0);
-    clk : in std_logic;
-    ce : in std_logic;
-    clr : in std_logic);
-end sysgen_reinterpret_ec012024da;
-architecture behavior of sysgen_reinterpret_ec012024da
-is
-  signal input_port_1_40: signed((16 - 1) downto 0);
-  signal output_port_5_5_force: unsigned((16 - 1) downto 0);
-begin
-  input_port_1_40 <= std_logic_vector_to_signed(input_port);
-  output_port_5_5_force <= signed_to_unsigned(input_port_1_40);
-  output_port <= unsigned_to_std_logic_vector(output_port_5_5_force);
 end behavior;
 
 library xil_defaultlib;
@@ -1499,6 +1499,89 @@ begin
   y <= std_logic_to_vector(fully_2_1_bit);
 end behavior;
 
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity x16_bit_mod_axi_lite_interface is 
+    port(
+        mux_en : out std_logic_vector(0 downto 0);
+        clk : out std_logic;
+        x16_bit_mod_aclk : in std_logic;
+        x16_bit_mod_aresetn : in std_logic;
+        x16_bit_mod_s_axi_awaddr : in std_logic;
+        x16_bit_mod_s_axi_awvalid : in std_logic;
+        x16_bit_mod_s_axi_awready : out std_logic;
+        x16_bit_mod_s_axi_wdata : in std_logic_vector(32-1 downto 0);
+        x16_bit_mod_s_axi_wstrb : in std_logic_vector(32/8-1 downto 0);
+        x16_bit_mod_s_axi_wvalid : in std_logic;
+        x16_bit_mod_s_axi_wready : out std_logic;
+        x16_bit_mod_s_axi_bresp : out std_logic_vector(1 downto 0);
+        x16_bit_mod_s_axi_bvalid : out std_logic;
+        x16_bit_mod_s_axi_bready : in std_logic;
+        x16_bit_mod_s_axi_araddr : in std_logic;
+        x16_bit_mod_s_axi_arvalid : in std_logic;
+        x16_bit_mod_s_axi_arready : out std_logic;
+        x16_bit_mod_s_axi_rdata : out std_logic_vector(32-1 downto 0);
+        x16_bit_mod_s_axi_rresp : out std_logic_vector(1 downto 0);
+        x16_bit_mod_s_axi_rvalid : out std_logic;
+        x16_bit_mod_s_axi_rready : in std_logic
+    );
+end x16_bit_mod_axi_lite_interface;
+architecture structural of x16_bit_mod_axi_lite_interface is 
+component x16_bit_mod_axi_lite_interface_verilog is
+    port(
+        mux_en : out std_logic_vector(0 downto 0);
+        clk : out std_logic;
+        x16_bit_mod_aclk : in std_logic;
+        x16_bit_mod_aresetn : in std_logic;
+        x16_bit_mod_s_axi_awaddr : in std_logic;
+        x16_bit_mod_s_axi_awvalid : in std_logic;
+        x16_bit_mod_s_axi_awready : out std_logic;
+        x16_bit_mod_s_axi_wdata : in std_logic_vector(32-1 downto 0);
+        x16_bit_mod_s_axi_wstrb : in std_logic_vector(32/8-1 downto 0);
+        x16_bit_mod_s_axi_wvalid : in std_logic;
+        x16_bit_mod_s_axi_wready : out std_logic;
+        x16_bit_mod_s_axi_bresp : out std_logic_vector(1 downto 0);
+        x16_bit_mod_s_axi_bvalid : out std_logic;
+        x16_bit_mod_s_axi_bready : in std_logic;
+        x16_bit_mod_s_axi_araddr : in std_logic;
+        x16_bit_mod_s_axi_arvalid : in std_logic;
+        x16_bit_mod_s_axi_arready : out std_logic;
+        x16_bit_mod_s_axi_rdata : out std_logic_vector(32-1 downto 0);
+        x16_bit_mod_s_axi_rresp : out std_logic_vector(1 downto 0);
+        x16_bit_mod_s_axi_rvalid : out std_logic;
+        x16_bit_mod_s_axi_rready : in std_logic
+    );
+end component;
+begin
+inst : x16_bit_mod_axi_lite_interface_verilog
+    port map(
+    mux_en => mux_en,
+    clk => clk,
+    x16_bit_mod_aclk => x16_bit_mod_aclk,
+    x16_bit_mod_aresetn => x16_bit_mod_aresetn,
+    x16_bit_mod_s_axi_awaddr => x16_bit_mod_s_axi_awaddr,
+    x16_bit_mod_s_axi_awvalid => x16_bit_mod_s_axi_awvalid,
+    x16_bit_mod_s_axi_awready => x16_bit_mod_s_axi_awready,
+    x16_bit_mod_s_axi_wdata => x16_bit_mod_s_axi_wdata,
+    x16_bit_mod_s_axi_wstrb => x16_bit_mod_s_axi_wstrb,
+    x16_bit_mod_s_axi_wvalid => x16_bit_mod_s_axi_wvalid,
+    x16_bit_mod_s_axi_wready => x16_bit_mod_s_axi_wready,
+    x16_bit_mod_s_axi_bresp => x16_bit_mod_s_axi_bresp,
+    x16_bit_mod_s_axi_bvalid => x16_bit_mod_s_axi_bvalid,
+    x16_bit_mod_s_axi_bready => x16_bit_mod_s_axi_bready,
+    x16_bit_mod_s_axi_araddr => x16_bit_mod_s_axi_araddr,
+    x16_bit_mod_s_axi_arvalid => x16_bit_mod_s_axi_arvalid,
+    x16_bit_mod_s_axi_arready => x16_bit_mod_s_axi_arready,
+    x16_bit_mod_s_axi_rdata => x16_bit_mod_s_axi_rdata,
+    x16_bit_mod_s_axi_rresp => x16_bit_mod_s_axi_rresp,
+    x16_bit_mod_s_axi_rvalid => x16_bit_mod_s_axi_rvalid,
+    x16_bit_mod_s_axi_rready => x16_bit_mod_s_axi_rready
+);
+end structural;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 

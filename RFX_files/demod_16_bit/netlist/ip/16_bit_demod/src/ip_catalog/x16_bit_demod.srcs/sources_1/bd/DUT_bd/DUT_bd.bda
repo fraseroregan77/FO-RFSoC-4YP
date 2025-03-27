@@ -187,6 +187,60 @@
                 "VH": "2",
                 "VT": "PM",
                 "TU": "active"
+            },
+            "V3": {
+                "VT": "AC",
+                "BA": "0x00000000",
+                "HA": "0x00001FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/microblaze_1",
+                "MI": "DLMB",
+                "MS": "SEG_dlmb_bram_if_cntlr_Mem",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/microblaze_1_local_memory/dlmb_bram_if_cntlr",
+                "SI": "SLMB",
+                "SS": "Mem",
+                "SV": "xilinx.com:ip:lmb_bram_if_cntlr:4.0",
+                "TM": "data",
+                "TU": "memory"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x00000000",
+                "HA": "0x00001FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Instruction",
+                "MX": "/microblaze_1",
+                "MI": "ILMB",
+                "MS": "SEG_ilmb_bram_if_cntlr_Mem",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/microblaze_1_local_memory/ilmb_bram_if_cntlr",
+                "SI": "SLMB",
+                "SS": "Mem",
+                "SV": "xilinx.com:ip:lmb_bram_if_cntlr:4.0",
+                "TM": "instruction",
+                "TU": "memory"
+            },
+            "V5": {
+                "VT": "AC",
+                "BA": "0x00010000",
+                "HA": "0x0001FFFF",
+                "BP": "C_X16_BIT_DEMOD_S_AXI_BASEADDR",
+                "HP": "C_X16_BIT_DEMOD_S_AXI_HIGHADDR",
+                "MA": "Data",
+                "MX": "/microblaze_1",
+                "MI": "M_AXI_DP",
+                "MS": "SEG_DUT_1_reg0",
+                "MV": "xilinx.com:ip:microblaze:11.0",
+                "SX": "/DUT_1",
+                "SI": "x16_bit_demod_s_axi",
+                "SS": "reg0",
+                "SV": "User_Company:VMC:DUT:1.0",
+                "TM": "data",
+                "TU": "register"
             }
         },
         "edges": [
@@ -197,6 +251,21 @@
             {
                 "src": "V1",
                 "trg": "V2"
+            },
+            {
+                "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V5",
+                "trg": "V2",
+                "EH": "2"
             }
         ]
     }
