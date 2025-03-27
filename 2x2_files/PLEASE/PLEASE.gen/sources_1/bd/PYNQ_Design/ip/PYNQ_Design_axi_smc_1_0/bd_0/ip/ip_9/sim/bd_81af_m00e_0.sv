@@ -171,7 +171,7 @@ output wire m_axi_rready;
     .C_IS_CASCADED(0),
     .C_SSC_ROUTE_WIDTH(1),
     .C_MEP_IDENTIFIER_WIDTH(2),
-    .C_SSC_ROUTE_ARRAY(4'B1000),
+    .C_SSC_ROUTE_ARRAY(4'B0100),
     .C_RDATA_WIDTH(128),
     .C_WDATA_WIDTH(128),
     .C_M_RUSER_BITS_PER_BYTE(0),

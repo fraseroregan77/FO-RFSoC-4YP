@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8C326D082BF28F3E",
+      "boundary_crc": "0xBDF001BEE2AFF3D4",
       "design_src": "SBD",
       "device": "xczu28dr-ffvg1517-2-e",
       "name": "bd_9ef2",
@@ -58,7 +58,7 @@
             "value": [
               "xilinx.com:interface:datatypes:1.0 {",
               "TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
-              "maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
               "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
               "}"
             ],
@@ -69,7 +69,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "2",
+            "value": "4",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -364,7 +364,7 @@
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_PROBE10_TYPE": {
             "value": "0"
@@ -610,7 +610,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXIS_TDATA_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_SLOT_0_AXIS_TDEST_WIDTH": {
             "value": "0"

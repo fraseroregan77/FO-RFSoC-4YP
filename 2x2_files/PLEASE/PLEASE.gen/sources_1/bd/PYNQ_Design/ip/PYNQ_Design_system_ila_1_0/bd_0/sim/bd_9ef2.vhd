@@ -11,7 +11,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity bd_9ef2 is
   port (
-    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tready : in STD_LOGIC;
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
@@ -64,7 +64,7 @@ architecture STRUCTURE of bd_9ef2 is
   component bd_9ef2_ila_lib_0 is
   port (
     clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    probe0 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -113,7 +113,7 @@ architecture STRUCTURE of bd_9ef2 is
     m_slot_2_axi_ar_cnt : out STD_LOGIC_VECTOR ( 1 downto 0 );
     slot_0_axis_tvalid : in STD_LOGIC;
     slot_0_axis_tready : in STD_LOGIC;
-    slot_0_axis_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    slot_0_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     slot_0_axis_tlast : in STD_LOGIC;
     slot_1_axis_tvalid : in STD_LOGIC;
     slot_1_axis_tready : in STD_LOGIC;
@@ -151,7 +151,7 @@ architecture STRUCTURE of bd_9ef2 is
     slot_2_axi_rready : in STD_LOGIC;
     m_slot_0_axis_tvalid : out STD_LOGIC;
     m_slot_0_axis_tready : out STD_LOGIC;
-    m_slot_0_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    m_slot_0_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_slot_0_axis_tlast : out STD_LOGIC;
     m_slot_1_axis_tvalid : out STD_LOGIC;
     m_slot_1_axis_tready : out STD_LOGIC;
@@ -266,12 +266,12 @@ architecture STRUCTURE of bd_9ef2 is
   signal Conn2_WREADY : STD_LOGIC;
   signal Conn2_WSTRB : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal Conn2_WVALID : STD_LOGIC;
-  signal Conn_TDATA : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal Conn_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Conn_TLAST : STD_LOGIC;
   signal Conn_TREADY : STD_LOGIC;
   signal Conn_TVALID : STD_LOGIC;
   signal clk_1 : STD_LOGIC;
-  signal net_slot_0_axis_tdata : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal net_slot_0_axis_tdata : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal net_slot_0_axis_tlast : STD_LOGIC;
   signal net_slot_0_axis_tready : STD_LOGIC;
   signal net_slot_0_axis_tvalid : STD_LOGIC;
@@ -346,7 +346,7 @@ architecture STRUCTURE of bd_9ef2 is
   attribute X_INTERFACE_INFO of resetn : signal is "xilinx.com:signal:reset:1.0 RST.RESETN RST";
   attribute X_INTERFACE_PARAMETER of resetn : signal is "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW";
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tdata : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA";
-  attribute X_INTERFACE_PARAMETER of SLOT_0_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_0_AXIS, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, FREQ_HZ 128000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, PHASE 0.0, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
+  attribute X_INTERFACE_PARAMETER of SLOT_0_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_0_AXIS, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, FREQ_HZ 128000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}, PHASE 0.0, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of SLOT_1_AXIS_tdata : signal is "xilinx.com:interface:axis:1.0 SLOT_1_AXIS TDATA";
   attribute X_INTERFACE_PARAMETER of SLOT_1_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_1_AXIS, CLK_DOMAIN PYNQ_Design_clk_wiz_0_0_clk_out1, FREQ_HZ 128000000, HAS_TKEEP 0, HAS_TLAST 0, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.0, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0";
   attribute X_INTERFACE_INFO of SLOT_2_AXI_araddr : signal is "xilinx.com:interface:aximm:1.0 SLOT_2_AXI ARADDR";
@@ -407,7 +407,7 @@ begin
   Conn2_WREADY <= SLOT_2_AXI_wready;
   Conn2_WSTRB(15 downto 0) <= SLOT_2_AXI_wstrb(15 downto 0);
   Conn2_WVALID <= SLOT_2_AXI_wvalid;
-  Conn_TDATA(15 downto 0) <= SLOT_0_AXIS_tdata(15 downto 0);
+  Conn_TDATA(31 downto 0) <= SLOT_0_AXIS_tdata(31 downto 0);
   Conn_TLAST <= SLOT_0_AXIS_tlast;
   Conn_TREADY <= SLOT_0_AXIS_tready;
   Conn_TVALID <= SLOT_0_AXIS_tvalid;
@@ -417,7 +417,7 @@ g_inst: component bd_9ef2_g_inst_0
      port map (
       aclk => clk_1,
       aresetn => resetn_1,
-      m_slot_0_axis_tdata(15 downto 0) => net_slot_0_axis_tdata(15 downto 0),
+      m_slot_0_axis_tdata(31 downto 0) => net_slot_0_axis_tdata(31 downto 0),
       m_slot_0_axis_tlast => net_slot_0_axis_tlast,
       m_slot_0_axis_tready => net_slot_0_axis_tready,
       m_slot_0_axis_tvalid => net_slot_0_axis_tvalid,
@@ -461,7 +461,7 @@ g_inst: component bd_9ef2_g_inst_0
       m_slot_2_axi_wready => net_slot_2_axi_wready,
       m_slot_2_axi_wstrb(15 downto 0) => net_slot_2_axi_wstrb(15 downto 0),
       m_slot_2_axi_wvalid => net_slot_2_axi_wvalid,
-      slot_0_axis_tdata(15 downto 0) => Conn_TDATA(15 downto 0),
+      slot_0_axis_tdata(31 downto 0) => Conn_TDATA(31 downto 0),
       slot_0_axis_tlast => Conn_TLAST,
       slot_0_axis_tready => Conn_TREADY,
       slot_0_axis_tvalid => Conn_TVALID,
@@ -505,7 +505,7 @@ g_inst: component bd_9ef2_g_inst_0
 ila_lib: component bd_9ef2_ila_lib_0
      port map (
       clk => clk_1,
-      probe0(15 downto 0) => net_slot_0_axis_tdata(15 downto 0),
+      probe0(31 downto 0) => net_slot_0_axis_tdata(31 downto 0),
       probe1(0) => net_slot_0_axis_tvalid,
       probe10(1 downto 0) => net_slot_2_axi_arburst(1 downto 0),
       probe11(3 downto 0) => net_slot_2_axi_arcache(3 downto 0),

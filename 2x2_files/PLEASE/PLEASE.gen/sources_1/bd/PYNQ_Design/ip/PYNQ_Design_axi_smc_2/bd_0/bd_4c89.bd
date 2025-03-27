@@ -499,7 +499,7 @@
                 "value": "2"
               },
               "NUM_SEG": {
-                "value": "2"
+                "value": "1"
               },
               "NUM_WRITE_OUTSTANDING": {
                 "value": "16"
@@ -529,27 +529,6 @@
                 "value": "1"
               },
               "SEG000_SUPPORTS_WRITE": {
-                "value": "1"
-              },
-              "SEG001_BASE_ADDR": {
-                "value": "0x0000000800000000"
-              },
-              "SEG001_SECURE_READ": {
-                "value": "0"
-              },
-              "SEG001_SECURE_WRITE": {
-                "value": "0"
-              },
-              "SEG001_SEP_ROUTE": {
-                "value": "0b0000000000000000000000000000000000000000000000000000000000000000"
-              },
-              "SEG001_SIZE": {
-                "value": "35"
-              },
-              "SEG001_SUPPORTS_READ": {
-                "value": "1"
-              },
-              "SEG001_SUPPORTS_WRITE": {
                 "value": "1"
               },
               "SUPPORTS_NARROW": {
@@ -604,7 +583,7 @@
                 "value": "0"
               },
               "MEP_IDENTIFIER": {
-                "value": "2"
+                "value": "1"
               },
               "MEP_IDENTIFIER_WIDTH": {
                 "value": "2"
@@ -628,7 +607,7 @@
                 "value": "0"
               },
               "SUPPORTS_WRITE_DEADLOCK": {
-                "value": "1"
+                "value": "0"
               },
               "S_ID_WIDTH": {
                 "value": "0"
@@ -697,7 +676,7 @@
                 "value": "1"
               },
               "NUM_SEG": {
-                "value": "2"
+                "value": "1"
               },
               "NUM_WRITE_OUTSTANDING": {
                 "value": "16"
@@ -718,15 +697,6 @@
                 "value": "128"
               },
               "SEP000_WDATA_WIDTH": {
-                "value": "128"
-              },
-              "SEP001_PROTOCOL": {
-                "value": "AXI4"
-              },
-              "SEP001_RDATA_WIDTH": {
-                "value": "128"
-              },
-              "SEP001_WDATA_WIDTH": {
                 "value": "128"
               },
               "SUPPORTS_NARROW": {
@@ -1607,10 +1577,10 @@
                 "value": "0b0"
               },
               "SSC001_ROUTE": {
-                "value": "0b0"
+                "value": "0b1"
               },
               "SSC002_ROUTE": {
-                "value": "0b1"
+                "value": "0b0"
               },
               "SSC003_ROUTE": {
                 "value": "0b0"
