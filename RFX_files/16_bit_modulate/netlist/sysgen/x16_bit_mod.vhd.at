@@ -40,46 +40,51 @@
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Data NCO'
   },
   'Line_275' => {
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/bit_shift',
+    'Instance' => 'bit_shift',
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Bit Shift'
+  },
+  'Line_283' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant_x0',
     'Instance' => 'constant_x0',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant'
-  },
-  'Line_282' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant1',
-    'Instance' => 'constant1',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant1'
-  },
-  'Line_289' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant2',
-    'Instance' => 'constant2',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant2'
   },
   'Line_29' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/carrier_nco/addsub',
     'Instance' => 'addsub',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Carrier NCO/AddSub'
   },
-  'Line_296' => {
+  'Line_290' => {
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant1',
+    'Instance' => 'constant1',
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant1'
+  },
+  'Line_297' => {
+    'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant2',
+    'Instance' => 'constant2',
+    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant2'
+  },
+  'Line_304' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/constant5',
     'Instance' => 'constant5',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Constant5'
   },
-  'Line_303' => {
+  'Line_311' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/delay1',
     'Instance' => 'delay1',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Delay1'
   },
-  'Line_318' => {
+  'Line_326' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/delay3',
     'Instance' => 'delay3',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Delay3'
   },
-  'Line_333' => {
+  'Line_341' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/mult',
     'Instance' => 'mult',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Mult'
   },
-  'Line_370' => {
+  'Line_378' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/mux',
     'Instance' => 'mux',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Mux'
@@ -89,20 +94,15 @@
     'Instance' => 'addsub1',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Carrier NCO/AddSub1'
   },
-  'Line_381' => {
+  'Line_389' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/mux1',
     'Instance' => 'mux1',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Mux1'
   },
-  'Line_392' => {
+  'Line_400' => {
     'CodeInstance' => 'x16_bit_mod_struct/algorithm/reinterpret',
     'Instance' => 'reinterpret',
     'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Reinterpret'
-  },
-  'Line_400' => {
-    'CodeInstance' => 'x16_bit_mod_struct/algorithm/shift',
-    'Instance' => 'shift',
-    'SimulinkInstance' => 'modulate_16_bit/16_bit_mod/Algorithm/Shift'
   },
   'Line_455' => {
     'CodeInstance' => 'x16_bit_mod_struct/master_fifo/concat1',

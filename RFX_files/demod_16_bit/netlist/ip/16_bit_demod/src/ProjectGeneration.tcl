@@ -25,7 +25,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {DUT}
-	set IP_Revision {373991877}
+	set IP_Revision {374022412}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {User Company}
@@ -43,7 +43,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{single_reg_w_init.vhd} -lib {xil_defaultlib}}
 		{{xlclockdriver_rd.vhd} -lib {xil_defaultlib}}
 		{{vivado_ip.tcl}}
-		{{xpm_5519eb_vivado.mem}}
+		{{xpm_7255ef_vivado.mem}}
 		{{x16_bit_demod_step_size_axi_lite_interface_verilog.v}}
 		{{conv_pkg.v}}
 		{{synth_reg.v}}

@@ -1,6 +1,48 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 23:11:01 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_Receiver_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PYNQ_Design_Receiver_0_0 (User_Company:VMC:Receiver:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 23:11:01 2025
+| Host         : EEE-R446-02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PYNQ_Design_Data_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PYNQ_Design_Data_gen_0_0 (User_Company:VMC:Data_gen:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
 | Date         : Thu Mar 27 14:42:14 2025
 | Host         : EEE-R448-32 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

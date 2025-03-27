@@ -3,28 +3,28 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Mar 27 14:38:02 2025
-# Process ID: 4572
+# Start of session at: Thu Mar 27 23:06:56 2025
+# Process ID: 3284
 # Current directory: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src
 # Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
 # Log file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/vivado.log
 # Journal file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src\vivado.jou
-# Running On        :EEE-R448-32
+# Running On        :EEE-R446-02
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
-# Processor Detail  :Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
-# CPU Frequency     :3408 MHz
-# CPU Physical cores:4
-# CPU Logical cores :4
-# Host memory       :8459 MB
-# Swap memory       :10866 MB
-# Total Virtual     :19325 MB
-# Available Virtual :2760 MB
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16833 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19383 MB
+# Available Virtual :4181 MB
 #-----------------------------------------------------------
 source ProjectGeneration.tcl -notrace
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog'
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 603.531 ; gain = 196.375
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 629.742 ; gain = 200.660
 WARNING: [Coretcl 2-176] No IPs found
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
@@ -54,7 +54,7 @@ Adding File c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netl
 Adding File c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog/x16_bit_demod.srcs/sources_1/ip/x16_bit_demod_fir_compiler_v7_2_i0/x16_bit_demod_fir_compiler_v7_2_i0.xci
 Adding File c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog/x16_bit_demod.srcs/sources_1/ip/x16_bit_demod_mult_gen_v12_0_i0/x16_bit_demod_mult_gen_v12_0_i0.xci
 Adding File C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/sysgen/x16_bit_demod.xdc
-Adding File C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/sysgen/xpm_5519eb_vivado.mem
+Adding File C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/sysgen/xpm_7255ef_vivado.mem
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from TCL Argument).
 INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from TCL Argument).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'x16_bit_demod_step_size_s_axi' of definition 'xilinx.com:interface:aximm:1.0' (from TCL Argument).
@@ -73,10 +73,9 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/clb20123/Documents/F
 WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog'.)
 0
 Wrote  : <C:\Users\clb20123\Documents\FO-RFSoC-4YP\RFX_files\demod_16_bit\netlist\ip\16_bit_demod\src\ip_catalog\x16_bit_demod.srcs\sources_1\bd\DUT_bd\DUT_bd.bd> 
-create_bd_cell: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 801.391 ; gain = 0.000
 INFO: [Device 21-403] Loading part xczu43dr-fsve1156-2-e
-create_bd_cell: Time (s): cpu = 00:00:20 ; elapsed = 00:00:40 . Memory (MB): peak = 2210.305 ; gain = 1408.914
-apply_bd_automation: Time (s): cpu = 00:01:06 ; elapsed = 00:01:36 . Memory (MB): peak = 2211.277 ; gain = 1542.918
+create_bd_cell: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2232.383 ; gain = 1409.039
+apply_bd_automation: Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 2233.371 ; gain = 1542.305
 Slave segment '/DUT_1/x16_bit_demod_step_size_s_axi/reg0' is being assigned into address space '/microblaze_1/Data' at <0x0001_0000 [ 64K ]>.
 WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
 INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_1: Setting C_BASE_VECTORS to 0x00000000.
@@ -90,5 +89,4 @@ CRITICAL WARNING: [filemgmt 20-1702] Unable to set property on the file: C:/User
 File is managed as part of sub-design (IP, Block Design, DSP Design, etc.) file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog/x16_bit_demod.srcs/sources_1/bd/DUT_bd/DUT_bd.bd
 CRITICAL WARNING: [filemgmt 20-1702] Unable to set property on the file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog/x16_bit_demod.gen/sources_1/bd/DUT_bd/sim/DUT_bd.vhd
 File is managed as part of sub-design (IP, Block Design, DSP Design, etc.) file: C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit/netlist/ip/16_bit_demod/src/ip_catalog/x16_bit_demod.srcs/sources_1/bd/DUT_bd/DUT_bd.bd
-update_compile_order: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2222.309 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 27 14:40:32 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 27 23:08:06 2025...

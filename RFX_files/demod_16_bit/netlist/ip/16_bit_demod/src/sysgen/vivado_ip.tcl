@@ -63,7 +63,7 @@ lappend params_list CONFIG.Control_Path_Fanout {false}
 lappend params_list CONFIG.DATA_Has_TLAST {Not_Required}
 lappend params_list CONFIG.DATA_TUSER_Width {1}
 lappend params_list CONFIG.Data_Buffer_Type {Automatic}
-lappend params_list CONFIG.Data_Fractional_Bits {0}
+lappend params_list CONFIG.Data_Fractional_Bits {6}
 lappend params_list CONFIG.Data_Path_Broadcast {false}
 lappend params_list CONFIG.Data_Path_Fanout {false}
 lappend params_list CONFIG.Data_Sign {Signed}

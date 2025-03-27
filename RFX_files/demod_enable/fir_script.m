@@ -14,6 +14,35 @@ coeff = fir2(N, f, m);
 
 fd = (40*333e6)/256
 
+% figure;
+% plot(Data_NCO.Time, Data_NCO.Data);
+% title("\textbf{Output of Data NCO}", 'Interpreter','latex')
+% xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+% ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+% xlim([0 2.75e-5])
+
+
+% figure;
+% plot(Carrier_NCO.Time, Carrier_NCO.Data);
+% title("\textbf{Output of Carrier NCO}", 'Interpreter','latex')
+% xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+% ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+% xlim([0.1e-6 0.3e-6])
+% 
+% figure;
+% plot(Demodulated.Time, Demodulated.Data);
+% title("\textbf{Demodulated Signal (Full System Test)}", 'Interpreter','latex')
+% xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+% ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+% xlim([0.1e-5 0.15e-5])
+
+figure;
+plot(precast.Time, precast.Data);
+title("\textbf{Demodulated Signal (Full System Test Pre Cast)}", 'Interpreter','latex')
+xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+xlim([0.1e-5 2.5e-5])
+
 
 %%
 

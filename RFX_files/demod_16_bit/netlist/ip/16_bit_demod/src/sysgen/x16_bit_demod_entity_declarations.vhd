@@ -294,15 +294,15 @@ use xil_defaultlib.conv_pkg.all;
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-entity sysgen_shift_588459dbe3 is
+entity sysgen_shift_af0c857993 is
   port (
     ip : in std_logic_vector((39 - 1) downto 0);
     op : out std_logic_vector((39 - 1) downto 0);
     clk : in std_logic;
     ce : in std_logic;
     clr : in std_logic);
-end sysgen_shift_588459dbe3;
-architecture behavior of sysgen_shift_588459dbe3
+end sysgen_shift_af0c857993;
+architecture behavior of sysgen_shift_af0c857993
 is
   signal ip_1_23: signed((39 - 1) downto 0);
   type array_type_op_mem_46_20 is array (0 to (1 - 1)) of signed((39 - 1) downto 0);
@@ -311,7 +311,6 @@ is
   signal op_mem_46_20_front_din: signed((39 - 1) downto 0);
   signal op_mem_46_20_back: signed((39 - 1) downto 0);
   signal op_mem_46_20_push_front_pop_back_en: std_logic;
-  signal cast_internal_ip_25_3_lsh: signed((43 - 1) downto 0);
   signal internal_ip_33_3_convert: signed((39 - 1) downto 0);
 begin
   ip_1_23 <= std_logic_vector_to_signed(ip);
@@ -326,8 +325,7 @@ begin
       end if;
     end if;
   end process proc_op_mem_46_20;
-  cast_internal_ip_25_3_lsh <= s2s_cast(ip_1_23, 0, 43, 4);
-  internal_ip_33_3_convert <= std_logic_vector_to_signed(convert_type(signed_to_std_logic_vector(cast_internal_ip_25_3_lsh), 43, 0, xlSigned, 39, 0, xlSigned, xlRound, xlSaturate));
+  internal_ip_33_3_convert <= std_logic_vector_to_signed(convert_type(signed_to_std_logic_vector(ip_1_23), 39, 2, xlSigned, 39, 0, xlSigned, xlRound, xlSaturate));
   op_mem_46_20_front_din <= internal_ip_33_3_convert;
   op_mem_46_20_push_front_pop_back_en <= '1';
   op <= signed_to_std_logic_vector(op_mem_46_20_back);
