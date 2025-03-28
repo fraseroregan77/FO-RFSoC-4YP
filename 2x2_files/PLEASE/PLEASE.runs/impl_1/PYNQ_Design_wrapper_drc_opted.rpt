@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Mar 27 13:03:19 2025
+| Date         : Fri Mar 28 11:36:32 2025
 | Host         : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command      : report_drc -file PYNQ_Design_wrapper_drc_opted.rpt -pb PYNQ_Design_wrapper_drc_opted.pb -rpx PYNQ_Design_wrapper_drc_opted.rpx
 | Design       : PYNQ_Design_wrapper
@@ -24,12 +24,23 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 2
++--------+----------+----------------------+------------+
+| Rule   | Severity | Description          | Violations |
++--------+----------+----------------------+------------+
+| UTLZ-1 | Error    | Resource utilization | 2          |
++--------+----------+----------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+UTLZ-1#1 Error
+Resource utilization  - PBlock:ROOT
+HSADC over-utilized in Top Level Design (This design requires more HSADC cells than are available in the target device. This design requires 8 of such cell types but only 4 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)ROOT
+Related violations: <none>
+
+UTLZ-1#2 Error
+Resource utilization  - PBlock:ROOT
+PS8 over-utilized in Top Level Design (This design requires more PS8 cells than are available in the target device. This design requires 2 of such cell types but only 1 compatible site is available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)ROOT
+Related violations: <none>
+
 

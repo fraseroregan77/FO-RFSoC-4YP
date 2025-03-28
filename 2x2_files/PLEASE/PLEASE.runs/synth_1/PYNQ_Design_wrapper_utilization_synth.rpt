@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Thu Mar 27 12:56:56 2025
+| Date         : Fri Mar 28 11:26:09 2025
 | Host         : EEE-R343-01 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file PYNQ_Design_wrapper_utilization_synth.rpt -pb PYNQ_Design_wrapper_utilization_synth.pb
 | Design       : PYNQ_Design_wrapper
@@ -32,17 +32,17 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 19711 |     0 |          0 |    425280 |  4.63 |
-|   LUT as Logic             | 10613 |     0 |          0 |    425280 |  2.50 |
-|   LUT as Memory            |  9098 |     0 |          0 |    213600 |  4.26 |
-|     LUT as Distributed RAM |   306 |     0 |            |           |       |
-|     LUT as Shift Register  |  8792 |     0 |            |           |       |
-| CLB Registers              | 22917 |     0 |          0 |    850560 |  2.69 |
-|   Register as Flip Flop    | 22917 |     0 |          0 |    850560 |  2.69 |
+| CLB LUTs*                  | 39862 |     0 |          0 |    425280 |  9.37 |
+|   LUT as Logic             | 21663 |     0 |          0 |    425280 |  5.09 |
+|   LUT as Memory            | 18199 |     0 |          0 |    213600 |  8.52 |
+|     LUT as Distributed RAM |   612 |     0 |            |           |       |
+|     LUT as Shift Register  | 17587 |     0 |            |           |       |
+| CLB Registers              | 45887 |     0 |          0 |    850560 |  5.39 |
+|   Register as Flip Flop    | 45887 |     0 |          0 |    850560 |  5.39 |
 |   Register as Latch        |     0 |     0 |          0 |    850560 |  0.00 |
-| CARRY8                     |   189 |     0 |          0 |     53160 |  0.36 |
-| F7 Muxes                   |   217 |     0 |          0 |    212640 |  0.10 |
-| F8 Muxes                   |    33 |     0 |          0 |    106320 |  0.03 |
+| CARRY8                     |   382 |     0 |          0 |     53160 |  0.72 |
+| F7 Muxes                   |   443 |     0 |          0 |    212640 |  0.21 |
+| F8 Muxes                   |    66 |     0 |          0 |    106320 |  0.06 |
 | F9 Muxes                   |     0 |     0 |          0 |     53160 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -63,9 +63,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 54    |          Yes |           - |        Reset |
-| 466   |          Yes |         Set |            - |
-| 22397 |          Yes |       Reset |            - |
+| 108   |          Yes |           - |        Reset |
+| 898   |          Yes |         Set |            - |
+| 44881 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -75,11 +75,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |  145 |     0 |          0 |      1080 | 13.43 |
-|   RAMB36/FIFO*    |  140 |     0 |          0 |      1080 | 12.96 |
-|     RAMB36E2 only |  140 |       |            |           |       |
-|   RAMB18          |   10 |     0 |          0 |      2160 |  0.46 |
-|     RAMB18E2 only |   10 |       |            |           |       |
+| Block RAM Tile    |  290 |     0 |          0 |      1080 | 26.85 |
+|   RAMB36/FIFO*    |  280 |     0 |          0 |      1080 | 25.93 |
+|     RAMB36E2 only |  280 |       |            |           |       |
+|   RAMB18          |   20 |     0 |          0 |      2160 |  0.93 |
+|     RAMB18E2 only |   20 |       |            |           |       |
 | URAM              |    0 |     0 |          0 |        80 |  0.00 |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E2 or one FIFO18E2. However, if a FIFO18E2 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E2
@@ -91,8 +91,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------------+------+-------+------------+-----------+-------+
 |    Site Type   | Used | Fixed | Prohibited | Available | Util% |
 +----------------+------+-------+------------+-----------+-------+
-| DSPs           |  103 |     0 |          0 |      4272 |  2.41 |
-|   DSP48E2 only |  103 |       |            |           |       |
+| DSPs           |  206 |     0 |          0 |      4272 |  4.82 |
+|   DSP48E2 only |  206 |       |            |           |       |
 +----------------+------+-------+------------+-----------+-------+
 
 
@@ -103,8 +103,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 |  Site Type | Used | Fixed | Prohibited | Available |  Util% |
 +------------+------+-------+------------+-----------+--------+
 | Bonded IOB |    1 |     0 |          0 |       347 |   0.29 |
-| HSADC      |    4 |     0 |          0 |         4 | 100.00 |
-| HSDAC      |    2 |     0 |          0 |         4 |  50.00 |
+| HSADC      |    8 |     0 |          0 |         4 | 200.00 |
+| HSDAC      |    4 |     0 |          0 |         4 | 100.00 |
 +------------+------+-------+------------+-----------+--------+
 
 
@@ -114,13 +114,13 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCE     |    2 |     0 |          0 |       216 |  0.93 |
+| BUFGCE     |    4 |     0 |          0 |       216 |  1.85 |
 | BUFGCE_DIV |    0 |     0 |          0 |        32 |  0.00 |
-| BUFG_GT    |    2 |     0 |          0 |       312 |  0.64 |
-| BUFG_PS    |    1 |     0 |          0 |        72 |  1.39 |
+| BUFG_GT    |    4 |     0 |          0 |       312 |  1.28 |
+| BUFG_PS    |    2 |     0 |          0 |        72 |  2.78 |
 | BUFGCTRL*  |    0 |     0 |          0 |        64 |  0.00 |
 | PLL        |    0 |     0 |          0 |        16 |  0.00 |
-| MMCM       |    1 |     0 |          0 |         8 | 12.50 |
+| MMCM       |    2 |     0 |          0 |         8 | 25.00 |
 +------------+------+-------+------------+-----------+-------+
 * Note: Each used BUFGCTRL counts as two GLOBAL CLOCK BUFFERs. This table does not include global clocking resources, only buffer cell usage. See the Clock Utilization Report (report_clock_utilization) for detailed accounting of global clocking resource availability.
 
@@ -135,13 +135,13 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | FE              |    0 |     0 |          0 |         8 |   0.00 |
 | GTYE4_CHANNEL   |    0 |     0 |          0 |        16 |   0.00 |
 | GTYE4_COMMON    |    0 |     0 |          0 |         4 |   0.00 |
-| HSADC           |    4 |     0 |          0 |         4 | 100.00 |
-| HSDAC           |    2 |     0 |          0 |         4 |  50.00 |
+| HSADC           |    8 |     0 |          0 |         4 | 200.00 |
+| HSDAC           |    4 |     0 |          0 |         4 | 100.00 |
 | ILKNE4          |    0 |     0 |          0 |         1 |   0.00 |
 | OBUFDS_GTE4     |    0 |     0 |          0 |         8 |   0.00 |
 | OBUFDS_GTE4_ADV |    0 |     0 |          0 |         8 |   0.00 |
 | PCIE40E4        |    0 |     0 |          0 |         2 |   0.00 |
-| PS8             |    1 |     0 |          0 |         1 | 100.00 |
+| PS8             |    2 |     0 |          0 |         1 | 200.00 |
 | SYSMONE4        |    0 |     0 |          0 |         1 |   0.00 |
 +-----------------+------+-------+------------+-----------+--------+
 
@@ -168,35 +168,35 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +--------------+-------+---------------------+
 |   Ref Name   |  Used | Functional Category |
 +--------------+-------+---------------------+
-| FDRE         | 22397 |            Register |
-| SRLC32E      |  5123 |                 CLB |
-| LUT6         |  4338 |                 CLB |
-| SRL16E       |  4129 |                 CLB |
-| LUT3         |  2446 |                 CLB |
-| LUT4         |  1895 |                 CLB |
-| LUT5         |  1894 |                 CLB |
-| LUT2         |  1780 |                 CLB |
-| LUT1         |   678 |                 CLB |
-| RAMD32       |   534 |                 CLB |
-| FDSE         |   466 |            Register |
-| MUXF7        |   217 |                 CLB |
-| CARRY8       |   189 |                 CLB |
-| RAMB36E2     |   140 |            BLOCKRAM |
-| DSP48E2      |   103 |          Arithmetic |
-| RAMS32       |    76 |                 CLB |
-| FDCE         |    54 |            Register |
-| MUXF8        |    33 |                 CLB |
-| RAMB18E2     |    10 |            BLOCKRAM |
-| SRLC16E      |     4 |                 CLB |
-| HSADC        |     4 |            Advanced |
-| HSDAC        |     2 |            Advanced |
-| BUFG_GT_SYNC |     2 |               Clock |
-| BUFG_GT      |     2 |               Clock |
-| BUFGCE       |     2 |               Clock |
-| PS8          |     1 |            Advanced |
+| FDRE         | 44881 |            Register |
+| SRLC32E      | 10246 |                 CLB |
+| LUT6         |  8743 |                 CLB |
+| SRL16E       |  8261 |                 CLB |
+| LUT3         |  4922 |                 CLB |
+| LUT4         |  3869 |                 CLB |
+| LUT5         |  3621 |                 CLB |
+| LUT2         |  3605 |                 CLB |
+| LUT1         |  1354 |                 CLB |
+| RAMD32       |  1068 |                 CLB |
+| FDSE         |   898 |            Register |
+| MUXF7        |   443 |                 CLB |
+| CARRY8       |   382 |                 CLB |
+| RAMB36E2     |   280 |            BLOCKRAM |
+| DSP48E2      |   206 |          Arithmetic |
+| RAMS32       |   152 |                 CLB |
+| FDCE         |   108 |            Register |
+| MUXF8        |    66 |                 CLB |
+| RAMB18E2     |    20 |            BLOCKRAM |
+| SRLC16E      |     8 |                 CLB |
+| HSADC        |     8 |            Advanced |
+| HSDAC        |     4 |            Advanced |
+| BUFG_GT_SYNC |     4 |               Clock |
+| BUFG_GT      |     4 |               Clock |
+| BUFGCE       |     4 |               Clock |
+| PS8          |     2 |            Advanced |
+| MMCME4_ADV   |     2 |               Clock |
+| BUFG_PS      |     2 |               Clock |
 | OBUF         |     1 |                 I/O |
-| MMCME4_ADV   |     1 |               Clock |
-| BUFG_PS      |     1 |               Clock |
 +--------------+-------+---------------------+
 
 

@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 set_param bd.open.in_stealth_mode 2
 set_param ced.repoPaths C:/Users/clb20123/Documents/Vivado/board_files
 OPTRACE "Creating in-memory project" START { }
@@ -70,9 +71,11 @@ set_property parent.project_path C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_fi
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property board_part_repo_paths {C:/Users/clb20123/Documents/Vivado/board_files} [current_project]
+set_property board_part xilinx.com:rfsoc2x2:part0:1.1 [current_project]
 set_property ip_repo_paths {
-  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit
   c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate
+  c:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip [current_project]

@@ -7,7 +7,8 @@
       "name": "PYNQ_Design",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2024.1"
+      "tool_version": "2024.1",
+      "validated": "true"
     },
     "design_tree": {
       "RFDC": "",
@@ -1381,7 +1382,7 @@
                 "value": "256"
               },
               "c_s_axis_s2mm_tdata_width": {
-                "value": "16"
+                "value": "32"
               },
               "c_sg_length_width": {
                 "value": "26"
@@ -1541,9 +1542,9 @@
               "RX_ILA/clk",
               "axi_dma_rx/s_axi_lite_aclk",
               "axi_dma_rx/m_axi_s2mm_aclk",
+              "Receiver_0/clk",
               "axi_smc/aclk",
-              "proc_sys_reset_0/slowest_sync_clk",
-              "Receiver_0/clk"
+              "proc_sys_reset_0/slowest_sync_clk"
             ]
           },
           "clk_wiz_0_locked": {
@@ -1558,8 +1559,8 @@
               "peripheral_aresetn",
               "RX_ILA/resetn",
               "axi_dma_rx/axi_resetn",
-              "axi_smc/aresetn",
-              "Receiver_0/x16_bit_demod_aresetn"
+              "Receiver_0/x16_bit_demod_aresetn",
+              "axi_smc/aresetn"
             ]
           },
           "rst_ps8_0_96M_peripheral_aresetn": {
@@ -1869,8 +1870,8 @@
               "peripheral_aresetn",
               "TX_ILA/resetn",
               "axi_dma_tx/axi_resetn",
-              "axi_smc_1/aresetn",
-              "Data_gen_0/x16_bit_mod_aresetn"
+              "Data_gen_0/x16_bit_mod_aresetn",
+              "axi_smc_1/aresetn"
             ]
           },
           "usp_rf_data_converter_0_clk_dac0": {
@@ -1879,9 +1880,9 @@
               "axi_dma_tx/m_axi_mm2s_aclk",
               "TX_ILA/clk",
               "axi_dma_tx/s_axi_lite_aclk",
+              "Data_gen_0/clk",
               "axi_smc_1/aclk",
-              "proc_sys_reset_1/slowest_sync_clk",
-              "Data_gen_0/clk"
+              "proc_sys_reset_1/slowest_sync_clk"
             ]
           },
           "zynq_ultra_ps_e_0_pl_resetn0": {
@@ -1917,8 +1918,24 @@
           "PSU_DDR_RAM_LOWADDR_OFFSET": {
             "value": "0x80000000"
           },
+          "PSU_MIO_TREE_PERIPHERALS": {
+            "value": "#############################################################################"
+          },
+          "PSU_MIO_TREE_SIGNALS": {
+            "value": "#############################################################################"
+          },
           "PSU__DDR_HIGH_ADDRESS_GUI_ENABLE": {
             "value": "0"
+          },
+          "PSU__PROTECTION__FPD_SEGMENTS": {
+            "value": [
+              "SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |",
+              " SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | ",
+              "SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | ",
+              "SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | ",
+              "SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure",
+              "Subsystem"
+            ]
           },
           "PSU__PROTECTION__MASTERS": {
             "value": "USB1:NonSecure;0|USB0:NonSecure;0|S_AXI_LPD:NA;0|S_AXI_HPC1_FPD:NA;0|S_AXI_HPC0_FPD:NA;0|S_AXI_HP3_FPD:NA;0|S_AXI_HP2_FPD:NA;0|S_AXI_HP1_FPD:NA;1|S_AXI_HP0_FPD:NA;1|S_AXI_ACP:NA;0|S_AXI_ACE:NA;0|SD1:NonSecure;0|SD0:NonSecure;0|SATA1:NonSecure;0|SATA0:NonSecure;0|RPU1:Secure;1|RPU0:Secure;1|QSPI:NonSecure;0|PMU:NA;1|PCIe:NonSecure;0|NAND:NonSecure;0|LDMA:NonSecure;1|GPU:NonSecure;1|GEM3:NonSecure;0|GEM2:NonSecure;0|GEM1:NonSecure;0|GEM0:NonSecure;0|FDMA:NonSecure;1|DP:NonSecure;0|DAP:NA;1|Coresight:NA;1|CSU:NA;1|APU:NA;1"
@@ -2161,8 +2178,8 @@
           "RX/clk_out1",
           "RFDC/m0_axis_aclk",
           "ps8_0_axi_periph/M01_ACLK",
-          "PS/saxihp0_fpd_aclk",
-          "ps8_0_axi_periph/M03_ACLK"
+          "ps8_0_axi_periph/M03_ACLK",
+          "PS/saxihp0_fpd_aclk"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn": {
@@ -2203,8 +2220,8 @@
           "RFDC/s0_axis_aclk",
           "ps8_0_axi_periph/M00_ACLK",
           "TX/m_axi_mm2s_aclk",
-          "PS/saxihp1_fpd_aclk",
-          "ps8_0_axi_periph/M04_ACLK"
+          "ps8_0_axi_periph/M04_ACLK",
+          "PS/saxihp1_fpd_aclk"
         ]
       },
       "xlconstant_0_dout": {
@@ -2220,8 +2237,8 @@
           "ps8_0_axi_periph/S00_ACLK",
           "RFDC/s_axi_aclk",
           "ps8_0_axi_periph/M02_ACLK",
-          "PS/maxihpm0_lpd_aclk",
-          "rst_ps8_0_96M/slowest_sync_clk"
+          "rst_ps8_0_96M/slowest_sync_clk",
+          "PS/maxihpm0_lpd_aclk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Mar 27 12:40:42 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Mar 28 11:03:16 2025" VIVADOVERSION="2024.1">
 
-  <SYSTEMINFO ARCH="zynquplusRFSOC" DEVICE="xczu28dr" NAME="bd_4c89" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
+  <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:rfsoc2x2:part0:1.1" DEVICE="xczu28dr" NAME="bd_4c89" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT DIR="O" LEFT="48" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="m00_exit_pipeline_m00_exit_m_axi_awaddr">

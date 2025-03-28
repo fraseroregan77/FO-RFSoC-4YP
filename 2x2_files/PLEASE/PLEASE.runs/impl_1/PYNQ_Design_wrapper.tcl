@@ -110,6 +110,8 @@ set rc [catch {
   set_param runs.launchOptions { -jobs 4  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu28dr-ffvg1517-2-e
+  set_property board_part_repo_paths {C:/Users/clb20123/Documents/Vivado/board_files} [current_project]
+  set_property board_part xilinx.com:rfsoc2x2:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -117,8 +119,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/wt [current_project]
   set_property parent.project_path C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit
   C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/16_bit_modulate
+  C:/Users/clb20123/Documents/FO-RFSoC-4YP/RFX_files/demod_16_bit
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/clb20123/Documents/FO-RFSoC-4YP/2x2_files/PLEASE/PLEASE.cache/ip [current_project]

@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-371,-127",
+   "Default View_TopLeft":"-255,-6",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
@@ -17,8 +17,8 @@ preplace inst proc_sys_reset_1 -pg 1 -lvl 2 -x 620 -y 450 -defaultsOSRD
 preplace inst axi_smc_1 -pg 1 -lvl 2 -x 620 -y 80 -defaultsOSRD
 preplace inst TX_ILA -pg 1 -lvl 3 -x 940 -y 330 -defaultsOSRD
 preplace inst Data_gen_0 -pg 1 -lvl 2 -x 620 -y 250 -defaultsOSRD
-preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 4 40 180 410 350 830 420 NJ
-preplace netloc usp_rf_data_converter_0_clk_dac0 1 0 3 30 190 400 340 NJ
+preplace netloc proc_sys_reset_1_peripheral_aresetn 1 0 4 40 190 410 350 830 420 NJ
+preplace netloc usp_rf_data_converter_0_clk_dac0 1 0 3 30 180 400 340 NJ
 preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 NJ 430 NJ
 preplace netloc Conn1 1 0 2 NJ 240 NJ
 preplace netloc DUT_data_in_0_m_axis 1 2 2 840 240 NJ
