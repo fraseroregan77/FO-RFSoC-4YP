@@ -5,7 +5,7 @@ f = [0 Fc/(fs/2) 1];
 m = [1 1 0 ];
 coeff = fir2(N, f, m);
 
- freqz(coeff)
+%freqz(coeff)
 % figure;
 % plot(demod.Time, demod.Data);
 % xlabel("\textbf{Time (s)}", 'Interpreter','latex');
@@ -14,34 +14,37 @@ coeff = fir2(N, f, m);
 
 fd = (40*333e6)/256
 
-% figure;
-% plot(Data_NCO.Time, Data_NCO.Data);
-% title("\textbf{Output of Data NCO}", 'Interpreter','latex')
-% xlabel("\textbf{Time (s)}", 'Interpreter','latex')
-% ylabel("\textbf{Magnitude}", 'Interpreter','latex')
-% xlim([0 2.75e-5])
+figure;
+plot(output.Time, output.Data, LineWidth=1.5);
+title("\textbf{Output of Transmitter System}", 'Interpreter','latex')
+xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+xlim([0 0.75e-5])
+ylim([-0.5e4 7e4])
 
 
-% figure;
-% plot(Carrier_NCO.Time, Carrier_NCO.Data);
-% title("\textbf{Output of Carrier NCO}", 'Interpreter','latex')
-% xlabel("\textbf{Time (s)}", 'Interpreter','latex')
-% ylabel("\textbf{Magnitude}", 'Interpreter','latex')
-% xlim([0.1e-6 0.3e-6])
-% 
+figure;
+plot(before.Time, before.Data);
+title("\textbf{Mixer Output (Pre Cast)}", 'Interpreter','latex')
+xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+xlim([0 2.75e-5])
+
+
+
 % figure;
 % plot(Demodulated.Time, Demodulated.Data);
 % title("\textbf{Demodulated Signal (Full System Test)}", 'Interpreter','latex')
 % xlabel("\textbf{Time (s)}", 'Interpreter','latex')
 % ylabel("\textbf{Magnitude}", 'Interpreter','latex')
-% xlim([0.1e-5 0.15e-5])
-
-figure;
-plot(precast.Time, precast.Data);
-title("\textbf{Demodulated Signal (Full System Test Pre Cast)}", 'Interpreter','latex')
-xlabel("\textbf{Time (s)}", 'Interpreter','latex')
-ylabel("\textbf{Magnitude}", 'Interpreter','latex')
-xlim([0.1e-5 2.5e-5])
+% % xlim([0.1e-5 0.15e-5])
+% 
+% figure;
+% plot(precast.Time, precast.Data);
+% title("\textbf{Demodulated Signal (Full System Test Pre Cast)}", 'Interpreter','latex')
+% xlabel("\textbf{Time (s)}", 'Interpreter','latex')
+% ylabel("\textbf{Magnitude}", 'Interpreter','latex')
+% xlim([0.1e-5 2.5e-5])
 
 
 %%
